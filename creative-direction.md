@@ -64,6 +64,18 @@ Root cause, more precisely: the failing prompt introduced the interruption with 
 - **Explicitly state single-take continuity in every prompt**: "single continuous unbroken shot, one camera angle throughout, no cuts, no scene changes, real-time continuous take" — do not assume the model defaults to this, even with the above framing.
 - **Give it enough duration to breathe** (8s rather than 6s) so the interruption has room to land within the same shot instead of being compressed.
 
+## 8. Context-appropriate pacing (owner correction, 2026-08-19)
+Found on clip 4 (food review): she talked at full flat-out pace while chewing and drinking, which reads as fake — a real person can't deliver clean, fast, clear dialogue with a mouth full of food or mid-sip. Talking fast isn't itself the problem (it can suit plenty of beats); the problem is pace decoupled from what her body is physically doing. Rule going forward:
+- **Physical state gates delivery.** Mouth full → delivery is muffled, slowed, or genuinely paused until she's swallowed, not full-speed clear speech continuing underneath. Mid-sip → she stops talking, drinks, resumes after — not simultaneous.
+- **Match pace to the moment, not a default energy level.** Breathless after exertion → broken sentences, real gaps, gasping. Calm/reflective beat → slower, measured. Comedic reaction → a real pause for the reaction to land before the next line, not talk-through-everything.
+- **State this explicitly in the prompt** for any beat involving eating, drinking, exertion, or a strong reaction — the model defaults to continuous energetic delivery unless told the physical action should interrupt it.
+
+## 9. Clip duration is judged per beat, not defaulted (owner correction, 2026-08-19)
+Caught immediately after §8: clip 4 v2 added the chewing/swallowing/drinking pauses but kept the same 8s duration — so the *fix itself* got compressed and would likely still read as rushed, because more content was asked to fit in the same time. Duration must be sized to what the beat actually contains, not defaulted to one number out of habit.
+- **Judge each beat's duration from its content**, within PAI's hard cap of 15.2s per clip (`server/cli/_limits.js`): a simple single-reaction beat can be 5–6s; a normal talking beat ~8s; a beat with multiple sub-actions (line → bite → mumble → swallow → drink → verdict, or similar multi-step business) needs more room — 10–13s — so nothing has to be rushed to fit.
+- **Count the beats in the prompt before setting duration.** If a prompt describes three or more distinct micro-actions in sequence, that's a signal to lengthen the clip, not compress the pacing.
+- This is a per-clip judgment call each time, not a new fixed default to swap in for 8s.
+
 ## Next steps
 1. Validate PAI's `reference_video` chaining (clip 2 built using clip 1 as a video reference) before committing to the full 10-clip Wild West Short.
 2. Once continuity is confirmed, produce the remaining clips against the shot list in `PROJECT_HANDOFF.md` §3, directed per the emotional library above.
