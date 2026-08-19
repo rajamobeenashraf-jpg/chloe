@@ -139,6 +139,8 @@ Two rounds of owner QC found real, fixable issues:
 - Timing-allocation algorithm (gap-clustering, asymmetric crossfade margins, readability floor) carried over unchanged from round 3 — no issues found there, no changes made.
 - Re-stitched with `build_final_cut.mjs` (same crossfade/loudnorm pipeline). New delivery copy: `assets/wildwest_final_cut_v3_compressed.mp4` (~1.5Mbps, ~22.5MB).
 
+**Round 5, owner correction on round 4's output:** the raised/thickened TikTok-style caption change was wrong for this footage — captions sat over her face instead of clear of it. Reverted `SUB_STYLE` in `qc_pass.mjs` back to the round-2/3 values (`FontSize=8`, `Outline=1.1`, `Shadow=0.4`, `MarginV=55`) and the card back to its round-3 border weight (`borderw=3`, `bordercolor=black@0.8`) — both now match round 3 exactly, round 4's styling change is abandoned. Cross-verified caption sync by re-running `ffmpeg silencedetect` directly on each clip's raw source audio and diffing against the hardcoded silence-interval data in `qc_pass.mjs`: matched within ~10ms everywhere (floating-point noise only), confirming captions already start/end in sync with real detected speech boundaries, not just the timing-allocation algorithm's own assumptions. Re-stitched. Delivery copy: `assets/wildwest_final_cut_v4_compressed.mp4` (~1.5Mbps, ~22.5MB).
+
 ## Next steps
 1. Owner review of v2 — confirm the five re-cut transitions read as clean/quick rather than dissolved, captions track dialogue accurately at the new size/position, and the card reads right.
 2. Cut 4 Shorts-within-the-Short per the promo plan if still wanted (see original concept notes).
