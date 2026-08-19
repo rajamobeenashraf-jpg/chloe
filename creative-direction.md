@@ -53,6 +53,12 @@ This is what actually sells "she was really there" — not a model capability, a
 - **Consistent NPC/background continuity** — where a scene has other characters (the sheriff, the robber, the kid), keep their described appearance identical across every clip they appear in, same discipline as the locked persona reference.
 - **React before cut, not after** — end a clip on her reaction (the flinch, the laugh, the held breath) rather than cutting away mid-action; that reaction beat is what the next clip's opening motion should continue from.
 
+## 7. Within-clip continuity (owner correction, 2026-08-19)
+Found on clip 2 (arrival + horse near-miss): the model rendered an internal hard cut mid-clip instead of one continuous take. Root cause — the prompt packed two separate beats (talking to camera, then a horse passing) into a single generation; the model treated that as two shots and stitched them. Rule going forward:
+- **One beat per generation.** If a moment needs a second distinct beat (a new action, a reactive step-back, a prop entering frame), either keep it minor enough to read as one continuous motion, or split it into a second clip chained via `reference_video`/`video_extension` (§6) rather than asking one generation to contain two.
+- **Explicitly state single-take continuity in every prompt**: language to the effect of "single continuous unbroken shot, one camera angle throughout, no cuts, no scene changes, real-time continuous take" — do not assume the model defaults to this.
+- **Watch for this failure mode specifically** when a prompt describes a change in the middle of the action (an interruption, a new element entering frame) — that's exactly the shape of prompt that invites an internal cut.
+
 ## Next steps
 1. Validate PAI's `reference_video` chaining (clip 2 built using clip 1 as a video reference) before committing to the full 10-clip Wild West Short.
 2. Once continuity is confirmed, produce the remaining clips against the shot list in `PROJECT_HANDOFF.md` §3, directed per the emotional library above.
