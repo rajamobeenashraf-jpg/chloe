@@ -89,7 +89,7 @@ Caught on clip 8, same session — two more instances of the identical failure m
 
 ## Status: all 10 clips produced (2026-08-19)
 Full shot list from `PROJECT_HANDOFF.md` §3 is generated and owner-approved, final filenames in `pai-pro/projects/wildwest/assets/`:
-1. `clip1_pai_v2.mp4` — cold-open tease, debris reaction (physically-real version)
+1. `clip1_vlog_v3.mp4` — cold-open tease, reshot in V-mode (talk-to-lens) to match clip 7/8's handheld grammar; debris-reaction physics/pacing carried over from the earlier fix. Supersedes `clip1_pai_v2.mp4` (the original Nova-style cinematic version, kept only for reference).
 2. `clip2_vlog_arrival_v3.mp4` — arrival + horse-cart drama, single take
 3. `clip3_costume_fixed.mp4` — corset-lacing, deflicker-corrected
 4. `clip4_food_v3.mp4` — saloon food review, 13s, paced
