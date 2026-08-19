@@ -17,7 +17,8 @@ Building an AI-generated cinematic historical channel for the US market, reverse
 ## 3. Production decision state
 - First video: a SHORT (user's call), Chloe-pattern, full interaction/drama grammar.
 - Chosen concept: **"I time travelled to the Wild West in 1875 🤠"** — ~75–80s, 10 clips. Full shot-by-shot script with dialogue was approved in conversation; beats: (1) cold open crouched behind trough during bank robbery, (2) rewind to arrival + near-miss with horse, (3) corset-lacing costume beat, (4) saloon food review "3/10 the beans fight back", (5) irony beat — kid mentions gold at bank, (6) she warns the sheriff, gets dismissed, (7) cinematic robbery set-piece — she pulls the kid to safety, yells "GET DOWN!", (8) eye-contact-with-robber fear beat + escape run, (9) breathless aftermath + hat returned, (10) sunset outro "back to 2026, follow for the next trip."
-- Episode 1 long-form (later): Oregon Trail 1848 — full plan in `episode-1-production-plan.md`.
+- **Next episodes (owner-approved 2026-08-19), all Shorts 90–200s, Chloe-formula V-mode only:** Ep 2 Salem 1692 ("I Was Accused of Witchcraft"), Ep 3 Boston 1775 ("The Night Paul Revere Rode"), Ep 4 Gold Rush 1849 ("I Joined the Gold Rush of 1849") — full clip-by-clip scripts in `episodes-2-4-scripts.md`. Every script obeys the new permanent active-participant directive (`creative-direction.md` §12).
+- Oregon Trail 1848 long-form: deferred, plan kept in `episode-1-production-plan.md`.
 
 ## 4. PAI Pro setup — DONE, validated 2026-08-19
 - Chloe's engine is Utopai's PAI; open-source pipeline: https://github.com/Utopai-Research/pai-pro

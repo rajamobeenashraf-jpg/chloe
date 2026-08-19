@@ -87,6 +87,13 @@ Caught on clip 8, same session — two more instances of the identical failure m
 - **Spatial staging must support the sensory event described.** If a prompt says two characters make "eye contact," the positions described must actually put them in each other's sightline — a robber placed "behind her" cannot be met with eye contact; either stage him where she could plausibly see him (stepping into view at her side/front, glimpsed around cover) or change the sensory mechanism to match the geometry (she hears his boots, catches his shadow, glances back over her shoulder and spots him). Read the positions in the prompt and verify the described perception is physically possible before submitting.
 - **Established relationships/motivations must carry forward, not reset.** If she just risked herself to pull the boy to safety, she does not abandon him in the very next clip without in-story reason — carry the commitment forward (she grabs his hand and takes him with her) unless something in the story explicitly separates them.
 
+## 12. Active-participant directive (owner instruction, 2026-08-19 — PERMANENT)
+Prompted by Ep 1 clip 8 (the escape run): flat running/watching is the laziest form of tension — motion without choice. From now on, **every beat in every script must show her acting ON the scene, not moving through it**:
+- In any chase/danger beat she changes her own odds with objects, terrain, or people (pull a clothesline, tip a stall, block a lane with a cart, ring an alarm, talk a sentry backward) — never an open-field sprint.
+- In any social scene she initiates: asks the question, joins the work, volunteers the help — she does not stand at the edge observing.
+- Set-pieces must be *solved by her* (teamwork, tools, quick thinking), and where possible pay off an earlier emotional beat so the spectacle carries meaning.
+- This is a script-level floor, applied at writing time — not a post-generation fix. Check every beat against it before any prompt is written.
+
 ## Status: all 10 clips produced (2026-08-19)
 Full shot list from `PROJECT_HANDOFF.md` §3 is generated and owner-approved, final filenames in `pai-pro/projects/wildwest/assets/`:
 1. `clip1_vlog_v3.mp4` — cold-open tease, reshot in V-mode (talk-to-lens) to match clip 7/8's handheld grammar; debris-reaction physics/pacing carried over from the earlier fix. Supersedes `clip1_pai_v2.mp4` (the original Nova-style cinematic version, kept only for reference).
