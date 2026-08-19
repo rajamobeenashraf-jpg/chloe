@@ -105,8 +105,24 @@ All 10 clips stitched into one Short with `pai-pro/projects/wildwest/build_final
 - **Master file**: `assets/wildwest_final_cut.mp4` (CRF 16, ~80MB) — use this for actual upload/further editing.
 - **Delivery copy**: `assets/wildwest_final_cut_compressed.mp4` (~1.5Mbps, ~22MB) — re-encoded only to fit the chat delivery size limit; lower bitrate, review copy only, not the upload master.
 
+## 11. QC pass v2 — captions, card, transition technique (2026-08-19)
+Two rounds of owner QC found real, fixable issues:
+
+**Round 1** (`pai-pro/projects/wildwest/qc_pass.mjs`): burnt-in captions via real transcription (ElevenLabs Scribe on each clip's extracted audio — never guessed from the original generation prompts, which the model doesn't follow verbatim), timing grounded in `ffmpeg silencedetect` speech/silence boundaries. Lighting-corrected clips 4 and 6 (measured outliers via `signalstats`, not eyeballed). Added an "earlier today" card at clip 2.
+
+**Round 2, more precise fixes:**
+- **Card**: dropped "REWIND —", kept "EARLIER TODAY", bold.
+- **Caption size/position**: v1 was too large and sat mid-frame, not bottom-safe-area. Cut font size roughly in half and moved the anchor down to true bottom-safe-area.
+- **Caption/crossfade ghosting bug**: v1 let captions run into the crossfade blend window, so two clips' burnt-in text visibly overlapped during the dissolve. Fixed by clamping every cue to end/start clear of its adjacent transition's blend window — margins sized per-transition (see below), not a flat guess.
+- **Caption sync accuracy bug**: the proportional character-based timing allocation could assign a whole sentence to a spurious sub-0.15s detector-noise "block," making that cue nearly instant and then get silently dropped by the min-duration filter. Real instance caught: clip 1's "I repeat, not part of the plan." vanished. Fixed by filtering out micro-segments before block-matching, and preferring exact 1:1 sentence-to-block anchoring whenever the counts match (more accurate than proportional guessing when it applies).
+- **The four flagged transitions (2→3, 3→4, 4→5, 5→6), plus 6→7 caught on re-check**: root cause was applying the same 0.4s cross-dissolve to hard scene/location changes (exterior street → interior room → different interior → exterior street → doorway) as to continuous-action cuts. Dissolving between two mismatched, differently-lit locations produces visible ghosting — that's what read as "awkward," not a missing effect. Fix: these five now cut on a short 0.12s blend (professional practice — scene changes cut, continuous motion dissolves), while 1→2 and 7→8 (genuinely continuous action) keep the 0.4s dissolve, 8→9 uses a mild 0.2s, and 9→10 stays slower (0.5s) on purpose since it signals time passing to sunset. Per-transition durations now live in a shared `TRANSITIONS` array duplicated (with a sync comment) across `build_final_cut.mjs` and `qc_pass.mjs`, since caption margins must match the actual blend durations.
+
+**Standing limitation, restated plainly:** this environment has no access to the actual Chloe VS History video (no file, no general web access) — craft judgment here is drawn from the earlier written analysis (`chloe-vs-history-strategy-report.md`) and general professional editing technique, not a fresh viewing. More importantly, literal frame-matched continuity (exact hand position/eye-line/camera direction matching between independently-generated clips) is not achievable through editing — only through regenerating adjacent clips chained off each other's real end frame (`reference_video`), which is a re-shoot, not a cut-timing fix. What v2 delivers is the real ceiling of what post-production can do: correct transition *technique* (cut vs. dissolve, matched to content), accurate synced captions, and measured lighting/color consistency.
+
+**Files**: `assets/wildwest_final_cut_v2.mp4` (master, CRF16) / `assets/wildwest_final_cut_v3_compressed.mp4` (delivery copy only).
+
 ## Next steps
-1. Owner review of the assembled cut — confirm transitions/pacing read as smooth and naturalistic across the full runtime, not just per-clip.
+1. Owner review of v2 — confirm the five re-cut transitions read as clean/quick rather than dissolved, captions track dialogue accurately at the new size/position, and the card reads right.
 2. Cut 4 Shorts-within-the-Short per the promo plan if still wanted (see original concept notes).
 3. Apply the community playbook (§3) at launch: pinned comment, recurring character, easter egg.
 4. Consider Higgsfield Soul training on approved v3 renders for hard-locked consistency on the next production.
