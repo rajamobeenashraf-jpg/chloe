@@ -53,11 +53,15 @@ This is what actually sells "she was really there" — not a model capability, a
 - **Consistent NPC/background continuity** — where a scene has other characters (the sheriff, the robber, the kid), keep their described appearance identical across every clip they appear in, same discipline as the locked persona reference.
 - **React before cut, not after** — end a clip on her reaction (the flinch, the laugh, the held breath) rather than cutting away mid-action; that reaction beat is what the next clip's opening motion should continue from.
 
-## 7. Within-clip continuity (owner correction, 2026-08-19)
-Found on clip 2 (arrival + horse near-miss): the model rendered an internal hard cut mid-clip instead of one continuous take. Root cause — the prompt packed two separate beats (talking to camera, then a horse passing) into a single generation; the model treated that as two shots and stitched them. Rule going forward:
-- **One beat per generation.** If a moment needs a second distinct beat (a new action, a reactive step-back, a prop entering frame), either keep it minor enough to read as one continuous motion, or split it into a second clip chained via `reference_video`/`video_extension` (§6) rather than asking one generation to contain two.
-- **Explicitly state single-take continuity in every prompt**: language to the effect of "single continuous unbroken shot, one camera angle throughout, no cuts, no scene changes, real-time continuous take" — do not assume the model defaults to this.
-- **Watch for this failure mode specifically** when a prompt describes a change in the middle of the action (an interruption, a new element entering frame) — that's exactly the shape of prompt that invites an internal cut.
+## 7. Within-clip continuity (owner correction, 2026-08-19; refined same day)
+Found on clip 2 (arrival + horse near-miss): the model rendered an internal hard cut mid-clip instead of one continuous take. First fix attempt (dropping the horse beat entirely) overcorrected — it removed the external-factor drama that makes Chloe's videos feel alive (she's constantly reacting to things happening *around* her: crowds, animals, danger, chaos), which is exactly the ingredient we want to keep and out-do, not cut. **The goal is drama AND continuity together, not drama traded away for continuity.**
+
+Root cause, more precisely: the failing prompt introduced the interruption with sequential "and then" framing ("partway through, a horse passes...") — that phrasing itself reads to the model as a scene change, because it describes two unrelated things happening one after another rather than one continuous unfolding moment. Rule going forward:
+- **Keep external interruptions — direct them as embedded in the ongoing motion, not as a sequel event.** Put the source of drama in frame/audible from the very start (the cart already rumbling somewhere in the background), so the "interruption" is a continuation of something already present, not a new element cutting in.
+- **Avoid "and then" / "partway through" framing.** Prefer simultaneous-action phrasing: "as she does X, she has to Y" rather than "she does X. Then Y happens."
+- **One continuous physical thread, not two events.** She should be moving/reacting the whole time — walking, talking, gesturing — so the interruption is a variation in that same motion (a sidestep, a flinch) rather than a break from stillness into a different action.
+- **Explicitly state single-take continuity in every prompt**: "single continuous unbroken shot, one camera angle throughout, no cuts, no scene changes, real-time continuous take" — do not assume the model defaults to this, even with the above framing.
+- **Give it enough duration to breathe** (8s rather than 6s) so the interruption has room to land within the same shot instead of being compressed.
 
 ## Next steps
 1. Validate PAI's `reference_video` chaining (clip 2 built using clip 1 as a video reference) before committing to the full 10-clip Wild West Short.
