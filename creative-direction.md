@@ -75,6 +75,7 @@ Caught immediately after §8: clip 4 v2 added the chewing/swallowing/drinking pa
 - **Judge each beat's duration from its content**, within PAI's hard cap of 15.2s per clip (`server/cli/_limits.js`): a simple single-reaction beat can be 5–6s; a normal talking beat ~8s; a beat with multiple sub-actions (line → bite → mumble → swallow → drink → verdict, or similar multi-step business) needs more room — 10–13s — so nothing has to be rushed to fit.
 - **Count the beats in the prompt before setting duration.** If a prompt describes three or more distinct micro-actions in sequence, that's a signal to lengthen the clip, not compress the pacing.
 - This is a per-clip judgment call each time, not a new fixed default to swap in for 8s.
+- **Confirmed by owner:** clip 4 v3 at 13s (a multi-step food-review beat) landed well — "even 12s would have been fine, that pace is good." Treat ~12–13s as the validated target for a genuinely multi-step beat; verified again on clip 5 v2 (12s, a two-person dialogue exchange with a silent reaction beat). Still a per-beat judgment, not a new blanket default — a simple single-reaction beat should stay shorter.
 
 ## Next steps
 1. Validate PAI's `reference_video` chaining (clip 2 built using clip 1 as a video reference) before committing to the full 10-clip Wild West Short.
