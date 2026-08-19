@@ -87,7 +87,21 @@ Caught on clip 8, same session — two more instances of the identical failure m
 - **Spatial staging must support the sensory event described.** If a prompt says two characters make "eye contact," the positions described must actually put them in each other's sightline — a robber placed "behind her" cannot be met with eye contact; either stage him where she could plausibly see him (stepping into view at her side/front, glimpsed around cover) or change the sensory mechanism to match the geometry (she hears his boots, catches his shadow, glances back over her shoulder and spots him). Read the positions in the prompt and verify the described perception is physically possible before submitting.
 - **Established relationships/motivations must carry forward, not reset.** If she just risked herself to pull the boy to safety, she does not abandon him in the very next clip without in-story reason — carry the commitment forward (she grabs his hand and takes him with her) unless something in the story explicitly separates them.
 
+## Status: all 10 clips produced (2026-08-19)
+Full shot list from `PROJECT_HANDOFF.md` §3 is generated and owner-approved, final filenames in `pai-pro/projects/wildwest/assets/`:
+1. `clip1_pai_v2.mp4` — cold-open tease, debris reaction (physically-real version)
+2. `clip2_vlog_arrival_v3.mp4` — arrival + horse-cart drama, single take
+3. `clip3_costume_fixed.mp4` — corset-lacing, deflicker-corrected
+4. `clip4_food_v3.mp4` — saloon food review, 13s, paced
+5. `clip5_irony_v2.mp4` — gold-shipment irony beat, 12s, paced
+6. `clip6_sheriff.mp4` — sheriff dismissal, 12s
+7. `clip7_robbery_v2.mp4` — robbery breaks out, populated chaos, timing-fixed
+8. `clip8_escape_v2.mp4` — eye contact + escape, geometry/continuity-fixed
+9. `clip9_aftermath.mp4` — breathless aftermath, hat returned (sheriff callback)
+10. `clip10_outro.mp4` — sunset outro, back to 2026
+
 ## Next steps
-1. Validate PAI's `reference_video` chaining (clip 2 built using clip 1 as a video reference) before committing to the full 10-clip Wild West Short.
-2. Once continuity is confirmed, produce the remaining clips against the shot list in `PROJECT_HANDOFF.md` §3, directed per the emotional library above.
+1. **Stitch/edit pass** — assemble all 10 into the final Short per the confirmed naturalistic-smooth standing instruction and the §6 transition-craft checklist (match-cuts on motion, audio bridges, consistent grade, no dead silence between clips).
+2. Cut 4 Shorts-within-the-Short per the promo plan if still wanted (see original concept notes).
 3. Apply the community playbook (§3) at launch: pinned comment, recurring character, easter egg.
+4. Consider Higgsfield Soul training on approved v3 renders for hard-locked consistency on the next production.
