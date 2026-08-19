@@ -6,6 +6,8 @@ This is the standing reference for how our locked persona (v3 "round-cute", see 
 ## The mandate
 Replicate everything that makes Chloe VS History work, mechanically and emotionally — then add what she doesn't have. Not a clone (different face, different name, different topic lane, different camera grammar) — same load-bearing craft, extended.
 
+**STANDING INSTRUCTION (owner, 2026-08-19): Chloe-formula only until further notice.** The Nova hybrid camera mode (§4) is paused — no cinematic third-person F-mode set-pieces, no Nova-style loglines/pacing, in any generation until the owner explicitly says otherwise. All clips should be directed in Chloe's talk-to-lens vlog grammar. This directly informed the clip-1/clip-2 course-correction earlier: two consecutive F-mode action clips with no narrator beat is exactly the failure mode this instruction prevents. Treat §4's Nova elements as documented-but-inactive, not deleted — they come back only when told to resume them.
+
 ## 1. The seven mechanics we're replicating (from `chloe-vs-history-strategy-report.md` §1)
 1. Persona, not narrator — same face every thumbnail, recognizable verbal habits, brand recognition
 2. Vlog grammar — arrival shock → "here's the plan" → costume change → food review → unexpected event → irony beat → reflective outro
