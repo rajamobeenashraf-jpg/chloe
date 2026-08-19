@@ -100,8 +100,13 @@ Full shot list from `PROJECT_HANDOFF.md` §3 is generated and owner-approved, fi
 9. `clip9_aftermath.mp4` — breathless aftermath, hat returned (sheriff callback)
 10. `clip10_outro.mp4` — sunset outro, back to 2026
 
+## Status: final cut assembled (2026-08-19)
+All 10 clips stitched into one Short with `pai-pro/projects/wildwest/build_final_cut.mjs` (ffmpeg, ffprobe-driven): 0.4s video `xfade` + audio `acrossfade` crossfades between every clip (no hard silence-to-silence cuts, per §6), per-clip `loudnorm` audio normalization so dialogue levels don't jump between clips. Runtime ~1:50.
+- **Master file**: `assets/wildwest_final_cut.mp4` (CRF 16, ~80MB) — use this for actual upload/further editing.
+- **Delivery copy**: `assets/wildwest_final_cut_compressed.mp4` (~1.5Mbps, ~22MB) — re-encoded only to fit the chat delivery size limit; lower bitrate, review copy only, not the upload master.
+
 ## Next steps
-1. **Stitch/edit pass** — assemble all 10 into the final Short per the confirmed naturalistic-smooth standing instruction and the §6 transition-craft checklist (match-cuts on motion, audio bridges, consistent grade, no dead silence between clips).
+1. Owner review of the assembled cut — confirm transitions/pacing read as smooth and naturalistic across the full runtime, not just per-clip.
 2. Cut 4 Shorts-within-the-Short per the promo plan if still wanted (see original concept notes).
 3. Apply the community playbook (§3) at launch: pinned comment, recurring character, easter egg.
 4. Consider Higgsfield Soul training on approved v3 renders for hard-locked consistency on the next production.
