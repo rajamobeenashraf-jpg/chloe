@@ -132,6 +132,13 @@ Two rounds of owner QC found real, fixable issues:
 
 **Files**: `assets/wildwest_final_cut_v2.mp4` (master, CRF16, current) / `assets/wildwest_final_cut_v4_compressed.mp4` (delivery copy only, current).
 
+**Round 4, owner correction on round 3's output:**
+- **Clip 1 delogo reverted.** The `delogo` mask covering the model's baked-in auto-caption left a visible blurred patch on her dress that read worse than the caption artifact it was hiding — owner call: plain source, no delogo. Clip 1 now carries the model's small baked-in auto-caption as-is (unavoidable without a full regeneration, per round 3's note); our own burnt-in captions are drawn straight on top of the plain source.
+- **Caption style rebuilt to match a reference clip (owner-provided TikTok screenshot).** Reference showed captions sitting well above the platform's own username/caption UI row — bold white caps, thick black stroke, noticeably higher and punchier than round 2/3's near-bottom-edge, thin-outline style. Updated `SUB_STYLE` in `qc_pass.mjs`: `FontSize` 8->10, `Outline` 1.1->3, `Shadow` 0.4->0.6, `MarginV` 55->190 (720x1280 frame) so captions clear the bottom-safe-area by a wide margin instead of hugging it.
+- **Card size conflict resolved: 46pt confirmed** (not 40pt) — matches round 3's already-logged "34pt -> 46pt" change; border weight bumped slightly further (3->4, opacity 0.8->0.85) for extra prominence per the same instruction.
+- Timing-allocation algorithm (gap-clustering, asymmetric crossfade margins, readability floor) carried over unchanged from round 3 — no issues found there, no changes made.
+- Re-stitched with `build_final_cut.mjs` (same crossfade/loudnorm pipeline). New delivery copy: `assets/wildwest_final_cut_v3_compressed.mp4` (~1.5Mbps, ~22.5MB).
+
 ## Next steps
 1. Owner review of v2 — confirm the five re-cut transitions read as clean/quick rather than dissolved, captions track dialogue accurately at the new size/position, and the card reads right.
 2. Cut 4 Shorts-within-the-Short per the promo plan if still wanted (see original concept notes).
