@@ -62,6 +62,8 @@ Generated with hard "identity-preserving re-render" prompts (references win over
 
 **Reference hierarchy (never invert):** Tier 1 = the 2 PAI character sheets + PAI individual views (identity anchors). Tier 2 = the 10 movie frames (as-filmed naturalism). Tier 3 = this Nano Banana set (angle coverage/supplementary). Always generate from Tier 1/2 anchors; NEVER chain generations off generated outputs — generational drift compounds. Roughly 1 in 6 renders drifts to a different face even with perfect prompts and refs: QC every render against Tier 1 before accepting it.
 
+**Dedicated eye QC — 2026-08-20 (all 7 eye-visible Nano Banana views re-checked at 100% eye crops against Tier-1): PASS.** Iris matches the locked light-hazel spec on every face view — amber-honey burst around the pupil grading to olive-green outer iris with a dark limbal ring, large almond doe shape, bold dark-brown arched brows. Sampled median iris hue 26–31° / sat 0.35–0.40 on the front and 3/4 views vs 26–29° / 0.38–0.52 on the Tier-1 refs — same color band; profiles slightly desaturated (22–23°), normal for a side angle. Two minor notes, neither a fail: (1) the **full-body front**'s eyes read paler grey-green and less saturated at zoom (hue 16°, sat 0.24) — fine at feed size where the face is tiny, but never use the full-body pair as an eye-color anchor (the Tier-3 rule above already forbids it); (2) the tight close-up's catchlights differ in shape between the two eyes (window-pane vs double-spot) — visible only at heavy zoom, reads as two light sources, acceptable.
+
 ---
 
 ## Frozen identity string — v4 (paste verbatim into every prompt; never paraphrase)
