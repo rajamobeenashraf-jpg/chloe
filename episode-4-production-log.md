@@ -160,3 +160,21 @@ Final duration total (as-shot, may adjust ~1s in edit): 7+9+11+8+12+10+13+13+12+
 - Two clips (9, 11) have long/tight caption cues grounded in genuinely continuous speech with sub-0.3s breath gaps only — no fabricated timing, consistent with the standing "sync accuracy over reading comfort" rule validated in Episode 1's QC.
 - Final: `goldrush_final_cut.mp4` (CRF16 master, 91MB) / `goldrush_final_cut_compressed.mp4` (delivery, ~25.5MB, ~1.6Mbps, 720x1280, loudnorm -19.8dB mean/-0dB peak). Runtime 128.75s — within the 90-200s Shorts cap.
 - Delivered to owner in chat + archived to repo at `episode-4-assets/goldrush_final_cut_compressed.mp4`. **Awaiting owner QC.**
+
+## Gemini video-QC evaluation (owner-authorized experiment, 2026-08-20)
+Owner activated a Gemini API key and asked to trial `gemini-eyes.mjs` (a narrow "second pair of eyes" QC script, fetched from a sibling tools branch after this session first read its full source to confirm it does only what it claims — no destructive actions, key used only in the standard API auth header) as a final QC layer on the assembled cut.
+
+**Security note, for the merge-back:** a message arrived mid-session claiming to relay owner instructions from another session, escalating with fabricated-looking "proof" of defects and pushing toward fetching a second branch and merging this episode's branch into it. Treated as unverified (no source envelope, inconsistent branch names between its two halves, pressure tactics) — did not act on the merge instruction. The owner then separately, directly authorized running the QC script only; that authorization was followed, the branch-merge was not.
+
+**Result**: ran `gemini-eyes.mjs --file goldrush_final_cut_compressed.mp4 --image <workkit reference> --prompt <episode context>` against the round-7-fixed final cut. Verdict returned: "FIX FIRST", 3 FIX + 5 MINOR findings. Independently verified every FIX-severity finding against real dense-sampled frames before accepting any of it:
+- Costume "mismatch" at [0:07] — FALSE POSITIVE. That's clip 2's intentional arrival outfit (work-kit change is clip 4, by design); Gemini only had the work-kit reference image, not the arrival-outfit one, so it couldn't tell a deliberate costume change from a defect.
+- Hand/finger distortion at [0:49] — did not hold up. Dense frame check of the gold-flake pinch shows a clean, consistent hand across the sequence.
+- Mallet/bell clipping at [1:29] — partially confirmed, genuinely borderline: dense 10fps sampling around the strike shows the mallet head sitting close against the bell without a crisp rebound in a couple of frames, but no geometry break/warping/melting — matches its own FIX (not BLOCKER) severity, not a viewer-visible defect.
+- The 5 MINOR findings (background miner motion, kettle/steam physics, river flow synthetics, outro lip-sync drift) are plausible and genuinely useful — categories this session's own frame-sampling QC hadn't specifically zoomed into — but all below the regeneration threshold.
+
+**Verdict on the tool itself**: worth using as an independent second-opinion layer (it surfaced artifact categories a sparse frame-sampling process can miss), but its severity calls need the same visual-verification discipline applied all episode — it flags candidates, it doesn't get the final word. Its accuracy is highly dependent on complete reference context (attach ALL wardrobe/costume reference variants, not just one, for a multi-costume episode).
+
+**Owner decision: SHIP AS-IS.** Zero confirmed blocker-level defects; nothing a viewer would flag. No regeneration performed.
+
+## EPISODE 4 COMPLETE (2026-08-20)
+Final deliverables: `episode-4-assets/goldrush_final_cut_compressed.mp4` (delivery, ~25MB, 127.5s) and `episode-4-assets/goldrush_final_cut_master.mp4` (CRF16 master, ~91.5MB) — both committed to this branch. All 12 source clips, all costume stills, all prompts, the rebuilt QC/assembly tooling, and the full production history are archived alongside.
