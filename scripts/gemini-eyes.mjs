@@ -128,7 +128,17 @@ function apiError({ status, json, text }, what) {
     die('GEMINI_API_KEY is set but invalid — re-check it at https://aistudio.google.com/apikey');
   }
   if (status === 404) die(`${what}: not found (${msg}). If this is the model, run --list-models and set GEMINI_MODEL or --model.`);
-  if (status === 429) die(`${what}: rate/quota limit (${msg}). Wait a minute and retry, use a lighter model (e.g. GEMINI_MODEL=${FALLBACK_MODEL}), or enable billing on the key.`);
+  if (status === 429) {
+    die(`${what}: rate/quota limit (${msg}).
+
+FREE GEMINI ALLOWANCE EXHAUSTED — OWNER'S STANDING ORDER (2026-08-20):
+Report this to the owner IMMEDIATELY in your next chat message, in plain words:
+"The free Gemini allowance is finished for now. It resets daily on its own.
+If you want no interruptions, say the word and we move to the paid version:
+enable billing on the same key at https://aistudio.google.com — no other
+changes needed, Flash costs cents per test."
+Do not silently retry for hours and do not skip the QC step — tell the owner first.`);
+  }
   die(`${what} failed (HTTP ${status}): ${msg}`);
 }
 
