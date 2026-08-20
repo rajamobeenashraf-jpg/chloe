@@ -71,7 +71,16 @@ Gate 1 approved by owner 2026-08-20: GRITTY look locked for both outfits. Grit b
 |---|---|---|---|---|
 | 1 | clip01_v1.mp4 | 7.06s | storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/20/36e32c6b38ad945a272e0b6ca5d88703.mp4 | PASS |
 | 2 | clip02_v1.mp4 | 9s | .../aa8dfd590d44eb9da8c1934c5df58e8d.mp4 | PASS |
-| 3 | clip03_v1.mp4 | 11s | .../15a676d4eb0b3268a6db2e1d1072ead2.mp4 | PASS |
+| 3 | clip03_v2.mp4 | 11s | .../15a676d4eb0b3268a6db2e1d1072ead2.mp4 (v1; v2 = local audio fix) | PASS, owner-accepted after fix |
+| 4 | clip04_v1.mp4 | 8s | .../701a0240ba7bc4bd7da01e3ae67360f8.mp4 | PASS, owner-accepted |
+| 5 | clip05_v1.mp4 | 12s | .../8a91a00038944f5a63253d4d874ef5ab.mp4 | PASS, owner-accepted |
+| 6 | clip06_v1.mp4 | 10s | .../8e0e68c1bcc3a1e81082814fd255a26d.mp4 | PASS (chained off clip05 end frame), owner-accepted |
+| 7 | clip07_v1.mp4 | 13s | .../4a4a061e0ea206dffb1088e552ac8150.mp4 | PASS, owner-accepted |
+
+
+### Owner QC round (2026-08-20): clip 3 egg-crack — fixed editorially
+Owner: pressing the egg produced an audible crack (reads as a RAW egg) before she eats it. Diagnosis on real audio: isolated 39ms transient at 5.73s, crest 6.4, sitting alone between two detected silences — zero dialogue overlap. Fix: replaced 5.69–5.81s with room tone lifted from the 7.0s quiet stretch, 10ms acrossfades, video stream copied untouched → clip03_v2.mp4. Verified: no residual >3000-peak transient in the 5.5–6.0s window. Lesson for merge-back: foley-scale transients between speech runs are always editorially fixable; check crest factor + silence-run overlap before considering a reshoot.
+Owner accepted clips 1–7 ("All accepted"). Clips 8–9 generating.
 
 ## Status
 - [x] Branch + project scaffold + engine verified
