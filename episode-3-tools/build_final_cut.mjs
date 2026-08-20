@@ -31,8 +31,17 @@ const W = 720, H = 1280, FPS = 24, AR = 48000;
 // stillness. That dead tail was landing right at the 11→12 join and read
 // as a frozen/held frame before the final clip started. Trimming it here
 // — before normalization — means the join lands on real motion instead of
-// masking a frozen source with a bigger blend. No other clip is trimmed.
-const TRIM_OUT = { 11: 10.40 };
+// masking a frozen source with a bigger blend. REVISED (owner round 4):
+// 10.40 kept the true generation-defect frames out, but left ~1.4s of a
+// genuinely near-static real hold (8.958-10.375, confirmed by frame-level
+// motion analysis — YDIF drops from 1.5-8 down to 0.05-0.4 right at 8.958)
+// right before the cut into clip 12, which still read as a freeze even
+// though the frames technically differ. Her actual dialogue (per the fixed
+// caption timing) ends at 6.7s; real natural reaction motion continues
+// through 8.92s. Trimming to 8.95 keeps all of that and cuts before the
+// static hold begins, landing the transition on visible motion instead of
+// a near-frozen frame. No other clip is trimmed.
+const TRIM_OUT = { 11: 8.95 };
 
 function sh(cmd, argv) {
   return execFileSync(cmd, argv, { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
@@ -78,14 +87,61 @@ for (let k = 1; k < files.length; k++) {
 }
 console.log(`assembling ${files.length} clips, projected runtime ${elapsed.toFixed(1)}s`);
 
-const master = path.join(ASSETS, "boston1775_final_cut.mp4");
+const body = path.join(ASSETS, "boston1775_body.mp4");
 const argv = ["-y"];
 for (const f of files) argv.push("-i", f);
 argv.push("-filter_complex", fc.join(";"),
   "-map", "[vout]", "-map", "[aout]",
   "-c:v", "libx264", "-crf", "16", "-preset", "medium",
-  "-c:a", "aac", "-b:a", "192k", master);
+  "-c:a", "aac", "-b:a", "192k", body);
 sh("ffmpeg", argv);
+console.log(`body: ${body} (${dur(body).toFixed(1)}s)`);
+
+// 2b. end card — "Part One" / series-continuation tag (owner request,
+// round 4). Clip 12 already fades to true black in-camera (her hand
+// covers the lens, per the scripted outro), so the card is built as a
+// continuation of that same black rather than a hard cut into a new
+// graphic — it reads as one unbroken fade, not an inserted screen. Text
+// uses DejaVu Serif (distinct from the DejaVu Sans caption font) for a
+// period-appropriate, cinematic feel; a thin rule separates the "PART
+// ONE" tag from the continuation line, in the muted-warm tone of the
+// episode's grade rather than pure white. Centered in the safe area, well
+// clear of the caption zone. Silent (no music tool available); a short
+// audio crossfade from clip 12's tail avoids a hard silence-to-silence
+// cut into it.
+const CARD_DUR = 3.2;
+const endcard = path.join(ASSETS, "endcard.mp4");
+sh("ffmpeg", ["-y", "-f", "lavfi", "-i", `color=c=black:s=${W}x${H}:d=${CARD_DUR}:r=${FPS}`,
+  "-f", "lavfi", "-i", `anullsrc=r=${AR}:cl=stereo`, "-t", String(CARD_DUR),
+  "-vf",
+    "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:" +
+      "text='PART ONE':fontsize=34:fontcolor=0xC9B98A:" +
+      "x=(w-text_w)/2:y=h/2-90:alpha='if(lt(t,0.3),0,if(lt(t,1.0),(t-0.3)/0.7,1))'," +
+    "drawbox=x=(iw-140)/2:y=h/2-42:w=140:h=2:color=0xC9B98A@0.85:t=fill:" +
+      "enable='gte(t,0.9)'," +
+    "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf:" +
+      "text='The Story Continues…':fontsize=44:fontcolor=0xF0E6D2:" +
+      "x=(w-text_w)/2:y=h/2-10:alpha='if(lt(t,1.0),0,if(lt(t,1.8),(t-1.0)/0.8,1))'," +
+    "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:" +
+      "text='Part Two — Coming Soon':fontsize=22:fontcolor=0xC9B98A:" +
+      "x=(w-text_w)/2:y=h/2+55:alpha='if(lt(t,1.6),0,if(lt(t,2.4),(t-1.6)/0.8,1))'",
+  "-c:v", "libx264", "-crf", "16", "-preset", "medium",
+  "-c:a", "aac", "-b:a", "192k", endcard]);
+console.log(`endcard: ${endcard} (${CARD_DUR}s)`);
+
+// 2c. append: short video xfade (0.3s, matches clip12's own fade-to-black
+// so the seam is invisible) + audio acrossfade (0.3s) so the transition
+// into the silent card isn't an abrupt digital cut.
+const bodyDur = dur(body);
+const CARD_BLEND = 0.30;
+const master = path.join(ASSETS, "boston1775_final_cut.mp4");
+sh("ffmpeg", ["-y", "-i", body, "-i", endcard,
+  "-filter_complex",
+    `[0:v][1:v]xfade=transition=fade:duration=${CARD_BLEND}:offset=${(bodyDur - CARD_BLEND).toFixed(3)}[vout];` +
+    `[0:a][1:a]acrossfade=d=${CARD_BLEND}[aout]`,
+  "-map", "[vout]", "-map", "[aout]",
+  "-c:v", "libx264", "-crf", "16", "-preset", "medium",
+  "-c:a", "aac", "-b:a", "192k", master]);
 console.log(`master: ${master} (${dur(master).toFixed(1)}s)`);
 
 // 3. compressed delivery copy (~1.5Mbps) for chat
