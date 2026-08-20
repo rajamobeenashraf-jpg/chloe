@@ -14,6 +14,19 @@
 - [ ] Gate 3: stitched cut approval
 - [ ] Gate 4+: QC rounds
 
+## OWNER DIRECTIVE (2026-08-20, this chat — BINDING for every Ep 3 generation)
+> Use the re-sent reference images as the character sheets. Log the identity strictly. She must appear **100% natural, realistic and human — never AI-plastic**.
+
+Enforcement in every prompt (stills AND video):
+1. Frozen v4 identity string VERBATIM (unchanged rule).
+2. The v4 aesthetic block is now mandatory, not optional garnish: "Documentary photograph, RAW 35mm Kodak Portra 400 color, natural photographic lighting, visible skin pores and fine vellus facial hair, natural subtle human imperfections, believable anatomy, real fabric texture. NOT 3D render, smoothed-skin filter, beauty retouch, plastic skin."
+3. Added negative reinforcement line: "no doll-like smoothing, no waxy or airbrushed skin, no oversaturated glamour lighting, no uncanny symmetry — a real human being filmed on a real camera."
+4. QC gate: any render with plastic/smoothed skin, missing freckles, or beauty-filter look is rejected before it reaches the owner.
+
+**Reference set received in chat 2026-08-20** (owner re-sent after container loss): 4-panel turnaround sheet (corset dress + boots), 4-panel face-detail sheet (bust / eye / lips / profile), Wild West movie frame (talk-to-lens, golden hour street), and 6 single-view renders (front ×3, 3-4 ×2, profile ×2 across both batches). Identity verified against the v4 checklist: slim sculpted face + defined cheekbones ✓, warm golden-tan skin with visible freckles ✓ (no ivory/porcelain drift), large hazel almond eyes ✓, bold thick dark-brown arched brows ✓, full nude-caramel lips ✓, bronde balayage center part ✓, early twenties ✓.
+
+**Transport problem:** chat photos arrive as visual context only — no bytes on disk — so they can't be passed to PAI as refs yet. Waiting on owner to deliver the same images as usable data (full CloudFront URLs, a repo upload, or file attachments).
+
 ## Container-loss finding (for the shared-doc merge later)
 The five v4 master reference images existed only as local files in the old container and as **truncated** CloudFront URLs in `CHARACTER_LOCK.md` (`d2ol7oe51mr4n9.cloudfront.net/.../<uuid>.png` — the path segment was elided). The old container died → refs unrecoverable from this environment without the full URLs. Two fixes:
 1. Owner pastes the five full URLs (this episode's unblock). CloudFront **is** downloadable from this environment now (verified: the full Higgsfield URL in `PROJECT_HANDOFF.md` returns 200), so the truncation is the only obstacle.
