@@ -3,9 +3,9 @@
 
 ---
 
-## Character name candidates (decision pending — see `CHARACTER_LOCK.md`)
+## Character name — DECIDED: **HAZEL** (owner lock, 2026-08-20; recorded in `CHARACTER_LOCK.md`)
 
-### Recommended: **Hazel**
+### Was recommended: **Hazel** — chosen
 - The locked v4 identity string literally reads "large doe-like almond **light-hazel** eyes" — the name is already in her DNA. Her whole palette IS hazel-toned: bronde hair, golden-tan skin, hazel eyes.
 - Vintage-yet-current American name; believable spoken aloud in 1692, 1775, 1875, or 2026.
 - **The sign-off writes itself: "Hazel — out of time."** Double meaning (time traveler / always racing a clock) makes the outro ritual a brand. Channel name: *Hazel Out of Time*.

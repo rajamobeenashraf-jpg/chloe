@@ -1,4 +1,7 @@
-# OFFICIAL CHARACTER LOCK — "The Model Girl" (v4 "as-filmed" — owner decision 2026-08-19)
+# OFFICIAL CHARACTER LOCK — HAZEL (v4 "as-filmed" — owner decision 2026-08-19)
+
+## NAME LOCK — owner decision 2026-08-20: her name is **HAZEL**
+The character's name is Hazel — locked by the owner in chat ("name is hazel. lock it"). The name may now appear in dialogue, captions, on-screen text, and packaging. Recommended (not yet owner-locked): sign-off ritual "Hazel — out of time" and channel name *Hazel Out of Time*. Owner still needs to claim the YouTube handle himself (this environment cannot verify handle availability).
 **This is the canonical face for ALL future generations, videos, thumbnails and marketing. Do not regenerate the face from text. Always generate FROM the master reference images below. Age is locked at early twenties (adult).**
 
 > **v4 supersedes v3.** The Wild West 1875 movie clips drifted from the v3 round-cute master during PAI Pro video generation — the as-filmed character is slimmer-faced, warmer golden-tan, and more naturalistic. Owner confirmed: lock the as-filmed v4 look permanently. v3 is archived below for continuity only.
@@ -133,5 +136,5 @@ The EXACT same woman shown in the reference images — the character sheets and 
 - [x] Strict Nano Banana Tier-3 set generated and QC'd — done 2026-08-20 (8 views)
 - [x] Core reference images committed into this repo (owner upload + fullbody/back additions)
 - [x] Higgsfield Soul training started 2026-08-20 (see soul_id above) — verify it completes, then run an identity test render vs Tier 1 before production use
-- [ ] Name the character (pending owner decision — "Hazel" recommended, channel "Hazel Out of Time"; owner to verify handle availability)
+- [x] Name the character — **HAZEL**, locked by owner 2026-08-20 (see NAME LOCK at top). Owner still to claim the YouTube handle.
 - [ ] Costumes for future episodes should be generated against v4 master refs, not v3
