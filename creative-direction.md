@@ -94,6 +94,12 @@ Prompted by Ep 1 clip 8 (the escape run): flat running/watching is the laziest f
 - Set-pieces must be *solved by her* (teamwork, tools, quick thinking), and where possible pay off an earlier emotional beat so the spectacle carries meaning.
 - This is a script-level floor, applied at writing time — not a post-generation fix. Check every beat against it before any prompt is written.
 
+## 13. Natural human realism — STRICT, non-negotiable (owner mandate, 2026-08-20)
+This is a hard pass/fail bar, not a style preference. Before approving ANY generated image or video frame: does she read as a real, physically-photographed/filmed human being, or does she read as AI-generated, plastic, or over-smoothed? Any doubt → regenerate, don't ship it.
+- The frozen identity string in `CHARACTER_LOCK.md` now embeds this requirement directly (natural skin texture, visible pores, fine vellus hair, authentic micro-imperfections, subtle natural asymmetry) and explicitly forbids "AI-generated look" / "synthetic appearance" in the same clause as 3D-render/plastic/beauty-retouch.
+- This applies to every capability — stills, video clips, thumbnails — and every episode from here forward, not just the current one.
+- QC checklist item 2 ("Realism — skin, physics, anatomy") is where this gets caught; treat "does she look real" as its own explicit check, separate from character-identity matching (she can match the locked identity perfectly and still read as artificial if skin/lighting/texture drift toward the AI-plastic look).
+
 ## Status: all 10 clips produced (2026-08-19)
 Full shot list from `PROJECT_HANDOFF.md` §3 is generated and owner-approved, final filenames in `pai-pro/projects/wildwest/assets/`:
 1. `clip1_vlog_v3.mp4` — cold-open tease, reshot in V-mode (talk-to-lens) to match clip 7/8's handheld grammar; debris-reaction physics/pacing carried over from the earlier fix. Supersedes `clip1_pai_v2.mp4` (the original Nova-style cinematic version, kept only for reference).
