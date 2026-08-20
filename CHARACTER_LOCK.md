@@ -30,22 +30,37 @@ All CDN assets below live at `https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9
 | `fe2de904-fe32-4806-a0e4-8b36b33812c4` | |
 
 ### Individual single-view renders (9) — generated via PAI Pro `image-edit-pro`, referencing the 2 sheets + the first 10 movie frames above
-Folder: `pai-pro/projects/wildwest/assets/refset_v2/` (supersedes the original `assets/refset/` folder, which was lost to a container reset and is no longer valid — do not reference it).
 
-| File | View | Notes |
-|---|---|---|
-| `01_front_portrait.png` | Front portrait | ✅ |
-| `02_slight_34_left.png` | Slight 3/4 left | ✅ |
-| `03_34_left.png` | 3/4 left | ✅ |
-| `04_profile_left.png` | Full left profile | ✅ |
-| `05_34_right.png` | 3/4 right | ✅ |
-| `06_profile_right.png` | Full right profile | ✅ |
-| `07_low_angle.png` | Low angle | ❌ never generated — refused 3× by the underlying model's content filter (flagged both close identity-matching and the corset styling); retry later with adjusted framing if needed |
-| `08_elevated_angle.png` | Elevated angle | ✅ |
-| `09_fullbody_front.png` | Full body front | ✅ |
-| `10_fullbody_34.png` | Full body 3/4 | ✅ |
+All 9 now have **permanent CDN URLs** (uploaded to Higgsfield storage 2026-08-20, host `d2ol7oe51mr4n9.cloudfront.net`, same path prefix as above), and 7 are also **committed in this repo's root** (owner upload). QC-verified ✅ = checked against the sheets for identity drift.
 
-These 9 files were sent directly to the owner (2026-08-20) and are not otherwise hosted on a persistent CDN — if regenerating in a fresh session, re-run PAI Pro `image-edit-pro` against the 2 sheets + 10 movie frames above with the identity string below.
+| File | View | CDN id | In repo | QC |
+|---|---|---|---|---|
+| `01_front_portrait.png` | Front portrait | `02cea7f6-5ec6-4839-972e-dcbab1c377fb` | ✅ | ✅ |
+| `02_slight_34_left.png` | Slight 3/4 left | `e9e69f89-dd65-4452-b501-25be226fe248` | ✅ | ✅ |
+| `03_34_left.png` | 3/4 left | `5ae3feea-d43c-489c-a8ce-d2bb5246942f` | ✅ | ✅ |
+| `04_profile_left.png` | Full left profile | `2582a313-aee8-4da7-a1b2-e2387355b6a0` | ✅ | ✅ |
+| `05_34_right.png` | 3/4 right | `ac65310e-5981-471e-80ee-333f92aaefca` | ✅ | ✅ |
+| `06_profile_right.png` | Full right profile | `5e86de48-301e-4e87-96cc-23755cf39c9b` | ✅ | ✅ |
+| `07_low_angle.png` | Low angle | — | — | ❌ never generated — refused 3× by the content filter (close identity-matching + corset styling flags); retry later with adjusted framing if needed |
+| `08_elevated_angle.png` | Elevated angle | `4b3c3713-3839-4a5f-9859-d5328b84e934` | ✅ | ✅ |
+| `09_fullbody_front.png` | Full body front | `e35e4fd7-9550-46e6-b1be-7c15242b1cd1` | ✅ | ✅ |
+| `10_fullbody_34.png` | Full body 3/4 | `caf8fab5-1946-430b-9020-c4a39a9da3b0` | ✅ | ✅ |
+
+### Strict Nano Banana Pro set (8) — Tier-3 angle coverage, generated 2026-08-20
+Generated with hard "identity-preserving re-render" prompts (references win over prompt text, zero reinterpretation) plus calibration lines (freckles subtle not amplified; makeup natural not glam; skin warm golden-tan not orange; lips full glossy never thin). Every image below was **individually QC-verified by eye** against the PAI references before acceptance; two initial fails (a 3/4-right and a left profile that rendered as a different woman) were rejected and regenerated. Host `d8j0ntlcm91z4.cloudfront.net`, path `user_3HHW3t9HKeBMFC3M9ni2feFvlmB/<file>`.
+
+| View | CDN file |
+|---|---|
+| Tight close-up front | `hf_20260820_082359_3b1ee5ae-d36a-4e72-88ff-7faa63e83a60.png` |
+| Chest-up front | `hf_20260820_082400_34b8e538-270c-488a-ba71-5be99d79e523.png` |
+| 3/4 left | `hf_20260820_082359_f7339c48-a45d-4e66-b5a4-37ab6ec36da3.png` |
+| 3/4 right (regen) | `hf_20260820_082359_7d9c86ad-959f-4d63-b1b7-aa2f3eea5ed8.png` |
+| Left profile (regen) | `hf_20260820_082726_8f893f2d-3902-41a8-a986-b0be87acb1ad.png` |
+| Right profile | `hf_20260820_082359_396f677f-3325-4f00-8dd8-477736b5efd6.png` |
+| Full body front | `hf_20260820_131720_ad1ff561-9aa7-421d-9b83-2739aa93396c.png` |
+| Full body back (only single-image back view in the kit) | `hf_20260820_131539_d87ea9b2-56e4-452a-af9b-18ffda07369d.png` |
+
+**Reference hierarchy (never invert):** Tier 1 = the 2 PAI character sheets + PAI individual views (identity anchors). Tier 2 = the 10 movie frames (as-filmed naturalism). Tier 3 = this Nano Banana set (angle coverage/supplementary). Always generate from Tier 1/2 anchors; NEVER chain generations off generated outputs — generational drift compounds. Roughly 1 in 6 renders drifts to a different face even with perfect prompts and refs: QC every render against Tier 1 before accepting it.
 
 ---
 
@@ -96,7 +111,9 @@ The EXACT same woman shown in the reference images — the character sheets and 
 ---
 
 ## Next steps
-- [ ] QC the 10 individual refset views (`assets/refset/`) once generation completes — approve or flag any identity drift
-- [ ] If approved refset views are available, consider Higgsfield Soul training from the best 10–15 of them for hard-locked future consistency
+- [x] QC the individual refset views — done 2026-08-20; 9/10 approved (see tables above)
+- [x] Strict Nano Banana Tier-3 set generated and QC'd — done 2026-08-20 (8 views)
+- [x] Core reference images committed into this repo (owner upload + fullbody/back additions)
+- [ ] Higgsfield Soul training from the best 15–20 verified images for hard-locked future consistency (recommended before Episode 2 heavy generation)
 - [ ] Name the character (pending owner decision)
 - [ ] Costumes for future episodes should be generated against v4 master refs, not v3
