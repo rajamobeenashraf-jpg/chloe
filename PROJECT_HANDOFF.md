@@ -1,5 +1,13 @@
 # PROJECT HANDOFF — AI Historical Time-Travel Channel
-**Owner: Mobeen Ashraf · Last updated: 2026-08-19**
+**Owner: Mobeen Ashraf · Last updated: 2026-08-20**
+
+## 0. STATE UPDATE 2026-08-20 (supersedes older lines below where they conflict — newest-command-wins)
+- **Episodes 1–4 are PRODUCED** (Wild West 1875, Salem 1692, Boston 1775, Gold Rush 1849).
+- **Episodes 5–9 are LOCKED and fully scripted** (owner decision 2026-08-20): Ep 5 The Day the Dinosaurs Died · Ep 6 The Day Julius Caesar Was Assassinated · Ep 7 I Sailed to Troy (daylight/golden-hour only) · Ep 8 The Night the Berlin Wall Fell (aim release Nov 9) · Ep 9 I Helped Build the Great Pyramid (she speaks with Khufu). Clip-by-clip scripts: `episodes-5-9-scripts.md` (v3, linear).
+- **The character's name is HAZEL** (owner lock, in `CHARACTER_LOCK.md`); sign-off ritual "Hazel — out of time" is in all five scripts (proposed status recorded in CLAUDE.md). The face lock is **v4 "as-filmed"** per `CHARACTER_LOCK.md` — §2 below describes the superseded v3 state; CHARACTER_LOCK is the authority.
+- **OPENING LAW (owner lock):** linear storytelling only — no flash-forward cold opens, no rewind cards. Recorded in `chloe-craft-study-2026-08-20.md` §4.1, which is BINDING for all scripts and production alongside `creative-direction.md`.
+- **Caption position owner-locked:** marginV=320 (720×1280 PlayRes) — see `creative-direction.md` §16 and `pai-pro-tooling/salem/captions_data.mjs`.
+- Backlog of future ideas (#1–20, scored): `episode-ideas-backlog.md`. Delaware-Crossing 250th (Dec 25–26) is open for Ep 10 — decide by mid-November.
 
 ## 1. Project in one paragraph
 Building an AI-generated cinematic historical channel for the US market, reverse-engineered from **Chloe VS History** (persona-led time-travel vlogs; 371k subs) and **Nova Time Travel** (cinematic AI films; superior watch-time economics). Strategy: Chloe's talk-to-lens persona format + US-history topics + Nova's runtime/packaging for long-forms. Full analysis in `chloe-vs-history-strategy-report.md`.
