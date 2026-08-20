@@ -25,7 +25,7 @@
 //
 // Usage: node qc_pass.mjs [--assets /path/to/assets] [--clips 1,2,...]
 
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { CLIP_COUNT, SUB_STYLE, CARD } from "./transitions.mjs";
@@ -41,7 +41,9 @@ const QC_DIR = path.join(ASSETS, "qc");
 fs.mkdirSync(QC_DIR, { recursive: true });
 
 const MIN_SILENCE = 0.12;     // silencedetect d= (§11 round 3 #1)
-const NOISE_DB = "-30dB";
+const VOICE_LO = 250;         // band-pass low edge (Hz) — cuts hoofbeat/wind rumble
+const VOICE_HI = 3500;        // band-pass high edge (Hz) — vocal range ceiling
+const REL_MARGIN_DB = 18;     // silence threshold = this clip's own peak - margin
 const MICRO_SEG = 0.15;       // drop detector-noise blips (§11 round 2)
 const MERGE_GAP = 0.3;        // merge fragments into utterance runs (round 3 #2)
 const MIN_CUE = 0.3;
@@ -55,20 +57,40 @@ function ffprobeDuration(file) {
 }
 
 // --- 1. speech segments from real audio ---------------------------------
+// REVISED (owner feedback round 2, 2026-08-20): two real bugs found here.
+// (a) silencedetect writes its markers to STDERR, but this used to read
+//     execFileSync's return value — which is stdout only — so the log was
+//     always empty and every clip fell back to "one unbroken speech block
+//     spanning the whole clip," regardless of real pauses. Fixed by using
+//     spawnSync and reading result.stderr directly.
+// (b) a single fixed -30dB absolute threshold can't separate her voice
+//     from loud, continuous background noise (galloping hoofbeats, wind,
+//     tavern din) — on a noisy clip the ambient floor alone can sit above
+//     -30dB, so silencedetect finds nothing at all (exactly clip 1's
+//     failure: zero silence entries on a clip where only 4.1s of the 7.06s
+//     is actually speech). Fixed with two changes: band-pass the audio to
+//     roughly the vocal range (250Hz–3.5kHz) before detecting, to suppress
+//     low-frequency thuds and some broadband noise outside where speech
+//     lives; and measure each clip's own peak level first (astats) and set
+//     the silence threshold relative to that peak, not a fixed number, so
+//     a loud action clip and a quiet dialogue clip each get an appropriate
+//     cutoff instead of one-size-fits-all.
+function ffmpegStderr(args) {
+  const r = spawnSync("ffmpeg", args, { encoding: "utf8" });
+  return r.stderr ?? "";
+}
+function peakDb(file) {
+  const log = ffmpegStderr(["-hide_banner", "-i", file, "-af",
+    `highpass=f=${VOICE_LO},lowpass=f=${VOICE_HI},astats=metadata=0:reset=0`, "-f", "null", "-"]);
+  const peaks = [...log.matchAll(/Peak level dB:\s*(-?[\d.]+)/g)].map(m => +m[1]);
+  return peaks.length ? Math.max(...peaks) : -20; // fallback if astats parse fails
+}
 function speechSegments(file, dur) {
-  let log = "";
-  try {
-    execFileSync("ffmpeg", ["-hide_banner", "-i", file, "-af",
-      `silencedetect=noise=${NOISE_DB}:d=${MIN_SILENCE}`, "-f", "null", "-"],
-      { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
-  } catch (e) { log = e.stderr?.toString() ?? ""; }
-  // silencedetect logs to stderr even on success
-  if (!log) {
-    const r = execFileSync("ffmpeg", ["-hide_banner", "-i", file, "-af",
-      `silencedetect=noise=${NOISE_DB}:d=${MIN_SILENCE}`, "-f", "null", "-"],
-      { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).toString();
-    log = r;
-  }
+  const peak = peakDb(file);
+  const threshold = Math.min(-12, Math.max(-40, peak - REL_MARGIN_DB));
+  const log = ffmpegStderr(["-hide_banner", "-i", file, "-af",
+    `highpass=f=${VOICE_LO},lowpass=f=${VOICE_HI},silencedetect=noise=${threshold}dB:d=${MIN_SILENCE}`,
+    "-f", "null", "-"]);
   const silences = [];
   const startRe = /silence_start: ([\d.]+)/g, endRe = /silence_end: ([\d.]+)/g;
   const starts = [...log.matchAll(startRe)].map(m => +m[1]);
@@ -76,26 +98,46 @@ function speechSegments(file, dur) {
   for (let i = 0; i < starts.length; i++) {
     silences.push([starts[i], ends[i] ?? dur]);
   }
-  // invert silences -> speech
+  // invert silences -> speech, drop only detector-noise micro-blips
   let segs = [], cur = 0;
   for (const [s, e] of silences) {
     if (s > cur) segs.push([cur, s]);
     cur = Math.max(cur, e);
   }
   if (cur < dur) segs.push([cur, dur]);
-  // drop micro-segments, then merge <MERGE_GAP gaps into utterance runs
-  segs = segs.filter(([s, e]) => e - s >= MICRO_SEG);
+  const rawSegs = segs.filter(([s, e]) => e - s >= MICRO_SEG);
+  // separately, merge <MERGE_GAP gaps into utterance runs — only used for
+  // the single-sentence envelope case below, never for multi-sentence
+  // boundary-finding (see allocate() note on why that merge was a bug).
   const runs = [];
-  for (const seg of segs) {
+  for (const seg of rawSegs) {
     const last = runs[runs.length - 1];
     if (last && seg[0] - last[1] < MERGE_GAP) last[1] = seg[1];
     else runs.push([...seg]);
   }
-  return runs;
+  return { rawSegs, runs };
 }
 
-// --- 2. gap-clustering sentence allocation -------------------------------
-function allocate(sentences, runs, dur) {
+// --- 2. word-proportional gap-anchored sentence allocation ----------------
+// REVISED TWICE (owner feedback round 2, 2026-08-20):
+// (a) first pass: ranked gaps between MERGED utterance runs, not raw
+//     segments. Too few real runs meant a blind time-midpoint bisection
+//     guessed most boundaries — produced a 14-word sentence in 0.4s.
+// (b) second pass: ranked gaps between RAW segments instead, but by raw
+//     SIZE alone. That still failed — the two acoustically-longest pauses
+//     in a clip are often just mid-sentence breaths, not the grammatical
+//     sentence break, so the globally-largest gaps can land nowhere near
+//     where one sentence actually ends and the next begins (confirmed on
+//     clip2: the two biggest gaps both sat in the back third of the clip,
+//     so sentence 1 absorbed the first six seconds and the 14-word
+//     sentence 2 got squeezed into 0.4s).
+// Fix: every candidate boundary is still a REAL detected pause (never a
+// fabricated time split) — but which real gaps get used as boundaries is
+// now chosen by matching each sentence's word-count share of the total
+// spoken span, not by gap size. This keeps boundaries grounded in actual
+// silence while making the split reflect how much each sentence actually
+// has to say.
+function allocate(sentences, rawSegs, runs, dur) {
   if (!sentences.length) return [];
   if (!runs.length) {
     // no detected speech at all — flag loudly, don't invent timing
@@ -104,29 +146,55 @@ function allocate(sentences, runs, dur) {
   }
   const n = sentences.length;
   if (n === 1) return [{ start: runs[0][0], end: runs[runs.length - 1][1], text: sentences[0] }];
-  // gaps between consecutive runs, ranked by size
-  const gaps = [];
-  for (let i = 0; i < runs.length - 1; i++) {
-    gaps.push({ idx: i, size: runs[i + 1][0] - runs[i][1] });
+  const segs = rawSegs.length >= n ? rawSegs : runs; // fall back only if truly too few raw segments
+
+  const wordCounts = sentences.map(s => s.split(/\s+/).filter(Boolean).length);
+  const totalWords = wordCounts.reduce((a, b) => a + b, 0);
+  const spanStart = segs[0][0], spanEnd = segs[segs.length - 1][1];
+  const totalSpan = spanEnd - spanStart;
+
+  // proportional target time for each of the n-1 internal boundaries
+  let cumWords = 0;
+  const targets = [];
+  for (let i = 0; i < n - 1; i++) {
+    cumWords += wordCounts[i];
+    targets.push(spanStart + totalSpan * (cumWords / totalWords));
   }
-  const boundaries = gaps
-    .slice().sort((a, b) => b.size - a.size)
-    .slice(0, Math.min(n - 1, gaps.length))
-    .map(g => g.idx).sort((a, b) => a - b);
-  // split runs into n groups at those boundaries
+
+  // candidate boundary positions: midpoint of each real inter-segment gap
+  const candidates = [];
+  for (let i = 0; i < segs.length - 1; i++) {
+    candidates.push({ segIdx: i, pos: (segs[i][1] + segs[i + 1][0]) / 2 });
+  }
+
+  // for each proportional target, take the nearest unused real gap
+  const used = new Set();
+  const chosenSegIdx = targets.map(t => {
+    let best = null, bestDist = Infinity;
+    for (const c of candidates) {
+      if (used.has(c.segIdx)) continue;
+      const d = Math.abs(c.pos - t);
+      if (d < bestDist) { bestDist = d; best = c; }
+    }
+    if (best) used.add(best.segIdx);
+    return best ? best.segIdx : null;
+  }).filter(x => x !== null).sort((a, b) => a - b);
+
+  // split segs into n groups at the chosen real boundaries
   const groups = [];
   let g = [];
-  for (let i = 0; i < runs.length; i++) {
-    g.push(runs[i]);
-    if (boundaries.includes(i)) { groups.push(g); g = []; }
+  for (let i = 0; i < segs.length; i++) {
+    g.push(segs[i]);
+    if (chosenSegIdx.includes(i)) { groups.push(g); g = []; }
   }
   if (g.length) groups.push(g);
-  // fewer groups than sentences (not enough gaps): pad by splitting the longest group evenly
+  // still short a group (fewer real gaps than needed): split the group
+  // furthest from its proportional target, not just the longest one
   while (groups.length < n) {
-    let li = 0, lspan = -1;
+    let li = 0, worst = -1;
     groups.forEach((gr, i) => {
       const span = gr[gr.length - 1][1] - gr[0][0];
-      if (span > lspan) { lspan = span; li = i; }
+      if (span > worst) { worst = span; li = i; }
     });
     const gr = groups[li], s = gr[0][0], e = gr[gr.length - 1][1], mid = (s + e) / 2;
     groups.splice(li, 1, [[s, mid]], [[mid, e]]);
@@ -187,8 +255,8 @@ for (const n of clips) {
     if (cap.manualCues?.length) {
       cues = cap.manualCues.map(c => ({ ...c }));           // hand-timed overrides win
     } else {
-      const runs = speechSegments(src, dur);
-      cues = allocate(cap.sentences ?? [], runs, dur);
+      const { rawSegs, runs } = speechSegments(src, dur);
+      cues = allocate(cap.sentences ?? [], rawSegs, runs, dur);
     }
     cues = refine(cues, n, dur);
   } else {
