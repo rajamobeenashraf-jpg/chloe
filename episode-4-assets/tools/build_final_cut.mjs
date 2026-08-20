@@ -4,10 +4,21 @@
 // Pipeline: per-clip loudnorm → chained xfade (video) + acrossfade (audio)
 // with per-transition durations → CRF16 master + ~1.5Mbps delivery copy.
 //
-// Transition technique per §11 round 2: hard scene/location/lighting changes
-// CUT on a 0.12s blend; genuinely continuous action dissolves at 0.4s;
-// time-passing (into the dusk outro) gets 0.5s. Dissolving between
-// differently-lit locations ghosts — that's why day/night shifts cut.
+// Transition technique, re-tuned round 7 (2026-08-20 owner note: cuts read
+// as "not smooth and natural"). The original near-uniform 0.12s blend was
+// too short to read as either a clean cut or a real dissolve on almost
+// every transition — a 3-frame cross-blend reads as a flash/glitch, not
+// an edit. Reclassified per actual story continuity instead of a flat
+// default: genuine scene/time/location breaks (including the cold-open
+// smash-cut, 1→2) get a clean quick cut (0.2s, ~5 frames — long enough to
+// not flash), pairs that are truly continuous action in the same scene
+// get a real dissolve (0.3-0.5s). A first pass tried a near-instant 0.04s
+// for the smash-cut specifically — that duration triggers a real ffmpeg
+// xfade/encoder bug (a runaway frame-drop loop that truncates the whole
+// output to ~14s while audio stays full length); 0.2s avoids it entirely
+// and the visual difference at a smash-cut is imperceptible anyway.
+// Dissolving between differently-lit locations still ghosts — that's why
+// day/night shifts stay clean cuts, not dissolves.
 //
 // KEEP IN SYNC with qc_pass.mjs TRANSITIONS (caption crossfade margins must
 // match these blend durations).
@@ -28,10 +39,16 @@ const VID = (n) => {
 };
 
 // TRANSITIONS[i] = blend duration between clip i+1 and clip i+2.
-// 1→2 rewind card cut · 2→3 · 3→4 · 4→5 scene changes · 5→6 continuous action
-// 6→7 day→night · 7→8 night→day · 8→9 scene change · 9→10 day→night
-// 10→11 night→day (all cuts) · 11→12 time-passing into dusk outro.
-export const TRANSITIONS = [0.12, 0.12, 0.12, 0.12, 0.4, 0.12, 0.12, 0.12, 0.12, 0.12, 0.5];
+// 1→2 smash-cut cold open (quick cut, see note above re: the 0.04s bug) ·
+// 2→3 store interior, scene cut ·
+// 3→4 diggings exterior, scene cut · 4→5 SAME location, costume change
+// flows into joining the crew — continuous, dissolve · 5→6 continuous
+// riffle action, dissolve · 6→7 day→night time jump, cut · 7→8 night→day
+// jump, cut · 8→9 same day/camp, cholera into claim-jump moments later —
+// continuous, dissolve · 9→10 the alarm bell literally causes the meeting,
+// the strongest continuity in the episode — dissolve · 10→11 new crisis
+// (rain/river) starting, quick cut · 11→12 time-passing into dusk outro.
+export const TRANSITIONS = [0.2, 0.2, 0.2, 0.35, 0.4, 0.2, 0.2, 0.3, 0.45, 0.2, 0.5];
 
 const N = 12;
 const W = 720, H = 1280, FPS = 24;

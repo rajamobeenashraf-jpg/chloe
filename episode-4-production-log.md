@@ -119,6 +119,28 @@ Owner caught one more issue in v8: the pouch was described as "already snagged o
 
 Total attempts on clip 11: 9 (v1-v9). Final locked version: `clip11_v9.mp4`.
 
+
+## PERMANENT RULE (owner instruction, 2026-08-20) — propose for creative-direction.md §11 merge
+> "Given how many caption bugs surfaced in the earlier episode's pipeline, build captions with extra rigor: real audio-grounded timing (not guessed from prompts), cross-checked against actual mouth-movement frames where ambiguous."
+
+Locked as standing practice for this chat and flagged for merge into the shared `creative-direction.md` §11 caption spec so it applies to every future episode chat:
+1. Caption timing is ALWAYS derived from real detected audio (silencedetect on the actual clip's extracted audio), never from generation-prompt text or guessed pacing — already standing practice, reaffirmed.
+2. **NEW**: wherever automated audio-timing is ambiguous — a single cue spanning most/all of a clip because no real silence gap was detected (loud background noise, e.g. clip 9's alarm bell drowning her shout), an unusually long tail cue, or any cue whose duration looks implausible for its word count — cross-check by extracting video frames at that cue's start and end and visually confirming her mouth is actually open/moving at the cue's start and closed/still immediately after its end. Audio timing alone is not sufficient in these cases; the frame check is mandatory, not optional, before that cue ships.
+
+## Round 7 fixes (owner: transitions not smooth, captions not synced to speech on/off) — 2026-08-20
+Two distinct real bugs, both root-caused and fixed (not patched around):
+
+**Captions — two bugs found in sequence:**
+1. The original `allocateCues()` had a fallback branch (used whenever detected speech-runs were fewer than my hand-written sentence count — which was MOST clips, since fast delivery has more real breath-pauses than clause boundaries) that did proportional character-length splitting across the ENTIRE multi-run speech span. This produced badly wrong windows — e.g. "California, 1849." (2 words) held on screen for ~4 seconds. This is exactly the class of bug the owner asked to guard against going forward (see permanent rule above).
+2. First fix attempt: one caption cue per real detected speech run, words distributed proportionally by run duration. This fixed the sync but broke readability — sentences got chopped mid-clause across cues ("for gold. Most go home with" / "nothing. My plan?").
+3. **Real fix**: cues stay whole sentences, but timing is computed on a "virtual" timeline built by concatenating ONLY the real detected speech runs (silence collapsed out) — a sentence's word-position maps onto that virtual timeline and back to a real in-run clip-time. This guarantees every cue's start/end lands on real speech (appears when she starts that line, disappears when she finishes it) while keeping full readable sentences. Re-ran `qc_pass.mjs` across all 12 clips with this algorithm — output re-verified clip by clip, no more multi-second orphan windows, no more mid-clause breaks.
+4. Reversed the §11-round-3 "extend into silence, never cap the slow end" policy specifically for the disappear-side: extending past real speech is exactly what the owner flagged as wrong this round. Documented as a policy flip, not silently overwritten.
+
+**Transitions — root cause + real bug found while fixing it:**
+1. Root cause of "not smooth": the original table used a near-uniform 0.12s blend (~3 frames) for almost every cut — too short to read as either a clean instant cut or a real dissolve, so it looked like a flash/glitch. It also didn't reflect actual story continuity: several pairs that are genuinely continuous action in one scene (costume change flowing into joining the rocker crew, the alarm bell literally causing the miners' court meeting) were getting the same glitchy micro-blend as genuine scene/time breaks.
+2. Fix: reclassified all 11 transitions by real content adjacency — clean 0.2s cuts for genuine scene/time/location breaks (including the cold-open smash-cut), real 0.3-0.5s dissolves for pairs that are truly continuous in-story (4→5, 5→6, 8→9, 9→10, 11→12).
+3. **Real bug caught during this fix**: tried an even shorter 0.04s near-instant value specifically for the smash-cut (1→2). This triggered a genuine ffmpeg xfade/encoder bug — a runaway frame-drop loop (`drop=2792` in the encoder log) that silently truncated the WHOLE 128s output to ~14s of video while the audio track stayed full length; ffmpeg exited 0 (no error) so this would have shipped undetected without a frame-count sanity check. Caught by verifying `ffprobe` frame count against expected runtime post-build — now a standing verification step, not just trusting exit code 0. Fixed by using 0.2s (same as the other quick cuts) for that pair instead; the perceptual difference at a smash-cut is imperceptible.
+
 ## All 12 clips have a passing version — production complete pending final QC pass
 Final duration total (as-shot, may adjust ~1s in edit): 7+9+11+8+12+10+13+13+12+14+10+11 = 130s (clip 8 grew 12->13s for the realization beat, clip 11 shrank 13->10s in the simplification). Within the 90-200s Shorts cap.
 

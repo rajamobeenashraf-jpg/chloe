@@ -1,21 +1,39 @@
-// Episode 4 QC pass — rebuilt from creative-direction.md §11 (rounds 1-6).
+// Episode 4 QC pass — rebuilt from creative-direction.md §11 (rounds 1-6),
+// then re-tuned per owner round 7 (2026-08-20): captions must appear exactly
+// when she starts speaking and disappear exactly when she stops — no
+// readability-floor extension past real speech, ever. This REVERSES the
+// §11 round-3 "sync accuracy... extend into silence, don't cap the slow
+// end" policy on the disappear-side: extending into trailing silence is
+// now explicitly wrong, because it means the caption outlives the speech.
 //
 // Captions are timed from REAL audio, never from generation prompts:
 //   1. ffmpeg silencedetect (min silence 0.12s) → raw speech segments
-//   2. drop micro-segments (<0.15s detector noise) BEFORE any matching
+//   2. drop micro-segments (<0.15s detector noise)
 //   3. merge segments separated by <0.3s gaps into utterance runs
-//   4. sentence cues: exact 1:1 run-anchoring when counts match; otherwise
-//      "biggest pauses are the real breaks" gap-clustering — the (N-1)
-//      largest inter-run gaps are the sentence boundaries
-//   5. readability floor: a cue implying >4.5 words/sec extends into
-//      adjacent real silence; the slow end is deliberately NOT capped
-//   6. asymmetric crossfade margins: only the INCOMING clip's captions wait
-//      for the blend window; the outgoing clip's last cue runs to its
-//      real detected end
+//   4. sentence cues keep whole sentences (mid-clause breaks are bad
+//      captioning), but timing is computed on a "virtual" timeline built
+//      by concatenating only the real runs (silence collapsed out) — each
+//      sentence's word-position maps to that virtual timeline and back to
+//      a real in-run clip-time. This replaces the old sentence-to-run
+//      matching, whose fallback branch spanned the ENTIRE multi-run
+//      speech range for one short sentence, producing multi-second cues
+//      for two-word lines — the exact bug behind the "California, 1849."
+//      4s-window defect. A first attempt at the fix (one cue per detected
+//      run, word-count-proportional) fixed the sync but broke readability
+//      by splitting sentences mid-clause across cues; the virtual-timeline
+//      approach keeps sentences whole while still landing every boundary
+//      on real speech.
+//   5. asymmetric crossfade margins: only the INCOMING clip's captions wait
+//      for the blend window; the outgoing clip's last cue keeps its real
+//      detected end
 //
-// Sentence text comes from real transcription (curated into
-// captions/clipNN.json as {"sentences": ["...", ...]}); manual overrides go
-// in captions/clipNN.json as {"manualCues": [{text,start,end}]}.
+// Trade-off, stated plainly: a short, word-dense run now flashes fast
+// rather than lingering — that is what "disappears when she's finished"
+// requires, and it is the owner's stated priority for this round.
+//
+// Transcript text comes from real transcription (captions/clipNN.json as
+// {"sentences": [...]}, concatenated into one word stream); manual
+// overrides go in captions/clipNN.json as {"manualCues": [{text,start,end}]}.
 //
 // Style: §11 round-3/round-5 confirmed values. Card: "EARLIER TODAY" at the
 // head of clip 2 (46pt, borderw=3, black@0.8).
@@ -27,7 +45,18 @@ import fs from "node:fs";
 import path from "node:path";
 
 const PROJ = "/home/user/pai-pro/projects/goldrush49";
-export const TRANSITIONS = [0.12, 0.12, 0.12, 0.12, 0.4, 0.12, 0.12, 0.12, 0.12, 0.12, 0.5];
+// Re-tuned round 7 (2026-08-20): the old near-uniform 0.12s value produced
+// a ~3-frame micro-blend on almost every cut — too short to read as either
+// a clean instant cut or a real dissolve, so it looked like a glitchy
+// flash rather than an edit. Reclassified per actual story continuity:
+// genuine scene/time/location breaks (including the cold-open smash-cut,
+// 1->2) get a clean quick cut (0.2s, ~5 frames — enough to not flash,
+// still reads as a cut); pairs that are truly continuous action in the
+// SAME scene get a real dissolve (0.3-0.5s). A near-instant 0.04s was
+// tried for the smash-cut specifically but triggers a real ffmpeg
+// xfade/encoder frame-drop bug (see build_final_cut.mjs) — 0.2s avoids it.
+// index: 1-2  2-3  3-4  4-5   5-6  6-7  7-8  8-9   9-10  10-11 11-12
+export const TRANSITIONS = [0.2, 0.2, 0.2, 0.35, 0.4, 0.2, 0.2, 0.3, 0.45, 0.2, 0.5];
 
 const SUB_STYLE = "FontName=DejaVu Sans,FontSize=8,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BorderStyle=1,Outline=1.1,Shadow=0.4,Bold=1,Alignment=2,MarginV=55,MarginL=70,MarginR=70";
 
@@ -70,52 +99,46 @@ function speechSegments(file, clipDur) {
   return runs;
 }
 
-// --- cue allocation -------------------------------------------------------
-function allocateCues(sentences, runs, clipDur) {
-  if (!sentences.length) return [];
-  let cues;
-  if (runs.length === sentences.length) {
-    cues = sentences.map((text, i) => ({ text, start: runs[i][0], end: runs[i][1] }));
-  } else if (runs.length > sentences.length) {
-    // Gap-clustering: (N-1) largest gaps between runs are sentence boundaries.
-    const gaps = [];
-    for (let i = 1; i < runs.length; i++) gaps.push({ i, gap: runs[i][0] - runs[i - 1][1] });
-    const boundaries = gaps.sort((a, b) => b.gap - a.gap).slice(0, sentences.length - 1).map((g) => g.i).sort((a, b) => a - b);
-    cues = [];
-    let from = 0;
-    for (let k = 0; k < sentences.length; k++) {
-      const to = k < boundaries.length ? boundaries[k] : runs.length;
-      cues.push({ text: sentences[k], start: runs[from][0], end: runs[to - 1][1] });
-      from = to;
-    }
-  } else {
-    // Fewer runs than sentences: split runs proportionally by char count.
-    const totalChars = sentences.reduce((a, s) => a + s.length, 0);
-    const totalSpeech = runs.reduce((a, [s, e]) => a + (e - s), 0);
-    cues = [];
-    let runIdx = 0, posInRun = runs.length ? runs[0][0] : 0;
-    for (const text of sentences) {
-      let need = (text.length / totalChars) * totalSpeech;
-      const start = posInRun;
-      let end = start;
-      while (need > 0 && runIdx < runs.length) {
-        const avail = runs[runIdx][1] - posInRun;
-        if (avail >= need) { end = posInRun + need; posInRun = end; need = 0; }
-        else { need -= avail; runIdx++; if (runIdx < runs.length) posInRun = runs[runIdx][0]; end = runs[runIdx - 1][1]; }
-      }
-      if (end <= start) end = Math.min(start + 0.8, clipDur);
-      cues.push({ text, start, end });
-    }
+// --- cue allocation ---------------------------------------------------
+// Cues stay whole SENTENCES (real captioning craft — mid-clause breaks
+// are unreadable), but their timing is computed on a "virtual" timeline
+// built by concatenating only the real detected speech runs (silence
+// collapsed out). A sentence's word-position within the full transcript
+// maps to a position on that virtual timeline, which maps straight back
+// to a real clip-time INSIDE some speech run — never into a silence gap.
+// That guarantees every cue's start/end lands on real speech: no caption
+// appears before she starts that line, none lingers after she's said it,
+// and normal short breath-pauses inside one sentence stay bridged (a cue
+// can span a small gap mid-sentence — that's correct captioning, not the
+// defect the owner flagged).
+function virtualToReal(vt, runs) {
+  let acc = 0;
+  for (const [s, e] of runs) {
+    const d = e - s;
+    if (vt <= acc + d) return s + (vt - acc);
+    acc += d;
   }
-  // Step 5: readability floor (>4.5 words/sec extends into adjacent silence).
-  for (let i = 0; i < cues.length; i++) {
-    const c = cues[i];
-    const words = c.text.split(/\s+/).length;
-    const minDur = words / 4.5;
-    if (c.end - c.start < minDur) {
-      const nextStart = i + 1 < cues.length ? cues[i + 1].start : clipDur;
-      c.end = Math.min(c.start + minDur, nextStart - 0.05, clipDur);
-    }
+  return runs[runs.length - 1][1];
+}
+
+function allocateCues(sentences, runs, clipDur) {
+  if (!sentences.length || !runs.length) return [];
+  const totalSpeech = runs.reduce((a, [s, e]) => a + (e - s), 0);
+  const wordCounts = sentences.map((s) => s.split(/\s+/).filter(Boolean).length);
+  const totalWords = wordCounts.reduce((a, c) => a + c, 0);
+
+  const cues = [];
+  let wordsBefore = 0;
+  for (let k = 0; k < sentences.length; k++) {
+    const wordsThrough = wordsBefore + wordCounts[k];
+    const vtStart = (wordsBefore / totalWords) * totalSpeech;
+    const vtEnd = (wordsThrough / totalWords) * totalSpeech;
+    cues.push({
+      text: sentences[k],
+      start: virtualToReal(vtStart, runs),
+      end: virtualToReal(vtEnd, runs),
+    });
+    wordsBefore = wordsThrough;
   }
   return cues;
 }
@@ -148,12 +171,16 @@ for (let n = 1; n <= N; n++) {
     cues = allocateCues(cap.sentences, runs, dur);
   }
 
-  // Step 6: asymmetric crossfade margin — INCOMING side only.
+  // Asymmetric crossfade margin — INCOMING side only. A cue that starts
+  // inside the blend window is clamped forward to clear it; if that
+  // clamp would erase the cue entirely (blend outlasts the whole run),
+  // drop it rather than show a caption with no time left to read.
   if (n > 1) {
     const blend = TRANSITIONS[n - 2];
     for (const c of cues) if (c.start < blend) c.start = blend;
+    cues = cues.filter((c) => c.end - c.start > 0.05);
   }
-  for (const c of cues) { c.start = Math.max(0, c.start); c.end = Math.min(dur, Math.max(c.end, c.start + 0.2)); }
+  for (const c of cues) { c.start = Math.max(0, c.start); c.end = Math.min(dur, c.end); }
 
   const srt = path.join(PROJ, "captions", `clip${pad2(n)}.srt`);
   writeSrt(cues, srt);
