@@ -82,6 +82,10 @@ const HELP = `gemini-eyes — Gemini-powered video QC / reference study (see hea
   --image <path>      attach a reference image (repeatable; e.g. the character master)
   --mode <m>          qc | study | custom
   --prompt <text>     extra context (qc/study) or the whole instruction (custom)
+  --fps <n>           frame-sampling rate, 0.1-24. Default: 5 for qc on a local clip
+                      (Gemini's own default of 1 fps can miss sub-second morphs and
+                      flickers), otherwise the API default of 1. Higher = more tokens.
+  --resolution <r>    low | medium | high — per-frame detail vs token cost
   --model <id>        override model (default: $GEMINI_MODEL or gemini-2.5-flash)
   --list-models       list models available to your key
   --help              this text
@@ -185,9 +189,11 @@ function imagePart(path) {
   return { inline_data: { mime_type: mime, data: readFileSync(path).toString('base64') } };
 }
 
-function generate(model, parts) {
+function generate(model, parts, generationConfig) {
+  const body = { contents: [{ role: 'user', parts }] };
+  if (generationConfig) body.generationConfig = generationConfig;
   const r = curlJson('POST', `${BASE}/v1beta/models/${model}:generateContent`,
-    { headers: auth(), body: { contents: [{ role: 'user', parts }] }, maxTime: 600 });
+    { headers: auth(), body, maxTime: 600 });
   if (r.status !== 200) apiError(r, 'generateContent');
   if (r.json.promptFeedback?.blockReason) die(`request was blocked: ${r.json.promptFeedback.blockReason}`);
   const cand = r.json.candidates?.[0];
@@ -209,6 +215,8 @@ for (let i = 0; i < argv.length; i++) {
   else if (a === '--image') opts.images.push(next());
   else if (a === '--mode') opts.mode = next();
   else if (a === '--prompt') opts.prompt = next();
+  else if (a === '--fps') opts.fps = Number(next());
+  else if (a === '--resolution') opts.resolution = next();
   else if (a === '--model') opts.model = next();
   else if (a === '--list-models') opts.list = true;
   else if (a === '--help' || a === '-h') { console.log(HELP); process.exit(0); }
@@ -238,10 +246,20 @@ if (mode === 'custom' && !opts.prompt) die('--mode custom requires --prompt');
 if (opts.youtube && !/^https:\/\/((www\.|m\.)?youtube\.com|youtu\.be)\//.test(opts.youtube)) {
   die('--youtube expects a youtube.com or youtu.be URL');
 }
+if (opts.fps !== undefined && !(opts.fps > 0 && opts.fps <= 24)) die('--fps must be between 0.1 and 24');
+if (opts.resolution && !['low', 'medium', 'high'].includes(opts.resolution)) {
+  die('--resolution must be low, medium, or high');
+}
 
 const model = opts.model || process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+// Gemini samples video at 1 fps by default — enough to summarize, not enough
+// to catch a 0.3s hand-morph. Short local clips in qc mode get 5 fps unless
+// the caller says otherwise; long videos keep the cheap default.
+const fps = opts.fps ?? (mode === 'qc' && opts.file ? 5 : undefined);
 const parts = [];
-parts.push(opts.youtube ? { file_data: { file_uri: opts.youtube } } : uploadVideo(opts.file));
+const media = opts.youtube ? { file_data: { file_uri: opts.youtube } } : uploadVideo(opts.file);
+if (fps !== undefined) media.video_metadata = { fps };
+parts.push(media);
 for (const img of opts.images) parts.push(imagePart(img));
 
 let instruction = mode === 'custom' ? opts.prompt : PROMPTS[mode];
@@ -250,4 +268,7 @@ if (mode !== 'custom' && opts.prompt) {
 }
 parts.push({ text: instruction });
 
-console.log(generate(model, parts));
+const genConfig = opts.resolution
+  ? { mediaResolution: `MEDIA_RESOLUTION_${opts.resolution.toUpperCase()}` }
+  : undefined;
+console.log(generate(model, parts, genConfig));

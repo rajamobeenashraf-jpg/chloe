@@ -50,7 +50,13 @@ For studying **reference** videos (Chloe VS History, Nova, any outlier): `vidiq_
 3. **Never** paste the key into chat, a file, or a commit.
 4. Verify it works: `node scripts/gemini-eyes.mjs --list-models`.
 
-Notes: sandbox reachability to `generativelanguage.googleapis.com` was verified 2026-08-20 (Google answered; only the key is missing). Default model is `gemini-2.5-flash` — cheap, video-capable, free tier is enough to test; override with `GEMINI_MODEL` or `--model` after checking `--list-models`. Division of labor is fixed: Gemini reports observations only; creative and editorial decisions stay with Claude Code and the owner.
+Notes: sandbox reachability to `generativelanguage.googleapis.com` was verified 2026-08-20 (Google answered; only the key is missing). Division of labor is fixed: Gemini reports observations only; creative and editorial decisions stay with Claude Code and the owner.
+
+**Model & tier guidance (checked 2026-08-20):**
+- **Free tier is fine to start.** It covers Flash-class models (`gemini-2.5-flash`, the script default) with per-day/per-minute caps that Google keeps adjusting (third-party trackers reported between 250 and 1,500 requests/day during 2026). A 10-clip episode needs ~11–15 QC calls, so even the low end covers daily production; limits reset daily.
+- **Sampling beats model size for clip QC.** Gemini watches video at 1 frame/second by default — on a 6s clip that's ~6 frames, which can miss a sub-second hand-morph or flicker. The script therefore samples local clips at 5 fps in qc mode (tunable with `--fps`, plus `--resolution` for per-frame detail). Cost stays trivial: a 10s clip at 5 fps ≈ 50 frames ≈ ~13k tokens.
+- **Upgrade path, only if needed:** Pro-class models moved behind billing (reported ~May 2026). If free Flash demonstrably misses defects, add billing and use a Pro-class model for the Stage B full-cut pass only (`--model`, after `--list-models`) — per-clip Stage A stays on Flash. Don't pay preemptively.
+- **Privacy note:** Google's published API terms have allowed free-tier content to be used to improve their products (paid tier excluded). For unpublished renders, if that matters, the cheap paid tier removes it — check the current terms before deciding.
 
 ## 6. Close the loop after publishing
 48 hours after each upload: pull our own `vidiq_video_stats` and `vidiq_video_comments`, compare actuals against the idea's signal-stack score and the virality predictor's call, and write one lesson into this file or the backlog. The methodology only gets smarter if actuals flow back into it.
