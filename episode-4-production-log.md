@@ -64,6 +64,15 @@ Both sent. The same grit block is now standard in all 12 clip prompts.
 - §10 pre-generation self-check run over all 12: causality order (alarm rung AFTER she sees the jump in her stated sightline; "Wait— WAIT—" fired as she breaks through, before the verdict line), crowd population ≥20 for mob/court beats, embedded-not-sequential drama ("from the first frame..." on every interruption), speech gated by state (chewing muffled in 3, whispers in 6/8, gasping fragments in 11, breathless in 1/10, silence in 7), relationships carried (Li anchors her in 11; pouch meaning chains 7→11→12; clip 10 restages clip 1's exact posture as the payoff).
 - Runner ready: `gen_clip.mjs` (asset-id cache, submit/poll/download per clip).
 
+
+## Clip generation (gate 2, running log)
+Gate 1 approved by owner 2026-08-20: GRITTY look locked for both outfits. Grit block baked into all 12 clip prompts; approved gritty stills committed (`episode-4-assets/stills/`) and used as per-clip wardrobe refs alongside the 5 masters (6 image refs/clip). All clips 9:16 720p, PAI Pro video pipeline, generate_audio on. Every clip: chat delivery + repo archive (`episode-4-assets/clips/`) + hosted URL logged here.
+| # | file | dur | hosted output_url | alignment |
+|---|---|---|---|---|
+| 1 | clip01_v1.mp4 | 7.06s | storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/20/36e32c6b38ad945a272e0b6ca5d88703.mp4 | PASS |
+| 2 | clip02_v1.mp4 | 9s | .../aa8dfd590d44eb9da8c1934c5df58e8d.mp4 | PASS |
+| 3 | clip03_v1.mp4 | 11s | .../15a676d4eb0b3268a6db2e1d1072ead2.mp4 | PASS |
+
 ## Status
 - [x] Branch + project scaffold + engine verified
 - [x] Master refs recovered (owner-supplied v5 set, repo-hosted)
