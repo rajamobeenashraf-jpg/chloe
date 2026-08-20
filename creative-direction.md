@@ -102,6 +102,12 @@ This is a hard pass/fail bar, not a style preference. Before approving ANY gener
 - This applies to every capability — stills, video clips, thumbnails — and every episode from here forward, not just the current one.
 - QC checklist item 2 ("Realism — skin, physics, anatomy") is where this gets caught; treat "does she look real" as its own explicit check, separate from character-identity matching (she can match the locked identity perfectly and still read as artificial if skin/lighting/texture drift toward the AI-plastic look).
 
+## 14. Natural forward walking, not backward tracking (owner correction, 2026-08-20 — PERMANENT)
+Found on Episode 2 clip 7: when she needs to walk toward a subject/location while the shot stays selfie-cam framed, the model defaulted to her body walking BACKWARD the whole time to stay face-on to the lens — a classic AI-vlog tell, reads as an unnatural moonwalk rather than a real person walking.
+- **Direct it the way a real vlogger's camera actually moves**: she walks normally FORWARD, facing her direction of travel; the camera arm swings and re-aims naturally as she moves, briefly showing her profile/turning away from the lens mid-walk — then swings back to face-on framing once she arrives/kneels/faces her subject.
+- **Explicitly state in the prompt**: "walks normally forward, NOT walking backward, NOT staying face-on to the lens while moving" whenever a shot has her walking any meaningful distance toward something.
+- Applies to every future walking beat, this episode and all others — not a one-time fix.
+
 ## Status: all 10 clips produced (2026-08-19)
 Full shot list from `PROJECT_HANDOFF.md` §3 is generated and owner-approved, final filenames in `pai-pro/projects/wildwest/assets/`:
 1. `clip1_vlog_v3.mp4` — cold-open tease, reshot in V-mode (talk-to-lens) to match clip 7/8's handheld grammar; debris-reaction physics/pacing carried over from the earlier fix. Supersedes `clip1_pai_v2.mp4` (the original Nova-style cinematic version, kept only for reference).
