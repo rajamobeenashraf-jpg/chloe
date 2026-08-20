@@ -113,10 +113,16 @@ The EXACT same woman shown in the reference images — the character sheets and 
 
 ---
 
+## Higgsfield Soul (trained identity model)
+- **soul_id:** `1b738001-5526-4038-8cf3-f2c136841b55` · name "Model Girl v4 as-filmed" · type `soul_2` · training started 2026-08-20
+- Trained on the 20-image verified set: 9 PAI views + 2 movie frames (clip 9 aftermath, clip 5 irony) + 6 strict Nano Banana views + eyes crop + lips crop + 1 full-body back view. Every face-bearing image individually QC-verified before inclusion.
+- Usable ONLY with models `soul_2` and `soul_cinema_studio` — pass the soul_id with the generation. For all other models keep using the reference-image + frozen-string protocol above.
+- Check status: `show_characters(action='status', soul_id='1b738001-5526-4038-8cf3-f2c136841b55')`.
+
 ## Next steps
 - [x] QC the individual refset views — done 2026-08-20; 9/10 approved (see tables above)
 - [x] Strict Nano Banana Tier-3 set generated and QC'd — done 2026-08-20 (8 views)
 - [x] Core reference images committed into this repo (owner upload + fullbody/back additions)
-- [ ] Higgsfield Soul training from the best 15–20 verified images for hard-locked future consistency (recommended before Episode 2 heavy generation)
-- [ ] Name the character (pending owner decision)
+- [x] Higgsfield Soul training started 2026-08-20 (see soul_id above) — verify it completes, then run an identity test render vs Tier 1 before production use
+- [ ] Name the character (pending owner decision — "Hazel" recommended, channel "Hazel Out of Time"; owner to verify handle availability)
 - [ ] Costumes for future episodes should be generated against v4 master refs, not v3
