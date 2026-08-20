@@ -24,6 +24,16 @@ fs.mkdirSync(NORM_DIR, { recursive: true });
 
 const W = 720, H = 1280, FPS = 24, AR = 48000;
 
+// TARGETED FIX (owner correction, 2026-08-20): clip 11's raw source has a
+// baked-in generation artifact — the last ~0.6s (from local 10.42s to its
+// 11.05s end) are literally duplicate frames (frame-to-frame luminance
+// diff measured at exactly 0.00 for that whole span), not narrative
+// stillness. That dead tail was landing right at the 11→12 join and read
+// as a frozen/held frame before the final clip started. Trimming it here
+// — before normalization — means the join lands on real motion instead of
+// masking a frozen source with a bigger blend. No other clip is trimmed.
+const TRIM_OUT = { 11: 10.40 };
+
 function sh(cmd, argv) {
   return execFileSync(cmd, argv, { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
 }
@@ -39,7 +49,8 @@ for (let n = 1; n <= CLIP_COUNT; n++) {
   const src = fs.existsSync(qc) ? qc : path.join(ASSETS, `clip${n}.mp4`);
   if (!fs.existsSync(src)) { console.error(`FATAL: missing clip${n}`); process.exit(1); }
   const out = path.join(NORM_DIR, `clip${n}_n.mp4`);
-  sh("ffmpeg", ["-y", "-i", src,
+  const trimArgs = TRIM_OUT[n] ? ["-t", String(TRIM_OUT[n])] : [];
+  sh("ffmpeg", ["-y", "-i", src, ...trimArgs,
     "-vf", `scale=${W}:${H}:force_original_aspect_ratio=decrease,pad=${W}:${H}:(ow-iw)/2:(oh-ih)/2,fps=${FPS},format=yuv420p`,
     "-af", `loudnorm=I=-16:TP=-1.5:LRA=11,aresample=${AR}`,
     "-ac", "2", "-ar", String(AR),
