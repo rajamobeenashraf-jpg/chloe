@@ -1,6 +1,6 @@
 # Character Handoff — paste this into a new chat to start the next episode
 
-**Purpose:** paste the block below as your first message in a fresh chat to carry the exact locked character identity forward. Written 2026-08-20 from branch `claude/pai-connectivity-test-5phlq2`. This is self-contained — it works even if the new chat can't access this repo, but if it can, tell it to also read `CHARACTER_LOCK.md` (same content, kept in sync).
+**Purpose:** paste the block below as your first message in a fresh chat to carry the exact locked character identity forward. Written 2026-08-20 (updated same day with Soul + strict Nano Banana set) from branch `claude/pai-connectivity-test-5phlq2`. This is self-contained — it works even if the new chat can't access this repo, but if it can, tell it to also read `CHARACTER_LOCK.md`, which is the authoritative superset (it additionally carries the matte/gritty clause, drift statistics, and full CDN tables).
 
 ---
 
@@ -11,6 +11,14 @@ We are continuing an AI historical time-travel Shorts series. Episode 1 (Wild We
 is complete. The female protagonist's identity is LOCKED as v4 "as-filmed" — do not
 redesign her, do not regenerate her face from text alone, always generate FROM the
 reference images below.
+
+## TRAINED HIGGSFIELD SOUL (hard identity lock — use when generating with Higgsfield)
+soul_id: 1b738001-5526-4038-8cf3-f2c136841b55  ("Model Girl v4 as-filmed", type soul_2)
+Trained 2026-08-20 on the 20 best QC-verified reference images. Works ONLY with models
+soul_2 and soul_cinema_studio — pass the soul_id with the generation. For PAI Pro and
+every other model, use the reference-image + identity-string protocol below instead.
+Verify it finished training before first use:
+show_characters(action='status', soul_id='1b738001-5526-4038-8cf3-f2c136841b55')
 
 ## Frozen identity string — paste verbatim into every image/video prompt, never paraphrase:
 
@@ -47,10 +55,33 @@ Best movie frames (10, from the finished Wild West clips):
 - 343878a6-2643-4850-a7ce-97b8bb841861
 - fe2de904-fe32-4806-a0e4-8b36b33812c4
 
-9 individual single-view renders (front/3-4/profile x2 sides/elevated/full-body x2):
-these were generated via PAI Pro from the assets above and sent directly to me in chat
-(not on a persistent CDN) -- I will attach them to this message. If missing, regenerate
-via PAI Pro image-edit-pro using the 12 reference images above plus the identity string.
+9 PAI individual single-view renders -- now on permanent CDN (same host/path as above)
+AND committed at the root of the repo (rajamobeenashraf-jpg/chloe, this branch):
+- 02cea7f6-5ec6-4839-972e-dcbab1c377fb  (01 front portrait)
+- e9e69f89-dd65-4452-b501-25be226fe248  (02 slight 3/4 left)
+- 5ae3feea-d43c-489c-a8ce-d2bb5246942f  (03 3/4 left)
+- 2582a313-aee8-4da7-a1b2-e2387355b6a0  (04 left profile)
+- ac65310e-5981-471e-80ee-333f92aaefca  (05 3/4 right)
+- 5e86de48-301e-4e87-96cc-23755cf39c9b  (06 right profile)
+- 4b3c3713-3839-4a5f-9859-d5328b84e934  (08 elevated angle)
+- e35e4fd7-9550-46e6-b1be-7c15242b1cd1  (09 full body front)
+- caf8fab5-1946-430b-9020-c4a39a9da3b0  (10 full body 3/4)
+
+Strict Nano Banana 8-view set (Tier-3 angle coverage, QC-verified) -- host
+https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/<file>:
+- hf_20260820_082359_3b1ee5ae-d36a-4e72-88ff-7faa63e83a60.png  (close-up front)
+- hf_20260820_082400_34b8e538-270c-488a-ba71-5be99d79e523.png  (chest-up front)
+- hf_20260820_082359_f7339c48-a45d-4e66-b5a4-37ab6ec36da3.png  (3/4 left)
+- hf_20260820_082359_7d9c86ad-959f-4d63-b1b7-aa2f3eea5ed8.png  (3/4 right)
+- hf_20260820_082726_8f893f2d-3902-41a8-a986-b0be87acb1ad.png  (left profile)
+- hf_20260820_082359_396f677f-3325-4f00-8dd8-477736b5efd6.png  (right profile)
+- hf_20260820_131720_ad1ff561-9aa7-421d-9b83-2739aa93396c.png  (full body front)
+- hf_20260820_131539_d87ea9b2-56e4-452a-af9b-18ffda07369d.png  (full body BACK -- only single back view)
+
+Reference hierarchy (never invert): Tier 1 = sheets + PAI views (anchors). Tier 2 =
+movie frames. Tier 3 = Nano Banana set (supplementary). Always generate FROM Tier 1/2;
+never chain generations off generated outputs. ~1 in 6 renders drifts to a different
+face even with perfect prompts: QC every render against Tier 1 before accepting it.
 
 ## If a generation gets refused by the content filter
 
@@ -91,6 +122,7 @@ block is a portable summary of the same content for chats without repo access.
 ---
 
 ## Notes for the owner
-- The 9 individual view images are **not on a persistent CDN** — they were sent to you directly in chat. Attach them to the pasted message above (or re-upload) so the new chat has them as actual image inputs, not just filenames.
+- All reference images now live on permanent CDNs (URLs above) AND 14 core images + 8 training crops are committed in this repo — a fresh chat that clones the repo has everything on disk immediately; nothing needs manual attaching anymore.
+- The trained Soul (`1b738001-5526-4038-8cf3-f2c136841b55`) is the hard identity lock for Higgsfield `soul_2` / `soul_cinema_studio` generations; the 20-image training set is archived with the owner (4 zips) and reproducible from the URLs above.
 - `07_low_angle` was never successfully generated — it was refused 3 times by the content filter (flagged both close identity-matching and the corset styling). Worth retrying later with adjusted framing if you want the full 10.
 - This file and `CHARACTER_LOCK.md` are kept in sync — if one gets updated, update the other.
