@@ -146,3 +146,8 @@ Audio: matching `acrossfade` per join; `loudnorm` every clip pre-assembly. J-bri
 1. `CHARACTER_LOCK.md` should carry the five FULL master URLs (they're truncated) and/or the PNGs should live in-repo — container loss otherwise orphans the lock.
 2. "No on-screen text / captions / subtitles / watermark" belongs in the standing prompt block for every future episode (prevents Ep 1's baked-in-caption defect at the source).
 3. QC/stitch tooling now lives in-repo (`episode-3-tools/`) instead of only in the container — same class of fix.
+
+## Engine + hosting decisions (owner instructions, 2026-08-20)
+- **PAI Pro is the ONLY generation engine for Ep 3** (stills via image-edit-pro, video via the video pipeline). Higgsfield explicitly ruled out by owner — not used for generation NOR for file hosting.
+- Reference hosting: this repo is public, so `raw.githubusercontent.com/<owner>/chloe/<branch>/character-refs/*.png` URLs are directly server-fetchable by PAI. Owner uploads the reference PNGs to `character-refs/` on this branch via GitHub web UI; a watcher in this session pulls them the moment they land.
+- All 12 video prompts pre-composed in `episode-3-prompts/clip01–12.txt` (scene body + V-mode grammar + single-take clause + verbatim identity string + naturalism block + locked grade + no-text rule).
