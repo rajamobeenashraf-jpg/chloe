@@ -212,6 +212,22 @@ function generate(model, parts, generationConfig, attempt = 0) {
     process.stderr.write(`model ${model} unavailable (HTTP ${r.status}), using ${FALLBACK_MODEL}...\n`);
     return generate(FALLBACK_MODEL, parts, generationConfig);
   }
+  // Free-tier quota is shared by every session using this key. Honor Google's
+  // suggested wait once, then drop to the fallback model's separate quota
+  // bucket rather than dying mid-QC.
+  if (r.status === 429) {
+    const hint = (r.json?.error?.message || '').match(/retry in (\d+(?:\.\d+)?)s/i);
+    if (attempt < 1) {
+      const wait = Math.min(hint ? Math.ceil(Number(hint[1])) + 2 : 35, 90);
+      process.stderr.write(`quota hit on ${model}, waiting ${wait}s...\n`);
+      sleep(wait * 1000);
+      return generate(model, parts, generationConfig, attempt + 1);
+    }
+    if (model !== FALLBACK_MODEL) {
+      process.stderr.write(`quota still exhausted on ${model}, using ${FALLBACK_MODEL}...\n`);
+      return generate(FALLBACK_MODEL, parts, generationConfig);
+    }
+  }
   if (r.status !== 200) apiError(r, 'generateContent');
   if (r.json.promptFeedback?.blockReason) die(`request was blocked: ${r.json.promptFeedback.blockReason}`);
   const cand = r.json.candidates?.[0];
