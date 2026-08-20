@@ -1,0 +1,3 @@
+
+## Clip 9 — third reshoot (owner feedback round 2, 2026-08-20)
+v3's deceleration read fine motion-wise but the arrival was still too fast/immediate relative to the door — a real rider can't approach a door itself at any real speed. v4 rewrite: horse now comes to a FULL STOP short of the farmhouse (a body-length or two away), THEN walks the final approach at a walking pace before the final stop and knock. Extended to 15s (from 13s) to give the now-longer staged sequence (gallop→decel→full stop→walk→final stop→knock) room per §9 (multi-step business needs more duration). v3 archived as clip9_v3_still_too_fast_rejected.mp4.
