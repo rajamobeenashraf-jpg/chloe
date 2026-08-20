@@ -10,7 +10,7 @@ is marked. Latest owner decision recorded: 2026-08-20 (Gemini QC timing).
 Read before any creative, research, or production work — these files are this project's memory:
 1. `NEW_CHAT_HANDOFF.md` — START HERE: operating manual (setup, parallel-chat rules, approval gates)
 2. `PROJECT_HANDOFF.md` — current state, locked decisions, owner preferences
-3. `CHARACTER_LOCK.md` — locked character, v4 "as-filmed" (NEVER regenerate the face from text; age locked — topic closed; the original 20 reference images are the sole canonical refs)
+3. `CHARACTER_LOCK.md` — locked character, v4 "as-filmed" (NEVER regenerate the face from text; age locked — topic closed; the original 20 reference images are the sole canonical refs). Owner decision 2026-08-20: the lock DOCUMENT is the character sheet for every new chat; the reference-image files themselves are NOT on this branch — use the permanent CDN URLs inside the lock (the durable source), with repo copies archived on branch `claude/keen-franklin-ldvq7r`
 4. `creative-direction.md` — format rules, incl. §12 active-participant directive and §16 cross-episode pipeline rules (transitions = hard cuts only, caption rigor, engine facts; merged 2026-08-20, newest-command-wins)
 5. `research-methodology.md` — how to research & score episode ideas (multi-signal, never raw views alone), platform priorities, and the video-QC pipeline (§4 — note: its per-clip "Stage A" is SUPERSEDED, see the QC rule below)
 6. `chloe-vs-history-strategy-report.md` + `chloe-titanic-video-study.md` — reference-channel analysis (verified vidIQ data + machine watch-through)
