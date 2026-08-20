@@ -1,0 +1,26 @@
+diff --git a/server/cli/generate_video.js b/server/cli/generate_video.js
+index 153f34a..c082d9f 100644
+--- a/server/cli/generate_video.js
++++ b/server/cli/generate_video.js
+@@ -48,7 +48,7 @@ const defaultVideoParams = defaultVideoModel.default_params ?? {};
+ const args = parseArgs({
+   prompt:                  { type: "string", short: "p" },
+   duration:                { type: "string", default: "15" },
+-  "aspect-ratio":          { type: "string", default: "16:9" },
++  "aspect-ratio":          { type: "string", default: "9:16" }, // Shorts-only production (owner directive, 2026-08-20)
+   resolution:              { type: "string", default: defaultVideoParams.resolution ?? "720p" },
+   // Audio defaults ON (generate_audio: true). Pass --no-audio ONLY when
+   // the user has explicitly asked for a silent clip. Trailer framing,
+diff --git a/server/pai_video_client.js b/server/pai_video_client.js
+index 75eec14..f849442 100644
+--- a/server/pai_video_client.js
++++ b/server/pai_video_client.js
+@@ -77,7 +77,7 @@ function buildContent({ prompt, imageAssetIds, audioAssetIds, videoAssetIds }) {
+ export async function submitVideo({
+   prompt,
+   duration = 15,
+-  aspectRatio = "16:9",
++  aspectRatio = "9:16", // Shorts-only production (owner directive, 2026-08-20) — vertical is the default, not 16:9.
+   resolution = "720p",
+   generateAudio = true,
+   imageAssetIds = [],

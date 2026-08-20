@@ -45,6 +45,8 @@ How she reacts, by beat type — derived from what actually drove engagement in 
 ## 5. Production engine decision (2026-08-19)
 **PAI Pro chosen as primary video engine** for this project, after a real head-to-head test (not spec-sheet reasoning) on the Wild West clip-1 prompt. Higgsfield remains the fallback/secondary tool (content-filter escape valve, and its `video_extension` mode is worth testing against PAI's `reference_video` before committing fully). Both engines cap individual clips at roughly the same real-world range (PAI: hard limit 15.2s per clip per `server/cli/_limits.js`; Higgsfield Seedance 2.5: 4–30s) — neither does long continuous single-shot generation; continuity across a multi-clip sequence comes from chaining references between short clips, not from one long take.
 
+**Format: 9:16 vertical is the standing default for every clip, every episode** (owner directive, 2026-08-20) — this is a Shorts-only production (90–200s cap). Set as the actual code default in `pai_video_client.js`/`generate_video.js` (patched into `pai-pro` via `patches/pai-pro-video-default-9x16.patch`, applied automatically by the SessionStart hook), not just a per-call flag to remember.
+
 ## 6. Scene-transition craft
 This is what actually sells "she was really there" — not a model capability, a production discipline. Chloe's seamless cut-to-cut flow comes from cutting *on* action and sound, not from the AI model alone:
 - **Match-cut on motion** — end clip N mid-gesture (turning, stepping, reaching) and start clip N+1 continuing that same motion, rather than cutting on a static beat. This is also exactly what makes `reference_video`/`video_extension` chaining pay off — feed the next generation the end frame *and* the motion direction of the previous clip.
