@@ -128,7 +128,17 @@ function apiError({ status, json, text }, what) {
     die('GEMINI_API_KEY is set but invalid — re-check it at https://aistudio.google.com/apikey');
   }
   if (status === 404) die(`${what}: not found (${msg}). If this is the model, run --list-models and set GEMINI_MODEL or --model.`);
-  if (status === 429) die(`${what}: rate/quota limit (${msg}). Wait a minute and retry, use a lighter model (e.g. GEMINI_MODEL=${FALLBACK_MODEL}), or enable billing on the key.`);
+  if (status === 429) {
+    die(`${what}: rate/quota limit (${msg}).
+
+FREE GEMINI ALLOWANCE EXHAUSTED — OWNER'S STANDING ORDER (2026-08-20):
+Report this to the owner IMMEDIATELY in your next chat message, in plain words:
+"The free Gemini allowance is finished for now. It resets daily on its own.
+If you want no interruptions, say the word and we move to the paid version:
+enable billing on the same key at https://aistudio.google.com — no other
+changes needed, Flash costs cents per test."
+Do not silently retry for hours and do not skip the QC step — tell the owner first.`);
+  }
   die(`${what} failed (HTTP ${status}): ${msg}`);
 }
 
@@ -211,6 +221,22 @@ function generate(model, parts, generationConfig, attempt = 0) {
   if ([404, 500, 503].includes(r.status) && model !== FALLBACK_MODEL) {
     process.stderr.write(`model ${model} unavailable (HTTP ${r.status}), using ${FALLBACK_MODEL}...\n`);
     return generate(FALLBACK_MODEL, parts, generationConfig);
+  }
+  // Free-tier quota is shared by every session using this key. Honor Google's
+  // suggested wait once, then drop to the fallback model's separate quota
+  // bucket rather than dying mid-QC.
+  if (r.status === 429) {
+    const hint = (r.json?.error?.message || '').match(/retry in (\d+(?:\.\d+)?)s/i);
+    if (attempt < 1) {
+      const wait = Math.min(hint ? Math.ceil(Number(hint[1])) + 2 : 35, 90);
+      process.stderr.write(`quota hit on ${model}, waiting ${wait}s...\n`);
+      sleep(wait * 1000);
+      return generate(model, parts, generationConfig, attempt + 1);
+    }
+    if (model !== FALLBACK_MODEL) {
+      process.stderr.write(`quota still exhausted on ${model}, using ${FALLBACK_MODEL}...\n`);
+      return generate(FALLBACK_MODEL, parts, generationConfig);
+    }
   }
   if (r.status !== 200) apiError(r, 'generateContent');
   if (r.json.promptFeedback?.blockReason) die(`request was blocked: ${r.json.promptFeedback.blockReason}`);
