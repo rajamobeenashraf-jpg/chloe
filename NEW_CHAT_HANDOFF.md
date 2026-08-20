@@ -66,7 +66,14 @@ Produce Episode ___ — ___ (fill in from episodes-2-4-scripts.md, e.g.
   captions, or on-screen text.
 - QC + assembly per Episode 1's proven pipeline (specs in creative-direction.md
   §11 — NOTE: the actual scripts qc_pass.mjs / build_final_cut.mjs were LOST with
-  the old container; rebuild them from the §11 specs):
+  the old container; rebuild them from the §11 specs).
+  For VISUAL QC use `tools/gemini-eyes/` (IN git, survives containers): machine-
+  watches any cut, clip, or still with Gemini flash and reports timestamped flaws
+  — identity drift vs CHARACTER_LOCK.md (auto-loaded), garbled text/captions
+  (`captions` mode, `--srt` cross-check), anatomy/physics/continuity — with a
+  confirm/dismiss verify pass. Needs GEMINI_API_KEY (owner has it; see
+  tools/gemini-eyes/README.md). Run it on every still before animating and every
+  cut before delivery. Assembly-side specs below still need the rebuilt scripts:
   · captions burnt in via libass — FontName=DejaVu Sans, FontSize=8,
     PrimaryColour=&H00FFFFFF, OutlineColour=&H00000000, BorderStyle=1, Outline=1.1,
     Shadow=0.4, Bold=1, Alignment=2, MarginV=55, MarginL=70, MarginR=70
@@ -101,4 +108,4 @@ Produce Episode ___ — ___ (fill in from episodes-2-4-scripts.md, e.g.
 
 ## Known losses from the previous container (nothing recoverable, all rebuildable)
 - Episode 1's generated clips and final cuts (`wildwest_final_cut*.mp4`) — exist only wherever the owner downloaded them.
-- The QC/stitch tooling (`qc_pass.mjs`, `build_final_cut.mjs`) — rebuild from `creative-direction.md` §11 specs, which captured every parameter and algorithm decision.
+- The QC/stitch tooling (`qc_pass.mjs`, `build_final_cut.mjs`) — rebuild from `creative-direction.md` §11 specs, which captured every parameter and algorithm decision. (The visual-QC layer has since been rebuilt better as `tools/gemini-eyes/` and lives IN git; only the caption/stitch assembly scripts still need rebuilding.)
