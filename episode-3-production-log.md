@@ -158,3 +158,6 @@ Audio: matching `acrossfade` per join; `loudnorm` every clip pre-assembly. J-bri
 
 ## Owner directive (2026-08-20): grittier matte skin
 Standing block extended with a "Gritty matte realism" paragraph (dry matte skin, no gloss/dew/studio glow, wind-chafed cheeks, minimal makeup, flyaway hairs, heavier grain, worn dusty clothing). Prompt files restructured to scene-bodies only; the standing block is appended at submit time (`pai.mjs --block`) so direction changes propagate to all 16 prompts instantly. First-generation glossy still kept as `still_a_v1_baseline.png` for side-by-side at Gate 1.
+
+## GATE 1 PASSED (owner approval, 2026-08-20)
+All four gritty/matte stills approved. **still_b_tavern_lens_v2grit.png is the CANONICAL COSTUME REFERENCE** (lace-front madder-red jacket) — it rides along as a wardrobe ref in every colonial-costume video job; still D is the wardrobe ref for clip 2 (modern outfit). Approved stills committed to `episode-3-stills/` for durable hosting. Gate 2 begins: clips generated in script order, each sent to owner as it lands.
