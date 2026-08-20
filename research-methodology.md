@@ -28,13 +28,19 @@ A video with low views but exceptional engagement (likes/views around 8%+ and de
 ## 3. Credit discipline
 The vidIQ watch/outlier tools cost credits (roughly 5–25 per call). Batch questions into one call's custom prompt, prefer `vidiq_video_transcript` when spoken words are enough, and check `vidiq_balance` before a big sweep.
 
-## 4. Video QC — the "eyes" pipeline for every render
-Claude Code directs; the tools below only *see* and report. Run in this order on every finished render before the owner watches it:
-1. **Higgsfield `virality_predictor`** — hook strength, retention risk, attention/engagement dashboard.
-2. **Gemini second eyes** — `node scripts/gemini-eyes.mjs --file <render.mp4>` (setup in §5). Frame-level defect hunt: morphing faces/hands, lip-sync, continuity, era anachronisms, motion tells. Attach the character v3 master with `--image` for identity-consistency checks and pass the episode's era/script context via `--prompt`.
+## 4. Video QC — the "eyes" pipeline
+Claude Code directs; the tools below only *see* and report. Two facts drive this section. First, generation is stochastic: **every regeneration can introduce new errors**, so a "fixed" clip must be re-checked, including its joins with neighbouring clips — this is why mistakes survive repeated editing when only the final cut gets checked. Second, the tools cover **different axes**: a defect hunter says whether the video is *broken*; the virality predictor says whether it is *boring*. Neither replaces the other, none catches everything (expect occasional false positives too), which is why the last pair of eyes is always human.
+
+**Stage A — per-clip, during production (the cheapest moment to catch a flaw):**
+- QC every generated clip *before* it enters the edit: `node scripts/gemini-eyes.mjs --file <clip.mp4> --image <v3-master.png> --prompt "<era + what the clip is supposed to show>"`. Fallback without the Gemini key: Higgsfield `video_analysis_create` (most accurate on short clips).
+- Every regenerated clip goes through Stage A again — never assume a regen only fixed things.
+
+**Stage B — assembled render, before the owner watches it:**
+1. **Gemini second eyes** on the full cut — continuity and identity across clip joins, lip-sync, captions, audio, era accuracy.
+2. **Higgsfield `virality_predictor`** — hook strength, retention risk, attention/engagement dashboard.
 3. **Owner watch-through** — the final call is always human.
 
-Until the Gemini key is set, steps 1 and 3 still run — the pipeline works without Gemini, just with one fewer pair of eyes (Higgsfield `video_analysis_create` is a further scene-by-scene fallback; most accurate on short clips).
+Until the Gemini key is set (§5), everything else still runs — the pipeline just has one fewer pair of eyes.
 
 For studying **reference** videos (Chloe VS History, Nova, any outlier): `vidiq_video_watch` (long-form) or `vidiq_watch_shortform_content` (Shorts/Reels/TikTok), or `gemini-eyes.mjs --youtube <url> --mode study` once the key exists.
 

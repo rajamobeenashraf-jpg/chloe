@@ -13,7 +13,7 @@ Read before any creative, research, or production work — these files are this 
 Standing rules:
 - Video output is vertical 9:16 unless the owner says otherwise; character name still pending (shortlist in the backlog).
 - Judge episode ideas by the signal stack in `research-methodology.md` — never by raw views alone.
-- Every finished render goes through the QC chain in `research-methodology.md` §4 before the owner sees it.
+- Every generated clip AND every finished render goes through the QC chain in `research-methodology.md` §4 before the owner sees it; every regenerated clip gets re-checked.
 
 Tooling:
 - **vidIQ MCP** — YouTube + Instagram/TikTok data: outliers, keywords, stats, comments, transcripts, video watching. Calls cost credits — check `vidiq_balance`, batch questions.
