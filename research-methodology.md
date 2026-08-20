@@ -31,12 +31,15 @@ The vidIQ watch/outlier tools cost credits (roughly 5–25 per call). Batch ques
 ## 4. Video QC — the "eyes" pipeline
 Claude Code directs; the tools below only *see* and report. Two facts drive this section. First, generation is stochastic: **every regeneration can introduce new errors**, so a "fixed" clip must be re-checked, including its joins with neighbouring clips — this is why mistakes survive repeated editing when only the final cut gets checked. Second, the tools cover **different axes**: a defect hunter says whether the video is *broken*; the virality predictor says whether it is *boring*. Neither replaces the other, none catches everything (expect occasional false positives too), which is why the last pair of eyes is always human.
 
-**Stage A — per-clip, during production (the cheapest moment to catch a flaw):**
-- QC every generated clip *before* it enters the edit: `node scripts/gemini-eyes.mjs --file <clip.mp4> --image <v3-master.png> --prompt "<era + what the clip is supposed to show>"`. Fallback without the Gemini key: Higgsfield `video_analysis_create` (most accurate on short clips).
-- Every regenerated clip goes through Stage A again — never assume a regen only fixed things.
+**Stage A — per-clip, during production: SUPERSEDED (owner's directive, 2026-08-20).**
+Do NOT run Gemini or Higgsfield `video_analysis_create` on clips during the
+generation stage. Clips are generated and reviewed under the existing production
+process and the owner's approval gates only. Machine eyes first touch the
+footage at the editing stage — see Stage B and the Owner's QC rule in
+`CLAUDE.md`. (The original Stage A text lives in git history if ever needed.)
 
-**Stage B — assembled render, before the owner watches it:**
-1. **Gemini second eyes** on the full cut — continuity and identity across clip joins, lip-sync, captions, audio, era accuracy.
+**Stage B — the editing stage, once all of an episode's clips are generated (the first machine-eyes touchpoint):**
+1. **Gemini eyes** (primary tool: `tools/gemini-eyes/gemini_eyes.py`, see its README) on: the full clip set entering the edit; assembled/stitched cuts (continuity and identity across clip joins, lip-sync, audio, era accuracy while conforming visuals/lighting/transitions); and the subtitle pass (`captions` mode, cross-checked against the .srt). A clip regenerated during edit rounds gets re-checked here, including its joins — never assume a regen only fixed things.
 2. **Higgsfield `virality_predictor`** — hook strength, retention risk, attention/engagement dashboard.
 3. **Owner watch-through** — the final call is always human.
 
@@ -56,7 +59,7 @@ Notes: sandbox reachability to `generativelanguage.googleapis.com` was verified 
 - **Free tier is fine to start.** It covers Flash-class models with per-day/per-minute caps that Google keeps adjusting (third-party trackers reported between 250 and 1,500 requests/day during 2026). A 10-clip episode needs ~11–15 QC calls, so even the low end covers daily production; limits reset daily.
 - **Owner directive (2026-08-20): always use the most advanced Flash.** The script default is `gemini-flash-latest` — Google's rolling alias that always resolves to their newest Flash release, so QC auto-upgrades forever with no maintenance. Verified live against the owner's key on 2026-08-20 (the visible Flash family then ran up to `gemini-3.7-flash`). If the alias is ever unavailable, the script automatically falls back to `gemini-3.6-flash` (Google retired `gemini-2.5-flash` for new accounts on 2026-08-20 — verified live); `GEMINI_MODEL` or `--model` still override for one-off tests.
 - **Sampling beats model size for clip QC.** Gemini watches video at 1 frame/second by default — on a 6s clip that's ~6 frames, which can miss a sub-second hand-morph or flicker. The script therefore samples local clips at 5 fps in qc mode (tunable with `--fps`, plus `--resolution` for per-frame detail). Cost stays trivial: a 10s clip at 5 fps ≈ 50 frames ≈ ~13k tokens.
-- **Upgrade path, only if needed:** Pro-class models moved behind billing (reported ~May 2026). If free Flash demonstrably misses defects, add billing and use a Pro-class model for the Stage B full-cut pass only (`--model`, after `--list-models`) — per-clip Stage A stays on Flash. Don't pay preemptively.
+- **Upgrade path, only if needed:** Pro-class models moved behind billing (reported ~May 2026). If free Flash demonstrably misses defects, add billing and use a Pro-class model for the full-cut pass only (`--model`, after `--list-models`) — the edit-stage clip sweeps stay on Flash. Don't pay preemptively.
 - **Privacy note:** Google's published API terms have allowed free-tier content to be used to improve their products (paid tier excluded). For unpublished renders, if that matters, the cheap paid tier removes it — check the current terms before deciding.
 - **Owner's standing order (2026-08-20): the moment the free allowance blocks work, tell the owner straight away** — in that chat, in plain words, with the upgrade option (enable billing on the same key at aistudio.google.com; same key keeps working, limits jump, Flash costs cents). The script prints this order in its quota-exhausted error so no session can miss it. Never silently wait out a quota wall and never skip QC because of one. Note: the free quota is one shared pool across all sessions using the key, and daily limits reset every 24h.
 

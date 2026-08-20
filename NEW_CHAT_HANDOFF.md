@@ -1,5 +1,5 @@
 # New-Chat Handoff — Parallel Episode Production
-**Purpose: paste the block below into a fresh Claude Code chat on this repo to produce ONE episode in parallel with other chats. Written 2026-08-19. The authoritative state lives on branch `claude/pai-pro-connection-izza4s`.**
+**Purpose: paste the block below into a fresh Claude Code chat on this repo to produce ONE episode in parallel with other chats. Written 2026-08-19; updated 2026-08-20. The authoritative state lives on the repo's DEFAULT branch (kept current by owner-approved merges — this file included). New chats start there automatically and auto-load CLAUDE.md.**
 
 ---
 
@@ -11,12 +11,12 @@ time-travel Shorts channel (this repo: chloe). A previous chat produced Episode 
 (Wild West 1875) end-to-end. You are producing ONE episode, in parallel with other
 chats producing other episodes. Follow everything below exactly.
 
-## 0. Get the current project state FIRST (the default branch is stale)
-Run:
-  git fetch origin claude/pai-pro-connection-izza4s
-  git checkout -B <your-designated-work-branch> origin/claude/pai-pro-connection-izza4s
-All current docs (scripts, rules, character lock) live on that branch, NOT on the
-default branch. Develop and push on your own designated branch from that base.
+## 0. Get the current project state FIRST
+The DEFAULT branch is current (as of 2026-08-20) — new chats start on it with all
+docs, rules, the character lock, and CLAUDE.md already loaded. Just create your
+own designated work branch from it:
+  git checkout -B <your-designated-work-branch>
+Develop and push on your own designated branch only.
 
 ## 1. Provision the PAI Pro engine
 Run: CLAUDE_CODE_REMOTE=true bash .claude/hooks/session-start.sh
@@ -66,7 +66,20 @@ Produce Episode ___ — ___ (fill in from episodes-2-4-scripts.md, e.g.
   captions, or on-screen text.
 - QC + assembly per Episode 1's proven pipeline (specs in creative-direction.md
   §11 — NOTE: the actual scripts qc_pass.mjs / build_final_cut.mjs were LOST with
-  the old container; rebuild them from the §11 specs):
+  the old container; rebuild them from the §11 specs).
+  For VISUAL QC use `tools/gemini-eyes/` (IN git, survives containers): machine-
+  watches any cut, clip, or still with Gemini flash and reports timestamped flaws
+  — identity drift vs CHARACTER_LOCK.md (auto-loaded), garbled text/captions
+  (`captions` mode, `--srt` cross-check), anatomy/physics/continuity — with a
+  confirm/dismiss verify pass. Needs GEMINI_API_KEY (owner has it; see
+  tools/gemini-eyes/README.md).
+  OWNER'S RULE on when it runs (decided 2026-08-20): NOT during the generation
+  stage — clips are generated under the existing process and approval gates
+  with no Gemini involvement. Gemini eyes comes into action only AFTER all
+  clips are generated, at the EDITING stage: run it on the clip set entering
+  the edit, on assembled cuts (stitching, conforming visuals/lighting), and on
+  the caption pass (`captions` mode with the .srt). Claude fixes what it flags
+  independently. Assembly-side specs below still need the rebuilt scripts:
   · captions burnt in via libass — FontName=DejaVu Sans, FontSize=8,
     PrimaryColour=&H00FFFFFF, OutlineColour=&H00000000, BorderStyle=1, Outline=1.1,
     Shadow=0.4, Bold=1, Alignment=2, MarginV=55, MarginL=70, MarginR=70
@@ -95,10 +108,10 @@ Produce Episode ___ — ___ (fill in from episodes-2-4-scripts.md, e.g.
 
 ---
 
-## Owner one-time setup that makes all of this smoother (strongly recommended)
-1. **Set the repo's default branch to `claude/pai-pro-connection-izza4s`** (GitHub → repo Settings → Branches → Default branch). Until then, every new chat starts on the stale default and must run step 0 manually.
-2. **Set `PAI_KEY` as an environment variable on the Claude Code environment** (claude.ai/code environment settings). Then the SessionStart hook provisions PAI Pro fully automatically in every new chat and step 1 never asks for the key.
+## Owner one-time setup (status 2026-08-20)
+1. ~~Set the repo's default branch~~ **DONE another way** — the current state was merged INTO the existing default branch on 2026-08-20, so the default is authoritative and no GitHub settings change is needed.
+2. **`PAI_KEY` on the Claude Code environment** — **DONE**: the SessionStart hook provisions PAI Pro automatically in new chats (verified 2026-08-20). `GEMINI_API_KEY` is likewise set on the environment for the edit-stage QC tool.
 
 ## Known losses from the previous container (nothing recoverable, all rebuildable)
 - Episode 1's generated clips and final cuts (`wildwest_final_cut*.mp4`) — exist only wherever the owner downloaded them.
-- The QC/stitch tooling (`qc_pass.mjs`, `build_final_cut.mjs`) — rebuild from `creative-direction.md` §11 specs, which captured every parameter and algorithm decision.
+- The QC/stitch tooling (`qc_pass.mjs`, `build_final_cut.mjs`) — rebuild from `creative-direction.md` §11 specs, which captured every parameter and algorithm decision. (The visual-QC layer has since been rebuilt better as `tools/gemini-eyes/` and lives IN git on the default branch; rebuilt assembly scripts also exist on the episode workbench branches — `episode-3-tools/`, `episode-4-assets/tools/`, `pai-pro-tooling/salem/` — copy from there or rebuild per §11.)
