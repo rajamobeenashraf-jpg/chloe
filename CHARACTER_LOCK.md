@@ -113,10 +113,17 @@ The EXACT same woman shown in the reference images — the character sheets and 
 
 ---
 
-## Higgsfield Soul (trained identity model)
-- **soul_id:** `1b738001-5526-4038-8cf3-f2c136841b55` · name "Model Girl v4 as-filmed" · type `soul_2` · training started 2026-08-20
-- Trained on the 20-image verified set: 9 PAI views + 2 movie frames (clip 9 aftermath, clip 5 irony) + 6 strict Nano Banana views + eyes crop + lips crop + 1 full-body back view. Every face-bearing image individually QC-verified before inclusion.
-- Usable ONLY with models `soul_2` and `soul_cinema_studio` — pass the soul_id with the generation. For all other models keep using the reference-image + frozen-string protocol above.
+## PERMANENT REFERENCE LOCK — owner decision 2026-08-20, do not re-litigate
+**The original 20-image verified set is the permanent, sole canonical character sheet for ALL future generations, in every tool and every episode, forever:** 9 PAI individual views + 2 movie frames (clip 9 aftermath, clip 5 irony) + 6 strict Nano Banana views + eyes crop + lips crop + 1 full-body back view — exactly as committed in this repo and archived by the owner (4 zips on the owner's machine).
+- These 20 originals (plus the 2 sheets and movie frames as Tier 1/2 context) are the ONLY images ever used as generation references.
+- **Soul renders (or any generated output) are NEVER used as references, character sheets, or training data. Ever. No exceptions.** Generated images are final content only. This closes the generational-drift loophole permanently.
+- Any future re-training (new Soul, other platforms' character features, LoRA, etc.) uses these same 20 originals as the training set — never renders.
+
+## Higgsfield Soul (trained identity model — generation engine only, NOT a reference source)
+- **soul_id:** `1b738001-5526-4038-8cf3-f2c136841b55` · name "Model Girl v4 as-filmed" · type `soul_2` · trained 2026-08-20 · status READY · identity test render passed QC vs Tier 1 (2026-08-20)
+- Trained on the locked 20-image set above.
+- Usable ONLY with models `soul_2` and `soul_cinema_studio` — pass the soul_id with the generation. For PAI Pro and all other models, use the locked reference images + frozen-string protocol above.
+- Its outputs are deliverables/final content only — per the permanent lock above, they never re-enter the pipeline as references.
 - Check status: `show_characters(action='status', soul_id='1b738001-5526-4038-8cf3-f2c136841b55')`.
 
 ## Next steps
