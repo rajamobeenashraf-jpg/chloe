@@ -31,8 +31,8 @@
 Her captions are **center-framed, bold, kinetic word-by-word sync with 1–3-word highlights**. Our locked style (§16: DejaVu Sans 8pt, bottom-safe-area, whole-sentence cues) is calmer and more cinematic. Flagging the difference honestly: her style is the retention-optimized Shorts convention. This contradicts an owner-locked value, so nothing is changed — owner's call whether to trial kinetic captions on one episode.
 
 ## 4. Beat-sheet template every future script follows
-1. Cold open = mid-crisis participation, ≤6s, cut before resolution.
-2. Rewind/plan beat states the irony clock in ≤2 sentences with one number in it.
+1. **OPENING LAW (owner lock 2026-08-20): LINEAR only — Chloe's viral grammar.** Open at the episode's strongest REAL first moment (arrival vista, stated doom, celebrity encounter, mid-action she's already in chronologically). NO flash-forward cold opens, NO rewind cards, no time jumps anywhere — time runs forward the entire episode. (Her #1/#2/#3 Shorts and every watched viral all open linear; the old cold-open+card pattern was our Ep 1–4 house style, retired by owner decision.)
+2. The opening beat states the irony clock in ≤2 sentences with one number in it.
 3. Costume/gear beat = physical comedy she DOES, with one era-fact inside.
 4. Food beat = rating ritual + a vendor/NPC deadpan punchline (§8 pacing).
 5. At least one [NPC deadpan] → [her aside] exchange per act.
