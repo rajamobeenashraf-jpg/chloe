@@ -33,7 +33,9 @@ import process from 'node:process';
 
 const BASE = 'https://generativelanguage.googleapis.com';
 const KEY = process.env.GEMINI_API_KEY;
-const FALLBACK_MODEL = 'gemini-2.5-flash';
+// Google retired gemini-2.5-flash for new accounts (their 404 recommends
+// gemini-3.6-flash), so that's the safety net when the alias is unavailable.
+const FALLBACK_MODEL = 'gemini-3.6-flash';
 
 const VIDEO_MIME = {
   '.mp4': 'video/mp4', '.mov': 'video/quicktime', '.webm': 'video/webm',
