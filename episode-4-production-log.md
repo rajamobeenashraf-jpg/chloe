@@ -51,6 +51,19 @@ Owner pasted 10 reference images directly into chat (front/¾/profile portraits,
 - `still_arrival_v1.png` — arrival outfit (clips 2–3): dove-grey wool travel dress, shawl, satchel, ridge over tent-dotted canyon. Alignment: PASS with note — distant tents rendered slightly conical/teepee-like; video prompts will specify "A-frame canvas wall tents" to prevent propagation.
 - Both sent to owner in chat. Awaiting approval before any clip generation.
 
+
+## Gritty/matte pass (owner direction, 2026-08-20)
+Owner: "push harder on the grittier/matte-skin direction." Added an on-location condition block to every prompt (identity string untouched, verbatim): fully MATTE skin — no gloss/shine/dewy highlight/makeup look; lip tint worn to matte, wind-chapped; faint sunburn, dirt in pores and knuckle creases, grease at hairline, flyaway frizz, tired eyes, short dirty fingernails; plus "NOT influencer glam — a real tired working woman on a real frontier" appended to the naturalism block. Regenerated both stills:
+- `still_workkit_v3_gritty.png` — landed matte/weathered, A-frame tents correct; framing drifted to third-person full-body (better costume read for approval; V-mode selfie grammar unaffected for video).
+- `still_arrival_v2_gritty.png` — selfie framing, matte skin, heavy natural freckling. Distant tents again conical (the still prompt lacked the A-frame clause; every VIDEO prompt carries it).
+Both sent. The same grit block is now standard in all 12 clip prompts.
+
+## Clip production prep (done while awaiting gate 1)
+- Video pipeline contract confirmed (`pai_video_client.js`): POST submit with `content[]` text + `asset://` refs (uploaded via CreateAsset from repo raw URLs), `ratio: "9:16"` (owner default), per-beat `duration`, 720p, `generate_audio: true`, poll task status to terminal, stream MP4.
+- All 12 clip prompts drafted in `pai-pro/projects/goldrush49/prompts/clips.mjs` — shared byte-identical blocks (identity verbatim / camera single-take / naturalism+grit / per-clip grade variant day-night-dusk / locked NPC descriptions for Amos + Li / A-frame tent clause). Durations per approved script: 7,9,11,8,12,10,13,12,12,14,13,11 = 132s.
+- §10 pre-generation self-check run over all 12: causality order (alarm rung AFTER she sees the jump in her stated sightline; "Wait— WAIT—" fired as she breaks through, before the verdict line), crowd population ≥20 for mob/court beats, embedded-not-sequential drama ("from the first frame..." on every interruption), speech gated by state (chewing muffled in 3, whispers in 6/8, gasping fragments in 11, breathless in 1/10, silence in 7), relationships carried (Li anchors her in 11; pouch meaning chains 7→11→12; clip 10 restages clip 1's exact posture as the payoff).
+- Runner ready: `gen_clip.mjs` (asset-id cache, submit/poll/download per clip).
+
 ## Status
 - [x] Branch + project scaffold + engine verified
 - [x] Master refs recovered (owner-supplied v5 set, repo-hosted)
