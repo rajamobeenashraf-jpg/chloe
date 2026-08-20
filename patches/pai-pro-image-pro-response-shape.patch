@@ -1,0 +1,39 @@
+diff --git a/server/pai_image_pro_client.js b/server/pai_image_pro_client.js
+index b43d4b5..c8475b9 100644
+--- a/server/pai_image_pro_client.js
++++ b/server/pai_image_pro_client.js
+@@ -91,9 +91,23 @@ function extractMediaUrl(body) {
+   if (typeof body?.outcome?.output_url === "string" && body.outcome.output_url) {
+     return body.outcome.output_url;
+   }
++  // OpenAI-chat-completion-shaped response (observed from image-edit-pro as
++  // of 2026-08-20): choices[0].message.images[0].image_url.url, a base64
++  // data: URI rather than a fetchable http(s) URL. Handled by the caller.
++  const chatImages = body?.choices?.[0]?.message?.images;
++  if (Array.isArray(chatImages) && chatImages.length > 0) {
++    const url = chatImages[0]?.image_url?.url;
++    if (typeof url === "string" && url) return url;
++  }
+   return null;
+ }
+ 
++function decodeDataUri(dataUri) {
++  const comma = dataUri.indexOf(",");
++  if (comma === -1) throw err("transient", "image-generation-pro returned a malformed data: URI");
++  return Buffer.from(dataUri.slice(comma + 1), "base64");
++}
++
+ function textFragments(value, out = []) {
+   if (typeof value === "string") {
+     out.push(value);
+@@ -177,7 +191,9 @@ export async function generateImagePro({
+     throw err("transient", "image-generation-pro returned 200 with no media URL");
+   }
+ 
+-  const bytes = await downloadUrlToBuffer(mediaUrl, { timeoutMs: 120_000 });
++  const bytes = mediaUrl.startsWith("data:")
++    ? decodeDataUri(mediaUrl)
++    : await downloadUrlToBuffer(mediaUrl, { timeoutMs: 120_000 });
+   if (!bytes.length) throw err("transient", "Downloaded image bytes are empty");
+ 
+   return {

@@ -12,6 +12,8 @@ fi
 
 PAI_DIR="/home/user/pai-pro"
 PROJECT_ID="wildwest"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PATCH_DIR="$SCRIPT_DIR/../../patches"
 
 if [ -d "$PAI_DIR/.git" ]; then
   echo "[pai-pro] already cloned at $PAI_DIR"
@@ -23,6 +25,22 @@ else
     echo "[pai-pro] WARNING: clone failed — PAI Pro will not be available this session"
     exit 0
   fi
+fi
+
+# Apply local fixes for bugs in the upstream client that haven't been
+# upstreamed yet (a fresh clone otherwise has none of these fixes).
+if [ -d "$PATCH_DIR" ]; then
+  for patch in "$PATCH_DIR"/*.patch; do
+    [ -f "$patch" ] || continue
+    name="$(basename "$patch")"
+    if (cd "$PAI_DIR" && git apply --check --reverse "$patch") 2>/dev/null; then
+      echo "[pai-pro] patch already applied: $name"
+    elif (cd "$PAI_DIR" && git apply "$patch") 2>/dev/null; then
+      echo "[pai-pro] applied patch: $name"
+    else
+      echo "[pai-pro] WARNING: patch did not apply cleanly, check manually: $name"
+    fi
+  done
 fi
 
 if [ -f "$PAI_DIR/.env" ]; then
