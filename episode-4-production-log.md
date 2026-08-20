@@ -91,6 +91,19 @@ Owner accepted clips 1–7 ("All accepted"). Clips 8–9 generating.
 - Lesson for merge-back: fronting a violated claim works (per PROJECT_AGENT retry rule); soaked/action scenes pull wardrobe toward skin-baring drift — pre-empt with an explicit "shirt stays ON, shoulders covered" clause in any water/rain beat.
 - Clips 10 + 12 generated, PASS, owner-delivered. All transcripts (Scribe) confirm on-script dialogue; caption sentence files written for all clips except 11 (pending v3 transcription).
 
+
+### Clip 11 — full saga, root cause found (2026-08-20)
+Five attempts on one 12-13s clip, each fix undoing the previous:
+- v1: wrist-anchor staging read as her and Li fighting over the bag (owner note).
+- v2: restaged as her-alone-hooks/Li-braces-from-behind — mechanics fixed, but wardrobe drifted to sleeveless.
+- v3: fronted a "NEVER sleeveless" wardrobe clause — wardrobe fixed, but owner caught "2-3 hard cuts": dense 3fps frame inspection (ffmpeg scene-detect found NOTHING — these were not pixel-level cuts, only visible on close frame-by-frame reading) showed the pouch morphing object identity (small drawstring pouch -> different rolled satchel) and a hard pose/geometry snap around the 9s mark. Root cause: three chained sub-actions (hook -> drag hand-over-hand -> catch) in fast current gave the model too many discrete beats to bridge smoothly.
+- v4: collapsed to ONE continuous sweep + locked pouch description as its own critical block -> fixed the fragmentation (0 scene-cuts, consistent object), but wardrobe drifted sleeveless AGAIN.
+- v5: root-caused as a prompt-structure problem, not a content problem -- two separate "critical" preambles (wardrobe block + pouch block) were competing for the model's attention and it would satisfy one at the expense of the other. Merged both into ONE woven description (wardrobe stated inline as part of the physical action, not as a standalone flagged rule) -> clean: flannel on with both shoulders/arms covered every frame, one unbroken sweep, consistent pouch, 0 scene-detect cuts. PASS, delivered.
+**Lesson for merge-back**: when a fix for issue A breaks issue B on the retry, check whether the prompt now carries multiple separate "critical/never" preambles — consolidate into one coherent description rather than stacking flagged blocks, they compete rather than compound. Also: ffmpeg scene-detect (scdet/select=gt(scene,x)) catches hard pixel cuts but NOT AI-generation object-permanence breaks (morphing props, pose snaps) — those need dense fps=3 frame-by-frame visual inspection, a sparse 6-frame contact sheet is not enough to catch them.
+
+## All 12 clips have a passing version — production complete pending final QC pass
+Final duration total (as-shot, may adjust ~1s in edit): 7+9+11+8+12+10+13+13+12+14+10+11 = 130s (clip 8 grew 12->13s for the realization beat, clip 11 shrank 13->10s in the simplification). Within the 90-200s Shorts cap.
+
 ## Status
 - [x] Branch + project scaffold + engine verified
 - [x] Master refs recovered (owner-supplied v5 set, repo-hosted)
