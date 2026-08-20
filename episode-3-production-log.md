@@ -161,3 +161,7 @@ Standing block extended with a "Gritty matte realism" paragraph (dry matte skin,
 
 ## GATE 1 PASSED (owner approval, 2026-08-20)
 All four gritty/matte stills approved. **still_b_tavern_lens_v2grit.png is the CANONICAL COSTUME REFERENCE** (lace-front madder-red jacket) — it rides along as a wardrobe ref in every colonial-costume video job; still D is the wardrobe ref for clip 2 (modern outfit). Approved stills committed to `episode-3-stills/` for durable hosting. Gate 2 begins: clips generated in script order, each sent to owner as it lands.
+
+## Gate 2 progress + first reject (2026-08-20)
+- Clips 1–5 generated, QC'd, owner-ACCEPTED (36.3s banked). Continuity verified with ffmpeg scene-detection on clip 4 (no internal cuts — the reframe is a physical lean).
+- **Clip 6 v1 REJECTED at internal QC (never sent):** wardrobe bleed — the Ep 1 Wild West movie-frame ref (cream blouse + laced bodice) overrode the scripted madder-red jacket + cloak in night lighting; Newman's coat drifted olive, hair not queued. Fix applied: (a) movie-frame ref dropped from costume-critical night clips 6–10 (face sheets + views carry identity), (b) "WARDROBE ENFORCEMENT" negative block appended to clips 06–10 prompts (refs define FACE/HAIR only; wardrobe defined by text + tavern costume still). v1 archived as clip6_v1_rejected.mp4. Learning for shared docs: movie frames from a previous era's episode are a wardrobe contamination risk as video refs — prefer sheets + neutral views + current-episode costume still.
