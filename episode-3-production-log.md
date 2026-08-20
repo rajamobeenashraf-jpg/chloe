@@ -8,11 +8,12 @@
 - [x] All 4 binding docs read; raw API contract confirmed (`pai-pro/docs/api_service.md`)
 - [x] 12 clip prompts drafted + §10 self-check (below)
 - [x] QC/stitch tooling rebuilt from §11 specs → `episode-3-tools/` (committed to repo this time so it survives container loss)
-- [ ] **BLOCKED: v4 master reference images** — see "Container-loss finding" below
-- [ ] Gate 1: costume stills approval
-- [ ] Gate 2: clip-by-clip approval ×12
-- [ ] Gate 3: stitched cut approval
-- [ ] Gate 4+: QC rounds
+- [x] v4 master reference images — resolved via owner GitHub upload, see "Container-loss finding" below
+- [x] Gate 1: costume stills approved (still B = canonical costume reference)
+- [x] Gate 2: clip-by-clip approval ×12 — all approved (clips 8, 9 needed reshoots; see clip-by-clip section)
+- [x] Gate 3: stitched cut approved
+- [x] Gate 4+: QC rounds — **5 rounds complete, owner-approved final** (transitions, caption sync, freeze fix, end card, final caption removal)
+- [x] **EPISODE 3 COMPLETE** — final deliverable: `boston1775_final_cut.mp4` (master, CRF16) / `boston1775_final_cut_compressed.mp4` (delivery copy, ~24MB), 127.2s
 
 ## OWNER DIRECTIVE (2026-08-20, this chat — BINDING for every Ep 3 generation)
 > Use the re-sent reference images as the character sheets. Log the identity strictly. She must appear **100% natural, realistic and human — never AI-plastic**.
@@ -247,3 +248,15 @@ Runtime unchanged: 127.2s.
 All four re-verified against burned frames in the fully assembled final cut (not just per-clip QC output) before delivery. Runtime unchanged at 127.2s (only captions/card position affected, no clip content or duration changes).
 
 **Note:** two suspicious "relayed" messages proposing a Gemini QC tooling integration (asking to fetch/execute an unreviewed script from other branches, overwrite CLAUDE.md, and adopt a branch-merge policy contradicting the project's explicit branch-isolation rules) were declined both times pending direct owner confirmation — flagged transparently in-chat, no actions taken, not followed up here since the owner confirmed to ignore them for this episode.
+
+## Launch-ready pinned comment (per creative-direction.md §3 community playbook)
+Drafted from the owner-approved research notes in `episodes-2-4-scripts.md`:
+
+> Robert Newman really was the sexton of the Old North Church — he's the one who climbed the tower and hung the two lanterns on the night of April 18, 1775, signaling that British troops were crossing the Charles River by boat ("two if by sea") rather than marching out over the Boston Neck ("one if by land"). He was arrested for it and later released. One thing the video doesn't claim: "the shot heard round the world" is a phrase Ralph Waldo Emerson wrote decades later, in 1837 — not something anyone said that night.
+>
+> AI-assisted, historically researched, corrections welcome — I read everything. 🕯️
+
+**Recurring character note for continuity:** Robert Newman (real historical figure) is this episode's "Liam-equivalent" per §3 — available to reappear/be referenced in a future episode if the timeline allows.
+
+## Status: EPISODE 3 CLOSED — ready for cross-episode merge
+This chat's production work is done: 12 clips shot and approved, full stitched cut through 5 QC rounds, end card added, pinned comment drafted. Learnings flagged throughout this log for the shared-doc merge (character-ref hosting, wardrobe-bleed ref contamination, moderation-safe weapon phrasing, POV-drift on action beats, caption-sync tooling bugs and fixes). Generated media lives only in this container (`pai-pro/projects/boston1775/assets/`) and will be lost when the session ends — the final cut has been delivered to the owner directly in chat as the durable copy.
