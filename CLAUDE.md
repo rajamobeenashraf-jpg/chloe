@@ -11,7 +11,7 @@ Read before any creative, research, or production work — these files are this 
 6. `episode-ideas-backlog.md` + `episodes-2-4-scripts.md` — pipeline state
 
 Standing rules:
-- The repo's **default branch is the source of truth**; session branches are workbenches. When an episode wraps (final render approved), merge that session's branch into the default branch so future sessions inherit its logs, prompts, and learnings. Commit and push episode work as you go — an unpushed container can expire and take the work with it.
+- The repo's **default branch is the source of truth**; session branches are workbenches. When an episode wraps (final render approved), its branch is merged into the default branch **with the owner's approval** so future sessions inherit its logs, prompts, and learnings. Commit and push working files as you go (scripts, prompts, logs, and a small manifest listing each generated clip's PAI/Higgsfield job ID + URL) — an unpushed container can expire and take that work with it. Generated video/image files themselves stay **out of git** unless the owner explicitly says otherwise; they remain retrievable from PAI/Higgsfield by job ID, and the manifest is what lets another session QC them.
 - Video output is vertical 9:16 unless the owner says otherwise; character name still pending (shortlist in the backlog).
 - Judge episode ideas by the signal stack in `research-methodology.md` — never by raw views alone.
 - Every generated clip AND every finished render goes through the QC chain in `research-methodology.md` §4 before the owner sees it; every regenerated clip gets re-checked.
