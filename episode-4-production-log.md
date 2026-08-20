@@ -113,6 +113,12 @@ Owner: v5 has her holding the camera in one hand and the shovel in the other, th
 
 Total attempts on clip 11: 8 (v1-v8). This was the single hardest shot in the episode — two actors plus a moving prop in fast water in one continuous take pushes right up against what this pipeline reliably holds together; each fix was real and each new issue was real, not a repeated failure of the same thing.
 
+
+### Clip 11 — v9, causal-order correction (2026-08-20)
+Owner caught one more issue in v8: the pouch was described as "already snagged on the blade" from frame one, which read as the bag starting pre-attached to the tool rather than the tool retrieving it. Correct sequence per owner: the bag is IN the river first (its own object, adrift), and the shovel — starting EMPTY — reaches in and scoops/hooks it where it already is. Rewrote clip 11's scene to establish the pouch floating in the current before the shovel ever touches it, then the shovel reaches out empty and catches it in the same continuous motion. v9: verified via dense 4fps frame sequence — pouch visibly separate and floating in row 1, shovel empty and closing in, hook catches it in row 2, drawn up and transferred to both hands in row 3, held steady with no further changes through the end. 0 scene-detect cuts, no camera device, Li correctly dressed and hands-anchor-only. **PASS, delivered.**
+
+Total attempts on clip 11: 9 (v1-v9). Final locked version: `clip11_v9.mp4`.
+
 ## All 12 clips have a passing version — production complete pending final QC pass
 Final duration total (as-shot, may adjust ~1s in edit): 7+9+11+8+12+10+13+13+12+14+10+11 = 130s (clip 8 grew 12->13s for the realization beat, clip 11 shrank 13->10s in the simplification). Within the 90-200s Shorts cap.
 
