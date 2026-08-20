@@ -79,4 +79,29 @@ else
   fi
 fi
 
+# Restore per-project tooling that lives under pai-pro/projects/ (outside
+# pai-pro's own git history, so a fresh clone never has it). This is exactly
+# what happened to Ep 1's qc_pass.mjs/build_final_cut.mjs — lost with the
+# old container, had to be rebuilt from scratch for Ep 2. Only copies files
+# that don't already exist, so it never clobbers in-session edits.
+TOOLING_DIR="$SCRIPT_DIR/../../pai-pro-tooling"
+if [ -d "$TOOLING_DIR" ]; then
+  for project_dir in "$TOOLING_DIR"/*/; do
+    [ -d "$project_dir" ] || continue
+    project="$(basename "$project_dir")"
+    dest="$PAI_DIR/projects/$project"
+    mkdir -p "$dest"
+    for f in "$project_dir"*; do
+      [ -f "$f" ] || continue
+      name="$(basename "$f")"
+      if [ -f "$dest/$name" ]; then
+        echo "[pai-pro] $project/$name already present"
+      else
+        cp "$f" "$dest/$name"
+        echo "[pai-pro] restored $project/$name"
+      fi
+    done
+  done
+fi
+
 exit 0
