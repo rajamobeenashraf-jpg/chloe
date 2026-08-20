@@ -162,11 +162,17 @@ export const TRANSITIONS = [
 // rendering + frame inspection before the full batch ran: white bold text,
 // black outline, bottom-safe-area placement clear of platform UI overlays.
 export const SUB_STYLE = {
-  fontName: "Liberation Sans",
+  // Owner directive 2026-08-20: captions sit in the band between the old
+  // bottom position (marginV 150 — rendered under the YouTube Shorts UI
+  // overlay) and the reference channel's center-screen captions. marginV 320
+  // (720x1280 PlayRes) = upper-torso band, ~10% below the chin in standard
+  // framing, verified on real Ep 1 frames. DejaVu Sans is the canonical face
+  // (creative-direction.md §16); Liberation Sans was a rebuild variance.
+  fontName: "DejaVu Sans",
   fontSize: 42,
   outline: 2.6,
   shadow: 1.2,
-  marginV: 150,
+  marginV: 320,
   marginLR: 60,
 };
 
