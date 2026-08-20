@@ -48,6 +48,7 @@ How she reacts, by beat type — derived from what actually drove engagement in 
 **Format: 9:16 vertical is the standing default for every clip, every episode** (owner directive, 2026-08-20) — this is a Shorts-only production (90–200s cap). Set as the actual code default in `pai_video_client.js`/`generate_video.js` (patched into `pai-pro` via `patches/pai-pro-video-default-9x16.patch`, applied automatically by the SessionStart hook), not just a per-call flag to remember.
 
 ## 6. Scene-transition craft
+*(2026-08-20: on the cut-vs-dissolve question, §16 now governs — hard cuts only. Every craft rule below — match-cuts, J/L audio bridges, grade & NPC continuity, react-before-cut — still stands and pairs naturally with hard cuts.)*
 This is what actually sells "she was really there" — not a model capability, a production discipline. Chloe's seamless cut-to-cut flow comes from cutting *on* action and sound, not from the AI model alone:
 - **Match-cut on motion** — end clip N mid-gesture (turning, stepping, reaching) and start clip N+1 continuing that same motion, rather than cutting on a static beat. This is also exactly what makes `reference_video`/`video_extension` chaining pay off — feed the next generation the end frame *and* the motion direction of the previous clip.
 - **Audio bridges (J-cuts/L-cuts)** — let the next scene's sound (crowd noise, footsteps, dialogue) start a beat before the visual cut, or let the current scene's audio trail into the next shot. Silence-to-silence cuts are the #1 tell of a stitched-together AI video.
@@ -133,6 +134,7 @@ All 10 clips stitched into one Short with `pai-pro/projects/wildwest/build_final
 - **Delivery copy**: `assets/wildwest_final_cut_compressed.mp4` (~1.5Mbps, ~22MB) — re-encoded only to fit the chat delivery size limit; lower bitrate, review copy only, not the upload master.
 
 ## 11. QC pass v2 — captions, card, transition technique (2026-08-19)
+*(Historical log. The per-transition blend table and the round-3 "extend captions into silence" policy below are SUPERSEDED by §16 (2026-08-20). The round-5 owner-locked caption style values remain canonical.)*
 Two rounds of owner QC found real, fixable issues:
 
 **Round 1** (`pai-pro/projects/wildwest/qc_pass.mjs`): burnt-in captions via real transcription (ElevenLabs Scribe on each clip's extracted audio — never guessed from the original generation prompts, which the model doesn't follow verbatim), timing grounded in `ffmpeg silencedetect` speech/silence boundaries. Lighting-corrected clips 4 and 6 (measured outliers via `signalstats`, not eyeballed). Added an "earlier today" card at clip 2.
@@ -175,3 +177,57 @@ Two rounds of owner QC found real, fixable issues:
 2. Cut 4 Shorts-within-the-Short per the promo plan if still wanted (see original concept notes).
 3. Apply the community playbook (§3) at launch: pinned comment, recurring character, easter egg.
 4. Consider Higgsfield Soul training on approved v3 renders for hard-locked consistency on the next production.
+
+## Status: Episode 2 (Salem) final cut assembled (2026-08-20)
+All 12 clips (final versions: clip7/10/11 as their owner-approved v2 regenerations) stitched into one Short. Tooling (`qc_pass.mjs`, `build_final_cut.mjs`, `captions_data.mjs`) rebuilt from scratch this session per §11's lessons — the originals were lost with the old container.
+
+- **Captions**: burnt in via ASS/libass, timing grounded in real `ffmpeg silencedetect` speech boundaries measured off each clip's actual rendered audio (never guessed from the generation prompt), cross-checked against frame-by-frame mouth movement wherever the silence data was ambiguous (clip 11's rescue line, clip 12's outro beats). Text taken verbatim from each clip's own prompt (the exact words the model was instructed to speak). Style: Liberation Sans Bold, white with black outline, bottom-safe-area, word-wrap on (an initial WrapStyle setting disabled auto-wrap and let a long line run off both screen edges — caught and fixed before the full batch ran).
+- **Transitions — all 12 are true hard cuts, not dissolves.** Round 1 tried a very short (0.12s) xfade on scene-change cuts, matching Ep 1's precedent; visual QC on the actual rendered midpoints caught real double-exposure ghosting. Round 2 tried longer (0.25-0.35s) dissolves on the "continuous action" clips (6-11), on the theory those would blend cleanly the way Ep 1's did; same ghosting, checked and confirmed at the literal blend midpoint. Root cause: every clip here is an independently generated shot with its own camera angle, not continuous footage from one real camera, so a dissolve only reads clean when the two blended frames already happen to be close in framing — never guaranteed clip-to-clip in this pipeline. Fixed by making every transition a true zero-blend hard cut (ffmpeg `concat`, not `xfade`) — verified ghost-free at all 12 cut points by extracting before/after frames at each one. One title card ("EARLIER THAT DAY", matching the Ep 1 "EARLIER TODAY" precedent) inserted between clip 1's cold-open tease and clip 2's rewind.
+- **Audio**: per-clip `loudnorm` normalization; a small but real audio/video duration drift from loudnorm's two-pass analysis (~30ms/clip, compounding across 12 clips) was caught and fixed by capping each QC'd clip's output to its source's frame-exact video-stream duration. Final audio resampled to standard 48kHz (an intermediate build drifted to a non-standard 96kHz via filter-graph negotiation — caught and fixed before delivery).
+- **Runtime**: 132.88s — within the 90-200s Shorts cap and close to the script's own ~131s estimate.
+- **Files**: `pai-pro/projects/salem/assets/salem_final_cut.mp4` (master, CRF16, ~101MB) / `salem_final_cut_compressed.mp4` (delivery copy, ~1.5Mbps, ~26MB).
+
+**Round 2, owner correction on round 1's output (2026-08-20): "editing not good, transitions not smooth, captions not matching the people talking."** Real bugs found on rigorous re-check, not just re-timing:
+- **Caption/mouth mismatches, two confirmed via frame-by-frame verification** (silencedetect timing alone was not enough, exactly as owner flagged): clip 1's villager shout was captioned 1.702-3.532s, but frames show his mouth closed through that entire window — the actual sustained shout runs ~2.9-6.4s (silencedetect had anchored to an earlier, quieter segment, not the real vocal peak). Same failure mode on clip 6's afflicted-girl shriek: captioned 2.572-4.305s, but she's still just kneeling with her mouth closed until ~4.0s; real shriek runs ~4.0-5.8s. Clip 4 had a smaller ~0.3s boundary drift between its two lines. All three re-timed against actual verified mouth movement, not audio energy alone.
+- **Root cause behind "captions don't match who's talking," beyond timing:** several lines are spoken by background characters (the villager, the afflicted girl, the suspicious man, Goodwife Ann) with no attribution — a plain caption over her own face reads as her dialogue even when it's timed correctly, because a viewer's eyes default to the framed subject. Fixed by prefixing every non-protagonist cue with an italicized bracketed speaker tag (`[Villager]`, `[Afflicted Girl]`, `[Elderly Woman]`, `[Goodwife Ann]`) in `qc_pass.mjs`.
+- **Transition smoothness:** the true-hard-cut fix from round 1 stayed (still ghost-free, still the right call), but a hard cut on both picture AND sound at full volume, with zero fade, is its own kind of jarring — every one of the 12 cuts snapped audio instantly. Fixed with a short (0.08s) audio-only fade in/out at every clip's edges in `qc_pass.mjs`, applied before the hard-cut concat. Deliberately NOT a crossfade/blend: that would consume ~0.08s of the incoming clip's own audio into the transition and desync it from its video from that point on (checked the math, rejected). A same-clip edge fade has no such risk — verified via waveform inspection that the snap is now a smooth taper, and re-verified corrected captions still land correctly in the reassembled final cut.
+- All 12 clips reprocessed, full cut reassembled: runtime unchanged (132.88s), same master/delivery filenames.
+- Awaiting owner review.
+
+---
+
+## 16. Cross-episode pipeline rules (merged 2026-08-20 — newest-command-wins)
+
+Assembled from the Ep 2 (Salem) and Ep 4 (Gold Rush) owner-correction rounds plus Ep 3/Ep 4 engine findings. Where any older section conflicts with this one, THIS section holds (owner's standing merge rule: the later command wins). Latest governing decision on transitions: Ep 2 round 2, 2026-08-20 ~17:25 UTC.
+
+**Transitions:**
+- Every clip-to-clip transition is a TRUE HARD CUT (ffmpeg `concat`, zero blend). No `xfade`, dissolve, or micro-blend between independently generated clips: a dissolve only reads clean when the two blended frames already match in framing — never guaranteed in this pipeline. Double-exposure ghosting was confirmed at rendered midpoints in both Ep 2 rounds, and Ep 1's 0.12s micro-blends read as glitches in Ep 4. Supersedes §11's blend table.
+- Audio at every cut: a 0.08s audio-only fade out/in at each clip's own edges, applied BEFORE the hard-cut concat. Never an audio crossfade across a cut — it consumes the incoming clip's own audio and desyncs it from its video (checked and rejected in Ep 2).
+- Title cards between clips remain allowed ("EARLIER TODAY" / "EARLIER THAT DAY" precedent).
+- Mandatory verification: extract before/after frames at every cut point and confirm ghost-free; after every build, check `ffprobe` frame count against expected runtime — Ep 4 caught ffmpeg silently truncating a 128s cut to ~14s of video while exiting 0.
+
+**Captions (owner's permanent rule — Ep 4 instruction, independently confirmed by Ep 2):**
+- Timing ALWAYS from real detected audio (`silencedetect` on the clip's actual rendered audio), never from generation-prompt text or guessed pacing.
+- MANDATORY mouth-frame cross-check whenever automated timing is ambiguous — a single cue spanning most of a clip, no silence gap under loud background sound, an unusually long tail, or a duration implausible for its word count: extract frames at the cue's start and end and confirm the mouth is actually moving at the start and still immediately after the end. Audio energy alone anchors to the wrong burst (proven twice in Ep 2, once in Ep 1 round 6).
+- Cues are whole sentences, timed on a "virtual" timeline built from concatenated real speech runs (silence collapsed out): a cue appears when the line starts and disappears when it ends (Ep 4 fix). This supersedes §11 round 3's "extend into silence on the disappear side" policy — owner-flagged wrong in Ep 4; documented policy flip.
+- Every non-protagonist line gets an italicized bracketed speaker tag (`[Villager]`, `[Goodwife Ann]`) so background dialogue never reads as hers (Ep 2 fix for "captions don't match who's talking").
+- Canonical caption style: §11 round-5's owner-locked values (DejaVu Sans, `FontSize=8`, `Outline=1.1`, `Shadow=0.4`, `MarginV=55`, bottom-safe-area, word-wrap ON). Ep 2's Liberation Sans was a rebuild variance, not an owner decision.
+
+**Audio hygiene:** per-clip `loudnorm` stays, but cap each processed clip to its source's frame-exact video duration (loudnorm's two-pass drift ~30ms/clip compounds across a cut); verify the final mix is standard 48kHz (a filter-graph negotiation once drifted an intermediate to 96kHz).
+
+**Clip inspection (Claude-eyes existing process — machine/Gemini QC remains edit-stage-only per CLAUDE.md):**
+- ffmpeg scene-detect catches hard pixel cuts but NOT AI object-permanence breaks (morphing props, pose snaps, hand-count physics). Those need dense ≥3fps frame-by-frame inspection; a sparse contact sheet is not enough. Check hand-count physics explicitly (a held camera needs a hand holding it).
+- After any multi-clip source-file edit, run an isolation check asserting the untouched clips' content is byte-unchanged before generating anything.
+
+**Prompt craft:**
+- Never stack multiple "critical/never" preamble blocks in one prompt — consolidate into one coherent description; stacked flagged blocks compete rather than compound.
+- Hands-free / no-camera beats: state the negative explicitly ("no camera, rig, GoPro, strap, or mount ever visible"). Describing a mounting method ("chest-mounted") makes the model render the device.
+
+**Engine facts (verified 2026-08-20 in the Ep 3 and Ep 4 chats):**
+- PAI request body cap is 512KB — inline base64 refs are impossible; refs are public URLs fetched server-side (`image-edit-pro` takes a `payload.image` URL array; `data:` URIs rejected at the client boundary).
+- `image-generation-pro` text-to-image can return an OpenAI-passthrough shape (`choices[0].message.images[0].image_url.url`, base64 data URI) instead of the documented `outcome.media_urls[0].url` — parsers must handle both.
+- `image-edit-pro` routes to gpt-image-2 and returns 1024×1024 regardless of requested size (~$0.26/still); final 9:16 is enforced at the video-pipeline stage.
+- Video refs: CreateAssetGroup → CreateAsset → poll GetAsset Active, then submit `video-generation` with `asset://<id>` refs, `ratio: "9:16"`, 720p, `generate_audio: true`. Limits (`server/cli/_limits.js`): ≤9 image refs, ≤3 video refs (aggregate ≤15s), ≤3 audio refs (audio needs a visual anchor), each ref 1.8–15.2s, clip hard cap 15.2s.
+- Per-project assembly tooling lives in the repo at `pai-pro-tooling/<project>/`; the SessionStart hook auto-restores it into `pai-pro/projects/<project>/` on container start (Ep 2 infra — prevents an Ep-1-style tooling loss).
+
+**Deferred to the episode-branch merges (owner decision pending):** committing one canonical master reference-image set to the repo (Ep 3's permanent-fix proposal; Ep 4's branch carries an owner-supplied v5 set in `character-refs/`). Canon selection touches CHARACTER_LOCK — owner's call at merge time.

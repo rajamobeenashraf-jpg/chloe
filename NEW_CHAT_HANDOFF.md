@@ -25,7 +25,11 @@ Run: CLAUDE_CODE_REMOTE=true bash .claude/hooks/session-start.sh
 - Engine facts: API base https://api.pai-pro.utopaistudios.com · stills/refs via
   `image-edit-pro` · video via PAI's video pipeline (same as Episode 1) · HARD CAP
   15.2s per clip (server/cli/_limits.js) · the image-generation payload's fileData
-  REQUIRES an explicit mimeType (e.g. "image/png") or the request 400s.
+  REQUIRES an explicit mimeType (e.g. "image/png") or the request 400s ·
+  request body cap 512KB so refs must be public URLs (server-side fetch, no
+  base64) · image-generation-pro may return the OpenAI passthrough shape
+  (choices[0].message.images[0].image_url.url) instead of outcome.media_urls —
+  handle both (full list: creative-direction.md §16).
 - Work in your OWN project dir: /home/user/pai-pro/projects/<your-episode>/assets
   (write that id to /home/user/pai-pro/.active_project). Never touch other
   episodes' dirs.
@@ -84,12 +88,15 @@ Produce Episode ___ — ___ (fill in from episodes-2-4-scripts.md, e.g.
     PrimaryColour=&H00FFFFFF, OutlineColour=&H00000000, BorderStyle=1, Outline=1.1,
     Shadow=0.4, Bold=1, Alignment=2, MarginV=55, MarginL=70, MarginR=70
   · caption timing from REAL audio: transcribe each clip (never trust the prompt
-    text), ffmpeg silencedetect (min duration 0.12s), merge fragments with <0.3s
-    gaps, gap-clustering for sentence boundaries, asymmetric crossfade margins
-    (only the INCOMING clip withholds captions during a blend)
-  · transitions: 0.12s blend for scene/location changes, 0.4s dissolve for
-    continuous action, ~0.5s for time-passing; audio acrossfade matching each
-    video blend; loudnorm on every clip before assembly
+    text), ffmpeg silencedetect; whole-sentence cues timed on a virtual
+    speech-run timeline; MANDATORY mouth-frame cross-check on any ambiguous cue;
+    italicized [Speaker] tags on every non-protagonist line (§16)
+  · transitions: TRUE HARD CUTS only (ffmpeg concat, zero blend — never
+    xfade/dissolve between independently generated clips) with a 0.08s
+    audio-only edge fade per clip, never an audio acrossfade; verify every cut
+    ghost-free at its midpoint frames + ffprobe frame-count sanity check after
+    each build; loudnorm on every clip (capped to source frame-exact duration,
+    48kHz final) (§16)
   · master at CRF 16 + a ~1.5Mbps compressed delivery copy for chat
 - CRITICAL: generated media lives OUTSIDE git and DIES with this container. Send
   me the compressed final cut (and key stills for approval) in chat as soon as
@@ -114,4 +121,4 @@ Produce Episode ___ — ___ (fill in from episodes-2-4-scripts.md, e.g.
 
 ## Known losses from the previous container (nothing recoverable, all rebuildable)
 - Episode 1's generated clips and final cuts (`wildwest_final_cut*.mp4`) — exist only wherever the owner downloaded them.
-- The QC/stitch tooling (`qc_pass.mjs`, `build_final_cut.mjs`) — rebuild from `creative-direction.md` §11 specs, which captured every parameter and algorithm decision. (The visual-QC layer has since been rebuilt better as `tools/gemini-eyes/` and lives IN git on the default branch; rebuilt assembly scripts also exist on the episode workbench branches — `episode-3-tools/`, `episode-4-assets/tools/`, `pai-pro-tooling/salem/` — copy from there or rebuild per §11.)
+- The QC/stitch tooling (`qc_pass.mjs`, `build_final_cut.mjs`) — no longer lost: rebuilt Salem versions live IN git on the default branch at `pai-pro-tooling/salem/` and the SessionStart hook auto-restores them into `pai-pro/projects/salem/` each container start; adapt them per `creative-direction.md` §16 (hard cuts, mouth-check captions). More rebuilt variants sit on the episode workbench branches (`episode-3-tools/`, `episode-4-assets/tools/`). The visual-QC layer is `tools/gemini-eyes/` (edit-stage only, per CLAUDE.md).
