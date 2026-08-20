@@ -28,7 +28,7 @@
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
-import { TRANSITIONS, CLIP_COUNT, SUB_STYLE, CARD } from "./transitions.mjs";
+import { CLIP_COUNT, SUB_STYLE, CARD } from "./transitions.mjs";
 
 const args = process.argv.slice(2);
 function argVal(flag, dflt) {
@@ -44,7 +44,6 @@ const MIN_SILENCE = 0.12;     // silencedetect d= (§11 round 3 #1)
 const NOISE_DB = "-30dB";
 const MICRO_SEG = 0.15;       // drop detector-noise blips (§11 round 2)
 const MERGE_GAP = 0.3;        // merge fragments into utterance runs (round 3 #2)
-const MAX_WPS = 4.5;          // readability floor (round 3 #5)
 const MIN_CUE = 0.3;
 
 function sh(cmd, argv) {
@@ -138,15 +137,22 @@ function allocate(sentences, runs, dur) {
   });
 }
 
-// --- 3/4. margins + readability floor ------------------------------------
+// --- 3/4. exact mouth-sync ------------------------------------------------
+// REVISED (owner feedback round 2, 2026-08-20): captions must appear the
+// instant she starts speaking and disappear the instant she stops — no
+// padding either direction. Two things in the original refine() worked
+// against that: (a) clamping a cue's start to the incoming transition's
+// blend duration, which could delay the caption's appearance past her
+// actual first word; (b) the "readability floor," which pushed a cue's end
+// later than her real last word whenever the implied words/sec looked too
+// fast. Both are removed — cue boundaries now come straight from the real
+// silencedetect-derived speech segments (already merged/gap-clustered
+// above), untouched. Transitions are now near-hard cuts (≤0.18s almost
+// everywhere), so the old double-caption-during-a-dissolve risk this was
+// guarding against is negligible; exact sync wins over both concerns.
 function refine(cues, clipNo, dur) {
-  const inBlend = clipNo > 1 ? TRANSITIONS[clipNo - 2] : 0; // incoming-side blend
   for (const c of cues) {
-    if (c.start < inBlend) c.start = inBlend;              // asymmetric: incoming only
-    const words = c.text.split(/\s+/).filter(Boolean).length;
-    const need = words / MAX_WPS;
-    if (c.end - c.start < need) c.end = Math.min(dur, c.start + need);
-    if (c.end - c.start < MIN_CUE) c.end = Math.min(dur, c.start + MIN_CUE);
+    if (c.end - c.start < MIN_CUE) c.end = Math.min(dur, c.start + MIN_CUE); // zero-duration glitch guard only
   }
   // never overlap neighbours
   for (let i = 1; i < cues.length; i++) {
