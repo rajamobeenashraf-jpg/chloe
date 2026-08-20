@@ -65,6 +65,8 @@ try {
     const prompt = readPrompt();
     const refs = list(args.ref);
     const payload = {
+      // Owner directive 2026-08-20: 9:16 is the default everywhere.
+      // Pro tier accepts exact `size` only (no aspect_ratio field).
       prompt, size: args.size || "1440x2560", quality: "high", n: 1,
       output_format: "png",
     };

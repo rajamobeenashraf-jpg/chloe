@@ -151,3 +151,10 @@ Audio: matching `acrossfade` per join; `loudnorm` every clip pre-assembly. J-bri
 - **PAI Pro is the ONLY generation engine for Ep 3** (stills via image-edit-pro, video via the video pipeline). Higgsfield explicitly ruled out by owner — not used for generation NOR for file hosting.
 - Reference hosting: this repo is public, so `raw.githubusercontent.com/<owner>/chloe/<branch>/character-refs/*.png` URLs are directly server-fetchable by PAI. Owner uploads the reference PNGs to `character-refs/` on this branch via GitHub web UI; a watcher in this session pulls them the moment they land.
 - All 12 video prompts pre-composed in `episode-3-prompts/clip01–12.txt` (scene body + V-mode grammar + single-take clause + verbatim identity string + naturalism block + locked grade + no-text rule).
+
+## Owner directive (2026-08-20): 9:16 default everywhere
+- Video: `ratio: "9:16"`, 720p (720×1280) — already the pipeline default.
+- Stills: `size: "1440x2560"` (exact 9:16) is now the client default. NOTE: the image gateway changed to an OpenRouter-style chat.completion response (image arrives as inline base64 in `choices[0].message.images[0].image_url.url`) and the first test render ignored `size` (returned 1024×1024). If the gritty batch also comes back square: enforce "vertical 9:16 portrait composition" in prompt text and center-crop to 9:16 in post for approval stills. Client patched for the new response shape; documented shapes still handled.
+
+## Owner directive (2026-08-20): grittier matte skin
+Standing block extended with a "Gritty matte realism" paragraph (dry matte skin, no gloss/dew/studio glow, wind-chafed cheeks, minimal makeup, flyaway hairs, heavier grain, worn dusty clothing). Prompt files restructured to scene-bodies only; the standing block is appended at submit time (`pai.mjs --block`) so direction changes propagate to all 16 prompts instantly. First-generation glossy still kept as `still_a_v1_baseline.png` for side-by-side at Gate 1.
