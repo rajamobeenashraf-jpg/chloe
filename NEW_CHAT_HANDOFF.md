@@ -1,115 +1,97 @@
 # New-Chat Handoff — Parallel Episode Production
-**Purpose: paste the block below into a fresh Claude Code chat on this repo to produce ONE episode in parallel with other chats. Written 2026-08-19; updated 2026-08-20. The authoritative state lives on the repo's DEFAULT branch (kept current by owner-approved merges — this file included). New chats start there automatically and auto-load CLAUDE.md.**
+**Purpose: paste the block below into a fresh Claude Code chat on this repo to produce ONE episode in parallel with other chats. Written 2026-08-19; prompt v2 2026-08-20 for Episodes 5–9. The authoritative state lives on the repo's DEFAULT branch (kept current by owner-approved merges — this file included). New chats start there automatically and auto-load CLAUDE.md.**
 
 ---
 
-## PASTE-READY PROMPT (fill in the episode line, section 3)
+## PASTE-READY PROMPT v2 — Episodes 5–9 (fill in the episode line, section 3)
 
 ```
 You are the creative director, producer and script supervisor for my AI historical
-time-travel Shorts channel (this repo: chloe). A previous chat produced Episode 1
-(Wild West 1875) end-to-end. You are producing ONE episode, in parallel with other
-chats producing other episodes. Follow everything below exactly.
+time-travel Shorts channel (this repo: chloe). Previous chats produced Episodes 1-4
+end-to-end. You are producing ONE episode, in parallel with other chats producing
+other episodes. Follow everything below exactly.
 
 ## 0. Get the current project state FIRST
-The DEFAULT branch is current (as of 2026-08-20) — new chats start on it with all
-docs, rules, the character lock, and CLAUDE.md already loaded. Just create your
-own designated work branch from it:
-  git checkout -B <your-designated-work-branch>
-Develop and push on your own designated branch only.
+The DEFAULT branch is current — new chats start on it with all docs, rules, the
+character lock, and CLAUDE.md already loaded. Create your own work branch from it:
+  git checkout -B claude/episode-<N>-<slug>
+Develop and push on your own branch only.
 
 ## 1. Provision the PAI Pro engine
 Run: CLAUDE_CODE_REMOTE=true bash .claude/hooks/session-start.sh
 - If it warns PAI_KEY is missing: ask me for the key, write it into
   /home/user/pai-pro/.env as the PAI_KEY= line. NEVER print or commit the key.
 - Engine facts: API base https://api.pai-pro.utopaistudios.com · stills/refs via
-  `image-edit-pro` · video via PAI's video pipeline (same as Episode 1) · HARD CAP
-  15.2s per clip (server/cli/_limits.js) · the image-generation payload's fileData
-  REQUIRES an explicit mimeType (e.g. "image/png") or the request 400s ·
-  request body cap 512KB so refs must be public URLs (server-side fetch, no
-  base64) · image-generation-pro may return the OpenAI passthrough shape
-  (choices[0].message.images[0].image_url.url) instead of outcome.media_urls —
-  handle both (full list: creative-direction.md §16).
+  `image-edit-pro` · video via PAI's video pipeline · HARD CAP 15.2s per clip ·
+  image payload fileData REQUIRES explicit mimeType or 400 · request body cap
+  512KB so refs must be public URLs · image-generation-pro may return the OpenAI
+  passthrough shape — handle both (full list: creative-direction.md §16).
 - Work in your OWN project dir: /home/user/pai-pro/projects/<your-episode>/assets
-  (write that id to /home/user/pai-pro/.active_project). Never touch other
-  episodes' dirs.
+  (write that id to /home/user/pai-pro/.active_project). Suggested ids:
+  Ep5=dino · Ep6=caesar · Ep7=troy · Ep8=berlin · Ep9=giza.
+  Never touch other episodes' dirs.
+- Caption/assembly tooling: adapt pai-pro-tooling/salem/ (qc_pass.mjs,
+  build_final_cut.mjs, captions_data.mjs — the SessionStart hook restores them
+  into pai-pro/projects/salem/). SUB_STYLE is canonical: DejaVu Sans Bold 42,
+  outline 2.6, shadow 1.2, marginV=320 (owner-locked position 2026-08-20 —
+  clears platform UI, below her face, separated from center), marginLR 60,
+  720x1280 PlayRes, whole-sentence cues, italicized [Speaker] tags on every
+  non-protagonist line.
 
 ## 2. Read these repo files BEFORE any creative work — they are BINDING
 1. PROJECT_HANDOFF.md — project state and strategy facts
-2. CHARACTER_LOCK.md — v4 "as-filmed" face lock. Every single generation must use
-   ALL FIVE master reference images AND the frozen identity string VERBATIM (never
-   paraphrase it; never describe skin as fair/ivory/porcelain/rosy; age locked
-   early twenties).
-3. creative-direction.md — ALL standing rules, §1–§12. Non-negotiable highlights:
-   - Chloe-formula V-mode talk-to-lens ONLY; Nova cinematic third-person mode is
-     PAUSED by owner instruction.
-   - Single continuous takes: no "and then" phrasing; drama embedded in ongoing
-     motion; state "single continuous unbroken shot, one camera angle throughout,
-     no cuts, real-time continuous take" in EVERY video prompt.
-   - Physical state gates dialogue pacing (no clear fast speech while chewing/
-     drinking/gasping) — state it explicitly in prompts for such beats.
-   - Clip duration judged per beat: simple reaction 5–6s, talking ~8s, multi-step
-     business 12–13s (validated). Count the micro-actions before setting duration.
-   - Pre-generation self-check on EVERY prompt: dialogue-action causality (warnings
-     fire BEFORE the action), scene population matches claimed intensity, sightline
-     geometry supports described perception, established relationships carry
-     forward between clips.
-   - §12 active-participant directive: every beat shows her acting ON the scene —
-     objects, terrain, people — never passive running or watching.
-   - Transition craft: match-cut on motion, J/L audio bridges, one locked color
-     grade restated in every clip prompt, identical NPC descriptions across clips.
-4. episodes-2-4-scripts.md — the approved clip-by-clip script you will produce.
+2. CHARACTER_LOCK.md — the character is HAZEL (owner-locked name — it may appear
+   in dialogue, captions, on-screen text). v4 "as-filmed" face lock: every single
+   generation uses the locked reference protocol AND the frozen identity string
+   VERBATIM (never paraphrase; never fair/ivory/porcelain/rosy; age locked early
+   twenties; §13 realism bar + matte/gritty clause in every prompt).
+3. creative-direction.md — ALL standing rules §1–§16. Highlights: V-mode
+   talk-to-lens ONLY (Nova mode PAUSED) · single continuous takes, no "and then"
+   phrasing, state "single continuous unbroken shot, one camera angle throughout,
+   no cuts, real-time continuous take" in EVERY video prompt · physical state
+   gates dialogue pacing (§8) · duration judged per beat (§9) · pre-generation
+   self-check on EVERY prompt (§10) · §12 active-participant · §13 natural-human
+   realism (hard pass/fail) · §14 forward walking, never backward-tracking ·
+   §15 chase geometry · §16 hard cuts only + caption rigor + engine facts.
+4. chloe-craft-study-2026-08-20.md — the line-level craft playbook (REQUIRED).
+   Includes §4.1 OPENING LAW (owner lock): LINEAR storytelling only — no
+   flash-forward cold opens, no rewind cards, time runs forward the whole
+   episode. The old "EARLIER TODAY" card convention is retired.
+5. episodes-5-9-scripts.md — YOUR approved clip-by-clip script (v3, linear).
+   Follow its clip count, durations, dialogue, per-episode Flow block, sound
+   design, lighting locks (Ep 7 is DAYLIGHT/golden-hour only), and the
+   direct-address conversation triangle in its header. Small on-set improvements
+   allowed only if they respect every standing rule.
 
 ## 3. YOUR ASSIGNMENT
-Produce Episode ___ — ___ (fill in from episodes-2-4-scripts.md, e.g.
-"Episode 3 — The Night Paul Revere Rode (Boston 1775)").
-- Generate every clip per the approved script: clip count, per-clip durations,
-  dialogue as written. Small on-set improvements are allowed only if they respect
-  every standing rule.
-- The character's NAME is not yet decided — no name may appear in dialogue,
-  captions, or on-screen text.
-- QC + assembly per Episode 1's proven pipeline (specs in creative-direction.md
-  §11 — NOTE: the actual scripts qc_pass.mjs / build_final_cut.mjs were LOST with
-  the old container; rebuild them from the §11 specs).
-  For VISUAL QC use `tools/gemini-eyes/` (IN git, survives containers): machine-
-  watches any cut, clip, or still with Gemini flash and reports timestamped flaws
-  — identity drift vs CHARACTER_LOCK.md (auto-loaded), garbled text/captions
-  (`captions` mode, `--srt` cross-check), anatomy/physics/continuity — with a
-  confirm/dismiss verify pass. Needs GEMINI_API_KEY (owner has it; see
-  tools/gemini-eyes/README.md).
-  OWNER'S RULE on when it runs (decided 2026-08-20): NOT during the generation
-  stage — clips are generated under the existing process and approval gates
-  with no Gemini involvement. Gemini eyes comes into action only AFTER all
-  clips are generated, at the EDITING stage: run it on the clip set entering
-  the edit, on assembled cuts (stitching, conforming visuals/lighting), and on
-  the caption pass (`captions` mode with the .srt). Claude fixes what it flags
-  independently. Assembly-side specs below still need the rebuilt scripts:
-  · captions burnt in via libass — FontName=DejaVu Sans, FontSize=8,
-    PrimaryColour=&H00FFFFFF, OutlineColour=&H00000000, BorderStyle=1, Outline=1.1,
-    Shadow=0.4, Bold=1, Alignment=2, MarginV=55, MarginL=70, MarginR=70
-  · caption timing from REAL audio: transcribe each clip (never trust the prompt
-    text), ffmpeg silencedetect; whole-sentence cues timed on a virtual
-    speech-run timeline; MANDATORY mouth-frame cross-check on any ambiguous cue;
-    italicized [Speaker] tags on every non-protagonist line (§16)
-  · transitions: TRUE HARD CUTS only (ffmpeg concat, zero blend — never
-    xfade/dissolve between independently generated clips) with a 0.08s
-    audio-only edge fade per clip, never an audio acrossfade; verify every cut
-    ghost-free at its midpoint frames + ffprobe frame-count sanity check after
-    each build; loudnorm on every clip (capped to source frame-exact duration,
-    48kHz final) (§16)
-  · master at CRF 16 + a ~1.5Mbps compressed delivery copy for chat
-- CRITICAL: generated media lives OUTSIDE git and DIES with this container. Send
+Produce Episode ___ — ___ (fill in from episodes-5-9-scripts.md, e.g.
+"Episode 7 — I Sailed to Troy").
+- Character name HAZEL is locked; the sign-off ritual is "Hazel — out of time",
+  delivered in the episode's ending register per the script.
+- QC + assembly per the proven pipeline: captions timed from REAL audio
+  (silencedetect + mandatory mouth-frame cross-check on ambiguous cues), TRUE
+  HARD CUTS only with 0.08s audio-only edge fades, loudnorm capped to
+  frame-exact durations, ffprobe frame-count sanity check after every build,
+  master CRF 16 + ~1.5Mbps compressed delivery copy (full spec:
+  creative-direction.md §16).
+- Gemini eyes (tools/gemini-eyes/) runs at the EDITING stage ONLY (owner's QC
+  rule in CLAUDE.md): clip set entering the edit, assembled cuts, captions mode
+  vs the .srt. Never during generation. Before publish: Higgsfield
+  virality_predictor; the owner's watch-through is the final gate.
+- CRITICAL: generated media lives OUTSIDE git and DIES with the container. Send
   me the compressed final cut (and key stills for approval) in chat as soon as
-  they exist, and re-send after every fix round.
+  they exist, and re-send after every fix round. Commit a manifest of every
+  clip's job ID + URL to your branch as you go.
 
 ## 4. Parallel-chat rules (other chats are running simultaneously)
 - Only create/edit repo files named for YOUR episode (e.g.
-  episode-3-production-log.md). Do NOT edit the shared docs (PROJECT_HANDOFF.md,
-  creative-direction.md, CHARACTER_LOCK.md, episodes-2-4-scripts.md) — record
-  learnings/corrections in your own episode log; they get merged into the shared
-  docs later, in one place.
-- Commit and push your episode's log to your designated branch regularly.
-- Ask me for approval at the same gates Episode 1 used: character-in-costume
+  episode-7-production-log.md). Do NOT edit the shared docs (PROJECT_HANDOFF.md,
+  creative-direction.md, CHARACTER_LOCK.md, chloe-craft-study-2026-08-20.md,
+  episodes-5-9-scripts.md, NEW_CHAT_HANDOFF.md) — record learnings/corrections
+  in your own episode log; they get merged into the shared docs later, in one
+  place.
+- Commit and push your episode's log to your own branch regularly.
+- Ask me for approval at the same gates Episodes 1-4 used: character-in-costume
   stills first, then clip-by-clip review, then the stitched cut, then QC rounds.
 ```
 
