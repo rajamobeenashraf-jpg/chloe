@@ -170,3 +170,9 @@ All four gritty/matte stills approved. **still_b_tavern_lens_v2grit.png is the C
 
 ## Gate 2 status (2026-08-20)
 Clips 1–10 owner-APPROVED (clip 9 landed on v4 after two staging/physics fixes; clip 8 on v5 after moderation + POV fixes). 129.7s banked of the 12-clip shoot. Clips 11 (dawn awe) and 12 (outro) launching now to close the shoot.
+
+## GATE 3 — stitched cut delivered (2026-08-20)
+All 12 clips shot, owner-approved, transcribed via ElevenLabs Scribe (real audio, never guessed from prompts — one correction found this way: clip 10 actually has her ad-lib "Help!" before "Not — today.", captioned as spoken). QC pass burned captions (gap-clustering timing, asymmetric crossfade margins, locked style) + EARLIER TODAY card on clip 2. Assembled with the locked transition table (0.12s cuts / 0.4s dissolves / 0.5s dawn time-jump), loudnorm per clip. **Runtime: 125.0s — matches the ~125s script target exactly, first assembly pass, no rebuild needed.**
+- Master: `boston1775_final_cut.mp4` (CRF16, ~70MB)
+- Delivery copy sent to owner: `boston1775_final_cut_compressed.mp4` (~1.5Mbps, ~25MB)
+- Awaiting owner QC round on the stitched cut (transitions, caption sync/readability, overall pacing) before final sign-off.
