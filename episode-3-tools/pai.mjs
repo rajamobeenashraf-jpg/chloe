@@ -55,8 +55,14 @@ async function download(url, out) {
 function done(obj) { console.log(JSON.stringify(obj, null, 1)); }
 
 try {
+  const readPrompt = () => {
+    let p = fs.readFileSync(args["prompt-file"], "utf8");
+    if (args.block) p = p.trimEnd() + "\n\n" + fs.readFileSync(args.block, "utf8");
+    return p;
+  };
+
   if (cmd === "still") {
-    const prompt = fs.readFileSync(args["prompt-file"], "utf8");
+    const prompt = readPrompt();
     const refs = list(args.ref);
     const payload = {
       prompt, size: args.size || "1440x2560", quality: "high", n: 1,
@@ -65,10 +71,25 @@ try {
     let model = "image-generation-pro";
     if (refs.length) { model = "image-edit-pro"; payload.image = refs; }
     const r = await api("/api/v1/generate", { model, payload });
-    const url = r?.outcome?.media_urls?.[0]?.url || r?.output_url || r?.outcome?.output_url;
+    // Response shapes seen in the wild:
+    //  a) documented: outcome.media_urls[0].url / output_url (https)
+    //  b) 2026-08 gateway: OpenRouter-style chat.completion with
+    //     choices[0].message.images[0].image_url.url (data: URI or https)
+    const url = r?.outcome?.media_urls?.[0]?.url || r?.output_url || r?.outcome?.output_url
+      || r?.choices?.[0]?.message?.images?.[0]?.image_url?.url;
     if (!url) { done({ ok: false, resp: r }); process.exit(1); }
-    const size = args.out ? await download(url, args.out) : 0;
-    done({ ok: true, url, out: args.out, bytes: size });
+    let size = 0;
+    if (args.out) {
+      if (url.startsWith("data:")) {
+        const b64 = url.slice(url.indexOf(",") + 1);
+        fs.mkdirSync(path.dirname(args.out), { recursive: true });
+        fs.writeFileSync(args.out, Buffer.from(b64, "base64"));
+        size = fs.statSync(args.out).size;
+      } else {
+        size = await download(url, args.out);
+      }
+    }
+    done({ ok: true, url: url.startsWith("data:") ? "(inline data URI)" : url, out: args.out, bytes: size });
 
   } else if (cmd === "asset-group") {
     const r = await api("/api/v1/generate", {
@@ -102,7 +123,7 @@ try {
     done({ ok: false, assetId: id, status: "poll-timeout" }); process.exit(1);
 
   } else if (cmd === "video") {
-    const prompt = fs.readFileSync(args["prompt-file"], "utf8");
+    const prompt = readPrompt();
     const content = [{ type: "text", text: prompt }];
     for (const id of list(args["image-asset"]))
       content.push({ type: "image_url", image_url: { url: `asset://${id}` }, role: "reference_image" });
