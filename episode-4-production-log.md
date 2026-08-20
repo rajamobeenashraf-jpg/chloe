@@ -82,6 +82,15 @@ Gate 1 approved by owner 2026-08-20: GRITTY look locked for both outfits. Grit b
 Owner: pressing the egg produced an audible crack (reads as a RAW egg) before she eats it. Diagnosis on real audio: isolated 39ms transient at 5.73s, crest 6.4, sitting alone between two detected silences — zero dialogue overlap. Fix: replaced 5.69–5.81s with room tone lifted from the 7.0s quiet stretch, 10ms acrossfades, video stream copied untouched → clip03_v2.mp4. Verified: no residual >3000-peak transient in the 5.5–6.0s window. Lesson for merge-back: foley-scale transients between speech runs are always editorially fixable; check crest factor + silence-run overlap before considering a reshoot.
 Owner accepted clips 1–7 ("All accepted"). Clips 8–9 generating.
 
+
+### Owner QC round 2 (2026-08-20): clips 8 and 11 reshoots
+- **Clip 8 v1 → v2 (owner)**: missing realization beat before she switches him to boiled water; sick miner's lips moved as if speaking. v2 reshot: realization staged (his groan → her look river→bucket → still beat → "...it's the water"), sick miner groans only, "bad air" line lip-synced to one older miner. 12s→13s per §9.
+- **Clip 8 v2 → v3 (owner)**: cup rendered attached to kettle then separating (object-permanence glitch); boiling-off-the-fire water served directly to drink. v3 reshot with fronted OBJECT LOGIC block (kettle and cup separate objects from frame 1, cup on a stone, kettle on its own hook) + a visible cooling beat (pour → set kettle aside → blow/swirl, steam thins → one small careful sip).
+- **Clip 11 v1 → v2 (owner)**: wrist-anchor staging read as her fighting the other person for the bag. v2 restaged: SHE alone hooks the pouch with the shovel; Li braces her shoulders/belt from BEHIND, hands never near shovel/arms/pouch.
+- **Clip 11 v2 → v3 (own alignment check)**: v2's rescue mechanics landed but wardrobe drifted to a sleeveless top (flannel missing — continuity break vs clips 9/10/12). v3 reshot with the wardrobe claim fronted ("NEVER sleeveless / tank / corset, both shoulders covered every frame").
+- Lesson for merge-back: fronting a violated claim works (per PROJECT_AGENT retry rule); soaked/action scenes pull wardrobe toward skin-baring drift — pre-empt with an explicit "shirt stays ON, shoulders covered" clause in any water/rain beat.
+- Clips 10 + 12 generated, PASS, owner-delivered. All transcripts (Scribe) confirm on-script dialogue; caption sentence files written for all clips except 11 (pending v3 transcription).
+
 ## Status
 - [x] Branch + project scaffold + engine verified
 - [x] Master refs recovered (owner-supplied v5 set, repo-hosted)
