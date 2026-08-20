@@ -108,6 +108,12 @@ Found on Episode 2 clip 7: when she needs to walk toward a subject/location whil
 - **Explicitly state in the prompt**: "walks normally forward, NOT walking backward, NOT staying face-on to the lens while moving" whenever a shot has her walking any meaningful distance toward something.
 - Applies to every future walking beat, this episode and all others — not a one-time fix.
 
+## 15. Chase/flee geometry in selfie-cam framing (owner correction, 2026-08-20 — addendum to §10)
+Found on Ep 2 clip 10 (the escape set-piece): the prompt said a pursuer's grabbing hand came "from behind," but the model rendered it in front of her face in the selfie frame — geometrically nonsensical, since "running forward to escape" then means running toward/past the person who grabbed her, not away from them.
+- **In any selfie-cam chase/flee shot, a pursuer positioned "behind her" must not appear centered in front of her face.** The camera faces her direction of travel; a from-behind grab should be described as an arm entering from the side/edge of frame reaching over her shoulder, with the pursuer's body/face NOT in the lane ahead of her.
+- **Her escape direction after breaking free must continue the SAME direction she was already moving** — away from the pursuer and the threat behind her — never toward or past where the grab came from. State this explicitly: lane/path stays open and empty ahead of her the whole time.
+- This is the same §10 discipline (verify the described perception is physically possible before submitting) applied specifically to chase geometry — check it every time a pursuer/grabber is staged relative to her direction of motion.
+
 ## Status: all 10 clips produced (2026-08-19)
 Full shot list from `PROJECT_HANDOFF.md` §3 is generated and owner-approved, final filenames in `pai-pro/projects/wildwest/assets/`:
 1. `clip1_vlog_v3.mp4` — cold-open tease, reshot in V-mode (talk-to-lens) to match clip 7/8's handheld grammar; debris-reaction physics/pacing carried over from the earlier fix. Supersedes `clip1_pai_v2.mp4` (the original Nova-style cinematic version, kept only for reference).
