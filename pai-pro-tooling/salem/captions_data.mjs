@@ -1,20 +1,35 @@
 // Episode 2 (Salem 1692) — caption cue data for qc_pass.mjs.
-// Every cue's [start, end] is grounded in real ffmpeg silencedetect speech
-// boundaries measured directly off each clip's actual rendered audio (not
-// guessed from the generation prompt) — see session notes. Text is the
-// verbatim quoted dialogue from each clip's own generate_clipN.mjs prompt
-// (the exact words the model was instructed to speak), used only to label
-// segments whose timing was independently confirmed against real audio.
-// Clip 11's cue was additionally cross-checked against a frame-by-frame
-// mouth-movement pass (Goodwife Ann's face is visible/speaking throughout
-// the confirmed window).
+//
+// Round 1 timing was grounded in ffmpeg silencedetect speech boundaries off
+// each clip's real audio, but that alone was not enough — owner review
+// caught real mismatches. Round 2 (this pass) re-verified EVERY cue by
+// pulling frames at each caption's start/mid/end and checking actual mouth
+// movement, not just audio energy. Two real bugs confirmed and fixed this
+// way, both on non-protagonist shouted/screamed lines where silencedetect's
+// -30dB threshold picked up the wrong segment as "the line":
+//   - clip1 (villager's shout): captioned 1.702-3.532s, but frames show his
+//     mouth closed through that whole window and the actual sustained
+//     shout runs ~2.9-6.4s. Caption widened to match the real shout.
+//   - clip6 (afflicted girl's shriek): captioned 2.572-4.305s, but frames
+//     show her still just kneeling (mouth closed) until ~4.0s; the visible
+//     shriek runs ~4.0-5.8s. Caption shifted to match.
+//   - clip4: minor ~0.3s boundary drift between the two lines (old woman's
+//     mouth already closed, main character's already talking, by 6.3s —
+//     not the 6.436/6.542 split originally used). Tightened.
+// Text is the verbatim quoted dialogue from each clip's own
+// generate_clipN.mjs prompt. `speaker` is set only when the line is NOT
+// the main character's — qc_pass.mjs prefixes those cues with a bracketed
+// name so the caption doesn't read as her own mismatched dialogue (the
+// other likely source of "captions don't match who's talking": several
+// lines are background/NPC dialogue with no attribution, and a viewer's
+// eyes default to her face).
 
 export const CLIPS = [
   {
     id: "clip1_coldopen",
     duration: 7.058866,
     captions: [
-      { start: 1.702, end: 3.532, text: "She touched her! I saw it!" },
+      { start: 2.9, end: 6.4, text: "She touched her! I saw it!", speaker: "Villager" },
     ],
   },
   {
@@ -36,8 +51,8 @@ export const CLIPS = [
     id: "clip4_wateryoke",
     duration: 12.050998,
     captions: [
-      { start: 4.622, end: 6.436, text: "Bless you, child." },
-      { start: 6.542, end: 10.887, text: "Don't thank me yet — I've never done this." },
+      { start: 4.622, end: 6.2, text: "Bless you, child.", speaker: "Elderly Woman" },
+      { start: 6.25, end: 10.887, text: "Don't thank me yet — I've never done this." },
     ],
   },
   {
@@ -53,7 +68,7 @@ export const CLIPS = [
     id: "clip6_thefit",
     duration: 10.053991,
     captions: [
-      { start: 2.572, end: 4.305, text: "She's THERE! Behind you — don't you SEE her?!" },
+      { start: 4.0, end: 5.8, text: "She's THERE! Behind you — don't you SEE her?!", speaker: "Afflicted Girl" },
     ],
   },
   {
@@ -68,8 +83,8 @@ export const CLIPS = [
     id: "clip8_theturn",
     duration: 10.053991,
     captions: [
-      { start: 4.397, end: 5.692, text: "How does she know to calm her so?" },
-      { start: 6.137, end: 6.789, text: "Who taught her that?" },
+      { start: 4.397, end: 5.692, text: "How does she know to calm her so?", speaker: "Villager" },
+      { start: 6.137, end: 6.789, text: "Who taught her that?", speaker: "Villager" },
     ],
   },
   {
@@ -89,7 +104,7 @@ export const CLIPS = [
     id: "clip11_rescue_v2",
     duration: 13.072834,
     captions: [
-      { start: 9.198, end: 12.772, text: "She's my sister's girl — up from Ipswich. Leave her be!" },
+      { start: 9.198, end: 12.772, text: "She's my sister's girl — up from Ipswich. Leave her be!", speaker: "Goodwife Ann" },
     ],
   },
   {

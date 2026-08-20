@@ -1,12 +1,11 @@
-// Episode 2 (Salem 1692) — QC pass: burn in synced captions (grounded in
-// real silencedetect timing off each clip's actual audio, text taken
-// verbatim from each clip's own generation prompt — see captions_data.mjs
-// header) and loudnorm each clip's audio so dialogue levels don't jump
-// between clips once stitched. Rebuilt from scratch this session per
+// Episode 2 (Salem 1692) — QC pass: burn in synced captions (timing
+// verified frame-by-frame against real mouth movement, not just audio
+// energy — see captions_data.mjs header for the two real mismatches that
+// caught), loudnorm each clip's audio, and apply a short audio-only
+// fade in/out at every clip's edges so the hard cuts in build_final_cut.mjs
+// don't snap audio at full volume. Rebuilt from scratch this session per
 // creative-direction.md §11 (the original tooling was lost with the old
-// container); style/architecture choices follow that section's documented
-// lessons (asymmetric crossfade-safe caption margins, scene-cut vs.
-// continuous-action dissolve treatment, no silent truncation).
+// container).
 import fs from "node:fs/promises";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
@@ -34,6 +33,17 @@ function escapeAssText(text) {
   return text.replace(/\\/g, "\\\\").replace(/\{/g, "\\{").replace(/\}/g, "\\}");
 }
 
+// Non-protagonist lines get an italicized bracketed speaker tag so the
+// caption doesn't read as her own dialogue when her mouth isn't the one
+// moving — plain, unattributed captions were part of what made mismatched
+// lines (a background NPC's shout, a crowd member's line) look like sync
+// bugs even when the timing itself was fine.
+function captionText(c) {
+  const text = escapeAssText(c.text);
+  if (!c.speaker) return text;
+  return `{\\i1}[${escapeAssText(c.speaker)}]{\\i0} ${text}`;
+}
+
 function buildAss(captions) {
   const style = SUB_STYLE;
   const header = `[Script Info]
@@ -50,7 +60,7 @@ Style: Default,${style.fontName},${style.fontSize},${assColor("FFFFFF")},${assCo
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 `;
   const lines = captions
-    .map((c) => `Dialogue: 0,${assTime(c.start)},${assTime(c.end)},Default,,0,0,0,,${escapeAssText(c.text)}`)
+    .map((c) => `Dialogue: 0,${assTime(c.start)},${assTime(c.end)},Default,,0,0,0,,${captionText(c)}`)
     .join("\n");
   return header + lines + "\n";
 }
@@ -79,12 +89,29 @@ async function qcOneClip(clip) {
   // that, so every QC'd clip's audio and video streams end on the same
   // frame. build_final_cut.mjs's xfade/acrossfade offsets depend on this.
   const videoDuration = await probeVideoDuration(srcPath);
+
+  // Short audio-only fade in/out at every clip boundary. The transitions
+  // themselves are true hard cuts on video (concat, no blend — xfade
+  // dissolves were tried and produced real ghosting, see captions_data.mjs)
+  // but a hard cut on BOTH picture and sound at once, with zero fade, is
+  // its own kind of jarring: the full-volume audio snaps instantly at
+  // every single one of the 12 cuts. This softens that without touching
+  // video at all, so it can't reintroduce ghosting, and without shifting
+  // either clip's timeline (a true crossfade would consume ~0.08s of the
+  // incoming clip's own audio into the blend and desync it from its
+  // video from that point on — checked and rejected for exactly that
+  // reason). 0.08s is short enough to clear every caption's start/end
+  // with margin (closest case: clip2's last cue ends exactly on its last
+  // frame, where the fade only trims the already-trailing-off tail).
+  const FADE = 0.08;
+  const fade = `afade=t=in:st=0:d=${FADE},afade=t=out:st=${(videoDuration - FADE).toFixed(3)}:d=${FADE}`;
+
   if (clip.captions.length === 0) {
-    // No dialogue — just loudnorm, no subtitle filter needed.
-    console.log(`[qc] ${clip.id}: no captions, loudnorm only`);
+    // No dialogue — just loudnorm + edge fades, no subtitle filter needed.
+    console.log(`[qc] ${clip.id}: no captions, loudnorm + fade only`);
     await run("ffmpeg", [
       "-y", "-i", srcPath,
-      "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
+      "-af", `loudnorm=I=-16:TP=-1.5:LRA=11,${fade}`,
       "-c:v", "copy",
       "-c:a", "aac", "-b:a", "192k",
       "-t", String(videoDuration),
@@ -96,11 +123,11 @@ async function qcOneClip(clip) {
   const assPath = path.join(QC_DIR, `${clip.id}.ass`);
   await fs.writeFile(assPath, buildAss(clip.captions));
 
-  console.log(`[qc] ${clip.id}: burning ${clip.captions.length} caption(s) + loudnorm`);
+  console.log(`[qc] ${clip.id}: burning ${clip.captions.length} caption(s) + loudnorm + fade`);
   await run("ffmpeg", [
     "-y", "-i", srcPath,
     "-vf", `ass=${assPath}`,
-    "-af", "loudnorm=I=-16:TP=-1.5:LRA=11",
+    "-af", `loudnorm=I=-16:TP=-1.5:LRA=11,${fade}`,
     "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p",
     "-c:a", "aac", "-b:a", "192k",
     "-t", String(videoDuration),
