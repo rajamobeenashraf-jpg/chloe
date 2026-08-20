@@ -34,10 +34,27 @@ Assignment confirmed by owner 2026-08-20: this chat produces **Episode 4 — Gol
 - **Recurring NPCs (identical description every appearance):** Amos — free Black miner, 40s, broad build, grey-flecked short beard, patched blue wool shirt, leather suspenders, kind weathered face. Li — Chinese miner, 20s, slim, wide-brimmed woven hat, dark tunic, quick precise movements. Both appear clips 5, 7, 9–12 (Li), 5, 7, 11–12 (Amos per script beats).
 - Gate order: costume stills → clip-by-clip → stitched cut → QC rounds.
 
+## Ref recovery RESOLVED (2026-08-20) — v5 owner-supplied reference set
+Owner pasted 10 reference images directly into chat (front/¾/profile portraits, full-body turnaround sheet, face-detail sheet, one Wild West as-filmed movie frame) with the instruction: **"use this as the character sheets… she should appear as natural, realistic, and human, not some AI and plastic… 100% natural."** These supersede the lost v4 CloudFront copies as the working master set (identity is visually identical to the v4 description).
+- Extracted from the session transcript (base64) → `pai-pro/projects/goldrush49/assets/refset/ref_01–10.png`.
+- **Committed to the repo at `character-refs/ref_01–10.png`** (owner's chosen hosting route) — PAI fetches refs server-side from the SHA-pinned raw URLs `raw.githubusercontent.com/rajamobeenashraf-jpg/chloe/6f936b1.../character-refs/ref_XX.png`.
+- Working master five (every generation): ref_08 turnaround sheet · ref_09 face-detail sheet · ref_10 movie frame · ref_01 front portrait · ref_06 profile.
+- Frozen v4 identity string still used VERBATIM (matches this set), plus the §5 naturalism keywords and an explicit anti-AI/anti-plastic clause in every prompt per owner instruction.
+
+## Engine facts learned (this session, for merge-back)
+- **PAI request body cap: 512KB** — inline base64 refs are impossible; refs must be public URLs (server-side fetch). This is why Episode 1's fileUri quirk exists.
+- `image-edit-pro` routes to `gpt-image-2`: accepts a fixed size list (720x1280, 1440x2560, 2160x3840 are the 9:16 options) BUT this passthrough returns **1024x1024 regardless of requested size**, as a base64 data URI in `choices[0].message.images[0].image_url.url`, cost ~$0.26/still. Stills are identity/costume refs; final 9:16 (owner default) is enforced at the video-pipeline stage.
+- cloudflared tunnel + Higgsfield upload both blocked by the sandbox permission classifier; repo-hosted refs are the approved route.
+
+## Gate 1 submitted (2026-08-20)
+- `still_workkit_v1.png` — work kit (clips 1, 4–12): mud-caked red-brown flannel, canvas trousers, slouch hat, mud-smeared cheek, rocker cradle + tents + miners + snowmelt river, cold green-grey grade. Alignment: PASS.
+- `still_arrival_v1.png` — arrival outfit (clips 2–3): dove-grey wool travel dress, shawl, satchel, ridge over tent-dotted canyon. Alignment: PASS with note — distant tents rendered slightly conical/teepee-like; video prompts will specify "A-frame canvas wall tents" to prevent propagation.
+- Both sent to owner in chat. Awaiting approval before any clip generation.
+
 ## Status
 - [x] Branch + project scaffold + engine verified
-- [ ] **WAITING ON OWNER: five v4 master ref URLs** ← everything downstream blocked on this
-- [ ] Gate 1: costume stills
-- [ ] Clips 1–12
+- [x] Master refs recovered (owner-supplied v5 set, repo-hosted)
+- [x] Gate 1 stills generated + sent — **awaiting owner approval**
+- [ ] Clips 1–12 (9:16 default, PAI Pro video pipeline only)
 - [ ] QC/assembly pipeline rebuild (`qc_pass.mjs`, `build_final_cut.mjs` from §11 specs)
 - [ ] Final cut delivery
