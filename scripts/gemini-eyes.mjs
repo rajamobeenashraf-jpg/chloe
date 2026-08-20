@@ -21,7 +21,8 @@
 //   GEMINI_API_KEY   required — free at https://aistudio.google.com/apikey
 //                    (add it in claude.ai -> Claude Code -> your environment ->
 //                    environment variables; NEVER commit it to the repo)
-//   GEMINI_MODEL     optional — default gemini-2.5-flash (see --list-models)
+//   GEMINI_MODEL     optional — default gemini-flash-latest, Google's rolling
+//                    alias for their newest Flash model (see --list-models)
 //
 // Transport is curl so the sandbox HTTPS proxy is honored automatically.
 
@@ -32,6 +33,7 @@ import process from 'node:process';
 
 const BASE = 'https://generativelanguage.googleapis.com';
 const KEY = process.env.GEMINI_API_KEY;
+const FALLBACK_MODEL = 'gemini-2.5-flash';
 
 const VIDEO_MIME = {
   '.mp4': 'video/mp4', '.mov': 'video/quicktime', '.webm': 'video/webm',
@@ -86,7 +88,9 @@ const HELP = `gemini-eyes — Gemini-powered video QC / reference study (see hea
                       (Gemini's own default of 1 fps can miss sub-second morphs and
                       flickers), otherwise the API default of 1. Higher = more tokens.
   --resolution <r>    low | medium | high — per-frame detail vs token cost
-  --model <id>        override model (default: $GEMINI_MODEL or gemini-2.5-flash)
+  --model <id>        override model (default: $GEMINI_MODEL or gemini-flash-latest,
+                      the rolling alias for Google's newest Flash; auto-falls back
+                      to gemini-2.5-flash if the alias is unavailable)
   --list-models       list models available to your key
   --help              this text
 
@@ -122,7 +126,7 @@ function apiError({ status, json, text }, what) {
     die('GEMINI_API_KEY is set but invalid — re-check it at https://aistudio.google.com/apikey');
   }
   if (status === 404) die(`${what}: not found (${msg}). If this is the model, run --list-models and set GEMINI_MODEL or --model.`);
-  if (status === 429) die(`${what}: rate/quota limit (${msg}). Wait a minute and retry, or use a lighter model / enable billing on the key.`);
+  if (status === 429) die(`${what}: rate/quota limit (${msg}). Wait a minute and retry, use a lighter model (e.g. GEMINI_MODEL=${FALLBACK_MODEL}), or enable billing on the key.`);
   die(`${what} failed (HTTP ${status}): ${msg}`);
 }
 
@@ -189,11 +193,23 @@ function imagePart(path) {
   return { inline_data: { mime_type: mime, data: readFileSync(path).toString('base64') } };
 }
 
-function generate(model, parts, generationConfig) {
+function generate(model, parts, generationConfig, attempt = 0) {
   const body = { contents: [{ role: 'user', parts }] };
   if (generationConfig) body.generationConfig = generationConfig;
   const r = curlJson('POST', `${BASE}/v1beta/models/${model}:generateContent`,
     { headers: auth(), body, maxTime: 600 });
+  // Transient overload (frequent on the newest-model alias): wait and retry,
+  // then drop to the stable fallback so a QC run never dies on a demand spike.
+  if ((r.status === 503 || r.status === 500) && attempt < 2) {
+    const wait = 15 * (attempt + 1);
+    process.stderr.write(`HTTP ${r.status} from ${model}, retrying in ${wait}s...\n`);
+    sleep(wait * 1000);
+    return generate(model, parts, generationConfig, attempt + 1);
+  }
+  if ([404, 500, 503].includes(r.status) && model !== FALLBACK_MODEL) {
+    process.stderr.write(`model ${model} unavailable (HTTP ${r.status}), using ${FALLBACK_MODEL}...\n`);
+    return generate(FALLBACK_MODEL, parts, generationConfig);
+  }
   if (r.status !== 200) apiError(r, 'generateContent');
   if (r.json.promptFeedback?.blockReason) die(`request was blocked: ${r.json.promptFeedback.blockReason}`);
   const cand = r.json.candidates?.[0];
@@ -251,7 +267,9 @@ if (opts.resolution && !['low', 'medium', 'high'].includes(opts.resolution)) {
   die('--resolution must be low, medium, or high');
 }
 
-const model = opts.model || process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+// gemini-flash-latest is Google's rolling alias for the newest Flash release,
+// so QC always runs on the most advanced Flash without ever editing this file.
+const model = opts.model || process.env.GEMINI_MODEL || 'gemini-flash-latest';
 // Gemini samples video at 1 fps by default — enough to summarize, not enough
 // to catch a 0.3s hand-morph. Short local clips in qc mode get 5 fps unless
 // the caller says otherwise; long videos keep the cheap default.
