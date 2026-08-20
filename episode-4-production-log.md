@@ -129,3 +129,12 @@ Final duration total (as-shot, may adjust ~1s in edit): 7+9+11+8+12+10+13+13+12+
 - [ ] Clips 1–12 (9:16 default, PAI Pro video pipeline only)
 - [ ] QC/assembly pipeline rebuild (`qc_pass.mjs`, `build_final_cut.mjs` from §11 specs)
 - [ ] Final cut delivery
+
+## Gate 3: full stitched cut delivered (2026-08-20)
+- Rebuilt `qc_pass.mjs` (real-audio caption timing: silencedetect 0.12s min, <0.15s micro-segment filter, <0.3s run-merge, 1:1 anchor when run count matches sentence count else gap-clustering, readability floor extending into real silence with no slow-end cap, asymmetric crossfade margin — only incoming clip waits for the blend) and `build_final_cut.mjs` (per-clip fps/scale/pad/loudnorm normalize -> chained xfade+acrossfade at the §11 transition table -> CRF16 master + ~1.5Mbps delivery copy) from the §11 spec, since the originals were lost with Episode 1's container.
+- Caption style applied verbatim per spec: DejaVu Sans, size 8, white/black outline, BorderStyle=1, Outline=1.1, Shadow=0.4, Bold, bottom-safe MarginV=55/L=70/R=70.
+- Transitions: 0.4s dissolve on the one continuous-action beat (5->6, joining the rocker crew), 0.12s cut on every scene/lighting change, 0.5s into the dusk outro (11->12) — matches Episode 1's validated technique (cut on scene change, dissolve on continuous motion).
+- All 12 real Scribe transcripts used for captions (never guessed from prompts) — full transcript log kept in `pai-pro/projects/goldrush49/captions/clipNN.json`.
+- Two clips (9, 11) have long/tight caption cues grounded in genuinely continuous speech with sub-0.3s breath gaps only — no fabricated timing, consistent with the standing "sync accuracy over reading comfort" rule validated in Episode 1's QC.
+- Final: `goldrush_final_cut.mp4` (CRF16 master, 91MB) / `goldrush_final_cut_compressed.mp4` (delivery, ~25.5MB, ~1.6Mbps, 720x1280, loudnorm -19.8dB mean/-0dB peak). Runtime 128.75s — within the 90-200s Shorts cap.
+- Delivered to owner in chat + archived to repo at `episode-4-assets/goldrush_final_cut_compressed.mp4`. **Awaiting owner QC.**
