@@ -72,8 +72,14 @@ Produce Episode ___ — ___ (fill in from episodes-2-4-scripts.md, e.g.
   — identity drift vs CHARACTER_LOCK.md (auto-loaded), garbled text/captions
   (`captions` mode, `--srt` cross-check), anatomy/physics/continuity — with a
   confirm/dismiss verify pass. Needs GEMINI_API_KEY (owner has it; see
-  tools/gemini-eyes/README.md). Run it on every still before animating and every
-  cut before delivery. Assembly-side specs below still need the rebuilt scripts:
+  tools/gemini-eyes/README.md).
+  OWNER'S RULE on when it runs (decided 2026-08-20): NOT during the generation
+  stage — clips are generated under the existing process and approval gates
+  with no Gemini involvement. Gemini eyes comes into action only AFTER all
+  clips are generated, at the EDITING stage: run it on the clip set entering
+  the edit, on assembled cuts (stitching, conforming visuals/lighting), and on
+  the caption pass (`captions` mode with the .srt). Claude fixes what it flags
+  independently. Assembly-side specs below still need the rebuilt scripts:
   · captions burnt in via libass — FontName=DejaVu Sans, FontSize=8,
     PrimaryColour=&H00FFFFFF, OutlineColour=&H00000000, BorderStyle=1, Outline=1.1,
     Shadow=0.4, Bold=1, Alignment=2, MarginV=55, MarginL=70, MarginR=70
