@@ -270,9 +270,12 @@ for (const n of clips) {
     vf.push(`subtitles=${srt.replace(/([:\\])/g, "\\$1")}:force_style='${SUB_STYLE}'`);
   }
   if (n === CARD.clip) {
+    // Owner request (round 5): move the rewind card to the UPPER part of
+    // the frame — previously vertically centered, now anchored near the
+    // top safe zone (y=110 of 1280px height) instead of mid-screen.
     vf.push(`drawtext=text='${CARD.text}':fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:` +
       `fontsize=${CARD.fontsize}:fontcolor=white:borderw=${CARD.borderw}:bordercolor=${CARD.bordercolor}:` +
-      `x=(w-text_w)/2:y=(h-text_h)/2:enable='between(t,0,${CARD.showSeconds})'`);
+      `x=(w-text_w)/2:y=110:enable='between(t,0,${CARD.showSeconds})'`);
   }
   const argv = ["-y", "-i", src];
   if (vf.length) argv.push("-vf", vf.join(","));
