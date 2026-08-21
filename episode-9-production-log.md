@@ -78,5 +78,62 @@ for costume beats instead of a standalone still).
 ## Approval gates (per NEW_CHAT_HANDOFF.md — same as Episodes 1-4)
 1. [x] Character-in-costume stills — **SKIPPED by owner decision** (see above)
 2. [x] Clip-by-clip review — all 12 clips generated and sent to owner; awaiting any redo requests
-3. [ ] Stitched final cut
-4. [ ] QC rounds (Gemini eyes at edit stage + owner watch-through)
+3. [x] Stitched final cut — assembled, sent to owner (see below)
+4. [ ] QC rounds — **Gemini eyes BLOCKED** (see below); manual spot-check done; owner watch-through pending
+
+## Stitch/QC pipeline (this session, `pai-pro/projects/giza/`: `captions_data.mjs`,
+`qc_pass.mjs`, `build_final_cut.mjs`, `export_srt.mjs`)
+- Captions: timing grounded in real `ffmpeg silencedetect -30dB:d=0.12` per
+  clip (raw output in this session's transcript), gap-clustered per
+  creative-direction.md §16 (silences <0.3s = intra-utterance breath dips,
+  merged; >=0.3s = real sentence/speaker boundaries). Clips 3, 8, 9, and 12
+  had merged blocks covering multiple scripted lines with no internal
+  boundary — sub-cues there are a proportional-by-word-count best estimate,
+  flagged `NEEDS-GEMINI-VERIFY` in `captions_data.mjs`, not independently
+  confirmed against mouth movement. **Clip 9 (the Khufu centerpiece) and clip
+  12 (outro) are the priority re-verify targets** — clip 12 in particular
+  packed ~81 scripted words into a 12s clip with almost no detected pause
+  >=0.3s (implies ~6-7 words/sec, faster than the "warm reflective" delivery
+  intended) — worth an owner watch to judge whether it reads as rushed.
+- Every clip QC'd clean (loudnorm + 0.08s audio-only edge fade + captions
+  burned in ASS/libass, DejaVu Sans Bold 42 / marginV=320 canonical style).
+- Final cut: all 12 clips joined on TRUE hard cuts (ffmpeg concat, zero
+  blend) — no dissolves, no title card (OPENING LAW retired the card
+  convention for Ep9). Runtime **124.63s** (script target ~124s — matches
+  almost exactly). ffprobe frame-count sanity check passed (2991 actual vs
+  ~2988 expected at 24fps). Manually verified 2 cut points (clip1→2,
+  clip8→9) via before/after frame extraction — both clean, no ghosting, no
+  glitches, caption speaker-tag styling (`[Nefer]`) renders correctly.
+- **Files**: `pai-pro/projects/giza/assets/giza_final_cut.mp4` (master, CRF16,
+  ~99MB) / `giza_final_cut_compressed.mp4` (delivery copy, ~1.5Mbps, ~25MB) /
+  `giza_episode9.srt` (full-episode subtitle export for QC cross-check).
+
+## Gemini eyes QC — BLOCKED, owner action needed
+Ran `qc` mode on the assembled cut per CLAUDE.md's owner QC rule (edit-stage
+only). All three models in the fallback ladder (gemini-3.7-flash →
+gemini-3.6-flash → gemini-flash-latest) failed with **HTTP 429
+RESOURCE_EXHAUSTED**: `generativelanguage.googleapis.com/generate_content_free_tier_requests`
+— the `GEMINI_API_KEY` in this environment is on the **free tier** (20
+requests/day limit), already exhausted. This is not a prompt or code issue —
+retrying will not help until the daily quota resets, and a paid-tier key (or
+waiting for reset) is the real fix. Did NOT attempt the `captions` mode pass
+for the same reason. **Interim mitigation**: I manually frame-checked two cut
+points and one identity/realism spot-check (see below) in place of the
+automated sweep, but this is not a substitute for the full two-pass QC
+(sweep + verify) the owner's process calls for — recommend re-running
+`gemini_eyes.py qc` and `captions --srt giza_episode9.srt` once quota allows,
+before this episode is considered QC-complete.
+
+**Manual spot-check finding (unverified by Gemini, flagging for owner
+judgment):** frames pulled from clips 1, 8, and 9 read more glossy/glam
+(heavy defined lash/liner, glossy contoured skin) than the CHARACTER_LOCK
+§13 "matte, not glossy or dewy... raw historical-documentary... NOT a
+fashion/beauty editorial feel" bar mandates, despite the matte/gritty clause
+being present verbatim in every prompt. This may be a real drift worth a
+targeted regeneration on the affected clips — owner's call, per the QC rule
+that only CONFIRMED findings (which this isn't, absent the Gemini verify
+pass) get auto-fixed.
+
+## Higgsfield virality_predictor — NOT YET RUN
+Per CLAUDE.md, this runs pre-publish, after QC is resolved. Deferred until
+the Gemini QC blocker above is cleared and any resulting fixes are in.
