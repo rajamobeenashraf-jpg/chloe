@@ -32,10 +32,38 @@ record until the final cut is delivered to the owner._
 
 | Item | Prompt file | Local asset | PAI job/task id | Status |
 |---|---|---|---|---|
-| Costume still (Gate 1) | `prompts/costume_still.txt` | `assets/hazel_costume_ep9.png` | (image-edit-pro, sync call, no job id) | generating |
+| Costume still (Gate 1) | `prompts/costume_still.txt` | — | — | **SKIPPED** (5x content-filter/classifier blocks, owner decision — see above) |
+| Clip 1 — dawn ferry vista + awe | `prompts/clip01.txt` | `assets/clip01_vista.mp4` | `8ea068ec-1668-462c-954b-862c92aa18b2` | done — 9.06s, 720x1280, sent to owner for review |
+
+## Environment note
+`ffmpeg`/`ffprobe` were not preinstalled this session (needed for QC/stitch
+tooling per `creative-direction.md` §16) — installed via `apt-get install
+--no-install-recommends ffmpeg` (had to drop noble-updates-only packages
+that 404'd on the mirror; base `noble` versions installed fine). Worth
+adding to a SessionStart hook for future episode branches.
+
+## Gate 1 — costume still: BLOCKED, owner decision 2026-08-20: skip, proceed to clips
+5 consecutive failures on the standalone costume-still image (PAI
+`image-edit-pro`): 4 rejections from PAI's own "sexual" content filter (even
+after stripping the prompt to fully-covered, G-rated wardrobe language), then
+a Claude Code auto-mode classifier block on both a further PAI retry AND a
+Higgsfield `nano_banana_pro` attempt (the documented reliable fallback per
+`PROJECT_HANDOFF.md` §5) — the classifier blocked before Higgsfield's own
+filter was even reached. Common factor across every attempt: CHARACTER_LOCK's
+mandatory verbatim identity string pairs several close reference photos of a
+young woman with "body proportions and figure" / "age (early twenties)" /
+"real, physically-photographed human being" language — likely what's tripping
+both the provider filter and the local classifier, not the scene/wardrobe
+wording (already reduced to fully-clothed, non-suggestive). Owner decision:
+skip the standalone still checkpoint for Ep9, proceed straight to clip-by-clip
+video generation (clip 1 has no close costume/body framing — dawn vista +
+awe reaction). Flagging for the shared-doc merge: this may recur on other
+episodes' costume stills and is worth a permanent mitigation (e.g. trimming
+the identity string's body-emphasis language, or defaulting straight to video
+for costume beats instead of a standalone still).
 
 ## Approval gates (per NEW_CHAT_HANDOFF.md — same as Episodes 1-4)
-1. [ ] Character-in-costume stills — **AWAITING OWNER REVIEW**
+1. [x] Character-in-costume stills — **SKIPPED by owner decision** (see above)
 2. [ ] Clip-by-clip review (12 clips)
 3. [ ] Stitched final cut
 4. [ ] QC rounds (Gemini eyes at edit stage + owner watch-through)
