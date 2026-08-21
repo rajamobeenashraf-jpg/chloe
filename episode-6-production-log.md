@@ -346,6 +346,66 @@ exact match every time, no truncation). Current final set:
 `pai-pro/projects/caesar/assets/clip1.mp4` … `clip11.mp4`. Full history,
 every job ID and URL: `pai-pro/projects/caesar/assets/clips_manifest.json`.
 
+## Gate 2, round 3 — unmotivated speech-rate acceleration (owner-caught, 3 clips)
+Owner caught something neither prior QC pass checked for: in clip 1, she
+starts at a natural measured pace and partway through becomes noticeably
+rushed, with nothing in the scene to justify it. Root cause of the miss,
+stated plainly: my own self-QC was static frame sampling (no audio-timing
+information at all), and Gemini's `qc` mode's audio category checks
+lip-sync (does mouth match audio), not delivery-rate naturalness — if
+speech and mouth both speed up together, that trips no lip-sync finding
+even though the pacing itself is wrong. A real gap in coverage, not a
+finding that was checked and missed.
+
+Verified the report before acting on it: ran `gemini_eyes.py ask` (free-form
+audio/pacing question, not the qc rubric) on all 11 clips individually.
+**3 of 11 — clips 1, 8, and 11 — showed the identical pattern**: measured
+for the first few seconds, then an unmotivated speedup with words running
+together for the rest of the clip; clip 11 additionally showed the mouth
+movements failing to match the accelerated audio (a visible lip-sync break,
+not just a rate problem). 8 clips (2, 3, 4, 6, 7, 9, 10) came back clean.
+Clip 5 showed a milder pace increase but tied to an in-scene alarm
+reaction — a possible tone mismatch against the script's "subdued" intent,
+not the same bug, left as a lower-confidence note rather than fixed.
+
+**Pattern spotted before proposing a fix:** clips 1, 8, and 11 are the only
+three clips that are one uninterrupted person talking solo for the full
+duration — no back-and-forth dialogue, no physical business (drinking,
+adjusting costume, wading through a crowd) breaking up delivery the way
+every clean clip has. Read: the model can hold a slow register briefly but
+drifts back toward a faster default across a longer uninterrupted monologue
+unless told explicitly to hold the pace for the *whole* clip, not just
+establish it at the start.
+
+**Per the owner's locked regeneration-approval rule:** reported the finding,
+the pattern, and the proposed fix, and waited for explicit go-ahead
+("do it") before submitting anything. Added `PACE_HOLD` — a positive
+instruction that the established pace holds steady start-to-finish, applied
+only to clips 1, 8, 11 (the other 8 clips' pacing was independently
+confirmed clean, so left untouched). Regenerated those three; durations
+matched exactly (9.06s / 8.06s / 11.05s, no truncation); re-ran the same
+`ask`-mode pacing check on all three post-fix — all three now confirmed
+consistent, natural pacing start to finish, mouth movements matched to
+audio throughout. Fix verified, not just assumed.
+
+**One thing worth flagging plainly rather than repeating uncritically:**
+clip 11's post-fix response included a false aside claiming the dialogue
+was "a lip-sync to dialogue from the TV series *Succession*" — a clear
+hallucination (this clip is 100% original content from our own script; it
+has no connection to any TV show). Didn't affect the actual pacing verdict,
+which was corroborated by the other two clips' independent responses using
+the same consistent language, but noted here as a reminder that even a
+verified-sounding machine answer can contain a confidently-stated, entirely
+fabricated aside — read the actual content, don't just trust the verdict
+line.
+
+**Secondary item flagged but not chased:** clip 1's dialogue was
+transcribed by Gemini as "every schoolkid in 2025" against the script's
+"2026" — unclear whether this is Gemini mishearing a close-sounding number
+or a genuine dialogue slip in the generated audio. Deferred to the captions
+stage, where real transcription against the .srt will settle it properly
+rather than guessing now.
+
 ## Next steps
 1. ~~Owner confirms/adjusts the costume look~~ DONE — see Gate 1 final
    decision above.
