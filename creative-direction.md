@@ -258,3 +258,13 @@ Owner's instruction, verbatim intent: asking first every time before any clip re
 - **Applies per regeneration attempt, not just per clip.** A first fix attempt that doesn't fully land needs a fresh check-in before a second attempt — no silent multi-round iteration on the same clip, even if every individual round is a good-faith attempt to fix a real, confirmed problem.
 - **Relationship to §18:** §18 already requires sign-off before any change to approved CONTENT (swapping a subject, altering blocking, changing what's shown). This rule is narrower and stricter on one specific axis: it also covers regenerations that §18's "routine execution... routine bug fixes that don't change what's depicted" carve-out would otherwise have allowed to proceed without a check-in. In practice: every clip regeneration now needs sign-off first, whether or not the fix itself changes any depicted content.
 - `CLAUDE.md`'s Owner's QC rule section carries the corresponding amendment — read both together.
+
+## 20. Send every clip to the owner for approval (owner mandate, 2026-08-21 — PERMANENT, same weight as §12–§15, §17–§19)
+
+Owner's instruction, verbatim intent: whenever a clip is shot, send it to the owner in chat — always — for checking, and ask for its approval. Locked as a permanent rule for all future generations, in every new chat.
+
+- **Every generated clip is DELIVERED in chat the moment it exists** — a compressed copy (chat-size delivery encode per §16's delivery-copy convention), sent per clip, not batched at the end and never merely described in text. The owner checks the actual footage, not a summary of it.
+- **Approval is requested explicitly with each delivery.** A clip is not "accepted" until the owner says so; unapproved clips do not enter the edit. The owner's reply decides: approved, or regenerate — and a regeneration then follows §19's ask-first rule (report, propose, wait).
+- **Applies to every version of every clip**, including regenerations: each new take goes back to the owner the same way.
+- The full loop: shoot → send to owner → owner approves or orders a regeneration → (if regen) §19 check-in → shoot the new version → send again.
+- `CLAUDE.md`'s Owner's QC rule section carries the corresponding amendment — read both together.
