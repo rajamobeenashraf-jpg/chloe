@@ -7,6 +7,18 @@ own log — shared docs (`PROJECT_HANDOFF.md`, `creative-direction.md`,
 `CHARACTER_LOCK.md`, `chloe-craft-study-2026-08-20.md`,
 `episodes-5-9-scripts.md`) are not edited here.
 
+**OWNER INSTRUCTION, 2026-08-21 (supersedes CLAUDE.md's "Claude fixes flagged
+issues independently" language for THIS episode, going forward):** after 5
+clips were regenerated across several rounds (1 self-QC round, then a
+Gemini-QC round) without a check-in, the owner asked why they weren't
+consulted first. Standing answer for the rest of this episode: **ask before
+submitting ANY clip regeneration**, from here forward, whether the finding
+comes from my own review or from Gemini eyes — report the confirmed issue
+and the proposed fix, wait for explicit go-ahead, then submit. This applies
+per regeneration attempt, not just per clip (i.e. if a first fix attempt
+doesn't land, check in again before trying a second one, rather than
+iterating independently).
+
 ## Setup
 - PAI Pro engine already provisioned by the SessionStart hook (cloned, patches
   applied, `PAI_KEY` present).
