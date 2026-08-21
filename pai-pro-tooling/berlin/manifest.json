@@ -1,0 +1,126 @@
+[
+  {
+    "id": "ep8_still_costume",
+    "type": "still",
+    "outPath": "/home/user/pai-pro/projects/berlin/assets/ep8_still_costume.png",
+    "size": "720x1280",
+    "durationSeconds": 95.722,
+    "ts": "2026-08-20T23:43:00.088Z"
+  },
+  {
+    "id": "ep8_still_costume_v2",
+    "type": "still",
+    "outPath": "/home/user/pai-pro/projects/berlin/assets/ep8_still_costume_v2.png",
+    "size": "720x1280",
+    "durationSeconds": 150.288,
+    "ts": "2026-08-20T23:46:22.955Z"
+  },
+  {
+    "id": "clip_01",
+    "type": "video",
+    "outPath": "/home/user/pai-pro/projects/berlin/assets/clip_01.mp4",
+    "taskId": "60b4a62c-1610-4651-97cb-e030641a3b69",
+    "videoUrl": "https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/20/059de383460c89566be87349a109ffee.mp4",
+    "wallSeconds": 173.31,
+    "ts": "2026-08-20T23:53:39.120Z"
+  },
+  {
+    "id": "clip_01",
+    "type": "video",
+    "outPath": "/home/user/pai-pro/projects/berlin/assets/clip_01.mp4",
+    "taskId": "dc3137a9-7be3-4545-9343-42a02b5c833a",
+    "videoUrl": "https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/63e4221ef2600be17a836db0f973dda9.mp4",
+    "wallSeconds": 265.939,
+    "ts": "2026-08-21T00:00:41.447Z"
+  },
+  {
+    "id": "clip_02",
+    "type": "video",
+    "outPath": "/home/user/pai-pro/projects/berlin/assets/clip_02.mp4",
+    "taskId": "3f529e1e-fd23-4d49-839a-395d4f929131",
+    "videoUrl": "https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/fba2849c44707d9bdb13622fbf0c316b.mp4",
+    "wallSeconds": 117.278,
+    "ts": "2026-08-21T00:03:49.162Z"
+  },
+  {
+    "id": "clip_03",
+    "type": "video",
+    "outPath": "/home/user/pai-pro/projects/berlin/assets/clip_03.mp4",
+    "taskId": "f34d9ca3-ed85-4120-b40e-aaf377ac0647",
+    "videoUrl": "https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/cc4d709566a90642761ab790026fed46.mp4",
+    "wallSeconds": 214.75,
+    "ts": "2026-08-21T00:08:04.637Z"
+  },
+  {
+    "id": "clip_04",
+    "type": "video",
+    "outPath": "/home/user/pai-pro/projects/berlin/assets/clip_04.mp4",
+    "taskId": "fb3b0acd-6a3c-4310-9cad-f26fe753f6a7",
+    "videoUrl": "https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/ba95ac8c37409d13a681b4df591246dd.mp4",
+    "wallSeconds": 204.14,
+    "ts": "2026-08-21T00:12:05.089Z"
+  },
+  {
+    "id": "clip_05",
+    "type": "video",
+    "outPath": "/home/user/pai-pro/projects/berlin/assets/clip_05.mp4",
+    "taskId": "358ee689-d0a4-4b1a-b81a-8229622cf6ed",
+    "videoUrl": "https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/a8ba4928183317f4ad9a1364f12ad482.mp4",
+    "wallSeconds": 229.413,
+    "ts": "2026-08-21T00:16:32.924Z"
+  },
+  {
+    "id": "clip_06",
+    "type": "video",
+    "outPath": "/home/user/pai-pro/projects/berlin/assets/clip_06.mp4",
+    "taskId": "6055a0dd-d7c6-4c8a-b64e-125b54c40a03",
+    "videoUrl": "https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/024d21f457988f258d7a6f68902802ad.mp4",
+    "wallSeconds": 132.57,
+    "ts": "2026-08-21T00:19:23.933Z"
+  },
+  {
+    "id": "clip_07",
+    "type": "video",
+    "outPath": "/home/user/pai-pro/projects/berlin/assets/clip_07.mp4",
+    "taskId": "05411ee7-4079-4b10-8db9-71cc1158c731",
+    "videoUrl": "https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/df8d43eefb82ed70b74bdb90c2de2c77.mp4",
+    "wallSeconds": 173.925,
+    "ts": "2026-08-21T00:22:58.479Z"
+  },
+  {
+    "id": "clip_08",
+    "type": "video",
+    "outPath": "/home/user/pai-pro/projects/berlin/assets/clip_08.mp4",
+    "taskId": "1fd98731-ba98-4e49-bf81-37a7a16329a3",
+    "videoUrl": "https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/d08986191d323dcdb104fde651ca86e0.mp4",
+    "wallSeconds": 221.07,
+    "ts": "2026-08-21T00:27:20.976Z"
+  },
+  {
+    "id": "clip_09",
+    "type": "video",
+    "outPath": "/home/user/pai-pro/projects/berlin/assets/clip_09.mp4",
+    "taskId": "2e08c734-90eb-42bf-98d3-16b6df0c7032",
+    "videoUrl": "https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/5736ef08f5e950381d883550c053fba9.mp4",
+    "wallSeconds": 203.495,
+    "ts": "2026-08-21T00:31:22.851Z"
+  },
+  {
+    "id": "clip_10",
+    "type": "video",
+    "outPath": "/home/user/pai-pro/projects/berlin/assets/clip_10.mp4",
+    "taskId": "0d2a73a4-5fa7-4dba-8819-020903456513",
+    "videoUrl": "https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/b7affddef3948830a879fa6747e01a95.mp4",
+    "wallSeconds": 224.966,
+    "ts": "2026-08-21T00:35:50.778Z"
+  },
+  {
+    "id": "clip_11",
+    "type": "video",
+    "outPath": "/home/user/pai-pro/projects/berlin/assets/clip_11.mp4",
+    "taskId": "0c97cb75-5b12-4f7d-8678-9a9e99d3d3d8",
+    "videoUrl": "https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/c9738454815140d59920822e35285375.mp4",
+    "wallSeconds": 208.437,
+    "ts": "2026-08-21T00:39:59.434Z"
+  }
+]
