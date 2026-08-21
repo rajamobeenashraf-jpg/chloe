@@ -40,6 +40,20 @@ Per the owner's realism bar (creative-direction.md §13, hard pass/fail — "any
 
 **Owner decision (2026-08-21): accepted the light-to-moderate eye makeup as an engine limitation.** `assets/clip1_v1.mp4` (the v4 attempt) is FINAL for clip 1. The `run_clip.mjs` recipe as of this commit (identity refs + costume image ref + front-loaded no-makeup instruction, even though makeup isn't fully eliminated) is now the standing recipe for clips 2–12 — every other axis it produces (wardrobe, lighting, realism texture, populated backgrounds, no-camera-visible) is clean, so no further changes are being made to the template before continuing.
 
+## Gate 2 progress — clips generated (manifest, job IDs + URLs)
+All clips generated with the standing `run_clip.mjs` recipe (v4 identity/wardrobe/realism block + costume image ref, front-loaded no-makeup instruction — eye makeup remains present per the owner-accepted limitation above). ffprobe-verified durations match script targets within rounding.
+
+| Clip | Duration | Task ID | Video URL (PAI-hosted, expires — re-download before it does) | QC |
+|---|---|---|---|---|
+| 1 | 9.06s | 20d2ae3d-05f8-402a-bf66-533c3ee527bb | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/0b8e945003cffd08ccca651aaa9d9846.mp4 | PASS (v4, owner-accepted) |
+| 2 | 8.06s | 88453f06-8ae0-413e-b08b-845a3937d1f9 | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/d5cbe91bd8b4b46e1307134f70268cae.mp4 | PASS |
+| 3 | — | 83d9da7f-ecf9-47e0-925b-d9c7cad3726e | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/2df5cfa45b547a6eb2efd0b1e220faf5.mp4 | PASS |
+| 4 | 11.05s | dcf25d78-bb6b-43af-a7e2-aac8500de71c | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/009cbd9f502e7bb34a00adbd7437c665.mp4 | PASS — quartermaster/wax-tablet detail nailed |
+| 5 | 6.06s | 86b8245c-d5a9-4906-a006-c66bdf245f54 | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/ff12ef4f50096daa9b5cd8e9022c4516.mp4 | PASS — arrow-in-shield causality clean |
+| 6 | 12.05s | 78e70603-d876-4b67-8d46-3f3cabae415e | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/0f80ad01b543aa7e9f7775bf3d7c8a93.mp4 | PASS — empathy core, Krethon cord beat |
+
+Rejected clip 1 attempts (v1-v3, kept for reference) archived at `pai-pro/projects/troy/assets/rejected/` (not committed to git — generated media stays out of git per CLAUDE.md; this note is the pointer for another session).
+
 ## Next steps (after Gate 1 approval)
 1. Generate all 12 clips per the `episodes-5-9-scripts.md` Episode 7 table — single continuous takes, durations per beat, daylight/golden-hour only (owner lighting lock — never fully dark), pre-generation self-check every clip (creative-direction.md §7–§15), NPC continuity (Krethon, quartermaster, Trojan boy sentry), italicized `[Speaker]` tags for their lines.
 2. Assemble with `pai-pro-tooling/salem/`-derived tooling: true hard cuts, 0.08s audio-only edge fades, loudnorm frame-exact, canonical caption style (`MarginV=320`), mouth-frame cross-check on ambiguous cues.
