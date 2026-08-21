@@ -34,6 +34,17 @@
 // (episodes-5-9-scripts.md's own script text). `speaker` is set only for
 // non-protagonist lines — qc_pass.mjs prefixes those with an italicized
 // bracketed name per creative-direction.md §16.
+//
+// REVISION ROUND (owner creative review, 2026-08-21): clips 5, 7, 10, 12
+// regenerated per owner direction after watching the first assembled cut
+// (Achilles given a real named exchange, Krethon named aloud, clip 12's
+// rushed pacing fixed, a bridge beat added between clips 9 and 10, and a
+// real object-permanence bug in clip 5's arrow prop fixed). Each revised
+// clip's caption timing below is freshly re-derived from its own new
+// render (real silencedetect where available, mouth-frame cross-check
+// where the clip's background noise defeats silencedetect entirely) — not
+// carried over from the pre-revision version. See
+// episode-7-production-log.md for the full revision history.
 
 export const CLIPS = [
   {
@@ -78,8 +89,13 @@ export const CLIPS = [
     id: "clip5",
     duration: 6.060000,
     captions: [
-      { start: 0.5, end: 2.531, text: "Water girl! DOWN!", speaker: "Soldier" },
-      { start: 3.458, end: 6.060, text: "Rule one. Gone by day two." },
+      // v4 (leather waterskin + rule-one line replaced): no silencedetect
+      // markers at all (chaos/battle noise never drops below threshold,
+      // same situation as clip10) — timing from mouth-frame cross-check.
+      // Soldier's mouth clearly open/shouting during the grab (~1.0-2.2s);
+      // her mouth actively moving in the crouched close-ups from ~3.8s on.
+      { start: 1.0, end: 2.2, text: "Water girl! DOWN!", speaker: "Soldier" },
+      { start: 3.8, end: 5.9, text: "Okay. That's new." },
     ],
   },
   {
@@ -96,11 +112,16 @@ export const CLIPS = [
   },
   {
     id: "clip7",
-    duration: 8.057007,
+    duration: 14.070998,
     captions: [
-      { start: 0.776, end: 1.533, text: "Should I say hi?" },
-      { start: 1.847, end: 3.250, text: "Only if you are tired of being alive.", speaker: "Krethon" },
-      { start: 3.543, end: 8.057, text: "He's shorter than you'd think, and I have never been more scared of anyone in my life." },
+      // v5 (owner-directed rewrite: Krethon removed, she approaches
+      // Achilles directly and says his name herself, real strategy
+      // dialogue). Timing from real silencedetect on the v5 render.
+      { start: 0.0, end: 0.456, text: "Achilles." },
+      { start: 1.322, end: 4.263, text: "Nine years. They say you could end this war tomorrow, if you fought. Why don't you?" },
+      { start: 4.386, end: 7.725, text: "Agamemnon took what was mine. I won't hand him my sword too.", speaker: "Achilles" },
+      { start: 8.795, end: 9.745, text: "That's not strategy." },
+      { start: 10.353, end: 14.071, text: "That's a grudge with an army behind it. I have never been more scared of anyone in my life." },
     ],
   },
   {
@@ -130,12 +151,15 @@ export const CLIPS = [
   },
   {
     id: "clip10",
-    duration: 13.072834,
+    duration: 15.069002,
     captions: [
-      // No silencedetect markers at all (fire/chaos noise never drops below
-      // threshold) — timing from mandatory mouth-frame cross-check instead
-      // (see file header): mouth open/moving 7.4-8.7s.
-      { start: 7.4, end: 8.7, text: "—stay with me—" },
+      // v3 (added ~3s embedded normalcy-to-alarm opening beat before the
+      // established raid sequence). No silencedetect markers at all
+      // (fire/chaos noise never drops below threshold) — timing from
+      // mandatory mouth-frame cross-check: mouth open/moving ~10.0-11.3s
+      // during the hide-hauling beat with Krethon (shifted later than the
+      // v2 window by roughly the new opening beat's length).
+      { start: 10.0, end: 11.3, text: "—stay with me—" },
     ],
   },
   {
@@ -150,15 +174,18 @@ export const CLIPS = [
   },
   {
     id: "clip12",
-    duration: 10.053991,
+    duration: 13.072834,
     captions: [
-      { start: 0.0, end: 0.442, text: "Get home." },
-      { start: 0.754, end: 1.582, text: "Count them out loud to him." },
-      { start: 2.019, end: 5.127, text: "In three thousand years, a man finds this city with a shovel in one hand and Homer in the other." },
-      { start: 5.525, end: 6.102, text: "The poem is the MAP." },
-      { start: 6.102, end: 8.559, text: "Whether it happened like the song says — it happened for THEM." },
-      { start: 8.967, end: 9.285, text: "Hazel —" },
-      { start: 9.590, end: 10.054, text: "out of time." },
+      // v2 (Krethon named in the "Get home" line; pacing fixed — extended
+      // duration + explicit per-sentence pause direction). Timing from
+      // real silencedetect on the v2 render.
+      { start: 0.0, end: 0.746, text: "Get home, Krethon." },
+      { start: 1.125, end: 1.914, text: "Count them out loud to him." },
+      { start: 2.787, end: 6.256, text: "In three thousand years, a man finds this city with a shovel in one hand and Homer in the other." },
+      { start: 6.771, end: 7.566, text: "The poem is the MAP." },
+      { start: 8.762, end: 11.055, text: "Whether it happened like the song says — it happened for THEM." },
+      { start: 11.913, end: 12.215, text: "Hazel —" },
+      { start: 12.530, end: 13.073, text: "out of time." },
     ],
   },
 ];
