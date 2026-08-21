@@ -50,10 +50,10 @@
       "duration": 6,
       "timeOfDay": "Day 2, dawn, harsh low early sun, long shadows, scene fully lit despite low sun angle",
       "scene": "Inside a staggering line of soldiers advancing along the shield wall at the edge of the open plain (walls of Troy visible upshore-left in the distance), she is moving with them carrying a waterskin, raising it to a soldier's shield as an arrow suddenly thuds into the shield just above where her hand is. A soldier beside her grabs her shoulder and hauls her down behind the shield line in the same motion — not two separate events, the pull is a continuation of the same forward motion, embedded not sequential.",
-      "dialogue": "Soldier, hauling her down, urgent: \"Water girl! DOWN!\" She, crouched low, flat delivery to the lens, catching her breath: \"Rule one. Gone by day two.\"",
+      "dialogue": "Soldier, hauling her down, urgent: \"Water girl! DOWN!\" She, crouched low, flat delivery to the lens, catching her breath: \"Okay. That's new.\"",
       "action": "One continuous physical thread: she is already moving/serving water when the arrow hits and the pull-down happens as a variation of that same motion, per creative-direction.md §7.",
       "sound": "arrow thud, shouting, shield clatter, wind",
-      "craft": "the clip-1 rule breaks ON SCREEN, in sequence — participation + deadpan"
+      "craft": "v2 (owner-directed): 'Rule one' callback cut — didn't land as a joke for the owner, replaced with a standalone deadpan reaction that doesn't depend on remembering clip 1's line — participation + deadpan"
     },
     {
       "n": 6,
@@ -97,13 +97,13 @@
     },
     {
       "n": 10,
-      "duration": 13,
-      "timeOfDay": "Day 3, same dusk continuing, sky still glowing deep orange, scene stays clearly readable throughout — threat is fire-arrows arcing against the sunset sky, camp never goes pitch black",
-      "scene": "A raid breaks out across the camp — fire-arrows arcing in against the orange sky, shouting, people moving with purpose. She is already in motion inside the chaos: she kicks a fallen brazier clear of a tent wall, then together with {krethon} hauls soaked hides up over a supply cart to smother sparks, gasping a line to the lens mid-carry, then gets a limping soldier's arm over her shoulders and helps him toward a tent marked as the surgeon's station. Scene populated with multiple background people reacting, per §10 — not one person standing in for the whole event.",
+      "duration": 15,
+      "timeOfDay": "Day 3, same dusk continuing directly from the previous fire-ring moment, sky still glowing deep orange, scene stays clearly readable throughout — threat is fire-arrows arcing against the sunset sky, camp never goes pitch black",
+      "scene": "OPENING BEAT (new, ~2-3s): still at the same fire ring, still catching her breath from laughing at the horse-plan joke, relaxed and warm — mid-smile, she notices a stray ember glowing wrong on a nearby rooftop, her smile fading half a beat before the first fire-arrow streaks in. This is a continuation of the same settling-evening moment, NOT a hard scene cut — the chaos rises OUT of the quiet camp sound already present, not cutting in from silence. From there: a raid breaks out across the camp — fire-arrows arcing in against the orange sky, shouting, people moving with purpose. She is immediately in motion inside the chaos: she kicks a fallen brazier clear of a tent wall, then together with {krethon} hauls soaked hides up over a supply cart to smother sparks, gasping a line to the lens mid-carry, then gets a limping soldier's arm over her shoulders and helps him toward a tent marked as the surgeon's station. Scene populated with multiple background people reacting, per §10 — not one person standing in for the whole event.",
       "dialogue": "Mid-carry with the hides, breathless, to the lens: \"—stay with me—\"",
-      "action": "Active-participant: she solves problems with objects and teamwork (kicking the brazier clear, hauling hides, helping the wounded man) rather than just running/watching, per §12. One continuous escalating physical thread, embedded drama not sequential events, per §7. WARDROBE REMINDER: even in this fast, chaotic action beat, she is wearing the EXACT same undyed-linen chiton pinned at both shoulders described above — the chaos of the raid does NOT change her into a different outfit, tunic, cloak, or costume; her clothing stays identical to every other clip.",
-      "sound": "shouting, fire crackle and whoosh, distant drums, arrows in flight, no clashing-sword spectacle sounds — this is firelight-against-sunset chaos, not a swordfight",
-      "craft": "danger grammar stage 3, solved with objects+teamwork, lens-connection held mid-action"
+      "action": "Active-participant: she solves problems with objects and teamwork (kicking the brazier clear, hauling hides, helping the wounded man) rather than just running/watching, per §12. One continuous escalating physical thread, embedded drama not sequential events, per §7 — the new opening beat is the source of drama already present (the wrong-colored ember) escalating, not a jarring new element cutting in. WARDROBE REMINDER: even in this fast, chaotic action beat, she is wearing the EXACT same undyed-linen chiton pinned at both shoulders described above — the chaos of the raid does NOT change her into a different outfit, tunic, cloak, or costume; her clothing stays identical to every other clip. Do not rush the opening beat — give the smile-fading moment real weight before the escalation, then keep the established action sequence (brazier, hides, wounded man) at its previous successful pacing.",
+      "sound": "settling evening camp quiet at first (fire-ring embers, distant laughter trailing off) rising into shouting, fire crackle and whoosh, distant drums, arrows in flight — no clashing-sword spectacle sounds, this is firelight-against-sunset chaos, not a swordfight",
+      "craft": "v3 (owner-directed): added a brief embedded normalcy-into-alarm opening beat so the cut from clip 9's joke doesn't land as a hard tonal jump — danger grammar stage 3, solved with objects+teamwork, lens-connection held mid-action. Preserves everything that worked in v2 (no phone, correct wardrobe, populated chaos, Krethon continuity) unchanged"
     },
     {
       "n": 11,
