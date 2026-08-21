@@ -67,13 +67,13 @@
     },
     {
       "n": 7,
-      "duration": 8,
+      "duration": 13,
       "timeOfDay": "Day 3, midday, bright direct sun, scene fully lit",
-      "scene": "Camp noise dies in a wave around her as Achilles and a group of Myrmidon soldiers pass at a respectful distance across the background, seen partially — armored figures moving with grim purpose, not a detailed hero close-up. {krethon} stands beside her, not turning to look.",
-      "dialogue": "She, whispering to the lens: \"Should I say hi?\" {krethon}, not turning, flat: \"Only if you are tired of being alive.\" She, watching them pass, quiet and a little stunned: \"He's shorter than you'd think, and I have never been more scared of anyone in my life.\"",
-      "action": "Casual-shock beat: the camp goes hushed around the passing soldiers while she and Krethon react with restrained, dry unease, not fear-screaming.",
-      "sound": "camp noise dropping to near-silence, distant footsteps/armor clink, wind",
-      "craft": "casual shock + the strategy-report hook line kept"
+      "scene": "Camp noise dies in a wave as a Greek champion — a lean, battle-hardened warrior with a distinct crested bronze helmet and finer, more ornate bronze cuirass than the rank-and-file soldiers around him (elite gear, still matte and battle-worn, NOT glam/fantasy shiny) — approaches at the head of a small group of Myrmidon soldiers, close enough for a real exchange, not just marching past in the far background. {krethon} stands beside her. She steps half a pace forward on her own initiative, addressing him directly. He stops, turns to her, and actually answers — this is a genuine two-way exchange, both people looking at each other, not a passing sighting.",
+      "dialogue": "{krethon}, quiet, urgent, before she can move: \"That's Achilles. Only if you are tired of being alive.\" She steps forward anyway, calling to him: \"Nine years. What's kept you here?\" Achilles stops, looks at her directly, flat and solemn, no drama in the delivery: \"My mother gave me a choice. A long life, and no one remembers my name. Or a short one — and they never forget it.\" A beat. He walks on. She, quiet and a little stunned, to the lens: \"He's shorter than you'd think, and I have never been more scared of anyone in my life.\"",
+      "action": "Real two-way conversation per the direct-address floor: she asks, he answers, she reacts to the lens after. Krethon's warning fires just before she acts, not after — causality intact. Achilles' spatial staging must actually support eye contact and being heard: he is close enough in frame for a normal speaking exchange, not staged at a distance that would make dialogue implausible.",
+      "sound": "camp noise dropping to near-silence as he approaches, footsteps/armor clink close now, wind, silence under his line",
+      "craft": "real Achilles exchange (owner-directed revision) — casual shock + a genuine, historically-grounded line (Iliad's central choice: short glorious life vs. long forgotten one) replacing the original pass-by-only staging"
     },
     {
       "n": 8,
