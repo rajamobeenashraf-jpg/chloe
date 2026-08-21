@@ -77,8 +77,21 @@ Adapted the Salem (Ep2) tooling for Troy per creative-direction.md §16 (`captio
 
 Caption rendering visually spot-checked at several points in the assembled cut — DejaVu Sans Bold, correct MarginV=320 position (clears bottom UI, below chin, separated from center), readable, speaker tags render correctly where present.
 
-## Gate 4 blocked — Gemini eyes free-tier daily quota exhausted
-Both edit-stage QC calls (full-cut `qc` mode, `captions` mode vs the exported .srt) failed identically: `RESOURCE_EXHAUSTED` / `GenerateRequestsPerDayPerProjectPerModel-FreeTier`, quota value 20, across all three models in the fallback ladder (gemini-3.7-flash, gemini-3.6-flash, gemini-flash-latest). Per `research-methodology.md` §5's owner standing order ("the moment the free allowance blocks work, tell the owner straight away... never silently wait out a quota wall and never skip QC because of one"), reported to the owner immediately rather than retrying blind or proceeding without QC. Note: the free quota is one shared pool across all sessions using this key — this may reflect usage from a parallel episode chat, not only this session's 2 Gate-1 still QCs.
+## Gate 4 blocked — Gemini eyes free-tier daily quota exhausted (resolved)
+Both edit-stage QC calls (full-cut `qc` mode, `captions` mode vs the exported .srt) failed identically: `RESOURCE_EXHAUSTED` / `GenerateRequestsPerDayPerProjectPerModel-FreeTier`, quota value 20, across all three models in the fallback ladder (gemini-3.7-flash, gemini-3.6-flash, gemini-flash-latest). Per `research-methodology.md` §5's owner standing order ("the moment the free allowance blocks work, tell the owner straight away... never silently wait out a quota wall and never skip QC because of one"), reported to the owner immediately rather than retrying blind or proceeding without QC. **Owner enabled billing on the key 2026-08-21; resolved on retry.**
+
+## Gate 4 — edit-stage Gemini eyes QC results
+**Full-cut `qc` pass** (`pai-pro-tooling/troy/qc/final_cut/`): score 6.8/10, 4 candidate findings, 2 CONFIRMED:
+- 00:50.4 (clip6, the Krethon cord hand-off — the episode's empathy-core beat) — severity 3 anatomy: "fingertips and rope fibers experience slight edge blurring and soft blending artifacts."
+- 01:24.6 (clip10, the brazier-kick action) — severity 3 physics: "dress hem and foot clip through the physical side of the brazier bowl" + background fireballs move in linear (not ballistic) trajectories.
+
+Pulled the actual frames at both timestamps and reviewed by eye: neither reads as a real defect at normal viewing — both are transient, sub-second artifacts inherent to fast hand/prop contact and kick motion in current AI video generation, not identity drift, anachronism, or a continuity break. Recommended waiving both rather than regenerating (clip 6 is the episode's key emotional beat and clip10 was already reworked once to fix a worse bug — real risk of losing a hard-won take for a likely-imperceptible gain). **Presented to the owner with visual evidence for the explicit waive-or-regenerate call required by CLAUDE.md's QC rule; owner reviewing before deciding — not yet resolved, no clip touched.**
+
+**Captions cross-check** (`pai-pro-tooling/troy/qc/captions/`): score 6.8/10, 2 candidate findings, 0 reached the severity≥3 verify threshold (both severity 2, unverified). Cross-checked both directly against `captions_data.mjs`'s own source timings rather than treat them as facts (per the project's "unverified findings are hints, not facts" rule):
+- Flagged "01:19 caption skips 'Who would DRAG it?'" — false positive: that line has its own cue at local 4.3-5.0s in clip9 (global ~79.6-80.3s); Gemini's sample landed a beat earlier, mid-"A WHAT?".
+- Flagged "01:54 caption omits 'Hazel —'" — false positive: "Hazel —" is cued at local 8.967-9.285s in clip12 (global ~114.4-114.7s); Gemini's sample landed in the natural ~0.4s pause immediately before it (a real silencedetect-measured gap, not a bug).
+
+No caption changes needed — both real lines are correctly captioned, just a fraction of a second later than where the sweep happened to sample.
 
 Rejected clip 1 attempts (v1-v3, kept for reference) archived at `pai-pro/projects/troy/assets/rejected/` (not committed to git — generated media stays out of git per CLAUDE.md; this note is the pointer for another session).
 

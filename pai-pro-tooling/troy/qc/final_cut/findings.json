@@ -1,0 +1,44 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:21",
+      "category": "physics",
+      "severity": 3,
+      "description": "Hardtack cracker edge softly deforms and partially dissolves around lips prior to a crisp bite separation.",
+      "end_timestamp": "00:23",
+      "fix": "Regenerate bite frames with rigid collision geometry for the hardtack.",
+      "verdict": "DISMISSED",
+      "refined_description": "The hardtack remains rigid as the woman bites it, showing no soft deformation or dissolving artifacts prior to or during the bite."
+    },
+    {
+      "timestamp": "00:30",
+      "category": "physics",
+      "severity": 2,
+      "description": "Cord material clips slightly through the fingers and the shield's metallic loop during the knot-tying action.",
+      "end_timestamp": "00:32",
+      "fix": "Adjust hand-prop depth interaction to maintain distinct cord boundary."
+    },
+    {
+      "timestamp": "00:50.400",
+      "category": "anatomy",
+      "severity": 3,
+      "description": "Fingers interlock softly with knotted rope fibers, causing minor silhouette blurring.",
+      "end_timestamp": "00:53",
+      "fix": "Clean up rope-handling hand pose keyframes to preserve finger edge separation.",
+      "verdict": "CONFIRMED",
+      "refined_description": "As the woman takes the knotted rope from the man, the fingertips and the rope fibers experience slight edge blurring and soft blending artifacts."
+    },
+    {
+      "timestamp": "01:24.600",
+      "category": "physics",
+      "severity": 3,
+      "description": "Fireball trajectories exhibit linear motion pacing, and dress hem briefly clips the fire brazier bounding zone.",
+      "end_timestamp": "01:28",
+      "fix": "Add natural ballistic arcs to projectiles and adjust dress collision box around the brazier.",
+      "verdict": "CONFIRMED",
+      "refined_description": "At 01:24.600, as the woman runs past the fire brazier, her dress hem and foot clip through the physical side of the brazier bowl while the background fireballs move in a uniform linear trajectory."
+    }
+  ],
+  "summary": "High visual quality with consistent character identity and wardrobe across all scenes. Minor physics anomalies occur during close-up prop handling and rapid motion sequences. Captions, lip-sync, and historical ambiance remain cohesive throughout.",
+  "overall_score": 6.8
+}
