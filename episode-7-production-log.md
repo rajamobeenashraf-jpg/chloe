@@ -61,6 +61,10 @@ First clip 10 attempt (the raid set-piece) rendered a visible modern black smart
 Fixed two ways: (1) strengthened the shared no-camera clause in `run_clip.mjs`'s `IDENTITY_BLOCK` to explicitly state this is a POV shot with no device to hold at all, hands always free for whatever the action requires — applies to all remaining clips, not just clip 10; (2) added an explicit wardrobe-continuity reminder directly into clip 10's own action text in `clips.json` ("even in this fast, chaotic action beat, she is wearing the EXACT same... chiton"). Rejected file kept at `pai-pro/projects/troy/assets/rejected/clip10_v1_REJECTED_phone_wardrobe.mp4`. **v2 regeneration confirmed both fixes worked**: no phone/device visible anywhere, wardrobe consistent chiton throughout, populated chaos with recognizable Krethon hauling hides beside her. v2 is FINAL for clip 10.
 
 | 10 | 13.07s | fb080927-32ac-4de1-91c3-ae2997b4e19f | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/485b9d3e4e3c882b4bf8c48e51222728.mp4 | PASS (v2) — phone/wardrobe drift fixed |
+| 11 | 9.06s | 464baada-5501-4829-bd77-8355857c9275 | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/a07ce261222a26d267278988f0e0c3fc.mp4 | PASS — silent horse-payoff detail lands clean |
+| 12 | 10.05s | 2dabc651-6868-4274-a452-60e998208089 | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/6a08525bc4a6909fef1d34d33d932f0a.mp4 | PASS — warm outro, cord exchange with Krethon |
+
+**Gate 2 complete (2026-08-21): all 12 clips generated and QC'd.** One regeneration needed (clip 10, phone/wardrobe drift — see finding above). Proceeding to Gate 3 (assembly with captions).
 
 Rejected clip 1 attempts (v1-v3, kept for reference) archived at `pai-pro/projects/troy/assets/rejected/` (not committed to git — generated media stays out of git per CLAUDE.md; this note is the pointer for another session).
 
