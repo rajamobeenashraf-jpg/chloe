@@ -89,13 +89,17 @@ export const CLIPS = [
     id: "clip5",
     duration: 6.060000,
     captions: [
-      // v4 (leather waterskin + rule-one line replaced): no silencedetect
-      // markers at all (chaos/battle noise never drops below threshold,
-      // same situation as clip10) — timing from mouth-frame cross-check.
-      // Soldier's mouth clearly open/shouting during the grab (~1.0-2.2s);
-      // her mouth actively moving in the crouched close-ups from ~3.8s on.
-      { start: 1.0, end: 2.2, text: "Water girl! DOWN!", speaker: "Soldier" },
-      { start: 3.8, end: 5.9, text: "Okay. That's new." },
+      // v5 (researched leather waterskin + corrected one-handed hold,
+      // regenerated from scratch — timing re-derived fresh, not carried
+      // over from v4). Soldier's line has real silencedetect markers
+      // (speech 0.134-1.119s, silence gap 1.119-1.256s as he grabs her).
+      // No further silencedetect data after that (chaos noise defeats
+      // threshold) — her line's window found via mouth-frame cross-check:
+      // mouth closed/breathing through the pull-down and duck under the
+      // shield (~1.3-2.8s), then continuously open/speaking to the lens
+      // from ~2.8s, closing into a settled smile by ~5.3-5.5s.
+      { start: 0.134, end: 1.119, text: "Water girl! DOWN!", speaker: "Soldier" },
+      { start: 2.8, end: 5.3, text: "Okay. That's new." },
     ],
   },
   {
@@ -153,13 +157,15 @@ export const CLIPS = [
     id: "clip10",
     duration: 15.069002,
     captions: [
-      // v3 (added ~3s embedded normalcy-to-alarm opening beat before the
-      // established raid sequence). No silencedetect markers at all
-      // (fire/chaos noise never drops below threshold) — timing from
-      // mandatory mouth-frame cross-check: mouth open/moving ~10.0-11.3s
-      // during the hide-hauling beat with Krethon (shifted later than the
-      // v2 window by roughly the new opening beat's length).
-      { start: 10.0, end: 11.3, text: "—stay with me—" },
+      // v4 (fire-arrow trajectory fix only — opening beat, brazier-kick,
+      // hides, wounded man, wardrobe all unchanged from v3, but the whole
+      // clip was regenerated so timing was re-checked fresh, not assumed
+      // identical). No silencedetect data during the dialogue beat itself
+      // (fire/chaos noise defeats threshold, same as v3) — mouth-frame
+      // cross-check found a tighter window this render: mouth open/moving
+      // toward the lens ~9.9-10.3s during the hide-hauling beat with
+      // Krethon, closing as she turns to a new action immediately after.
+      { start: 9.9, end: 10.4, text: "—stay with me—" },
     ],
   },
   {
