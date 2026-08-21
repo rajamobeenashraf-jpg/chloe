@@ -59,7 +59,7 @@ export const CLIPS = [
     duration: 8.057007,
     captions: [
       { start: 0.0, end: 4.42, text: "No costume department in the Cretaceous. Mud — it's SPF, it's bug spray, it's couture." },
-      { start: 4.42, end: 7.96, text: "And I brought a bike bell. For herding. You laugh — wait." },
+      { start: 4.42, end: 7.68, text: "And I brought a bike bell. For herding. You laugh —" },
     ],
   },
   {
@@ -75,7 +75,7 @@ export const CLIPS = [
     duration: 10.053991,
     captions: [
       { start: 2.8, end: 4.3, text: "Fruit is BRAND new this era. I'm eating the beta version." },
-      { start: 4.6, end: 8.2, text: "5/10 — mostly seeds and ambition." },
+      { start: 5.25, end: 8.2, text: "5/10 — mostly seeds and ambition." },
       { start: 8.3, end: 9.8, text: "Don't eat that either. It's MINE." },
     ],
   },
@@ -90,13 +90,15 @@ export const CLIPS = [
     ],
   },
   {
-    id: "clip5b_rexfear",
+    id: "clip5b_rexfear_v3",
     duration: 12.041667,
     captions: [
-      { start: 4.85, end: 6.92, text: "Hell Creek skulls. T-Rex bite marks." },
-      { start: 7.35, end: 8.04, text: "Some healed." },
-      { start: 8.39, end: 8.97, text: "Some didn't." },
-      { start: 9.51, end: 11.4, text: "He could eat you. You are the worst hiding partner in sixty-six million years." },
+      { start: 4.3, end: 4.82, text: "Hell Creek skulls." },
+      { start: 5.06, end: 6.04, text: "T-Rex bite marks." },
+      { start: 6.23, end: 6.61, text: "Some healed." },
+      { start: 6.94, end: 7.67, text: "Some didn't." },
+      { start: 8.27, end: 8.69, text: "He could eat you." },
+      { start: 9.12, end: 11.95, text: "You are the worst hiding partner in sixty-six million years." },
     ],
   },
   {
@@ -152,7 +154,7 @@ export const TRANSITIONS = [
   { after: "clip3_tankrescue_v2", type: "cut" },
   { after: "clip4_foodreview", type: "cut" },
   { after: "clip5a_rexfamily", type: "cut" },
-  { after: "clip5b_rexfear", type: "cut" },
+  { after: "clip5b_rexfear_v3", type: "cut" },
   { after: "clip6_walkingaside", type: "cut" },
   { after: "clip7_pivot_v4", type: "cut" },
   { after: "clip8_skyturn_v2", type: "cut" },
