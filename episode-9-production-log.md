@@ -155,6 +155,29 @@ CHARACTER_LOCK.md automatically) raised no finding on this, so treating it
 as not a real issue; flagging to the owner's own watch-through as the final
 word per the standing rule ("owner's watch-through remains the final gate").
 
-## Higgsfield virality_predictor — running next
-Per CLAUDE.md, this runs pre-publish, after QC resolves. QC is now clean —
-proceeding.
+## Higgsfield virality_predictor — RUN 2026-08-21
+Tool caps input at 16s ("Video must be 16 seconds or shorter") — it's a
+hook/retention-analysis tool built for a single clip, not the full 124.6s
+assembled Short. Ran it on **clip 1** (the QC'd, captioned opening clip —
+the episode's actual hook), uploaded via `media_upload`/`media_confirm`.
+
+Results (job `2785d389-35fe-4a96-a0ea-f126ce4ad289`):
+- **overall_score 49/100, viral_potential 54/100, sustain 100, brain_engagement 41**
+- **hook_score 30/100** (measured over the 0-3s window) — the weakest number.
+  `global_scores_by_frame` across the 9s clip: [0.40, 0.37, 0.40, 0.38, 0.39,
+  0.38, 0.37, 0.39, 0.44, **0.55**] — flat/low through the opening 3s and the
+  middle, only spiking at the very last second (the pyramid-reveal /
+  "I came to meet the aliens" punchline, `peak_second=9`). Reads as a
+  backloaded hook: the payoff lands, but the first 3 seconds (her talking
+  before she turns to see the pyramid) don't grab as hard as they could.
+- Tool's own disclaimer: "Predictive proxy metrics, not guaranteed
+  performance or clinical measures" — informational signal, not a QC gate.
+  Not auto-acting on this (no CONFIRMED-finding mechanism applies to this
+  tool); flagging for the owner's call — e.g. trimming/tightening clip 1's
+  opening seconds before the turn, if a stronger hook is wanted.
+- Full interactive dashboard: https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260821_071121_2785d389-35fe-4a96-a0ea-f126ce4ad289.html
+
+## STATUS: Episode 9 production complete, awaiting owner watch-through
+Per the standing rule, the owner's watch-through is the final gate. All
+prior gates (clip-by-clip, stitched cut, Gemini QC, virality check) are
+clear. Nothing is blocking delivery.
