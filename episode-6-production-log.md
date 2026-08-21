@@ -254,17 +254,98 @@ All 11 final clips: `pai-pro/projects/caesar/assets/clip1.mp4` … `clip11.mp4`.
 Full round-by-round detail, every job ID and URL:
 `pai-pro/projects/caesar/assets/clips_manifest.json`.
 
+## Gate 2, round 2 — Gemini eyes QC on the full clip set (owner: "try again gemini")
+Per the owner's QC rule in `CLAUDE.md`, Gemini eyes runs at the editing
+stage once all of an episode's clips are generated — this is exactly that
+point, so ran `tools/gemini-eyes/gemini_eyes.py qc` on all 11 clips
+individually (the "full clip set entering the edit," §1 of the rule).
+Two-pass sweep+verify on each; only CONFIRMED (post-verify) findings acted
+on, per the standing rule that unverified findings are hints, not facts.
+
+**16 CONFIRMED findings across 9 of 11 clips** (only clip 2 came back clean).
+Full detail in `pai-pro/projects/caesar/assets/gemini_qc/clip<N>/report.md`
+for every clip. Triaged into fix-now vs. accept-as-typical-AI-video-artifact:
+
+**Fixed (visually cross-checked, not just trusted blind):**
+- **Clip 9 — the big one, severity 4/5.** Gemini caught a hard, unscripted
+  scene break in the last ~1s: cut from the Roman street to an unrelated
+  interior wooden room with her in a Wild-West-style corset dress. My own
+  earlier self-QC frame sampling (3 frames/clip) landed just before this and
+  missed it entirely — this is exactly the failure mode a full-video machine
+  sweep catches that sparse sampling doesn't. Root cause, found across 3
+  regen attempts: the default reference set includes an image labeled "clip
+  9 aftermath frame" in `CHARACTER_LOCK.md` — a chaos-aftermath still from
+  the ORIGINAL Wild West episode's own clip 9. This episode's clip 9 is also
+  a chaos-aftermath beat, and that thematic match seems to pull the
+  reference's Wild-West costume/setting through harder than the other refs
+  (attempt 1: reinforcing single-continuous-take language fixed the cut but
+  didn't stop a corset/holster/saloon-backdrop drift; attempt 2 also added a
+  shallow-depth-of-field instruction to hide an unrelated Pantheon-background
+  issue, no better). Attempt 3: swapped that one reference image for a
+  neutral non-aftermath movie frame, keeping everything else — this fully
+  resolved both problems. New engine fact: watch for thematic matches between
+  a clip's own content and any reference image's labeled content, not just
+  overall identity coverage.
+- **Clip 1 — baked-in wrong on-screen text ("44 AB" instead of "44 BC"),
+  confirmed.** Same PAI auto-caption quirk documented for Episode 1's clip 1
+  in `creative-direction.md` §11 round 3. Fixed with an explicit
+  caption/signage-only text ban (scoped narrowly so it doesn't fight the
+  scroll/document handwriting-texture other clips legitimately need).
+- **Clip 7 — baked-in garbled mirrored text on the litter's front plaque,
+  confirmed.** Same fix pattern: explicit ban + "plain unmarked wood panel."
+- **Clip 10 — the red mark on the scroll rendered as an actual cross/plus
+  shape, confirmed** (Gemini's "physics" finding: "a red cross symbol
+  suddenly materializes"). Same family as the earlier unrequested crucifix
+  pendant from the Gate-1 costume stills — the model has some pull toward
+  cross shapes for red marks specifically. Fixed by describing the mark as a
+  single straight stripe, one direction only, in both clip 6 (where it's
+  first drawn) and clip 10 (where it reappears).
+- **Clip 6 — extraneous hand near Artemidorus's chest during the scroll
+  handoff, confirmed.** Given light-touch treatment (positive framing: "only
+  her hands and his own hands are near the scroll," no explicit "no extra
+  hands" negative, per the naming-primes-it lesson below) rather than a
+  bigger rewrite — visually clean on re-check.
+
+**Accepted as-is (real per Gemini, but common/inherent AI-video artifacts,
+lower visual impact, or ambiguous on visual cross-check) — not chased
+further, left for the owner's watch-through to weigh:** clip 3's exaggerated
+eye reaction during the posca sip (script calls for a big reaction here
+anyway); clip 4 and clip 9's freckle-density shift between shots (a texture
+continuity nitpick the tool mislabeled "identity" — not real face drift);
+clip 5's background-NPC lip-sync lag (Spurinna, not the protagonist); clip
+7's hand-blend during the busy scroll handoff; clip 8's arm elongation
+(borderline vs. normal wide-angle selfie framing) and crowd foot-sliding;
+clip 9's crowd foot-sliding; clip 10's white nose-blemish artifact and
+illegible background-parchment lettering (I'd flagged this exact thing
+myself in my own round-1 self-QC too, at the time judged too minor to chase
+— independently confirmed now, still judged minor: scattered background
+prop, not focal); clip 11's brief warping during a profile head-turn.
+
+**Engine fact confirmed a second time this episode (first seen in the
+costume-stills rounds):** naming a specific unwanted thing in a negative
+instruction ("NOT a pen," "NOT the Pantheon") tends to *prime* this model
+toward rendering it rather than suppressing it. Every successful fix this
+round used either pure positive physical description or a compositional
+change (soft focus, reference-image substitution) instead. Worth codifying
+in `creative-direction.md` §16's prompt-craft notes at the shared-doc merge.
+
+All 11 final clips re-verified after every fix round (duration/frame-count
+exact match every time, no truncation). Current final set:
+`pai-pro/projects/caesar/assets/clip1.mp4` … `clip11.mp4`. Full history,
+every job ID and URL: `pai-pro/projects/caesar/assets/clips_manifest.json`.
+
 ## Next steps
 1. ~~Owner confirms/adjusts the costume look~~ DONE — see Gate 1 final
    decision above.
 2. ~~Generate all 11 clips~~ DONE, self-QC'd and fixed — see Gate 2 above.
-   Awaiting owner's clip-by-clip review.
-3. Self-QC each clip against the standing rules once generated; Gate 2:
-   present the set for owner review.
+3. ~~Gemini eyes QC on the full clip set entering the edit~~ DONE, 16
+   confirmed findings triaged, 5 clips fixed and re-verified — see Gate 2
+   round 2 above. Awaiting owner's clip-by-clip review of the current set.
 4. Assemble: hard-cut stitch + captions per §16 canonical style, sound design
    per the episode header (full Forum ambience → dead at clip 9 → wind/paper).
 5. Gate 3: stitched-cut owner review.
-6. Gemini eyes QC at the editing stage only (full clip set, assembled cut,
-   captions vs .srt) per the owner's QC rule in `CLAUDE.md`; fix flagged
+6. Gemini eyes QC on the assembled/stitched cut and the subtitle pass
+   (`captions` mode vs. the .srt) per the owner's QC rule in `CLAUDE.md` —
+   the remaining two of its three required checkpoints; fix flagged
    CONFIRMED issues; re-check any regenerated clip.
 7. Higgsfield `virality_predictor` pre-publish; owner watch-through is final.
