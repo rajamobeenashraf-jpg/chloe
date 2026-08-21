@@ -351,6 +351,63 @@ explanation. Not re-run on v5 (the wardrobe fix shouldn't move a
 audio/dialogue-timing-driven score) — noting here rather than re-spending
 another virality_predictor call on an expected-null result.
 
+## Round 3 — three owner-reported bugs, all fixed (2026-08-22)
+
+Owner watched the round-2 delivery and reported three specific, timestamped
+problems. All three verified against real data before fixing (per the
+standard now applied every round), root-caused precisely, and fixed:
+
+**Bug 1 (clip 4) — caption showed unspoken words.** Root cause: in the
+earlier "editing polish" round, I trimmed this clip's tail as "dead air"
+based on a caption I'd wrongly ended at 8.638s. Re-checking the untrimmed
+original's full silence map — applying the <0.3s merge rule consistently
+this time, which the first pass didn't — shows real detected speech
+continuing all the way to 11.052s with no trailing silence gap at all.
+Frame-verified at 8.5s/9.7s/10.9s: she is genuinely still talking at every
+one of those points. There was no dead air to trim; the "fix" in that
+earlier round was cutting off real footage of her finishing the line.
+**Fix: reverted to the untrimmed original, no trim.** Caption corrected to
+span the full 4.475-11.052s.
+
+**Bug 2 (clip 10) — same bug, same root cause.** Caption had wrongly ended
+at 6.06s; full silence-map re-check shows real speech continuing to 8.355s,
+THEN a clean 0.70s trailing silence to the clip's real end — confirming
+8.355s as the true end of "You pour water like a Friend of Khufu.", not
+6.06s. Frame-verified at 8.2s: still speaking. **Fix: reverted to the
+untrimmed original, no trim.** Caption corrected to span 3.397-8.355s.
+
+**Bug 3 (clip 8) — genuinely too fast, confirmed with data.** This clip was
+flagged `NEEDS-GEMINI-VERIFY` at original production time (same risk
+pattern as clips 9/12 — multiple lines merged into one clip with no real
+per-line verification) but never followed up on, because it wasn't
+explicitly named until the owner caught it. Real timing: 41 words at
+4.2-4.7 wps, vs. ~3-3.6 wps everywhere else — falls exactly in the owner's
+reported 1:14-1:22 window. **Fix: extended 10s -> 14s with explicit
+unhurried/whispered pacing direction** (same move that fixed clip09a
+without a split) — regenerated once, verified average dropped to ~3.3 wps,
+confirmed the final "...Me?" completes cleanly (not cut off). No split
+needed in the end — the single-clip fix was sufficient once actually
+measured.
+
+**Rebuilt pipeline**: captions corrected for clip4/8/10, `qc_pass.mjs` ->
+`apply_prelap.mjs` -> `build_final_cut.mjs` all re-run. Runtime **160.63s**
+(up from 152.96s — clip4 and clip10 both grew back to their full untrimmed
+length, clip8 grew from 10s to 14s). Frame-count check: exact match
+(3855/3855). Spot-checked both corrected cut points via frame pulls: clip4's
+full caption text now matches what's on screen at the cut, clip10 ends on a
+settled satisfied expression (not mid-word).
+
+**Gemini QC re-run on the round-3 cut**: 6 findings, 1 confirmed (the same
+clip 7 rope/wheel physics artifact flagged in round 2 — now confirmed
+across two independent QC passes, strengthening the case it's a real,
+persistent defect on that original unchanged footage, still outside this
+round's scope), 2 dismissed as false positives (including a re-check of the
+exact clip10->clip11 boundary I just changed — confirmed no new issue
+introduced there). The remaining 3 are unverified severity-2 hints on
+original unchanged footage (cup/bread handoff clipping, water-pour fluid
+sim, high-five hand-contact) — not acted on, consistent with the standing
+rule that only CONFIRMED findings drive fixes.
+
 ## STATUS: delivered, three items flagged for owner decision (not silently skipped)
 1. Rope/wheel physics artifact on clip 7 (confirmed, original footage, out
    of this round's scope).
