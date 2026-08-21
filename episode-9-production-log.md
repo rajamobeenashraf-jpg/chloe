@@ -259,12 +259,103 @@ trims — a tighter, better-paced cut). ffprobe frame-count check: exact match
 (2900/2900), no truncation. Files: `giza_final_cut.mp4` /
 `giza_final_cut_compressed.mp4` (both regenerated in place).
 
-## STATUS: BLOCKED on PAI Pro balance
-Everything else is done and verified: the corrected clip 1 prompt, the
-dead-air trims, and the J-cut audio bridging are all built and tested. The
-only remaining step is regenerating clip 1 at proper duration (10s+) once
-funded, dropping it into the same pipeline (`qc_pass.mjs` →
-`apply_prelap.mjs` → `build_final_cut.mjs`, all already updated to handle
-it), and re-running Gemini QC + virality_predictor on the corrected clip 1
-to close the loop with the same measurement that caught the original
-problem. **Owner action needed: top up PAI Pro balance.**
+## Round 2 — balance restored, clip 1/9/12 fixed, closing the loop (2026-08-22)
+Owner topped up PAI Pro; confirmed working (clip 1 v3 submitted and processed
+normally, no instant 31-cent failure this time).
+
+**Clip 1 — 4 total generation attempts, final one shipped:**
+- v2 (8s): first real hook fix (pyramid at frame 1, zero filler) but caught
+  cutting off the final line mid-word before shipping — same discipline as
+  the first round, not repeating the earlier mistake.
+- v3 (10s): line completes but ends right at the clip's measured edge again
+  — ambiguous, not shipped without more margin.
+- v4 (12s, explicit "finish with a full second of silence" instruction):
+  clean finish confirmed (mouth closed, 0.74s trailing silence before cut).
+  Looked done — but a full-pipeline Gemini QC re-check (below) caught a real
+  regression this version introduced.
+- **v5 (final, shipped):** Gemini's QC sweep on the rebuilt cut CONFIRMED a
+  wardrobe-continuity break — v2/v3/v4 never specified clip 1's clothing
+  (dropped when the hook was rewritten), so the model defaulted to
+  something inconsistent with clip 2's costume-change beat. v5 restores the
+  original "modern travel clothes, not the era costume yet" line. Verified
+  both the clean line-finish (0.52s trailing silence) AND the correct
+  wardrobe (jacket/tank, not the linen dress) via frame pulls before
+  shipping.
+
+**Clip 9 — SPLIT into clip09a_stone + clip09b_reply.** Root cause: 76
+scripted words cannot be spoken at a natural pace within PAI's 15.2s
+single-clip cap at ANY duration setting — the original was forcing 5.8-6.3
+words/sec regardless, which is what read as "talking too fast." Trimming the
+dialogue was rejected as the fix (this is the owner-requested Khufu
+centerpiece; cutting scripted lines to fit a technical cap was judged worse
+than adding a clip). Split at the natural mid-scene pause (Khufu's rhetorical
+question, before her answer). clip09a needed a second pass (11s → 14s with
+explicit "slow, weighing each word" direction) to bring its densest section
+down from ~5.5 wps to ~3.2 wps average, verified against real silencedetect
+data both times, not assumed from the duration change alone.
+
+**Clip 12 — SPLIT into clip12a_thesis1 + clip12b_thumb + clip12c_outro.**
+Same root cause: 81 words, no natural-pace fit in one clip regardless of
+duration. Split at the script's own beat markers (thesis / THUMB payoff /
+joke+sign-off). All three passed clean on the first generation — 2.7-4.9,
+~4.15, and ~3.06 words/sec respectively, verified via silencedetect +
+frame pulls (both end-of-clip lines confirmed to finish with mouth closed,
+not cut off).
+
+**Rebuilt pipeline**: `captions_data.mjs` now has 15 clips (was 12); QC pass,
+J-cut audio prelap, and final cut all re-run clean. Runtime **152.96s** (up
+from 120.83s — the increase is entirely the necessary clip9/clip12 splits
+giving dialogue room to breathe; still comfortably inside the 90-200s Shorts
+cap). Frame-count check: exact match (3671/3671).
+
+### Closing the loop — re-ran the same measurements that caught the original problem
+**Gemini eyes `qc` mode on the rebuilt cut:** 4 findings, 3 CONFIRMED this
+time (vs. 0 confirmed in the pre-fix round) — new material means new
+surface area for real issues, and this pass caught two I need to report
+plainly rather than bury:
+1. **Wardrobe continuity (2 confirmed findings)** — the one described above,
+   already fixed in clip 1 v5 before this report was written.
+2. **Rope/wheel physics artifact, confirmed, clip 7 (~66s)** — on ORIGINAL,
+   UNCHANGED footage from the first production round, outside the explicit
+   scope of this fix request (owner asked for clips 1/9/12). Manually
+   pulled the frame: a real, visible artifact (rope tension/contact reads
+   oddly against the sledge wheel). Not fixed this round — flagging for the
+   owner's call on whether it's worth a separate pass.
+3. **Broader wardrobe-rendering variance across the episode** (unverified,
+   severity 2, high-five hand-contact) — comparing frames from clip1/2/4
+   against clip7/12c shows real subtle-to-moderate costume-rendering drift
+   clip-to-clip (a plainer dress in some clips vs. a more ruffled/trimmed
+   look in others). This appears to be a **pre-existing, documented
+   characteristic of this pipeline** (creative-direction.md has repeatedly
+   noted independently-generated clips don't guarantee frame-matched
+   continuity), present across ORIGINAL clips too, not something this
+   round's changes introduced. Fixing it properly would mean auditing/
+   regenerating wardrobe across most of the episode's 15 clips — far beyond
+   the clip1/9/12 scope of this request. Flagging for an explicit owner
+   decision, not fixing unilaterally.
+
+**Higgsfield virality_predictor on the new clip 1 (v4 test, before the v5
+wardrobe fix):** overall_score 50 (was 49), viral_potential 55 (was 54),
+**hook_score still 30/100 — unchanged**, despite the concrete, verified fix
+(dialogue now starts at 0s instead of 3.737s). Reporting this exactly as
+found rather than claiming a win the data doesn't support: the specific
+problem I originally diagnosed (scripted line starting after the hook
+window closed) is fixed and independently verifiable via frame/timing
+evidence, but this tool's hook_score metric did not move as a result. Both
+the old and new clip1's `global_scores_by_frame` peak at the literal last
+frame of whatever duration was uploaded (old: peak_second=9 of a 9s clip;
+new: peak_second=12 of a 12s clip) — this pattern suggests the metric may
+be structurally anchored to a clip's ending rather than being sensitive to
+early-dialogue-start specifically, but that's my inference, not a confirmed
+explanation. Not re-run on v5 (the wardrobe fix shouldn't move a
+audio/dialogue-timing-driven score) — noting here rather than re-spending
+another virality_predictor call on an expected-null result.
+
+## STATUS: delivered, three items flagged for owner decision (not silently skipped)
+1. Rope/wheel physics artifact on clip 7 (confirmed, original footage, out
+   of this round's scope).
+2. Broader wardrobe-rendering variance across the episode (confirmed-
+   adjacent, pre-existing pipeline characteristic, large scope to fully fix).
+3. virality_predictor's hook_score metric not moving despite the verified
+   content fix — flagged honestly, not spun.
+Owner's watch-through remains the final gate per standing rule.
