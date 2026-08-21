@@ -53,7 +53,7 @@ WrapStyle: 0
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Default,${style.fontName},${style.fontSize},${assColor("FFFFFF")},${assColor("FFFFFF")},${assColor("000000")},${assColor("000000")},-1,0,0,0,100,100,0,0,1,${style.outline},${style.shadow},2,${style.marginLR},${style.marginLR},${style.marginV},1
-Style: Fact,${factStyle.fontName},${factStyle.fontSize},${assColor("FFFFFF")},${assColor("FFFFFF")},${assColor("000000")},${assColor("000000")},-1,0,0,0,100,100,0,0,1,${factStyle.outline},${factStyle.shadow},8,${factStyle.marginLR},${factStyle.marginLR},${factStyle.marginV},1
+Style: Fact,${factStyle.fontName},${factStyle.fontSize},${assColor("FFFFFF")},${assColor("FFFFFF")},${assColor("000000")},${assColor("000000", factStyle.boxAlphaHex)},-1,0,0,0,100,100,0,0,3,${factStyle.outline},${factStyle.shadow},8,${factStyle.marginLR},${factStyle.marginLR},${factStyle.marginV},1
 Style: Id,${idStyle.fontName},${idStyle.fontSize},${assColor("FFFFFF")},${assColor("FFFFFF")},${assColor("000000")},${assColor("000000", idStyle.boxAlphaHex)},-1,0,0,0,100,100,0,0,3,${idStyle.outline},${idStyle.shadow},8,${idStyle.marginLR},${idStyle.marginLR},${idStyle.marginV},1
 
 [Events]

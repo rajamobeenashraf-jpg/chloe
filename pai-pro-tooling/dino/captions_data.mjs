@@ -213,21 +213,28 @@ export const SUB_STYLE = {
 // "grandma" clarification, see that clip's `facts` array) — a burned-in
 // text overlay on an existing clip, NOT the full-screen interstitial
 // CARD_STYLE below (that's a different, still-unused-in-Ep5 mechanism).
-// Kept visually distinct from SUB_STYLE (smaller, top-positioned) so the
-// two never compete for the same screen space.
+// Kept visually distinct from SUB_STYLE (top-positioned vs. bottom) so the
+// two never compete for the same screen space. Owner correction 2026-08-22:
+// "these cards" (plural, covering both this one and ID_CARD_STYLE below)
+// should read as more prominent than a normal caption — updated to match
+// ID_CARD_STYLE's boxed treatment exactly rather than plain outlined text,
+// so the two info-overlay types share one consistent visual language.
 export const FACT_STYLE = {
   fontName: "DejaVu Sans",
-  fontSize: 36,
-  outline: 2.2,
-  shadow: 1.0,
+  fontSize: 44,
+  outline: 3,
+  shadow: 0,
   marginV: 100,
-  marginLR: 60,
+  marginLR: 50,
+  boxAlphaHex: "30", // ASS alpha is inverted: 00=opaque, FF=transparent
 };
 
 // Species-ID card style, owner-directed 2026-08-22 ("a little more
-// prominent" than FACT_STYLE) — same top position, but bigger/bolder text
+// prominent" than a normal caption) — same top position, bigger/bolder text
 // on an opaque background box (BorderStyle 3 in qc_pass.mjs) rather than
 // plain outlined text, so it reads as a distinct "info tag" at a glance.
+// Intentionally identical to FACT_STYLE above — one consistent look for
+// both info-overlay types.
 export const ID_CARD_STYLE = {
   fontName: "DejaVu Sans",
   fontSize: 44,
