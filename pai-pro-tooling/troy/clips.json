@@ -1,0 +1,129 @@
+{
+  "npc": {
+    "krethon": "Krethon, a Greek soldier in his forties with a weathered sun-browned face, a short greying dark beard, deep creases at the eyes, wearing a plain worn leather-and-bronze cuirass over a faded red tunic, a length of knotted cord tied at his belt with nine knots",
+    "quartermaster": "an older Greek quartermaster with grey stubble, a sun-leathered bald head, a plain undyed wool tunic, a wax tablet tucked under one arm",
+    "sentry": "a Trojan boy of about ten, dark-haired, in a dusty tunic, peering down from atop the pale limestone city wall"
+  },
+  "clips": [
+    {
+      "n": 1,
+      "duration": 9,
+      "timeOfDay": "dawn, sun just above the horizon, sky bright pale gold, scene fully and evenly lit, no dark areas anywhere",
+      "scene": "She stands on a wide sandy beach at first light, beached Greek ships with furled sails stretching away down the shore in both directions, the pale limestone walls of Troy visible far off on the upshore-left horizon. She gestures out at the ships and the wall as she talks, turning slightly to take in the whole scene, then settles back to the lens.",
+      "dialogue": "\"The Trojan War. Homer says: ten years, a thousand ships, one big wooden horse. I'm here to fact-check the most famous story ever told. Rule one — stay off the plain.\"",
+      "action": "She speaks at a normal confident pace, sweeping gesture at 'ten years, a thousand ships' toward the ship-lined shore, a wry half-smile on 'Rule one.'",
+      "sound": "surf, distant gulls, faint creak of ships, morning camp murmur",
+      "craft": "linear open, vista scale + thesis; 'rule one' plants clip 5"
+    },
+    {
+      "n": 2,
+      "duration": 8,
+      "timeOfDay": "mid-morning, bright direct sun, sky clear pale blue, scene fully lit",
+      "scene": "Same beach camp, tents and ships softly visible behind her, she is mid-adjustment of her chiton, tugging the rope/leather belt square with both hands while she talks, a little exasperated physical comedy.",
+      "dialogue": "\"One rectangle of wool. Four ways to wear it. All of them itchy. Second era in a row I have been defeated by a rectangle.\"",
+      "action": "Continuous fidgeting with the belt and shoulder pin throughout the line, never fully resolved, comic frustration.",
+      "sound": "camp clatter, gulls, cloth rustle",
+      "craft": "costume ritual + cross-episode runner (defeated by a rectangle, second era in a row)"
+    },
+    {
+      "n": 3,
+      "duration": 9,
+      "timeOfDay": "late morning, bright even daylight, scene fully lit",
+      "scene": "Sitting on an overturned crate near the ration area with a barley cake and a cup of wine, a sunburned Greek soldier extra beside her, chewing, staring out at the sea.",
+      "dialogue": "She takes a careful sip, grimaces. Soldier, chewing, not looking at her: \"The wine has been watered five times.\" She: \"So it's a rumor of wine.\" Soldier, flat, still chewing: \"It is a MEMORY of wine.\" She takes a bite of the cake, chews slowly, swallows, THEN speaks to the lens: \"4/10. The cake could stop an arrow. I'm keeping it.\"",
+      "action": "Physical state gates delivery: her line about the cake only starts after she visibly finishes chewing and swallowing, per §8. Soldier's two lines are dry, deadpan, eyes on the horizon the whole time, never looking at her.",
+      "sound": "camp ambience, low chatter, gulls, wind",
+      "craft": "NPC deadpan punchline outranks hers + rating ritual, physical pacing gated by chewing"
+    },
+    {
+      "n": 4,
+      "duration": 11,
+      "timeOfDay": "midday, bright direct sun, scene fully lit",
+      "scene": "She steps into a line of soldiers passing water buckets hand to hand toward the ships unasked, matching their rhythm, then crouches and re-knots a soldier's frayed shield strap with a length of her own belt cord while he drinks from a waterskin. {quartermaster} stands watching nearby, arms crossed, wax tablet under one arm.",
+      "dialogue": "Quartermaster, watching her tie the knot, dry: \"You tie knots like a sailor.\" She, glancing up, small proud smile: \"Thank you.\" Quartermaster, already turning to walk off, flat: \"Sailors drown.\" He pauses mid-step, not looking back: \"Water to the shield line at dawn. Stay low.\" She looks after him, then turns her face to the lens, unreadable.",
+      "action": "Active-participant: she joins the water line and does the knot repair unasked, per §12. The quartermaster delivers both deadpan lines without breaking his stride/expression.",
+      "sound": "bucket splashes, rope creak, camp clatter, gulls",
+      "craft": "she earns her place + deadpan x2 + the order that breaks rule one (sets up clip 5)"
+    },
+    {
+      "n": 5,
+      "duration": 6,
+      "timeOfDay": "Day 2, dawn, harsh low early sun, long shadows, scene fully lit despite low sun angle",
+      "scene": "Inside a staggering line of soldiers advancing along the shield wall at the edge of the open plain (walls of Troy visible upshore-left in the distance), she is moving with them carrying a waterskin, raising it to a soldier's shield as an arrow suddenly thuds into the shield just above where her hand is. A soldier beside her grabs her shoulder and hauls her down behind the shield line in the same motion — not two separate events, the pull is a continuation of the same forward motion, embedded not sequential.",
+      "dialogue": "Soldier, hauling her down, urgent: \"Water girl! DOWN!\" She, crouched low, flat delivery to the lens, catching her breath: \"Rule one. Gone by day two.\"",
+      "action": "One continuous physical thread: she is already moving/serving water when the arrow hits and the pull-down happens as a variation of that same motion, per creative-direction.md §7.",
+      "sound": "arrow thud, shouting, shield clatter, wind",
+      "craft": "the clip-1 rule breaks ON SCREEN, in sequence — participation + deadpan"
+    },
+    {
+      "n": 6,
+      "duration": 12,
+      "timeOfDay": "Day 2, golden-hour evening, sun low and warm, sky still deep amber/gold behind the beached ships — NOT dark, fire is an accent light only, whole scene stays clearly readable",
+      "scene": "Sitting at a small campfire with {krethon}, the amber sunset sky bright behind the beached ships in silhouette, firelight warm on both their faces as accent light only. He holds a length of knotted cord, one knot per season — nine knots.",
+      "dialogue": "{krethon}, turning the cord slowly in his fingers: \"The food was better the first three years.\" A pause. Quieter, looking at the cord not at her: \"He walks now. My son. Somewhere... he walks.\" She takes the cord gently, says nothing, holds it. Silence. DO NOT RUSH — this silence is the entire beat.",
+      "action": "The empathy core beat: she goes quiet and simply listens, holding the cord; no reaction shot cuts away early, the silence is held to camera.",
+      "sound": "crackling fire, distant surf, no dialogue in the second half, ambient camp murmur fading low",
+      "craft": "the channel's most-quoted beat type — do not rush the silence"
+    },
+    {
+      "n": 7,
+      "duration": 8,
+      "timeOfDay": "Day 3, midday, bright direct sun, scene fully lit",
+      "scene": "Camp noise dies in a wave around her as Achilles and a group of Myrmidon soldiers pass at a respectful distance across the background, seen partially — armored figures moving with grim purpose, not a detailed hero close-up. {krethon} stands beside her, not turning to look.",
+      "dialogue": "She, whispering to the lens: \"Should I say hi?\" {krethon}, not turning, flat: \"Only if you are tired of being alive.\" She, watching them pass, quiet and a little stunned: \"He's shorter than you'd think, and I have never been more scared of anyone in my life.\"",
+      "action": "Casual-shock beat: the camp goes hushed around the passing soldiers while she and Krethon react with restrained, dry unease, not fear-screaming.",
+      "sound": "camp noise dropping to near-silence, distant footsteps/armor clink, wind",
+      "craft": "casual shock + the strategy-report hook line kept"
+    },
+    {
+      "n": 8,
+      "duration": 12,
+      "timeOfDay": "Day 3, afternoon, bright even daylight, scene fully lit",
+      "scene": "She walks forward normally (facing her direction of travel, camera swinging to re-aim as she moves, not walking backward, per creative-direction.md §14) along the base of Troy's pale limestone walls, waterskins in hand, explaining as she goes. She reaches a spot where {sentry} lowers a rope-basket down from the wall; she ties her waterskin to it and it rises up the stone. The boy calls something down in his own tongue; she waves up at him.",
+      "dialogue": "\"Burial truce. One afternoon — both sides collect their dead. And I'm walking water to the WALLS, because apparently that's who I am now.\" As the basket rises: \"Same water. Both sides.\" {sentry} calls down a few words in his own language from the wall. She waves. Softer, to the lens: \"He's about the age Krethon's son would be.\"",
+      "action": "Forward walking explicitly, per §14; active mercy per §12 — she is the one who ties the waterskin to the rope unasked.",
+      "sound": "wind against stone, rope creak, distant truce-day quiet (no battle sounds), gulls",
+      "craft": "truce explained for cold viewers + active mercy + empathy echo to clip 6"
+    },
+    {
+      "n": 9,
+      "duration": 8,
+      "timeOfDay": "Day 3, dusk, sky glowing deep orange over the sea, scene still clearly readable — fire ring is an accent light only, not the only light source",
+      "scene": "Sitting at a fire ring at dusk with a small knot of soldiers, deep orange sunset sky over the water behind them, she raises the topic as a joke.",
+      "dialogue": "\"Okay. The horse plan. Giant wooden horse — soldiers hiding inside. Yes?\" Blank stares, then laughter breaks: one soldier: \"A WHAT?\" Another: \"Who would DRAG it?\" Then one soldier, dead serious, leaning in, notebook-serious tone: \"...How many soldiers?\" She, deadpan straight to the lens: \"No horse. YET. Remember I said it here first.\"",
+      "action": "Comment-bait fusion-gag plant: the one soldier taking the idea seriously should read as quietly, seriously curious, not comedic mugging — this plants the payoff in clip 11.",
+      "sound": "fire crackle, laughter, surf, low camp chatter",
+      "craft": "comment-bait myth-check + fusion-gag plant"
+    },
+    {
+      "n": 10,
+      "duration": 13,
+      "timeOfDay": "Day 3, same dusk continuing, sky still glowing deep orange, scene stays clearly readable throughout — threat is fire-arrows arcing against the sunset sky, camp never goes pitch black",
+      "scene": "A raid breaks out across the camp — fire-arrows arcing in against the orange sky, shouting, people moving with purpose. She is already in motion inside the chaos: she kicks a fallen brazier clear of a tent wall, then together with {krethon} hauls soaked hides up over a supply cart to smother sparks, gasping a line to the lens mid-carry, then gets a limping soldier's arm over her shoulders and helps him toward a tent marked as the surgeon's station. Scene populated with multiple background people reacting, per §10 — not one person standing in for the whole event.",
+      "dialogue": "Mid-carry with the hides, breathless, to the lens: \"—stay with me—\"",
+      "action": "Active-participant: she solves problems with objects and teamwork (kicking the brazier clear, hauling hides, helping the wounded man) rather than just running/watching, per §12. One continuous escalating physical thread, embedded drama not sequential events, per §7.",
+      "sound": "shouting, fire crackle and whoosh, distant drums, arrows in flight, no clashing-sword spectacle sounds — this is firelight-against-sunset chaos, not a swordfight",
+      "craft": "danger grammar stage 3, solved with objects+teamwork, lens-connection held mid-action"
+    },
+    {
+      "n": 11,
+      "duration": 9,
+      "timeOfDay": "Day 4, dawn, thin smoke haze catching the early light, sky bright enough that the whole scene reads clearly, no dark areas",
+      "scene": "Standing amid the aftermath, ash-smeared, voice low and broken with real pauses (per §8 — she is exhausted, not delivering clean brisk lines). Behind her, unremarked and not commented on by her, two soldiers are quietly measuring a broken cart frame with a length of rope, wooden planks stacked beside them — a silent visual plant, no dialogue draws attention to it.",
+      "dialogue": "\"Nine years of this. Every night. On BOTH sides of that wall. And Homer is going to make it sound GLORIOUS.\"",
+      "action": "Broken, tired pacing with real gaps between phrases, per §8 physical-state-gates-delivery. The background measuring business must read clearly but should NOT be pointed at, referenced, or lit specially — a purely visual easter egg for attentive viewers.",
+      "sound": "quiet aftermath — low wind, distant surf, faint groaning of camp activity resuming, no music",
+      "craft": "cost stated plain + silent horse payoff for the comment section"
+    },
+    {
+      "n": 12,
+      "duration": 10,
+      "timeOfDay": "Day 4, morning, bright warm clear daylight, scene fully lit",
+      "scene": "On the morning beach with {krethon}, she presses the nine-knot cord back into his hand.",
+      "dialogue": "\"Get home. Count them out loud to him.\" She turns to the lens, warm: \"In three thousand years, a man finds this city with a shovel in one hand and Homer in the other. The poem is the MAP. Whether it happened like the song says — it happened for THEM. Hazel — out of time.\"",
+      "action": "Warm, sincere outro register — unguarded, no jokes, gentle smile on the sign-off line.",
+      "sound": "gentle surf, morning gulls, wind, no music under the sign-off line",
+      "craft": "nerd spike (Schliemann) + sincere outro"
+    }
+  ]
+}
