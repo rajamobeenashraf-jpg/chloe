@@ -117,13 +117,13 @@
     },
     {
       "n": 12,
-      "duration": 10,
+      "duration": 13,
       "timeOfDay": "Day 4, morning, bright warm clear daylight, scene fully lit",
       "scene": "On the morning beach with {krethon}, she presses the nine-knot cord back into his hand.",
-      "dialogue": "\"Get home. Count them out loud to him.\" She turns to the lens, warm: \"In three thousand years, a man finds this city with a shovel in one hand and Homer in the other. The poem is the MAP. Whether it happened like the song says — it happened for THEM. Hazel — out of time.\"",
-      "action": "Warm, sincere outro register — unguarded, no jokes, gentle smile on the sign-off line.",
+      "dialogue": "\"Get home, Krethon. Count them out loud to him.\" A warm beat between them. He nods, turns, walks off toward the ships. She watches a moment, then turns to the lens, warm and unhurried: \"In three thousand years, a man finds this city with a shovel in one hand and Homer in the other.\" A small pause. \"The poem is the MAP.\" Another beat. \"Whether it happened like the song says — it happened for THEM.\" Softest smile: \"Hazel — out of time.\"",
+      "action": "Warm, sincere outro register — unguarded, no jokes, gentle smile on the sign-off line. CRITICAL PACING NOTE: this is the episode's final spoken beat and it was rushed in an earlier pass — measured at 6.4 words/second, nearly double natural conversational pace. Every sentence here gets its own real breath and a small pause before the next one begins; nothing is delivered back-to-back without a beat. This is reflective and warm, closer to a slow exhale than a summary being read aloud. Do NOT compress the dialogue to fit the runtime — let the runtime serve the pacing, not the other way around.",
       "sound": "gentle surf, morning gulls, wind, no music under the sign-off line",
-      "craft": "nerd spike (Schliemann) + sincere outro"
+      "craft": "nerd spike (Schliemann) + sincere outro + Krethon named aloud (owner-flagged: his name never appeared in spoken dialogue anywhere in the episode, same class of gap as the original Achilles bug) + rushed-delivery fix (owner-flagged, measured 6.4 wps in the original)"
     }
   ]
 }
