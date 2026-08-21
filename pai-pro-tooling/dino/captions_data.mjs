@@ -118,10 +118,10 @@ export const CLIPS = [
     ],
   },
   {
-    id: "clip8_skyturn_v2",
+    id: "clip8_skyturn_v4",
     duration: 12.041667,
     captions: [
-      { start: 0.0, end: 7.9, text: "Okay— okay, go, GO—" },
+      { start: 0.0, end: 6.8, text: "Okay— okay, go, GO—" },
     ],
   },
   {
@@ -157,7 +157,7 @@ export const TRANSITIONS = [
   { after: "clip5b_rexfear_v3", type: "cut" },
   { after: "clip6_walkingaside", type: "cut" },
   { after: "clip7_pivot_v4", type: "cut" },
-  { after: "clip8_skyturn_v2", type: "cut" },
+  { after: "clip8_skyturn_v4", type: "cut" },
   { after: "clip9_shelter", type: "cut" },
 ];
 
