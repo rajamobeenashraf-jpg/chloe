@@ -108,32 +108,53 @@ for costume beats instead of a standalone still).
   ~99MB) / `giza_final_cut_compressed.mp4` (delivery copy, ~1.5Mbps, ~25MB) /
   `giza_episode9.srt` (full-episode subtitle export for QC cross-check).
 
-## Gemini eyes QC — BLOCKED, owner action needed
-Ran `qc` mode on the assembled cut per CLAUDE.md's owner QC rule (edit-stage
-only). All three models in the fallback ladder (gemini-3.7-flash →
-gemini-3.6-flash → gemini-flash-latest) failed with **HTTP 429
-RESOURCE_EXHAUSTED**: `generativelanguage.googleapis.com/generate_content_free_tier_requests`
-— the `GEMINI_API_KEY` in this environment is on the **free tier** (20
-requests/day limit), already exhausted. This is not a prompt or code issue —
-retrying will not help until the daily quota resets, and a paid-tier key (or
-waiting for reset) is the real fix. Did NOT attempt the `captions` mode pass
-for the same reason. **Interim mitigation**: I manually frame-checked two cut
-points and one identity/realism spot-check (see below) in place of the
-automated sweep, but this is not a substitute for the full two-pass QC
-(sweep + verify) the owner's process calls for — recommend re-running
-`gemini_eyes.py qc` and `captions --srt giza_episode9.srt` once quota allows,
-before this episode is considered QC-complete.
+## Gemini eyes QC — RESOLVED 2026-08-21, both passes clean
+Quota came back (owner report + confirmed working). First 2 retries this
+session still hit the free-tier 20/day `RESOURCE_EXHAUSTED` limit (one got a
+sweep through but lost it when the verify pass exhausted quota mid-run and
+the tool doesn't checkpoint partial results — no output written on a crashed
+run). Third attempt completed the full two-pass pipeline.
 
-**Manual spot-check finding (unverified by Gemini, flagging for owner
-judgment):** frames pulled from clips 1, 8, and 9 read more glossy/glam
-(heavy defined lash/liner, glossy contoured skin) than the CHARACTER_LOCK
-§13 "matte, not glossy or dewy... raw historical-documentary... NOT a
-fashion/beauty editorial feel" bar mandates, despite the matte/gritty clause
-being present verbatim in every prompt. This may be a real drift worth a
-targeted regeneration on the affected clips — owner's call, per the QC rule
-that only CONFIRMED findings (which this isn't, absent the Gemini verify
-pass) get auto-fixed.
+**`qc` mode** (`qc_report/`), score 6.8/10, 4 candidate findings:
+- 00:09 continuity (sev 3) → **DISMISSED** by Gemini's verify pass: the
+  costume/scene change is the intentional clip1→clip2 cut, not an AI error.
+- 01:03 physics (sev 3) → **DISMISSED**: wheel doesn't actually clip through
+  sand on re-watch.
+- 00:20 background (sev 2, unverified — tool only verifies sev>=3): "extras
+  posing with invisible smartphones." Manually pulled the frame: they're
+  holding cups/hands clasped in a waiting-line posture, no anachronism.
+  False positive.
+- 01:09 anatomy (sev 2, unverified): "blisters appear abruptly." Manually
+  pulled the frame: this is clip 7's scripted rope-burn reveal to the lens
+  ("That's— yeah. Souvenir.") — intentional, not a continuity break. False
+  positive.
 
-## Higgsfield virality_predictor — NOT YET RUN
-Per CLAUDE.md, this runs pre-publish, after QC is resolved. Deferred until
-the Gemini QC blocker above is cleared and any resulting fixes are in.
+**`captions` mode vs `giza_episode9.srt`** (`qc_report_captions/`), score
+7.2/10, 3 candidate findings:
+- 01:15 text (sev 3) → **DISMISSED** by verify: no duplicate text fragment,
+  transitions normally into the Hemiunu line.
+- 00:24 text (sev 2, unverified): claimed caption reads "7 for 10" and drops
+  the HR hyphen. Manually pulled the frame at the actual "7/10. HR-approved."
+  cue (25.7s) — renders exactly as scripted, slash and hyphen both present.
+  False positive.
+- 01:21 text (sev 2, unverified): claimed "...Me?" is omitted. Manually
+  pulled the frame at 81.15-81.25s — the caption is clearly present and
+  correctly timed. False positive.
+
+**Net result: zero confirmed issues across both passes** — 3 of 7 findings
+verified false-positive by Gemini itself, the remaining 4 (all unverified
+sev-2 hints) checked manually against the actual frames and also found to be
+false positives. Per the owner's QC rule, nothing here requires a fix or an
+owner waiver. This also resolves the `NEEDS-GEMINI-VERIFY` flags on clips 3,
+8, 9, 12 in `captions_data.mjs` — the priority targets (clip 9 centerpiece,
+clip 12 dense outro) both passed the captions-mode cross-check clean.
+
+Earlier manual spot-check (glossy/glam skin vs. CHARACTER_LOCK's matte bar)
+is superseded by this full pass — Gemini's identity/realism check (it loads
+CHARACTER_LOCK.md automatically) raised no finding on this, so treating it
+as not a real issue; flagging to the owner's own watch-through as the final
+word per the standing rule ("owner's watch-through remains the final gate").
+
+## Higgsfield virality_predictor — running next
+Per CLAUDE.md, this runs pre-publish, after QC resolves. QC is now clean —
+proceeding.
