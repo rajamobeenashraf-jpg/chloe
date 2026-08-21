@@ -55,11 +55,11 @@ export const CLIPS = [
     ],
   },
   {
-    id: "clip2_mudgear",
-    duration: 8.057007,
+    id: "clip2_mudgear_v2",
+    duration: 9.041667,
     captions: [
-      { start: 0.0, end: 4.42, text: "No costume department in the Cretaceous. Mud — it's SPF, it's bug spray, it's couture." },
-      { start: 4.42, end: 7.68, text: "And I brought a bike bell. For herding. You laugh —" },
+      { start: 0.0, end: 4.39, text: "No costume department in the Cretaceous. Mud — it's SPF, it's bug spray, it's couture." },
+      { start: 4.56, end: 9.0, text: "And I brought a bike bell. The herd hears it, and they've learned it just means me." },
     ],
   },
   {
@@ -150,7 +150,7 @@ export const CLIPS = [
 // generated clips never blend clean regardless of duration).
 export const TRANSITIONS = [
   { after: "clip1_vista_v6", type: "cut" },
-  { after: "clip2_mudgear", type: "cut" },
+  { after: "clip2_mudgear_v2", type: "cut" },
   { after: "clip3_tankrescue_v2", type: "cut" },
   { after: "clip4_foodreview", type: "cut" },
   { after: "clip5a_rexfamily", type: "cut" },
