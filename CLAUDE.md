@@ -5,7 +5,8 @@ US-market AI historical channel reverse-engineered from Chloe VS History and Nov
 This file was reconciled 2026-08-20 from the two prior CLAUDE.md versions on a
 newest-command-wins basis: every rule the owner never changed is kept; where an
 older rule conflicts with a later owner decision, the later decision stands and
-is marked. Latest owner decision recorded: 2026-08-20 (Gemini QC timing).
+is marked. Latest owner decision recorded: 2026-08-21 (ask before every clip
+regeneration — see the QC rule below).
 
 Read before any creative, research, or production work — these files are this project's memory:
 1. `NEW_CHAT_HANDOFF.md` — START HERE: operating manual (setup, parallel-chat rules, approval gates)
@@ -31,11 +32,27 @@ Standing rules:
   1. the full clip set entering the edit,
   2. assembled/stitched cuts (while conforming visuals, lighting, transitions),
   3. the subtitle pass (`captions` mode, cross-checked against the .srt).
-- Claude fixes flagged issues independently: re-stitch, correct caption text or
-  timing, adjust the conform; regenerate an individual clip only when a
-  CONFIRMED flag requires it — and every regenerated clip gets re-checked at the
-  edit before it re-enters the cut. Every CONFIRMED finding is either fixed or
+- Claude fixes flagged issues independently where the fix is NOT a clip
+  regeneration: re-stitch, correct caption text or timing, adjust the
+  conform. Every regenerated clip still gets re-checked at the edit before it
+  re-enters the cut, and every CONFIRMED finding is either fixed or
   explicitly waived by the owner before delivery.
+- **PERMANENT, owner lock 2026-08-21 — supersedes this section's older
+  "regenerate...only when a CONFIRMED flag requires it" self-directed
+  language: ask the owner before submitting ANY clip regeneration, every
+  time, whether the finding comes from Claude's own review or from Gemini
+  eyes.** Report the confirmed issue and the proposed fix, then wait for
+  explicit go-ahead before submitting it to PAI/Higgsfield. Applies per
+  regeneration attempt, not just per clip — a first fix attempt that doesn't
+  land needs a fresh check-in before a second attempt, not silent iteration.
+  Found on Episode 6: 5 clips were regenerated across two QC rounds (a
+  self-QC pass, then Gemini eyes) without a check-in; the owner asked why
+  and locked this rule for every future episode. Companion rule, same
+  session: `creative-direction.md` §19 (fuller writeup) and §18 (the
+  related, broader "no unauthorized creative deviation" rule from Episode 5
+  — this rule tightens §18's "routine execution" carve-out specifically for
+  regenerations, closing the gap that let routine-seeming re-tries proceed
+  without sign-off).
 - Treat unverified low-severity findings as hints, not facts; only findings
   marked CONFIRMED by the verify pass are trusted.
 - Before publish: run Higgsfield `virality_predictor` on the render; the owner's
