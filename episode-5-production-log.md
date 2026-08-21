@@ -30,5 +30,20 @@ Ran `tools/gemini-eyes/gemini_eyes.py ask` on each still with a prompt that quot
 
 **Read on root cause:** this looks like a genuine bias in the underlying model (image-edit-pro routes to gpt-image-2 per `creative-direction.md` §16) toward "attractive young woman = styled glam" for this identity, that pure prompt-text strengthening across 3 rounds has not overcome. Not something I'll keep burning generation cycles on unilaterally — flagging to the owner with full evidence for a call on how to proceed (accept current best as the practical ceiling / try a different route or model / add post-process grain-desaturation at the assembly stage instead of prompt-only fixes). This may be a systemic issue affecting other episodes' stills too, since they were approved without this rigor of adversarial check.
 
+## Gate 1 — RESOLVED, owner accepted (2026-08-21)
+Owner reviewed the Gemini findings above and said "Accepted continue to the clip generation." Proceeding on the round-2 stills as the practical ceiling for now.
+
+## Environment fix this session: ffmpeg install
+`ffmpeg`/`ffprobe` were not on PATH in this container. `apt-get install ffmpeg` hit stale-mirror 404s on `libva2`/`libcaca0` at their old point-release (`...ubuntu0.1`); a plain `apt-get update` + retry resolved to the current point-release (`...ubuntu0.2`) and installed cleanly. Needed for the assembly/captions stage (§16 pipeline) same as prior episodes.
+
+## Clip prompts written (this session) — see `episode-5-clip-prompts.md`
+All 10 clips scripted with the pre-generation self-check run per clip. Three clips' durations extended beyond the script table (word-count-vs-realistic-speech-pace math): clip1 10s→15s, clip4 8s→10s, clip6 8s→10s — documented rationale in that file, no dialogue cut.
+
+## Clip generation in progress
+Reference strategy: the same 5 CHARACTER_LOCK v4 master image URLs used for the approved stills (uploaded once via `video-generation-assets`, asset IDs reused across all 10 clips — avoids re-uploading identical refs 10 times). Wardrobe/Tank consistency carried by detailed text blocks per clip (progressively muddier/wetter/ash-dusted through the day, matching the story).
+
+- **Clip 1 generated, self-QC'd, caught and fixed a real accuracy bug**: the first version's unnamed "herds of distant dinosaurs" rendered as generic long-necked sauropod silhouettes — paleontologically wrong for Hell Creek (no sauropods; the real dominant herd herbivore is Edmontosaurus, a duck-billed hadrosaur). This is exactly the anachronism-spotting failure mode the craft study (§2) flags as the #1 comment-driver risk, so fixed it rather than shipping it: named Edmontosaurus explicitly (and excluded sauropods by name) in every clip prompt with background herd animals (clips 1, 7). Regenerated as `clip1_vista_v2.mp4` — improved (hazier, more ambiguous silhouette) but not 100% resolved at the pixel level from a very hazy distant shot; flagging honestly rather than claiming a clean fix. Clip 5's T. rex is correct as written.
+- Clips 2–10 running now via `gen_clips_2to10.mjs` (background job).
+
 ## Next
-Once gate 1 is approved: write and self-check all 10 clip prompts (creative-direction.md §6–§16 checklist), generate via PAI video pipeline, assembly/captions per the salem tooling pattern (adapted — no `[Speaker]` tags needed, Ep5 has no human speech), edit-stage Gemini QC, virality predictor, deliver.
+Once all 10 clips land: self-QC each (frame-by-frame identity/anatomy/physics check per creative-direction.md §16), assemble with hard cuts + 0.08s audio edge fades + loudnorm (adapted from `pai-pro-tooling/salem/`, no `[Speaker]` tags needed — Ep5 has no human NPC speech), edit-stage Gemini QC on the full clip set + assembled cut + captions, virality predictor, deliver.
