@@ -77,6 +77,9 @@ Adapted the Salem (Ep2) tooling for Troy per creative-direction.md §16 (`captio
 
 Caption rendering visually spot-checked at several points in the assembled cut — DejaVu Sans Bold, correct MarginV=320 position (clears bottom UI, below chin, separated from center), readable, speaker tags render correctly where present.
 
+## Gate 4 blocked — Gemini eyes free-tier daily quota exhausted
+Both edit-stage QC calls (full-cut `qc` mode, `captions` mode vs the exported .srt) failed identically: `RESOURCE_EXHAUSTED` / `GenerateRequestsPerDayPerProjectPerModel-FreeTier`, quota value 20, across all three models in the fallback ladder (gemini-3.7-flash, gemini-3.6-flash, gemini-flash-latest). Per `research-methodology.md` §5's owner standing order ("the moment the free allowance blocks work, tell the owner straight away... never silently wait out a quota wall and never skip QC because of one"), reported to the owner immediately rather than retrying blind or proceeding without QC. Note: the free quota is one shared pool across all sessions using this key — this may reflect usage from a parallel episode chat, not only this session's 2 Gate-1 still QCs.
+
 Rejected clip 1 attempts (v1-v3, kept for reference) archived at `pai-pro/projects/troy/assets/rejected/` (not committed to git — generated media stays out of git per CLAUDE.md; this note is the pointer for another session).
 
 ## Next steps (after Gate 1 approval)
