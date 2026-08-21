@@ -66,6 +66,17 @@ Fixed two ways: (1) strengthened the shared no-camera clause in `run_clip.mjs`'s
 
 **Gate 2 complete (2026-08-21): all 12 clips generated and QC'd.** One regeneration needed (clip 10, phone/wardrobe drift — see finding above). Proceeding to Gate 3 (assembly with captions).
 
+## Gate 3 — assembly with captions (complete)
+Adapted the Salem (Ep2) tooling for Troy per creative-direction.md §16 (`captions_data.mjs`, `qc_pass.mjs`, `build_final_cut.mjs`, all in `pai-pro-tooling/troy/`), simplified since Episode 7 has NO title card (OPENING LAW retires the card convention from Ep5 on) and ALL transitions are true hard cuts — no dissolve-chain logic needed at all.
+
+**Caption timing**: grounded in real `ffmpeg silencedetect` (noise=-30dB, d=0.12) run against each clip's own rendered audio (`detect_silence.sh`), gaps ≥0.3s treated as real sentence/speaker breaks, gaps <0.3s collapsed as breath pauses — same method as prior episodes. **Mandatory mouth-frame cross-check applied to clip 10**: its background fire/chaos noise never dropped below the silence threshold at all (zero markers across 13s), so extracted dense 3fps frames and confirmed by eye — her mouth is open/moving ~7.4-8.7s, right as she's mid-carry hauling the hide beside Krethon, closing exactly as she shifts into helping the wounded man. Full method and per-clip notes (including the honestly-flagged lower-confidence overlapping-dialogue section in clip 9) are documented in `captions_data.mjs`'s header comment.
+
+**Assembly**: single `ffmpeg filter_complex concat` pass (12 clips → 1 file, all hard cuts, no card). Frame-count sanity check (creative-direction.md §16 mandatory verification — Ep4 caught a silent-truncation bug this exact check exists to catch) passed: 2773 frames vs 2772 expected. Runtime 115.54s vs 115.50s expected — matches the script's ~115s target almost exactly.
+
+**Files**: `pai-pro/projects/troy/assets/troy_final_cut.mp4` (master, CRF16) / `troy_final_cut_compressed.mp4` (delivery copy, ~1.5Mbps).
+
+Caption rendering visually spot-checked at several points in the assembled cut — DejaVu Sans Bold, correct MarginV=320 position (clears bottom UI, below chin, separated from center), readable, speaker tags render correctly where present.
+
 Rejected clip 1 attempts (v1-v3, kept for reference) archived at `pai-pro/projects/troy/assets/rejected/` (not committed to git — generated media stays out of git per CLAUDE.md; this note is the pointer for another session).
 
 ## Next steps (after Gate 1 approval)
