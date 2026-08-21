@@ -36,6 +36,8 @@ record until the final cut is delivered to the owner._
 | Clip 1 — dawn ferry vista + awe | `prompts/clip01.txt` | `assets/clip01_vista.mp4` | `8ea068ec-1668-462c-954b-862c92aa18b2` | done — 9.06s, 720x1280, sent to owner for review |
 | Clip 2 — costume + kohl/SPF joke | `prompts/clip02.txt` | `assets/clip02_costume.mp4` | `936b849e-768e-4916-8ef7-855038b26d34` | done — 8.06s, 720x1280, sent to owner (costume beat rendered clean in video despite the standalone still being blocked) |
 | Clip 3 — ration-line food beat | `prompts/clip03.txt` | `assets/clip03_food.mp4` | `2e08690c-c833-484b-96b0-38453a3bff4a` | done — 9.06s, 720x1280, sent to owner |
+| Clip 4 — job join, Nefer & Djedi intro | `prompts/clip04.txt` | `assets/clip04_jobjoin.mp4` | `c68cdc47-5d3d-45a4-b758-a382bc58a904` | done — 11.05s, 720x1280, sent to owner. NPC locks: Nefer (weathered overseer, 40s, cloth-wrapped hair) / Djedi (young hauler, shaved head) — reuse verbatim in clips 6-12 |
+| Clip 5 — tally-wall irony beat | `prompts/clip05.txt` | `assets/clip05_irony.mp4` | generating | — |
 
 ## Environment note
 `ffmpeg`/`ffprobe` were not preinstalled this session (needed for QC/stitch
