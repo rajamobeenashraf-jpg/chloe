@@ -30,13 +30,13 @@
 
 export const CLIPS = [
   {
-    id: "clip1_vista_v2",
+    id: "clip1_vista_v5",
     duration: 15.069002,
     captions: [
-      { start: 0.16, end: 2.78, text: "Sixty-six million years BC. Hell Creek. Tuesday." },
-      { start: 3.19, end: 6.47, text: "This is the whole world right now — no cities, no roads, no smoke on any horizon." },
-      { start: 6.47, end: 11.30, text: "And in about four hours, a rock six miles wide hits Mexico, and today becomes the worst day in the history of life on Earth." },
-      { start: 11.80, end: 14.95, text: "Nobody here knows. Nobody here even knows what a Mexico is." },
+      { start: 0.0, end: 2.73, text: "Sixty-six million years BC. Hell Creek. Tuesday." },
+      { start: 2.90, end: 6.43, text: "This is the whole world right now — no cities, no roads, no smoke on any horizon." },
+      { start: 6.76, end: 11.98, text: "And in about four hours, a rock six miles wide hits Mexico, and today becomes the worst day in the history of life on Earth." },
+      { start: 12.46, end: 14.95, text: "Nobody here knows. Nobody here even knows what a Mexico is." },
     ],
   },
   {
@@ -120,7 +120,7 @@ export const CLIPS = [
 // anywhere (confirmed root cause on 2 prior episodes: independently
 // generated clips never blend clean regardless of duration).
 export const TRANSITIONS = [
-  { after: "clip1_vista_v2", type: "cut" },
+  { after: "clip1_vista_v5", type: "cut" },
   { after: "clip2_mudgear", type: "cut" },
   { after: "clip3_tankrescue_v2", type: "cut" },
   { after: "clip4_foodreview", type: "cut" },
