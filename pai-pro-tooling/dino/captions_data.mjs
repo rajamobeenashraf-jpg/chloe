@@ -45,13 +45,20 @@
 
 export const CLIPS = [
   {
-    id: "clip1_vista_v6",
-    duration: 15.069002,
+    id: "clip1a_vista",
+    duration: 10.041667,
     captions: [
-      { start: 0.0, end: 2.72, text: "Sixty-six million years BC. Hell Creek. Tuesday." },
-      { start: 2.93, end: 6.35, text: "This is the whole world right now — no cities, no roads, no smoke on any horizon." },
-      { start: 6.96, end: 11.91, text: "And in about four hours, a rock six miles wide hits Mexico, and today becomes the worst day in the history of life on Earth." },
-      { start: 12.32, end: 14.95, text: "Nobody here knows. Nobody here even knows what a Mexico is." },
+      { start: 0.0, end: 2.26, text: "Sixty-six million years BC. Hell Creek. Tuesday." },
+      { start: 2.94, end: 8.9, text: "This is the whole world right now — no cities, no roads, no smoke on any horizon." },
+    ],
+  },
+  {
+    id: "clip1b_doomclock",
+    duration: 10.041667,
+    captions: [
+      { start: 0.0, end: 5.42, text: "And in about four hours, a rock six miles wide hits Mexico, and today becomes the worst day in the history of life on Earth." },
+      { start: 6.46, end: 7.33, text: "Nobody here knows." },
+      { start: 8.25, end: 10.0, text: "Nobody here even knows what a Mexico is." },
     ],
   },
   {
@@ -149,7 +156,8 @@ export const CLIPS = [
 // anywhere (confirmed root cause on 2 prior episodes: independently
 // generated clips never blend clean regardless of duration).
 export const TRANSITIONS = [
-  { after: "clip1_vista_v6", type: "cut" },
+  { after: "clip1a_vista", type: "cut" },
+  { after: "clip1b_doomclock", type: "cut" },
   { after: "clip2_mudgear_v2", type: "cut" },
   { after: "clip3_tankrescue_v2", type: "cut" },
   { after: "clip4_foodreview", type: "cut" },
