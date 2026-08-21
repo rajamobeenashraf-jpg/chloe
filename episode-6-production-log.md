@@ -108,6 +108,46 @@ loose, scoped to this episode only. Result after 5 attempts documented in
   `image-edit-pro` attempts, which returned inline base64 with no durable
   URL — noted in round 1 above).
 
+## Gate 1, round 3 — owner: another matte pass, then "use PAI Pro, not Higgsfield"
+Pushed the matte/gritty enforcement harder (full verbatim clause plus explicit
+anti-perspiration/anti-specular/anti-blush language naming the collarbone and
+chest specifically, since that's where sheen kept showing) via Higgsfield
+`soul_2` — improved but still visibly imperfect on round 1 of this push, and
+that round's hero shot also grew an unrequested cross/crucifix pendant
+(flagged and excluded going forward — anachronistic for pre-Christian 44 BC
+Rome). A second push with even stronger anti-sheen wording and a no-pendant
+instruction was already in flight when the owner asked why Higgsfield was
+being used at all and to generate through PAI Pro instead — that round's
+result was captured for the record (`ep6_costume_*_matte_v3.png`) since it
+was already paid for, but is not being treated as the primary candidate.
+
+**Returned to PAI Pro as instructed** and made one more attempt, hypothesizing
+that the 4-panel character sheets (which repeat "loose hair" across 4 panels
+in a single reference image) were compounding the anchoring problem — swapped
+to 3 single-view individual portrait refs instead. **This made things worse,
+not better**: hair was still loose (6th consecutive PAI failure on this
+attribute across 5 distinct techniques), and the costume/setting drifted
+entirely to the Western-style corset dress and ranch fence from Episode 1.
+Root cause: those single-view refs were themselves generated FROM Wild West
+movie frames (per `CHARACTER_LOCK.md`'s own description of how they were
+made), so swapping to them carried that association in even more strongly
+than the original 5-ref set did.
+
+**Honest status: PAI `image-edit-pro` has not been able to deliver the
+hair-state change in 6 attempts.** Working theory (stated plainly, not
+proven): `image-edit-pro` is fundamentally an edit-in-place model — it's
+designed to preserve most of the input and change a targeted region, which
+plausibly explains why ordinary wardrobe swaps work fine (every past episode)
+but a broad attribute like hairstyle state resists text override so
+consistently. Higgsfield `soul_2` (trained identity weights, no
+reference-image conditioning to fight) got both the costume and hair changes
+right on its first try and held up under a second, stronger matte push.
+Full round-by-round detail with every file, job ID, and URL:
+`pai-pro/projects/caesar/assets/costume_stills_manifest.json`.
+
+**Awaiting owner direction** on how to proceed given this constraint —
+options laid out in chat rather than decided unilaterally here.
+
 ## Next steps (blocked on owner sign-off from Gate 1)
 1. Owner confirms/adjusts the costume look (see flagged concern above).
 2. Generate all 11 clips per the script table, each with the pre-generation
