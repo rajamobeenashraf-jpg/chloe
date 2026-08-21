@@ -40,7 +40,8 @@ record until the final cut is delivered to the owner._
 | Clip 5 — tally-wall irony beat | `prompts/clip05.txt` | `assets/clip05_irony.mp4` | `d915e06a-0781-430f-bb8e-2ae8ff64a06f` | done — 9.06s, 720x1280, sent to owner |
 | Clip 6 — empathy core (graffiti) | `prompts/clip06.txt` | `assets/clip06_empathy.mp4` | `25ff4797-6c1c-44fb-af46-78d21dce96b9` | done — 12.05s, 720x1280, sent to owner. Needed 1 retry: first attempt SUCCEEDED generation but was FAILED post-hoc by PAI's content-moderation pass ("output video may contain sensitive information") — likely triggered by "tugs her by the wrist into a narrow gap" (physical contact + tight enclosed two-person space). Fixed by opening the staging: shared recess in plain view of the work site, no physical contact, comfortable crouching distance. Worth flagging at the shared-doc merge: PAI's video content filter can fail AFTER a successful render, not just pre-submission — don't assume a `SUCCESS` poll status is guaranteed once PROCESSING starts. |
 | Clip 7 — set-piece (rope save) | `prompts/clip07.txt` | `assets/clip07_setpiece.mp4` | `f7747bac-3252-4ddb-b419-783b4374364c` | done — 13.07s, 720x1280, sent to owner, first try clean |
-| Clip 8 — royal arrival | `prompts/clip08.txt` | `assets/clip08_royal.mp4` | generating | NPC locks: Khufu (nemes headdress, gold collar, gilded litter) / Hemiunu (leopard-sash architect) |
+| Clip 8 — royal arrival | `prompts/clip08.txt` | `assets/clip08_royal.mp4` | `31d7e7be-4ff4-4d4f-a80a-6910d1378f16` | done — 10.05s, 720x1280, sent to owner, first try clean. NPC locks: Khufu (nemes headdress, gold collar, gilded litter) / Hemiunu (leopard-sash architect) |
+| Clip 9 — the Khufu conversation | `prompts/clip09.txt` | `assets/clip09_khufu.mp4` | generating | the episode's centerpiece dialogue beat |
 
 ## Environment note
 `ffmpeg`/`ffprobe` were not preinstalled this session (needed for QC/stitch
