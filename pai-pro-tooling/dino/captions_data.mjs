@@ -27,6 +27,21 @@
 // documented on a prior episode). This is the manual mouth-frame method
 // used before Gemini was wired up, applied rigorously; flagged to the owner
 // in the production log. Re-verify with Gemini once quota/billing allows.
+//
+// clip5a/5b + clip8_skyturn_v2 (reshoot round) additionally hit a case
+// silencedetect alone could not resolve: heavy in-scene ambient sound (a
+// T-Rex family thundering past at close range in 5b; fire/water/running in
+// 8v2) sat above the -30dB noise floor even while she was not vocalizing,
+// so "no detected silence" did NOT mean "continuous speech" for these
+// clips' outer edges — confirmed by direct visual mouth-frame inspection,
+// which found real non-speech spans silencedetect had missed entirely (5b
+// opens on a ~4.8s SCRIPTED SILENT beat with no dialogue at all, watching
+// the adult pass overhead). Where a real internal pause was visually
+// confirmed it's used as a hard boundary; where two adjacent lines showed
+// continuous talking with no closed-mouth gap between them (5a's last two
+// lines, 5b's last two lines), they're kept as ONE caption card rather than
+// an invented split point — consistent with this file's existing style of
+// combining continuously-delivered sentences into a single card.
 
 export const CLIPS = [
   {
@@ -65,11 +80,23 @@ export const CLIPS = [
     ],
   },
   {
-    id: "clip5_rexsighting",
-    duration: 8.057007,
+    id: "clip5a_rexfamily",
+    duration: 10.041667,
     captions: [
-      { start: 0.0, end: 4.55, text: "That's the celebrity. And the entire reason we are not going that way." },
-      { start: 4.55, end: 8.06, text: "You are the worst hiding partner in sixty-six million years." },
+      { start: 0.67, end: 1.14, text: "Down. Down, down—" },
+      { start: 1.40, end: 3.05, text: "That's a T-Rex. We're hiding from them." },
+      { start: 3.05, end: 5.51, text: "That's not just one. A family. One big, two small." },
+      { start: 5.71, end: 8.97, text: "Nobody agrees they lived like that. Guess today they did." },
+    ],
+  },
+  {
+    id: "clip5b_rexfear",
+    duration: 12.041667,
+    captions: [
+      { start: 4.85, end: 6.92, text: "Hell Creek skulls. T-Rex bite marks." },
+      { start: 7.35, end: 8.04, text: "Some healed." },
+      { start: 8.39, end: 8.97, text: "Some didn't." },
+      { start: 9.51, end: 11.4, text: "He could eat you. You are the worst hiding partner in sixty-six million years." },
     ],
   },
   {
@@ -89,10 +116,10 @@ export const CLIPS = [
     ],
   },
   {
-    id: "clip8_skyturn",
-    duration: 12.050998,
+    id: "clip8_skyturn_v2",
+    duration: 12.041667,
     captions: [
-      { start: 0.3, end: 8.6, text: "Move. MOVE. Under the bank — GO." },
+      { start: 0.0, end: 7.9, text: "Okay— okay, go, GO—" },
     ],
   },
   {
@@ -124,10 +151,11 @@ export const TRANSITIONS = [
   { after: "clip2_mudgear", type: "cut" },
   { after: "clip3_tankrescue_v2", type: "cut" },
   { after: "clip4_foodreview", type: "cut" },
-  { after: "clip5_rexsighting", type: "cut" },
+  { after: "clip5a_rexfamily", type: "cut" },
+  { after: "clip5b_rexfear", type: "cut" },
   { after: "clip6_walkingaside", type: "cut" },
   { after: "clip7_pivot_v4", type: "cut" },
-  { after: "clip8_skyturn", type: "cut" },
+  { after: "clip8_skyturn_v2", type: "cut" },
   { after: "clip9_shelter", type: "cut" },
 ];
 
