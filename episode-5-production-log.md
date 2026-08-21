@@ -62,9 +62,13 @@ Every clip frame-sampled and checked against identity/realism/continuity/standin
 - Files: `pai-pro/projects/dino/assets/dino_final_cut.mp4` (master, CRF16, ~80MB) / `dino_final_cut_compressed.mp4` (delivery copy, ~1.5Mbps, ~22MB).
 - Spot-checked one hard-cut transition (clip1→clip2) directly on the assembled master: clean, ghost-free, caption correctly positioned clear of the action.
 
-## Outstanding before final owner approval
-- **Full Gemini "qc" sweep on the clip set + assembled cut + caption cross-check is deferred** (quota blocked) — my own manual frame-by-frame review during generation is thorough but is not a substitute for the dedicated tool's identity/anatomy/continuity pass. Recommend re-running once quota/billing allows, before or alongside the owner's own watch-through.
-- Higgsfield `virality_predictor` not yet run — next step.
+## Virality predictor (this session)
+`virality_predictor` caps input at 16s — it evaluates a hook, not a full multi-minute Short — so it was run on the QC'd (captions burnt in) clip 1, the episode's opening/hook. Result: **hook_score 28/100, overall_score 48, viral_potential 54, brain_engagement 37**. The frame-by-frame attention curve dips through the middle of the clip (t=8-11s, the "worst day in the history of life on Earth" line) and only spikes sharply at the very last second (t=14-15s, peak 0.543). Read plainly: the opening vista+monologue may not be grabbing attention as hard as the script intends in its first 10 seconds — the real payoff lands right at the clip's end rather than building steadily. Flagging this honestly rather than only reporting the summary numbers; it's the owner's and/or a re-cut's call whether this warrants tightening clip 1's pacing (e.g., leading harder with the doom-clock number instead of the "whole world right now" scene-setting) before publish. Dashboard: https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260821_015231_b86fcd6c-46a2-462e-a865-195dcd8fa58c.html
 
-## Next
-Run `virality_predictor`, send the compressed final cut to the owner for the clip-by-clip/stitched-cut review gate, along with the pinned-comment text and engagement question from the script.
+## Outstanding before final owner approval
+- **Full Gemini "qc" sweep on the clip set + assembled cut + caption cross-check is deferred** (quota blocked) — my own manual frame-by-frame review during generation is thorough but is not a substitute for the dedicated tool's identity/anatomy/continuity pass. Recommend re-running once quota/billing allows.
+- **Hook strength (28/100)** flagged above — worth a look before publish, independent of the Gemini defect-QC gap.
+- Residual clip1 background-herd anachronism risk (hazy, judged acceptable — see above) — could be revisited in the same pass if the owner wants zero risk here.
+
+## Delivered to owner
+Compressed final cut + these findings sent for the clip-by-clip/stitched-cut review gate, along with the pinned-comment text and engagement question from `episodes-5-9-scripts.md`.
