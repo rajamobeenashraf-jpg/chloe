@@ -148,6 +148,16 @@ export const CLIPS = [
       { start: 9.793, end: 10.257, text: "Hi, grandma." },
       { start: 10.770, end: 12.410, text: "Hazel — out of time." },
     ],
+    // Owner-directed fact overlay (2026-08-22): clarifies why she calls the
+    // bird "grandma" — birds are the one dinosaur lineage that survives this
+    // extinction event, a real fact the line doesn't explain on its own.
+    // Rendered top-of-screen via FACT_STYLE, distinct from the bottom-of-
+    // screen dialogue captions above so the two never visually compete.
+    // Starts exactly when the "Hi, grandma" line starts, owner-specified
+    // fixed 2s duration (not tied to caption timing).
+    facts: [
+      { start: 9.793, end: 11.793, text: "Birds are the only dinosaurs alive today." },
+    ],
   },
 ];
 
@@ -179,6 +189,22 @@ export const SUB_STYLE = {
   marginLR: 60,
 };
 
+// Top-of-screen fact-overlay style, owner-directed 2026-08-22 (clip10's
+// "grandma" clarification, see that clip's `facts` array) — a burned-in
+// text overlay on an existing clip, NOT the full-screen interstitial
+// CARD_STYLE below (that's a different, still-unused-in-Ep5 mechanism).
+// Kept visually distinct from SUB_STYLE (smaller, top-positioned) so the
+// two never compete for the same screen space.
+export const FACT_STYLE = {
+  fontName: "DejaVu Sans",
+  fontSize: 36,
+  outline: 2.2,
+  shadow: 1.0,
+  marginV: 100,
+  marginLR: 60,
+};
+
 // No title card in Ep5 — OPENING LAW retired the "EARLIER TODAY" convention;
-// the whole episode is linear, one continuous day, no rewind.
+// the whole episode is linear, one continuous day, no rewind. (This is a
+// full-screen interstitial card mechanism, distinct from FACT_STYLE above.)
 export const CARD_STYLE = null;
