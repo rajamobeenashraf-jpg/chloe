@@ -43,7 +43,8 @@ record until the final cut is delivered to the owner._
 | Clip 8 — royal arrival | `prompts/clip08.txt` | `assets/clip08_royal.mp4` | `31d7e7be-4ff4-4d4f-a80a-6910d1378f16` | done — 10.05s, 720x1280, sent to owner, first try clean. NPC locks: Khufu (nemes headdress, gold collar, gilded litter) / Hemiunu (leopard-sash architect) |
 | Clip 9 — the Khufu conversation | `prompts/clip09.txt` | `assets/clip09_khufu.mp4` | `9a7deb20-4ba6-4b66-a5d5-63fde490dfa1` | done — 13.07s, 720x1280, sent to owner, first try clean — episode centerpiece |
 | Clip 10 — respect beat / high-five | `prompts/clip10.txt` | `assets/clip10_respect.mp4` | `3af48b81-6a47-46f3-8152-89eea2a97191` | done — 9.06s, 720x1280, sent to owner, first try clean |
-| Clip 11 — accuracy beat / mirror casing | `prompts/clip11.txt` | `assets/clip11_mirror.mp4` | generating | — |
+| Clip 11 — accuracy beat / mirror casing | `prompts/clip11.txt` | `assets/clip11_mirror.mp4` | `33be242d-3ca0-460f-ac9c-ab4dd1a1fee3` | done — 9.06s, 720x1280, sent to owner, first try clean |
+| Clip 12 — outro / sign-off | `prompts/clip12.txt` | `assets/clip12_outro.mp4` | generating | final clip |
 
 ## Environment note
 `ffmpeg`/`ffprobe` were not preinstalled this session (needed for QC/stitch
