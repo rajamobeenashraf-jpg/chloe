@@ -51,6 +51,8 @@ All clips generated with the standing `run_clip.mjs` recipe (v4 identity/wardrob
 | 4 | 11.05s | dcf25d78-bb6b-43af-a7e2-aac8500de71c | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/009cbd9f502e7bb34a00adbd7437c665.mp4 | PASS — quartermaster/wax-tablet detail nailed |
 | 5 | 6.06s | 86b8245c-d5a9-4906-a006-c66bdf245f54 | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/ff12ef4f50096daa9b5cd8e9022c4516.mp4 | PASS — arrow-in-shield causality clean |
 | 6 | 12.05s | 78e70603-d876-4b67-8d46-3f3cabae415e | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/0f80ad01b543aa7e9f7775bf3d7c8a93.mp4 | PASS — empathy core, Krethon cord beat |
+| 7 | 8.06s | 7c7ebc0e-c06f-41d1-8461-acccfa63c8b3 | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/f7bfa4e15e5d68f439f79aeffd22e387.mp4 | PASS — Myrmidons at respectful distance |
+| 8 | 12.05s | f3adfe28-7aad-423d-a809-da056126fb03 | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/a24e7138755b58dc10afe4a09aeac0ef.mp4 | PASS — wall/basket exchange with sentry boy |
 
 Rejected clip 1 attempts (v1-v3, kept for reference) archived at `pai-pro/projects/troy/assets/rejected/` (not committed to git — generated media stays out of git per CLAUDE.md; this note is the pointer for another session).
 
