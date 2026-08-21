@@ -177,7 +177,94 @@ Results (job `2785d389-35fe-4a96-a0ea-f126ce4ad289`):
   opening seconds before the turn, if a stronger hook is wanted.
 - Full interactive dashboard: https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260821_071121_2785d389-35fe-4a96-a0ea-f126ce4ad289.html
 
-## STATUS: Episode 9 production complete, awaiting owner watch-through
-Per the standing rule, the owner's watch-through is the final gate. All
-prior gates (clip-by-clip, stitched cut, Gemini QC, virality check) are
-clear. Nothing is blocking delivery.
+## Retention + editing-craft revision round (2026-08-21/22, owner-directed)
+Owner correction: the virality_predictor hook_score (30/100) should have
+been caught by rigorous script/prompt work BEFORE delivery, not discovered
+via the metric after the fact. Full self-audit given verbatim in chat; root
+cause confirmed with hard timing data, not speculation: the scripted hook
+line in the delivered clip 1 didn't start until **3.737s** into a 9s clip —
+after the tool's own 0-3s hook-scoring window had already closed. ~3.7s of
+unscripted ad-lib filler ("talking energetically to the lens," no specified
+content) ate the most valuable seconds in the whole episode. Separately, the
+written script's own opening never plants the episode's actual best asset
+(meeting Khufu) as an open-loop promise — it's a closed, self-resolving joke
+about builders/aliens instead, inconsistent with the doom/stakes-hook
+pattern this project already uses in Episodes 5-8 ("a rock six miles wide
+hits Mexico"; "the only people who know are carrying knives... And me.").
+
+**Fix 1 — clip 1 rewrite (hook).** New opening: pyramid dominant in frame
+from the literal first instant (no gradual reveal, no boat approach), she's
+already mid-reaction with zero unscripted runway, and the line plants Khufu
+as a stated goal/open loop ("here's the plan" vlog-grammar beat, not a
+flash-forward — stays inside OPENING LAW): *"That's it. That's actually it."
+... "Twenty years. Two and a half million blocks. One king who never once
+doubted it would stand." ... "And today? I'm meeting him."* Prompt:
+`prompts/clip01_v2.txt`.
+- First regeneration (`clip01_vista_v2.mp4`, 8s): verified via frame pulls —
+  pyramid fills frame at t=0.1s (real fix, confirmed visually), continuous
+  high-energy delivery throughout. But the final line's detected speech
+  block was only 0.48s for 5 words (10+ wps, physically implausible) —
+  pulled the literal last frame (7.9s) and confirmed her mouth is still
+  open mid-word. **The line is genuinely cut off**, not just fast: 8s wasn't
+  enough room for all three lines. Caught before delivery this time, not
+  after — this is the adversarial check that was missing on Ep9's first
+  pass, now applied.
+- Retry at 10s duration (`clip01_vista_v3`) to give the final line proper
+  room: **BLOCKED — PAI Pro balance exhausted** (`PAI 2001: insufficient
+  balance: need 200 cents, have 31`). This is a billing issue, not something
+  fixable from this session. **Needs the owner to top up PAI Pro balance**
+  before clip 1 can be finished. `clip01_vista_v2.mp4` (truncated) and the
+  original `clip01_vista.mp4` (weak hook) are both NOT used in the current
+  build below — the final cut still has the ORIGINAL weak-hook clip 1 in
+  place as a placeholder pending this.
+- Honest side-note, not a blocker: the regenerated pyramid renders as the
+  iconic finished silhouette rather than visibly mid-construction (ramps/
+  crews are small and easy to miss at this framing). This appears to be a
+  pre-existing model tendency across every pyramid shot in this episode, not
+  something this rewrite introduced — flagging for awareness, not treating
+  as in-scope for this fix given the ask was hook + editing, not a full
+  production-design accuracy pass across all 12 clips.
+
+**Fix 2 — real editing craft, not just "no ghosting."** Owner asked for
+Hollywood-smooth, natural editing. Two concrete, verified changes:
+1. **Trimmed two dead-air tails.** Scanned caption-end-time vs. clip-duration
+   across all 12 clips: clip 4 had a **2.4s** silent tail after its last line
+   (her still pouring water in silence) and clip 10 had a **3s** silent
+   reaction tail — both far longer than any other clip's natural post-line
+   beat, reading as sluggish pacing rather than intentional (unlike clip 6's
+   deliberate 4.9s empathy-beat silence, which stays untouched — that one's
+   scripted and correct). Trimmed clip 4 to 9.1s (~0.46s natural tail) and
+   clip 10 to 7.26s (~1.2s reaction beat, in line with the emotional-library
+   convention for a silent reaction). Originals preserved as
+   `*_untrimmed.mp4` in case needed. Re-ran `qc_pass.mjs` to re-burn captions
+   at the corrected durations.
+2. **Implemented real J-cut audio bridging** (`apply_prelap.mjs`, new this
+   round) — creative-direction.md §6 has always called for "the next scene's
+   sound... start a beat before the visual cut," but the pipeline never
+   actually built it; it only ever did symmetric silence-avoidance edge
+   fades. New script mixes a quiet (-15dB, low-passed to 3kHz), 0.2s preview
+   of each clip's ambience under the OUTGOING clip's final 0.2s, for every
+   one of the 11 transitions. Deliberately NOT the audio crossfade
+   creative-direction.md §16 rejects (that consumed the incoming clip's own
+   audio and desynced it, verified in Ep2) — the incoming clip's audio track
+   is never touched, shifted, or trimmed; only the outgoing clip's tail
+   gains a bridge. Verified: `max_volume -0.6dB` across the full rebuilt cut
+   (no clipping from the mix), all 12 `_final.mp4` segments built clean,
+   `build_final_cut.mjs` updated to read from these instead of the
+   pre-prelap `_qc.mp4` files.
+
+**Rebuilt cut** (still with the OLD clip 1 — pending the balance top-up):
+runtime **120.83s** (down from 124.63s, entirely from the two dead-tail
+trims — a tighter, better-paced cut). ffprobe frame-count check: exact match
+(2900/2900), no truncation. Files: `giza_final_cut.mp4` /
+`giza_final_cut_compressed.mp4` (both regenerated in place).
+
+## STATUS: BLOCKED on PAI Pro balance
+Everything else is done and verified: the corrected clip 1 prompt, the
+dead-air trims, and the J-cut audio bridging are all built and tested. The
+only remaining step is regenerating clip 1 at proper duration (10s+) once
+funded, dropping it into the same pipeline (`qc_pass.mjs` →
+`apply_prelap.mjs` → `build_final_cut.mjs`, all already updated to handle
+it), and re-running Gemini QC + virality_predictor on the corrected clip 1
+to close the loop with the same measurement that caught the original
+problem. **Owner action needed: top up PAI Pro balance.**
