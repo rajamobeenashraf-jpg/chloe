@@ -416,3 +416,205 @@ rule that only CONFIRMED findings drive fixes.
 3. virality_predictor's hook_score metric not moving despite the verified
    content fix — flagged honestly, not spun.
 Owner's watch-through remains the final gate per standing rule.
+
+## Round 4 — four owner-reported issues, all investigated with real data before fixing (2026-08-22)
+
+Owner watched the round-3 delivery and reported four more issues in one
+pass, with an explicit "leave no room for error" standard. Treated as
+authorization to investigate AND fix directly (the ask itself was
+unambiguous), but every fix below was still root-caused against real data
+first — timing from silencedetect, continuity from frame extraction, never
+assumed from the prompt or the fix intent alone.
+
+### Issue A — camera holds static on her face for ~5s after "We saw it."
+
+Confirmed. Pulled frames across clip6's full 12.05s runtime: the shot goes
+completely static/frozen from ~8.0s onward — not a held emotional beat, a
+broken one (no micro-movement, no breathing, nothing — reads as the
+generation stalling, not acting). **Fix: trimmed 12.051s -> 9.625s**
+(`ffmpeg -t 9.6`, original backed up as `clip06_empathy_ORIGINAL_12s.mp4`).
+Re-verified the new tail in the assembled cut via frame pull at the cut
+point — cuts clean into clip 7's opening frame now, no static hold.
+
+### Issue B — captions must strictly match delivery, checked word-by-word
+
+Recomputed the full silence map for **every one of the then-15 clips**
+against the project's own gap-clustering rule (<0.3s = breath dip/merge,
+>=0.3s = real boundary) and cross-checked each caption cue against it.
+Found the same category of bug as round 3's clip4/clip10 fix, but milder —
+no words missing, cues just bridging real pauses instead of splitting at
+them:
+
+- **clip09a_stone**: "Your... majesty? I just put it where the mountain
+  wanted to fall." was one cue spanning a real 0.674s gap (5.265-5.939).
+  Split into two.
+- **clip09b_reply**: "People will cross the whole Earth just to look at
+  it." was one cue spanning a real 0.414s gap (5.959-6.373). Split into two.
+- **clip11_mirror**: both cues had the same bug (gaps at 1.408-1.940 and
+  5.333-6.144). Split into four.
+- **clip12b_thumb**: re-checked on suspicion, came back clean — all 5 cues
+  already matched real boundaries exactly. No change.
+
+**clip03_food got a genuinely new finding, not just a re-timed one.** Its
+"2.541-7.881 = 3 merged lines" block was already flagged
+`NEEDS-GEMINI-VERIFY` at original production (no internal silence gap
+>=0.3s anywhere in that span, even re-checked at a finer -24dB threshold —
+so audio alone can't place the two speaker turns). Frame-by-frame check
+resolved it, and found something the timing data alone couldn't show: she
+is **visibly drinking from the cup — cup pressed to her lips — across
+4.1-5.3s**, continuous across 4 consecutive frame pulls. The existing
+caption had her line "What's in the river?" starting at 4.425s, i.e.
+mid-sip — physically impossible. **Fix: pushed that cue's start to 5.3s**
+(when the cup is confirmed away from her lips), leaving 4.425-5.3s
+uncaptioned as her on-camera drinking/reaction beat.
+
+Also re-ran Gemini eyes' `captions` mode (owner's QC rule — subtitle pass,
+cross-checked against the .srt) on the rebuilt cut. It raised 4 things; I
+checked all 4 against actual frames rather than take the tool's word:
+- "Eyes down" clipped — Gemini's own verify pass already dismissed this
+  (confirmed intact on re-watch).
+- "Keeping it." truncated at the screen edge — checked the frame myself:
+  displays fully, not truncated. False positive.
+- Caption shows "Seven for ten" instead of "7/10" — checked the frame:
+  displays exactly "7/10. HR-approved." as written. False positive (almost
+  certainly the tool conflating the spoken audio's pronunciation with the
+  burned-in text).
+- Caption shows "Hemiuji" instead of "Hemiunu" — checked the frame:
+  displays exactly "[Hemiunu] The water-bearer." False positive, same
+  likely cause.
+All four came back clean on direct inspection — 0 real caption bugs found
+by the tool this round, on top of the 4 real ones my own manual audit
+caught that the tool's word-level pass didn't (it isn't built to catch
+"cue spans a real pause" or "cue timed during a physically-impossible
+moment" — those need the silence-map + frame method, not a transcript
+diff).
+
+### Issue C — two internal cuts inside clip 8, 1:16-1:22
+
+Confirmed, and worse than a pacing problem — this is a NEW defect on a
+clip round 3 had already pacing-fixed (10s -> 14s) without checking visual
+continuity, only audio timing. Frame-by-frame extraction across the v2
+clip found **two real AI-generated internal discontinuities inside what
+was supposed to be one continuous take**: the background population jumps
+from people-prostrating to camels around t=1.0-1.3s, then the framing hard-
+jumps from a standing wide shot to a ground-level close-up around
+t=1.6-2.0s. Neither is a hard cut in the edit — both are inside the single
+generated clip, which is why they read as broken rather than as an
+intentional edit.
+
+Root cause: the original clip8 prompt asked for a standing-to-prostrate
+transition without ever telling the model not to cut internally to get
+there. **Fix: split clip8 into two shorter clips**, each with an explicit
+"STRICT CAMERA RULE: this is ONE single unbroken take... NO internal cuts,
+NO scene changes, NO jumps between different setups, and NO changes to the
+background population" clause added to the prompt, plus simplified
+per-clip staging so each generation has less ground to cover:
+
+- **clip08a_prostrate** (9.04s, task `c89d01b3-a4be-411f-8c6a-21ad428a9f81`,
+  https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/bcd3d76e95d13ad6836cbc4f2d417a19.mp4):
+  horns sound, the gang (incl. Djedi) drops prostrate in one continuous
+  motion. Verified clean across 18 frame pulls spanning the full runtime —
+  continuous camera motion the whole way, same background/laborers/pyramid
+  throughout, no jumps.
+- **clip08b** (12.04s, task `51341b1d-19d9-4518-9949-008565ed8450`,
+  https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/32748780f31339a5cdc65d3bbe94a91b.mp4):
+  the litter arrives, Hemiunu's lines, her "...Me?" beat. Verified clean
+  across 22 frame pulls spanning the full runtime — same result, one
+  continuous shot, no internal cuts.
+
+Caption timing for both derived from real silencedetect data (not the old
+clip's proportions). One honesty note worth recording: clip08b's two
+merged multi-line blocks (her 3 lines in block 1, Hemiunu's 2 lines in
+block 2) have no internal gap that clears the 0.3s bar either — same
+acoustic ambiguity as clip03_food above — so those specific sub-splits are
+best-evidence estimates (largest sub-threshold dip + word-count proportion,
+frame-spot-checked) rather than hard-verified like the block boundaries
+are. Said so in the code comment rather than presenting them as equally
+certain.
+
+### Issue D — exposure/lighting inconsistent throughout
+
+Measured mean luma (`ffmpeg signalstats`) across all 16 clips: range is
+106.77-127.81 for clips 1-11, then a deliberate drop to 91.74-100.51 for
+the dusk/twilight outro block (11→12a is a -31.5 point drop by design —
+this episode runs dawn-to-dusk). Within that range, one clip
+(clip12b_thumb) was a real outlier — 79.71 against neighbors at 96.28/
+100.51 — and was **already fixed earlier this session** (`eq=brightness=
+0.055`, now 91.74, blends with its neighbors).
+
+Rather than re-assert that same conclusion, checked it properly this time:
+pulled last/first frames across the two largest adjacent luma jumps in the
+main cluster (clip6->clip7, +18.4; the clip11->clip12a dusk transition,
+-31.5) plus the now-corrected clip12b's own neighbors. All three read as
+legitimate on screen — clip6->clip7 is an indoor-shade-to-outdoor-sun
+location change (confirmed via frame pull, not assumed), and
+clip11->12a->12b->12c is a genuinely well-executed sunset-to-twilight
+progression (sun still on the horizon in clip11's last frame, fully down
+with a visible campfire by clip12a's first frame). Gemini's QC sweep raised
+this same region independently (unverified severity-2: "dusk horizon
+illumination... shift slightly across final monologue cuts") — consistent
+with what I'd already found by direct measurement, and not something the
+single verify pass upgraded to CONFIRMED. **Conclusion: one real outlier,
+already fixed; everything else is intentional narrative lighting design,
+now confirmed by frames rather than asserted.**
+
+### Rebuild + re-verification
+
+`captions_data.mjs` now has **16 clips** (was 15 — the clip8 split).
+`qc_pass.mjs` -> `apply_prelap.mjs` -> `build_final_cut.mjs` all re-run
+clean. Runtime **165.25s** (up from 160.63s — the clip8 split adds ~4s net
+after the clip6 trim removes ~2.4s). Frame-count check: exact match
+(3966/3966). Spot-checked every changed cut point via frame pulls (clip6's
+new ending, clip7->8a, 8a->8b, 12a->12b) plus the three new/changed caption
+gaps (clip09a, clip11) to confirm no caption bridges a real pause in the
+rendered output, not just in the source data.
+
+**Gemini eyes `qc` mode on the rebuilt cut**: 5 findings, 2 confirmed —
+both on original, unchanged footage outside this round's scope, both
+frame-checked before deciding not to act:
+1. **clip4 (~31s), wheeled cart on loose sand** — real, visible, minor:
+   the hauling sledge shows small wooden wheels sitting oddly against the
+   sand rather than a true sledge-runner contact. Mildly ironic given the
+   scene's own line is about wet-sand friction reduction, not wheels. Not
+   fixed — original footage, outside this round's 4-issue scope, and the
+   owner hasn't flagged it.
+2. **clip7 (~63s), jug halts a multi-ton cart** — checked the frame: this
+   is the deliberate setup shot for the "Technically... the jar stopped
+   it" payoff in clip09a. Not a rendering glitch — it's the story's central
+   irony beat, and changing it would break the callback dialogue two clips
+   later. Recording it as CONFIRMED (per the tool) but explicitly waived,
+   not silently dropped: this is a narrative choice, not a defect.
+
+The remaining 3 are unverified severity-2 hints on original unchanged
+footage (palm wound-texture crawl, high-five hand clipping, the dusk-region
+finding addressed under Issue D above) — not acted on, consistent with the
+standing rule that only CONFIRMED findings drive fixes.
+
+## STATUS: delivered, all four reported issues fixed and independently verified
+
+1. **Static camera hold (Issue A)** — fixed, clip6 trimmed, re-verified at
+   the new cut point.
+2. **Caption strictness (Issue B)** — 4 real bugs found and fixed
+   (clip09a/09b/11/03) via a full 16-clip silence-map re-audit; Gemini's
+   `captions` pass added 4 more claims, all checked and all false
+   positives.
+3. **Two internal cuts in clip 8 (Issue C)** — fixed by splitting into
+   clip08a_prostrate + clip08b, each regenerated with an explicit
+   no-internal-cuts camera constraint, both frame-verified clean across
+   their full runtimes.
+4. **Lighting/exposure consistency (Issue D)** — one real outlier
+   (clip12b) already fixed; the rest of the episode's variance confirmed
+   legitimate (location changes, intentional dusk progression) via direct
+   frame inspection, not just reasoning.
+
+Two items still flagged for owner decision, not silently skipped (both on
+original footage untouched by any round so far):
+1. Wheeled-cart-on-sand physics quirk on clip 4 (confirmed, minor, out of
+   scope).
+2. Jug-halts-cart on clip 7 (confirmed by the tool, but judged a deliberate
+   story beat, not a defect — explicitly waived with reasoning, not
+   ignored).
+Plus the two items still open from round 3 (rope/wheel artifact on clip 7,
+broader wardrobe-rendering variance) remain unresolved and un-re-litigated
+this round — still the owner's call.
+Owner's watch-through remains the final gate per standing rule.
