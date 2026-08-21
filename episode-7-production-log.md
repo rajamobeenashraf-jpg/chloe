@@ -53,6 +53,12 @@ All clips generated with the standing `run_clip.mjs` recipe (v4 identity/wardrob
 | 6 | 12.05s | 78e70603-d876-4b67-8d46-3f3cabae415e | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/0f80ad01b543aa7e9f7775bf3d7c8a93.mp4 | PASS — empathy core, Krethon cord beat |
 | 7 | 8.06s | 7c7ebc0e-c06f-41d1-8461-acccfa63c8b3 | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/f7bfa4e15e5d68f439f79aeffd22e387.mp4 | PASS — Myrmidons at respectful distance |
 | 8 | 12.05s | f3adfe28-7aad-423d-a809-da056126fb03 | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/a24e7138755b58dc10afe4a09aeac0ef.mp4 | PASS — wall/basket exchange with sentry boy |
+| 9 | 8.06s | 764f7a8b-a59f-4dd0-a9cf-090a22504bd3 | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/acecb5c2764d2ba94f81dd253f50843b.mp4 | PASS — dusk lighting clean, fusion-gag plant lands |
+
+## Real finding: modern smartphone rendered in-frame during a chaotic action beat (clip 10, rejected)
+First clip 10 attempt (the raid set-piece) rendered a visible modern black smartphone with a lit screen in her hand in every sampled frame — a severe anachronism, plus the wardrobe drifted from the established chiton to an unrelated olive cloak/lace outfit. Neither issue appeared in clips 1-9. Hypothesis: the "gasping a line to the lens mid-carry" direction combined with heavy hand-based physical action (kicking a brazier, hauling hides) pushed the model to literalize "her own phone" as a held object during the chaos, and the raid/action framing pulled wardrobe toward a generic action-extra look under that same pressure.
+
+Fixed two ways: (1) strengthened the shared no-camera clause in `run_clip.mjs`'s `IDENTITY_BLOCK` to explicitly state this is a POV shot with no device to hold at all, hands always free for whatever the action requires — applies to all remaining clips, not just clip 10; (2) added an explicit wardrobe-continuity reminder directly into clip 10's own action text in `clips.json` ("even in this fast, chaotic action beat, she is wearing the EXACT same... chiton"). Rejected file kept at `pai-pro/projects/troy/assets/rejected/clip10_v1_REJECTED_phone_wardrobe.mp4`. Regenerating.
 
 Rejected clip 1 attempts (v1-v3, kept for reference) archived at `pai-pro/projects/troy/assets/rejected/` (not committed to git — generated media stays out of git per CLAUDE.md; this note is the pointer for another session).
 

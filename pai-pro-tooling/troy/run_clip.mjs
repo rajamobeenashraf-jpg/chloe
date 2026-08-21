@@ -57,7 +57,7 @@ WARDROBE (identity unchanged, wardrobe only, matches her established costume exa
 
 Lighting is natural and directional with real shadow falloff, NOT flattering studio softbox beauty lighting. Color grade is muted, desaturated, unpolished — raw historical-documentary photojournalism, NOT a fashion/beauty editorial feel. RAW handheld footage, visible grain, natural imperfections, believable anatomy, real fabric texture. NOT 3D render, NOT beauty retouch, NOT plastic/AI-smoothed skin.
 
-No camera, rig, GoPro, strap, or mount ever visible — this is her own phone held at arm's length selfie-style, but the device itself is never seen in frame. Single continuous unbroken shot, one camera angle throughout, no cuts, no scene changes, real-time continuous take.`;
+NO PHONE, CAMERA, RIG, GOPRO, STRAP, OR MOUNT IS EVER VISIBLE IN FRAME — NOT EVEN FOR A SINGLE FRAME, AND NOT EVEN DURING PHYSICAL ACTION. This is a first-person point-of-view shot, as if the viewer's own eyes are the lens floating at arm's length in front of her — there is no device for her to hold, check, or glance at, ever, including in any action/chaos beat. Both of her hands and both of her arms are always free to do whatever the physical action requires (gripping, hauling, kicking, catching someone) with nothing in them except what the scene explicitly describes her holding (a waterskin, a rope, a cord, etc. — never a phone or screen of any kind). Single continuous unbroken shot, one camera angle throughout, no cuts, no scene changes, real-time continuous take.`;
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
