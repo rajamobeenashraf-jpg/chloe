@@ -30,13 +30,13 @@
 
 export const CLIPS = [
   {
-    id: "clip1_vista_v5",
+    id: "clip1_vista_v6",
     duration: 15.069002,
     captions: [
-      { start: 0.0, end: 2.73, text: "Sixty-six million years BC. Hell Creek. Tuesday." },
-      { start: 2.90, end: 6.43, text: "This is the whole world right now — no cities, no roads, no smoke on any horizon." },
-      { start: 6.76, end: 11.98, text: "And in about four hours, a rock six miles wide hits Mexico, and today becomes the worst day in the history of life on Earth." },
-      { start: 12.46, end: 14.95, text: "Nobody here knows. Nobody here even knows what a Mexico is." },
+      { start: 0.0, end: 2.72, text: "Sixty-six million years BC. Hell Creek. Tuesday." },
+      { start: 2.93, end: 6.35, text: "This is the whole world right now — no cities, no roads, no smoke on any horizon." },
+      { start: 6.96, end: 11.91, text: "And in about four hours, a rock six miles wide hits Mexico, and today becomes the worst day in the history of life on Earth." },
+      { start: 12.32, end: 14.95, text: "Nobody here knows. Nobody here even knows what a Mexico is." },
     ],
   },
   {
@@ -81,11 +81,11 @@ export const CLIPS = [
     ],
   },
   {
-    id: "clip7_pivot_v3",
+    id: "clip7_pivot_v4",
     duration: 10.053991,
     captions: [
-      { start: 0.0, end: 8.449, text: "...That was three thousand kilometers away." },
-      { start: 8.727, end: 9.606, text: "It's starting." },
+      { start: 6.6, end: 8.8, text: "...That was three thousand kilometers away." },
+      { start: 9.3, end: 10.0, text: "It's starting." },
     ],
   },
   {
@@ -120,13 +120,13 @@ export const CLIPS = [
 // anywhere (confirmed root cause on 2 prior episodes: independently
 // generated clips never blend clean regardless of duration).
 export const TRANSITIONS = [
-  { after: "clip1_vista_v5", type: "cut" },
+  { after: "clip1_vista_v6", type: "cut" },
   { after: "clip2_mudgear", type: "cut" },
   { after: "clip3_tankrescue_v2", type: "cut" },
   { after: "clip4_foodreview", type: "cut" },
   { after: "clip5_rexsighting", type: "cut" },
   { after: "clip6_walkingaside", type: "cut" },
-  { after: "clip7_pivot_v3", type: "cut" },
+  { after: "clip7_pivot_v4", type: "cut" },
   { after: "clip8_skyturn", type: "cut" },
   { after: "clip9_shelter", type: "cut" },
 ];
