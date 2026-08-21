@@ -101,7 +101,7 @@ async function main() {
   }
 
   const imageAssetIds = [];
-  for (const url of [...IDENTITY_REFS, COSTUME_REF]) {
+  for (const url of [...IDENTITY_REFS, COSTUME_REF, ...(clip.propRefs || [])]) {
     imageAssetIds.push(await uploadReferenceUrl(url, "image"));
   }
 
