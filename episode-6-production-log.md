@@ -193,10 +193,72 @@ stage directions). Submits all 11 up front, polls concurrently (polling is
 the slow part; independent per-clip), downloads each to `assets/clip<N>.mp4`,
 writes `assets/clips_manifest.json` with every job ID + URL.
 
+## Gate 2 — all 11 clips generated, self-QC'd, 3 fixed; ready for owner review
+All 11 clips generated successfully on the first submission (~255s wall time,
+run concurrently). Mandatory verification per `creative-direction.md` §16:
+`ffprobe` duration + frame count + audio-stream check on every clip — all 11
+matched their requested duration exactly (e.g. clip 7 requested 13s, measured
+13.07s), every clip carries both an h264 video stream and an aac audio
+stream, no truncation (the Ep 4 silent-truncation bug this check exists for
+did not recur).
+
+**Self-QC (Claude-eyes, per creative-direction.md §16 — machine/Gemini QC
+stays edit-stage-only per the owner's rule in CLAUDE.md):** extracted 3
+frames per clip (33 total) and reviewed every one against identity lock,
+costume continuity, NPC consistency, crowd population/staging, and
+background-anachronism risk. Found 3 real, confirmed issues, all now fixed:
+
+1. **Clip 1 (opening) — CONFIRMED anachronism, fixed in 1 round.** The dawn
+   skyline showed St. Peter's Basilica's dome, unmistakable, from the very
+   first frame — a 1626 AD building in a 44 BC establishing shot. Added a
+   `REPUBLIC_ROME_GUARD` prompt block (intact/inhabited 44 BC city, no domes,
+   named exclusions) and regenerated. Result: the dome is gone, replaced by a
+   period-plausible skyline (terracotta roofs, a small round tholos-style
+   temple silhouette, consistent with real Republic-era round temples).
+2. **Clip 6 (colonnade push) — CONFIRMED anachronism, fixed in 2 rounds.**
+   The "red ochre" marking tool Artemidorus uses rendered as an unmistakable
+   modern felt-tip marker (matte barrel, conical tip). Round 1 fix explicitly
+   said "NOT a pen, marker, crayon" — this made it WORSE (a clearly
+   Sharpie-style marker, more obviously modern than the original). Round 2
+   dropped all negation and used pure positive physical description instead
+   (an irregular handheld lump of red-brown mineral clay, rubbed against the
+   scroll with a thumb) — this worked cleanly, no manufactured object of any
+   kind in the result.
+3. **Clip 11 (outro) — CONFIRMED anachronism, fixed in 3 rounds.** The dusk
+   overlook showed the modern excavated/ruined Forum archaeological park
+   (broken roofless columns, a paved tourist walkway with path lighting).
+   Round 1 (the same `REPUBLIC_ROME_GUARD`, naming St. Peter's/Colosseum as
+   exclusions) fixed the "ruined" look but the skyline became the Pantheon
+   instead (also anachronistic — a 2nd-century-AD building). Round 2
+   (broadened the guard to ban domes/rotundas generically AND named the
+   Pantheon as a further exclusion) made it WORSE — the result showed BOTH
+   the Pantheon AND St. Peter's Basilica in the same frame. Round 3 abandoned
+   named exclusions entirely and changed the shot itself: tight chest-up
+   framing with the background described as soft-focus/bokeh-blurred dusk
+   light, no legible architecture at all. This worked — no specific building
+   is identifiable, and the tighter, more intimate framing arguably serves
+   the eulogy-register beat better than the original wide vista.
+
+**Engine fact worth carrying into future episodes (confirmed twice, on two
+unrelated shots):** naming a specific real-world landmark or object in a
+negative constraint ("NOT the Pantheon," "NOT a pen or marker") appears to
+*prime* this model toward rendering exactly that thing, not suppress it —
+the opposite of the intended effect. When a generation risks drifting toward
+a specific real/famous/iconic reference, prefer (a) pure positive physical
+description with zero naming, even negatively, or (b) a compositional fix
+(tighter framing, shallower depth of field, obscuring the risky region)
+over a named exclusion list. `creative-direction.md` §16's existing
+prompt-craft notes should get this added at the shared-doc merge.
+
+All 11 final clips: `pai-pro/projects/caesar/assets/clip1.mp4` … `clip11.mp4`.
+Full round-by-round detail, every job ID and URL:
+`pai-pro/projects/caesar/assets/clips_manifest.json`.
+
 ## Next steps
 1. ~~Owner confirms/adjusts the costume look~~ DONE — see Gate 1 final
    decision above.
-2. Generate all 11 clips — IN PROGRESS, see Gate 2 above.
+2. ~~Generate all 11 clips~~ DONE, self-QC'd and fixed — see Gate 2 above.
+   Awaiting owner's clip-by-clip review.
 3. Self-QC each clip against the standing rules once generated; Gate 2:
    present the set for owner review.
 4. Assemble: hard-cut stitch + captions per §16 canonical style, sound design
