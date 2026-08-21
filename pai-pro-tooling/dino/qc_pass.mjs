@@ -8,7 +8,7 @@ import fs from "node:fs/promises";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import path from "node:path";
-import { CLIPS, SUB_STYLE, FACT_STYLE } from "./captions_data.mjs";
+import { CLIPS, SUB_STYLE, FACT_STYLE, ID_CARD_STYLE } from "./captions_data.mjs";
 
 const run = promisify(execFile);
 const PROJECT_DIR = new URL(".", import.meta.url).pathname;
@@ -40,9 +40,10 @@ function captionText(c) {
   return `{\\i1}[${escapeAssText(c.speaker)}]{\\i0} ${text}`;
 }
 
-function buildAss(captions, facts = []) {
+function buildAss(captions, facts = [], idCards = []) {
   const style = SUB_STYLE;
   const factStyle = FACT_STYLE;
+  const idStyle = ID_CARD_STYLE;
   const header = `[Script Info]
 ScriptType: v4.00+
 PlayResX: 720
@@ -53,6 +54,7 @@ WrapStyle: 0
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Default,${style.fontName},${style.fontSize},${assColor("FFFFFF")},${assColor("FFFFFF")},${assColor("000000")},${assColor("000000")},-1,0,0,0,100,100,0,0,1,${style.outline},${style.shadow},2,${style.marginLR},${style.marginLR},${style.marginV},1
 Style: Fact,${factStyle.fontName},${factStyle.fontSize},${assColor("FFFFFF")},${assColor("FFFFFF")},${assColor("000000")},${assColor("000000")},-1,0,0,0,100,100,0,0,1,${factStyle.outline},${factStyle.shadow},8,${factStyle.marginLR},${factStyle.marginLR},${factStyle.marginV},1
+Style: Id,${idStyle.fontName},${idStyle.fontSize},${assColor("FFFFFF")},${assColor("FFFFFF")},${assColor("000000")},${assColor("000000", idStyle.boxAlphaHex)},-1,0,0,0,100,100,0,0,3,${idStyle.outline},${idStyle.shadow},8,${idStyle.marginLR},${idStyle.marginLR},${idStyle.marginV},1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
@@ -64,7 +66,12 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
   // Layer 0 dialogue captions even if their time ranges overlap.
   const factLines = facts
     .map((c) => `Dialogue: 1,${assTime(c.start)},${assTime(c.end)},Fact,,0,0,0,,${captionText(c)}`);
-  return header + [...dialogueLines, ...factLines].join("\n") + "\n";
+  // Species-ID cards (Layer 2, "Id" style, BorderStyle 3 = opaque box) —
+  // more visually prominent than a plain fact overlay, own layer so it
+  // never competes with dialogue or fact-overlay layers.
+  const idLines = idCards
+    .map((c) => `Dialogue: 2,${assTime(c.start)},${assTime(c.end)},Id,,0,0,0,,${captionText(c)}`);
+  return header + [...dialogueLines, ...factLines, ...idLines].join("\n") + "\n";
 }
 
 async function probeVideoDuration(filePath) {
@@ -87,9 +94,11 @@ async function qcOneClip(clip) {
   const fade = `afade=t=in:st=0:d=${FADE},afade=t=out:st=${(videoDuration - FADE).toFixed(3)}:d=${FADE}`;
 
   const facts = clip.facts || [];
+  const idCards = clip.idCards || [];
   const hasCaptions = clip.captions.some((c) => c.start != null && c.end != null);
   const hasFacts = facts.some((c) => c.start != null && c.end != null);
-  if (!hasCaptions && !hasFacts) {
+  const hasIdCards = idCards.some((c) => c.start != null && c.end != null);
+  if (!hasCaptions && !hasFacts && !hasIdCards) {
     console.log(`[qc] ${clip.id}: no timed captions yet, loudnorm + fade only`);
     await run("ffmpeg", [
       "-y", "-i", srcPath,
@@ -103,10 +112,11 @@ async function qcOneClip(clip) {
   }
 
   const assPath = path.join(QC_DIR, `${clip.id}.ass`);
-  await fs.writeFile(assPath, buildAss(clip.captions, facts));
+  await fs.writeFile(assPath, buildAss(clip.captions, facts, idCards));
 
   const factNote = hasFacts ? ` + ${facts.length} fact card(s)` : "";
-  console.log(`[qc] ${clip.id}: burning ${clip.captions.length} caption(s)${factNote} + loudnorm + fade`);
+  const idNote = hasIdCards ? ` + ${idCards.length} ID card(s)` : "";
+  console.log(`[qc] ${clip.id}: burning ${clip.captions.length} caption(s)${factNote}${idNote} + loudnorm + fade`);
   await run("ffmpeg", [
     "-y", "-i", srcPath,
     "-vf", `ass=${assPath}`,

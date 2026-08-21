@@ -72,9 +72,29 @@ export const CLIPS = [
   {
     id: "clip3_tankrescue_v2",
     duration: 12.050998,
+    // TIMING FIX (2026-08-22, owner-flagged then Gemini-confirmed):
+    // this clip's captions were anchored to a naive 0.0 start from an early,
+    // unverified pass and never re-checked — the actual take opens with an
+    // unscripted ad-libbed line, then ~6s of pure physical struggle (heaving
+    // on the branch-lever, no dialogue) before she ever says "You're built
+    // like a coffee table..." Real timing confirmed via independent Gemini
+    // transcription (twice) + direct dense visual mouth/action verification:
+    // talking 0.3-1.3s, then straining/effort face (not talking) through
+    // ~6.5s, a relieved smile at Tank popping free ~7.0s, speech resuming
+    // ~7.3s. This was off by 7+ seconds — the most severe timing bug found
+    // in the full re-audit prompted by the owner's "almost throughout the
+    // video" complaint; every other clip cross-checked clean.
     captions: [
-      { start: 0.0, end: 3.22, text: "You're built like a coffee table and you fight like one. Tank. Your name is Tank." },
+      { start: 0.3, end: 1.3, text: "Hold on, I see a branch." },
+      { start: 7.3, end: 9.41, text: "You're built like a coffee table and you fight like one." },
+      { start: 9.79, end: 9.97, text: "Tank." },
+      { start: 10.21, end: 11.0, text: "Your name is Tank." },
       { start: 11.0, end: 11.78, text: "Don't eat that." },
+    ],
+    // Owner-directed species-ID card (2026-08-22): Tank's first clear
+    // on-screen appearance, confirmed via dense frame check at 2.3s.
+    idCards: [
+      { start: 2.3, end: 4.8, text: "TRICERATOPS — a plant-eating dinosaur" },
     ],
   },
   {
@@ -202,6 +222,20 @@ export const FACT_STYLE = {
   shadow: 1.0,
   marginV: 100,
   marginLR: 60,
+};
+
+// Species-ID card style, owner-directed 2026-08-22 ("a little more
+// prominent" than FACT_STYLE) — same top position, but bigger/bolder text
+// on an opaque background box (BorderStyle 3 in qc_pass.mjs) rather than
+// plain outlined text, so it reads as a distinct "info tag" at a glance.
+export const ID_CARD_STYLE = {
+  fontName: "DejaVu Sans",
+  fontSize: 44,
+  outline: 3,
+  shadow: 0,
+  marginV: 100,
+  marginLR: 50,
+  boxAlphaHex: "30", // ASS alpha is inverted: 00=opaque, FF=transparent
 };
 
 // No title card in Ep5 — OPENING LAW retired the "EARLIER TODAY" convention;
