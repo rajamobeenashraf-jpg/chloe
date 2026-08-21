@@ -148,12 +148,57 @@ Full round-by-round detail with every file, job ID, and URL:
 **Awaiting owner direction** on how to proceed given this constraint —
 options laid out in chat rather than decided unilaterally here.
 
-## Next steps (blocked on owner sign-off from Gate 1)
-1. Owner confirms/adjusts the costume look (see flagged concern above).
-2. Generate all 11 clips per the script table, each with the pre-generation
-   self-check (`creative-direction.md` §10/§12/§14/§15) and physical-state
-   pacing (§8), duration judged per beat (§9).
-3. Gate 2: clip-by-clip owner review.
+## Gate 1 final decision (owner, 2026-08-21)
+Owner reviewed the original round-1 PAI stills (`ep6_costume_hero_front.png`,
+`ep6_costume_detail_palla.png` — plain undyed-wool stola, loose hair, the
+locked v4 look as-is) and accepted them as final, superseding the
+premium-costume/updo detour entirely. No further matte pass requested on the
+stills. This is the locked Episode 6 costume/hair going forward.
+
+## Gate 2 — clip generation started
+Infra check before spending on 11 real generations: this container had no
+ffmpeg/ffprobe installed at all (`apt-get install --no-install-recommends
+ffmpeg` fixed it — a plain `apt-get install ffmpeg` failed on unrelated
+unavailable mesa/video-driver mirror packages pulled in by recommends).
+Needed for the manifest sanity-checks now and for the whole assembly/QC
+stage later (`creative-direction.md` §16 mandates an `ffprobe` frame-count
+check after every build) — flagging as an engine fact since a fresh
+container may hit this again.
+
+Validated the PAI video pipeline live before committing to the full batch:
+uploaded a reference image via `uploadReferenceUrl` (CreateAssetGroup ->
+CreateAsset -> poll GetAsset, per `creative-direction.md` §16), then
+`submitVideo` + `pollVideo` end-to-end on a throwaway 6s test prompt —
+QUEUED -> PROCESSING -> TRANSFERRING -> SUCCESS in ~173s wall time, real
+`output_url`. Pulled two frames from the result: identity matched the v4
+lock, costume/hair matched the accepted plain-stola/loose-hair look, period
+setting and background extras read correctly. Confident to proceed.
+
+Script: `pai-pro/projects/caesar/generate_clips.mjs` — builds all 11 clip
+prompts from `episodes-5-9-scripts.md` Episode 6 (durations exactly as
+scripted: 9/8/10/10/8/12/13/8/10/8/11s, all under the 15.2s PAI cap), applies
+every standing rule per prompt: frozen identity string + matte clause +
+realism block verbatim, single-continuous-take language, explicit
+no-camera-visible selfie framing, embedded-not-sequential drama phrasing,
+physical-state-gated pacing (posca sip in clip 3), §10 pre-generation
+self-check (dialogue-action causality, crowd population matching "crush"/
+"panic wave", spatial staging for the colonnade push and the lictor's sweep),
+§12 active-participant staging (she wedges a path, hauls Artemidorus to
+safety), §14 forward-walking language for clip 6's crowd push, consistent
+NPC descriptions for Spurinna/Artemidorus/the posca vendor reused verbatim
+across every clip they appear in, background-anachronism guard on every
+clip, and wardrobe continuity (palla intact -> slipping -> torn away in the
+clip 9 stampede -> gone for the rest of the episode, per the script's own
+stage directions). Submits all 11 up front, polls concurrently (polling is
+the slow part; independent per-clip), downloads each to `assets/clip<N>.mp4`,
+writes `assets/clips_manifest.json` with every job ID + URL.
+
+## Next steps
+1. ~~Owner confirms/adjusts the costume look~~ DONE — see Gate 1 final
+   decision above.
+2. Generate all 11 clips — IN PROGRESS, see Gate 2 above.
+3. Self-QC each clip against the standing rules once generated; Gate 2:
+   present the set for owner review.
 4. Assemble: hard-cut stitch + captions per §16 canonical style, sound design
    per the episode header (full Forum ambience → dead at clip 9 → wind/paper).
 5. Gate 3: stitched-cut owner review.
