@@ -34,6 +34,8 @@ record until the final cut is delivered to the owner._
 |---|---|---|---|---|
 | Costume still (Gate 1) | `prompts/costume_still.txt` | — | — | **SKIPPED** (5x content-filter/classifier blocks, owner decision — see above) |
 | Clip 1 — dawn ferry vista + awe | `prompts/clip01.txt` | `assets/clip01_vista.mp4` | `8ea068ec-1668-462c-954b-862c92aa18b2` | done — 9.06s, 720x1280, sent to owner for review |
+| Clip 2 — costume + kohl/SPF joke | `prompts/clip02.txt` | `assets/clip02_costume.mp4` | `936b849e-768e-4916-8ef7-855038b26d34` | done — 8.06s, 720x1280, sent to owner (costume beat rendered clean in video despite the standalone still being blocked) |
+| Clip 3 — ration-line food beat | `prompts/clip03.txt` | `assets/clip03_food.mp4` | `2e08690c-c833-484b-96b0-38453a3bff4a` | done — 9.06s, 720x1280, sent to owner |
 
 ## Environment note
 `ffmpeg`/`ffprobe` were not preinstalled this session (needed for QC/stitch
