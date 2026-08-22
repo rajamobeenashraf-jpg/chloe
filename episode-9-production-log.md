@@ -739,3 +739,38 @@ matches round 4's delivery exactly. If the owner wants to revisit the
 stone-only cut, or try a different edit point entirely, every version
 needed to compare or resume from is still on disk.
 Owner's watch-through remains the final gate per standing rule.
+
+## Round 7 — swapped back to the round-5 cut for review (2026-08-22)
+
+Owner asked to see "the one before this one" right after round 6's
+delivery — i.e. round 5's 7.5s stone-only clip 6 cut again, one step back
+from what had just been sent. Read literally as: show the file that was
+delivered immediately before the one just received, not a re-decision on
+which cut is better.
+
+**Note on what "before this one" pointed at each time**: round 6 was
+itself already a revert (back to round 4's cut), so round 6's "before
+this one" = round 5, not round 4. Tracking the actual send order rather
+than clip-version numbers matters here — round 4 -> round 5 -> round 6
+-> [this ask] means round 5 is correct, not round 4 again.
+
+The full assembled episode file gets overwritten on every rebuild, so
+"the one before this one" no longer existed as a standalone file — only
+the per-clip backup did (`clip06_empathy_ROUND5_7500ms.mp4`, preserved
+during round 6 for exactly this kind of back-and-forth). Confirmed the
+then-active file was byte-identical to `clip06_empathy_ROUND4_9625ms.mp4`
+(md5sum match) before swapping, so nothing from round 6 needed a separate
+backup — it was already saved under that name.
+
+Swapped `clip06_empathy.mp4` to the round-5 file, rebuilt the full
+pipeline, and verified the result against round 5's ORIGINALLY recorded
+numbers from that round's log entry: runtime 163.13s, frame-count
+3915/3915 — both matched exactly. Delivery copy: 28MB.
+
+## STATUS: delivered — round-5 cut (clip 6 stone-only) back in front of the owner for review
+
+This is a review round, not a decision round — nothing has been
+re-resolved about which clip-6 cut ships. All three clip-6 versions
+remain on disk under their own filenames and can be swapped in again on
+request, same as this round and round 6 both were. Owner's watch-through
+remains the final gate per standing rule.
