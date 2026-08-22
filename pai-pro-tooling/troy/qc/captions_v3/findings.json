@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "timestamp": "01:00",
+      "category": "text",
+      "severity": 3,
+      "description": "Subtitle misspells name as 'Agamon' instead of 'Agamemnon'.",
+      "fix": "Agamemnon took what was mine. I won't hand him my sword too.",
+      "verdict": "DISMISSED",
+      "refined_description": "The subtitle text at 01:00 correctly spells the name as 'Agamemnon' rather than 'Agamon'."
+    },
+    {
+      "timestamp": "01:53",
+      "category": "text",
+      "severity": 3,
+      "description": "Character name misspelled in subtitle as 'Krean' instead of 'Krethon'.",
+      "fix": "Get home, Krethon.",
+      "verdict": "DISMISSED",
+      "refined_description": "The subtitle at 01:53 correctly displays 'Get home, Krethon.' with no misspelling of the name."
+    }
+  ],
+  "summary": "Overall captioning matches spoken dialogue and intended script accurately, with minor spelling errors on Greek names.",
+  "overall_score": 7.2
+}
