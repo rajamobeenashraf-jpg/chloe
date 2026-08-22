@@ -184,11 +184,17 @@ export const CLIPS = [
       // required dusk continuation from clip 9; fixed, all other beats
       // untouched, but regenerated so timing was re-checked fresh). No
       // silencedetect data during the dialogue beat (fire/chaos noise
-      // defeats threshold, same as v3/v4/v5) — mouth-frame cross-check on
-      // this new take: mouth open/moving toward the lens ~9.0-9.8s during
-      // the hide-hauling beat with Krethon, before the POV shifts to
-      // follow him and she turns away.
-      { start: 9.0, end: 9.8, text: "—stay with me—" },
+      // defeats threshold, same as v3/v4/v5).
+      //
+      // CORRECTED (owner-directed Gemini re-check, 2026-08-22): the
+      // original 9.0-9.8s mouth-frame read was wrong -- at 9.0-9.8s she is
+      // turned away hauling the hide, not addressing camera. A dense
+      // 8fps re-trace found her actually turn to the lens with a clear
+      // open-mouth speaking expression starting ~10.5s, continuing
+      // through ~10.9s before she turns away again -- confirmed
+      // independently by Gemini eyes (flagged the caption as ~1.6s early,
+      // spoken audio at global 01:42.00 = local 10.625s). Moved to match.
+      { start: 10.5, end: 11.1, text: "—stay with me—" },
     ],
   },
   {
