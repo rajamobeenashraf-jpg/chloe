@@ -693,3 +693,49 @@ preserved as separate files — nothing was destroyed, per the owner's
 explicit reversibility request. Everything before and after this clip in
 the final cut verified unchanged except for the expected timeline shift.
 Owner's watch-through remains the final gate per standing rule.
+
+## Round 6 — reverted clip 6 to the round-4 cut (2026-08-22)
+
+Owner watched the round-5 delivery (clip 6 re-cut to 7.5s, stone-shot
+only) and called it bad, asking for "the last final version" back. This
+is exactly the reversibility the owner had asked for when first approving
+the round-5 cut ("don't remove it permanently — maybe we need to think
+about it again") — so the fix was a straight revert, not a new
+investigation.
+
+**What "last final version" meant here:** the round-4 delivery — clip 6 at
+9.625s (frozen tail trimmed, face-to-camera portion still present) —
+as opposed to round 5's 7.5s stone-only cut just sent. Read from context
+rather than asked, per the owner's own established shorthand across this
+project ("the last final version" = the previous thing I called a final
+cut, not a request to resend the same file); flagged as an inference here
+so it's easy to correct if it's not what was meant.
+
+**Executed as a revert, not a rebuild-from-scratch:**
+- `clip06_empathy.mp4` (the just-shipped 7.5s round-5 file) backed up
+  as `clip06_empathy_ROUND5_7500ms.mp4` before touching anything —
+  nothing from round 5 is lost either.
+- `clip06_empathy_ROUND4_9625ms.mp4` (preserved during round 5 for this
+  exact scenario) restored as the active `clip06_empathy.mp4`.
+- `captions_data.mjs`'s clip 6 comment updated to record the revert;
+  caption cue timings themselves untouched (they've never needed to
+  change across any of these versions — all three end at 7.186s).
+
+**Rebuilt and checked against the known round-4 numbers, not just
+re-verified in isolation:** `qc_pass.mjs` reports clip 6 back at 9.625s
+with every other clip's duration identical to both round 4 and round 5's
+builds (confirms this clip is the only moving part, again). Final cut:
+runtime **165.25s**, frame-count **3966/3966** — both an EXACT match to
+round 4's originally-recorded numbers, not just internally consistent.
+Spot-checked the clip6->clip7 boundary directly: confirms the face-to-
+camera close-up is back in the assembled output. Delivery copy: 28MB.
+
+## STATUS: delivered — reverted to the round-4 cut per owner request
+
+All four versions of clip 6 now exist as separate files (12.051s
+original, 9.625s round-4/round-6-active, 7.5s round-5) — nothing across
+any of these three rounds has been destroyed. Current active state
+matches round 4's delivery exactly. If the owner wants to revisit the
+stone-only cut, or try a different edit point entirely, every version
+needed to compare or resume from is still on disk.
+Owner's watch-through remains the final gate per standing rule.
