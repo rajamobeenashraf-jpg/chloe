@@ -1,0 +1,34 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:21",
+      "category": "physics",
+      "severity": 2,
+      "description": "The biscuit partially deforms and clips against the lips during the bite motion.",
+      "end_timestamp": "00:24",
+      "fix": "Re-render the eating action frames to maintain rigid biscuit geometry."
+    },
+    {
+      "timestamp": "01:36.000",
+      "category": "physics",
+      "severity": 3,
+      "description": "Incoming burning projectiles produce linear missile smoke trails instead of ballistic flaming arrow trajectories.",
+      "end_timestamp": "01:45",
+      "fix": "Replace particle VFX with arcing flaming arrows or catapult fire.",
+      "verdict": "CONFIRMED",
+      "refined_description": "Incoming burning projectiles in the sky leave linear, continuous smoke trails resembling modern missiles or rockets rather than typical ballistic flaming arrows."
+    },
+    {
+      "timestamp": "01:38.200",
+      "category": "background",
+      "severity": 3,
+      "description": "A modern Red Cross medical symbol is clearly visible on the background field tent.",
+      "end_timestamp": "01:45",
+      "fix": "Paint out or replace the tent texture to remove modern insignia.",
+      "verdict": "CONFIRMED",
+      "refined_description": "A modern red cross medical emblem is clearly displayed on the front of a field tent in the background of an ancient setting."
+    }
+  ],
+  "summary": "The video maintains strong character identity and high visual polish across historical settings. Several minor physical and VFX artifacts appear during action sequences, along with an anachronistic background emblem during the night camp scene. Correcting the background prop and projectile fx will bring the production up to standard.",
+  "overall_score": 6.8
+}
