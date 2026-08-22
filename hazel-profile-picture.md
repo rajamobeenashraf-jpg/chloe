@@ -29,4 +29,19 @@
 - **Lawn (recommended)** — sage flowy summer dress, golden-hour manicured lawn + rose beds, elegant stone house behind. QC ✅ identity, soft gentle smile, best light; balayage reads warmer/blonder in sunset light (acceptable).
 Both delivered in chat (PAI returns bytes, no CDN copy — owner must save the pick).
 
-**Owner decision pending:** final profile picture pick (lawn recommended) + whether this styled look appears anywhere beyond the profile picture.
+## Gemini Flash identity audit (owner request, 2026-08-22)
+All 7 candidates compared against the benchmark (face-detail sheet + turnaround sheet composited beside each candidate; forensic prompt with the locked feature spec; `tools/gemini-eyes` ask mode). Scores self-labeled "compressed scale" by the model — the ORDERING and verdict labels are the signal, not the absolute numbers. Model note: pai + lawn scored by gemini-3.7-flash; the rest fell back to 3.6-flash (3.7 busy) — minor cross-model comparability caveat, but the pattern is consistent.
+
+| Candidate | Identity | Realism | Verdict | Key drift notes |
+|---|---|---|---|---|
+| **PAI lawn** | **74** | **71** | **SAME PERSON** | Freckles intact, outdoor catchlights believable, hand anatomically sound, natural dental translucency |
+| **PAI plain** | **72** | **68** | **SAME PERSON** | Only report confirming the FULL locked iris spec (amber-honey core, olive-green outer, limbal ring); crisp hair flyaways |
+| Nano NB1 | 71 | 67 | LIKELY SAME | Freckles less dense than benchmark; forehead/chest slightly over-smoothed |
+| Soul v3 | 68 | 66 | LIKELY SAME | Synthetic sheen on skin speculars |
+| Nano NB2 | 68 | 66 | LIKELY SAME | Neck-to-fabric over-smooth blend; uniform hair layering |
+| Soul v4 | 68 | 65 | LIKELY SAME | Over-smoothed cheek perimeter; uniform teeth |
+| PAI drawing room | 68 | 65 | LIKELY SAME | Upper lip slightly less full; freckles smoothed; chest smoothing |
+
+**Audit conclusion:** the PAI `image-edit-pro` renders are the most identity-faithful and most photographic — the only two "SAME PERSON" verdicts — with **lawn the overall winner on both axes**, matching the owner's instinct. Confirms the lock's guidance that PAI image-edit-pro is the faithful still-generation route; Soul V2 renders score lowest on realism.
+
+**Owner decision pending:** final profile picture pick (lawn recommended, now data-backed) + whether this styled look appears anywhere beyond the profile picture.
