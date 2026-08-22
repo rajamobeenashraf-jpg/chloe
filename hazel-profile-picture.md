@@ -14,4 +14,11 @@
 | Alternate — v4 single portrait (pillarboxed) | `f265334e-5996-4223-8db1-69ac28edd602` | `hf_20260822_024105_f265334e-....png` | ✅ identity match; dark side bars |
 | Rejected — grid/contact-sheet outputs (round 1) | `3868f4b2-…`, `5ffad706-…` | (multi-panel — prompt's "character sheets" wording triggered grid layout; wording removed in round 2) | format fail, identity pass |
 
-**Owner decision pending:** final pick (v3 recommended) + whether this styled look should ever appear on-lock anywhere else.
+**Round 2 (owner rejected the Soul takes — directed: use the original character sheets as references, Nano Banana Pro):** generated with `nano_banana_pro` (routed internally to `nano_banana_2`, known behavior) using the FIVE master references imported by URL (both PAI character sheets `cdde55af`/`ef2a1822` + movie frames `f8a3e22d`/`d35989c6`/`d11009b5`) under the strict identity-preserving protocol (references win, calibration lines). Same brief: Wavy Cut + Soft Glam, single square portrait.
+
+| Take | Job ID | QC |
+|---|---|---|
+| **NB1 — polished glam** | `24f946e8-707a-49eb-82ff-762a76f5a03d` | ✅ identity match; softer, more editorial finish; freckles subtle |
+| **NB2 — as-filmed texture (recommended)** | `f8a48cc8-65c3-4305-917d-c8368d71e599` | ✅ identity match; strongest freckle/skin-texture fidelity to the locked look |
+
+**Owner decision pending:** final pick (NB2 recommended for identity fidelity; NB1 if a more polished look is preferred; Soul v3/v4 remain as rejected alternates) + whether this styled look appears anywhere beyond the profile picture.
