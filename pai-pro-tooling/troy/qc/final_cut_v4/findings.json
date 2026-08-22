@@ -1,0 +1,40 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:21",
+      "category": "physics",
+      "severity": 2,
+      "description": "The hardtack bread piece morphs slightly along the bite edge rather than cleanly fracturing.",
+      "end_timestamp": "00:24",
+      "fix": "Re-render the eating action with improved rigid body collision on the food prop."
+    },
+    {
+      "timestamp": "00:49",
+      "category": "physics",
+      "severity": 2,
+      "description": "Fingers interact unnaturally with the rope knots, showing minor fiber blending and clipping.",
+      "end_timestamp": "00:53",
+      "fix": "Clean up hand contact geometry with an inpainting pass on the knot contact points."
+    },
+    {
+      "timestamp": "01:35.200",
+      "category": "physics",
+      "severity": 3,
+      "description": "Smothering the fire with the animal pelt exhibits rapid texture warping and irregular smoke blending.",
+      "end_timestamp": "01:39",
+      "fix": "Regenerate the fire smothering sequence with consistent fabric and particle physics.",
+      "verdict": "CONFIRMED",
+      "refined_description": "As the characters attempt to smother the fire with the animal pelt, the pelt unnaturally stretches and morphs with noticeable texture warping and inconsistent spark/fire blending."
+    },
+    {
+      "timestamp": "01:41",
+      "category": "anatomy",
+      "severity": 2,
+      "description": "Carrying contact between the wounded soldier and Hazel shows slight sliding along the shoulder seam.",
+      "end_timestamp": "01:43",
+      "fix": "Apply a tracking stabilization pass to anchor character contact points."
+    }
+  ],
+  "summary": "Character identity and historical wardrobe remain remarkably consistent across multiple complex setups. Audio sync and delivery match the visual cadence well throughout the vlog format. Minor physics and interaction artifacts occur during prop handling and chaotic action sequences.",
+  "overall_score": 6.8
+}
