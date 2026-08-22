@@ -5,8 +5,9 @@ US-market AI historical channel reverse-engineered from Chloe VS History and Nov
 This file was reconciled 2026-08-20 from the two prior CLAUDE.md versions on a
 newest-command-wins basis: every rule the owner never changed is kept; where an
 older rule conflicts with a later owner decision, the later decision stands and
-is marked. Latest owner decisions recorded: 2026-08-21 (ask before every clip
-regeneration + send every clip to the owner for approval — see the QC rule below).
+is marked. Latest owner decisions recorded: 2026-08-22 (ask before every clip
+regeneration + send every clip to the owner for approval, reinforced: sending
+the clip is never gated behind Claude's own findings — see the QC rule below).
 
 Read before any creative, research, or production work — these files are this project's memory:
 1. `NEW_CHAT_HANDOFF.md` — START HERE: operating manual (setup, parallel-chat rules, approval gates)
@@ -58,7 +59,12 @@ Standing rules:
   compressed copy of the actual footage, per clip, never batched or merely
   described — with approval explicitly requested. No clip enters the edit
   until the owner approves it, and every regenerated version goes back to the
-  owner the same way. Fuller writeup: `creative-direction.md` §20.**
+  owner the same way. This send is never gated behind Claude's own QC or
+  Gemini eyes findings running first — deliver the footage, then report any
+  findings as supplementary information, not as a proposed fix awaiting
+  approval; only the owner's own decision after watching starts a
+  regeneration (owner reinforcement, 2026-08-22). Fuller writeup:
+  `creative-direction.md` §20.**
 - Treat unverified low-severity findings as hints, not facts; only findings
   marked CONFIRMED by the verify pass are trusted.
 - Before publish: run Higgsfield `virality_predictor` on the render; the owner's
