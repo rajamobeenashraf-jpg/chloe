@@ -134,11 +134,18 @@ export const CLIPS = [
     id: "clip8",
     duration: 12.050998,
     captions: [
-      { start: 0.0, end: 1.680, text: "Burial truce. One afternoon — both sides collect their dead." },
-      { start: 1.982, end: 5.608, text: "And I'm walking water to the WALLS, because apparently that's who I am now." },
-      { start: 6.586, end: 7.821, text: "Same water. Both sides." },
-      { start: 8.240, end: 9.344, text: "[calls down, in his own tongue]", speaker: "Trojan Boy" },
-      { start: 9.667, end: 12.051, text: "He's about the age Krethon's son would be." },
+      // v2 (lighting-only regen — dialogue/action untouched, but a fresh
+      // take naturally shifts word timing, so re-derived rather than kept
+      // as-is). silencedetect gaps re-checked against the dialogue's own
+      // sentence structure and cross-checked with mouth-frame sampling at
+      // the cue3/4/5 region; cue1/cue2's exact split is the lower-confidence
+      // boundary here (no single decisive gap, inferred from word-count
+      // pacing either side) — everything else corroborated by frames.
+      { start: 0.0, end: 3.21, text: "Burial truce. One afternoon — both sides collect their dead." },
+      { start: 3.33, end: 6.38, text: "And I'm walking water to the WALLS, because apparently that's who I am now." },
+      { start: 6.67, end: 7.84, text: "Same water. Both sides." },
+      { start: 8.13, end: 8.85, text: "[calls down, in his own tongue]", speaker: "Trojan Boy" },
+      { start: 10.50, end: 12.051, text: "He's about the age Krethon's son would be." },
     ],
   },
   {

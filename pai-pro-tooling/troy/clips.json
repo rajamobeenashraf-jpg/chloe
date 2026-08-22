@@ -79,12 +79,12 @@
     {
       "n": 8,
       "duration": 12,
-      "timeOfDay": "Day 3, afternoon, bright even daylight, scene fully lit",
+      "timeOfDay": "Day 3, afternoon — HIGH, NEUTRAL DAYLIGHT, CRITICAL (a prior render showed this scene with warm golden-hour side-lighting and longer shadows, closer to dusk than afternoon — this is WRONG and must not recur): the sun is high overhead, not low on the horizon; light is bright, clean, and neutral-to-cool in color temperature, NOT warm/amber/orange; shadows are short and fall mostly straight down, NOT long and raking sideways. This must read as unmistakably different from clip 9/10's dusk lighting later the same day — if this scene's warmth or shadow length starts to approach that of a sunset/dusk shot, the generation is WRONG.",
       "scene": "She walks forward normally (facing her direction of travel, camera swinging to re-aim as she moves, not walking backward, per creative-direction.md §14) along the base of Troy's pale limestone walls, waterskins in hand, explaining as she goes. She reaches a spot where {sentry} lowers a rope-basket down from the wall; she ties her waterskin to it and it rises up the stone. The boy calls something down in his own tongue; she waves up at him.",
       "dialogue": "\"Burial truce. One afternoon — both sides collect their dead. And I'm walking water to the WALLS, because apparently that's who I am now.\" As the basket rises: \"Same water. Both sides.\" {sentry} calls down a few words in his own language from the wall. She waves. Softer, to the lens: \"He's about the age Krethon's son would be.\"",
       "action": "Forward walking explicitly, per §14; active mercy per §12 — she is the one who ties the waterskin to the rope unasked.",
       "sound": "wind against stone, rope creak, distant truce-day quiet (no battle sounds), gulls",
-      "craft": "truce explained for cold viewers + active mercy + empathy echo to clip 6"
+      "craft": "truce explained for cold viewers + active mercy + empathy echo to clip 6. v2 (owner-directed): prior render's lighting consistently read as warm/golden-hour rather than the scripted bright neutral afternoon (caught in a full-episode lighting audit, 3 frames checked) — rewrote timeOfDay with explicit contrastive-negative language (high sun, neutral-cool color, short shadows, NOT approaching clip 9/10's dusk warmth) targeting only that rendering defect; scene/dialogue/action untouched."
     },
     {
       "n": 9,
