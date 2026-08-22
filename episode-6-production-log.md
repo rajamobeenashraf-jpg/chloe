@@ -536,6 +536,45 @@ guards. **Owner accepted as-is, both findings left unfixed.**
 
 Episode is now 12 clips (1, 2, 3, 4, 5, 6, 7, 7b, 8, 9, 10, 11).
 
+**Clip 11 split — resolved, both halves accepted.** Split into clip 11
+("They did it to save the Republic"..."every July of your life", 38
+words) and new clip 11b ("The soothsayer and I hate being right"..."Hazel
+— out of time", 11 words) at the natural pause point, per the plan above.
+Generated both. Clip 11's own pacing measured no better than before
+(4.38 wps, Gemini independently called it "rushed... brisk, casual,
+modern conversational pace") — flagged plainly, but **owner watched it and
+judged it acceptable regardless of the metrics** ("the pacing is
+alright"), so left as-is; a reminder that the owner's watch-through
+overrides the measurement when they disagree with it. Clip 11b's dramatic
+pause landed genuinely well on the first attempt (confirmed by Gemini
+unprompted: "hushed, solemn... a significant, tense dramatic pause"), but
+two more rounds were needed to land it clean:
+1. Owner felt 11b didn't match 11a's energy and ran too slow. Fixed by
+   trimming ~2s out of the middle of the pause via a hard cut — but the
+   join was visibly awkward (owner caught it immediately, "prominent
+   cut... not very smooth").
+2. Tried a 0.25s crossfade at the join — still awkward per the owner.
+   Widened to 0.45s — still awkward. Stopped guessing and actually looked
+   at the crossfade frames: genuine ghosting was visible (the two frames
+   being blended weren't pixel-aligned — natural micro-motion between
+   them, not a bad take). A crossfade of any duration was the wrong tool
+   for two non-identical frames. Root-caused instead: confirmed via frame
+   sampling that she holds a genuinely static pose from ~3.5s to ~5.5s in
+   the pause (after the scripted look-away-and-back settles, before the
+   whisper begins) — so that specific window was sped up 3x with
+   `setpts`/`atempo` instead of cut or blended. Nothing is moving in that
+   window, so the speed change is invisible; both spoken lines and the
+   actual look-away motion stay at 1x, untouched. No cut, no blend, no
+   seam. **Owner confirmed: "perfect."**
+
+One finding from earlier remains open and unaddressed: independent
+transcription (3 passes at increasing gain-boost, given this clip is
+whisper-quiet like the original clip 11 was) split 2-to-1 on "The sun's
+setting and I hate being right" over the scripted "The soothsayer and I
+hate being right" — a possible dialogue drift that would lose the
+callback to Spurinna (clip 5). Not confirmed with certainty, not raised
+again since, not fixed.
+
 **Still open, no action taken yet:**
 - **Clip 1** — three versions exist in tension: v1 (rooftop, retired),
   v2 (Forum street-level, clean pacing, had the Pantheon/inscription
@@ -544,14 +583,8 @@ Episode is now 12 clips (1, 2, 3, 4, 5, 6, 7, 7b, 8, 9, 10, 11).
   anachronism and the pacing defect came back). Owner asked to see v2
   again; the regeneration attempt to reproduce it was blocked by an
   automatic permission classifier before reaching PAI. Not retried.
-  Awaiting owner's call.
-- **Clip 11** — pacing confirmed bad (~5.05 wps measured, corroborated by
-  Gemini's independent qualitative read: "fast, brisk, sharp" versus the
-  scripted "quiet, weary eulogy"). Recommended fix: split into two clips
-  at the natural pause point, no dialogue trimmed, each half gets proper
-  room to breathe at a natural pace (~3.0 wps, judged more appropriate
-  than the vlog-baseline 3.3 wps since this is the one clip that's
-  supposed to drop the vlogger energy entirely). Not yet authorized.
+  Owner has since seen the current v3 file again but hasn't yet ruled on
+  how to proceed. Awaiting owner's call.
 
 ## Next steps
 1. ~~Owner confirms/adjusts the costume look~~ DONE — see Gate 1 final
