@@ -47,6 +47,17 @@ Until the Gemini key is set (§5), everything else still runs — the pipeline j
 
 For studying **reference** videos (Chloe VS History, Nova, any outlier): `vidiq_video_watch` (long-form) or `vidiq_watch_shortform_content` (Shorts/Reels/TikTok), or `gemini-eyes.mjs --youtube <url> --mode study` once the key exists.
 
+### Still-image identity QC calibration (established 2026-08-22, owner-directed research)
+Method: composite [face-detail sheet | turnaround sheet | candidate] into one image, run `gemini-eyes ask` with the forensic identity rubric (feature-by-feature vs the locked spec, identity 0–100, realism 0–100, verdict). **Gemini's absolute numbers are NOT portable** — it self-compresses the scale and judge-model version shifts scores ~4–8 pts (3.6-flash scores lower than 3.7-flash). So scores are read RELATIVE to controls run through the same rubric:
+- **Positive control (ceiling):** the approved Tier-1 front portrait scored **74 identity / 68 realism / SAME PERSON** (3.7-flash); an as-filmed movie frame scored 66/62/LIKELY SAME on 3.6-flash. Ground-truth same-person material lands at ~66–74 — nothing scores in the 90s on this rubric.
+- **Negative control (floor):** a deliberately similar-description STRANGER (same hair/eyes/skin class, no refs) scored **40 identity / DIFFERENT**, with drift named on every structural feature — and realism 70, proving identity and realism are independent axes.
+
+**The standard for accepting generated stills of Hazel:**
+- **EXCELLENT:** verdict SAME PERSON **and** identity within ~2 pts of (or above) the same-batch canon control **and** no locked structural feature named as drifted. (Under 3.7-flash ≈ ≥72.)
+- **ACCEPTABLE:** verdict LIKELY SAME, within ~6 pts of control, and named drift limited to styling/expression/lighting (freckle density under makeup, smile, warmth) — never structure (jaw, nose, eye shape, brow shape, lip shape).
+- **REJECT/REGENERATE:** verdict UNCERTAIN or DIFFERENT at any score; any STRUCTURAL feature drift named; ≥10 pts below control; or any realism note naming plastic sheen / synthetic look / malformed anatomy (§13 is pass/fail regardless of the number).
+- Always co-run the canon positive control in the same session before trusting cross-batch comparisons; the verdict label + named drift decide, the number only ranks within a batch; the owner's eye remains the final gate.
+
 ## 5. Gemini eyes — one-time setup (owner action required)
 1. Get a free API key: https://aistudio.google.com/apikey (sign in with a Google account → "Create API key").
 2. Add it to the Claude Code environment: claude.ai → Claude Code → your environment → **Environment variables** → name `GEMINI_API_KEY`, value = the key. (Running locally instead: `export GEMINI_API_KEY=...`.)
