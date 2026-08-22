@@ -618,3 +618,78 @@ Plus the two items still open from round 3 (rope/wheel artifact on clip 7,
 broader wardrobe-rendering variance) remain unresolved and un-re-litigated
 this round — still the owner's call.
 Owner's watch-through remains the final gate per standing rule.
+
+## Round 5 — clip 6 re-cut: remove the face-to-camera portion entirely (2026-08-22)
+
+Owner watched the round-4 delivery and flagged clip 6 again: after Djedi
+says "We saw it.", there's a portion where she's looking at the camera for
+~2 seconds before the next clip starts, and asked for it gone — keeping
+only the beat where she's looking at the stone with Djedi. Owner explicitly
+asked to see the proposed cut before it was applied ("show me what you
+will do, and then I will tell you what to do"), and to keep it reversible
+in case of a change of mind.
+
+**Investigated before proposing anything.** Round 4 had already trimmed
+this clip 12.051s -> 9.625s to remove a frozen tail, but had only checked
+audio timing on the remaining 7.186-9.625s, not visual continuity. Frame-
+by-frame extraction this round found the actual defect: a **hard internal
+cut at ~7.57s** — one frame is the two-shot (her + Djedi looking down at
+the graffitied stone), the very next frame is a tight face-to-camera
+close-up, no transition, no camera movement. This is the exact "camera
+angle changed" moment the owner described, and it explains why the
+segment read as off — it isn't one continuous held shot, it's two
+different generated framings jammed together with no cut in the edit to
+account for it. Narrowed the exact jump to between 7.55s and 7.60s via
+successive frame pulls.
+
+**Proposed, and showed, before touching anything.** Cut a preview at 7.5s
+(0.31s of natural settle after "We saw it." ends at 7.186s, still on the
+stone shot, ending just before the 7.57s jump) and sent it to the owner
+without changing `captions_data.mjs` or rebuilding the pipeline. Owner
+confirmed: proceed, and be careful not to affect what comes before or
+after this clip.
+
+**Applied carefully, per that instruction:**
+- Backed up the round-4 9.625s file (`clip06_empathy_ROUND4_9625ms.mp4`)
+  before overwriting anything. The original 12.051s file was already
+  preserved from round 4.
+- Re-cut the FINAL 7.5s version directly from
+  `clip06_empathy_ORIGINAL_12s.mp4`, not from the already-re-encoded
+  9.625s round-4 file — avoids a second generation of lossy compression
+  stacking on the first. First-generation quality.
+- Verified before promoting it: frame 0 of the new file matches the
+  clip's true opening (confirmed identical to the original's frame 0);
+  the last frame ends cleanly on the stone two-shot with no glimpse of the
+  removed close-up; silencedetect on the new 7.5s file reproduces the
+  exact same speech-block timing as before for 0-7.186s (bit-identical
+  audio content, just truncated later) — so all three existing caption
+  timestamps needed zero changes.
+- Only the trailing code comment in `captions_data.mjs` was updated (the
+  old one referenced "7.186-12.051" as the silent beat, now stale).
+
+**Rebuilt and re-verified isolation specifically, per the owner's "leave
+no room for error" instruction:**
+- `qc_pass.mjs` output: clip 6 now 7.500s, every other one of the 15
+  other clips reports the IDENTICAL duration as round 4's build — direct
+  confirmation nothing else moved.
+- `apply_prelap.mjs`: clip 6's own prelap delay shifted to 7.300s (7.5 -
+  0.2, correct), every other clip's prelap delay unchanged from round 4.
+- `build_final_cut.mjs`: runtime **163.13s** (down from 165.25s — exactly
+  -2.125s, i.e. 9.625-7.5, the only change). Frame-count check: exact
+  match (3915/3915).
+- Frame-pulled BOTH sides of both boundaries touching this clip: clip5's
+  ending -> clip6's opening (unchanged, confirms "before" is untouched),
+  and clip6's new ending -> clip7's opening (the changed boundary —
+  confirms the cut lands cleanly on the stone shot with zero trace of the
+  removed close-up, and clip7 opens exactly as it always has).
+- Delivery copy re-encoded: 28MB, comfortably under the 30MB limit.
+
+## STATUS: delivered — clip 6 re-cut applied, shown before commit, verified on both sides
+
+Clip 6 now ends on the stone beat; the face-to-camera portion is fully
+removed from the assembled episode. All three prior versions of this clip
+(12.051s original, 9.625s round-4 cut, plus the 7.5s file itself) are
+preserved as separate files — nothing was destroyed, per the owner's
+explicit reversibility request. Everything before and after this clip in
+the final cut verified unchanged except for the expected timeline shift.
+Owner's watch-through remains the final gate per standing rule.
