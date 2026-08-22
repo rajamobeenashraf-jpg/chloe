@@ -77,12 +77,18 @@ export const CLIPS = [
   },
   {
     id: "clip4",
-    duration: 11.051995,
+    duration: 13.072834,
     captions: [
-      { start: 2.85, end: 4.81, text: "You tie knots like a sailor.", speaker: "Quartermaster" },
-      { start: 5.52, end: 6.13, text: "Thank you." },
-      { start: 6.55, end: 7.46, text: "Sailors drown.", speaker: "Quartermaster" },
-      { start: 8.04, end: 9.53, text: "Water to the shield line at dawn. Stay low.", speaker: "Quartermaster" },
+      // v2 (owner-directed: added a Krethon-naming aside before his clip 6
+      // introduction, regenerated from scratch). Timing re-derived from
+      // fresh silencedetect, cross-checked with mouth-frame sampling —
+      // the aside (segment 4) confirmed via a visible warm half-smile at
+      // ~8.9s just before it ends, matching the "quick warm aside" intent.
+      { start: 0.28, end: 2.97, text: "You tie knots like a sailor.", speaker: "Quartermaster" },
+      { start: 3.35, end: 5.31, text: "Thank you." },
+      { start: 5.70, end: 6.19, text: "Sailors drown.", speaker: "Quartermaster" },
+      { start: 6.19, end: 9.14, text: "Krethon's knot. Ties tighter than anyone I've met." },
+      { start: 9.45, end: 11.24, text: "Water to the shield line at dawn. Stay low.", speaker: "Quartermaster" },
     ],
   },
   {

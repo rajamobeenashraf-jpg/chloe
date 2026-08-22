@@ -37,13 +37,13 @@
     },
     {
       "n": 4,
-      "duration": 11,
+      "duration": 13,
       "timeOfDay": "midday, bright direct sun, scene fully lit",
       "scene": "She steps into a line of soldiers passing water buckets hand to hand toward the ships unasked, matching their rhythm, then crouches and re-knots a soldier's frayed shield strap with a length of her own belt cord while he drinks from a waterskin. {quartermaster} stands watching nearby, arms crossed, wax tablet under one arm.",
-      "dialogue": "Quartermaster, watching her tie the knot, dry: \"You tie knots like a sailor.\" She, glancing up, small proud smile: \"Thank you.\" Quartermaster, already turning to walk off, flat: \"Sailors drown.\" He pauses mid-step, not looking back: \"Water to the shield line at dawn. Stay low.\" She looks after him, then turns her face to the lens, unreadable.",
-      "action": "Active-participant: she joins the water line and does the knot repair unasked, per §12. The quartermaster delivers both deadpan lines without breaking his stride/expression.",
+      "dialogue": "Quartermaster, watching her tie the knot, dry: \"You tie knots like a sailor.\" She, glancing up, small proud smile: \"Thank you.\" Quartermaster, already turning to walk off, flat: \"Sailors drown.\" She, still crouched finishing the knot, a quick warm aside to the lens: \"Krethon's knot. Ties tighter than anyone I've met.\" Quartermaster pauses mid-step, not looking back: \"Water to the shield line at dawn. Stay low.\" She looks after him, then turns her face to the lens, unreadable.",
+      "action": "Active-participant: she joins the water line and does the knot repair unasked, per §12. The quartermaster delivers both deadpan lines without breaking his stride/expression. NEW ASIDE — CRITICAL (added per owner direction, to name-drop {krethon} once before his proper on-screen introduction later in the episode): the Krethon line is a quick, light, half-smiling two-second aside to the lens, delivered while she is still crouched finishing the knot — not a big dramatic beat, just a brief plant of his name. {krethon} himself is NOT visible in this clip and is NEVER shown or depicted here — she is simply referencing him by name while doing an unrelated task. Do not add another soldier or attempt to visually represent him in this scene.",
       "sound": "bucket splashes, rope creak, camp clatter, gulls",
-      "craft": "she earns her place + deadpan x2 + the order that breaks rule one (sets up clip 5)"
+      "craft": "she earns her place + deadpan x2 + the order that breaks rule one (sets up clip 5). v2 (owner-directed): added a quick aside naming Krethon before his clip 6 introduction, folded into the existing knot-tying scene (same motif as his clip 6 knotted-cord prop) rather than a new standalone clip — extended duration 11s→13s to fit the extra line without rushing the existing beats."
     },
     {
       "n": 5,

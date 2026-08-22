@@ -220,6 +220,11 @@ Two more candidates, both severity 2/unverified (hints, not confirmed): rope-kno
 
 Both CONFIRMED findings, plus the two still-open items from earlier rounds (clip 6 rope-fingers, clip 10 hide-pelt warping) and the Krethon dialogue-line decision, presented to the owner together for a batch decision.
 
+## Owner decision on the batch of open items: implement Krethon line, leave everything else
+Owner: implement the Krethon-before-clip-6 line, waive the rest (clip 6 rope-fingers, clip 10 pelt-warping, clip 1's ships, clip 5 v4's arrow flight-path) — no further changes to those.
+
+**Clip 4 v2**: added the pitched aside — "Krethon's knot. Ties tighter than anyone I've met." — delivered as a warm half-smile aside while still crouched finishing the knot, between the quartermaster's "Sailors drown." and his exit line. Duration extended 11s→13s. Regenerated; Krethon himself correctly never appears on screen (prompt explicitly forbade it). Verified via full-clip frame sweep: existing beats (quartermaster's two deadpan lines, the knot-tying/shield-strap action, wardrobe) all intact; the new aside reads warm and quick as intended — a genuine half-smile visible right before it ends. Caption timing re-derived from fresh silencedetect cross-checked with mouth-frame sampling (confirmed the aside's warm expression lands at ~8.9s, just before its measured end). Reassembled: runtime 126.54s→128.54s (+2s, matches the duration change exactly), frame count and cue count both grew proportionally as expected. Caption burn spot-checked in the assembled cut — synced correctly. Edit-stage Gemini re-QC (qc + captions modes) launched to confirm no regressions from the regen.
+
 ## Next steps (after Gate 1 approval)
 1. Generate all 12 clips per the `episodes-5-9-scripts.md` Episode 7 table — single continuous takes, durations per beat, daylight/golden-hour only (owner lighting lock — never fully dark), pre-generation self-check every clip (creative-direction.md §7–§15), NPC continuity (Krethon, quartermaster, Trojan boy sentry), italicized `[Speaker]` tags for their lines.
 2. Assemble with `pai-pro-tooling/salem/`-derived tooling: true hard cuts, 0.08s audio-only edge fades, loudnorm frame-exact, canonical caption style (`MarginV=320`), mouth-frame cross-check on ambiguous cues.
