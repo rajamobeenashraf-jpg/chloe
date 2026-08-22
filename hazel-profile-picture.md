@@ -44,4 +44,9 @@ All 7 candidates compared against the benchmark (face-detail sheet + turnaround 
 
 **Audit conclusion:** the PAI `image-edit-pro` renders are the most identity-faithful and most photographic — the only two "SAME PERSON" verdicts — with **lawn the overall winner on both axes**, matching the owner's instinct. Confirms the lock's guidance that PAI image-edit-pro is the faithful still-generation route; Soul V2 renders score lowest on realism.
 
-**Owner decision pending:** final profile picture pick (lawn recommended, now data-backed) + whether this styled look appears anywhere beyond the profile picture.
+**Round 5 (owner request, 2026-08-22): PAI Pro with the v5 character sheet as reference.** Refs = Ep 4's working five at SHA-pinned raw URLs (`raw.githubusercontent.com/rajamobeenashraf-jpg/chloe/22f35d0a.../character-refs/ref_08,09,10,01,06.png`), frozen identity string verbatim. Styling: **Full Glam** (dramatic smoky eyes, sharp liner, dense lashes, sculpted contour, bold glossy lip — freckles kept faintly visible through the base per the identity-anchor rule) + **Butterfly Cut** (short curled face-framing layers winging over the long layers, color/length unchanged).
+- **Restaurant** — deep-emerald silk gown, candlelit fine-dining room, chandelier bokeh, city windows. QC ✅ identity (freckles faint but present), butterfly layers visible, hand on the coupe anatomically clean.
+- **Bedroom selfie** — ivory silk long-sleeved lounge set, upholstered headboard, peonies, natural extended selfie arm. QC ✅ identity (freckles clearly visible through the glam — best of the pair), butterfly layers visible.
+Both delivered in chat only (PAI returns bytes, no CDN copy) — owner must save keepers; regenerate from these settings if lost.
+
+**Owner decision pending:** final profile picture pick (lawn recommended among soft-glam takes; round-5 pair are the Full-Glam alternates) + whether these styled looks appear anywhere beyond profile/branding assets.
