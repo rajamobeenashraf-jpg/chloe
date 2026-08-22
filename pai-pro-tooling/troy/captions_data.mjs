@@ -89,17 +89,19 @@ export const CLIPS = [
     id: "clip5",
     duration: 6.060000,
     captions: [
-      // v5 (researched leather waterskin + corrected one-handed hold,
-      // regenerated from scratch — timing re-derived fresh, not carried
-      // over from v4). Soldier's line has real silencedetect markers
-      // (speech 0.134-1.119s, silence gap 1.119-1.256s as he grabs her).
-      // No further silencedetect data after that (chaos noise defeats
-      // threshold) — her line's window found via mouth-frame cross-check:
-      // mouth closed/breathing through the pull-down and duck under the
-      // shield (~1.3-2.8s), then continuously open/speaking to the lens
-      // from ~2.8s, closing into a settled smile by ~5.3-5.5s.
-      { start: 0.134, end: 1.119, text: "Water girl! DOWN!", speaker: "Soldier" },
-      { start: 2.8, end: 5.3, text: "Okay. That's new." },
+      // OWNER DECISION: reverted to v4's actual footage (v5 verified clean
+      // but owner prefers v4's take) — see clips.json's clip5 craft note.
+      // No silencedetect markers at all on v4 (chaos/battle noise never
+      // drops below threshold) — timing from a fresh dense mouth-frame
+      // cross-check (8fps across the full clip, not assumed from the
+      // pre-session cached numbers): soldier's mouth open/shouting during
+      // the grab ~1.0-2.2s; her mouth closed/settling from ~2.2-3.0s
+      // (catching her breath, not yet speaking), then open continuously
+      // from ~3.5s toward the lens through to the last frame of the clip
+      // (~5.9s) — this pass moved her line's start ~0.3s earlier than the
+      // previously cached estimate.
+      { start: 1.0, end: 2.2, text: "Water girl! DOWN!", speaker: "Soldier" },
+      { start: 3.5, end: 5.9, text: "Okay. That's new." },
     ],
   },
   {

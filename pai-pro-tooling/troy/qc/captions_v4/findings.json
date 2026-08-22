@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "timestamp": "01:54",
+      "category": "text",
+      "severity": 3,
+      "description": "Burned-in caption spells character name as 'Krean' instead of 'Krethon'.",
+      "end_timestamp": "01:55",
+      "fix": "Change caption text to 'Get home, Krethon.'",
+      "verdict": "DISMISSED",
+      "refined_description": "The burned-in caption correctly spells the character's name as 'Krethon' ('Get home, Krethon.') between 01:53.600 and 01:54.000, not 'Krean'."
+    }
+  ],
+  "summary": "Captions accurately match speech throughout most of the clip, with a single character name misspelling near the end.",
+  "overall_score": 7.2
+}
