@@ -486,13 +486,82 @@ sent — this attempt was blocked by an automatic permission classifier
 before it reached PAI. Not retried or worked around; flagged to the
 owner, awaiting their call on how to proceed.
 
+## 2026-08-22 (cont.) — Clip 9 fix, new clip 7b, episode now 12 clips
+
+**Clip 9 — identity/blood/staging root-caused and fixed.** Owner caught
+that the man being shielded had blood on him and read as being grabbed
+rather than protected. Root cause found in the prompt itself: clips 6/7
+both insert `${ARTEMIDORUS}`'s full locked description at the point he
+appears; clip 9 only used his bare name, right next to the line about
+blood-marked senators bursting from the doors — almost certainly why the
+render substituted a generic wounded senator instead of him. Fixed by
+inserting `${ARTEMIDORUS}` explicitly, adding positive description that
+he's clean/unmarked/was never inside, keeping him gripping his scroll, and
+spelling out the shelter body-language explicitly. Regenerated (v2):
+identity, blood, and the grab/pull motion all read correctly now, but the
+held final pose still didn't fully land (gap between bodies, his arms
+passive, wary expression) — an honest partial fix, said so plainly rather
+than calling it done. Owner asked whether it's fixable without another
+regeneration; found a strong natural cut point at ~8.9–9.1s where both her
+arms are fully wrapped around him mid-motion, right before the pose
+settles into the static version that read as pinning. Trimmed clip9.mp4
+from 10.05s to 9.2s at that point (pre-trim full version kept as
+`clip9_v2_full_pretrim.mp4`), added a short audio fade-out so the cut
+isn't an abrupt pop. **Owner accepted the trimmed result.**
+
+**New clip 7b added — Caesar's first real moment in the episode.** Owner
+pushed back hard on Caesar being a non-character (`CAESAR_GLIMPSED` only,
+no lines, no scene of his own) despite being the episode's subject, then
+asked for a direct exchange between her and him. Talked through why a full
+conversation isn't workable (contradicts clip 7's already-locked "lictors
+physically block her" mechanic, which is the actual engine of the
+Artemidorus tragedy) and proposed one brief, real exchange instead: she
+says "You should take your guards today"; he stops for one beat and
+answers her directly with the verified Plutarch line ("I've had guards
+enough for one lifetime. Better to die once than live afraid of it.")
+before being swept back into the procession. Owner agreed. Inserted as a
+new clip between 7 and 8, id `"7b"` (kept as a string specifically so the
+existing 8–11 files/numbering didn't need to change) — required patching
+`generate_clips.mjs`'s targeted-regeneration arg parser and manifest sort,
+both of which assumed purely numeric ids. Generated once, dialogue came
+back verbatim-correct and — notably — pacing was clean and measured on the
+first attempt for both speakers. Two findings reported, neither fixed:
+Caesar's procession never actually stops (keeps moving the whole time,
+against the script's explicit direction), and his escort renders as
+armored soldiers in a wheeled cart rather than lictors on a carried
+litter — though checked against clip 7's already-approved footage, that
+part is consistent with what's already locked, not a new defect, just more
+noticeable now that the dialogue is specifically about him having no
+guards. **Owner accepted as-is, both findings left unfixed.**
+
+Episode is now 12 clips (1, 2, 3, 4, 5, 6, 7, 7b, 8, 9, 10, 11).
+
+**Still open, no action taken yet:**
+- **Clip 1** — three versions exist in tension: v1 (rooftop, retired),
+  v2 (Forum street-level, clean pacing, had the Pantheon/inscription
+  issue — file no longer exists, overwritten), v3 (current file on disk —
+  DOF fix resolved the Pantheon issue but introduced a TV-antenna
+  anachronism and the pacing defect came back). Owner asked to see v2
+  again; the regeneration attempt to reproduce it was blocked by an
+  automatic permission classifier before reaching PAI. Not retried.
+  Awaiting owner's call.
+- **Clip 11** — pacing confirmed bad (~5.05 wps measured, corroborated by
+  Gemini's independent qualitative read: "fast, brisk, sharp" versus the
+  scripted "quiet, weary eulogy"). Recommended fix: split into two clips
+  at the natural pause point, no dialogue trimmed, each half gets proper
+  room to breathe at a natural pace (~3.0 wps, judged more appropriate
+  than the vlog-baseline 3.3 wps since this is the one clip that's
+  supposed to drop the vlogger energy entirely). Not yet authorized.
+
 ## Next steps
 1. ~~Owner confirms/adjusts the costume look~~ DONE — see Gate 1 final
    decision above.
 2. ~~Generate all 11 clips~~ DONE, self-QC'd and fixed — see Gate 2 above.
 3. ~~Gemini eyes QC on the full clip set entering the edit~~ DONE, 16
    confirmed findings triaged, 5 clips fixed and re-verified — see Gate 2
-   round 2 above. Awaiting owner's clip-by-clip review of the current set.
+   round 2 above. Clip 1 restaged, clip 9 fixed, new clip 7b added since —
+   owner reviewing each as delivered per the now-locked send-every-clip
+   rule. Clip 1 and clip 11 still have open, unresolved issues (see above).
 4. Assemble: hard-cut stitch + captions per §16 canonical style, sound design
    per the episode header (full Forum ambience → dead at clip 9 → wind/paper).
 5. Gate 3: stitched-cut owner review.
