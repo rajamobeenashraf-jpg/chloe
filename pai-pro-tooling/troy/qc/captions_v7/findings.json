@@ -1,0 +1,36 @@
+{
+  "findings": [
+    {
+      "timestamp": "01:02",
+      "category": "text",
+      "severity": 3,
+      "description": "Caption misspells 'Agamemnon' as 'Agamon'.",
+      "end_timestamp": "01:04",
+      "fix": "[Achilles] Agamemnon took what was mine. I won't hand him my sword too.",
+      "verdict": "DISMISSED",
+      "refined_description": "The on-screen caption correctly spells the name as 'Agamemnon'."
+    },
+    {
+      "timestamp": "01:22",
+      "category": "text",
+      "severity": 3,
+      "description": "Character name misspelled in subtitle as 'Kredian's' instead of 'Krethon's'.",
+      "end_timestamp": "01:23",
+      "fix": "He's about the age Krethon's son would be.",
+      "verdict": "DISMISSED",
+      "refined_description": "The on-screen subtitle correctly displays the text 'He's about the age Krethon's son would be.', with 'Krethon's' spelled properly rather than 'Kredian's'."
+    },
+    {
+      "timestamp": "01:55",
+      "category": "text",
+      "severity": 3,
+      "description": "Character name spelled as 'Crean' instead of 'Krethon'.",
+      "end_timestamp": "01:56",
+      "fix": "Get home, Krethon.",
+      "verdict": "DISMISSED",
+      "refined_description": "The on-screen subtitle at 01:55.600 correctly spells the name as 'Krethon' ('Get home, Krethon.') rather than 'Crean'."
+    }
+  ],
+  "summary": "Subtitles are largely synchronized and accurate, with minor spelling inconsistencies in classical Greek names.",
+  "overall_score": 6.8
+}
