@@ -69,7 +69,10 @@ export const CLIPS = [
     id: "clip3",
     duration: 9.055782,
     captions: [
-      { start: 0.776, end: 2.140, text: "The wine has been watered five times.", speaker: "Soldier" },
+      // Cue1 start corrected 0.776->0.2 (strict re-audit, 2026-08-22):
+      // dense frame check found his mouth already forming distinct speech
+      // shapes by ~0.15-0.25s, well before the caption previously appeared.
+      { start: 0.2, end: 2.140, text: "The wine has been watered five times.", speaker: "Soldier" },
       { start: 2.666, end: 3.740, text: "So it's a rumor of wine." },
       { start: 3.889, end: 5.097, text: "It is a MEMORY of wine.", speaker: "Soldier" },
       { start: 6.328, end: 8.403, text: "4/10. The cake could stop an arrow. I'm keeping it." },
@@ -130,8 +133,12 @@ export const CLIPS = [
       // Achilles directly and says his name herself, real strategy
       // dialogue). Timing from real silencedetect on the v5 render.
       { start: 0.0, end: 0.456, text: "Achilles." },
-      { start: 1.322, end: 4.263, text: "Nine years. They say you could end this war tomorrow, if you fought. Why don't you?" },
-      { start: 4.386, end: 7.725, text: "Agamemnon took what was mine. I won't hand him my sword too.", speaker: "Achilles" },
+      // cue2/cue3 boundary corrected 4.263/4.386->4.7 (strict re-audit,
+      // 2026-08-22): dense frame check found her mouth still visibly
+      // talking through 4.375-4.625s -- the original split cut into her
+      // own line before it finished, captioning his reply too early.
+      { start: 1.322, end: 4.7, text: "Nine years. They say you could end this war tomorrow, if you fought. Why don't you?" },
+      { start: 4.7, end: 7.725, text: "Agamemnon took what was mine. I won't hand him my sword too.", speaker: "Achilles" },
       { start: 8.795, end: 9.745, text: "That's not strategy." },
       { start: 10.353, end: 14.071, text: "That's a grudge with an army behind it. I have never been more scared of anyone in my life." },
     ],
@@ -172,14 +179,16 @@ export const CLIPS = [
     id: "clip10",
     duration: 15.069002,
     captions: [
-      // v5 (smoke-trail-only fix on top of v4's trajectory fix — every
-      // other beat untouched, but the whole clip was regenerated so
-      // timing was re-checked fresh rather than assumed identical). No
+      // v6 (dusk-sky fix — a strict transitions/lighting re-check found
+      // the opening beat rendering with bright daytime sky instead of the
+      // required dusk continuation from clip 9; fixed, all other beats
+      // untouched, but regenerated so timing was re-checked fresh). No
       // silencedetect data during the dialogue beat (fire/chaos noise
-      // defeats threshold, same as v3/v4) — mouth-frame cross-check:
-      // mouth open/moving toward the lens ~9.6-10.3s during the
-      // hide-hauling beat with Krethon, closing as she turns away right after.
-      { start: 9.6, end: 10.3, text: "—stay with me—" },
+      // defeats threshold, same as v3/v4/v5) — mouth-frame cross-check on
+      // this new take: mouth open/moving toward the lens ~9.0-9.8s during
+      // the hide-hauling beat with Krethon, before the POV shifts to
+      // follow him and she turns away.
+      { start: 9.0, end: 9.8, text: "—stay with me—" },
     ],
   },
   {
