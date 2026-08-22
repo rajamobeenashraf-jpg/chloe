@@ -576,15 +576,18 @@ callback to Spurinna (clip 5). Not confirmed with certainty, not raised
 again since, not fixed.
 
 **Still open, no action taken yet:**
-- **Clip 1** — three versions exist in tension: v1 (rooftop, retired),
-  v2 (Forum street-level, clean pacing, had the Pantheon/inscription
-  issue — file no longer exists, overwritten), v3 (current file on disk —
-  DOF fix resolved the Pantheon issue but introduced a TV-antenna
-  anachronism and the pacing defect came back). Owner asked to see v2
-  again; the regeneration attempt to reproduce it was blocked by an
-  automatic permission classifier before reaching PAI. Not retried.
-  Owner has since seen the current v3 file again but hasn't yet ruled on
-  how to proceed. Awaiting owner's call.
+- **Clip 1 — RESOLVED, accepted as-is.** Three versions existed in
+  tension: v1 (rooftop, retired), v2 (Forum street-level, clean pacing,
+  had the Pantheon/inscription issue — file no longer exists, overwritten),
+  v3 (DOF fix resolved the Pantheon issue but introduced a TV-antenna
+  anachronism and the pacing defect came back). The regeneration attempt
+  to reproduce v2 for viewing was blocked by an automatic permission
+  classifier before reaching PAI; not retried. Owner was shown the current
+  v3 file (twice) and **explicitly accepted it as final, known issues and
+  all** — same pattern as clip 11's Part A: the owner's watch-through is
+  the actual gate, not the QC findings on their own.
+
+**All 13 clips now owner-approved. Gate 2 is complete.**
 
 ## Next steps
 1. ~~Owner confirms/adjusts the costume look~~ DONE — see Gate 1 final
@@ -592,9 +595,12 @@ again since, not fixed.
 2. ~~Generate all 11 clips~~ DONE, self-QC'd and fixed — see Gate 2 above.
 3. ~~Gemini eyes QC on the full clip set entering the edit~~ DONE, 16
    confirmed findings triaged, 5 clips fixed and re-verified — see Gate 2
-   round 2 above. Clip 1 restaged, clip 9 fixed, new clip 7b added since —
-   owner reviewing each as delivered per the now-locked send-every-clip
-   rule. Clip 1 and clip 11 still have open, unresolved issues (see above).
+   round 2 above. Clip 1 restaged, clip 9 fixed and trimmed, new clip 7b
+   added, clip 11 split into 11/11b and both fixed — every clip delivered
+   and owner-approved per the now-locked send-every-clip rule. **All open
+   clip-level issues are now resolved or explicitly accepted by the
+   owner.** Sequence is 1, 2, 3, 4, 5, 6, 7, 7b, 8, 9, 10, 11, 11b (13
+   clips).
 4. Assemble: hard-cut stitch + captions per §16 canonical style, sound design
    per the episode header (full Forum ambience → dead at clip 9 → wind/paper).
 5. Gate 3: stitched-cut owner review.
