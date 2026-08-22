@@ -21,4 +21,7 @@
 | **NB1 — polished glam** | `24f946e8-707a-49eb-82ff-762a76f5a03d` | ✅ identity match; softer, more editorial finish; freckles subtle |
 | **NB2 — as-filmed texture (recommended)** | `f8a48cc8-65c3-4305-917d-c8368d71e599` | ✅ identity match; strongest freckle/skin-texture fidelity to the locked look |
 
-**Owner decision pending:** final pick (NB2 recommended for identity fidelity; NB1 if a more polished look is preferred; Soul v3/v4 remain as rejected alternates) + whether this styled look appears anywhere beyond the profile picture.
+**Round 3 (owner request: same brief via PAI Pro):** generated through `image-edit-pro` (PAI raw passthrough, called directly via `server/pai_image_pro_client.js` — the canvas CLI needs the viewer app this headless session can't run), all FIVE master reference CDN URLs in `payload.image`, frozen identity string verbatim, 1024×1024 PNG, ~138s, ~$0.26. Output is NOT stored on a CDN (PAI returns bytes) — the file was delivered in chat; regenerate from this manifest's settings if ever needed again.
+- QC: ✅ identity match (face/eyes/brows/lips/freckles/skin), best wave definition of the three engines, soft glam correct. Deviation: soft parted-lips editorial expression instead of the briefed smile — flagged to owner, re-roll offered.
+
+**Owner decision pending:** final pick across the three engines (NB2 recommended for identity fidelity; NB1 more polished; PAI round-3 best hair, different expression; Soul v3/v4 rejected) + whether this styled look appears anywhere beyond the profile picture.
