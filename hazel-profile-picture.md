@@ -24,4 +24,9 @@
 **Round 3 (owner request: same brief via PAI Pro):** generated through `image-edit-pro` (PAI raw passthrough, called directly via `server/pai_image_pro_client.js` — the canvas CLI needs the viewer app this headless session can't run), all FIVE master reference CDN URLs in `payload.image`, frozen identity string verbatim, 1024×1024 PNG, ~138s, ~$0.26. Output is NOT stored on a CDN (PAI returns bytes) — the file was delivered in chat; regenerate from this manifest's settings if ever needed again.
 - QC: ✅ identity match (face/eyes/brows/lips/freckles/skin), best wave definition of the three engines, soft glam correct. Deviation: soft parted-lips editorial expression instead of the briefed smile — flagged to owner, re-roll offered.
 
-**Owner decision pending:** final pick across the three engines (NB2 recommended for identity fidelity; NB1 more polished; PAI round-3 best hair, different expression; Soul v3/v4 rejected) + whether this styled look appears anywhere beyond the profile picture.
+**Round 4 (owner picked PAI as the better engine; directed: nice dress + premium location, drawing room or lawn of her house):** two PAI `image-edit-pro` renders, same 5-ref protocol, head-to-waist framing so the dress shows:
+- **Drawing room** — champagne satin midi dress, cream sofas/brass lamps/flowers/sheer curtains. QC ✅ identity; note: mouth open mid-speech rather than a soft smile.
+- **Lawn (recommended)** — sage flowy summer dress, golden-hour manicured lawn + rose beds, elegant stone house behind. QC ✅ identity, soft gentle smile, best light; balayage reads warmer/blonder in sunset light (acceptable).
+Both delivered in chat (PAI returns bytes, no CDN copy — owner must save the pick).
+
+**Owner decision pending:** final profile picture pick (lawn recommended) + whether this styled look appears anywhere beyond the profile picture.
