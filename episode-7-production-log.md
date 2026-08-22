@@ -300,7 +300,9 @@ Cross-checked with a dense frame pull at every proposed boundary before trusting
 
 **Rebuild**: `qc_pass.mjs` → `build_final_cut.mjs` → `export_srt.mjs`. Runtime returned to 128.54s (identical to the pre-v3 locked baseline, since v2 and v3 share the same 13.07s clip duration). Burned captions spot-checked at all 5 new cue windows in the assembled cut — text and timing both confirmed correct, speaker tag `[Quartermaster]` displaying on his 3 lines as before.
 
-**Final scoped Gemini captions-mode check** on clip4's window (26–39s) in the rebuilt cut — pending, see below.
+**Final scoped Gemini captions-mode check** on clip4's window (26–39s) in the rebuilt cut: 0 candidate findings, score 6.8/10 (matches episode baseline). Summary prose mentioned a "phonetic misspelling of 'Cretan knot'" but nothing landed in the actual findings array — same recurring false-positive this session has hit repeatedly on "Krethon," confirmed against source text (still spelled correctly, unchanged). Nothing to act on.
+
+Red Cross emblem remains the sole open item awaiting an owner decision.
 1. Generate all 12 clips per the `episodes-5-9-scripts.md` Episode 7 table — single continuous takes, durations per beat, daylight/golden-hour only (owner lighting lock — never fully dark), pre-generation self-check every clip (creative-direction.md §7–§15), NPC continuity (Krethon, quartermaster, Trojan boy sentry), italicized `[Speaker]` tags for their lines.
 2. Assemble with `pai-pro-tooling/salem/`-derived tooling: true hard cuts, 0.08s audio-only edge fades, loudnorm frame-exact, canonical caption style (`MarginV=320`), mouth-frame cross-check on ambiguous cues.
 3. Edit-stage Gemini eyes QC (owner's rule — never during generation): full clip set, assembled cuts, captions mode vs .srt.
