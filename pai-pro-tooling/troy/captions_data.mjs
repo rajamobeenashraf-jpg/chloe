@@ -157,15 +157,14 @@ export const CLIPS = [
     id: "clip10",
     duration: 15.069002,
     captions: [
-      // v4 (fire-arrow trajectory fix only — opening beat, brazier-kick,
-      // hides, wounded man, wardrobe all unchanged from v3, but the whole
-      // clip was regenerated so timing was re-checked fresh, not assumed
-      // identical). No silencedetect data during the dialogue beat itself
-      // (fire/chaos noise defeats threshold, same as v3) — mouth-frame
-      // cross-check found a tighter window this render: mouth open/moving
-      // toward the lens ~9.9-10.3s during the hide-hauling beat with
-      // Krethon, closing as she turns to a new action immediately after.
-      { start: 9.9, end: 10.4, text: "—stay with me—" },
+      // v5 (smoke-trail-only fix on top of v4's trajectory fix — every
+      // other beat untouched, but the whole clip was regenerated so
+      // timing was re-checked fresh rather than assumed identical). No
+      // silencedetect data during the dialogue beat (fire/chaos noise
+      // defeats threshold, same as v3/v4) — mouth-frame cross-check:
+      // mouth open/moving toward the lens ~9.6-10.3s during the
+      // hide-hauling beat with Krethon, closing as she turns away right after.
+      { start: 9.6, end: 10.3, text: "—stay with me—" },
     ],
   },
   {
