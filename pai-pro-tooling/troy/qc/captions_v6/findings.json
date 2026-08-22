@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:31",
+      "category": "text",
+      "severity": 2,
+      "description": "Spoken line 'Sailors drown' is missing from burned-in captions.",
+      "end_timestamp": "00:33",
+      "fix": "Add subtitle text '[Quartermaster] Sailors drown.'"
+    },
+    {
+      "timestamp": "01:27",
+      "category": "text",
+      "severity": 2,
+      "description": "Background dialogue 'Who would DRAG it?' is omitted in caption text.",
+      "end_timestamp": "01:28",
+      "fix": "Include caption '[Soldier] Who would DRAG it?'"
+    }
+  ],
+  "summary": "Captions generally align well with video audio, with minor missing background line transcriptions.",
+  "overall_score": 6.8
+}
