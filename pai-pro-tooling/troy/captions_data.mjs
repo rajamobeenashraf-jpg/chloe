@@ -82,23 +82,28 @@ export const CLIPS = [
     id: "clip4",
     duration: 13.072834,
     captions: [
-      // v3 (owner-directed: owner caught that cues 1-3's captions didn't
-      // match visible lip movement -- verified true via dense 12fps frame
-      // trace: the quartermaster wasn't clearly on camera/speaking during
-      // cue1, and was passive/arms-crossed with no mouth movement during
-      // cue3. Rewrote clips.json with explicit visibility/lip-sync staging
-      // for his first two lines and regenerated from scratch. New take has
-      // a longer walk-in (bucket-passing) before the knot-tying beat
-      // begins, shifting all timing later than v2. Re-derived fresh via
-      // silencedetect cross-checked with dense mouth-frame verification:
-      // he's now confirmed close/facing her with visible open-mouth speech
-      // at ~4.1s (cue1) and ~6.6s (cue3); cue5's back-turned "not looking
-      // back" staging confirmed unchanged/correct at ~10.5s.
-      { start: 4.0, end: 4.9, text: "You tie knots like a sailor.", speaker: "Quartermaster" },
-      { start: 4.98, end: 5.5, text: "Thank you." },
-      { start: 5.83, end: 6.73, text: "Sailors drown.", speaker: "Quartermaster" },
-      { start: 7.25, end: 9.5, text: "Krethon's knot. Ties tighter than anyone I've met." },
-      { start: 9.9, end: 12.0, text: "Water to the shield line at dawn. Stay low.", speaker: "Quartermaster" },
+      // REVERTED TO v2 (owner-directed, 2026-08-22): v3 re-shot the clip to
+      // fix the quartermaster's lip-sync/visibility; the owner rejected that
+      // approach -- footage stays v2, captions only get fixed. Old v2 timing
+      // (0.28/3.35/5.70/6.19/9.45 starts) was itself wrong: it placed cue1
+      // nearly 3.6s before any dialogue actually starts. Re-derived from
+      // scratch against v2's real audio: Gemini eyes (ask mode) gave exact
+      // per-line speech onset/offset by listening to the track directly,
+      // cross-checked against a dense frame pull at every proposed boundary.
+      // Frames confirm the sequence is coherent (her warm smile lands right
+      // at the Krethon-aside window ~9.5s; he's mid-stride walking off during
+      // the final line ~12s) but also confirm the original limitation is
+      // still there in this footage: he's not yet in frame for cue1's
+      // 3.90-5.25s window, and stands passive/arms-crossed (no visible mouth
+      // movement) for cue3 -- expected, since the owner chose to keep this
+      // take rather than re-shoot it. Captions below match actual word
+      // delivery, not visible lip movement (which this take can't support
+      // for his first two lines).
+      { start: 3.90, end: 5.25, text: "You tie knots like a sailor.", speaker: "Quartermaster" },
+      { start: 5.38, end: 5.95, text: "Thank you." },
+      { start: 6.15, end: 7.12, text: "Sailors drown.", speaker: "Quartermaster" },
+      { start: 7.22, end: 9.35, text: "Krethon's knot. Ties tighter than anyone I've met." },
+      { start: 9.55, end: 12.35, text: "Water to the shield line at dawn. Stay low.", speaker: "Quartermaster" },
     ],
   },
   {

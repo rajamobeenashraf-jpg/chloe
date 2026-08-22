@@ -281,7 +281,26 @@ Went back with much denser scrutiny (12fps trace) than the earlier passes and fo
 
 **Red Cross emblem — now confirmed independently across 5+ separate QC rounds**, unambiguous and stable every time. This is the one item still awaiting an explicit owner decision before delivery is complete.
 
-## Next steps (after Gate 1 approval)
+## Owner rejects the clip4 re-shoot: revert to v2 footage, captions-only fix
+
+Owner's reaction to the v3 delivery: confusion that the clip had changed at all, then an explicit correction once clarified — they never asked for a re-shoot, only for the captions to be timed to match dialogue/word delivery. Direct instruction: "fix the version two, fix its captions. That's it."
+
+**Reverted the footage**: `clip4_v1.mp4` restored from `assets/rejected/clip4_v2_quartermaster_not_speaking.mp4` (byte-verified via checksum, `047d8b2d...`). v3's render preserved at `assets/rejected/clip4_v3_not_used_owner_pref.mp4` for reference, same pattern as the clip5 v4/v5 precedent. `clips.json`'s clip4 entry reverted to v2's scene/action text, with an owner-decision warning block appended to the craft note (mirrors clip5's) so a future regeneration from this prompt won't silently reproduce v3.
+
+**Root cause of the original complaint, re-examined**: the old v2 caption timing (cue1 at 0.28–2.97s) was derived during the very first assembly pass, before this clip carried the weight of scrutiny it later got. Re-investigating from scratch: it was wrong by nearly 3.6 seconds — actual dialogue in this take doesn't start until ~3.9s (the first ~4s is water-line/knot-tying business with no line spoken). That alone would make any caption look disconnected from lip movement, regardless of who's on camera. This was very likely the real originating bug the owner first caught, compounding with the genuine (and, per the owner's direction, now-accepted) visibility limitation of this take.
+
+**Fresh timing derivation against v2's real audio**: silencedetect on this clip proved unreliable on its own — ambient camp noise (bucket splashes, rope creak) crosses the threshold and produces speech-shaped gaps that aren't dialogue. Used Gemini eyes ask-mode instead, asking it to listen to the track directly and report exact per-line speech onset/offset for all 5 lines. Result came back fully sequential and non-overlapping:
+- "You tie knots like a sailor." — 3.90–5.25s
+- "Thank you." — 5.38–5.95s
+- "Sailors drown." — 6.15–7.12s
+- "Krethon's knot. Ties tighter than anyone I've met." — 7.22–9.35s
+- "Water to the shield line at dawn. Stay low." — 9.55–12.35s
+
+Cross-checked with a dense frame pull at every proposed boundary before trusting it. Frames corroborate the read: her warm smile lands right at the Krethon-aside window (~9.5–9.8s, matching the intended "quick warm aside" delivery), and the quartermaster is mid-stride walking away during the final line, consistent with the scripted staging. They also confirm honestly what's still true of this take: he isn't in frame yet for cue1's window, and stands passive/arms-crossed (no visible mouth movement) for cue3 — the same limitation that prompted the v3 re-shoot in the first place, now explicitly accepted by the owner rather than fixed. Captions match actual word delivery, not visible lip movement, which this take can't fully support for his first two lines.
+
+**Rebuild**: `qc_pass.mjs` → `build_final_cut.mjs` → `export_srt.mjs`. Runtime returned to 128.54s (identical to the pre-v3 locked baseline, since v2 and v3 share the same 13.07s clip duration). Burned captions spot-checked at all 5 new cue windows in the assembled cut — text and timing both confirmed correct, speaker tag `[Quartermaster]` displaying on his 3 lines as before.
+
+**Final scoped Gemini captions-mode check** on clip4's window (26–39s) in the rebuilt cut — pending, see below.
 1. Generate all 12 clips per the `episodes-5-9-scripts.md` Episode 7 table — single continuous takes, durations per beat, daylight/golden-hour only (owner lighting lock — never fully dark), pre-generation self-check every clip (creative-direction.md §7–§15), NPC continuity (Krethon, quartermaster, Trojan boy sentry), italicized `[Speaker]` tags for their lines.
 2. Assemble with `pai-pro-tooling/salem/`-derived tooling: true hard cuts, 0.08s audio-only edge fades, loudnorm frame-exact, canonical caption style (`MarginV=320`), mouth-frame cross-check on ambiguous cues.
 3. Edit-stage Gemini eyes QC (owner's rule — never during generation): full clip set, assembled cuts, captions mode vs .srt.
