@@ -5,7 +5,9 @@
 - "Use the content sheet — beach photos, full glam makeup."
 - "Use the content sheet: she's baking in a modern kitchen, no makeup, three photos."
 
-This file covers **everything that is NOT an episode**: Instagram photos and videos, dance/party/beach/travel content, promos, thumbnails, makeup content, posing shots. (Episodes are produced per `CHARACTER_LOCK.md` + `creative-direction.md` — not this file.)
+This file covers **everything that is NOT an episode**: Instagram photos and videos, dance/party/beach/travel content, promos, thumbnails, makeup content, posing shots.
+
+> **HARD GUARD — never use this file for episodes.** Episode clips, episode stills, and anything belonging to a numbered episode are produced ONLY per `CHARACTER_LOCK.md` + `creative-direction.md` (canonical reference set + frozen identity string), never via this pipeline. If a request names an episode AND says "use the content sheet", that wording is a mistake — do NOT comply; produce nothing and ask the owner which pipeline they meant.
 
 **Rule zero: the detailed law lives in `CHARACTER_LOCK.md` → section "LIFESTYLE PIPELINE — Scene Transplant".** If anything here ever seems to conflict with that file, CHARACTER_LOCK.md wins. Read it before producing.
 

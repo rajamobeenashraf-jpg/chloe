@@ -133,8 +133,10 @@ The EXACT same woman shown in the reference images — the character sheets and 
 
 ## LIFESTYLE PIPELINE — "Scene Transplant" (owner-agreed 2026-08-23, locked)
 
+**Owner's friendly entry point for this pipeline: `CONTENT_SHEET.md`** (repo root) — the owner invokes it as "use the content sheet to make [X]". That file is a thin recipe that defers to THIS section as the source of truth.
+
 **Two pipelines, never mixed:**
-- **Episodes (the show):** unchanged — generate from the canonical 20-image reference set + frozen identity string + matte/gritty clauses, per everything above. Episodes are the ground truth.
+- **Episodes (the show):** unchanged — generate from the canonical 20-image reference set + frozen identity string + matte/gritty clauses, per everything above. Episodes are the ground truth. **HARD GUARD: episode clips are NEVER produced via the Scene Transplant pipeline or CONTENT_SHEET.md — even if a request accidentally says "use the content sheet" while naming an episode, the episode workflow (this file + creative-direction.md) wins; flag the wording to the owner instead of complying.**
 - **ALL off-episode content** — Instagram photos and videos, lifestyle/dance/party/beach content, promos, thumbnails, makeup content — uses THIS pipeline. Never regenerate her face from references for lifestyle content; the reference-based route has a proven ~90–95% identity ceiling and is the reason "she looks different in pictures."
 
 **The method (proven end-to-end on PAI Pro, 2026-08-23 — restaurant glam stills sheer + full-coverage, and a 10s mall phone-call video):**
