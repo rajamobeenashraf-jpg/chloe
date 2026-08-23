@@ -311,3 +311,16 @@ export const SUB_STYLE = {
   marginLR: 60,
   spacing: 2.5,
 };
+
+// On-screen context cards (owner-approved 2026-08-23, wording + placement
+// locked from rendered mocks): serif family, hard cut in/out, no animation.
+// clip9's card is top-center (Alignment 8); clips 6/11 sit right-aligned
+// (Alignment 9) in each clip's empty upper-right sky pocket, verified
+// face-clear at the worst-case frames of every hold window. Cards are
+// burned by qc_pass.mjs alongside captions but are NOT exported to the
+// .srt (they are not dialogue).
+export const CARDS = [
+  { clip: "clip6", start: 0.0, end: 3.0, text: "KRETHON.\\NNINE YEARS FROM HOME.", align: 9, fontSize: 42, marginV: 88, marginLR: 36 },
+  { clip: "clip9", start: 0.0, end: 2.5, text: "NINE YEARS IN.\\NSTILL NO HORSE.", align: 8, fontSize: 46, marginV: 240, marginLR: 40 },
+  { clip: "clip11", start: 1.2, end: 5.2, text: "BEHIND HER:\\NSHE SAID IT FIRST.", align: 9, fontSize: 42, marginV: 88, marginLR: 36 },
+];

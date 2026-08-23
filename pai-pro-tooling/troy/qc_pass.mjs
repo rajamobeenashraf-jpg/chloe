@@ -8,7 +8,7 @@ import fs from "node:fs/promises";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import path from "node:path";
-import { CLIPS, SUB_STYLE } from "./captions_data.mjs";
+import { CLIPS, SUB_STYLE, CARDS } from "./captions_data.mjs";
 
 const run = promisify(execFile);
 const PROJECT_DIR = new URL(".", import.meta.url).pathname;
@@ -37,7 +37,7 @@ function captionText(c) {
   return `{\\i1}[${escapeAssText(c.speaker)}]{\\i0} ${text}`;
 }
 
-function buildAss(captions) {
+function buildAss(captions, clipId) {
   const style = SUB_STYLE;
   const header = `[Script Info]
 ScriptType: v4.00+
@@ -52,10 +52,20 @@ Style: Default,${style.fontName},${style.fontSize},${assColor("FFFFFF")},${assCo
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 `;
+  const clipCards = (typeof CARDS !== "undefined" ? CARDS : []).filter((k) => k.clip === clipId);
+  const cardStyles = clipCards
+    .map((k, i) => `Style: Card${i},${style.fontName},${k.fontSize},${assColor("FFFFFF")},${assColor("FFFFFF")},${assColor("000000")},${assColor("000000")},-1,0,0,0,100,100,${style.spacing ?? 0},0,1,2,1,${k.align},${k.marginLR},${k.marginLR},${k.marginV},1`)
+    .join("\n");
+  const cardEvents = clipCards
+    .map((k, i) => `Dialogue: 1,${assTime(k.start)},${assTime(k.end)},Card${i},,0,0,0,,${k.text}`)
+    .join("\n");
+  const headerWithCards = cardStyles
+    ? header.replace("\n[Events]", `${cardStyles}\n\n[Events]`)
+    : header;
   const lines = captions
     .map((c) => `Dialogue: 0,${assTime(c.start)},${assTime(c.end)},Default,,0,0,0,,${captionText(c)}`)
     .join("\n");
-  return header + lines + "\n";
+  return headerWithCards + (cardEvents ? cardEvents + "\n" : "") + lines + "\n";
 }
 
 async function probeVideoDuration(filePath) {
@@ -91,7 +101,7 @@ async function qcOneClip(clip) {
   }
 
   const assPath = path.join(QC_DIR, `${clip.id}.ass`);
-  await fs.writeFile(assPath, buildAss(clip.captions));
+  await fs.writeFile(assPath, buildAss(clip.captions, clip.id));
 
   console.log(`[qc] ${clip.id}: burning ${clip.captions.length} caption(s) + loudnorm + fade`);
   await run("ffmpeg", [
