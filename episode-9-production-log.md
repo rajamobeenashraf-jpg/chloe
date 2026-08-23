@@ -1224,3 +1224,70 @@ scripts live in the pai-pro engine tree (outside this session's repo
 scope) and in `pai-pro-tooling/giza/` (committed here). Nothing else
 changed this round — same footage, same still-open items as round 9's
 close, just the caption layer.
+
+## Round 11 — full editing pass: lighting/exposure + transitions (2026-08-24)
+
+Owner asked for a thorough editing review of the whole assembled cut —
+lighting/exposure across the video, transitions between clips, fix what's
+fixable. Methodology: built a 4x4 contact sheet (one representative frame
+per clip) for direct side-by-side exposure/color-temperature comparison,
+then a before/after contact sheet at all 15 cut points, then cross-checked
+with an independent Gemini eyes `qc` pass on the full assembled cut.
+
+**Major finding, CONFIRMED by direct frame inspection (full-res, both
+sides of the cut) — a hard day-to-night lighting jump at the clip11→
+clip12a cut (~2:14).** clip11_mirror ends on a bright golden-hour shot
+with the actual sun disc visible on the horizon; clip12a_thesis1 opens
+under a deep dusk/near-night sky, pyramids reduced to flat dark
+silhouettes, small ground-level lights visible in the distance. This
+isn't a gradual sunset drift — clip11's own last frame is still bright
+sunset, so the jump is entirely at the hard cut. clip12a/12b/12c are
+internally consistent with each other (all dusk), so the discontinuity is
+localized to this one boundary. Notably, this was NOT caught by this
+round's own Gemini QC sweep (see below) — found by direct systematic
+comparison, which is exactly why the sweep-only approach isn't sufficient
+on its own.
+
+**Assessed as not fixable via color-grading**: the pyramids in 12a/12b/12c
+have almost no directional sunlight modeling them (flat dark shapes, not
+sunlit stone with shadow detail), and the sky is a genuine post-sunset
+gradient, not a darkened daytime blue. Brightening/regrading would produce
+a washed-out dusk shot, not a convincing match to the bright, direct
+midday-to-golden-hour light in every other clip. Real fix needs
+regenerating clip12a/12b/12c (and possibly reviewing clip11's own
+placement in the gradual warming arc that runs from ~clip09b onward) with
+an explicit matching-daylight constraint — a clip regeneration, so per the
+permanent owner-lock rule this is reported and NOT actioned pending
+sign-off, not fixed unilaterally.
+
+Checked the other 14 cut points individually (before/after frame pairs):
+no other lighting jump, no frame duplication/skip, no jump-cut-within-a-
+take, no audio-desync-visible artifact. The gradual daytime→golden-hour
+warming from roughly clip08b through clip11 is smooth, not abrupt, and
+not flagged as a defect.
+
+**Gemini eyes `qc` pass** (`qc_report_round10_editing/`), independent
+cross-check, did not surface the day/night jump at all — 4 findings, 3
+confirmed, none of them this: bread prop anachronism (~22s, NEW,
+CONFIRMED — modern sliced-sourdough crumb structure instead of ancient
+emmer loaf shape), costume drift ~29s (CONFIRMED, same pre-existing item
+open since round 3), sledge/wheel physics ~59s-1:05 (CONFIRMED, same
+pre-existing item), high-five hand clipping ~1:58 (unverified hint, as
+always). None of these four are new decisions to act on beyond what's
+already logged, except the bread prop, which is new — flagged, not fixed
+(also a content/prop issue, not lighting/exposure/transition, so outside
+what was actually asked this round; owner's call whether it's worth a
+future pass).
+
+**Nothing changed in the delivered files this round.** No
+color-grading fix was applied because none of what was found is a
+grading-level problem — the one real issue is a content-level lighting
+mismatch that needs a regeneration decision, not a conform tweak. Said so
+plainly rather than applying a cosmetic filter that wouldn't actually fix
+it just to show activity.
+
+## STATUS: findings reported, awaiting owner decision on clip11/12a-c
+
+Comparison frame (last frame of clip11 vs. first frame of clip12a) sent
+to the owner. No regeneration submitted — waiting for explicit direction
+per the permanent rule.
