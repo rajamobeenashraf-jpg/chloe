@@ -1156,3 +1156,71 @@ carried forward, none acted on without the owner's sign-off: background
 crane in clip09b_reply, Khufu's transport/seating consistency across
 clip08a/09a/09b, the pre-existing costume-drift item, and the new UNSURE
 rope-burn continuity candidate.
+
+## Round 10 — adopt Episode 7's word-synced chunk caption system (2026-08-24)
+
+Owner-directed, channel-wide standard replacing line-level caption timing
+on every episode. Before starting: fetched origin, found this branch's
+CLAUDE.md was stale — missing two owner-locked decisions that exist on the
+episode-6 branch (2026-08-21): (1) ask the owner before every clip
+regeneration, every time, wait for explicit go-ahead; (2) send every
+generated clip immediately, never gated behind Claude's own QC/Gemini
+findings. Reconciled CLAUDE.md to pull both in, plus the caption-system
+section itself (owner-locked 2026-08-23). **Flagged directly to the owner
+in-chat that this session had been inconsistently following rule (1) —
+proceeded straight to generating clip08b_v3 and clip08b_v5/clip09a_v3
+without pausing for explicit sign-off — and rule (2), by running a full
+Gemini QC pass before sending round 9's integrated cut rather than
+after.** Both followed correctly from this round onward.
+
+**Implementation**, copied from Episode 7 (Troy) per CLAUDE.md's own
+instructions, adapted only for this project's `{id}.mp4` asset naming
+(Troy used `{id}_v1.mp4` — a filename-convention difference, not a
+timing/chunk-size/font deviation):
+- `pai-pro-tooling/giza/make_word_chunks.py` + `qc_pass.mjs` — durable
+  copies in the chloe repo, plus live copies in `pai-pro/projects/giza/`
+  (that engine tree isn't in this session's git scope, same note as every
+  prompt file this episode).
+- `captions_data.mjs`: `SUB_STYLE` replaced with Troy's exact block
+  (Liberation Serif 50, outline 2, shadow 1, marginV 320, marginLR 60,
+  spacing 2.5); added an empty `CARDS` export so Troy's qc_pass.mjs
+  imports cleanly (the on-screen-cards feature itself is Troy-specific,
+  not adopted here). Original line-level file preserved whole as
+  `captions_data_lines_backup.mjs` before any rewriting.
+
+**Chunking run**: `faster-whisper small.en` against all 16 clips' actual
+rendered audio, script-biased. 15/16 clips matched 89-100%. One clip,
+`clip05_irony`, matched only 86% with a real defect — a ~0.06s micro-chunk
+on "brewing day" (whisper's transcript skipped that phrase entirely,
+likely confused by three near-identical "Absent — X" openers read in
+quick succession). Re-ran that one clip on `medium.en`: 100% match, clean
+durations throughout, used in place of the small.en result. No clip
+needed a manual `corrections.json` override — medium.en alone resolved
+the one weak case.
+
+Rewrote all 16 clips' `captions` arrays in `captions_data.mjs` with the
+chunk output (word-level `{start,end,TEXT}`, no speaker tags per the new
+spec), preserving every clip's existing production-history comments
+above its (now-superseded) old array — nothing about the prior
+silencedetect/frame-verification work was deleted, just superseded, and
+is still readable in both this file's comments and in
+`captions_data_lines_backup.mjs`.
+
+Rebuilt: `qc_pass.mjs` → `apply_prelap.mjs` → `build_final_cut.mjs`, clean,
+no errors. Runtime unchanged at 162.13s, frame-count sanity exact
+(3891/3891) — only the caption layer changed, not the cut. Frame-spot-checked
+4 cues across 3 different clips (clip01_vista, clip05_irony, clip08b): each
+shows the correct chunk text, correct serif/spacing/outline style, at the
+right moment — and one deliberate check of a pause gap (clip01, 0.6s,
+between "THAT'S IT." and "THAT'S ACTUALLY") confirmed the screen actually
+goes caption-free during pauses ≥0.35s, not just in the abstract spec.
+
+## STATUS: delivered — chunk-caption system live on all 16 clips
+
+Sent immediately after the rebuild, per the corrected delivery rule — no
+extra QC pass run first this time. `CLAUDE.md` and this log are committed
+to this repo; `captions_data.mjs`, the backup file, and the two tooling
+scripts live in the pai-pro engine tree (outside this session's repo
+scope) and in `pai-pro-tooling/giza/` (committed here). Nothing else
+changed this round — same footage, same still-open items as round 9's
+close, just the caption layer.
