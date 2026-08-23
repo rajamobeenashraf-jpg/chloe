@@ -971,3 +971,39 @@ open, owner's call on timing. `prompts/clip08b_v2.txt` lives in the
 pai-pro working tree (`Utopai-Research/pai-pro`, outside this session's
 repo scope) rather than this repo, so it isn't committed here — recorded
 in this log instead so another session can find it.
+
+**clip08b_v2 rejected on owner review — real problem, missed in
+verification.** The litter's bearers entering "the low frame" combined
+with "her eyes flick down to Hemiunu's sandals and kilt-hem as he stops
+beside the litter" put standing men's bare legs directly beside her face
+while she's lying flat looking up at camera — reads as sexually
+suggestive, not reverent. That blocking was in the original clip08b
+prompt untouched by the v2 edit; v2's own verification checked ground-
+contact and rising only, not what the overall composition communicated,
+so it shipped for review without this being caught first.
+
+Rewrote as `prompts/clip08b_v3.txt`: replaced both proximity-causing
+lines — bearers/Hemiunu/Khafre and the litter now stay "a clear middle
+distance," "small and background," explicitly "no one... comes near her
+head or fills the frame beside her at any point." Body-position language
+(flat sand, no rise) carried forward unchanged from v2, since that part
+was already correct. Generated via `gen_video.mjs clip08b_v3
+prompts/clip08b_v3.txt 12` — one attempt, succeeded first try. Output:
+`assets/clip08b_v3.mp4`, 12.05s. Frame-verified across 6 timestamps
+(0.3s-11.8s): litter/bearers/Hemiunu/Khafre held at background distance
+throughout, no one in close frame beside her, flat/prostrate the entire
+clip including the final line. Composition problem resolved.
+
+Also visible in these wider frames (not acted on, folding into the
+already-open transport-consistency item): the litter rendered as an
+enclosed horse-drawn cart with a window rather than the open
+bearer-carried litter described in the prompt — a fourth distinct
+rendering of Khufu's transport across this reshoot's attempts.
+
+## STATUS: awaiting owner review — clip08b_v3 sent for approval
+
+Not yet promoted to replace `clip08b.mp4`, same as v2 before it — still
+one owner review away from being folded into `captions_data.mjs` and the
+pipeline rebuild. `clip08b_v2.mp4` stays on disk unpromoted rather than
+deleted. `prompts/clip08b_v3.txt` has the same pai-pro-repo-scope note as
+v2 above.
