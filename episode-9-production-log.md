@@ -1007,3 +1007,53 @@ one owner review away from being folded into `captions_data.mjs` and the
 pipeline rebuild. `clip08b_v2.mp4` stays on disk unpromoted rather than
 deleted. `prompts/clip08b_v3.txt` has the same pai-pro-repo-scope note as
 v2 above.
+
+**clip08b_v3 rejected on owner review — a blocking problem, not an
+execution problem.** Owner's objection wasn't proximity or ground contact
+this time, it was more basic: she shouldn't still be prostrate/on the
+ground through a whole 12s conversation at all. She already bowed fully in
+clip08a — clip08b re-performing or extending that bow next reads as
+unnatural ("like a kid"), regardless of how cleanly it's executed. Owner
+also asked to fix clip09a_stone in the same pass, on the same principle:
+its script had her "rising to standing... eyes deliberately lowered
+toward the ground" at Khufu's summons — a second submissive-rise beat
+that's now redundant given clip08b no longer ends on the ground.
+
+**clip08b_v4** (`prompts/clip08b_v4.txt`): she is already kneeling upright
+from frame 1 — the bow already happened in clip08a and isn't repeated or
+lingered on at all. Stays kneeling the entire clip, delivering all her
+lines as a real face-to-face exchange with Hemiunu at a normal
+conversational distance (close enough to talk, not the v3 fix's
+far-background distancing, which was only needed because she was on the
+ground). The gilded litter/Khafre/bearers stay background since Khufu
+isn't part of this exchange yet.
+
+**clip09a_v2** (`prompts/clip09a_v2.txt`): opens already kneeling
+(continuing from clip08b_v4's ending), rises to standing at Khufu's
+summons in one brisk, confident, alert motion — dropped "eyes deliberately
+lowered toward the ground" since that re-performed the deference she'd
+already shown once; kept "rope-burned palms visible at her sides" as a
+grounding detail that isn't inherently submissive. Rest of the scene
+(Khufu's dialogue, her interruption) unchanged.
+
+Generated in parallel via `gen_video.mjs` — both succeeded first attempt.
+Outputs: `assets/clip08b_v4.mp4` and `assets/clip09a_v2.mp4`, both 12.05s.
+Frame-verified across both full runtimes (7-8 timestamps each): clip08b_v4
+kneeling throughout, real conversational distance with Hemiunu, no ground
+contact at any point; clip09a_v2 opens kneeling, rises cleanly to standing
+with alert (not lowered) eyes, holds a normal standing conversation with
+Khufu, steps closer only for his scripted "more pointed" line. Checked the
+08b_v4-to-09a_v2 handoff specifically: both open/close on a kneeling body
+state, consistent. Still-open items unaffected by this round: the costume
+render still varies (corset-style bodice in these two clips, different
+from the lace-strap top elsewhere), Khufu's transport is a horse-drawn
+open chariot in both — same deferred transport-consistency item as before.
+
+## STATUS: awaiting owner review — clip08b_v4 + clip09a_v2 sent for approval
+
+Both new versions sent together. Nothing promoted, nothing folded into
+`captions_data.mjs` or the pipeline yet. If approved, note that
+`captions_data.mjs`'s clip09a_stone entry will also need its speaker-split
+re-derived from this new take's actual audio (real silencedetect, not
+assumed) since the dialogue content is unchanged but the performance
+timing may not be.
