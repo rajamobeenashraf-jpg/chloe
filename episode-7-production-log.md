@@ -404,3 +404,11 @@ Owner picked the gold serif variant over a white-box alternative, plus a positio
 Caught and fixed a real color-conversion bug before delivery: the CARDS `color` field needs RRGGBB (matching `assColor()`'s existing convention), but was initially set to the pre-reversed BGR value from the mock script -- rendered cyan instead of gold on the first rebuild. Frame-verified before catching it, corrected, rebuilt, re-verified all three cards render true gold.
 
 `qc_pass.mjs`'s card-style line now reads `color`/`outline` per-card (falls back to white/2 if unset) instead of hardcoding white.
+
+## Clip 10 trimmed at owner's request (2026-08-23)
+
+Owner: cut the first ~3s of clip 10 so it starts later, nothing else in the movie touched. Owner's spoken target ("start from 1:34") translated to local time 2.625s into the clip -- but frame-checked the region first rather than cutting blind, and found this footage has a hard internal jump from bright daytime sky (the "still laughing" opening beat) to dusk+alarm around local 3.0-3.15s. Cut exactly at that transition (3.1s) instead of the approximate spoken number, landing the clip's new opening squarely on the fire-arrow alarm beat rather than mid-expression. Owner confirmed this was the right call once shown the reasoning.
+
+**Execution**: `clip10_v1.mp4` re-encoded with the first 3.1s removed (`ffmpeg -ss 3.1`, libx264 crf 18, frame-accurate); pre-trim copy kept at `/tmp/clip10_pre_trim_backup.mp4` this session, and the full untrimmed v5 remains permanently archived at `assets/rejected/clip10_v5_daytime_sky_bug.mp4`. `captions_data.mjs`'s clip10 duration and both caption cues shifted -3.1s to match (9.6/10.0/10.3 -> 6.5/6.9/7.2); `clips.json`'s craft note updated with a trim record so a future regeneration attempt won't silently lose it.
+
+**Rebuild**: full `qc_pass.mjs`/`build_final_cut.mjs`/`export_srt.mjs` pass. Runtime dropped exactly the trim amount (128.54s -> 125.46s). Verified: the new clip9->10 boundary cuts straight from her fire-ring close-up into the raid already in motion (fire-arrows visible, dusk sky, alarmed turn) with no daytime beat in between; the "—stay with me—" caption still lands correctly on her open mouth at its shifted absolute time; waveform check at the cut point shows a clean taper, no pop. Nothing else in the episode touched, per the owner's explicit instruction.

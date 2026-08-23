@@ -224,10 +224,23 @@ export const CLIPS = [
   },
   {
     id: "clip10",
-    duration: 15.069002,
+    // TRIMMED (owner-directed, 2026-08-23): first 3.1s cut from the front.
+    // Owner wanted the clip starting later; this clip's opening beat (still
+    // laughing/catching breath from clip9's horse joke, bright daytime sky)
+    // is a single continuous render with a hard internal jump to dusk+alarm
+    // around 3.0-3.15s -- frame-checked to find that exact transition and
+    // cut right at it (3.1s) rather than the owner's approximate spoken
+    // target, landing clean on the alarm/fire-arrow beat instead of
+    // mid-expression. Pre-trim source preserved at
+    // /tmp/clip10_pre_trim_backup.mp4 this session (not committed -- media
+    // stays out of git) and is also fully reconstructable from
+    // assets/rejected/clip10_v5_daytime_sky_bug.mp4, which remains the
+    // untrimmed v5 archive. Original duration 15.069002 -> 11.969002.
+    // Original cues were 9.6-10.0/10.0-10.3; shifted -3.1s to match.
+    duration: 11.969002,
     captions: [
-      { start: 9.600, end: 10.000, text: "—STAY WITH" },
-      { start: 10.000, end: 10.300, text: "ME—" },
+      { start: 6.500, end: 6.900, text: "—STAY WITH" },
+      { start: 6.900, end: 7.200, text: "ME—" },
     ],
   },
   {
