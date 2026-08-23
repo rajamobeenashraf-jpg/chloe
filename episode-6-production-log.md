@@ -775,15 +775,74 @@ resolved with a forced binary-choice re-ask rather than trusting a
 free-form transcript's paraphrase. Re-QC'd clip 6 only (targeted, to
 avoid touching the hand-graded clip 8/10/11/11b files) and rebuilt.
 
+**Four owner-requested editorial cuts**, given as a batch after watching
+the caption-corrected cut, each verified against the actual footage
+first and only executed after the owner's explicit "ok do it"
+confirmation, per their own instruction to verify before touching
+anything:
+
+1. **Clip 4 trimmed** 10.054s → 5.75s, dropping "he said that like a
+   weather report / cloudy, with a chance of coup" entirely. Verified
+   first: the shot is one continuous unbroken take from ~4.5s to the old
+   end, so there's no invisible mid-shot edit point — the new end
+   (5.743s, right where "...decline Decius" actually stops in the real
+   audio) is audio-clean but a hard visual stop, not a scene change.
+   Flagged this to the owner before cutting; proceeded on confirmation.
+   Original preserved as `clip4_full_pretrim.mp4`.
+2. **Clip 8 removed from the episode entirely.** Confirmed its two lines
+   span nearly the whole clip, so this was a full-clip removal, not a
+   partial trim. Runtime dropped accordingly; clip 7b now cuts directly
+   into clip 9.
+3. **Clip 9 trimmed** 9.208s → 5.917s, removing the push-to-the-side /
+   hold-against-the-wall action entirely. Worth flagging for the record:
+   this was the same shelter beat root-caused and fixed earlier this
+   session (identity, then an ending-pose trim so it read as shelter
+   instead of restraint) — the owner's later call was to cut the beat
+   altogether rather than adjust it further, which is a different,
+   bigger decision than the earlier fix, so it was named explicitly
+   before acting rather than assumed. Verified the actual action
+   timing first (push 6-7s, hold 7-8s of the old clip) and picked
+   5.917s — the latest point before contact begins, inside one
+   continuous held "spots him, reacts" beat where the exact cut point
+   had flexibility. Original preserved as `clip9_v3_full_pretrim.mp4`.
+4. **Both new adjacent transitions re-measured from scratch, not
+   assumed.** Clip 7b → clip 9 (a pairing that never existed before
+   clip 8's removal): real ~11.3-point YAVG gap, no color-temperature
+   shift — same brightness-only easing technique as the episode's other
+   cross-clip gaps, applied to clip 9's opening. Clip 9 → clip 10: with
+   clip 9's new (brighter, sunlit-plaza) ending the real gap fell to
+   only ~4.3 points — small enough to no longer need correction. The
+   PREVIOUS custom grade on clip 10's opening (tuned against clip 9's
+   old, dimmer colonnade-shadow ending) was stale against the new
+   reference frame and was reset back to plain rather than left in
+   place to over-correct a gap that no longer exists — a direct
+   application of this session's own earlier lesson that a numeric
+   luminance match/mismatch has to be re-verified against the actual
+   frames in play, not carried forward on assumption.
+
+**One item investigated, not fixed: a reported background voice during
+clip 6's "read this first" line.** Checked three independent, genuinely
+different ways — a holistic audio pass, an isolated and volume-boosted
+re-listen of just that ~2s window, and a frequency-domain spectrogram of
+the same window (a visual check, not another "listen") — none surfaced a
+distinct second voice; all three only found ambient crowd murmur and the
+already-known transcription difficulty on this specific line. No
+speculative audio edit was applied against an unconfirmed, unlocated
+target — that risks degrading real audio for no verified benefit. Left
+open; needs either a more specific pointer from the owner (roughly where
+in the 2 seconds, what it sounds like) or stands as-is.
+
 Current state: assembled cut is `episode6_final_cut_compressed.mp4`,
-128.5s runtime, sent to the owner multiple times through this process as
-fixes landed, most recently after the full transcript-first caption
-re-verification above. Every dialogue clip's captions are now confirmed
-against real audio by two independent methods. Two open decisions before
-Gate 3 can close, both still pending and unaffected by today's caption
-work: clip 4 color grade (yes/no), and clip 6's background inscription
-(regenerate or leave — a baked-in visual defect, unrelated to today's
-clip 6 caption fix, which only touched subtitle text/timing). Remaining
-Gemini QC checkpoint per `CLAUDE.md`'s owner rule: the captions pass is
-done; still open is Gemini QC on the assembled/stitched cut's visual
-conform once final grading is settled.
+now 112.9s runtime (down from 128.5s after the clip 4/8/9 cuts above),
+sent to the owner multiple times through this process as fixes landed.
+Every dialogue clip's captions are confirmed against real audio by two
+independent methods. Two open decisions before Gate 3 can close, both
+still pending: clip 4 color grade (yes/no — note clip 4 itself is now
+shorter but the color-grade question is unaffected), and clip 6's
+background inscription (regenerate or leave — a baked-in visual defect,
+unrelated to any caption or trim work). Remaining Gemini QC checkpoint
+per `CLAUDE.md`'s owner rule: the captions pass is done; still open is
+Gemini QC on the assembled/stitched cut's visual conform once final
+grading is settled — note the conform itself changed today (clip 8 gone,
+two new transitions), so that checkpoint should run against the CURRENT
+cut, not the pre-edit one.
