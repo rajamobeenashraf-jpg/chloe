@@ -1093,6 +1093,34 @@ all — a real gap in coverage until now. Findings:
 Rebuilt with clip 11b integrated. Runtime now 111.3s (was 110.1s — the
 new clip 11b's longer, more emotional take accounts for the difference).
 
+**Clip 6 background-voice artifact — found and fixed.** Owner gave an
+exact timestamp (50s into the full cut) for a background "woman's voice"
+they could hear but not make out — a much more precise pointer than the
+vague version of this same complaint from earlier in the session, which
+6 independent checks (holistic listen, isolated/amplified re-listen,
+two spectrograms, silencedetect, mouth-frame sampling) had failed to
+resolve. With the exact location this time, one more targeted pass
+(bandpass-filtered to the female vocal range, heavily boosted, explicitly
+asked to find a second female voice) surfaced "market"/"is market" —
+landing right where her own scripted line "...we mark it." ends. Root
+cause: not a second character at all — a faint echo/doubled tail of her
+own "we mark it." bleeding into the silent gap that follows it, before
+"Red." begins. Owner confirmed this read as correct. Fixed with a
+targeted, short volume dip (ramped, not a hard cut, ~0.9-1.2s window)
+over just that gap in clip 6's audio — the real silencedetect-verified
+silence window (6.861-7.253s) plus a small buffer, comfortably clear of
+both the preceding and following lines. Re-verified after the fix with
+the same targeted listen: artifact gone, only her clear line and normal
+ambient crowd murmur remain. Duration-neutral; rebuilt, runtime unchanged
+at 111.3s.
+
+Worth naming as a pattern: this is the second time this session a vague
+"something's off" complaint couldn't be resolved until the owner gave a
+precise timestamp or detail, at which point it resolved cleanly. Six
+thorough checks on a wide window found nothing; one precise check on the
+right three seconds found the actual bug. Precision beats exhaustiveness
+when the target is known.
+
 Current state: assembled cut is `episode6_final_cut_compressed.mp4`,
 111.3s runtime, sent to the owner. Two open decisions remain, both
 already-flagged and still pending: clip 4's color grade vs. clip 3 (now
