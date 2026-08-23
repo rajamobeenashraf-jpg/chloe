@@ -682,6 +682,19 @@ brightened on entry, closed to <1 point). All four hard cuts in the back
 half of the episode are now eased this way; none of the front-half cuts
 (1 through 8) were touched or flagged.
 
+**Clip 10→11 still read as awkward after that — root cause was color, not
+brightness.** Owner flagged it again post-fix. Pulled fresh frames instead
+of trusting the luminance number a second time: clip 10 is blazing hard
+midday sun (blue sky, harsh shadows), clip 11 is genuine dusk with city
+lights already glowing — a real color-temperature/time-of-day mismatch
+that a brightness-only correction can't touch even once the Y-channel
+average is matched. Added a fading warmth correction on clip 11's entry
+(red gamma up, blue gamma down, easing to neutral by ~2.5s) layered on top
+of the existing brightness ramp. Lesson for the rest of this project: a
+luminance match is necessary but not sufficient for two independently
+generated clips to read as continuous — check actual color content before
+calling a lighting-mismatch fix done, not just the YAVG number.
+
 **Full caption-accuracy verification**, run per the owner's explicit
 request, using the project's own dedicated `gemini_eyes.py captions` mode
 against every dialogue clip's actual burned-in video (not just trusting
