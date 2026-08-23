@@ -396,3 +396,11 @@ Owner reasoning: the clip 11 horse-build payoff wasn't legible (owner themselves
 Implementation: data-driven — new `CARDS` export in `captions_data.mjs`, `qc_pass.mjs` renders per-clip Card styles/events alongside captions (cards are layer 1, excluded from the .srt). One real bug caught by frame verification before delivery: JS string escaping ate the ASS `\N` line-break (cards rendered with a stray "N" and wrong wrapping) — fixed to `\\N`, rebuilt, re-verified all three cards correct in the assembled cut. Runtime unchanged (128.54s). Gemini captions QC run on the carded cut (results in qc/captions_cards_v1/).
 
 **QC on the carded cut**: score 8.5/10 (episode's highest; 6.8 line-era → 7.5 chunks → 8.5 chunks+cards), 5 candidates, 0 confirmed, none reached the verify threshold. Four are the known chunk-format sampling false positive (each "omitted" phrase exists in the adjacent chunk, per cue data; same class explicitly dismissed by re-watch in the previous round). The fifth (severity 1) notes the clip 11 card holds during dialogue — which is the approved design (card top, captions bottom, 4s hold through the caption gap). No action needed.
+
+## Card style revision: gold, raised above face (owner-directed, 2026-08-23)
+
+Owner picked the gold serif variant over a white-box alternative, plus a position fix on the clip9 card (had brushed her hairline previously; owner asked it moved fully clear). Applied to all three cards for consistency: gold text (#F0C832), outline 3, no background box; clip9's marginV raised 240->100.
+
+Caught and fixed a real color-conversion bug before delivery: the CARDS `color` field needs RRGGBB (matching `assColor()`'s existing convention), but was initially set to the pre-reversed BGR value from the mock script -- rendered cyan instead of gold on the first rebuild. Frame-verified before catching it, corrected, rebuilt, re-verified all three cards render true gold.
+
+`qc_pass.mjs`'s card-style line now reads `color`/`outline` per-card (falls back to white/2 if unset) instead of hardcoding white.

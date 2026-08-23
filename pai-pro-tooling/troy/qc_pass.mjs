@@ -54,7 +54,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 `;
   const clipCards = (typeof CARDS !== "undefined" ? CARDS : []).filter((k) => k.clip === clipId);
   const cardStyles = clipCards
-    .map((k, i) => `Style: Card${i},${style.fontName},${k.fontSize},${assColor("FFFFFF")},${assColor("FFFFFF")},${assColor("000000")},${assColor("000000")},-1,0,0,0,100,100,${style.spacing ?? 0},0,1,2,1,${k.align},${k.marginLR},${k.marginLR},${k.marginV},1`)
+    .map((k, i) => `Style: Card${i},${style.fontName},${k.fontSize},${assColor(k.color ?? "FFFFFF")},${assColor(k.color ?? "FFFFFF")},${assColor("000000")},${assColor("000000")},-1,0,0,0,100,100,${style.spacing ?? 0},0,1,${k.outline ?? 2},1,${k.align},${k.marginLR},${k.marginLR},${k.marginV},1`)
     .join("\n");
   const cardEvents = clipCards
     .map((k, i) => `Dialogue: 1,${assTime(k.start)},${assTime(k.end)},Card${i},,0,0,0,,${k.text}`)

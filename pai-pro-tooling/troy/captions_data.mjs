@@ -320,7 +320,7 @@ export const SUB_STYLE = {
 // burned by qc_pass.mjs alongside captions but are NOT exported to the
 // .srt (they are not dialogue).
 export const CARDS = [
-  { clip: "clip6", start: 0.0, end: 3.0, text: "KRETHON.\\NNINE YEARS FROM HOME.", align: 9, fontSize: 42, marginV: 88, marginLR: 36 },
-  { clip: "clip9", start: 0.0, end: 2.5, text: "NINE YEARS IN.\\NSTILL NO HORSE.", align: 8, fontSize: 46, marginV: 240, marginLR: 40 },
-  { clip: "clip11", start: 1.2, end: 5.2, text: "BEHIND HER:\\NSHE SAID IT FIRST.", align: 9, fontSize: 42, marginV: 88, marginLR: 36 },
+  { clip: "clip6", start: 0.0, end: 3.0, text: "KRETHON.\\NNINE YEARS FROM HOME.", align: 9, fontSize: 42, marginV: 88, marginLR: 36, color: "F0C832", outline: 3 },
+  { clip: "clip9", start: 0.0, end: 2.5, text: "NINE YEARS IN.\\NSTILL NO HORSE.", align: 8, fontSize: 46, marginV: 100, marginLR: 40, color: "F0C832", outline: 3 },
+  { clip: "clip11", start: 1.2, end: 5.2, text: "BEHIND HER:\\NSHE SAID IT FIRST.", align: 9, fontSize: 42, marginV: 88, marginLR: 36, color: "F0C832", outline: 3 },
 ];
