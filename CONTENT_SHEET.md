@@ -13,6 +13,9 @@ This file covers **everything that is NOT an episode**: Instagram photos and vid
 
 ---
 
+## REAL-FOOTAGE-FIRST RULE (owner-locked 2026-08-23 — the strongest rule in this file)
+**For any bare-face / natural / no-makeup phase of a picture or video: use REAL episode footage — never generate it.** A bare face has nothing to mask AI repainting, so every generated version drifts visibly (proven twice on the glow-up transition; the fix that finally worked was cutting real saloon footage). AI generation is reserved ONLY for what cannot exist in footage: glam looks, new outfits, new settings. Transitions between real footage and generated scenes are made with real video editing (ffmpeg whip/blur/cut on the beat), not with AI. When a concept seems to require generating her natural face in a new scene, first ask: can this phase be served by actual footage instead? Almost always yes.
+
 ## The method in one line
 **Never regenerate her face. Take a real movie frame and change the world around her.** Reference-based generation has a proven ~90–95% identity ceiling ("she looks different in pictures"); scene-transplant preserves her actual as-filmed pixels.
 
