@@ -44,6 +44,29 @@
 // independently so a shared interpolation pass can't bleed across a real
 // line boundary — the bug that broke both whisper attempts).
 //
+// FOLLOW-UP FIX (owner flagged the proportional split still felt off):
+// dense frame sampling (every ~0.1-0.3s across the disputed 2.5-6.359s
+// window) showed sustained wide-open shouting through ~4.8-4.9s ("THE RED
+// ONE! RED MEANS"), then a visibly shorter, quieter, already-turning-away
+// articulation for "FIRST—" before the mouth is essentially inactive by
+// ~5.3-5.4s — proportional-by-character-length had given "FIRST—" a full
+// 0.965s (5.394-6.359), the same order as its neighbors, when the
+// em-dash itself signals a cut-off/interrupted delivery, not a held one.
+// Shortened "FIRST—" to 5.394-5.6. The real silencedetect boundary at
+// 6.359 doesn't move (that's genuinely where audio energy — not
+// necessarily HER speech; likely crowd/reverb tail as she turns — drops
+// below threshold), but per the caption system's own rule a chunk is on
+// screen only while its words are spoken, not for the full span of any
+// non-silent audio, so the caption doesn't need to hold to 6.359 just
+// because the room isn't fully quiet yet. This is this project's
+// established mouth-frame-cross-check method (used earlier this session
+// on clip 1's final line and clip 6's opening shout+push, and by Troy's
+// own clip 10) applied retroactively to correct a chunk-pipeline fallback
+// that turned out to still be wrong on first pass — proportional
+// estimation within a verified window is better than nothing, but it is
+// still an estimate, and this is a second, closer look at exactly the
+// place that estimate was weakest.
+//
 // Clip 6's chunk timing is a good independent cross-check of this
 // session's own hard-won manual fix: Artemidorus's three-beat echo
 // ("Red." / "Read first." / "A fine system.", found and fixed earlier
@@ -189,7 +212,7 @@ export const CLIPS = [
       { start: 2.5, end: 3.465, text: "THE RED" },
       { start: 3.465, end: 4.108, text: "ONE!" },
       { start: 4.108, end: 5.394, text: "RED MEANS" },
-      { start: 5.394, end: 6.359, text: "FIRST—" },
+      { start: 5.394, end: 5.6, text: "FIRST—" },
       { start: 7.303, end: 8.906, text: "THE SHERIFF" },
       { start: 8.906, end: 9.867, text: "IN 1875" },
       { start: 9.867, end: 10.989, text: "AT LEAST" },

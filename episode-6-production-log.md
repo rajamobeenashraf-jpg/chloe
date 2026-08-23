@@ -981,11 +981,37 @@ across containers on its own (this is exactly what happened to Episode
 a future session's session-start hook restores it automatically instead
 of this episode being at the same risk.
 
+**Clip 7 follow-up: the proportional fallback was still wrong, fixed with
+a closer look.** Owner watched the chunk-captioned cut and flagged that
+"THE RED ONE! RED MEANS FIRST—" still didn't track the delivery. Rather
+than re-guess, dense frame sampling (roughly every 0.1-0.3s across the
+disputed window) showed sustained wide-open shouting through ~4.8-4.9s,
+then a visibly shorter, already-turning-away articulation for "FIRST—"
+with the mouth essentially inactive by ~5.3-5.4s. The proportional split
+had given "FIRST—" a full 0.965s window (5.394-6.359) — the same order
+as its longer neighbors — because it only knew the word's character
+count, not that its own em-dash signals a cut-off delivery, not a held
+one. Shortened it to 5.394-5.6s. The real silencedetect boundary at 6.359
+doesn't move (that's genuinely where audio energy drops, likely ambient/
+reverb as she turns rather than her own voice) — the caption just doesn't
+need to hold that long, since the system's own rule is a chunk stays on
+screen only while its words are spoken, not for the full span of any
+non-silent audio. Re-QC'd clip 7 only, rebuilt; runtime unchanged
+(duration-neutral fix).
+
 Current state: assembled cut is `episode6_final_cut_compressed.mp4`,
-still 110.1s runtime, now on the word-chunk caption system channel-wide.
-Two open decisions before Gate 3 can close, both still pending: clip 4
-color grade (yes/no), and clip 6's background inscription (regenerate or
-leave). Remaining Gemini QC checkpoint per `CLAUDE.md`'s owner rule: the
-captions pass is done (now twice — line-level, then chunk-level); still
-open is Gemini QC on the assembled/stitched cut's visual conform once
-final grading is settled.
+still 110.1s runtime, on the word-chunk caption system channel-wide, with
+clip 7 now on its second, closer-verified timing pass. Two open decisions
+before Gate 3 can close, both still pending: clip 4 color grade (yes/no),
+and clip 6's background inscription (regenerate or leave). New open
+question, owner-raised: clip 11b's sign-off line — the scripted
+soothsayer callback never made it into the actual generated audio (see
+above, clip 11b content note), and the owner's own creative read is that
+even the INTENDED callback would land weakly this late in the episode.
+Owner wants something more emotional and directly about Caesar instead;
+options proposed, awaiting the owner's pick before any regeneration.
+Remaining Gemini QC checkpoint per `CLAUDE.md`'s owner rule: the captions
+pass is done (twice over — line-level, then chunk-level, clip 7 now
+thrice); still open is Gemini QC on the assembled/stitched cut's visual
+conform once final grading (including whatever clip 11b becomes) is
+settled.
