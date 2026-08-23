@@ -1057,3 +1057,34 @@ Both new versions sent together. Nothing promoted, nothing folded into
 re-derived from this new take's actual audio (real silencedetect, not
 assumed) since the dialogue content is unchanged but the performance
 timing may not be.
+
+**clip08b_v4 + clip09a_v2 rejected on owner review — one more instance of
+the same principle.** Owner: she's already up by the end of clip08b (v4
+has her kneeling throughout), so clip09a_v2 showing her rise again —
+kneeling to standing at Khufu's summons — reads as a second "getting up,"
+same complaint as the earlier redundant bow. The kneeling-to-standing
+transition itself needed to stop being shown at all, not just be
+performed differently.
+
+**clip08b_v5** (`prompts/clip08b_v5.txt`): changed from kneeling
+throughout (v4) to standing throughout — she's already on her feet from
+frame 1, the bow-and-recovery is fully off-screen between clip08a and
+this clip, and she stays standing, talking face-to-face with Hemiunu at a
+normal distance, for the entire clip. No kneeling, no sitting, no rising
+motion anywhere.
+
+**clip09a_v3** (`prompts/clip09a_v3.txt`): dropped the "rises to
+standing" beat entirely (v2 still had a brisk version of it) — she's
+already standing from frame 1, continuing directly from clip08b_v5's
+ending, and Khufu simply arrives and addresses her. Zero rising motion in
+this clip either.
+
+Generated in parallel, both succeeded first attempt. Outputs:
+`assets/clip08b_v5.mp4` and `assets/clip09a_v3.mp4`, both 12.05s.
+Frame-verified across both full runtimes (7 timestamps each): standing
+throughout in both, no kneeling/sitting/lying/rising at any checked point,
+natural face-to-face conversational staging with Hemiunu and then Khufu.
+`clip08b_v2.mp4`, `v3.mp4`, `v4.mp4` and `clip09a_v2.mp4` all stay on disk
+superseded rather than deleted.
+
+## STATUS: awaiting owner review — clip08b_v5 + clip09a_v3 sent for approval
