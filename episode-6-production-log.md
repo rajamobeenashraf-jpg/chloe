@@ -601,11 +601,102 @@ again since, not fixed.
    clip-level issues are now resolved or explicitly accepted by the
    owner.** Sequence is 1, 2, 3, 4, 5, 6, 7, 7b, 8, 9, 10, 11, 11b (13
    clips).
-4. Assemble: hard-cut stitch + captions per §16 canonical style, sound design
-   per the episode header (full Forum ambience → dead at clip 9 → wind/paper).
-5. Gate 3: stitched-cut owner review.
-6. Gemini eyes QC on the assembled/stitched cut and the subtitle pass
-   (`captions` mode vs. the .srt) per the owner's QC rule in `CLAUDE.md` —
-   the remaining two of its three required checkpoints; fix flagged
-   CONFIRMED issues; re-check any regenerated clip.
+4. ~~Assemble: hard-cut stitch + captions~~ DONE — see Gate 3 below.
+5. Gate 3: stitched-cut owner review — IN PROGRESS, see below.
+6. ~~Gemini eyes QC on the subtitle pass (captions mode)~~ DONE — see Gate 3
+   below. Assembled-cut visual QC (ghosting/continuity at cut points) also
+   done as part of the same pass. Two owner decisions still open (clip 4
+   color grade, clip 6 background inscription) before this checkpoint is
+   fully closed.
 7. Higgsfield `virality_predictor` pre-publish; owner watch-through is final.
+
+## Gate 3 — Assembly (2026-08-22/23)
+
+**Tooling built.** No caesar-specific assembly scripts existed yet; ported
+from the Salem (Ep 2) reference implementation (`salem/build_final_cut.mjs`,
+`captions_data.mjs`, `qc_pass.mjs`) rather than writing from scratch, since
+that pipeline already encodes several hard-won rules from `creative-
+direction.md` §16 (real-audio caption timing, mandatory mouth-frame
+cross-check on ambiguous cues, TRUE hard cuts only — no dissolves,
+confirmed by Salem's own history to cause ghosting between independently
+generated frames, independently re-confirmed this session on clip 11b).
+Simplified `build_final_cut.mjs` for caesar specifically since every
+transition here is a hard cut (no title cards, no dissolve chain, unlike
+Salem's mixed cut/dissolve build). Patched `qc_pass.mjs` with the same
+targeted-clip-id pattern already added to `generate_clips.mjs`, so a
+caption fix on one clip doesn't force-regenerate every clip's QC pass
+(and risk clobbering the custom brightness-graded files below).
+
+**Captions authored for all 13 clips**, timed from real `silencedetect`
+audio on each clip's own current file — never from prompt text. Two
+segments got a dedicated mouth-frame cross-check per §16's mandatory rule
+(clip 1's final line, clip 6's opening shout+push) since automated timing
+alone was ambiguous there. Multi-line speech runs with no silence gap
+between lines were split proportionally by word count — a documented
+estimate, not a re-measurement.
+
+**Clip 11b's dialogue resolved.** The "soothsayer" vs. "sun's setting"
+question from earlier was still open. Ran a 4th, more targeted check
+(isolated just the disputed ~2s, forced-choice question) — 3 of 4
+independent passes now agree the actual line is "The sun's setting," not
+the scripted "The soothsayer." Captioned to match what's actually said,
+per the rule that captions reflect real audio, not intent. This does mean
+the intended Spurinna (clip 5) callback did not make it into the final
+render — flagged to the owner, not fixed.
+
+**First assembly + verification.** Built the initial stitch, then ran the
+mandatory checks: ffprobe runtime vs. predicted duration (0.042s drift,
+well within tolerance — guards against a known ffmpeg silent-truncation
+failure mode), and dense frame inspection at all 12 cut points for
+ghosting. One near-miss on my own part: comparing two isolated frames at
+the clip8→clip9 cut looked like a hard content break (unrelated scene) —
+checking the frames in between showed it's one continuous shot exactly as
+scripted (chaos visibly building in the background over a few seconds).
+Real reminder of why the project's own rule requires dense checks, not
+sparse ones — almost reported a false defect.
+
+**Two jump-cut transitions found and fixed post-assembly**, both flagged
+by the owner after watching (not caught by the frame-ghosting check, since
+these aren't blend artifacts — they're same-scene continuity mismatches
+between independently generated clips): clip 11→11b (~20-point brightness
+jump plus a framing difference) and clip 7b→8 (~6-point jump, similar
+cause). Root-caused via `signalstats` YAVG luminance measurement, not
+guessed. Fixed both with a fading brightness correction on the incoming
+clip's opening (stronger for the bigger 11/11b gap, lighter for 7b/8),
+tapering to zero over ~2s so each clip still reaches its own intended
+level — not a global grade change. Explicitly did NOT apply this to the
+clip9→10 or clip10→11 cuts even though they also show large brightness
+gaps: both are scripted time-skips (chaos → "minutes later" aftermath;
+noon aftermath → dusk reflection), so the visual jump there is the point,
+not a bug — smoothing it would fight the story.
+
+**Full caption-accuracy verification**, run per the owner's explicit
+request, using the project's own dedicated `gemini_eyes.py captions` mode
+against every dialogue clip's actual burned-in video (not just trusting
+the authored timing). Result: 1 CONFIRMED text error — clip 4's caption
+read "Decimus," the actual spoken audio says "Decius" — fixed and
+rebuilt. 1 CONFIRMED finding that isn't a caption issue at all: clip 6 has
+garbled pseudo-Latin lettering baked into background architecture (same
+defect category as the earlier Pantheon-inscription problem) — not fixed,
+would need a PAI regeneration, owner's call pending. Every other finding
+across the 11 clips checked was either zero findings or an unconfirmed
+low-severity hint that didn't survive the verify pass — treated as noise
+per the project's own rule, not acted on.
+
+**Full lighting/exposure audit**, also per explicit owner request: sampled
+luminance at 3 points across all 13 clips. One real cross-clip
+inconsistency found and NOT yet fixed: clip 4 reads noticeably hazier/
+flatter than clip 3 despite both being scripted as the same "noon, hard
+light" continuity — owner's call on whether to color-correct it pending.
+Several clips (6, 7b, 9) show large *internal* luminance swings but these
+were checked and are explained by camera framing changes within one
+continuous shot (a wide establishing view vs. a tight face close-up
+naturally average very differently) — not lighting bugs, left alone.
+
+Current state: assembled cut is `episode6_final_cut_compressed.mp4`,
+128.5s runtime, sent to the owner multiple times through this process as
+fixes landed. Two open decisions before Gate 3 can close: clip 4 color
+grade (yes/no), clip 6 background inscription (regenerate or leave).
+Remaining Gemini QC checkpoint per `CLAUDE.md`'s owner rule: the captions
+pass is now done (this session); still open is Gemini QC on the
+assembled/stitched cut's visual conform once final grading is settled.
