@@ -718,10 +718,72 @@ were checked and are explained by camera framing changes within one
 continuous shot (a wide establishing view vs. a tight face close-up
 naturally average very differently) — not lighting bugs, left alone.
 
+**Clip 3 phantom caption, found and fixed.** Owner flagged the 23-29s
+window directly: one caption with no matching dialogue. Re-investigated
+from scratch with a dedicated Gemini transcript of clip 3's actual audio
+rather than re-trusting the earlier `captions` QC sweep (which had passed
+this clip) — confirmed the vendor's scripted line "It kills what lives in
+the water" was never actually spoken in the generated audio. This is a
+real, now-documented blind spot of the QC-sweep method: it checks
+burned-in captions against its own read of the clip, but wasn't targeted
+enough to catch a caption with literally no corresponding speech at all.
+Fixed by deleting that caption and retiming the two real remaining lines
+against the actual detected speech. Rebuilt and resent.
+
+**Owner asked, directly: why do subtitles keep needing fixes, and is
+there a better method?** Diagnosed rather than just patched. Root cause:
+captions were authored by taking the SCRIPT text as ground truth for
+content and only using real audio (`silencedetect`) for timing — reliable
+for timing, but with no independent check that a scripted line was
+actually spoken as written, or spoken at all. Local word-level Whisper
+(the categorically better fix — real forced alignment instead of
+estimation) is blocked in this environment by network policy on model
+download, confirmed earlier this session and not something to route
+around. The available, under-used fix: lead with an independent Gemini
+transcript of the real audio *before/alongside* authoring captions, not
+just as a reactive spot-check after a complaint.
+
+**Full transcript-first re-verification, all 13 clips**, per the owner's
+explicit follow-up instruction to apply the clip 3 method episode-wide.
+For every dialogue clip (all but clip 9, which has none), cross-checked
+the existing caption data against two independent, real sources: a fresh
+Gemini `ask`-mode transcript (content: are these the actual words, is
+anything missing or invented) and a fresh re-run of real `silencedetect`
+on that clip's own audio (timing: does every caption boundary match a
+real measured speech edge). Neither source was trusted alone — Gemini's
+own raw timestamps carry a demonstrated ~0.3-0.5s noise band (confirmed by
+re-deriving clip 1 and clip 2 from scratch and finding the existing
+data already matched real silencedetect to the millisecond, despite
+Gemini's transcript timestamps disagreeing by that much), and
+silencedetect can't resolve a pause shorter than its detection threshold
+inside one continuous speech run.
+
+Result: two confirmed, real errors, both in clip 6 — fixed. (1)
+Artemidorus's echo is actually three separate speech bursts ("Red." /
+"Read first." / "A fine system."), not two as previously captioned; the
+old data merged the first two into a single caption timed to only a
+0.26s window (physically too short for three words) and left the real
+third burst completely uncaptioned. (2) The opening line's split point
+between "Make way — petitions for Caesar!" and "In my time..." had been
+estimated (proportional word-count, no real silence gap exists there) at
+1.5s; two independent, converging targeted Gemini re-asks placed the real
+break at 3.25s/3.85s instead — nearly 2 seconds off, well outside normal
+noise. Every other dialogue clip (1, 2, 4, 5, 7, 7b, 8, 10, 11) was
+re-verified this same way and its existing caption data confirmed
+correct as-is, including one disputed exact-wording question (clip 8)
+resolved with a forced binary-choice re-ask rather than trusting a
+free-form transcript's paraphrase. Re-QC'd clip 6 only (targeted, to
+avoid touching the hand-graded clip 8/10/11/11b files) and rebuilt.
+
 Current state: assembled cut is `episode6_final_cut_compressed.mp4`,
 128.5s runtime, sent to the owner multiple times through this process as
-fixes landed. Two open decisions before Gate 3 can close: clip 4 color
-grade (yes/no), clip 6 background inscription (regenerate or leave).
-Remaining Gemini QC checkpoint per `CLAUDE.md`'s owner rule: the captions
-pass is now done (this session); still open is Gemini QC on the
-assembled/stitched cut's visual conform once final grading is settled.
+fixes landed, most recently after the full transcript-first caption
+re-verification above. Every dialogue clip's captions are now confirmed
+against real audio by two independent methods. Two open decisions before
+Gate 3 can close, both still pending and unaffected by today's caption
+work: clip 4 color grade (yes/no), and clip 6's background inscription
+(regenerate or leave — a baked-in visual defect, unrelated to today's
+clip 6 caption fix, which only touched subtitle text/timing). Remaining
+Gemini QC checkpoint per `CLAUDE.md`'s owner rule: the captions pass is
+done; still open is Gemini QC on the assembled/stitched cut's visual
+conform once final grading is settled.
