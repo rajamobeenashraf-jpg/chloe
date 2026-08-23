@@ -412,3 +412,11 @@ Owner: cut the first ~3s of clip 10 so it starts later, nothing else in the movi
 **Execution**: `clip10_v1.mp4` re-encoded with the first 3.1s removed (`ffmpeg -ss 3.1`, libx264 crf 18, frame-accurate); pre-trim copy kept at `/tmp/clip10_pre_trim_backup.mp4` this session, and the full untrimmed v5 remains permanently archived at `assets/rejected/clip10_v5_daytime_sky_bug.mp4`. `captions_data.mjs`'s clip10 duration and both caption cues shifted -3.1s to match (9.6/10.0/10.3 -> 6.5/6.9/7.2); `clips.json`'s craft note updated with a trim record so a future regeneration attempt won't silently lose it.
 
 **Rebuild**: full `qc_pass.mjs`/`build_final_cut.mjs`/`export_srt.mjs` pass. Runtime dropped exactly the trim amount (128.54s -> 125.46s). Verified: the new clip9->10 boundary cuts straight from her fire-ring close-up into the raid already in motion (fire-arrows visible, dusk sky, alarmed turn) with no daytime beat in between; the "—stay with me—" caption still lands correctly on her open mouth at its shifted absolute time; waveform check at the cut point shows a clean taper, no pop. Nothing else in the episode touched, per the owner's explicit instruction.
+
+## 2K upscale complete (2026-08-23)
+
+Higgsfield ByteDance upscaler (AIGC preset, 24fps preserved), run on the final cut post-trim/post-cards/post-chunk-captions. Job took ~20 minutes (three scheduled check-ins). Verified before delivery: resolution exactly 2x source (1440x2560 vs 720x1280), duration matches (125.49s vs 125.46s expected, sub-frame rounding), a detail-crop comparison against the original shows genuine sharpening (skin texture, hair strands, eyelashes) with no artifacts/warping/identity drift, and burned captions + the gold cards both scaled cleanly with no distortion.
+
+Owner explicitly wants the uncompressed original, not a re-encoded delivery copy -- given via its permanent CDN link (Higgsfield's own result URL, `cache-control: immutable`, verified byte-for-byte against the local download: 243,579,075 bytes). Local raw copy also kept at `assets/troy_final_cut_2k.mp4` (not committed -- media stays out of git per standing rule).
+
+This is the final Episode 7 deliverable pending: the clip10 banner text decision, virality predictor, and the owner's watch-through/sign-off.
