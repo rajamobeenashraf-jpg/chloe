@@ -1,0 +1,45 @@
+{
+  "findings": [
+    {
+      "timestamp": "01:09",
+      "category": "text",
+      "severity": 2,
+      "description": "Burned-in caption shows 'NEVER BEEN' omitting 'I HAVE', which she audibly speaks ('I have never been').",
+      "fix": "Update caption to 'I HAVE NEVER BEEN'"
+    },
+    {
+      "timestamp": "01:15",
+      "category": "text",
+      "severity": 2,
+      "description": "Burned-in caption displays 'WALKING WATER' omitting the spoken words 'AND I'M'.",
+      "fix": "Change caption to 'AND I'M WALKING WATER'"
+    },
+    {
+      "timestamp": "01:38",
+      "category": "text",
+      "severity": 2,
+      "description": "Burned-in caption shows truncated text 'ME\u2014' instead of full spoken phrase '\u2014STAY WITH ME\u2014'.",
+      "fix": "Update caption to '\u2014STAY WITH ME\u2014'"
+    },
+    {
+      "timestamp": "01:43.000",
+      "category": "text",
+      "severity": 4,
+      "description": "A modern banner reading 'NOTICE' in English Latin block letters is visible hanging above the Trojan War military camp background.",
+      "fix": "Remove or paint over the anachronistic 'NOTICE' banner in post-production.",
+      "verdict": "CONFIRMED",
+      "refined_description": "A modern style cloth banner hanging above the encampment entrance displays Latin alphabet text reading 'ALMOST PRIVNOTICE'."
+    },
+    {
+      "timestamp": "01:52",
+      "category": "text",
+      "severity": 3,
+      "description": "Burned-in caption misidentifies character name as 'GET HOME, KREAN.' instead of 'GET HOME, KRETHON.'",
+      "fix": "Correct caption spelling to 'GET HOME, KRETHON.'",
+      "verdict": "DISMISSED",
+      "refined_description": "The burned-in caption correctly displays 'GET HOME, KRETHON.' rather than misidentifying the name as 'KREAN.'"
+    }
+  ],
+  "summary": "The captions and on-screen text are mostly faithful to dialogue, but have a notable spelling error on the character Krethon at 01:52 ('KREAN'), minor missing caption words during fast-paced sequences, and an anachronistic English 'NOTICE' camp banner visible in the background at 01:42.",
+  "overall_score": 8.5
+}
