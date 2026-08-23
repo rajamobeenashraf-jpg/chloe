@@ -1317,3 +1317,34 @@ Also asked: is the hook ("That's it.") strong enough — requested a real
 test, not just an opinion. Ran Higgsfield `virality_predictor` on the
 corrected cut (see chat for the dashboard/results — not duplicating
 scores here since they can be re-pulled live from the job).
+
+**Hook test result** (owner supplied the actual dashboard readout —
+this session's Chromium couldn't render the JS-heavy result page through
+the environment's network setup, tried three methods, none worked; owner
+screenshotted it instead): Peak Hook landed at 0:11 — the literal last
+second of the (then-)11s clip — with Sustain 100% but Default Mode
+(mind-wandering proxy, lower-better) elevated at 69%. Read together: the
+mechanism holds attention fine once it has it, but nothing in the first
+seconds is earning that attention — the clip coasts to its payoff instead
+of opening on one. Matches the qualitative read from earlier: "That's it.
+That's actually it." is vague and repeated, eating the 0-3s hook window
+that this same clip was already corrected for once before (original
+hook_score 30/100, pyramid-dominant-from-t=0 fix).
+
+Flagged the trade-off before touching anything: cutting those lines
+gains speed to the first concrete fact but loses the reactive, human
+"gasping at what she's seeing" quality they provided — dialed by "Twenty
+years." opening flat/factual instead. Owner weighed it and chose to cut,
+not just tighten.
+
+Removed "That's it. That's actually it." entirely — clean single head
+cut (not a mid-clip removal), 3.0s off the front, landing ~0.16-0.22s
+before "Twenty years" starts (frame-checked: mouth just parting, not
+mid-word). Duration 11.354s -> 8.354s. Pre-cut version preserved whole as
+`clip01_vista_v2_pausetrim.mp4` (round 12's pause-trim version is
+`clip01_vista_v1_pretrim.mp4` — full lineage: v1 original -> pause-trimmed
+-> this head-trim -> current). Captions re-measured from scratch again,
+100% whisper match. Pipeline rebuilt clean: runtime 161.42s -> 158.42s,
+frame-count sanity exact (3802/3802). New opening frame-verified: cold
+open on "TWENTY YEARS." caption, pyramid still dominant in frame, natural
+mouth position, no visible cut artifact.
