@@ -774,3 +774,99 @@ re-resolved about which clip-6 cut ships. All three clip-6 versions
 remain on disk under their own filenames and can be swapped in again on
 request, same as this round and round 6 both were. Owner's watch-through
 remains the final gate per standing rule.
+
+## Round 8 — full reshoot of the "royal audience" sequence (clips 8-9, ~1:10-1:57) (2026-08-23)
+
+Owner asked to identify which clips cover the "That's the king" through
+Khufu-conversation stretch, confirmed it was 4 clips (`clip08a_prostrate`,
+`clip08b`, `clip09a_stone`, `clip09b_reply`, 1:09.75-1:56.92), and asked
+for a full reshoot: more historical fact density, at least one more
+"prominent historical figure," and a version of the time-travel reveal
+made explicit rather than left oblique. Treated as research + plan + draft
+first, per the owner's own "then we will decide" framing — nothing was
+generated until the script was approved.
+
+**Research** (sourced, see chat for full citations): Khafre (Khufu's son,
+built the second Giza pyramid, traditional Sphinx attribution) added as a
+second on-screen historical figure. Hetepheres I's tomb (Khufu's mother —
+found sealed and undisturbed in 1925, opened 1927, sarcophagus empty, no
+body — a genuine unsolved mystery) used as the reveal's "proof" beat.
+Diary of Merer (Wadi al-Jarf papyri, 2013 discovery, a real logbook from
+Khufu's own reign) and the 2017 "Big Void" muon-scan discovery were
+researched and judged strong enough to hold for the pinned comment, but
+didn't fit the 15.2s/clip budget alongside everything else without
+repeating this project's "too many words, not enough seconds" mistake —
+said so plainly rather than quietly dropping them.
+
+**Script iteration (three real rounds, not rubber-stamped):**
+1. First draft used a technical ramp-theory question and a weak "technically
+   the jar stopped it" exchange — owner correctly flagged both as
+   inaccessible/flat and asked for clips B and C specifically reworked.
+2. Rewrote B around one accessible, vivid fact (the pyramid's level base,
+   measured by stars) that also does plot work — it's what makes Hemiunu
+   wary of her, which is what motivates Khufu's suspicion in C. Reworked C
+   so Khufu's accusation comes from Hemiunu's report and her deflection
+   gets cut off ("Do not lie to a god."), replacing the flat exchange.
+3. Owner then asked for a full rewrite of all four (not just B/C), more
+   facts, more figures — produced the Khafre/Hetepheres version above.
+4. Pacing check, twice: first pass calibrated each clip's pace off real
+   measured wps from the rest of THIS episode's own footage (not a
+   generic target) — caught that clip D's draft had gone too slow in
+   sustained stretches (would have needed a 5th clip). Owner then pushed
+   back that the fix had overcorrected toward boring/slow and asked for
+   the exact wps breakdown; recalibrated using this episode's own
+   "brief slow anchor, brisk everywhere else" pattern (matches how
+   "Hazel—" runs 1.97 wps as a single anchor while surrounding lines sit
+   3-5 wps) — this fixed both the pacing complaint AND the duration
+   problem at once, since the two were the same root cause.
+
+**Generation**: clip08a_prostrate's first attempt rendered successfully
+but was FAILED post-hoc by PAI's content-moderation pass (documented
+precedent: clip6 hit this same failure mode earlier in this project — a
+successful render can still be rejected after the fact). A plain retry of
+the identical prompt succeeded. clip08b, clip09a_stone, clip09b_reply all
+succeeded on the first attempt.
+
+**Verification, all 4 clips, frame-by-frame across their full runtimes —
+two honest findings, neither treated as silently acceptable or silently
+blocking:**
+1. **clip08b body-position drift.** The prompt said "stays face-down/
+   prostrate for the ENTIRE clip" — she instead rises smoothly from
+   prostrate to sitting/kneeling over the clip's 12s. Confirmed via dense
+   frame sampling that this is a real, smooth, continuous motion (not an
+   internal cut/jump) — most likely the model anticipating "the king will
+   see you" by having her start complying early. Not fixed: no jump-cut,
+   and the cut into clip09a_stone (which itself opens on her rising) isn't
+   jarring. Documented in the caption entry rather than silently accepted.
+2. **clip08a_prostrate horse-drawn carriage.** Prompt specified a
+   hand-carried "gilded litter"; the model rendered a horse-drawn open
+   carriage instead — consistent throughout the clip (a staging choice,
+   not a continuity bug), but a real minor anachronism for Old Kingdom
+   Egypt (c. 2560 BC) — horses/chariots don't appear in Egypt for roughly
+   another thousand years. Not fixed without a further regeneration
+   attempt (already used one retry on this clip for the moderation
+   failure) — flagged for the owner's call rather than deciding
+   unilaterally to reshoot again.
+
+**Caption timing**: real silencedetect throughout, same discipline as
+every round this session. Three of the four clips (08a, 08b, 09b) mapped
+cleanly to real audio boundaries — 09b's her/Khufu speaker split was
+resolved by a boundary only visible at a finer -24dB pass, worth noting
+since it means that clip's speaker attribution is fully audio-grounded,
+not estimated. clip09a_stone's central exchange (Khufu's accusation + her
+interruption + his rebuke, 27 words) has no boundary >=0.3s at any
+threshold tried, and frame-checks were inconclusive (Khufu visibly
+dominant on-screen through the checked span) — that one three-way split is
+a word-count-proportional estimate, flagged as lower-confidence in the
+code comment rather than presented as equally certain to the others.
+
+**Rebuild**: `captions_data.mjs`'s four affected clips fully rewritten
+(new IDs unchanged, all content replaced). `qc_pass.mjs` ->
+`apply_prelap.mjs` -> `build_final_cut.mjs` re-run clean. Runtime
+**162.13s** (down slightly from 163.13s — 09a shrank 14.04s->12.04s and
+09b stayed the same length while 08a grew 9.04s->10.04s and 08b stayed
+12.04s: net -1s). Frame-count check: exact match (3891/3891). Spot-checked
+all 5 new/changed cut points (7->8a, 8a->8b, 8b->9a, 9a->9b, 9b->10) via
+frame pulls — all clean, no artifacts, no jarring position mismatches
+despite clip08b's body-position drift landing right at one of those cuts.
+Delivery copy: 27MB.
