@@ -1010,8 +1010,29 @@ above, clip 11b content note), and the owner's own creative read is that
 even the INTENDED callback would land weakly this late in the episode.
 Owner wants something more emotional and directly about Caesar instead;
 options proposed, awaiting the owner's pick before any regeneration.
+
+**Clip 11b regeneration submitted** — owner picked "Twenty-three wounds.
+Only one of them was necessary." (the stat-drop option, closest to her
+established voice) and directed a specific emotional performance: eyes
+glassy and welling with tears, held at the brim rather than streaming, at
+most one or two breaking free and falling, expression on the edge of
+crying without fully breaking down. Rewrote clip 11b's scene prompt in
+`generate_clips.mjs` — replaced the dialogue line and added the emotional
+direction (glassy/welling eyes, jaw held tight, blinking hard, voice
+tightening and going thick, at most 1-2 tears escaping, no full crying or
+sobbing) while leaving the framing, lighting continuity from clip 11,
+wardrobe, the long pause, and the "Hazel — out of time." sign-off
+untouched. Confirmed this doesn't touch the face-lock rule — the
+reference-image pipeline is unchanged, this is a performance/expression
+direction like every other clip's scene description already has, not a
+text-only regeneration of her identity. Backed up the pre-regeneration
+file as `clip11b_v1_pretear.mp4` before submitting. Also backed up
+`generate_clips.mjs` to `pai-pro-tooling/caesar/` — it had been missed in
+the earlier tooling-backup pass. Per the owner's own permanent rule, the
+new take will be sent to the owner the moment it exists, before any QC or
+caption work — no clip enters the edit until approved.
+
 Remaining Gemini QC checkpoint per `CLAUDE.md`'s owner rule: the captions
 pass is done (twice over — line-level, then chunk-level, clip 7 now
 thrice); still open is Gemini QC on the assembled/stitched cut's visual
-conform once final grading (including whatever clip 11b becomes) is
-settled.
+conform once final grading (including clip 11b's new take) is settled.
