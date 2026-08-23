@@ -367,3 +367,17 @@ Owner allowed the needed domains in the environment network settings (final work
 **Chunker v2** (`/tmp/chunk_demo/`, to be promoted into `pai-pro-tooling/troy/`): consumes measured word timestamps; 1-2 word chunks; breaks at sentence ends AND at inter-word gaps ≥0.35s (real pauses go caption-blank, matching the reference); bridges sub-0.15s gaps to avoid flicker. Rendered `clip4_measured_demo.mp4` with the locked serif style; frame-verified ("DAWN." on screen at 10.95s exactly at its measured window) and sent to owner.
 
 Whole-episode conversion now only awaits the owner's verdict on this demo + the speaker-tag decision. Production notes for the conversion: run per-clip with each clip's script as initial_prompt; fuzzy-match output words to script text (timings are trusted, text comes from script); consider `medium.en` for the noisy clips (5, 10) and clamp line-initial onsets against known line windows where Whisper's first word bleeds into leading noise.
+
+## Whole episode converted to word-chunk captions (2026-08-23)
+
+Owner approved the measured-timing demo ("this is perfect") — implicitly locking the untagged format (the approved demo carries no speaker tags). Converted all 12 clips:
+
+**Extraction**: faster-whisper `small.en` on every clip, script-biased. 9/12 clips matched 97-100% with clean measured timing; clip9's historically-ambiguous overlap section came back 100% matched and independently corroborated the old hand-derived boundaries ("Who would DRAG it?" measured 4.30-5.00 vs the old line cue 4.3-5.0 — exact agreement).
+
+**Corrections (documented in captions_data.mjs header)**: clip3's "4/10." (whisper heard "4 for 10"; interpolation had stretched over known silence — re-clamped to its line window); clip5 (soldier's shout inaudible under battle noise — placed from frame-verified windows); clip8 (bracketed stage direction kept as one chunk); clip10 (whisper hallucinated a lead-in, bled the end to 13s — replaced with this session's frame-verified 9.6-10.3).
+
+**Build**: new `captions_data.mjs` generated (177 chunk cues; line-level data preserved at `captions_data_lines_backup.mjs` as the enduring ground-truth source); `SUB_STYLE` switched to the locked serif look; `qc_pass.mjs` gained a one-line `spacing` field in its ASS style template. Full rebuild: runtime 128.54s unchanged, 3085 frames. SRT re-exported (177 cues).
+
+**Verification**: five frame spot-checks across the corrected clips all confirmed ("4/10." / "WATER GIRL!" / "—STAY WITH" / "AGAMEMNON TOOK" as Achilles faces her / "HAZEL —" whose first sample just missed the 160ms cue and confirmed on re-check). Full-cut Gemini captions QC launched.
+
+**Tooling promoted for reuse**: generic `make_word_chunks.py` (parameterized: lines.json + assets dir + corrections file; interpolation now auto-clamps to line windows) synced to `pai-pro-tooling/troy/` alongside the patched `qc_pass.mjs`, the generated chunk data, and the full conversion report. Future episodes copy these the same way troy's tooling was derived from salem's.
