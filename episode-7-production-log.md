@@ -348,3 +348,12 @@ Owner uploaded a reference reel (cosminacreates, Anne Boleyn — same genre as o
 - Renderer: existing ffmpeg/libass burn step, one Dialogue event per chunk — proven by rendering clip 4 with reference mechanics (`clip4_chunk_demo.mp4`, word boundaries interpolated within verified line windows for the demo) and frame-checking it.
 
 Demo sent to owner. Awaiting: go/no-go + a Google Cloud STT API key. Until then, per-line cues remain the shipped format.
+
+## Owner locks the new caption format: reference pattern + serif look (2026-08-23)
+
+Owner decision: adopt the reference video's caption format wholesale — the 1-2 word replacing-chunk pattern AND its serif styling. This supersedes the previous full-line caption format (canonical `MarginV=320` position retained). Implementation style locked from the re-rendered demo: Liberation Serif Bold (closest local match to the reference's Times-like serif), all-caps, Fontsize 50 @ 720x1280, white, Outline 2, Shadow 1, Spacing 2.5, bottom-center MarginV=320 (`/tmp/chunk_demo/chunks_serif.ass` holds the exact style line; demo `clip4_serif_demo.mp4` sent and rendered clean).
+
+Open items before the episode converts to this format:
+1. Timestamp source decision (owner): allow `huggingface.co` in the environment network settings for WhisperX forced alignment (best precision, free), or supply a Google Cloud STT API key (reachable today, good-not-best). Without one of these, word boundaries stay interpolated — not shippable at our sync standard.
+2. Speaker attribution: the reference format has no speaker tags; our show used italic [Speaker] tags on NPC lines. Needs an owner call (drop tags entirely, tag only a line's first chunk, or color-code speakers).
+3. Once source + tags are settled: convert all 12 clips' cues to word chunks, rebuild, full Gemini captions re-QC, owner watch-through.
