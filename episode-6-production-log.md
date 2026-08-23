@@ -1032,7 +1032,71 @@ the earlier tooling-backup pass. Per the owner's own permanent rule, the
 new take will be sent to the owner the moment it exists, before any QC or
 caption work — no clip enters the edit until approved.
 
-Remaining Gemini QC checkpoint per `CLAUDE.md`'s owner rule: the captions
-pass is done (twice over — line-level, then chunk-level, clip 7 now
-thrice); still open is Gemini QC on the assembled/stitched cut's visual
-conform once final grading (including clip 11b's new take) is settled.
+**Clip 11b approved and integrated.** Owner reviewed the new take
+("That's perfect") — this is Gate 2 approval for the regenerated clip,
+per the standing rule. New duration 10.042s (was 8.792s; the emotional
+performance runs a bit longer). Captioned from scratch against the new
+audio, not carried over.
+
+The sign-off line's exact wording took genuine back-and-forth to settle
+— worth recording in full since it's a real methodology lesson, not just
+a footnote. Four independent Gemini passes on the isolated audio gave
+four different readings, three of which leaned toward the line NOT being
+"Hazel," seemingly corroborated by dense mouth-frame sampling. That
+looked like a solid, multi-method conclusion — and it was wrong. The
+frame check turned out to have sampled only the first third of the
+actual word's time window (an incomplete-sampling error, caught on
+review, not a real finding), and running the SAME word-chunk pipeline
+used for the rest of the episode — ordinarily a more reliable source
+than an ad-hoc Gemini ask — told a different story: even biased toward
+"He's out of time." via the prompt, it independently transcribed
+"Hazel." A biased tool going against its own bias is a strong signal.
+Re-running biased toward "Hazel — out of time." instead produced a clean
+92% match with whisper's free transcript reading the script back
+verbatim. Verdict, reversed from the working conclusion: it IS "Hazel —
+out of time." The sign-off survived this generation. Both the
+investigation and the correction are recorded in
+`captions_data_lines_backup.mjs` rather than smoothed over — this
+project's captions carry their own history for a reason.
+
+Re-measured the clip 11 -> clip 11b transition against the new take's
+actual opening frame (not assumed unchanged): a real ~13.9-point
+brightness gap, color channels matching closely (brightness-only, same
+technique as elsewhere). Applied and verified.
+
+**Full episode lighting/exposure re-audit**, per explicit owner request
+("verify and reverify"). Measured luminance and color at every one of
+the 12 clips' start/end frames — all 11 cross-clip boundaries, not just
+the ones already touched this session. The four back-half boundaries
+already fixed this session (7b->9, 9->10, 10->11, 11->11b) were
+re-confirmed rather than assumed still correct. Seven front-half
+boundaries (1->2 through 6->7) had never been checked this session at
+all — a real gap in coverage until now. Findings:
+- clip1->2, 2->3, 7->7b: negligible deltas, no action.
+- clip4->5, 5->6, 6->7: real luminance deltas (15-19 points) but
+  essentially flat color-channel deltas, and visually read as a
+  consistent warm sunlit palette across the cut — most plausibly
+  explained by composition (how much sky/backlight fills each frame)
+  rather than a real grading mismatch. Not corrected, on the same
+  principle already applied earlier this session to internal luminance
+  swings in clips 6/7b/9: a real number isn't automatically a real bug.
+- clip3->4: the one large, harder-to-dismiss gap (~24 points luminance,
+  real shift in both color channels too) — but this is the SAME
+  clip4-vs-clip3 color-grade question already flagged as an open, owner-
+  pending decision earlier this session, and today's closer look didn't
+  raise confidence enough above where it stood before to justify acting
+  on it unilaterally now (clip4's wide shot has much more sky in frame
+  than clip3's tight one, which could account for part of the shift on
+  its own). Left for the owner's call, same as before — surfaced again
+  here rather than silently dropped.
+
+Rebuilt with clip 11b integrated. Runtime now 111.3s (was 110.1s — the
+new clip 11b's longer, more emotional take accounts for the difference).
+
+Current state: assembled cut is `episode6_final_cut_compressed.mp4`,
+111.3s runtime, sent to the owner. Two open decisions remain, both
+already-flagged and still pending: clip 4's color grade vs. clip 3 (now
+with a full fresh measurement on record), and clip 6's background
+inscription. Remaining Gemini QC checkpoint per `CLAUDE.md`'s owner rule:
+the captions pass is done; still open is Gemini QC on the assembled/
+stitched cut's visual conform once final grading is settled.

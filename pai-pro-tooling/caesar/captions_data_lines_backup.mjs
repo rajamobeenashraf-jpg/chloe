@@ -238,10 +238,38 @@ export const CLIPS = [
   },
   {
     id: "clip11b",
-    duration: 8.791667,
+    duration: 10.041667,
     captions: [
-      { start: 0, end: 1.864, text: "The sun's setting, and I hate being right." },
-      { start: 4.527, end: 6.202, text: "Hazel — out of time." },
+      // REGENERATED 2026-08-24 (owner-directed): new closing line + a
+      // specific emotional performance (glassy/welling eyes, at most 1-2
+      // tears falling, on the edge of crying). Owner approved the take.
+      // Content/timing below re-derived from scratch against the NEW
+      // audio, since this is entirely new dialogue never checked before.
+      // First line matched the submitted script exactly (real
+      // silencedetect: 0.714-1.772, 2.195-3.810).
+      //
+      // Second line's exact wording took real back-and-forth to settle,
+      // recorded here rather than smoothed over: four independent Gemini
+      // passes (free transcript, forced binary choice, an acoustic-only
+      // isolated re-listen, a full-phrase isolated re-listen) gave FOUR
+      // different readings, and 3 of 4 leaned toward NOT "Hazel" —
+      // seemingly corroborated by dense mouth-frame sampling showing one
+      // sustained mouth shape. That conclusion turned out to be wrong:
+      // the frame check only covered the first third of the actual word
+      // window (a sampling error, not a real finding), and running the
+      // word-chunk pipeline itself — the same tool used for the rest of
+      // the episode, and normally more reliable than an ad-hoc Gemini ask
+      // — told a different story. Biased toward "He's out of time." via
+      // the initial_prompt, it still transcribed "Hazel" independently
+      // (a biased model going AGAINST its own bias is a strong signal).
+      // Re-run biased toward "Hazel — out of time." instead: 92% match,
+      // whisper's free transcript came back matching the script exactly,
+      // word for word. Verdict: it IS "Hazel — out of time." — the
+      // sign-off survived this generation after all. Corrected here
+      // rather than left standing on the earlier, weaker conclusion.
+      { start: 0.714, end: 1.772, text: "Twenty-three wounds." },
+      { start: 2.195, end: 3.810, text: "Only one of them was necessary." },
+      { start: 6.847, end: 8.035, text: "Hazel — out of time." },
     ],
   },
 ];

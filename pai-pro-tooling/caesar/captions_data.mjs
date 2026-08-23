@@ -287,15 +287,19 @@ export const CLIPS = [
   },
   {
     id: "clip11b",
-    duration: 8.791667,
+    duration: 10.041667,
     captions: [
-      { start: 0, end: 0.56, text: "THE SUN'S" },
-      { start: 0.56, end: 0.9, text: "SETTING, AND" },
-      { start: 0.9, end: 1.24, text: "I HATE" },
-      { start: 1.24, end: 2.04, text: "BEING RIGHT." },
-      { start: 4.62, end: 4.82, text: "HAZEL —" },
-      { start: 5.72, end: 5.96, text: "OUT OF" },
-      { start: 5.96, end: 6.24, text: "TIME." },
+      // Regenerated 2026-08-24 — new closing line + emotional performance,
+      // owner-approved. See captions_data_lines_backup.mjs for the full
+      // investigation into the sign-off line's exact wording (initially
+      // mis-concluded as NOT "Hazel", corrected after a fuller check).
+      { start: 0.714, end: 1.62, text: "TWENTY-THREE WOUNDS." },
+      { start: 2.26, end: 2.66, text: "ONLY ONE" },
+      { start: 2.66, end: 2.94, text: "OF THEM" },
+      { start: 2.94, end: 3.76, text: "WAS NECESSARY." },
+      { start: 6.4, end: 7.08, text: "HAZEL —" },
+      { start: 7.7, end: 7.98, text: "OUT OF" },
+      { start: 7.98, end: 8.3, text: "TIME." },
     ],
   },
 ];
