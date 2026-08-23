@@ -1088,3 +1088,71 @@ natural face-to-face conversational staging with Hemiunu and then Khufu.
 superseded rather than deleted.
 
 ## STATUS: awaiting owner review — clip08b_v5 + clip09a_v3 sent for approval
+
+**Both approved.** Promoted and integrated into the pipeline:
+
+`assets/clip08b.mp4` and `assets/clip09a_stone.mp4` (the ids the pipeline
+actually reads) overwritten with the approved `clip08b_v5.mp4` and
+`clip09a_v3.mp4` content. Originals preserved first as `clip08b_v1.mp4`
+and `clip09a_v1.mp4` — nothing deleted, same convention as every prior
+round.
+
+`captions_data.mjs` entries for both ids rewritten from real
+silencedetect on the new audio (not reused from the old takes, since
+performance timing differs even with identical dialogue): clip08b's 7
+scripted phrases map 1:1 to 6 clean boundaries (the closest two bracket a
+single audible breath, not a new word — confirmed by getting exactly 7
+segments for 7 phrases with nothing left over). clip09a_stone's opening
+line has a clean boundary; the 27-word Khufu/her/Khufu exchange again has
+no internal gap even at a finer threshold — Khufu audibly cuts across her
+per the script, so there's genuinely no pause to detect — same
+word-count-proportional split and same lower-confidence caveat as round
+8's version of this clip.
+
+Pipeline rebuilt clean: `qc_pass.mjs` → `apply_prelap.mjs` →
+`build_final_cut.mjs`, all 16 clips, no errors. Runtime **162.13s**
+(unchanged from round 8 — new takes came out the same length as what they
+replaced). Frame-count sanity check exact: 3891/3891. Frame-verified all
+three changed cut points (08a→08b, 08b→09a, 09a→09b) — clean hard cuts,
+consistent posture and costume across each, no artifacts. Delivery copy:
+28MB (compressed), under the 30MB chat limit.
+
+**Gemini eyes `qc` on the rebuilt cut** (`qc_report_round9/`): 4
+candidate findings, 1 confirmed, none requiring new action:
+1. **Costume drift ~29s, confirmed** — same pre-existing item open since
+   round 3, reinforced again, still the owner's call, outside anything
+   touched this round.
+2. **Tally-wall pseudo-script ~41s, severity 2, unverified** — same
+   already-known item from round 8, resurfaced as a hint this pass
+   (severity varies run to run on single-pass sweeps; not re-verified
+   since below the verify threshold this time).
+3. **Rope-burn continuity ~1:07→~1:57, severity 3, UNSURE (new candidate,
+   not confirmed)** — claims her rope-burned palms are severe at 1:07 but
+   gone by 1:57; the verify pass couldn't check it because 1:57 falls
+   outside the ±6s clip it re-watches around 1:07, so this came back
+   structurally inconclusive rather than confirmed or dismissed. Both
+   ends of this claim sit in footage untouched this round (clip07 through
+   clip10) — not acted on per the standing rule (only CONFIRMED findings
+   are trusted), but flagging it as new and unresolved rather than letting
+   an UNSURE verdict quietly disappear; worth a proper look with a wider
+   verify window in a future round.
+4. **Background crowd flicker ~1:11, severity 2, unverified** — falls
+   inside clip08a_prostrate (untouched this round); sub-threshold hint,
+   not treated as fact.
+
+No CONFIRMED finding from this pass falls inside anything reshot this
+round. `captions_data.mjs` lives in the pai-pro tree (outside this
+session's repo scope, same note as the prompt files above) — not
+committed here, recorded in this log instead.
+
+## STATUS: delivered — clip08b/clip09a fix integrated, updated cut sent
+
+Full round-9 arc: sand-mound framing → proximity/composition → redundant
+bow → redundant rise, four owner catches on the same two clips, each a
+real and different problem, each fixed and verified before moving on.
+Updated `giza_final_cut_compressed.mp4` (162.13s, 28MB) delivered. Owner's
+watch-through remains the final gate per standing rule. Still-open items
+carried forward, none acted on without the owner's sign-off: background
+crane in clip09b_reply, Khufu's transport/seating consistency across
+clip08a/09a/09b, the pre-existing costume-drift item, and the new UNSURE
+rope-burn continuity candidate.
