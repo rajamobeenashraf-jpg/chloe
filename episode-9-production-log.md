@@ -1291,3 +1291,29 @@ it just to show activity.
 Comparison frame (last frame of clip11 vs. first frame of clip12a) sent
 to the owner. No regeneration submitted — waiting for explicit direction
 per the permanent rule.
+
+## Round 12 — trim clip01's dead-air pause + hook strength test (2026-08-24)
+
+Owner caught real dead air in the opening hook: 1.22s of silence between
+"...it would stand." and "And today? I'm meeting him." (confirmed via
+silencedetect, 7.918-9.143s) — frame-checked as visually static across
+that whole span, nothing happening on screen to justify the length. This
+is editing/conform work (trimming existing approved footage), not a clip
+regeneration, so actioned directly per the QC rule.
+
+Cut 0.69s out of the middle of the silent window only (7.918-9.143s is
+all silence; removed [8.0, 8.723], comfortably inside it — nothing
+spoken touched). Frame-accurate re-encoded join, checked before/after
+frames side by side: no visible jump, her position/expression/background
+all match closely. New gap ~0.51-0.6s, in line with this same clip's own
+other natural beats (0.34s, 0.66s) rather than reading as dead air.
+Original preserved whole as `clip01_vista_v1_pretrim.mp4`. Re-ran the
+word-chunker on the trimmed clip from scratch (100% whisper match) rather
+than hand-shifting the old timestamps. Clip duration 12.042s -> 11.354s;
+full episode 162.13s -> 161.42s. Pipeline rebuilt clean, frame-count
+sanity exact (3874/3874).
+
+Also asked: is the hook ("That's it.") strong enough — requested a real
+test, not just an opinion. Ran Higgsfield `virality_predictor` on the
+corrected cut (see chat for the dashboard/results — not duplicating
+scores here since they can be re-pulled live from the job).
