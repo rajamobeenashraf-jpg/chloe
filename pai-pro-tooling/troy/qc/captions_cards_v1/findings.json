@@ -1,0 +1,41 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:00",
+      "category": "text",
+      "severity": 2,
+      "description": "On-screen caption reads 'WAR.' omitting 'THE TROJAN'.",
+      "fix": "Update text overlay to include 'THE TROJAN WAR.'"
+    },
+    {
+      "timestamp": "00:02",
+      "category": "text",
+      "severity": 2,
+      "description": "Caption displays 'A THOUSAND' skipping 'TEN YEARS,'.",
+      "fix": "Ensure 'TEN YEARS,' is displayed before 'A THOUSAND'."
+    },
+    {
+      "timestamp": "00:08",
+      "category": "text",
+      "severity": 2,
+      "description": "Caption 'STAY OFF' is missing 'THE PLAIN.' from spoken line.",
+      "fix": "Update caption to 'STAY OFF THE PLAIN.'"
+    },
+    {
+      "timestamp": "00:15",
+      "category": "text",
+      "severity": 2,
+      "description": "Caption 'HAVE BEEN' skips 'IN A ROW I' from spoken dialogue.",
+      "fix": "Include 'IN A ROW I HAVE BEEN'."
+    },
+    {
+      "timestamp": "01:48",
+      "category": "text",
+      "severity": 1,
+      "description": "On-screen note 'BEHIND HER: SHE SAID IT FIRST.' remains on screen during main dialogue.",
+      "fix": "Remove production note overlay or align it with scene context."
+    }
+  ],
+  "summary": "The video features burned-in captions that frequently truncate spoken phrases or skip short words across multiple clips. Overall video quality and audio-visual sync are well maintained.",
+  "overall_score": 8.5
+}
