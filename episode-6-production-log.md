@@ -832,17 +832,53 @@ target — that risks degrading real audio for no verified benefit. Left
 open; needs either a more specific pointer from the owner (roughly where
 in the 2 seconds, what it sounds like) or stands as-is.
 
+**Clip 4 "Decius" close-up — investigated, left as-is.** Owner flagged
+that during the Second Roman's line ("Decius has gone to fetch him. One
+does not decline Decius."), the shot cuts to a tight direct-to-camera
+close-up of the woman right at the end, even though the line isn't hers —
+confirmed real via frame inspection (consistent wide shot with both Roman
+men visible from the start of the line through ~4.8-5.3s, then an
+isolated close-up on her face for the remainder, including the word
+"Decius"). Both fixes the owner proposed (side/profile angle, or a
+listening reaction shot) would need footage that doesn't exist anywhere
+in the clip — would require a PAI regeneration, not an edit. Owner's
+decision: leave clip 4 as-is, no regeneration requested.
+
+**Clip 9, second trim: front-trimmed too**, per further owner request —
+open on the crowd's arrival, not the woman's own to-camera intro. This
+surfaced a real gap in the earlier caption sweep: she actually speaks in
+the first ~1.7s ("I'm just in..." / "...was that screaming?"), dialogue
+that had never been transcribed or captioned because this clip was
+incorrectly marked dialogue-free from the very start of the project,
+which excluded it from the transcript-first sweep entirely. Moot now
+since that whole span is cut, but worth recording as a real methodology
+gap, not just a timing one. Cut point verification caught and corrected
+its own mistake mid-process: initial frame checks suggested the shot
+would settle into a clean profile-plus-crowd composition by ~3.0-3.2s;
+closer inspection showed that entire span (3.0s through at least 4.4s) is
+actually a sustained back-of-head/hair-obscured hold as the camera
+follows her turn, with no clean composition in it anywhere. Said so
+directly rather than proceeding on the wrong premise, then found the
+real answer: 2.80s, a clear profile shot with the crowd just becoming
+recognizable at the temple steps, right before the hair-swing obscures
+her face. Clip 9 is now 3.125s (was 9.208s originally — first the back
+end was cut to remove the wall-hold beat, now the front too), covering
+just the turn-and-spot beat. This moved clip 9's opening frame a second
+time, so the clip7b -> clip9 brightness correction was re-measured and
+reapplied fresh against the new reference frame (~10.6-point gap this
+time, still brightness-only, same technique) rather than carried forward.
+
 Current state: assembled cut is `episode6_final_cut_compressed.mp4`,
-now 112.9s runtime (down from 128.5s after the clip 4/8/9 cuts above),
-sent to the owner multiple times through this process as fixes landed.
-Every dialogue clip's captions are confirmed against real audio by two
+now 110.1s runtime (down from 128.5s across all the cuts above), sent to
+the owner multiple times through this process as fixes landed. Every
+dialogue clip's captions are confirmed against real audio by two
 independent methods. Two open decisions before Gate 3 can close, both
-still pending: clip 4 color grade (yes/no — note clip 4 itself is now
-shorter but the color-grade question is unaffected), and clip 6's
-background inscription (regenerate or leave — a baked-in visual defect,
-unrelated to any caption or trim work). Remaining Gemini QC checkpoint
-per `CLAUDE.md`'s owner rule: the captions pass is done; still open is
-Gemini QC on the assembled/stitched cut's visual conform once final
-grading is settled — note the conform itself changed today (clip 8 gone,
-two new transitions), so that checkpoint should run against the CURRENT
-cut, not the pre-edit one.
+still pending: clip 4 color grade (yes/no — the close-up staging issue
+above is a separate, now-closed question), and clip 6's background
+inscription (regenerate or leave — a baked-in visual defect, unrelated to
+any caption or trim work). Remaining Gemini QC checkpoint per
+`CLAUDE.md`'s owner rule: the captions pass is done; still open is Gemini
+QC on the assembled/stitched cut's visual conform once final grading is
+settled — note the conform has changed twice more since that checkpoint
+was last mentioned (clip 8 gone, clip 9 trimmed twice, three re-measured
+transitions), so that checkpoint should run against the CURRENT cut.
