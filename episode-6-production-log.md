@@ -903,18 +903,89 @@ Worth remembering for future episodes: even where a specific automated
 claim doesn't survive a direct check, the right move is to say so and let
 the owner's own eyes make the final call, not to silently pick a side.
 
+**Migrated to word-chunk captions, the new channel-wide default.** Owner
+instruction: pull the default branch (now carrying Episode 7's word-chunk
+caption system, owner-locked 2026-08-23) and rebuild this episode's
+captions on it, replacing the full-line ASS cues used until now.
+
+Mechanics: fetched and merged `claude/pai-connectivity-test-5phlq2` into
+this branch (60 commits, mostly Episode 7's own production history —
+expected, pushed immediately). Read `CLAUDE.md`'s new "Caption system"
+section and the reference implementation at `pai-pro-tooling/troy/`.
+Installed `faster-whisper` and confirmed the model actually downloads in
+this environment — local word-level ASR was blocked by network policy
+earlier this session; that block is gone now the owner's lock opened the
+required Hugging Face domains. Copied `make_word_chunks.py` into this
+project (adapted: caesar's clips have no `_v1` suffix; fixed a
+division-by-zero crash on clip 9's empty-captions case, which Troy's own
+lineup never hit since it had no dialogue-free clips). The previous
+full-line `captions_data.mjs` is preserved as
+`captions_data_lines_backup.mjs` — the line-window ground truth the
+chunk pipeline validates its whisper timing against, per the new system's
+own design.
+
+Match rate was 92-100% on every clip except clip 9 (no dialogue, 0
+chunks, correct) and clip 7. Benign mismatches (whisper hearing "3/10" as
+"3 for 10", "Stay." as "STAY.", clip 11b's already-documented "setting"
+mishearing) don't affect what's displayed, since script text is always
+ground truth for the actual caption text — only timing precision was at
+stake, and all of it landed within the same ~0.3-0.5s noise band
+established earlier this session. Clip 6's independently-measured timing
+came back within hundredths of a second of this session's own hard-won
+manual fix for Artemidorus's three-beat echo — a good, independent
+confirmation that fix was right.
+
+Clip 7 needed real intervention: its shouted, multi-speaker delivery
+defeated whisper outright. `small.en` produced a broken chunk merging
+"FIRST—" with "THE" across a genuine 0.94s pause (matching neither the
+audio nor the script), and bumping to `medium.en` — the documented
+remediation path for a weak report — made it WORSE (47% match,
+hallucinated a repeated phrase, still missed both shouted lines
+entirely). Concluded this is a genuine audio-character problem given
+shouted/distorted delivery, not a model-capacity one, and stopped trying
+bigger models. Fell back to this project's own established methodology
+(biggest real pauses are the true breaks; split what's left
+proportionally) applied at chunk instead of line granularity, within
+this session's own silencedetect-verified line windows for clip 7
+(independently re-verified multiple times already, most recently in the
+full transcript-first sweep). Wrote a small one-off script
+(`fix_clip7_chunks.py`) that reuses the proportional-interpolation math
+but processes each line independently — the first attempt at reusing the
+main pipeline's own interpolation code pooled all three lines together
+and produced the exact same cross-line merge bug being fixed, since with
+zero real whisper anchors the "unmatched span" search swallowed the
+entire clip in one pass; fixing that (per-line isolation) resolved it
+cleanly.
+
+Re-applied all four of this episode's hand-graded transition corrections
+on top of the new chunk-captioned base, since burning new captions means
+re-rendering each clip from its master and therefore re-layering anything
+added after the fact: clip 9's opening brightness ramp (7b->9) and tail
+fade-to-black, clip 10's head fade-to-black, clip 11's brightness+color-
+warmth correction (10->11), and clip 11b's opening brightness ramp
+(11->11b). Verified afterward: all four durations matched the manifest
+exactly (duration-preserving filters), and the fade-to-black transition
+frame still shows one clean darkening scene, no ghosting. Runtime
+unchanged at 110.1s — this was a presentation-layer migration, not a
+structural one.
+
+Also closed a standing gap while in here: this project's own tooling
+(`captions_data.mjs`, `qc_pass.mjs`, `build_final_cut.mjs`,
+`make_word_chunks.py`, the line-level backup, the word-chunks JSON) had
+never been backed up to the `chloe` repo the way Salem's and Troy's have
+— it only ever existed under `/home/user/pai-pro/projects/caesar/`,
+which the session-start hook's own comments confirm is NOT persisted
+across containers on its own (this is exactly what happened to Episode
+1's tooling — lost with its container, rebuilt from scratch for Episode
+2). Copied everything into `pai-pro-tooling/caesar/` and committed it, so
+a future session's session-start hook restores it automatically instead
+of this episode being at the same risk.
+
 Current state: assembled cut is `episode6_final_cut_compressed.mp4`,
-still 110.1s runtime (the fade above is duration-neutral), sent to the
-owner multiple times through this process as fixes landed. Every dialogue
-clip's captions are confirmed against real audio by two independent
-methods. Two open decisions before Gate 3 can close, both still pending:
-clip 4 color grade (yes/no — the close-up staging issue is a separate,
-now-closed question), and clip 6's background inscription (regenerate or
-leave — a baked-in visual defect, unrelated to any caption or trim work).
-Remaining Gemini QC checkpoint per `CLAUDE.md`'s owner rule: the captions
-pass is done; still open is Gemini QC on the assembled/stitched cut's
-visual conform once final grading is settled — note the conform has
-changed several times since that checkpoint was last mentioned (clip 8
-gone, clip 9 trimmed twice, four re-measured/re-built transitions, one of
-them now a fade instead of a cut), so that checkpoint should run against
-the CURRENT cut.
+still 110.1s runtime, now on the word-chunk caption system channel-wide.
+Two open decisions before Gate 3 can close, both still pending: clip 4
+color grade (yes/no), and clip 6's background inscription (regenerate or
+leave). Remaining Gemini QC checkpoint per `CLAUDE.md`'s owner rule: the
+captions pass is done (now twice — line-level, then chunk-level); still
+open is Gemini QC on the assembled/stitched cut's visual conform once
+final grading is settled.
