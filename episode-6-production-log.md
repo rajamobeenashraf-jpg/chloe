@@ -670,6 +670,18 @@ gaps: both are scripted time-skips (chaos → "minutes later" aftermath;
 noon aftermath → dusk reflection), so the visual jump there is the point,
 not a bug — smoothing it would fight the story.
 
+**Revised, on direct owner instruction.** Owner watched further and
+called both of those cuts awkward too, asked for the same smoothing.
+Reconsidered: the time-skip is told by the cut itself (a hard cut to a
+visibly different shot) and by what's IN the new shot, not specifically
+by how steep the instant brightness delta is at the join — easing that
+delta doesn't erase the story beat, it just removes the jarring snap.
+Applied the same fading-ramp technique to both: clip 9→10 (~12-point gap,
+clip 10 darkened on entry) and clip 10→11 (~14-point gap, clip 11
+brightened on entry, closed to <1 point). All four hard cuts in the back
+half of the episode are now eased this way; none of the front-half cuts
+(1 through 8) were touched or flagged.
+
 **Full caption-accuracy verification**, run per the owner's explicit
 request, using the project's own dedicated `gemini_eyes.py captions` mode
 against every dialogue clip's actual burned-in video (not just trusting
