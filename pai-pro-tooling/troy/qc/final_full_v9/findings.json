@@ -1,0 +1,43 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:40.000",
+      "category": "physics",
+      "severity": 3,
+      "description": "Arrow pierces water sack without causing liquid leakage or cloth deformation.",
+      "end_timestamp": "00:43",
+      "fix": "Add water spray particles and sack deflation visual effects.",
+      "verdict": "CONFIRMED",
+      "refined_description": "An arrow embeds itself into the fabric water bag without causing any water leakage, puncture deformation, or deflation."
+    },
+    {
+      "timestamp": "00:52.000",
+      "category": "anatomy",
+      "severity": 3,
+      "description": "Fingers unnaturally blend into the rope fibers during close-up inspection.",
+      "end_timestamp": "00:56",
+      "fix": "Regenerate hand interaction with rope to maintain clean finger separation.",
+      "verdict": "CONFIRMED",
+      "refined_description": "The woman's fingertips visibly blend and fuse into the rope fibers as she touches the knot."
+    },
+    {
+      "timestamp": "01:23",
+      "category": "continuity",
+      "severity": 2,
+      "description": "Background extras around the campfire shift positions abruptly between cuts.",
+      "end_timestamp": "01:30",
+      "fix": "Standardize background character placement and fire lighting across cuts."
+    },
+    {
+      "timestamp": "01:43.000",
+      "category": "text",
+      "severity": 3,
+      "description": "Camp entrance banner displays garbled AI pseudo-text ('AMCST PALMOTICE').",
+      "fix": "Inpaint or blur background banner text to eliminate unreadable text.",
+      "verdict": "CONFIRMED",
+      "refined_description": "The banner hanging across the wooden entrance posts shows garbled AI pseudo-text reading 'ALMCST PALMOTICE'."
+    }
+  ],
+  "summary": "The video delivers an engaging social-first historical perspective with effective costumes and atmosphere. Visual flaws include garbled background text, minor hand morphing on props, and physics oversights during action scenes. Refining these AI artifacts will polish the production quality.",
+  "overall_score": 6.5
+}
