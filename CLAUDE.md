@@ -41,6 +41,16 @@ Standing rules:
 - Before publish: run Higgsfield `virality_predictor` on the render; the owner's
   watch-through remains the final gate.
 
+## Caption system (owner-locked 2026-08-23 — supersedes full-line cues for ALL episodes)
+
+Captions are word-synced CHUNKS, reverse-engineered from the owner's reference reel and approved from a measured-timing demo: 1–2 word ALL-CAPS chunks, each REPLACING the previous (never accumulating into lines); a chunk is on screen only while its words are spoken; pauses ≥0.35s leave the screen caption-free; hard cut in/out, no animation; serif style (Liberation Serif bold, spacing 2.5, white + thin dark outline, MarginV=320); NO speaker tags (a gold speaker-color variant is under consideration — not yet decided).
+
+Implementation (reference: Episode 7, `pai-pro-tooling/troy/`):
+- Timing comes from **measured per-word timestamps** (`make_word_chunks.py`, faster-whisper, script-biased) — never estimated, never interpolated except clamped within known line windows for words the model can't hear (chaos-noise clips), and any such fallback is frame-verified before shipping. Script text is ground truth; whisper only carries timing.
+- `qc_pass.mjs` (spacing-capable) burns one Dialogue event per chunk; keep line-level cues as a `captions_data_lines_backup.mjs`-style source-of-truth input.
+- The session-start hook installs faster-whisper automatically; model weights pull from Hugging Face (domains already allowed on this environment).
+- New episodes: copy `make_word_chunks.py`, `qc_pass.mjs`, and the `SUB_STYLE` block from `pai-pro-tooling/troy/` into the new episode's tooling dir, write the script lines with rough line windows, run the tool, review its per-clip match report, frame-verify anything it flags.
+
 Tooling:
 - **vidIQ MCP** — YouTube + Instagram/TikTok data: outliers, keywords, stats, comments, transcripts, video watching. Calls cost credits — check `vidiq_balance`, batch questions.
 - **Higgsfield MCP** — image/video generation, `virality_predictor` (pre-publish). Its `video_analysis_create` is edit-stage-only under the QC rule above.
