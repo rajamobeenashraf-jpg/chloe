@@ -303,6 +303,18 @@ Cross-checked with a dense frame pull at every proposed boundary before trusting
 **Final scoped Gemini captions-mode check** on clip4's window (26–39s) in the rebuilt cut: 0 candidate findings, score 6.8/10 (matches episode baseline). Summary prose mentioned a "phonetic misspelling of 'Cretan knot'" but nothing landed in the actual findings array — same recurring false-positive this session has hit repeatedly on "Krethon," confirmed against source text (still spelled correctly, unchanged). Nothing to act on.
 
 Red Cross emblem remains the sole open item awaiting an owner decision.
+
+## Owner reverts clip10 to v5, accepting the known daytime-sky bug
+
+Owner asked how many clip10 versions exist and specifically for the v3 rocket-projectile take (sent it, with the full v1-v6 history). Then a follow-up instruction was self-contradictory as phrased ("use version five... replace version five with version six") -- asked directly which version they meant rather than guessing, given how much file-juggling this clip and clip 4/5 have already been through this season. Owner confirmed: **v5**, explicitly accepting v6's known daytime-sky opening bug as the tradeoff (the question's preview text spelled out the bug and they still chose v5).
+
+**Reverted the footage**: `clip10_v1.mp4` restored from `assets/rejected/clip10_v5_daytime_sky_bug.mp4` (byte-verified via checksum, `f00698f2...`). v6's render archived at `assets/rejected/clip10_v6_not_used_owner_pref.mp4`. `clips.json`'s clip10 entry reverted to v5's `action`/`craft` text (v6's dusk-sky requirement removed), with an owner-decision warning block appended mirroring the clip4/clip5 precedent, so a future regeneration from this prompt won't silently reproduce v6.
+
+**Caption timing**: rather than assume v5's previously-derived timing still applies, re-verified from scratch against the actual restored file. Two readings on the same footage: a fresh Gemini ask-mode pass proposed 9.65-10.65s; this clip's own v5-era contemporaneous derivation (dense mouth-frame cross-check, done when v5 was first built) had it at 9.6-10.3s. The two agree closely on the start but diverge ~0.35s on the end. Frame-checked to break the tie: at 10.45s she's already fully turned away, mouth closed, attention on the wounded soldier -- the line has clearly ended before Gemini's proposed 10.65s end. Kept the v5-era 9.6-10.3s value as better-supported by the visual evidence.
+
+**Rebuild**: `qc_pass.mjs` → `build_final_cut.mjs` → `export_srt.mjs`. Runtime unchanged (128.54s) since v5 and v6 share the same 15.07s clip duration. Spot-checked the assembled cut: opening beat (92s absolute) confirms the daytime-sky bug is genuinely present as expected; caption burn at 101.3s (mid-window) shows her clearly facing camera, mouth open, correctly synced.
+
+**Final scoped Gemini captions-mode check** on clip10's window (91-107s) in the rebuilt cut: see below.
 1. Generate all 12 clips per the `episodes-5-9-scripts.md` Episode 7 table — single continuous takes, durations per beat, daylight/golden-hour only (owner lighting lock — never fully dark), pre-generation self-check every clip (creative-direction.md §7–§15), NPC continuity (Krethon, quartermaster, Trojan boy sentry), italicized `[Speaker]` tags for their lines.
 2. Assemble with `pai-pro-tooling/salem/`-derived tooling: true hard cuts, 0.08s audio-only edge fades, loudnorm frame-exact, canonical caption style (`MarginV=320`), mouth-frame cross-check on ambiguous cues.
 3. Edit-stage Gemini eyes QC (owner's rule — never during generation): full clip set, assembled cuts, captions mode vs .srt.

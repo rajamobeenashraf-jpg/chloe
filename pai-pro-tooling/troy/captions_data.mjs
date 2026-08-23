@@ -191,22 +191,25 @@ export const CLIPS = [
     id: "clip10",
     duration: 15.069002,
     captions: [
-      // v6 (dusk-sky fix — a strict transitions/lighting re-check found
-      // the opening beat rendering with bright daytime sky instead of the
-      // required dusk continuation from clip 9; fixed, all other beats
-      // untouched, but regenerated so timing was re-checked fresh). No
-      // silencedetect data during the dialogue beat (fire/chaos noise
-      // defeats threshold, same as v3/v4/v5).
+      // REVERTED TO v5 (owner-directed, 2026-08-22): owner explicitly
+      // chose v5's footage over v6 for the final video, knowingly
+      // accepting v6's fixed daytime-sky bug is NOT present here (this
+      // clip's opening still has the wrong sky). See clips.json's craft
+      // note for the full owner-decision record.
       //
-      // CORRECTED (owner-directed Gemini re-check, 2026-08-22): the
-      // original 9.0-9.8s mouth-frame read was wrong -- at 9.0-9.8s she is
-      // turned away hauling the hide, not addressing camera. A dense
-      // 8fps re-trace found her actually turn to the lens with a clear
-      // open-mouth speaking expression starting ~10.5s, continuing
-      // through ~10.9s before she turns away again -- confirmed
-      // independently by Gemini eyes (flagged the caption as ~1.6s early,
-      // spoken audio at global 01:42.00 = local 10.625s). Moved to match.
-      { start: 10.5, end: 11.1, text: "—stay with me—" },
+      // Timing restored to v5's own contemporaneous derivation (9.6-10.3s,
+      // dense mouth-frame cross-check at the time v5 was built) rather
+      // than the 10.5-11.1s value -- that number was derived specifically
+      // against v6's render and doesn't apply here; this is a different
+      // generation with its own take timing, even though the footage is
+      // byte-identical to what was archived as v5 before. Re-verified
+      // today: a fresh Gemini ask-mode read of this exact restored file
+      // proposed 9.65-10.65s, but a frame check at 10.45s shows her
+      // already fully turned away, mouth closed, attention on the wounded
+      // soldier -- the line has clearly ended well before 10.45s. The
+      // original v5-era 9.6-10.3s window fits the visual evidence better
+      // than Gemini's fresh end-time and is kept.
+      { start: 9.6, end: 10.3, text: "—stay with me—" },
     ],
   },
   {
