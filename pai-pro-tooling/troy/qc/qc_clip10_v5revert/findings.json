@@ -1,0 +1,36 @@
+{
+  "findings": [
+    {
+      "timestamp": "01:31.400",
+      "category": "continuity",
+      "severity": 3,
+      "description": "Sudden visual jump from sunset campfire setting to bright daylight with ship masts during contiguous selfie shot.",
+      "end_timestamp": "01:31.500",
+      "fix": "Harmonize background environment and lighting across adjacent cuts.",
+      "verdict": "CONFIRMED",
+      "refined_description": "An abrupt cut occurs where the scene jumps from a sunset campfire setting on the beach directly to a bright daylight setting with ship rigging in the background."
+    },
+    {
+      "timestamp": "01:46.000",
+      "category": "text",
+      "severity": 3,
+      "description": "Background banner over tent entrance displays garbled text reading 'AACST PILVOTICE'.",
+      "end_timestamp": "01:46",
+      "fix": "Inpaint banner to display legible historical Latin/Greek text or untextured fabric.",
+      "verdict": "CONFIRMED",
+      "refined_description": "A fabric banner hanging above the tent entrance displays nonsensical AI-generated text reading 'AACST PILVOTICE'."
+    },
+    {
+      "timestamp": "01:46.400",
+      "category": "continuity",
+      "severity": 3,
+      "description": "Unannounced hard cut from atmospheric evening combat action to bright daylight selfie framing.",
+      "end_timestamp": "01:46.750",
+      "fix": "Include transition shot or match color grading and time of day across scene boundary.",
+      "verdict": "CONFIRMED",
+      "refined_description": "At 01:46.400, there is a sudden hard cut from the sunset combat scene where the woman helps an injured soldier to a brightly lit daylight selfie-style shot of the woman speaking to the camera."
+    }
+  ],
+  "summary": "The sequence effectively captures high-energy action while maintaining strong character feature consistency. Narrative momentum is occasionally disrupted by abrupt jumps in lighting and setting time-of-day. Minor background text artifacts also detract from period realism.",
+  "overall_score": 5.8
+}
