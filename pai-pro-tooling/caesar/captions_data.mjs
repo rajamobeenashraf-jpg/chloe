@@ -67,6 +67,37 @@
 // still an estimate, and this is a second, closer look at exactly the
 // place that estimate was weakest.
 //
+// SECOND FOLLOW-UP FIX ("The sheriff..." line, owner flagged again):
+// this line's internal word timing had never actually been measured —
+// only estimated by splitting the 7.303-13.072834 window proportionally
+// by word length, same limitation as "FIRST—" above but never revisited
+// for this line specifically. Root cause turned out to be deeper than a
+// bad proportional split: isolated the line's own audio (7.303-13.072834
+// extracted as a standalone clip) and ran whisper on it fresh, away from
+// the earlier shouting that had thrown off the full-clip transcription —
+// it transcribed cleanly, but placed the words starting ~2.9s into the
+// isolated clip (~10.2s absolute), nowhere near my 7.303 boundary at all.
+// Frame-checked to confirm: she's not even facing the camera from
+// 7.3-8.3s (watching Caesar's litter pass), only turns back and visibly
+// starts speaking around 8.7-9.0s — meaning the real 7.303 silencedetect
+// boundary was never her speech at all, just a stray reverb/energy tail
+// from the earlier shout crossing back above threshold. The isolated
+// whisper's own absolute offset still ran a little late against the
+// visual (mouth clearly active by ~9.0-9.1s, not 10.2s), so the fix
+// anchors the line's start to the frame-verified ~8.9s and carries
+// forward whisper's own measured inter-word spacing from there (a real
+// ASR measurement's relative timing is more trustworthy than another
+// proportional-by-length guess, even when its absolute offset needed a
+// visual correction). Net effect: the whole line shifted ~1.6s later
+// than previously captioned, now 8.9-11.54, with the clip's last ~1.5s
+// held on a trailing pause after "hat." rather than captioned — a
+// natural post-punchline beat before the hard cut, not a gap needing to
+// be filled. This is now the second time this exact line's caption
+// needed a real fix rather than trusting a single proportional pass —
+// worth remembering that "verified window, proportional split inside
+// it" is a weaker guarantee than it sounds when the window's own
+// boundary was itself derived from an estimate.
+//
 // Clip 6's chunk timing is a good independent cross-check of this
 // session's own hard-won manual fix: Artemidorus's three-beat echo
 // ("Red." / "Read first." / "A fine system.", found and fixed earlier
@@ -213,11 +244,11 @@ export const CLIPS = [
       { start: 3.465, end: 4.108, text: "ONE!" },
       { start: 4.108, end: 5.394, text: "RED MEANS" },
       { start: 5.394, end: 5.6, text: "FIRST—" },
-      { start: 7.303, end: 8.906, text: "THE SHERIFF" },
-      { start: 8.906, end: 9.867, text: "IN 1875" },
-      { start: 9.867, end: 10.989, text: "AT LEAST" },
-      { start: 10.989, end: 12.432, text: "TIPPED HIS" },
-      { start: 12.432, end: 13.072834, text: "HAT." },
+      { start: 8.9, end: 9.58, text: "THE SHERIFF" },
+      { start: 9.58, end: 10.62, text: "IN 1875" },
+      { start: 10.62, end: 10.92, text: "AT LEAST" },
+      { start: 10.92, end: 11.3, text: "TIPPED HIS" },
+      { start: 11.3, end: 11.54, text: "HAT." },
     ],
   },
   {

@@ -1121,6 +1121,38 @@ thorough checks on a wide window found nothing; one precise check on the
 right three seconds found the actual bug. Precision beats exhaustiveness
 when the target is known.
 
+**Clip 7's "sheriff" line — second, deeper fix.** Owner flagged this line
+again as not matching delivery. The earlier clip 7 fix (see above) only
+addressed "FIRST—"; this line's own internal word timing had never
+actually been re-examined — still a proportional-by-length split inside
+the 7.303-13.072834 window. Root cause turned out deeper than a bad
+split: isolated just this line's audio and ran whisper fresh on it, away
+from the earlier shouting that had corrupted the full-clip transcription.
+It transcribed the words cleanly but placed them starting ~10.2s
+absolute — nowhere near the 7.303 boundary at all. Frame-checked to
+resolve the conflict: she's not even facing the camera from 7.3-8.3s
+(watching Caesar's litter pass by), only turns back and starts visibly
+speaking around 8.7-9.0s. The real 7.303 silencedetect boundary was never
+her speech — it was a stray reverb tail from the earlier shout crossing
+back above the detection threshold. Final fix anchors the line's start to
+the frame-verified ~8.9s and carries forward whisper's own measured
+inter-word spacing from there, rather than trusting either the wrong
+7.303 anchor or the isolated whisper's own slightly-late absolute offset.
+Whole line shifted ~1.6s later than previously captioned (8.9-11.54);
+the clip's last ~1.5s is now a trailing pause after "hat." rather than
+captioned, which reads as a natural post-punchline beat before the cut,
+not a gap. Re-verified visually before shipping: the caption now
+appears while she's turned and visibly speaking, not while she's still
+watching the procession. Re-QC'd clip 7 only, rebuilt; duration-neutral,
+runtime unchanged at 111.3s.
+
+Second time this exact line needed a real fix rather than a single
+proportional pass — worth remembering going forward: a verified OUTER
+window with a proportional split inside it is only as trustworthy as the
+window's own boundary, and a boundary derived from "audio energy resumed
+here" isn't the same guarantee as "her speech resumed here" when there's
+a loud, reverberant event (a shout) immediately before it.
+
 Current state: assembled cut is `episode6_final_cut_compressed.mp4`,
 111.3s runtime, sent to the owner. Two open decisions remain, both
 already-flagged and still pending: clip 4's color grade vs. clip 3 (now
