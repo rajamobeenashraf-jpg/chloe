@@ -98,6 +98,60 @@
 // it" is a weaker guarantee than it sounds when the window's own
 // boundary was itself derived from an estimate.
 //
+// THIRD FOLLOW-UP FIX ("The sheriff..." line, owner flagged a third time —
+// "nothing wrong with her mouth, she's not even speaking it, there's a
+// voice coming from the background"): the SECOND fix above was itself
+// wrong, and the owner's new framing is exactly why. That fix anchored
+// the line's start to "mouth clearly active by ~9.0-9.1s" — but a dense
+// frame-by-frame re-check across the whole 9.2-11.7s span shows her
+// mouth moving almost continuously throughout, with no discernible
+// on/off transition anywhere in it. That continuous motion is a generic
+// reacting-to-the-procession animation, not phoneme-accurate lip sync to
+// this specific line, so "mouth looks active" was never capable of
+// telling 8.9s apart from any other candidate start — it was the wrong
+// signal to anchor on, full stop.
+// Went back to pure audio, twice, deliberately avoiding the mistakes in
+// both earlier passes:
+//   - Ran completely UNBIASED whisper (no script initial_prompt) on two
+//     independently-cut isolations — one starting at 10.3s, one starting
+//     at 8.0s (chosen specifically so the earlier cut couldn't just be
+//     echoing its own start-of-window back as "the first word," the
+//     failure mode that produced the original 7.303 false anchor).
+//     Both independently transcribed the line correctly AND placed its
+//     start at 10.2-10.3s absolute — not 8.9s, not 7.303s.
+//   - Ran Gemini eyes on AUDIO ONLY (video stripped out entirely, so it
+//     had no mouth motion to lean on) — independently reported a clear,
+//     close, single-voice line starting at 10.1s. A video-included pass
+//     asked the same question had confidently claimed 9.9s with the full
+//     9-word line compressed into 1.4s (not humanly plausible at a normal
+//     delivery pace) and asserted the mouth "matches precisely" — almost
+//     certainly the model pattern-matching her visible mouth motion onto
+//     the audio rather than actually measuring it, the same trap the
+//     8.9s frame-check fell into. That pass was discarded once the
+//     audio-only pass (with the confound removed) disagreed with it.
+//   - The 8.9-10.2s span itself: spectrogram shows genuinely unstructured,
+//     diffuse energy there (no formant striations, unlike the clear
+//     harmonic bursts from 10.2s on) — real crowd/reverb murmur, not
+//     speech. That is almost certainly the literal "voice coming from
+//     the background" the owner heard under the old 8.9s caption: audible
+//     background noise sitting where a clear foreground line should have
+//     been.
+// Three independent methods (2x unbiased whisper, 1x audio-only Gemini),
+// none sharing the other's failure mode, converged inside 0.2s of each
+// other on ~10.2s. Final chunks anchor to 10.2s and carry forward
+// whisper's measured inter-word spacing: 10.2-10.88 / 10.88-11.92 /
+// 11.92-12.22 / 12.22-12.6 / 12.6-12.84 — leaving a ~0.23s trailing pause
+// before the clip's hard cut at 13.072834, not the ~1.5s the second fix
+// left (a real tell, in hindsight, that the second fix's line was
+// anchored too early). Worth naming plainly: this line has now needed
+// three fixes because the first two each trusted a signal that turned
+// out not to be measuring what it was assumed to measure (a silencedetect
+// boundary that was a reverb tail, then a mouth-motion cue that was
+// generic animation, not lip sync). The thing that finally held up was
+// two DIFFERENT audio measurements, cut two different ways, agreeing
+// with each other — not any single clever check, however convincing it
+// looked in isolation.
+//
 // Clip 6's chunk timing is a good independent cross-check of this
 // session's own hard-won manual fix: Artemidorus's three-beat echo
 // ("Red." / "Read first." / "A fine system.", found and fixed earlier
@@ -244,11 +298,11 @@ export const CLIPS = [
       { start: 3.465, end: 4.108, text: "ONE!" },
       { start: 4.108, end: 5.394, text: "RED MEANS" },
       { start: 5.394, end: 5.6, text: "FIRST—" },
-      { start: 8.9, end: 9.58, text: "THE SHERIFF" },
-      { start: 9.58, end: 10.62, text: "IN 1875" },
-      { start: 10.62, end: 10.92, text: "AT LEAST" },
-      { start: 10.92, end: 11.3, text: "TIPPED HIS" },
-      { start: 11.3, end: 11.54, text: "HAT." },
+      { start: 10.2, end: 10.88, text: "THE SHERIFF" },
+      { start: 10.88, end: 11.92, text: "IN 1875" },
+      { start: 11.92, end: 12.22, text: "AT LEAST" },
+      { start: 12.22, end: 12.6, text: "TIPPED HIS" },
+      { start: 12.6, end: 12.84, text: "HAT." },
     ],
   },
   {

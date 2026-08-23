@@ -1153,6 +1153,64 @@ window's own boundary, and a boundary derived from "audio energy resumed
 here" isn't the same guarantee as "her speech resumed here" when there's
 a loud, reverberant event (a shout) immediately before it.
 
+**Clip 7's "sheriff" line — third fix. The second fix above was wrong,
+and the owner's own words explain exactly why:** "nothing wrong with her
+mouth, she's not even speaking it, there's a voice coming from the
+background." The second fix had anchored the line's start to "her mouth
+looks clearly active by ~9.0s" — but a dense frame-by-frame re-check
+across the full 9.2-11.7s span shows her mouth moving almost
+continuously the whole time, no on/off transition anywhere in it. That's
+a generic reacting-to-the-procession animation, not lip sync to this
+specific line, so "mouth looks active" could never have distinguished
+8.9s from any other candidate start. It was the wrong signal, and
+trusting it over the audio measurement was the actual mistake — not a
+timing nuance, a wrong method.
+
+Went back to pure audio, twice, each time deliberately closing off the
+failure mode that broke the previous two attempts:
+- Two completely UNBIASED whisper passes (no script `initial_prompt`),
+  cut two different ways — one isolation starting at 10.3s, one starting
+  at 8.0s (specifically so a too-tight cut couldn't just echo its own
+  start back as "the first word," the exact failure mode that produced
+  the original wrong 7.303 anchor). Both independently transcribed the
+  line correctly and both placed its start at 10.2-10.3s absolute.
+- Gemini eyes run on AUDIO ONLY, video stripped out, so it had no mouth
+  motion available to lean on — independently reported a clear, close,
+  single-voice line starting at 10.1s. A same-question pass WITH video
+  had confidently claimed 9.9s with the full 9-word line compressed into
+  1.4s (not physically plausible at a normal delivery pace) and insisted
+  the mouth "matches precisely" — almost certainly the model pattern-
+  matching her visible mouth motion onto the audio rather than actually
+  measuring it, the identical trap the 8.9s frame-check fell into.
+  Discarded once the audio-only pass, with that confound removed,
+  disagreed with it.
+- The 8.9-10.2s span itself: a spectrogram shows genuinely unstructured,
+  diffuse energy there — no formant striations, unlike the clear
+  harmonic bursts from 10.2s on. Real crowd/reverb murmur, not speech.
+  Almost certainly the literal "voice coming from the background" the
+  owner heard sitting under the old 8.9s caption.
+
+Three independent methods, no two sharing a failure mode, converged
+within 0.2s of each other on ~10.2s — a materially different bar than
+either previous fix cleared. Anchored to 10.2s, whisper's measured
+inter-word spacing carried forward: 10.2-10.88 / 10.88-11.92 /
+11.92-12.22 / 12.22-12.6 / 12.6-12.84, leaving a ~0.23s trailing pause
+before the clip's hard cut at 13.072834 — not the ~1.5s the second fix
+left, which in hindsight was itself a tell that that fix's anchor was
+too early. Re-QC'd clip 7 only, rebuilt, verified directly in the
+reassembled master (not just the standalone clip) that the caption now
+lands inside the real measured speech window. Duration-neutral, runtime
+unchanged at 111.3s.
+
+Stated plainly rather than smoothed over: this line has now taken three
+fixes because the first two each trusted a signal that turned out not to
+measure what it was assumed to measure — a silencedetect boundary that
+was actually a reverb tail, then a mouth-motion cue that was actually
+generic animation. What finally held up wasn't any single clever check,
+however convincing it looked in isolation — it was two independently-cut
+audio measurements agreeing with each other, cross-checked by a third
+method with a different blind spot.
+
 Current state: assembled cut is `episode6_final_cut_compressed.mp4`,
 111.3s runtime, sent to the owner. Two open decisions remain, both
 already-flagged and still pending: clip 4's color grade vs. clip 3 (now
