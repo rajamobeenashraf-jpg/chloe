@@ -1277,15 +1277,23 @@ stereo, carried through unchanged), and a direct frame comparison at a
 previously-checked timestamp (65.3s, the "THE SHERIFF" caption) confirms
 sharper detail with the caption still burned in crisp and correctly
 positioned — the upscale didn't disturb caption placement or legibility.
-Built a compressed delivery copy for sending (`episode6_final_cut_
-2k_compressed.mp4`, 4000k video bitrate scaled up from the SD delivery
-copy's 1500k to suit the 4x pixel count, same 128k AAC audio) — 54MB,
-duration-exact.
 
-Current state: 2K upscale delivered to the owner
-(`episode6_final_cut_2k_compressed.mp4`, 1440x2560, 111.3s). Full-
-resolution master at `episode6_final_cut_2k.mp4` (not committed, per
-standing rule — generated media stays out of git). Three items remain
+**Delivery — owner declined compression.** First built a compressed
+delivery copy (bitrate scaled up from the SD delivery copy's 1500k to
+suit the 4x pixel count) but it still landed at 54MB, over this chat's
+30MB attachment limit; a second, more aggressive pass was in progress
+when the owner said explicitly not to compress it at all and asked for
+a link to the untouched file instead. Stopped that compression
+(un-run, deleted) and gave the owner the Higgsfield-hosted CloudFront
+URL directly — the job's own `result_url`, already the exact
+uncompressed 217,705,643-byte 2K master, served with a 1-year immutable
+cache header, so it's a durable link, not a temporary one. No local
+re-encode needed or attempted for delivery.
+
+Current state: 2K upscale delivered to the owner via direct Higgsfield
+link (full master, 1440x2560, 111.3s, uncompressed). Local copy at
+`episode6_final_cut_2k.mp4` (not committed, per standing rule —
+generated media stays out of git). Three items remain
 open by explicit owner choice, not oversight: clip 4's color grade vs.
 clip 3, clip 6's background inscription, clip 6's red-mark jitter during
 the scroll-marking beat. Remaining pre-publish step per `CLAUDE.md`:
