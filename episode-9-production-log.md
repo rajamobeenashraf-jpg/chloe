@@ -910,3 +910,64 @@ confirmed Gemini findings, none inside the reshoot itself and two of the
 three already-known open items — all flagged in this log rather than
 silently accepted or silently fixed without the owner's sign-off.
 Owner's watch-through remains the final gate per standing rule.
+
+## Round 9 — clip08b re-reshoot, owner review catch (2026-08-23)
+
+Owner reviewed round 8's 4 raw clips directly this round (the checkpoint
+that should have happened before round 8's caption rewrite/pipeline
+rebuild — corrected this round; the assembled cut had already gone out
+before this review happened) and caught two things.
+
+**clip09b_reply — Khufu's final line, verified, no regeneration needed.**
+Confirmed as rendered: "Of course it stands. I commissioned it." — matches
+script exactly. Checked two independent ways: the caption pass's
+audio-boundary data (real silencedetect, finer -24dB pass) treats her full
+"...No body. Yours doesn't stay empty. Yours still stands." as one
+unbroken vocal block with Khufu's reply starting cleanly right after it;
+and frame-by-frame across the exchange, her mouth is what's moving through
+that entire block while his stays shut — he's already turned away, back to
+camera, before his own line even starts. One transcription tool's
+single-pass read had initially mis-split that block across both speakers;
+contradicted by both checks above, treated as a tool artifact, not a clip
+defect.
+
+Also surfaced two things outside what was asked, neither acted on this
+round per owner's "decide the rest later": a modern-looking tower crane
+and scaffolding visible throughout clip09b_reply's background (missed by
+this round's own earlier verification and by Gemini's round-8 QC), and
+Khufu's transport/seating rendered inconsistently across clip08a/09a/09b —
+and even within clip09a_stone alone, between its 1s mark (seated in a gold
+chair) and 5s mark (standing beside an unrelated gold chest, chair gone).
+Flagged for a later decision, not fixed.
+
+**clip08b — reshoot, owner-approved, scoped to this one clip.** The
+opening frame read as her face sunk chin-deep into a mound of sand rather
+than lying flat on the ground — awkward, and separate from the
+already-logged rising/drift issue. Rewrote `prompts/clip08b_v2.txt` in the
+pai-pro tree (kept as a new file; original `clip08b.txt` untouched for
+history): strengthened the STRICT CAMERA RULE and SCENE paragraphs to (a)
+specify she lies flat on top of undisturbed, level sand — no mound ever
+covers her chin/jaw/neck — and (b) repeat and extend the "does not rise"
+constraint through Hemiunu's closing line specifically, since the
+original's drift was most likely the model anticipating "The king will see
+you" by having her start to comply early. Nothing else in the prompt
+touched.
+
+Generated via `gen_video.mjs clip08b_v2 prompts/clip08b_v2.txt 12` — one
+attempt, succeeded first try. Output: `assets/clip08b_v2.mp4`, 12.05s
+(same runtime as the original). Frame-verified across 9 timestamps
+spanning the full runtime (0.3s-11.8s): flat/prostrate throughout,
+including through the 11.8s mark where the original had already risen to
+kneeling — no sand mound at ground contact, no internal cuts. Both flagged
+problems fixed clean on the first attempt.
+
+## STATUS: awaiting owner review — clip08b_v2 sent for approval
+
+Not yet promoted to replace `clip08b.mp4`, not yet folded into
+`captions_data.mjs` or the pipeline rebuild — owner review of the raw clip
+comes first, per the corrected checkpoint order. Everything else flagged
+this round (background crane, Khufu transport/seating consistency) stays
+open, owner's call on timing. `prompts/clip08b_v2.txt` lives in the
+pai-pro working tree (`Utopai-Research/pai-pro`, outside this session's
+repo scope) rather than this repo, so it isn't committed here — recorded
+in this log instead so another session can find it.
