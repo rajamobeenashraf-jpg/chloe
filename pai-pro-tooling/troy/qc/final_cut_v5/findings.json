@@ -1,0 +1,42 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:02.000",
+      "category": "background",
+      "severity": 3,
+      "description": "Background ships resemble Norse longships with dragon figureheads rather than Bronze Age Mycenaean galleys.",
+      "end_timestamp": "00:08",
+      "fix": "Replace background ship models with historically accurate Mycenaean penteconters.",
+      "verdict": "CONFIRMED",
+      "refined_description": "The background ships on the shoreline are designed like Viking longships with high curved dragon-like prows and mounted shields instead of Bronze Age Mycenaean galleys."
+    },
+    {
+      "timestamp": "00:38.000",
+      "category": "physics",
+      "severity": 3,
+      "description": "Arrow instantly attaches to the water bag upon impact with slight physics clipping.",
+      "end_timestamp": "00:40",
+      "fix": "Smooth the arrow entry animation and add realistic impact deformation to the sack.",
+      "verdict": "CONFIRMED",
+      "refined_description": "An arrow abruptly spawns and embeds into the water bag held by the woman with unnatural physics and clipping."
+    },
+    {
+      "timestamp": "00:49",
+      "category": "physics",
+      "severity": 2,
+      "description": "Knots on the counting rope softly warp and blend when handled.",
+      "end_timestamp": "00:54",
+      "fix": "Stabilize rope geometry during hand interaction frames."
+    },
+    {
+      "timestamp": "01:36",
+      "category": "physics",
+      "severity": 2,
+      "description": "The animal hide being dragged slightly intersects and clips into the sand.",
+      "end_timestamp": "01:40",
+      "fix": "Adjust contact collision on the ground plane."
+    }
+  ],
+  "summary": "Strong overall identity retention and cinematic quality across complex lighting setups and action scenes. Minor historical inaccuracies with naval assets and brief physics warping on interactive props occur. The overall narrative pacing and audio performance remain highly cohesive.",
+  "overall_score": 6.8
+}

@@ -79,6 +79,22 @@ else
   fi
 fi
 
+# Word-synced chunk captions (owner-locked 2026-08-23, see CLAUDE.md):
+# every episode's captions are built from measured per-word timestamps via
+# faster-whisper. Install the package if this container doesn't have it yet
+# (model weights download on first use and need huggingface.co + hf.co and
+# its CDN subdomains in the environment's allowed domains — already set).
+if python3 -c "import faster_whisper" 2>/dev/null; then
+  echo "[captions] faster-whisper already installed"
+else
+  echo "[captions] installing faster-whisper..."
+  if pip3 install --quiet faster-whisper 2>/dev/null; then
+    echo "[captions] faster-whisper install OK"
+  else
+    echo "[captions] WARNING: faster-whisper install failed — word-chunk caption timing will not work this session"
+  fi
+fi
+
 # Restore per-project tooling that lives under pai-pro/projects/ (outside
 # pai-pro's own git history, so a fresh clone never has it). This is exactly
 # what happened to Ep 1's qc_pass.mjs/build_final_cut.mjs — lost with the

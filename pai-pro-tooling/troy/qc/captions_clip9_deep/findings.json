@@ -1,0 +1,5 @@
+{
+  "findings": [],
+  "summary": "All on-screen captions accurately match both the audio track and the provided script without formatting or synchronization errors.",
+  "overall_score": 7.0
+}

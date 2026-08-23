@@ -1,0 +1,20 @@
+{
+  "findings": [
+    {
+      "timestamp": "01:19",
+      "category": "text",
+      "severity": 2,
+      "description": "On-screen caption skips the spoken line 'Who would DRAG it?'.",
+      "fix": "Add subtitle line '[Soldier] Who would DRAG it?'."
+    },
+    {
+      "timestamp": "01:54",
+      "category": "text",
+      "severity": 2,
+      "description": "On-screen caption omits 'Hazel \u2014' prior to 'out of time.'",
+      "fix": "Update caption text to 'Hazel \u2014 out of time.'"
+    }
+  ],
+  "summary": "The burned-in subtitles demonstrate excellent sync and accuracy overall, with only brief missing dialogue snippets in the latter half of the clip.",
+  "overall_score": 6.8
+}

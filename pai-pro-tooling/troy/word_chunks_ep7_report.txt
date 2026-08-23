@@ -1,0 +1,216 @@
+== clip1  words:30 matched:29 (97%)
+   script : The Trojan War. Homer says: ten years, a thousand ships, one big wooden horse. I'm here to fact-check the most famous story ever told. Rule one — stay off the plain.
+   whisper: The Trojan War. Homer says ten years, a thousand ships, one big wooden horse. I'm here to fact -check the most famous story ever told. Rule one — stay off the plain.
+      0.00 -    0.38  THE TROJAN
+      0.38 -    0.74  WAR.
+      1.06 -    1.52  HOMER SAYS:
+      1.52 -    2.42  TEN YEARS,
+      2.42 -    2.70  A THOUSAND
+      2.70 -    3.34  SHIPS, ONE
+      3.34 -    3.78  BIG WOODEN
+      3.78 -    4.06  HORSE.
+      4.64 -    4.84  I'M HERE
+      4.84 -    5.34  TO FACT-CHECK
+      5.34 -    5.66  THE MOST
+      5.66 -    6.26  FAMOUS STORY
+      6.26 -    6.86  EVER TOLD.
+      7.44 -    7.76  RULE ONE —
+      8.26 -    8.54  STAY OFF
+      8.54 -    8.90  THE PLAIN.
+== clip2  words:25 matched:25 (100%)
+   script : One rectangle of wool. Four ways to wear it. All of them itchy. Second era in a row I have been defeated by a rectangle.
+   whisper: One rectangle of wool. Four ways to wear it. All of them itchy. Second era in a row I have been defeated by a rectangle.
+      0.00 -    0.56  ONE RECTANGLE
+      0.56 -    1.16  OF WOOL.
+      1.78 -    2.18  FOUR WAYS
+      2.18 -    2.54  TO WEAR
+      2.54 -    2.86  IT.
+      3.50 -    3.82  ALL OF
+      3.82 -    4.30  THEM ITCHY.
+      5.16 -    5.72  SECOND ERA
+      5.72 -    5.96  IN A
+      5.96 -    6.34  ROW I
+      6.34 -    6.56  HAVE BEEN
+      6.56 -    7.08  DEFEATED BY
+      7.08 -    7.56  A RECTANGLE.
+== clip3  words:29 matched:28 (97%)
+   script : The wine has been watered five times. So it's a rumor of wine. It is a MEMORY of wine. 4/10. The cake could stop an arrow. I'm keeping it.
+   whisper: The wine has been watered five times. So it's a rumor of wine. It is a MEMORY of wine. 4 for 10. The cake could stop an arrow. I'm keeping it.
+      0.52 -    1.00  THE WINE
+      1.00 -    1.24  HAS BEEN
+      1.24 -    1.76  WATERED FIVE
+      1.76 -    2.12  TIMES.
+      2.58 -    2.94  SO IT'S
+      2.94 -    3.18  A RUMOR
+      3.18 -    3.58  OF WINE.
+      3.88 -    4.04  IT IS
+      4.04 -    4.42  A MEMORY
+      4.42 -    4.80  OF WINE.
+      4.80 -    7.38  4/10.
+      7.38 -    7.68  THE CAKE
+      7.68 -    7.98  COULD STOP
+      7.98 -    8.28  AN ARROW.
+      8.56 -    8.76  I'M KEEPING
+      8.76 -    8.98  IT.
+== clip4  words:27 matched:27 (100%)
+   script : You tie knots like a sailor. Thank you. Sailors drown. Krethon's knot. Ties tighter than anyone I've met. Water to the shield line at dawn. Stay low.
+   whisper: You tie knots like a sailor. Thank you. Sailors drown. Krethon's knot. Ties tighter than anyone I've met. Water to the shield line at dawn. Stay low.
+      3.56 -    4.28  YOU TIE
+      4.28 -    4.74  KNOTS LIKE
+      4.74 -    5.24  A SAILOR.
+      5.62 -    6.02  THANK YOU.
+      6.36 -    6.88  SAILORS DROWN.
+      7.16 -    7.62  KRETHON'S KNOT.
+      8.06 -    8.36  TIES TIGHTER
+      8.36 -    8.76  THAN ANYONE
+      8.76 -    9.14  I'VE MET.
+      9.56 -    9.92  WATER TO
+      9.92 -   10.36  THE SHIELD
+     10.36 -   10.80  LINE AT
+     10.80 -   11.12  DAWN.
+     11.72 -   12.14  STAY LOW.
+== clip5  words:6 matched:3 (50%)
+   script : Water girl! DOWN! Okay. That's new.
+   whisper: Okay. That's new.
+      1.68 -    2.35  WATER GIRL!
+      2.35 -    2.68  DOWN!
+      2.68 -    3.20  OKAY.
+      5.08 -    5.78  THAT'S NEW.
+== clip6  words:16 matched:16 (100%)
+   script : The food was better the first three years. He walks now. My son. Somewhere... he walks.
+   whisper: The food was better the first three years. He walks now. My son. Somewhere... he walks.
+      0.00 -    0.58  THE FOOD
+      0.58 -    1.04  WAS BETTER
+      1.04 -    1.46  THE FIRST
+      1.46 -    2.02  THREE YEARS.
+      3.30 -    3.70  HE WALKS
+      3.70 -    4.08  NOW.
+      4.78 -    5.20  MY SON.
+      7.22 -    7.78  SOMEWHERE...
+      7.78 -    8.18  HE WALKS.
+== clip7  words:51 matched:51 (100%)
+   script : Achilles. Nine years. They say you could end this war tomorrow, if you fought. Why don't you? Agamemnon took what was mine. I won't hand him my sword too. That's not strategy. That's a grudge with an army behind it. I have never been more scared of anyone in my life.
+   whisper: Achilles. Nine years. They say you could end this war tomorrow, if you fought. Why don't you? Agamemnon took what was mine. I won't hand him my sword too. That's not strategy. That's a grudge with an army behind it. I have never been more scared of anyone in my life.
+      0.00 -    0.40  ACHILLES.
+      1.24 -    1.86  NINE YEARS.
+      2.14 -    2.42  THEY SAY
+      2.42 -    2.72  YOU COULD
+      2.72 -    3.08  END THIS
+      3.08 -    3.62  WAR TOMORROW,
+      3.84 -    4.04  IF YOU
+      4.04 -    4.24  FOUGHT.
+      4.40 -    4.70  WHY DON'T
+      4.70 -    5.04  YOU?
+      5.04 -    5.52  AGAMEMNON TOOK
+      5.52 -    5.86  WHAT WAS
+      5.86 -    6.14  MINE.
+      6.46 -    6.76  I WON'T
+      6.76 -    7.02  HAND HIM
+      7.02 -    7.40  MY SWORD
+      7.40 -    7.72  TOO.
+      8.62 -    9.10  THAT'S NOT
+      9.10 -    9.52  STRATEGY.
+     10.20 -   10.58  THAT'S A
+     10.58 -   10.94  GRUDGE WITH
+     10.94 -   11.26  AN ARMY
+     11.26 -   11.84  BEHIND IT.
+     11.84 -   12.04  I HAVE
+     12.04 -   12.44  NEVER BEEN
+     12.44 -   12.86  MORE SCARED
+     12.86 -   13.32  OF ANYONE
+     13.32 -   13.66  IN MY
+     13.66 -   13.84  LIFE.
+== clip8  words:41 matched:35 (85%)
+   script : Burial truce. One afternoon — both sides collect their dead. And I'm walking water to the WALLS, because apparently that's who I am now. Same water. Both sides. [calls down, in his own tongue] He's about the age Krethon's son would be.
+   whisper: Burial truce. One afternoon — both sides collect their dead. And I'm walking water to the WALLS, because apparently that's who I am now. Same water. Both sides. He's about the age Krethon's son would be.
+      0.00 -    0.52  BURIAL TRUCE.
+      1.02 -    1.70  ONE AFTERNOON —
+      2.10 -    2.48  BOTH SIDES
+      2.48 -    2.94  COLLECT THEIR
+      2.94 -    3.16  DEAD.
+      3.58 -    3.82  AND I'M
+      3.82 -    4.26  WALKING WATER
+      4.26 -    4.46  TO THE
+      4.46 -    4.92  WALLS, BECAUSE
+      4.92 -    5.50  APPARENTLY THAT'S
+      5.50 -    5.72  WHO I
+      5.72 -    6.14  AM NOW.
+      7.24 -    7.72  SAME WATER.
+      8.36 -    8.82  BOTH SIDES.
+      8.82 -    9.50  [CALLS DOWN,
+      9.50 -    9.80  IN HIS
+      9.80 -   10.42  OWN TONGUE]
+     10.42 -   10.72  HE'S ABOUT
+     10.72 -   10.98  THE AGE
+     10.98 -   11.54  KRETHON'S SON
+     11.54 -   11.86  WOULD BE.
+== clip9  words:29 matched:29 (100%)
+   script : Okay. The horse plan... Giant wooden horse — soldiers hiding inside. Yes? A WHAT? Who would DRAG it? ...How many soldiers? No horse. YET. Remember I said it here first.
+   whisper: Okay. The horse plan. Giant wooden horse — soldiers hiding inside. Yes? A WHAT? Who would DRAG it? How many soldiers? No horse. YET. Remember I said it here first.
+      0.00 -    0.28  OKAY.
+      0.70 -    0.98  THE HORSE
+      0.98 -    1.30  PLAN...
+      1.98 -    2.18  GIANT WOODEN
+      2.18 -    2.78  HORSE — SOLDIERS
+      2.78 -    3.40  HIDING INSIDE.
+      3.64 -    3.72  YES?
+      4.14 -    4.30  A WHAT?
+      4.30 -    4.56  WHO WOULD
+      4.56 -    5.00  DRAG IT?
+      5.00 -    5.22  ...HOW MANY
+      5.22 -    5.44  SOLDIERS?
+      5.60 -    5.98  NO HORSE.
+      6.38 -    6.64  YET.
+      6.94 -    7.32  REMEMBER I
+      7.32 -    7.54  SAID IT
+      7.54 -    7.84  HERE FIRST.
+== clip10  words:3 matched:2 (67%)
+   script : —stay with me—
+   whisper: —get fired—stay with me—
+      9.06 -   10.22  —STAY WITH
+     10.22 -   13.00  ME—
+== clip11  words:21 matched:21 (100%)
+   script : Nine years of this. Every night. On BOTH sides of that wall. And Homer is going to make it sound GLORIOUS.
+   whisper: Nine years of this. Every night. On BOTH sides of that wall. And Homer is going to make it sound GLORIOUS.
+      0.00 -    0.58  NINE YEARS
+      0.58 -    1.16  OF THIS.
+      2.32 -    2.94  EVERY NIGHT.
+      3.74 -    4.34  ON BOTH
+      4.34 -    4.78  SIDES OF
+      4.78 -    5.20  THAT WALL.
+      6.72 -    7.18  AND HOMER
+      7.18 -    7.52  IS GOING
+      7.52 -    7.78  TO MAKE
+      7.78 -    8.16  IT SOUND
+      8.16 -    8.82  GLORIOUS.
+== clip12  words:49 matched:49 (100%)
+   script : Get home, Krethon. Count them out loud to him. In three thousand years, a man finds this city with a shovel in one hand and Homer in the other. The poem is the MAP. Whether it happened like the song says — it happened for THEM. Hazel — out of time.
+   whisper: Get home, Krethon. Count them out loud to him. In three thousand years, a man finds this city with a shovel in one hand and Homer in the other. The poem is the MAP. Whether it happened like the song says — it happened for THEM. Hazel — out of time.
+      0.00 -    0.40  GET HOME,
+      0.60 -    0.82  KRETHON.
+      1.12 -    1.30  COUNT THEM
+      1.30 -    1.62  OUT LOUD
+      1.62 -    1.98  TO HIM.
+      2.80 -    3.02  IN THREE
+      3.02 -    3.54  THOUSAND YEARS,
+      3.54 -    3.80  A MAN
+      3.80 -    4.30  FINDS THIS
+      4.30 -    4.66  CITY WITH
+      4.66 -    4.96  A SHOVEL
+      4.96 -    5.30  IN ONE
+      5.30 -    5.64  HAND AND
+      5.64 -    5.94  HOMER IN
+      5.94 -    6.22  THE OTHER.
+      6.70 -    7.06  THE POEM
+      7.06 -    7.38  IS THE
+      7.38 -    7.62  MAP.
+      8.70 -    9.08  WHETHER IT
+      9.08 -    9.56  HAPPENED LIKE
+      9.56 -    9.90  THE SONG
+      9.90 -   10.42  SAYS — IT
+     10.42 -   10.82  HAPPENED FOR
+     10.82 -   11.00  THEM.
+     11.92 -   12.08  HAZEL —
+     12.58 -   12.78  OUT OF
+     12.78 -   12.92  TIME.
+DONE
