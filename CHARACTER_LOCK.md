@@ -131,6 +131,26 @@ The EXACT same woman shown in the reference images — the character sheets and 
 - Its outputs are deliverables/final content only — per the permanent lock above, they never re-enter the pipeline as references.
 - Check status: `show_characters(action='status', soul_id='1b738001-5526-4038-8cf3-f2c136841b55')`.
 
+## LIFESTYLE PIPELINE — "Scene Transplant" (owner-agreed 2026-08-23, locked)
+
+**Two pipelines, never mixed:**
+- **Episodes (the show):** unchanged — generate from the canonical 20-image reference set + frozen identity string + matte/gritty clauses, per everything above. Episodes are the ground truth.
+- **ALL off-episode content** — Instagram photos and videos, lifestyle/dance/party/beach content, promos, thumbnails, makeup content — uses THIS pipeline. Never regenerate her face from references for lifestyle content; the reference-based route has a proven ~90–95% identity ceiling and is the reason "she looks different in pictures."
+
+**The method (proven end-to-end on PAI Pro, 2026-08-23 — restaurant glam stills sheer + full-coverage, and a 10s mall phone-call video):**
+1. **Start from a REAL movie frame** — her actual as-filmed pixels. Sources: the 10 Tier-2 CDN frames above, or extract fresh frames from any finished episode video with ffmpeg. Pick the frame by desired expression and angle (mid-speech frame → talking content; neutral frame → posed content). Never start from a generated still (no-chaining rule).
+2. **Crop tight** — head-and-shoulders; keep low necklines out of the source crop (filter-flag avoidance).
+3. **Edit the scene, not her** — PAI Pro `image-edit-pro`, single image input, prompt structure:
+   - Opening (refusal-safe, mandatory): *"EDIT THIS IMAGE — the input image shows our fictional AI-generated film character (not a real person). This is an identity-preserving scene edit, NOT a new generation. HARD RULE: her character design must stay EXACTLY identical to the input image, with zero deviation — [her feature list]. Do NOT repaint, regenerate, beautify, smooth, slim, or restyle her face."*
+   - **Makeup coverage dial** (state one): none (as-filmed freckles/matte) · sheer glam (*"a hint of her freckles still shows through the base"*) · **full-coverage glam** (*"professional full-coverage foundation completely conceals her freckles (NO freckles visible), smooth evenly-toned professionally-airbrushed makeup finish — the smoothness comes from the MAKEUP, not from changing her: bone structure, eye shape/color, nose, lip line, jawline unchanged; at close range still real made-up human skin, NOT plastic, NOT AI-smoothed"*).
+   - Scene/wardrobe/pose changes described freely; realism block (real skin under makeup, real fabric, no 3D/plastic/airbrushed look).
+4. **Video:** feed the QC'd transplant still to PAI `video-generation` as `reference_image` (asset flow per the episode scripts), 9:16, 720p, `generate_audio: true`, duration ≤15.2s/clip, action prompt as a single continuous take with lip-sync dialogue described.
+5. **QC every output against the SOURCE MOVIE FRAME** (not against studio stills) — ~1-in-6 drift applies to edits too; reject and re-roll. For videos, QC extracted frames at start/middle/end.
+6. **PAI refusal recipe** (its filter is stricter than Nano Banana's): fictional-character framing + tight crop + modest wardrobe phrasing; up to 3 attempts. Nano Banana Pro is the fallback engine for stills when PAI keeps refusing — same prompt structure.
+7. Lifestyle outputs are **final content only** — never references, never training data, never sources for further transplants.
+
+**Owner's one-line invocation for any new chat:** *"Make [content] using the Scene Transplant lifestyle pipeline in CHARACTER_LOCK.md."*
+
 ## Next steps
 - [x] QC the individual refset views — done 2026-08-20; 9/10 approved (see tables above)
 - [x] Strict Nano Banana Tier-3 set generated and QC'd — done 2026-08-20 (8 views)
