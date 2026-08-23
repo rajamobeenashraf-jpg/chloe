@@ -326,3 +326,25 @@ Owner asked how many clip10 versions exist and specifically for the v3 rocket-pr
 3. Edit-stage Gemini eyes QC (owner's rule — never during generation): full clip set, assembled cuts, captions mode vs .srt.
 4. Higgsfield `virality_predictor` pre-publish; owner's watch-through is the final gate.
 5. Manifest of every clip's job ID + URL committed to this branch as clips are generated.
+
+## Owner requests word-sync captions; reference video reverse-engineered (2026-08-23)
+
+Owner uploaded a reference reel (cosminacreates, Anne Boleyn — same genre as ours) asking for its caption pattern: subtitles matching each word as spoken. Analyzed frame-by-frame; verified three independent ways.
+
+**The verified pattern** (NOT karaoke highlighting):
+1. Dialogue broken into **1-2 word chunks** ("YOU HAVE" / "LOOKED AT" / "ME ALL" / "DAY"...), each chunk **replacing** the previous — text never accumulates into lines.
+2. Each chunk appears at its first word's spoken onset, holds only while its words are said (200-500ms typical).
+3. **Silence = no caption.** During mid-sentence pauses the screen is caption-free (confirmed: two full 100ms-sampled rows with no text between "HER" and "THIS ONE" in the 33-39s strip).
+4. **Hard cut in/out** — 30fps adjacent-frame check: no fade, no scale-pop, no color sweep.
+5. Reference styling: white all-caps serif, thin dark outline, no box, centered ~70% down. (Styling is a skin; the mechanism is the sync.)
+
+**Verification legs**: (a) 10fps frame trace 87-93s — full chunk sequence extracted; (b) second trace 33-39s — identical pattern + the silence-gap discovery; (c) 30fps trace across a transition — hard swap confirmed; (d) independent audio cross-check — Gemini word-onset timings track the frame-derived chunk boundaries with matching relative rhythm (±0.1s): chunks are per-word-timestamp-driven.
+
+**Why our pipeline can't do this today**: our cues are per-LINE (all silencedetect/mouth-frame can produce). The reference needs per-WORD timestamps. That's the whole gap — and the root cause of every caption-sync struggle this season.
+
+**Solution verified end-to-end this session**:
+- Timestamps: Google Cloud Speech-to-Text word offsets. Probed the real endpoint through this environment's proxy — got Google's own structured "needs API key" JSON, i.e. fully reachable, only a key missing. (Whisper local+API, Deepgram, AssemblyAI, Azure, ElevenLabs raw API: all egress-blocked here. AWS Transcribe also reachable as fallback.) ~$0.024/min with 60 free min/month; an episode is ~2.2 min of audio → effectively $0 at our volume.
+- Chunker: prototype written (groups word timestamps into 1-2 word chunks, breaks at sentence ends, gaps at silence); with our known scripts, recognized words get fuzzy-matched to script text and names like KRETHON get phrase-boost hints.
+- Renderer: existing ffmpeg/libass burn step, one Dialogue event per chunk — proven by rendering clip 4 with reference mechanics (`clip4_chunk_demo.mp4`, word boundaries interpolated within verified line windows for the demo) and frame-checking it.
+
+Demo sent to owner. Awaiting: go/no-go + a Google Cloud STT API key. Until then, per-line cues remain the shipped format.
