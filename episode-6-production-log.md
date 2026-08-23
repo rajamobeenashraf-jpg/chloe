@@ -868,17 +868,53 @@ time, so the clip7b -> clip9 brightness correction was re-measured and
 reapplied fresh against the new reference frame (~10.6-point gap this
 time, still brightness-only, same technique) rather than carried forward.
 
+**Clip 9 -> clip 10: fade-to-black, the one exception to hard cuts.** Owner
+asked for this transition specifically to be smoother, "maybe a fade."
+Tested the literal option first rather than assuming: built an actual
+crossfade between the current clip 9 and clip 10 and inspected the
+mid-blend frame — same ghosting defect as clip 11b's crossfade attempts
+(doubled faces, temple/birds bleeding through), confirmed with evidence,
+not just the standing rule. Proposed and, on owner approval, implemented
+a brief (0.2s) fade-to-black-and-back instead: each clip fades
+independently to/from black rather than blending into the other clip's
+misaligned pixels, so there's no ghosting risk. Video + matching audio
+fade baked onto the tail of `qc/clip9_qc.mp4` and the head of
+`qc/clip10_qc.mp4`, same layering pattern as this episode's brightness/
+color corrections. Verified directly in the rebuilt master: the boundary
+frames show one clean, darkening/lightening scene each, never a blend of
+both. Both clips' durations preserved exactly, so no drift. This is now
+the ONE non-hard-cut transition in the whole episode; documented as an
+explicit exception in `captions_data.mjs` alongside the evidence for why.
+
+**Clip 11 / clip 11b lip-sync — investigated and not confirmed as a real
+defect.** Owner reported the mouth movement not matching the audio in the
+episode's final two clips. Gemini's initial pass claimed specific stuck/
+motionless moments in both clips — but that same pass also produced a
+*third*, still-different transcription of clip 11b's already-disputed
+opening line, on top of the two prior conflicting reads, so its judgment
+on this character's audio was already suspect going in. Pulled the actual
+frames at every flagged timestamp in both clips and inspected directly:
+in every one, the mouth is actively open and varying, not stuck or
+motionless as claimed — the specific defect described does not hold up
+under direct inspection. Reported this back plainly rather than either
+dismissing the owner's concern or accepting Gemini's claim at face value;
+owner confirmed on review that it reads fine. No regeneration pursued.
+Worth remembering for future episodes: even where a specific automated
+claim doesn't survive a direct check, the right move is to say so and let
+the owner's own eyes make the final call, not to silently pick a side.
+
 Current state: assembled cut is `episode6_final_cut_compressed.mp4`,
-now 110.1s runtime (down from 128.5s across all the cuts above), sent to
-the owner multiple times through this process as fixes landed. Every
-dialogue clip's captions are confirmed against real audio by two
-independent methods. Two open decisions before Gate 3 can close, both
-still pending: clip 4 color grade (yes/no — the close-up staging issue
-above is a separate, now-closed question), and clip 6's background
-inscription (regenerate or leave — a baked-in visual defect, unrelated to
-any caption or trim work). Remaining Gemini QC checkpoint per
-`CLAUDE.md`'s owner rule: the captions pass is done; still open is Gemini
-QC on the assembled/stitched cut's visual conform once final grading is
-settled — note the conform has changed twice more since that checkpoint
-was last mentioned (clip 8 gone, clip 9 trimmed twice, three re-measured
-transitions), so that checkpoint should run against the CURRENT cut.
+still 110.1s runtime (the fade above is duration-neutral), sent to the
+owner multiple times through this process as fixes landed. Every dialogue
+clip's captions are confirmed against real audio by two independent
+methods. Two open decisions before Gate 3 can close, both still pending:
+clip 4 color grade (yes/no — the close-up staging issue is a separate,
+now-closed question), and clip 6's background inscription (regenerate or
+leave — a baked-in visual defect, unrelated to any caption or trim work).
+Remaining Gemini QC checkpoint per `CLAUDE.md`'s owner rule: the captions
+pass is done; still open is Gemini QC on the assembled/stitched cut's
+visual conform once final grading is settled — note the conform has
+changed several times since that checkpoint was last mentioned (clip 8
+gone, clip 9 trimmed twice, four re-measured/re-built transitions, one of
+them now a fade instead of a cut), so that checkpoint should run against
+the CURRENT cut.
