@@ -357,3 +357,13 @@ Open items before the episode converts to this format:
 1. Timestamp source decision (owner): allow `huggingface.co` in the environment network settings for WhisperX forced alignment (best precision, free), or supply a Google Cloud STT API key (reachable today, good-not-best). Without one of these, word boundaries stay interpolated — not shippable at our sync standard.
 2. Speaker attribution: the reference format has no speaker tags; our show used italic [Speaker] tags on NPC lines. Needs an owner call (drop tags entirely, tag only a line's first chunk, or color-code speakers).
 3. Once source + tags are settled: convert all 12 clips' cues to word chunks, rebuild, full Gemini captions re-QC, owner watch-through.
+
+## Word-level timing pipeline UNBLOCKED and proven (2026-08-23)
+
+Owner allowed the needed domains in the environment network settings (final working set: `huggingface.co`, `hf.co`, plus the hf.co CDN sub-domains — entries cover exact hostnames only, so `cdn-lfs.hf.co` / `us.aws.cdn.hf.co` / `cas-server.xethub.hf.co` needed their own entries; `download.pytorch.org` remains blocked and unneeded). `HF_HUB_DISABLE_XET=1` avoids the xet transfer path.
+
+**First real run (clip 4, faster-whisper `small.en`, int8 CPU, script-biased via initial_prompt):** model download + load 19s, transcription 5s for a 13s clip. Output: every word correct including "Krethon's", per-word start/end at centisecond precision, confidence per word. Measured times exposed real spoken pauses (0.44s before "Ties tighter", 0.58s before "Stay low") and showed the interpolated demo had drifted up to ~0.5s mid-line ("dawn" measured 10.80-11.12 vs interpolated 11.31-11.71) — precisely the residual sync gap the owner had flagged on the demo.
+
+**Chunker v2** (`/tmp/chunk_demo/`, to be promoted into `pai-pro-tooling/troy/`): consumes measured word timestamps; 1-2 word chunks; breaks at sentence ends AND at inter-word gaps ≥0.35s (real pauses go caption-blank, matching the reference); bridges sub-0.15s gaps to avoid flicker. Rendered `clip4_measured_demo.mp4` with the locked serif style; frame-verified ("DAWN." on screen at 10.95s exactly at its measured window) and sent to owner.
+
+Whole-episode conversion now only awaits the owner's verdict on this demo + the speaker-tag decision. Production notes for the conversion: run per-clip with each clip's script as initial_prompt; fuzzy-match output words to script text (timings are trusted, text comes from script); consider `medium.en` for the noisy clips (5, 10) and clamp line-initial onsets against known line windows where Whisper's first word bleeds into leading noise.
