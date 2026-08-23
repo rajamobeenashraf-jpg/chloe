@@ -1,0 +1,16 @@
+{
+  "findings": [
+    {
+      "timestamp": "01:46.000",
+      "category": "text",
+      "severity": 3,
+      "description": "The banner hanging over the tent entryway contains illegible AI-generated gibberish resembling 'AAICST PILNOTICE'.",
+      "end_timestamp": "01:46",
+      "fix": "Replace with historically accurate period Greek lettering or clean English signage if intended.",
+      "verdict": "CONFIRMED",
+      "refined_description": "The banner hanging above the tent entrance displays garbled, unreadable AI-generated text."
+    }
+  ],
+  "summary": "Captions accurately match spoken dialogue, but background environmental signage exhibits distorted AI text artifacts.",
+  "overall_score": 6.8
+}
