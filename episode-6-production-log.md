@@ -1211,10 +1211,83 @@ however convincing it looked in isolation — it was two independently-cut
 audio measurements agreeing with each other, cross-checked by a third
 method with a different blind spot.
 
-Current state: assembled cut is `episode6_final_cut_compressed.mp4`,
-111.3s runtime, sent to the owner. Two open decisions remain, both
-already-flagged and still pending: clip 4's color grade vs. clip 3 (now
-with a full fresh measurement on record), and clip 6's background
-inscription. Remaining Gemini QC checkpoint per `CLAUDE.md`'s owner rule:
-the captions pass is done; still open is Gemini QC on the assembled/
-stitched cut's visual conform once final grading is settled.
+## Gate 3, final pass — full transition/lighting re-audit, Gemini QC on the assembled cut, 2K upscale
+
+Owner asked for a complete check of the whole video (transitions, lighting/
+exposure), fixes for anything found, then a 2K upscale.
+
+**Fresh signalstats sweep, all 11 cut boundaries, current master.** Re-measured
+YAVG/UAVG/VAVG just before/after every cut point rather than trusting the
+last audit's numbers to still hold after the intervening rebuilds. Result:
+matches the prior audit almost exactly, no regressions — 1->2/2->3/7->7b
+negligible; 4->5/5->6/6->7 real luminance deltas (13-21pt) but flat color,
+same composition-explained call as before, not corrected; 3->4 the one
+known real gap (-24.37pt luminance, real color shift too, matches the prior
+~24pt measurement closely) — still the same open item, not a new one.
+
+One apparent problem turned out to be a false alarm: 9->10 measured an
+18pt gap, well outside what the log's own prior note expected (~4.3pt,
+supposedly small enough to no longer need correction). Pulled the actual
+frames before concluding anything was wrong — the "after" frame is solid
+black. This boundary is the deliberate fade-to-black transition (this
+episode's one documented exception to hard cuts), so a before/after
+delta straddling it is meaningless; both sample points fall inside an
+intentional fade, not adjacent true content. Confirmed visually, not a
+defect, no action needed.
+
+**Gemini eyes `qc` run on the assembled/stitched cut** — the one checkpoint
+from `CLAUDE.md`'s owner QC rule that had never actually been run (only
+individual pre-assembly clips had been checked before now). 6 candidate
+findings, verify pass at 5fps/high-res on the 5 at severity>=3:
+- CONFIRMED: ~52.4s (clip 6, ~9.5s local, the scroll-marking beat) — the
+  red pigment mark morphs/jitters/changes texture inconsistently frame to
+  frame as Artemidorus rubs it on. A different defect than the earlier
+  cross-vs-stripe shape issue already fixed in Gate 2 — this is temporal
+  instability in the mark's rendering, not its shape.
+- DISMISSED (4): goblet liquid physics, crowd foot-contact, scroll
+  continuity across the pickup, and a flagged "continuity jump" at 01:41
+  that the verify pass correctly identified as an intentional scene cut,
+  not a defect.
+- Sub-threshold, not verified (1): bird-flock clustering ~01:17 (clip 9),
+  severity 2. Per the project's own standing rule, unverified low-severity
+  findings are hints, not facts — not acted on.
+
+**Three items reported to the owner before touching anything**, per the
+permanent regeneration-approval rule (applies to every submission,
+including previously-flagged items being revisited): clip 4's color grade
+vs. clip 3, clip 6's background inscription (both already open), and the
+newly-confirmed clip 6 red-mark jitter. Noted that the two clip 6 issues
+could plausibly be addressed in one combined regeneration attempt if the
+owner wanted to act on them.
+
+**Owner's decision: leave all three as-is**, upscale the current cut now
+regardless of them. No regeneration submitted. These three items remain
+open/accepted, unchanged from before.
+
+**2K upscale.** Uploaded `episode6_final_cut.mp4` (the uncompressed
+master, not the compressed delivery copy, to avoid compounding
+compression artifacts) to Higgsfield, ran `upscale_video` via the
+`bytedance` provider (`aigc` preset — matches AI-generated source content
+specifically; 24fps, matching the source; `2k` target resolution).
+Source was 720x1280; result is 1440x2560 — a clean, exact 2x upscale
+preserving the 9:16 aspect ratio precisely. Job took ~13 minutes wall
+time for the 111s clip. Verified before delivery: duration exactly
+matches the source (111.333333s, zero drift), audio stream intact (AAC
+stereo, carried through unchanged), and a direct frame comparison at a
+previously-checked timestamp (65.3s, the "THE SHERIFF" caption) confirms
+sharper detail with the caption still burned in crisp and correctly
+positioned — the upscale didn't disturb caption placement or legibility.
+Built a compressed delivery copy for sending (`episode6_final_cut_
+2k_compressed.mp4`, 4000k video bitrate scaled up from the SD delivery
+copy's 1500k to suit the 4x pixel count, same 128k AAC audio) — 54MB,
+duration-exact.
+
+Current state: 2K upscale delivered to the owner
+(`episode6_final_cut_2k_compressed.mp4`, 1440x2560, 111.3s). Full-
+resolution master at `episode6_final_cut_2k.mp4` (not committed, per
+standing rule — generated media stays out of git). Three items remain
+open by explicit owner choice, not oversight: clip 4's color grade vs.
+clip 3, clip 6's background inscription, clip 6's red-mark jitter during
+the scroll-marking beat. Remaining pre-publish step per `CLAUDE.md`:
+Higgsfield `virality_predictor` on the render, then the owner's
+watch-through as final gate.
