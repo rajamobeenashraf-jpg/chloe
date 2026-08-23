@@ -93,6 +93,16 @@ Produce Episode ___ — ___ (fill in from episodes-5-9-scripts.md, e.g.
 - Commit and push your episode's log to your own branch regularly.
 - Ask me for approval at the same gates Episodes 1-4 used: character-in-costume
   stills first, then clip-by-clip review, then the stitched cut, then QC rounds.
+- PERMANENT (owner lock 2026-08-21 — CLAUDE.md QC rule + creative-direction.md
+  §19): NEVER regenerate a clip without my explicit go-ahead, no matter who
+  found the problem — your own review, Gemini eyes, or any failed QC. Report
+  the issue and your proposed fix, then WAIT for my decision (regenerate or
+  waive). This applies to EVERY regeneration attempt: a fix that didn't land
+  needs a fresh check-in before you try again. Never assume. I decide.
+- PERMANENT (owner lock 2026-08-21 — creative-direction.md §20): whenever you
+  shoot a clip, SEND it to me in chat immediately (compressed copy of the
+  actual footage) and ask for my approval — every clip, every version, every
+  time. Unapproved clips never enter the edit.
 ```
 
 ---

@@ -1,0 +1,26 @@
+{
+  "findings": [
+    {
+      "timestamp": "01:40.400",
+      "category": "audio",
+      "severity": 3,
+      "description": "The burned-in caption '\u2014stay with me\u2014' displays at 01:40.50, but the dialogue is spoken aloud at 01:42.00.",
+      "end_timestamp": "01:42",
+      "fix": "Shift the subtitle display timing to 01:42.00 to match the spoken audio.",
+      "verdict": "CONFIRMED",
+      "refined_description": "The subtitle text '\u2014stay with me\u2014' displays prematurely between 01:40.40 and 01:41.00, whereas the line is spoken aloud at 01:42.00."
+    },
+    {
+      "timestamp": "01:37.000",
+      "category": "background",
+      "severity": 3,
+      "description": "A modern Red Cross emblem is visible on the medical tent in an ancient Trojan War setting.",
+      "end_timestamp": "01:45",
+      "fix": "Remove or replace the Red Cross insignia with period-accurate Greek/Trojan markings.",
+      "verdict": "CONFIRMED",
+      "refined_description": "A tent in the background displays a modern Red Cross emblem above its entrance, which is anachronistic for the ancient setting."
+    }
+  ],
+  "summary": "Captions and background elements are mostly accurate, with a slight timing offset on one subtitle and an anachronistic medical tent symbol.",
+  "overall_score": 6.5
+}

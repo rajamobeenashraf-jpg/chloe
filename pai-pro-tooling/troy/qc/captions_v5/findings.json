@@ -1,0 +1,36 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:33",
+      "category": "text",
+      "severity": 2,
+      "description": "Character name is misspelled as 'Kreton's' instead of 'Krethon's' in the on-screen caption.",
+      "fix": "Change 'Kreton's knot.' to 'Krethon's knot.'"
+    },
+    {
+      "timestamp": "01:02",
+      "category": "text",
+      "severity": 3,
+      "description": "Caption misspells Agamemnon as 'Agamon'.",
+      "fix": "Change '[Achilles] Agamon took what was mine.' to '[Achilles] Agamemnon took what was mine.'",
+      "verdict": "DISMISSED",
+      "refined_description": "The onscreen text caption correctly spells the name as 'Agamemnon' rather than 'Agamon'."
+    },
+    {
+      "timestamp": "01:22",
+      "category": "text",
+      "severity": 2,
+      "description": "Caption misspells Krethon as 'Kredian's'.",
+      "fix": "Change 'Kreton's son' to 'Krethon's son.'"
+    },
+    {
+      "timestamp": "01:55",
+      "category": "text",
+      "severity": 2,
+      "description": "Caption misspells Krethon as 'Crean'.",
+      "fix": "Change 'Get home Crean.' to 'Get home, Krethon.'"
+    }
+  ],
+  "summary": "Captions generally align with audio delivery but contain multiple spelling inconsistencies regarding historical and character names.",
+  "overall_score": 6.8
+}

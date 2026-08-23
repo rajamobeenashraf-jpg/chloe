@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "timestamp": "01:25",
+      "category": "text",
+      "severity": 2,
+      "description": "On-screen captions skip the soldier's background dialogue line 'Who would DRAG it?' between 'A WHAT?' and '...How many soldiers?'.",
+      "end_timestamp": "01:27",
+      "fix": "Include burned-in subtitle for '[Soldier] Who would DRAG it?' matching the audio."
+    },
+    {
+      "timestamp": "01:53",
+      "category": "text",
+      "severity": 2,
+      "description": "Caption displays 'Get home Krean.' instead of 'Get home, Krethon.'",
+      "end_timestamp": "01:55",
+      "fix": "Update subtitle text to 'Get home, Krethon.'"
+    }
+  ],
+  "summary": "Overall captioning is accurate and well-synced, with only minor missing background dialogue lines and minor character name misspelling.",
+  "overall_score": 7.2
+}

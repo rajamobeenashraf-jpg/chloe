@@ -5,7 +5,9 @@ US-market AI historical channel reverse-engineered from Chloe VS History and Nov
 This file was reconciled 2026-08-20 from the two prior CLAUDE.md versions on a
 newest-command-wins basis: every rule the owner never changed is kept; where an
 older rule conflicts with a later owner decision, the later decision stands and
-is marked. Latest owner decision recorded: 2026-08-20 (Gemini QC timing).
+is marked. Latest owner decisions recorded: 2026-08-22 (ask before every clip
+regeneration + send every clip to the owner for approval, reinforced: sending
+the clip is never gated behind Claude's own findings — see the QC rule below).
 
 Read before any creative, research, or production work — these files are this project's memory:
 1. `NEW_CHAT_HANDOFF.md` — START HERE: operating manual (setup, parallel-chat rules, approval gates)
@@ -31,15 +33,52 @@ Standing rules:
   1. the full clip set entering the edit,
   2. assembled/stitched cuts (while conforming visuals, lighting, transitions),
   3. the subtitle pass (`captions` mode, cross-checked against the .srt).
-- Claude fixes flagged issues independently: re-stitch, correct caption text or
-  timing, adjust the conform; regenerate an individual clip only when a
-  CONFIRMED flag requires it — and every regenerated clip gets re-checked at the
-  edit before it re-enters the cut. Every CONFIRMED finding is either fixed or
+- Claude fixes flagged issues independently where the fix is NOT a clip
+  regeneration: re-stitch, correct caption text or timing, adjust the
+  conform. Every regenerated clip still gets re-checked at the edit before it
+  re-enters the cut, and every CONFIRMED finding is either fixed or
   explicitly waived by the owner before delivery.
+- **PERMANENT, owner lock 2026-08-21 — supersedes this section's older
+  "regenerate...only when a CONFIRMED flag requires it" self-directed
+  language: ask the owner before submitting ANY clip regeneration, every
+  time, whether the finding comes from Claude's own review or from Gemini
+  eyes.** Report the confirmed issue and the proposed fix, then wait for
+  explicit go-ahead before submitting it to PAI/Higgsfield. Applies per
+  regeneration attempt, not just per clip — a first fix attempt that doesn't
+  land needs a fresh check-in before a second attempt, not silent iteration.
+  Found on Episode 6: 5 clips were regenerated across two QC rounds (a
+  self-QC pass, then Gemini eyes) without a check-in; the owner asked why
+  and locked this rule for every future episode. Companion rule, same
+  session: `creative-direction.md` §19 (fuller writeup) and §18 (the
+  related, broader "no unauthorized creative deviation" rule from Episode 5
+  — this rule tightens §18's "routine execution" carve-out specifically for
+  regenerations, closing the gap that let routine-seeming re-tries proceed
+  without sign-off).
+- **PERMANENT, owner lock 2026-08-21 (companion to the regeneration rule):
+  every generated clip is SENT to the owner in chat the moment it exists — a
+  compressed copy of the actual footage, per clip, never batched or merely
+  described — with approval explicitly requested. No clip enters the edit
+  until the owner approves it, and every regenerated version goes back to the
+  owner the same way. This send is never gated behind Claude's own QC or
+  Gemini eyes findings running first — deliver the footage, then report any
+  findings as supplementary information, not as a proposed fix awaiting
+  approval; only the owner's own decision after watching starts a
+  regeneration (owner reinforcement, 2026-08-22). Fuller writeup:
+  `creative-direction.md` §20.**
 - Treat unverified low-severity findings as hints, not facts; only findings
   marked CONFIRMED by the verify pass are trusted.
 - Before publish: run Higgsfield `virality_predictor` on the render; the owner's
   watch-through remains the final gate.
+
+## Caption system (owner-locked 2026-08-23 — supersedes full-line cues for ALL episodes)
+
+Captions are word-synced CHUNKS, reverse-engineered from the owner's reference reel and approved from a measured-timing demo: 1–2 word ALL-CAPS chunks, each REPLACING the previous (never accumulating into lines); a chunk is on screen only while its words are spoken; pauses ≥0.35s leave the screen caption-free; hard cut in/out, no animation; serif style (Liberation Serif bold, spacing 2.5, white + thin dark outline, MarginV=320); NO speaker tags (a gold speaker-color variant is under consideration — not yet decided).
+
+Implementation (reference: Episode 7, `pai-pro-tooling/troy/`):
+- Timing comes from **measured per-word timestamps** (`make_word_chunks.py`, faster-whisper, script-biased) — never estimated, never interpolated except clamped within known line windows for words the model can't hear (chaos-noise clips), and any such fallback is frame-verified before shipping. Script text is ground truth; whisper only carries timing.
+- `qc_pass.mjs` (spacing-capable) burns one Dialogue event per chunk; keep line-level cues as a `captions_data_lines_backup.mjs`-style source-of-truth input.
+- The session-start hook installs faster-whisper automatically; model weights pull from Hugging Face (domains already allowed on this environment).
+- New episodes: copy `make_word_chunks.py`, `qc_pass.mjs`, and the `SUB_STYLE` block from `pai-pro-tooling/troy/` into the new episode's tooling dir, write the script lines with rough line windows, run the tool, review its per-clip match report, frame-verify anything it flags.
 
 Tooling:
 - **vidIQ MCP** — YouTube + Instagram/TikTok data: outliers, keywords, stats, comments, transcripts, video watching. Calls cost credits — check `vidiq_balance`, batch questions.

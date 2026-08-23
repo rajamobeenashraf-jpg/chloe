@@ -1,0 +1,31 @@
+{
+  "findings": [
+    {
+      "timestamp": "01:02",
+      "category": "text",
+      "severity": 2,
+      "description": "Achilles pronounces the name as 'Agamon' while the caption displays 'Agamemnon'.",
+      "fix": "Re-record dialogue to clearly pronounce 'Agamemnon' or adjust subtitle to match performance."
+    },
+    {
+      "timestamp": "01:27",
+      "category": "text",
+      "severity": 2,
+      "description": "The soldier's line 'Who would DRAG it?' is audible in the audio track but omitted from the burned-in captions.",
+      "end_timestamp": "01:29",
+      "fix": "Add the missing caption line '[Soldier] Who would DRAG it?' between timestamps 01:27 and 01:28."
+    },
+    {
+      "timestamp": "01:37.000",
+      "category": "background",
+      "severity": 3,
+      "description": "A modern Red Cross emblem is visible on the medical tent in the background of the ancient Greek camp.",
+      "end_timestamp": "01:45",
+      "fix": "Paint out or replace the Red Cross emblem with period-appropriate fabric or Greek insignia.",
+      "verdict": "CONFIRMED",
+      "refined_description": "A modern Red Cross emblem is visibly displayed on the entrance flap of a medical tent in the background of the ancient setting."
+    }
+  ],
+  "summary": "Captions closely match dialogue throughout with minor dialogue omissions during the campfire sequence and a slight pronunciation mismatch on character names. An anachronistic red cross symbol appears on background tentage.",
+  "overall_score": 6.5
+}

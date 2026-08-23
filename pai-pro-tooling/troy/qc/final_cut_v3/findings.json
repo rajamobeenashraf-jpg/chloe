@@ -1,0 +1,32 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:49",
+      "category": "physics",
+      "severity": 2,
+      "description": "Hazel's fingers slightly clip through the rope fibers while touching Krethon's knot.",
+      "end_timestamp": "00:53",
+      "fix": "Clean up the contact area between fingers and rope geometry."
+    },
+    {
+      "timestamp": "01:15",
+      "category": "physics",
+      "severity": 2,
+      "description": "The pulley rope carrying the basket clips slightly through stone wall geometry as it rises.",
+      "end_timestamp": "01:18",
+      "fix": "Adjust rope spline offset away from the stone wall edges."
+    },
+    {
+      "timestamp": "01:32.000",
+      "category": "physics",
+      "severity": 3,
+      "description": "Incoming flaming arrows produce heavy, rocket-like smoke exhaust trails across the sky.",
+      "end_timestamp": "01:43",
+      "fix": "Replace thick rocket propellant smoke trails with subtle ballistic fire particle arcs.",
+      "verdict": "CONFIRMED",
+      "refined_description": "At around 01:31-01:34, an incoming flaming projectile in the sky leaves behind a thick, continuous gray smoke contrail that mimics the exhaust trajectory of a modern rocket rather than a standard flaming arrow."
+    }
+  ],
+  "summary": "Character identity and performance consistency remain solid across all scenes. Minor physics clipping occurs during hand-prop interactions and basket ascent. Visual effects for fire projectiles appear slightly anachronistic due to heavy smoke plumes.",
+  "overall_score": 6.8
+}

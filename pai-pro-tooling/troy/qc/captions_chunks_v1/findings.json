@@ -1,0 +1,49 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:00",
+      "category": "text",
+      "severity": 3,
+      "description": "On-screen caption reads 'WAR.' while spoken audio is 'The Trojan War.' missing the initial words.",
+      "fix": "Update caption to 'THE TROJAN WAR.'",
+      "verdict": "DISMISSED",
+      "refined_description": "The initial words are not missing; the subtitles display 'THE TROJAN' first from 00:00 to 00:03, followed immediately by 'WAR.' at 00:04, matching the spoken phrase."
+    },
+    {
+      "timestamp": "00:02",
+      "category": "text",
+      "severity": 3,
+      "description": "Caption displays 'A THOUSAND' and 'BIG WOODEN' while speaker says 'ten years, a thousand ships, one big wooden horse.'",
+      "fix": "Update caption text to include full spoken line: 'TEN YEARS, A THOUSAND SHIPS, ONE BIG WOODEN HORSE.'",
+      "verdict": "DISMISSED",
+      "refined_description": "The onscreen text represents standard synchronized subtitles appearing phrase-by-phrase in alignment with the spoken narration ('TEN YEARS,', 'A THOUSAND', 'SHIPS, ONE', 'BIG WOODEN', 'HORSE.'), showing no error or mismatch."
+    },
+    {
+      "timestamp": "00:05",
+      "category": "text",
+      "severity": 3,
+      "description": "Caption omits spoken words 'I'm here to fact check' and 'famous story', showing only 'THE MOST' and 'EVER TOLD.'",
+      "fix": "Update caption to 'I'M HERE TO FACT-CHECK THE MOST FAMOUS STORY EVER TOLD.'",
+      "verdict": "DISMISSED",
+      "refined_description": "The subtitles accurately include all spoken words during this segment in sequential order ('I'M HERE', 'TO FACT-CHECK', 'THE MOST', 'FAMOUS STORY', 'EVER TOLD.'), with nothing omitted."
+    },
+    {
+      "timestamp": "00:08",
+      "category": "text",
+      "severity": 2,
+      "description": "Caption shows 'STAY OFF' but speaker clearly says 'stay off the plain.'",
+      "fix": "Update caption to 'STAY OFF THE PLAIN.'"
+    },
+    {
+      "timestamp": "00:14.000",
+      "category": "text",
+      "severity": 3,
+      "description": "Caption text truncates 'Second era in a row I have been defeated by a rectangle' across frames, leaving out 'in a row I' and 'defeated by'.",
+      "fix": "Ensure full spoken dialogue is represented in caption sequence: 'SECOND ERA IN A ROW I HAVE BEEN DEFEATED BY A RECTANGLE.'",
+      "verdict": "DISMISSED",
+      "refined_description": "The caption text displays all parts of the spoken line sequentially across frames without omitting 'in a row I' or 'defeated by'."
+    }
+  ],
+  "summary": "The video presentation and audio performance are high quality, but several burned-in captions omit key words from spoken dialogue or truncate phrases excessively.",
+  "overall_score": 7.5
+}
