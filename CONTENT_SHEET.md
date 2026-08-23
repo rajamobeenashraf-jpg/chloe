@@ -20,6 +20,8 @@ This file covers **everything that is NOT an episode**: Instagram photos and vid
 
 1. **Pick a real movie frame.** Sources: the 10 Tier-2 CDN frames listed in CHARACTER_LOCK.md, or extract fresh frames from any finished episode video (`ffmpeg -i clip.mp4 -vf "select='eq(n\,N)'" -vframes 1 out.png`). Choose by expression: mid-speech frame → talking content; neutral/smiling frame → posed content. Her expression carries into the output.
 2. **Crop tight** — head-and-shoulders; keep low necklines out of the crop (avoids content-filter flags).
+   **Source-matching rule (owner, 2026-08-23): match the source frame's environment to the target scene — INDOOR content starts from an INDOOR movie frame, OUTDOOR content from an OUTDOOR frame.** A drastic relight (e.g. sunset street → indoor daylight) forces the model to repaint the face and causes identity drift.
+   **Never instruct makeup REMOVAL (owner, 2026-08-23).** In the episodes she wears NO makeup except her lip tint — the as-filmed face already IS the natural/no-makeup look. A "remove makeup / no lashes / natural lips" instruction makes the model repaint her identity features (bold brows, lash-framed eyes, full glossy lips) into a different plainer face. For a "before" look: change wardrobe and scene ONLY, keep her face exactly as the input.
 3. **Edit with PAI Pro `image-edit-pro`** (single image input). The prompt MUST open with the refusal-safe identity hard-rule (verbatim template in CHARACTER_LOCK.md): fictional AI film character, identity-preserving scene edit, zero deviation, do not repaint/beautify/smooth/slim/restyle her face. Then describe freely: scene, outfit, pose.
 4. **Set the makeup dial** — say one of:
    - **No makeup** → as-filmed look, freckles and matte skin
