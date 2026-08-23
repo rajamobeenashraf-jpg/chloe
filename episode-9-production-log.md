@@ -870,3 +870,43 @@ all 5 new/changed cut points (7->8a, 8a->8b, 8b->9a, 9a->9b, 9b->10) via
 frame pulls — all clean, no artifacts, no jarring position mismatches
 despite clip08b's body-position drift landing right at one of those cuts.
 Delivery copy: 27MB.
+
+**Gemini eyes `qc` mode on the rebuilt cut**: 4 findings, 3 confirmed —
+and notably, **none of them fall inside the reshoot** (all four new/
+changed clips span 1:09.75-1:56.92; every finding below sits well outside
+that window, on original footage this round never touched):
+1. **Costume drift at the clip3->clip4 boundary (~29s), confirmed** —
+   reinforces the "broader wardrobe-rendering variance" item already open
+   since round 3 (same category of finding, not a new occurrence). Still
+   not fixed, still the owner's call — large scope, pre-existing, out of
+   any single round's remit.
+2. **Tally-wall pseudo-script (~42s), confirmed, NEW catch** — the carved
+   attendance-log wall in clip5_irony shows modern-looking numerals and
+   Greek/Latin-ish characters instead of anything resembling Old Kingdom
+   hieratic. Real, on original untouched footage, not fixed this round —
+   flagging fresh rather than folding it into the wardrobe item since it's
+   a different root cause (writing-system anachronism, not costume
+   drift).
+3. **Jar/wheel physics on clip7 (~61s), confirmed** — same persistent
+   artifact this exact QC pass has now caught independently across
+   multiple rounds (rounds 2, 3, and F all found a version of this on the
+   same original, unchanged clip7 footage). Reinforces rather than
+   discovers; still out of scope, still not fixed.
+The 4th (high-five hand clipping, ~1:58, severity 2) is unverified — a
+hint per the standing rule, not acted on.
+
+## STATUS: delivered — full reshoot of the royal-audience sequence, clean verification
+
+All four reshot clips (`clip08a_prostrate`, `clip08b`, `clip09a_stone`,
+`clip09b_reply`) are new content: Khafre added as a second historical
+figure, the weak "stopped my stone"/ramp-theory exchange replaced with a
+Hemiunu-suspicion throughline and an explicit 2026 reveal anchored to the
+real Hetepheres tomb mystery. Frame-verified clean across all four full
+runtimes — zero internal cuts, matching the STRICT CAMERA RULE discipline
+this project has held since the earlier clip8 fix. Two honest, non-
+blocking findings from this round's own verification (clip08b's body-
+position drift, clip08a's horse-drawn-carriage anachronism) and three
+confirmed Gemini findings, none inside the reshoot itself and two of the
+three already-known open items — all flagged in this log rather than
+silently accepted or silently fixed without the owner's sign-off.
+Owner's watch-through remains the final gate per standing rule.
