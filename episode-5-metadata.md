@@ -8,7 +8,12 @@ with Tank as it happens, and signs off back in 2026 seeing a bird — the fact t
 birds are the only surviving dinosaur lineage. Solo character (Hazel), vertical
 9:16 Shorts, runtime 131.6s, sign-off line "Hazel — out of time."
 
-## 1 · YouTube title (pick one)
+## 1 · YouTube title
+**Finalized (owner decision, vidIQ CTR score 97/100, validated against real IG/TikTok outlier data in this niche):**
+`You are the last person who will ever see a dinosaur alive.`
+This line is also the video's spoken cold-open hook (clip1a_vista_v3) and the Instagram POV title.
+
+Earlier candidates (not selected):
 - Straight: `I time travelled to 66 million BC — the day the dinosaurs died`
 - Stake-led: `I time travelled to the day the dinosaurs went extinct — and rescued one first`
 - Curiosity-gap: `I time travelled to the day the dinosaurs died — then I saw one today`
@@ -22,8 +27,11 @@ hazel out of time, time travel, time travel vlog, pov history, immersive history
 
 ## 4 · Instagram caption
 
-POV title variant (line 1 swap-in, on owner request):
-- `POV: You're in Hell Creek, 66 million years BC — four hours before the asteroid hits.` (pick)
+**Finalized POV title (line 1, owner decision):**
+`You are the last person who will ever see a dinosaur alive.`
+
+Earlier POV candidates (not selected):
+- `POV: You're in Hell Creek, 66 million years BC — four hours before the asteroid hits.`
 - `POV: You just time travelled to the day the dinosaurs went extinct.`
 - `POV: It's 66 million BC, and you're the only one who knows what happens today.`
 
