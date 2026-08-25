@@ -55,3 +55,8 @@
 - Rebuilt the prompt: she now walks inside a single line, in the gaps between soldiers, with those beside her in profile actively holding shields forward.
 - Self-QC (frame extraction): shields now clearly show their painted fronts facing toward her/the camera, not backs — the impossible-shield-placement bug is fixed. She reads as embedded among the ranks rather than behind them. Sent to owner for review.
 - File: `pai-pro/projects/legnica/assets/clip1_v1.mp4` (7.06s, 5.54MB).
+
+## 2026-08-26 (cont.) — Clip 1B generated; thorough QC before sending (per owner instruction)
+- Owner asked to verify clip 1B thoroughly before/instead of just a pre-submission dry-run check. Generation had already completed by the time the instruction arrived (same timing issue as an earlier clip 1 round) — flagged that honestly, then did a full post-generation QC pass instead of sending immediately.
+- QC (dense frame extraction, ~2.5fps): duration correct (9.06s); no camera/device visible; continuity from clip 1 confirmed by comparing clip 1's actual last frame (her turned to face the open horizon, soldiers out of frame) against clip 1B's first frame (same position/framing) — a true position/gaze match, not a jump; cavalry reveal escalates genuinely — a resolved near group of individually distinct riders (varied poses, visible composite bows, horse tack, one banner) appears first, then more of the horde becomes visible as dust clears further, matching the layered-reveal design; ending shows her turning back toward the European line, consistent with the "I need to find whoever's in charge" bridge into clip 2.
+- File: `pai-pro/projects/legnica/assets/clip1B_v1.mp4` (9.06s, 5.87MB). Sent to owner for approval.
