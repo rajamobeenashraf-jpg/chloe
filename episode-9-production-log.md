@@ -1348,3 +1348,38 @@ mid-word). Duration 11.354s -> 8.354s. Pre-cut version preserved whole as
 frame-count sanity exact (3802/3802). New opening frame-verified: cold
 open on "TWENTY YEARS." caption, pyramid still dominant in frame, natural
 mouth position, no visible cut artifact.
+
+**Follow-up same round: "And today? [pause] I'm meeting him." gap.**
+Owner separately caught this as long. Checked it the same way as every
+pause this round — real silencedetect measurement (1.296s, 5.892-7.189s)
+plus a frame-by-frame look at what's actually happening across it. This
+one is genuinely different from the earlier dead-air case: she plays a
+real held smile/anticipation beat, setup into punchline, not a static
+hold. Said so plainly rather than treating every pause the same way.
+Weighed against the hook-strength finding anyway (peak still landing
+late, clip still trying to move faster) and proposed trimming rather
+than cutting outright. Owner agreed.
+
+First two cut-point attempts were rejected on my own frame-check before
+either got promoted — one landed inside her mouth still closing from
+"today?", the other landed close enough to "I'm meeting"'s actual
+articulation onset (whisper-measured 6.80s, vs. the coarser acoustic
+threshold's 7.19s) to risk clipping it. Third attempt (cut points 6.1s/
+6.7s, both frame-verified as a clean matching smile-hold on both sides
+of the join) landed clean: new gap 0.72s, down from 1.296s — a partial
+rather than full reduction, since cutting any tighter without clipping
+speech wasn't available. Duration 8.354s -> 7.797s. Pre-cut version
+preserved as `clip01_vista_v3_gap2preTrim.mp4` (full clip01 lineage now:
+v1 original -> v1_pretrim -> v2_pausetrim -> v2_headtrim -> v3_gap2preTrim
+-> current). Captions re-measured from scratch (100% whisper match).
+Pipeline rebuilt clean: 158.42s -> 157.83s, frame-count sanity exact
+(3788/3788). Verified in the actual rebuilt cut, not just the isolated
+clip.
+
+## STATUS: delivered — clip01 hook fully re-paced across three rounds
+
+Sand-mound-style diligence applied to a hook this time instead of a
+reshoot: dead air trimmed, redundant opening cut per a real hook-strength
+test (not just opinion), and a legitimate performance beat tightened
+without being eliminated. Updated `giza_final_cut_compressed.mp4`
+(157.83s) delivered. Owner's watch-through remains the final gate.
