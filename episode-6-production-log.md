@@ -1563,12 +1563,53 @@ wasn't contradicted, just not what the clarification was about. New file:
 `episode6_final_cut_2k_hookhud_v5.mp4`, verified duration/audio/hook
 frame directly before delivering via the same direct-link pattern.
 
+## Thumbnail v5 — composition fix (face dominance, glam dial, reposition)
+
+Owner gave three rounds of feedback on the v4 thumbnail, handled in
+sequence:
+
+**"Her face is too much prominent... make her a little beautiful."**
+Two distinct fixes, not one: (1) the face-dominance issue traced back to
+the SOURCE frame — v3/v4 used an extreme selfie-close-up crop from clip 7
+(the same one used for thumbnail v1), and the Scene Transplant edit's
+"keep her exact pose/framing unchanged" instruction faithfully preserved
+that tight framing into the output. Swapped to a source frame from
+clip 1's clean/uncaptioned master (full upper body, much more environment
+visible) instead — a compositional fix at the SOURCE, not something
+fixable by prompting the edit alone. (2) "a little beautiful" maps
+directly onto `CHARACTER_LOCK.md`'s own documented makeup-coverage-dial
+parameter (none / sheer glam / full-coverage) — bumped from "none" to
+"sheer glam" (a hint of freckles still shows through), explicitly NOT a
+bone-structure/identity change, which the pipeline's own hard rule
+still forbids. New script version kept in `generate_thumbnail_dramatic.mjs`
+(v2 comments document both changes).
+
+**"She is in the middle of the frame. Bring it to the right side."**
+A real compositional request the identity-preserving edit alone can't
+satisfy (repositioning the subject within frame isn't a "scene" edit).
+Solved with Higgsfield `outpaint_image`: first attempt used
+`aspect_ratio: "auto"` with explicit width/height, which silently ignored
+the override and just upscaled without adding any new content (caught by
+inspecting the result before proceeding — output content was pixel-for-
+pixel the same composition, just bigger). Fixed by passing an explicit
+enum ratio (`4:5`) instead, which genuinely widened the canvas with new
+generated content on both sides (a whole additional senator with a raised
+dagger appeared on the left). Cropped a 9:16 window from the LEFT portion
+of the widened canvas — since the outpaint expanded symmetrically, a
+left-aligned crop keeps her original (centered) position but now sitting
+in the right two-thirds of the narrower crop window. Verified the
+geometry by inspecting the actual crop before upscaling further.
+
+Re-ran the same true-AI-upscale (Higgsfield, 4K) + banner-compositing
+process from the v4 fix on this new base. New file: `thumbnail_ep6_v5.png`
+(current thumbnail).
+
 Current state: `episode6_final_cut_2k_hookhud_v5.mp4` is the current
-final file (2K, bigger sans-serif hook + `_v3`'s animated ending cards
+final video (2K, bigger sans-serif hook + `_v3`'s animated ending cards
 over real footage, 111.3s), delivered via direct link. Ending-card STYLE
 is still open — 3 previews sent, owner hasn't picked a direction yet.
-Thumbnail now `thumbnail_ep6_v4.png` (Scene Transplant generation,
-properly upscaled, bigger banner). Local copies not committed, per
+Thumbnail now `thumbnail_ep6_v5.png` (repositioned right, sheer glam,
+wider/less face-dominant composition). Local copies not committed, per
 standing rule — generated media stays out of git. Three items remain
 open by explicit owner choice, not oversight: clip 4's color grade vs.
 clip 3, clip 6's background inscription, clip 6's red-mark jitter during
