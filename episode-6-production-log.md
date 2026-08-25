@@ -1347,13 +1347,72 @@ plain 2K upscale (owner's standing preference — no compression): uploaded
 to Higgsfield, confirmed byte-exact (269,187,630 bytes) at the CDN URL
 before sending.
 
-Current state: `episode6_final_cut_2k_hookhud.mp4` is the current final
-file (2K, hook + revised ending HUD burned in, 116.3s), delivered via
-direct link. Local copies (`episode6_final_cut_2k.mp4`, `episode6_
-final_cut_2k_hookhud.mp4`) not committed, per standing rule — generated
-media stays out of git. Three items remain open by explicit owner
-choice, not oversight: clip 4's color grade vs. clip 3, clip 6's
-background inscription, clip 6's red-mark jitter during the
-scroll-marking beat. Remaining pre-publish step per `CLAUDE.md`:
-Higgsfield `virality_predictor` on the render, then the owner's
-watch-through as final gate.
+## Opening hook restyled, ending HUD moved off the freeze and animated
+
+Owner rejected the first hook style (flat white banner) and asked for
+3 alternative angles. Gave: eyewitness ("I WAS THERE WHEN THEY KILLED
+HIM"), flash-forward shock-stat ("23 WOUNDS. I WATCHED IT HAPPEN."),
+and a more visceral first-person failed-warning line. Owner picked the
+eyewitness angle with their own wording ("I was there when they killed
+Caesar") and asked for a different visual style — "more prominent,"
+"bordered with the edges." Read this as bold bordered text (drawtext's
+own `bordercolor`/`borderw` stroke around the glyphs) directly over the
+footage rather than a flat banner box — a genuinely different, more
+modern "hook text" treatment. Fontsize 88 (was 60), white fill, thick
+10px black border, two lines, no box. Tested on a short clip before
+committing to the full render; held up against both the light sky and
+darker background.
+
+**Second, more substantial correction: the ending HUD's placement was
+wrong, not just its animation.** Owner pointed out she's silent/static
+for the entire 5s window the HUD occupies — correctly identifying that
+this was the FROZEN-FRAME EXTENSION added to make room for the HUD,
+which is dead air by construction (a held freeze-frame has zero motion,
+zero speech, for its entire duration). Asked to shift the HUD 5s
+earlier so it overlaps real footage where she's actually talking.
+Removed the `tpad`/`apad` extension entirely and instead overlaid the
+HUD on the LAST 5 seconds of the original, un-extended footage
+(106.333-111.333s) — this window isn't continuously speech (there's a
+pause before "Hazel—" and trailing silence after "Time."), but it's
+live, moving footage throughout, and the tease/follow cards now
+genuinely overlap her actual sign-off line rather than a static hold.
+Verified directly: a frame during the follow card's hold shows "HAZEL —"
+burned in from the real dialogue captions at the same moment, confirming
+the cards now sit over real performance, not dead air. Duration back to
+111.333333s (the freeze-frame's +5s is gone).
+
+**Third ask: make the cards themselves feel like "a beautiful, stylish
+pop up," not a hard on/off cut.** The original brand HUD spec (from the
+metadata skill) always specified "slides up from the bottom third" —
+my first implementation had simplified this away to a flat enable/
+disable cut. Built a real slide+fade entrance: each card's Y position
+and alpha are both time-varying expressions (`if(lt(t,...))` piecewise
+functions) rather than constants — 0.3s slide-up-from-200px-below +
+fade-in on entrance, held at full opacity/position, 0.25s fade-out on
+exit (position held, only alpha ramps down). Verified with isolated
+frame extraction at the entrance (confirmed semi-transparent, mid-slide,
+not simply appearing), the held state (full opacity, resting position),
+and the follow card's entrance overlapping the tease card's exit
+cleanly. All three drawtext instances (2 tease lines + follow) share
+timing per card so they move as one visual unit.
+
+New file: `episode6_final_cut_2k_hookhud_v3.mp4`, 111.333333s (matches
+the un-extended master exactly — no more added dead time). Verified all
+three overlay moments (hook, tease-entrance mid-slide, follow-entrance
+overlapping "HAZEL —") directly in the final rendered file, not just
+in isolated component tests, before delivering. Delivered via the same
+direct-link pattern, confirmed byte-exact (267,308,455 bytes) at the
+CDN URL before sending. Superseded and deleted the two prior hook/HUD
+attempts (`episode6_final_cut_2k_hookhud.mp4`, and an in-flight
+`_v2` render that was stopped mid-encode once the ending-placement
+correction came in, before it ever finished).
+
+Current state: `episode6_final_cut_2k_hookhud_v3.mp4` is the current
+final file (2K, restyled hook + animated ending cards over real
+footage, 111.3s), delivered via direct link. Local copies not
+committed, per standing rule — generated media stays out of git. Three
+items remain open by explicit owner choice, not oversight: clip 4's
+color grade vs. clip 3, clip 6's background inscription, clip 6's
+red-mark jitter during the scroll-marking beat. Remaining pre-publish
+step per `CLAUDE.md`: Higgsfield `virality_predictor` on the render,
+then the owner's watch-through as final gate.
