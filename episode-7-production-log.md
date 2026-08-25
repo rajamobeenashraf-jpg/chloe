@@ -420,3 +420,9 @@ Higgsfield ByteDance upscaler (AIGC preset, 24fps preserved), run on the final c
 Owner explicitly wants the uncompressed original, not a re-encoded delivery copy -- given via its permanent CDN link (Higgsfield's own result URL, `cache-control: immutable`, verified byte-for-byte against the local download: 243,579,075 bytes). Local raw copy also kept at `assets/troy_final_cut_2k.mp4` (not committed -- media stays out of git per standing rule).
 
 This is the final Episode 7 deliverable pending: the clip10 banner text decision, virality predictor, and the owner's watch-through/sign-off.
+
+## Speaker-tag decision closed: white for everyone (2026-08-25)
+
+Two-day reminder fired as scheduled. Demoed the proposed gold speaker-color variant on clip 4 (quartermaster's three lines in gold, Hazel's own lines white) alongside a direct comparison still. Owner: "No. The white text is good for all the speakers." Decision is final and documented in CLAUDE.md -- no color-coding for any future episode's captions unless the owner raises it again themselves. No production files changed (the demo was rendered standalone on a copy of clip4; the actual episode cut was never touched by this experiment, so nothing to revert).
+
+Recap of what's still open to wrap Episode 7: clip10's banner-text finding (fix or waive), Higgsfield virality_predictor, and the owner's final watch-through/sign-off.
