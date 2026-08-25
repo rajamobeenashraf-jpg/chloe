@@ -29,7 +29,7 @@
 
 ## 2. HAZEL — costume & staging notes for this episode
 She stays the locked v4 "as-filmed" identity (frozen string from `CHARACTER_LOCK.md`, verbatim in every prompt) — **never redesign the face.** Costume/staging only:
-- Practical, unarmed, non-combatant "field observer" look: dark undyed wool cloak/hood over simple period underdress, leather satchel strap across the body, sturdy laced boots — reads as a traveler/camp-follower a 13th-century army wouldn't stop to question, not a noble, not a soldier. No armor, no weapon, ever.
+- **Locked costume (v3, owner-approved design 2026-08-25 — revised from the original cloak version, which read as "the same dress as the army"):** an ordinary 13th-century COMMON WOMAN's outfit, deliberately distinct from the soldiers' military cloaks/mail/gambesons around her — a fitted-bodice, ankle-length wool kirtle dyed muted madder-red/faded rust, worn undyed linen apron over it, a thin linen kerchief loosely tied back (hair fully loose and visible underneath, per the identity lock), a small linen drawstring pouch at her belt (not a satchel strap), plain soft leather flat shoes, mud-caked hem. No armor, no weapon, ever, no cloak matching the men's colors/cut. Reads at a glance as a civilian townswoman/villager caught near an army, never mistakable for a soldier or camp-follower in matching gear.
 - Matte/gritty clause and realism block (per CHARACTER_LOCK usage rules) apply to every still and clip: mud, dust, sweat, hard directional light, no beauty lighting.
 - She never fights. Every "active" beat is observation, movement, and object-use (dragging herself behind cover, pulling back from a lane, gripping a shield-edge) — consistent with §12 without giving her a weapon.
 
