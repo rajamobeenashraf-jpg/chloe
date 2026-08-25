@@ -1448,13 +1448,32 @@ to "I WAS THERE WHEN THEY KILLED CAESAR" to match the confirmed in-video
 hook, so the two assets carry the same hook language rather than a stale,
 rejected line.
 
+## Thumbnail generated
+
+Owner asked for the thumbnail (§7 of the metadata package), giving the
+exact banner text to use: "I time travelled to Rome in 44 BC — the day
+Caesar died" — the straight-title option from §1, not the shorter
+in-video hook line. Built by compositing onto an ACTUAL frame from the
+episode (clip 7, local ~9.9s — chosen for a clean crowd/architecture
+background with no pre-existing burned caption to work around) rather
+than a fresh text-to-image generation, per `CHARACTER_LOCK.md`'s
+standing rule that Hazel's face is never regenerated from text. Banner
+text is 12 words (vs. the spec's own "≤10 words" guidance) — split
+across two lines rather than shortened, since the owner gave this exact
+wording; white banner, black Liberation Sans Bold (matching the
+now-updated in-video hook font), amber "44 BC" year stamp bottom-left.
+Checked legibility at ~150px (thumbnail-grid size) before delivering —
+holds up. Saved to `thumbnail_ep6.png` in project assets (not committed,
+generated media stays out of git per standing rule).
+
 Current state: `episode6_final_cut_2k_hookhud_v4.mp4` is the current
 final file (2K, sans-serif hook + `_v3`'s animated ending cards over real
 footage, 111.3s), delivered via direct link. Ending-card STYLE is still
-open — 3 previews sent, owner hasn't picked a direction yet. Local copies
-not committed, per standing rule — generated media stays out of git.
-Three items remain open by explicit owner choice, not oversight: clip 4's
-color grade vs. clip 3, clip 6's background inscription, clip 6's
-red-mark jitter during the scroll-marking beat. Remaining pre-publish
-step per `CLAUDE.md`: Higgsfield `virality_predictor` on the render,
-then the owner's watch-through as final gate.
+open — 3 previews sent, owner hasn't picked a direction yet. Thumbnail
+delivered (`thumbnail_ep6.png`). Local copies not committed, per
+standing rule — generated media stays out of git. Three items remain
+open by explicit owner choice, not oversight: clip 4's color grade vs.
+clip 3, clip 6's background inscription, clip 6's red-mark jitter during
+the scroll-marking beat. Remaining pre-publish step per `CLAUDE.md`:
+Higgsfield `virality_predictor` on the render, then the owner's
+watch-through as final gate.
