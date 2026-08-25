@@ -15,3 +15,9 @@
 2. On approval: generate clips 1–10 from `episode-legnica-script.md` §3, in order, sending each to the owner immediately per creative-direction.md §20 — never batched, never entering the edit unapproved.
 3. No clip regeneration without an explicit owner go-ahead per §19, including clip 9 (Henry's death) if it needs more than one attempt.
 4. Gemini eyes QC runs only at the edit stage, once the full clip set is approved and stitched, per the owner's QC rule in `CLAUDE.md`.
+
+## 2026-08-25 (cont.) — Costume v3: common-woman redesign
+- Owner flagged v1/v2's dark hooded cloak read as "the same dress as the European army" — visually blending with soldiers' own cloaks in the background.
+- Generated v3: replaced the cloak entirely with a period-plausible common woman's kirtle (fitted laced bodice, muted madder-red, ankle-length flared skirt) + undyed linen apron + loosely-tied kerchief (hair fully visible, per CHARACTER_LOCK) + small linen drawstring pouch instead of a satchel strap + soft leather shoes. Silhouette now reads immediately as a civilian woman, distinct from the soldiers' mail/gambeson/cloak in the same frame.
+- File: `pai-pro/projects/legnica/assets/hazel_legnica_costume_v3.png` (not committed to git, ephemeral per standing rule). Sent to owner for approval.
+- This is now the locked costume reference pending approval — all future clip prompts will describe this exact outfit (kirtle color/cut, apron, kerchief, pouch, shoes), not the earlier cloak version.
