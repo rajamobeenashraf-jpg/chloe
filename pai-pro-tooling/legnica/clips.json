@@ -1,0 +1,22 @@
+{
+  "clips": [
+    {
+      "n": 1,
+      "duration": 7,
+      "cameraMode": "selfie",
+      "scene": "A medieval European army assembling on a churned, overcast battlefield near Legnica, Poland, April 9, 1241 — dozens of soldiers with kite shields and spears, banners whipping violently in the wind, horses breathing hard nearby, real individual motion throughout (no static crowd). HAZEL walks forward through the ranks facing the lens, confused. A horn sounds — everyone turns toward the horizon in the SAME continuous take. She turns with her body, the view swinging past her own shoulder toward the horizon as a massed dust cloud, already visible, thickens through the shot; Mongol cavalry resolves out of the dust by the shot's end, her face still catching the light from it.",
+      "dialogue": "HAZEL (breathless, urgent, to lens): \"April, 1241. Europe is about to face the Mongols.\"",
+      "action": "Single continuous unbroken shot, one camera angle throughout, no cuts, no scene changes, real-time continuous take. She is walking the entire time, never planted/static; the turn toward the horizon happens live, embedded in her own motion, not a cut to a new scene.",
+      "sound": "Wind, banners snapping, horses breathing and shifting, distant murmur of the assembling army, then a war horn, then the growing rumble of massed hooves as the dust cloud thickens"
+    },
+    {
+      "n": 2,
+      "duration": 10,
+      "cameraMode": "selfie",
+      "scene": "Continuous from clip 1's location: HAZEL walks up to Duke Henry II the Pious, mounted on his horse, nobles and soldiers around him, facing the lens the whole time with Henry visible over her shoulder/beside her in the same frame (never a separate reverse shot of him alone).",
+      "dialogue": "HAZEL (arriving, to lens): \"Duke Henry the Second. He's leading them.\" HAZEL (to Henry, still facing the lens): \"How many are we fighting?\" [Henry] (grim, eyes on the horizon, visible in her frame): \"Enough.\" [beat — Mongol cavalry begins moving in the background, visible over his shoulder in her shot] [Henry]: \"Hold the line!\"",
+      "action": "Henry looks to the horizon BEFORE he answers — the look precedes the line, not after. He raises his weapon and calls to his own line only after Mongol movement is already visible behind him in the same continuous take. Single continuous unbroken shot, no cuts.",
+      "sound": "Wind, restless horses, low murmur of nobles, Henry's voice grim and commanding, distant horns beginning on the Mongol side"
+    }
+  ]
+}
