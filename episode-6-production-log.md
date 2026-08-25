@@ -1290,12 +1290,70 @@ uncompressed 217,705,643-byte 2K master, served with a 1-year immutable
 cache header, so it's a durable link, not a temporary one. No local
 re-encode needed or attempted for delivery.
 
-Current state: 2K upscale delivered to the owner via direct Higgsfield
-link (full master, 1440x2560, 111.3s, uncompressed). Local copy at
-`episode6_final_cut_2k.mp4` (not committed, per standing rule —
-generated media stays out of git). Three items remain
-open by explicit owner choice, not oversight: clip 4's color grade vs.
-clip 3, clip 6's background inscription, clip 6's red-mark jitter during
-the scroll-marking beat. Remaining pre-publish step per `CLAUDE.md`:
+## Metadata package + opening hook / ending HUD burned into the final file
+
+Ran the `hazel-out-of-time` skill for Episode 6's full metadata package
+(title options, description, tags, IG/TikTok/FB captions, thumbnail spec,
+alt text, ending script, weekly carousel). Flagged honestly rather than
+smoothed over: the skill's standard 3-beat spoken ending (question/tease/
+follow) isn't actually in the locked edit — clip 11b ends cold on
+"Twenty-three wounds... Hazel — out of time." with no spoken CTA, and
+retrofitting spoken beats would mean a new clip, which needs the owner's
+go-ahead same as any regeneration. Proposed the pinned comment + HUD
+overlay as the practical substitute that doesn't touch the locked
+performance.
+
+Owner corrected the "next destination" twice: first pointed out my
+initial guess ("Troy," inferred from this repo's own Episode 7 tooling)
+wasn't what they'd asked for — they'd actually pasted this SAME episode's
+own title back at me by mistake, which I caught and flagged rather than
+silently running with a self-referential "next episode" tease. Correct
+answer: "66 million BC — the day the dinosaurs died." Second correction:
+drop the spoken Question beat entirely (keep only Tease + Follow), tighten
+total ending time from ~10s to 5s (2.5s/2.5s), and use their exact
+next-episode title text rather than my paraphrased version.
+
+**Burned the corrected ending HUD plus a new opening hook into the actual
+2K file** — a real edit request, not just copy. Opening hook: "THE
+WARNING NEVER REACHED HIM" (reused the already-vetted thumbnail banner
+text rather than inventing new copy), white banner/black bold text, top
+of frame, 0-2.5s. Ending: extended the file by 5s via a frozen-final-
+frame hold (`tpad`/`apad`) since the locked edit only had ~1.7s of tail
+after the sign-off line finishes — nowhere near enough room for a clean
+5s HUD sequence without overlapping the spoken "Hazel — out of time."
+Tease card ("NEXT JUMP: 66 MILLION BC" / "THE DAY THE DINOSAURS DIED")
+for 2.5s, then Follow card ("FOLLOW TO COME ALONG") for 2.5s, amber
+brand color, bottom third, Liberation Serif Bold to match the caption
+system.
+
+Hit a real ffmpeg bug getting there, worth recording: `drawbox` silently
+renders nothing (no error, no warning) when an `h`-relative position
+expression (`y=h-490`) is combined with a timeline `enable=` clause on
+this system's ffmpeg 6.1.1 — confirmed by isolating every variable
+(color format, alpha syntax, thickness keyword) until only that one
+combination remained, each ruled out with its own passing test. Fix:
+use `drawtext`'s own `box=1:boxcolor=...` instead of a separate `drawbox`
+layer — proven to handle the identical `h`-relative-position +
+`enable` combination correctly (the "FOLLOW TO COME ALONG" card worked
+on the first attempt specifically because it was already built this
+way) — so the two-line tease card was rebuilt as two stacked `drawtext`
+boxes rather than one `drawbox` rectangle behind plain text. Verified
+all three overlays (hook, tease, follow) directly in the final rendered
+file via frame extraction before delivering, not just in isolated tests.
+
+New duration 116.333333s (was 111.333333s, +5s from the frozen-frame
+ending extension). Delivered via the same direct-link pattern as the
+plain 2K upscale (owner's standing preference — no compression): uploaded
+to Higgsfield, confirmed byte-exact (269,187,630 bytes) at the CDN URL
+before sending.
+
+Current state: `episode6_final_cut_2k_hookhud.mp4` is the current final
+file (2K, hook + revised ending HUD burned in, 116.3s), delivered via
+direct link. Local copies (`episode6_final_cut_2k.mp4`, `episode6_
+final_cut_2k_hookhud.mp4`) not committed, per standing rule — generated
+media stays out of git. Three items remain open by explicit owner
+choice, not oversight: clip 4's color grade vs. clip 3, clip 6's
+background inscription, clip 6's red-mark jitter during the
+scroll-marking beat. Remaining pre-publish step per `CLAUDE.md`:
 Higgsfield `virality_predictor` on the render, then the owner's
 watch-through as final gate.
