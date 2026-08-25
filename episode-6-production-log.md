@@ -1493,15 +1493,85 @@ as drama even at grid-thumbnail size, which is the point.
 
 New file: `thumbnail_ep6_v2.png`.
 
-Current state: `episode6_final_cut_2k_hookhud_v4.mp4` is the current
-final file (2K, sans-serif hook + `_v3`'s animated ending cards over real
-footage, 111.3s), delivered via direct link. Ending-card STYLE is still
-open — 3 previews sent, owner hasn't picked a direction yet. Thumbnail
-now `thumbnail_ep6_v2.png` (dramatic version, supersedes `thumbnail_
-ep6.png`). Local copies not committed, per standing rule — generated
-media stays out of git. Three items remain open by explicit owner
-choice, not oversight: clip 4's color grade vs. clip 3, clip 6's
-background inscription, clip 6's red-mark jitter during the
-scroll-marking beat. Remaining pre-publish step per `CLAUDE.md`:
+## Thumbnail v3 — fresh Scene Transplant generation, not reused footage
+
+Owner explicitly authorized generating new imagery this time ("you don't
+necessarily have to take the clip from the movie... generate... using my
+model face and chaos and killings... somebody is trying to assassinate
+Caesar"). This is squarely `CHARACTER_LOCK.md`'s **Scene Transplant
+lifestyle pipeline** — "ALL off-episode content... thumbnails... uses THIS
+pipeline. Never regenerate her face from references for lifestyle
+content" — which this project had never actually exercised before
+(everything until now was either episode clips or footage reuse).
+Followed the locked recipe exactly rather than defaulting to the
+episode's multi-reference identity-lock protocol:
+1. Started from a REAL frame (the same clip 7 frame used for thumbnail
+   v1), cropped tight to head-and-shoulders, neckline out of frame.
+2. PAI Pro `image-edit-pro`, single image input (not multiple
+   references — that's the episode pipeline, not this one), the
+   mandatory verbatim refusal-safe opening ("EDIT THIS IMAGE... NOT a
+   new generation... HARD RULE: her character design must stay EXACTLY
+   identical..."), makeup dial set to "none/as-filmed," scene description
+   describing chaos/violence happening BEHIND her (raised dagger,
+   blood-marked togas, fleeing senators) while she remains an unarmed,
+   horrified bystander in the foreground — deliberately never depicted
+   as the attacker.
+3. Succeeded on the first attempt, no refusal.
+
+QC'd the result against the source frame per the pipeline's own rule
+("QC every output against the SOURCE MOVIE FRAME") — face shape, eye
+color/shape, brow shape, lip color, hair color/part all read consistent
+with her locked identity. New script kept at `generate_thumbnail_
+dramatic.mjs` for reuse.
+
+New file: `thumbnail_ep6_v3.png`.
+
+## Thumbnail quality fix + real size correction; video hook enlarged
+
+**Owner flagged the v3 thumbnail as low-resolution.** Root cause: PAI's
+`image-edit-pro` was called at 720x1280 (matching this project's existing
+size convention), and I'd only lanczos-interpolated it up to 1440x2560 to
+match the other thumbnail's dimensions — interpolation doesn't add real
+detail, so it read soft next to genuinely sharp assets. Fixed properly:
+uploaded the clean pre-text 720x1280 PAI output to Higgsfield and ran
+`upscale_image` (bytedance, true AI upscale, not interpolation) at 4K —
+came back 2304x4096. Composited the banner/year-stamp text on top of
+THIS upscaled base, not the earlier soft one, so the text renders crisp
+at native resolution too.
+
+**Owner also asked (twice, second time by quoting the thumbnail's own
+banner text to disambiguate from the video hook) to make the banner
+bigger again.** First attempt at this got the arithmetic wrong: scaling
+the existing 64pt font by the same ratio as the new 2304-wide canvas
+(64 x 1.6 = ~102pt) reproduces the IDENTICAL relative size at higher
+resolution — sharper, but not actually bigger, which isn't what "make it
+bigger" asked for. Caught this before delivering, recalculated for a
+genuine ~15% size increase over the true 64pt baseline, then hit the
+opposite problem — that pushed line 1 wide enough to clip the leading
+"I" off the left edge. Settled on a value that's genuinely bigger than
+before (not just resolution-matched) while still fitting inside the
+frame with margin. Checked at ~150px grid size before delivering — sharp
+and legible.
+
+New file: `thumbnail_ep6_v4.png` (current thumbnail).
+
+**Separately, rebuilt the actual episode video with the opening hook
+enlarged** (88pt -> 104pt) — this was the owner's first ask in this same
+message, before the second message clarified "the hook" specifically
+meant the thumbnail banner. Left this video change in place since it
+wasn't contradicted, just not what the clarification was about. New file:
+`episode6_final_cut_2k_hookhud_v5.mp4`, verified duration/audio/hook
+frame directly before delivering via the same direct-link pattern.
+
+Current state: `episode6_final_cut_2k_hookhud_v5.mp4` is the current
+final file (2K, bigger sans-serif hook + `_v3`'s animated ending cards
+over real footage, 111.3s), delivered via direct link. Ending-card STYLE
+is still open — 3 previews sent, owner hasn't picked a direction yet.
+Thumbnail now `thumbnail_ep6_v4.png` (Scene Transplant generation,
+properly upscaled, bigger banner). Local copies not committed, per
+standing rule — generated media stays out of git. Three items remain
+open by explicit owner choice, not oversight: clip 4's color grade vs.
+clip 3, clip 6's background inscription, clip 6's red-mark jitter during
+the scroll-marking beat. Remaining pre-publish step per `CLAUDE.md`:
 Higgsfield `virality_predictor` on the render, then the owner's
 watch-through as final gate.
