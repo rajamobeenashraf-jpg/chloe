@@ -21,6 +21,12 @@ birds are the only surviving dinosaur lineage. Solo character (Hazel), vertical
 hazel out of time, time travel, time travel vlog, pov history, immersive history, first person history, what life was like, cinematic history, ai history, dinosaurs, triceratops, t rex, cretaceous period, mass extinction, history shorts
 
 ## 4 · Instagram caption
+
+POV title variant (line 1 swap-in, on owner request):
+- `POV: You're in Hell Creek, 66 million years BC — four hours before the asteroid hits.` (pick)
+- `POV: You just time travelled to the day the dinosaurs went extinct.`
+- `POV: It's 66 million BC, and you're the only one who knows what happens today.`
+
 > I time travelled to Hell Creek, 66 million years BC — the day the asteroid hit.
 > I rescued a baby Triceratops, watched a T-Rex family walk past close enough to touch, and found out the "snow" falling that day wasn't snow.
 > Would you have stayed to watch it happen, or run?
