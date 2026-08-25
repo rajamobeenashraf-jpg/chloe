@@ -11,7 +11,7 @@ birds are the only surviving dinosaur lineage. Solo character (Hazel), vertical
 ## 1 · YouTube title
 **Finalized (owner decision, vidIQ CTR score 97/100, validated against real IG/TikTok outlier data in this niche):**
 `You are the last person who will ever see a dinosaur alive.`
-This line is also the video's spoken cold-open hook (clip1a_vista_v3) and the Instagram POV title.
+This line is also the Instagram POV title and (trimmed to 10 words) the cover/thumbnail's visual hook banner — see §7. No video reshoot; clip1a is unchanged.
 
 Earlier candidates (not selected):
 - Straight: `I time travelled to 66 million BC — the day the dinosaurs died`
@@ -52,7 +52,7 @@ Spoken hook (first 3s): *"I just arrived in Hell Creek. It's 66 million years BC
 - Hazel, selfie-vlog angle, mud-streaked field gear, 30–45% of frame
 - Expression: awe (distinct from dread/delight used on other episodes)
 - Background: Triceratops (Tank) beside her, T-Rex family visible in the haze behind
-- Banner text (≤10 words): `"I knew what was coming."`
+- Banner text (≤10 words, owner-finalized hook line, trimmed from 12 to fit the cap): `"You're the last person who'll ever see a dinosaur alive."`
 - Year stamp: `66,000,000 BC` — amber (past)
 - No episode number; frame one = this composition
 
