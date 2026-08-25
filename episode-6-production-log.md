@@ -1407,11 +1407,53 @@ attempts (`episode6_final_cut_2k_hookhud.mp4`, and an in-flight
 `_v2` render that was stopped mid-encode once the ending-placement
 correction came in, before it ever finished).
 
-Current state: `episode6_final_cut_2k_hookhud_v3.mp4` is the current
-final file (2K, restyled hook + animated ending cards over real
-footage, 111.3s), delivered via direct link. Local copies not
-committed, per standing rule — generated media stays out of git. Three
-items remain open by explicit owner choice, not oversight: clip 4's
+## Ending-card style options previewed; hook font swapped to sans-serif
+
+**Owner pushed back again on the ending cards**: "not just like cards... a
+beautiful, stylish pop up" — asked to discuss options before anything got
+built this time, rather than iterating on a delivered file. Proposed 3
+distinct directions, each staying inside the brand's own "Hazel's
+time-device interface" framing rather than a generic social banner:
+(A) glassy translucent panel with a glowing amber rim + entrance flash,
+"device ping" feel; (B) solid card that stamps in with a drop-and-bounce
+overshoot, "ticket" feel; (C) dark terminal panel with amber text typing
+itself out character-by-character, "ship's log" feel. Recommended A as
+closest to the brand's own stated design intent, noted B has the most
+personality and C is most novel but eats into the tight 2.5s window.
+
+Owner asked to see actual examples, not just descriptions — built one
+short (3.5s) rendered preview per style on a shared real-footage backdrop
+for a fair side-by-side, sent all three as video files (not stills, since
+the whole point of each style is its motion). Kept these as isolated
+previews only — did not touch the delivered `_v3` file, since no
+direction has been picked yet. Awaiting owner's choice before building
+the polished, correctly-timed/positioned version into the real cut.
+
+**Hook font changed.** Owner asked for Calibri or Arial instead of the
+serif treatment. Neither exists on this system (proprietary fonts) — used
+Liberation Sans Bold instead, the standard open-source metric-compatible
+Arial substitute (confirmed via `fc-match "Arial"` resolving directly to
+it). Rebuilt the full file with the new hook font, HUD cards left
+unchanged (still the `_v3` slide+fade version, pending the owner's pick
+from the 3 new style previews above). New file: `episode6_final_cut_2k_
+hookhud_v4.mp4`, verified duration/audio/hook frame directly before
+delivering via the same direct-link pattern, byte-exact (267,319,737
+bytes).
+
+**Metadata package re-sent, thumbnail banner updated for consistency.**
+Owner asked for the episode's metadata again. Content unchanged from the
+first package except the thumbnail banner text, which had used "THE
+WARNING NEVER REACHED HIM" (the hook line the owner rejected) — updated
+to "I WAS THERE WHEN THEY KILLED CAESAR" to match the confirmed in-video
+hook, so the two assets carry the same hook language rather than a stale,
+rejected line.
+
+Current state: `episode6_final_cut_2k_hookhud_v4.mp4` is the current
+final file (2K, sans-serif hook + `_v3`'s animated ending cards over real
+footage, 111.3s), delivered via direct link. Ending-card STYLE is still
+open — 3 previews sent, owner hasn't picked a direction yet. Local copies
+not committed, per standing rule — generated media stays out of git.
+Three items remain open by explicit owner choice, not oversight: clip 4's
 color grade vs. clip 3, clip 6's background inscription, clip 6's
 red-mark jitter during the scroll-marking beat. Remaining pre-publish
 step per `CLAUDE.md`: Higgsfield `virality_predictor` on the render,
