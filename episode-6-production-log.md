@@ -1466,14 +1466,42 @@ Checked legibility at ~150px (thumbnail-grid size) before delivering —
 holds up. Saved to `thumbnail_ep6.png` in project assets (not committed,
 generated media stays out of git per standing rule).
 
+## Thumbnail v2 — more dramatic background, bigger banner text
+
+Owner wanted the thumbnail more dramatic — "blood or with sword...
+somebody is trying to assassinate Caesar" — plus a bigger banner. Rather
+than generating new imagery (which would risk the character-lock issue
+again if Hazel needed to appear in an assassination-adjacent shot),
+checked the actual produced footage first: clip 9's `_v2_full_pretrim.mp4`
+(10.05s, before the front+back trims cut it down to 3.1s for pacing)
+still has the blood-marked-senators-bursting-from-the-doors beat
+referenced back in the original Gate 2 identity/blood fix — confirmed by
+scanning frames across the full pre-trim duration. Picked the frame at
+~4.5s: multiple senators fleeing the Curia doors with clearly visible
+blood on their togas, birds scattering, Hazel watching the chaos unfold.
+Real, already-produced, already-approved footage — no new generation
+needed at all.
+
+Source frame is 720x1280 (pre-trim clips were never run through the 2K
+upscale, only the final assembled cut was) — upscaled 2x via lanczos to
+match the first thumbnail's 1440x2560 for consistency; not the same
+quality as the AI upscale used on the full episode, but sufficient for a
+still image. Banner font bumped 54pt → 64pt, year stamp 76pt → 84pt to
+match, per the owner's "make the caption a little bigger" ask. Re-checked
+legibility at ~150px before delivering — blood is still visibly readable
+as drama even at grid-thumbnail size, which is the point.
+
+New file: `thumbnail_ep6_v2.png`.
+
 Current state: `episode6_final_cut_2k_hookhud_v4.mp4` is the current
 final file (2K, sans-serif hook + `_v3`'s animated ending cards over real
 footage, 111.3s), delivered via direct link. Ending-card STYLE is still
 open — 3 previews sent, owner hasn't picked a direction yet. Thumbnail
-delivered (`thumbnail_ep6.png`). Local copies not committed, per
-standing rule — generated media stays out of git. Three items remain
-open by explicit owner choice, not oversight: clip 4's color grade vs.
-clip 3, clip 6's background inscription, clip 6's red-mark jitter during
-the scroll-marking beat. Remaining pre-publish step per `CLAUDE.md`:
+now `thumbnail_ep6_v2.png` (dramatic version, supersedes `thumbnail_
+ep6.png`). Local copies not committed, per standing rule — generated
+media stays out of git. Three items remain open by explicit owner
+choice, not oversight: clip 4's color grade vs. clip 3, clip 6's
+background inscription, clip 6's red-mark jitter during the
+scroll-marking beat. Remaining pre-publish step per `CLAUDE.md`:
 Higgsfield `virality_predictor` on the render, then the owner's
 watch-through as final gate.
