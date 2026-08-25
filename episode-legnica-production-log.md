@@ -49,3 +49,9 @@
 - Rebuilt clip 1's scene/action prompt accordingly and regenerated at 720p (owner's explicit choice — confirmed PAI does support 1080p at $0.44/s vs 720p's $0.20/s, but owner chose to keep 720p as the established convention this session).
 - Self-QC (frame extraction): by the end of the turn, the formation resolves into a proper single line beside her — soldiers with shields/spears/banners all facing the same direction, extending into the distance — a clear improvement over the previous crowd-on-both-sides staging. The opening beat still shows a mustering cluster behind her on both sides before she moves alongside the forming line, which is consistent with the intended "forming up" moment.
 - File: `pai-pro/projects/legnica/assets/clip1_v1.mp4` (7.06s, 6.27MB). Sent to owner for approval.
+
+## 2026-08-26 (cont.) — Clip 1 regenerated: Hazel inside the line, shields fixed
+- Owner caught two more real errors in the previous regeneration: she was positioned behind the formation looking at soldiers' backs, and their shields were nonsensically visible on their backs (a shield held toward the enemy is never visible from behind a soldier, and is never worn on the back in a standing line).
+- Rebuilt the prompt: she now walks inside a single line, in the gaps between soldiers, with those beside her in profile actively holding shields forward.
+- Self-QC (frame extraction): shields now clearly show their painted fronts facing toward her/the camera, not backs — the impossible-shield-placement bug is fixed. She reads as embedded among the ranks rather than behind them. Sent to owner for review.
+- File: `pai-pro/projects/legnica/assets/clip1_v1.mp4` (7.06s, 5.54MB).
