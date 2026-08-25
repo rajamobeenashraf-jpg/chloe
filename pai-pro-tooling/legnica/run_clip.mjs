@@ -45,11 +45,20 @@ const SELFIE_CAMERA_NOTE = `This is a first-person selfie-style point-of-view sh
 
 const THIRD_PERSON_CAMERA_NOTE = `This is an OBJECTIVE third-person cinematic shot — not her own held camera; the camera exists independently in the scene. Single continuous unbroken shot, one camera angle throughout, no cuts, no scene changes, real-time continuous take.`;
 
+// Locked appearance for Duke Henry II the Pious — reused verbatim in every clip
+// he appears in (2, 3, 8, 9) so he reads as the same person across generations,
+// same identity-consistency discipline as HAZEL's CHARACTER_LOCK.
+const HENRY_DESCRIPTION = `DUKE HENRY II THE PIOUS (recurring named historical figure — appearance LOCKED, must match exactly every time he appears): a Polish-Silesian duke in his early-to-mid forties, weathered and grim-faced, dark hair with a short beard. Mounted on an armored grey warhorse. Wears a mail hauberk under a surcoat bearing his real historical heraldry — a black eagle on a gold/yellow field (the Piast dynasty's Silesian eagle) — and carries a matching personal banner nearby. A simple open-faced steel helm (not a full great helm) so his face stays clearly visible and readable throughout. No fantasy armor, no later-era plate.`;
+
+const CHARACTER_BLOCKS = { henry: HENRY_DESCRIPTION };
+
 function buildPrompt(clip) {
   const cameraNote = clip.cameraMode === "selfie" ? SELFIE_CAMERA_NOTE : THIRD_PERSON_CAMERA_NOTE;
+  const characterBlocks = (clip.characters || []).map((name) => CHARACTER_BLOCKS[name]).filter(Boolean);
   return [
     IDENTITY_BLOCK,
     ``,
+    ...characterBlocks.flatMap((block) => [block, ``]),
     `CAMERA MODE: ${cameraNote}`,
     ``,
     `SCENE (Battle of Legnica, Poland, April 9, 1241 — overcast daylight, dust and mud throughout): ${clip.scene}`,
