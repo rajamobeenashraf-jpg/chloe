@@ -84,10 +84,30 @@ const STANDING_RULES = [
     appliesTo: (clip) => (clip.characters || []).length > 0,
     check: (p) => /face[^.]{0,30}(visible|readable)/i.test(p),
   },
+  {
+    // Added 2026-08-26 after a dialogue rewrite (removing a gesture) silently
+    // deleted an unrelated line — Henry's "Enough" reply to a direct question —
+    // and it went unnoticed for two further regeneration rounds. Catches the
+    // shape of that bug: a question from HAZEL with no spoken reply before the
+    // next HAZEL line or the end of the dialogue.
+    name: "every-hazel-question-gets-a-reply",
+    appliesTo: (clip) => /HAZEL[^"]*"[^"]*\?"/.test(clip.dialogue || ""),
+    check: (_p, clip) => {
+      const lines = [...(clip.dialogue || "").matchAll(/\[?([A-Za-z][A-Za-z0-9 ]*)\]?\s*\([^)]*\)\s*:\s*"([^"]+)"/g)];
+      for (let i = 0; i < lines.length; i++) {
+        const [, speaker, text] = lines[i];
+        if (/hazel/i.test(speaker) && text.trim().endsWith("?")) {
+          const next = lines[i + 1];
+          if (!next || /hazel/i.test(next[1])) return false;
+        }
+      }
+      return true;
+    },
+  },
 ];
 
 function runStandingChecks(clip, prompt) {
-  const results = STANDING_RULES.filter((r) => r.appliesTo(clip)).map((r) => ({ name: r.name, pass: r.check(prompt) }));
+  const results = STANDING_RULES.filter((r) => r.appliesTo(clip)).map((r) => ({ name: r.name, pass: r.check(prompt, clip) }));
   return { results, failed: results.filter((r) => !r.pass) };
 }
 
