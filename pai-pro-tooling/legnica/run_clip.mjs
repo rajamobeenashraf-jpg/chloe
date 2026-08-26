@@ -88,18 +88,22 @@ const STANDING_RULES = [
     // Added 2026-08-26 after a dialogue rewrite (removing a gesture) silently
     // deleted an unrelated line — Henry's "Enough" reply to a direct question —
     // and it went unnoticed for two further regeneration rounds. Catches the
-    // shape of that bug: a question from HAZEL with no spoken reply before the
-    // next HAZEL line or the end of the dialogue.
+    // clearest shape of that bug: a question from HAZEL with NOTHING spoken
+    // after it at all. Refined same day: originally also failed on a HAZEL
+    // line immediately following a HAZEL question, which wrongly flagged a
+    // legitimate self-answered rhetorical question ("Wait— they're
+    // retreating?" ... "No. Watch...") — a real, common pattern, not a
+    // dropped-line bug. A same-speaker follow-up is now allowed; only a
+    // question with zero lines after it anywhere in the dialogue fails.
+    // Catching a *wrong* reply from a different speaker (content-level, not
+    // structural) is what the mandatory manual pass-two read is for.
     name: "every-hazel-question-gets-a-reply",
     appliesTo: (clip) => /HAZEL[^"]*"[^"]*\?"/.test(clip.dialogue || ""),
     check: (_p, clip) => {
       const lines = [...(clip.dialogue || "").matchAll(/\[?([A-Za-z][A-Za-z0-9 ]*)\]?\s*\([^)]*\)\s*:\s*"([^"]+)"/g)];
       for (let i = 0; i < lines.length; i++) {
         const [, speaker, text] = lines[i];
-        if (/hazel/i.test(speaker) && text.trim().endsWith("?")) {
-          const next = lines[i + 1];
-          if (!next || /hazel/i.test(next[1])) return false;
-        }
+        if (/hazel/i.test(speaker) && text.trim().endsWith("?") && !lines[i + 1]) return false;
       }
       return true;
     },
