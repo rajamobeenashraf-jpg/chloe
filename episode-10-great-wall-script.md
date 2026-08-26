@@ -38,11 +38,8 @@
 
 ## Era-accuracy bible (researched & verified 2026-08-26 — every prompt checks against this; owner instruction: verify everything era-specific before any generation)
 
-**Hazel's costume (female commoner laborer, northern China, 1567):**
-- Cross-collar (right-over-left, youren) short cotton/hemp jacket (ao) in a muted, undyed or pale color — sumptuary law restricted commoners to plain, light/dull colors; NO bright yellow (imperial), no rich reds, no embroidery, no silk.
-- Loose trousers (ku) for labor — trousers, not the mamian skirt, for a woman doing hauling work; skirt variant would read wealthy-urban and impede the job.
-- Straw sandals; hair bound up in a simple cloth wrap/kerchief; a plain cloth sash at the waist. Optional: cloth leg-wraps.
-- Weathered, dusty, sweat-marked; fabric coarse homespun with visible weave.
+**Hazel's costume — OWNER DECISION 2026-08-26 (supersedes the laborer-homespun default below): she wears an ELEGANT MING AOQUN for the whole episode and does the labor in it.** Spec: fitted cross-collar (right-over-left) jacket in soft muted celadon sage with pipa lute-sleeves + pleated cream mamian-style skirt, matte coarse-woven fabric (never shiny satin), one simple wooden hairpin, plain cloth shoes, hem/cuffs lightly dusted from the work. Kept modest-commoner-elegant deliberately: NO dragon/phoenix embroidery, NO imperial yellow, NO gold brocade, NO jewelry — those would be sumptuary-law violations and are the likeliest comment-section attack. (Historically a laborer would wear the homespun below; owner chose beauty over strict plausibility here, on record. Claude flagged it twice; decision stands.)
+- *(Superseded reference spec — laborer homespun):* cross-collar hemp-cotton jacket in undyed/pale or blue cloth, loose trousers, straw sandals, cloth kerchief, coarse weave, work-worn.
 
 **Zhao & male laborers:** blue or undyed cloth jacket + trousers (documented porter/laborer dress), cloth head-wrap or bare topknot, straw sandals, shoulder poles with rope-slung baskets or back-frames. Convict gangs may show heavier wear.
 
