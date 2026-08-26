@@ -72,20 +72,40 @@ async function probeVideoDuration(filePath) {
   return parseFloat(stdout.trim());
 }
 
-async function qcOneClip(clip) {
+// creative-direction.md §29 (owner mandate, 2026-08-26, reverse-engineered
+// from Chloe vs History): audio must never dip toward silence at a clip
+// join -- her editing never has an audible gap at a cut, either pre-lapping
+// the next scene's sound or running one continuous bed underneath both
+// shots. The old per-clip 0.08s fade-out/fade-in at every edge guaranteed
+// a ~0.16s audible dip at every single cut, which is the opposite of that
+// technique and was the confirmed root cause of the "bad transitions"
+// complaint. Nearly every Legnica clip's own sound field is already
+// written as an explicit continuous bridge into/out of its neighbor
+// ("no reset", "continues UNINTERRUPTED", "carries...over the cut") --
+// so the correct fix is a true hard audio join matching the hard video
+// cut for every INTERNAL clip boundary, with only a minimal click-guard
+// fade at the two true outer edges of the whole program (into the cold
+// open, out of the final clip before the text card) where there is
+// nothing on the other side to bridge to.
+const CLICK_GUARD = 0.02; // imperceptible, only prevents a waveform-discontinuity pop
+
+async function qcOneClip(clip, { isFirst, isLast }) {
   const srcPath = path.join(ASSETS_DIR, `${clip.id}_v1.mp4`);
   const outPath = path.join(QC_DIR, `${clip.id}_qc.mp4`);
 
   const videoDuration = await probeVideoDuration(srcPath);
 
-  const FADE = 0.08;
-  const fade = `afade=t=in:st=0:d=${FADE},afade=t=out:st=${(videoDuration - FADE).toFixed(3)}:d=${FADE}`;
+  const fadeParts = [];
+  if (isFirst) fadeParts.push(`afade=t=in:st=0:d=${CLICK_GUARD}`);
+  if (isLast) fadeParts.push(`afade=t=out:st=${(videoDuration - CLICK_GUARD).toFixed(3)}:d=${CLICK_GUARD}`);
+  const fadeSuffix = fadeParts.length ? `,${fadeParts.join(",")}` : "";
+  const fadeNote = fadeParts.length ? `outer-edge click-guard (${CLICK_GUARD * 1000}ms)` : "no fade -- true hard audio join per §29";
 
   if (clip.captions.length === 0) {
-    console.log(`[qc] ${clip.id}: no captions, loudnorm + fade only`);
+    console.log(`[qc] ${clip.id}: no captions, loudnorm + ${fadeNote}`);
     await run("ffmpeg", [
       "-y", "-i", srcPath,
-      "-af", `loudnorm=I=-16:TP=-1.5:LRA=11,${fade}`,
+      "-af", `loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}`,
       "-c:v", "copy",
       "-c:a", "aac", "-b:a", "192k",
       "-t", String(videoDuration),
@@ -97,11 +117,11 @@ async function qcOneClip(clip) {
   const assPath = path.join(QC_DIR, `${clip.id}.ass`);
   await fs.writeFile(assPath, buildAss(clip.captions));
 
-  console.log(`[qc] ${clip.id}: burning ${clip.captions.length} caption(s) + loudnorm + fade`);
+  console.log(`[qc] ${clip.id}: burning ${clip.captions.length} caption(s) + loudnorm + ${fadeNote}`);
   await run("ffmpeg", [
     "-y", "-i", srcPath,
     "-vf", `ass=${assPath}`,
-    "-af", `loudnorm=I=-16:TP=-1.5:LRA=11,${fade}`,
+    "-af", `loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}`,
     "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p",
     "-c:a", "aac", "-b:a", "192k",
     "-t", String(videoDuration),
@@ -113,8 +133,9 @@ async function qcOneClip(clip) {
 async function main() {
   await fs.mkdir(QC_DIR, { recursive: true });
   const manifest = {};
-  for (const clip of CLIPS) {
-    const { videoDuration } = await qcOneClip(clip);
+  for (let i = 0; i < CLIPS.length; i++) {
+    const clip = CLIPS[i];
+    const { videoDuration } = await qcOneClip(clip, { isFirst: i === 0, isLast: i === CLIPS.length - 1 });
     manifest[clip.id] = videoDuration;
     console.log(`[qc]   ${clip.id}: frame-exact video duration = ${videoDuration}s`);
   }
