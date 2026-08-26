@@ -65,7 +65,7 @@ See below for a second, high-tension thumbnail option (owner-requested).
 - Tank bolting in visible panic beside her, head down, frill catching firelight
 - Generated: `hazel_ep5_thumbnail_chaos.png` via PAI Pro `image-edit-pro`, same v4 locked identity as every other episode asset — https://storage.googleapis.com/utopai-cue-prod/generated/images/2026/08/26/83fbe42b6d1c788def704a1c9e4edc46.png
 - **vidIQ scoring caveat**: `vidiq_score_thumbnail` requires an uploaded YouTube video ID to score against — there's no Instagram-side equivalent (same limitation as title scoring, IG publishes no data a tool could score against). Can run the YouTube-side check if useful; it won't be true IG validation.
-- Banner text: not yet chosen for this variant — reuse the same hook line as 7a, or a punchier stake-line, owner's call
+- Banner text (owner decision): same as §7a — `"POV: You are last person to see a dinosaur alive."`
 
 ## 8 · Alt text
 "Hazel, a time traveller in muddy field gear, kneeling beside a juvenile Triceratops in Cretaceous grassland; a T-Rex family visible in the distance."
