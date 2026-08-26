@@ -51,6 +51,13 @@ export const CLIPS = [
       { start: 0.0, end: 2.26, text: "Sixty-six million years BC. Hell Creek. Tuesday." },
       { start: 2.94, end: 8.9, text: "This is the whole world right now — no cities, no roads, no smoke on any horizon." },
     ],
+    // Owner-directed opening hook (2026-08-26): a visual (not spoken) POV
+    // hook burned into the episode's actual opening, top of frame, 0:00-0:07
+    // — approved after two rounds of standalone clip1a-only preview review.
+    // No reshoot; clip1a's video/audio are otherwise unchanged.
+    hooks: [
+      { start: 0.0, end: 7.0, text: "POV: You are last person to see a dinosaur alive." },
+    ],
   },
   {
     id: "clip1b_doomclock",
@@ -238,6 +245,21 @@ export const FACT_STYLE = {
 export const ID_CARD_STYLE = {
   fontName: "DejaVu Sans",
   fontSize: 44,
+  outline: 3,
+  shadow: 0,
+  marginV: 100,
+  marginLR: 50,
+  boxAlphaHex: "30", // ASS alpha is inverted: 00=opaque, FF=transparent
+};
+
+// Opening POV hook overlay style, owner-directed 2026-08-26 — same top
+// position and boxed treatment as FACT_STYLE/ID_CARD_STYLE, but its OWN
+// style block (not shared) since the owner asked to size this one up 30%
+// (44pt -> 57pt) specifically and the other two are already owner-approved
+// at their existing size elsewhere in the episode.
+export const HOOK_STYLE = {
+  fontName: "DejaVu Sans",
+  fontSize: 57,
   outline: 3,
   shadow: 0,
   marginV: 100,
