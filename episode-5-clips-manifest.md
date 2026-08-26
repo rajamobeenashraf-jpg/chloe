@@ -39,4 +39,11 @@ present in the assets dir if one is ever needed.
 - Result: 2160×3840, 24fps, duration 131.593s (exact match to source) — verified via ffprobe + visual spot-check at two timestamps
 - **Uncompressed result URL (owner-requested, not re-hosted/compressed):** https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260825_233038_8ff243b9-6694-4da9-8773-5a22b537b807.mp4
 - File size ~740MB. This is Higgsfield's own CDN link, not this session's file-delivery path (file exceeds its 30MB cap) — retrievable independent of this session, but confirm with Higgsfield how long result URLs stay live if this needs to survive long-term.
-- **Does not include the opening hook overlay** — the 720p master above now differs from this 4K file. Re-run the Topaz upscale on the current master if the hook needs to be in the 4K deliverable.
+- **Does not include the opening hook overlay** — the 720p master above now differs from this 4K file. See the hooked version below instead.
+
+## 4K deliverable with the opening hook overlay (current, final)
+Rather than re-running the full Topaz upscale (another ~20min + Higgsfield credits + repeat-failure risk), burned the hook overlay directly onto the already-upscaled 4K file with a local ffmpeg pass — the ASS overlay's `PlayResX:720/PlayResY:1280` auto-scales correctly onto the 4K frame via libass, verified visually.
+- Built from: `dino_final_cut_topaz_4k.mp4` (the Topaz result above) + `hook_overlay_only.ass` (just the new Layer-3 hook Dialogue line, 0:00–0:07)
+- `ffmpeg -i dino_final_cut_topaz_4k.mp4 -vf "ass=hook_overlay_only.ass" -c:v libx264 -crf 16 -preset medium -pix_fmt yuv420p -c:a copy`
+- Verified: 2160×3840, 24fps, duration 131.593s (exact match, unchanged), hook renders correctly scaled at 4K, everything else identical to the original Topaz result (all other clips' captions/cards untouched, single incremental re-encode only)
+- **Link:** https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/3a85eac0-1118-4b95-913a-461c3a459825.mp4 (470MB, verified live — HTTP 200, exact byte-count match to the local file)
