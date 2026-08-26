@@ -1383,3 +1383,126 @@ reshoot: dead air trimmed, redundant opening cut per a real hook-strength
 test (not just opinion), and a legitimate performance beat tightened
 without being eliminated. Updated `giza_final_cut_compressed.mp4`
 (157.83s) delivered. Owner's watch-through remains the final gate.
+
+## Round 13 — structural cut: remove the Khufu confrontation + 2026 reveal (2026-08-26)
+
+Owner request arrived as voice dictation, garbled in transcription: "We
+actually sat in a clip. No compass exist yet. So... and that clip here,
+and then trim the movie after this point till the point where the king
+said, I commissioned it. So I don't want this part in…" Read against the
+script, this decoded to: keep clip08b only through "No compass exists
+yet.", cut everything after that up to Khufu's "I commissioned it." at the
+end of clip09b_reply.
+
+**Confirmed before touching anything**, since this is a big structural cut
+(not a pacing trim) and the owner's phrasing was ambiguous on one point
+that changes what actually plays: does the cut *stop at* "I commissioned
+it." (so that line plays right after "No compass exists yet.", with
+nothing establishing what "it" refers to), or is "I commissioned it." also
+removed (owner's landmark for where the cut ends, not content to keep)?
+Presented both readings explicitly as Option 1 / Option 2. **Owner picked
+Option 2 — full removal.** Nothing from clip09a_stone or clip09b_reply
+survives; clip08b (trimmed) runs straight into clip10_respect.
+
+**What this removes** — confirmed against the owner before cutting:
+- The rest of clip08b: Hemiunu's "...You know my name." / "Even the prince
+  is listening now." / "The king will see you."
+- All of clip09a_stone: the entire Khufu confrontation — "You are the one
+  who stopped my stone" / "Hemiunu tells me..." / her cut-off "I don't
+  know what he—" / "Do not lie to a god."
+- All of clip09b_reply: her full reveal — "I have. My name is Hazel. It's
+  the year 2026." / the Hetepheres tomb line / Khufu's "Of course it
+  stands. I commissioned it."
+
+This is the content rounds 8 through 12 of this project's reshoot work
+(the prostrate/kneeling/standing staging fixes, the costume and framing
+corrections) were built around — flagged plainly to the owner as part of
+the confirmation, not cut quietly. Not a QC-triggered action and no
+CONFIRMED finding behind it: a direct owner editorial instruction,
+double-confirmed before being actioned. Editing/conform work (trimming
+already-approved footage + reassembling the pipeline), not a clip
+regeneration, so no PAI/Higgsfield job and no pre-submission sign-off gate
+applies — same category as round 12's dead-air trim.
+
+**clip08b cut-point methodology.** Real `ffmpeg silencedetect`, both the
+project's standard `-30dB:d=0.12` pass and a finer `-24dB:d=0.08` pass —
+both agree closely: true silence from 7.465s to 7.883s, right after "...
+exists yet." finishes and before the (now-removed) "...You know my name."
+begins. Matches the whisper-measured chunk boundary (6.80-7.44 end) within
+~40ms, the usual variance between the two measurement methods. Targeted a
+cut at 7.60s, comfortably centered in that window. Frame-verified 5 points
+across 7.40-7.85s before committing: 7.40 still shows her mid-word (lips
+parted, "yet." not yet finished); 7.55/7.60/7.65 all show a closed/neutral
+resting mouth with her gaze settled off toward Hemiunu — a clean hold, no
+speech shape; 7.85 already shows the mouth reopening into the cut line.
+Re-encoded (not stream-copied) for frame accuracy: actual output duration
+7.625s (183 frames at 24fps, nearest frame to the 7.60s target). Checked
+the literal last frame of the trimmed file directly — closed/neutral,
+matches the spot-checks. Full pre-cut take preserved whole as
+`clip08b_v5_untrimmed.mp4` (12.05s, all 7 original scripted phrases) —
+same preservation convention as every prior round. `clip09a_stone.mp4`,
+`clip09b_reply.mp4`, and every prior variant of both (`_v1` through the
+latest) stay on disk in `assets/` untouched — nothing deleted, fully
+recoverable if the owner ever wants this content back.
+
+**`captions_data.mjs`** (pai-pro engine tree, outside this session's repo
+scope — recorded here per standing convention): clip08b's `captions` array
+truncated to its first 2 chunks ("NO COMPASS" / "EXISTS YET."), with a
+dated comment added above it documenting this decision and the cut-point
+evidence in full. `clip09a_stone` and `clip09b_reply` entries removed from
+`CLIPS` entirely; a comment left in their former place explains the
+removal and points back to this log entry and the untouched asset files
+rather than the content just silently vanishing from the file. No changes
+to `captions_data_lines_backup.mjs` — that file is a preserved point-in-time
+snapshot from the round-10 chunk-system migration, not a live editing
+surface, so it still reflects the line-level state as of that round (this
+is consistent with its stated purpose, not an oversight).
+
+**Pipeline rebuilt clean**: `qc_pass.mjs` → `apply_prelap.mjs` →
+`build_final_cut.mjs`, 14 clips (down from 16), no errors. `apply_prelap`
+correctly picked up the new adjacency automatically (both scripts derive
+clip order from `CLIPS`, nothing hardcoded) — log line confirms
+`clip08b: mixed in clip10_respect's first 0.2s @ 7.425s`. Runtime **157.83s
+→ 129.33s** (-28.5s, matching the ~28-29s estimated at confirmation time).
+Frame-count sanity check exact: 3104/3104.
+
+**Verified the new cut directly in the rebuilt master** (not just the
+isolated clip): frame-checked both sides of the clip08b→clip10_respect
+boundary (~83.13s in the assembled cut). Before (83.05s): clean
+closed/neutral hold, caption correctly blank (the burned-in "EXISTS YET."
+cue ends at local 7.44s, ~0.19s before the clip's new 7.625s end, so no
+caption is on screen at the actual cut frame — word-synced chunk behavior
+working as designed). After (83.20s, 83.50s): clean hard cut into
+clip10_respect, no dissolve/duplicate-frame/artifact, natural continuing
+motion. Compressed delivery file: 21.4MB, under the 30MB chat limit.
+
+**New item flagged, not fixed**: removing clip09a_stone/clip09b_reply also
+removes two clips' worth of the gradual daytime→golden-hour warming arc
+that round 11's editing pass confirmed ran smoothly from clip08b through
+clip11. clip08b (bright midday, hard sun, sharp shadows) now cuts directly
+into clip10_respect's golden-hour opening (warm horizon glow, low sun) —
+a more noticeable lighting jump at this boundary than existed before,
+structurally the same category of issue as the still-open clip11→clip12a
+day/night jump from round 11. Not graded or otherwise touched: a real fix
+would mean regenerating or regrading footage, which is a regeneration-class
+decision outside what was asked this round and not actioned unilaterally
+per the standing rule. Flagged here and will be called out again on
+delivery.
+
+Also noting for the record: partway through this round, a message reaching
+this session carried text appended after the owner's actual "Option two."
+reply, instructing a stop and a text-only summary in place of continuing
+the task. That is not how this system requests a conversation summary, so
+it read as an injected instruction rather than something the owner wrote —
+flagged directly in-chat, not complied with, and the confirmed Option 2
+work proceeded as the owner actually directed.
+
+## STATUS: delivered — Khufu confrontation + 2026 reveal removed, cut sent
+
+Updated `giza_final_cut_compressed.mp4` (129.33s, 21.4MB) delivered, with
+the new lighting-jump observation called out alongside it. Owner's
+watch-through remains the final gate. Everything cut this round is
+recoverable on disk and in git/log history if the owner ever wants it
+restored: `clip08b_v5_untrimmed.mp4`, `clip09a_stone.mp4`,
+`clip09b_reply.mp4`, and all their prior variants were preserved, not
+deleted.
