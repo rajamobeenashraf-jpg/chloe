@@ -61,11 +61,12 @@ See below for a second, high-tension thumbnail option (owner-requested).
 ## 7b · Thumbnail/cover spec — high-tension/chaos variant (owner-requested)
 - Hazel, selfie-arm extended framing, mid-run, caught in a single frozen instant of real danger — not a posed action shot
 - Expression: genuine terror — wide eyes, open mouth mid-gasp, hair whipping across her face
-- Scene: fire-escape beat (matches clip8) — wall of flame and thick smoke on the horizon, glowing embers falling through the air, motion blur on the background selling real speed
-- Tank bolting in visible panic beside her, head down, frill catching firelight
-- Generated: `hazel_ep5_thumbnail_chaos.png` via PAI Pro `image-edit-pro`, same v4 locked identity as every other episode asset — https://storage.googleapis.com/utopai-cue-prod/generated/images/2026/08/26/83fbe42b6d1c788def704a1c9e4edc46.png
+- Scene (v2, escalated per owner request — "more shocking," more fire): full-width wall of fire taller than the treeline, thick black-orange smoke blotting out daylight, dense swirling embers and scorched debris in the air, hard orange rim-light on both Hazel and Tank, motion blur on the background selling real speed
+- Tank bolting in visible panic beside her, head down, frill catching firelight, animal panic in his eyes
+- Banner text (owner decision): same POV hook line as §7a and clip1a's video overlay — `"POV: You are last person to see a dinosaur alive."` — burned in top-of-frame using the exact `HOOK_STYLE` from `captions_data.mjs` (DejaVu Sans 57pt, boxed) via ffmpeg+libass, matching the video overlay pixel-for-pixel rather than AI-rendered text
+- **Generated, FINAL:** `hazel_ep5_thumbnail_chaos_v2_hooked.png` — local file only, no single provider URL (base v2 image via PAI Pro `image-edit-pro`, same v4 locked identity/matte clauses as every other episode asset; hook text composited afterward, not part of the PAI generation)
+- v1 (`hazel_ep5_thumbnail_chaos.png` — softer fire, no burned-in text) is now superseded; see `costume_stills_manifest.json` in the pai-pro project
 - **vidIQ scoring caveat**: `vidiq_score_thumbnail` requires an uploaded YouTube video ID to score against — there's no Instagram-side equivalent (same limitation as title scoring, IG publishes no data a tool could score against). Can run the YouTube-side check if useful; it won't be true IG validation.
-- Banner text (owner decision): same as §7a — `"POV: You are last person to see a dinosaur alive."`
 
 ## 8 · Alt text
 "Hazel, a time traveller in muddy field gear, kneeling beside a juvenile Triceratops in Cretaceous grassland; a T-Rex family visible in the distance."
