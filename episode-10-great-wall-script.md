@@ -58,6 +58,9 @@
 
 **Anachronism blocklist (goes into every prompt as negative guidance):** no Qing-era queues/shaved foreheads, no silk brocade on laborers, no bright imperial yellow, no samurai/Japanese armor elements, no modern tools (metal wheelbarrows, steel scaffolds, hard hats), no finished-tourist-wall look (no restored Badaling appearance), no Han-dynasty or fantasy-wuxia costume drift.
 
+## Standing guard added 2026-08-26: dialogue language lock
+Clip 1 v4's audio came out in Mandarin (a faithful translation of the English script, not gibberish) — confirmed via faster-whisper transcription, 99.85% zh confidence. v1-v3 happened to render in English without any explicit instruction; v4 flipped, most likely stochastic given the heavy Ming-China visual context, but not worth risking again. **Every remaining clip's video-generation prompt must include an explicit hard LANGUAGE lock**: dialogue is spoken in English (American accent) by the time-traveler, never Mandarin/Chinese/other; background laborers may murmur in non-English ambience only, never as foregrounded/intelligible speech. Verify the actual output language with faster-whisper (`WhisperModel('small').transcribe(...)`, check `info.language`/`info.language_probability`) as part of self-QC before sending each clip, the same way camera continuity and wardrobe get checked.
+
 ## Production notes
 - Palette: grey stone, pine-green ridge, dust haze; dawn → dusk → torchlit night across the 8 clips (linear one-day flow, Opening Law compliant).
 - Sound: chisel/hammer chorus + rope creak + ridge wind; the kneeling wave in clip 4 is the only moment the work-noise dips; no music until the edit decides otherwise.
