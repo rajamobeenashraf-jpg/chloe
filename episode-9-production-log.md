@@ -1506,3 +1506,79 @@ recoverable on disk and in git/log history if the owner ever wants it
 restored: `clip08b_v5_untrimmed.mp4`, `clip09a_stone.mp4`,
 `clip09b_reply.mp4`, and all their prior variants were preserved, not
 deleted.
+
+## Round 14 — full-episode lighting/exposure audit (2026-08-26)
+
+Owner reacted to the round-13 delivery: the last two clips (clip10_respect,
+clip11_mirror) read as "very disturbing" / "awkward" against the clip
+before them, and asked for that fixed plus a full lighting/exposure check
+across the whole episode. This is exactly the observation flagged (not
+fixed) on delivery — round 13 removed clip09a_stone/clip09b_reply, which
+used to sit between clip08b and clip10_respect and apparently absorbed
+enough of the daytime→golden-hour warming arc that the jump wasn't visible
+before. Confirming and scoping it properly before touching anything.
+
+**Methodology** (round 11's, repeated exactly): built a labeled 4x4 contact
+sheet — one representative mid-clip frame per clip, all 14, from the
+current rebuilt master — for direct side-by-side comparison, then
+targeted follow-up on whatever stood out.
+
+**Confirmed finding 1 (NEW, this session): clip08b -> clip10_respect /
+clip11_mirror.** Contact sheet makes it unambiguous: clip01 through
+clip08b are one consistent lighting chapter — bright midday sun, clear
+blue sky, hard short shadows. clip10_respect and clip11_mirror are a
+second, visibly different chapter — golden-hour light, warm orange/pink
+sky, clip11 has an actual sun disc on the horizon with lens flare. The cut
+now lands directly on that boundary with nothing to ease it.
+
+**Tested whether this is grade-fixable before concluding it isn't.**
+Applied a real correction (`colorbalance` pulling shadows/midtones cooler
++ toward blue, `eq` desaturated slightly) to clip10_respect's and
+clip11_mirror's frames, pushing toward clip08b's neutral-daylight look, and
+compared the result side by side. It doesn't close the gap: the sun disc
+on the horizon, the warm directional light raking across the sand/stone/
+skin, and the glowing sky gradient are baked into the render, not a color
+cast sitting on top of it — a global grade only muddies the shot (duller,
+slightly greenish-grey) without making it read as midday. Same conclusion
+as round 11 reached for the clip11->clip12a boundary, and for the same
+underlying reason: this is a lighting-model/time-of-day mismatch baked
+into the footage, not a correctable tint.
+
+**Confirmed finding 2 (PRE-EXISTING, round 11, never resolved): clip11_mirror
+-> clip12a_thesis1.** Still exactly as reported then — golden hour with a
+visible sun to flat dusk/near-night silhouettes, assessed at the time as
+not grade-fixable for the same reason (12a/12b/12c have no directional
+sunlight modeling on the pyramids to grade back in). Re-confirmed present
+and unchanged on this pass; nothing since round 11 has touched those clips.
+
+**These two findings are coupled, not independent.** Pulling
+clip10/clip11 back to match clip08b's midday light (the direct fix for
+finding 1) would widen finding 2 into a midday-to-dusk jump — bigger than
+today's golden-hour-to-dusk gap. Fixing either in isolation just relocates
+the problem. Flagging this explicitly rather than proposing a fix for one
+and letting the other quietly get worse.
+
+**Independent cross-check: Gemini eyes `qc` on the current cut**
+(`qc_report_round13_lighting/`) — did not surface either lighting jump, same
+blind spot round 11 already noted for this category (single-pass sweep
+isn't well suited to cross-clip color/lighting continuity; direct frame
+comparison is what actually catches it). 4 candidate findings, 1 confirmed,
+unrelated to lighting: the recurring stone-sledge/hauling-rope clipping
+issue first logged in round 10's editing pass, re-surfaced and re-confirmed
+here (~59.4s, rope now specifically described as clipping through her arm/
+hand/dress) — still open, still a regeneration-class fix, not actioned
+this round since it's outside what was asked. A costume-jump candidate at
+0:08 was DISMISSED on verify (false positive — an intentional jacket-to-
+linen transition, not an error). A liquid-physics hint and a hand/finger
+hint both stayed below the confirm threshold.
+
+**Nothing regenerated or graded this round.** Both lighting findings need
+a clip regeneration to actually fix (color-grading tested and ruled out
+for finding 1; already ruled out for finding 2 in round 11) — per the
+permanent owner-lock rule, that requires explicit go-ahead before
+anything is submitted to PAI/Higgsfield, every time, regardless of how
+the finding was reached. Reported to the owner with the coupling above
+made explicit and directions proposed; nothing actioned pending their
+call.
+
+## STATUS: findings reported, awaiting owner decision on the lighting arc (clip10/11/12a-c)
