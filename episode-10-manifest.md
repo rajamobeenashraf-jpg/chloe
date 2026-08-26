@@ -1,0 +1,8 @@
+# Episode 10 (Great Wall) — Generation Manifest
+Engine: PAI Pro · project dir `/home/user/pai-pro/projects/greatwall/` · all generations use the CHARACTER_LOCK v4 protocol (5 Tier-1/2 refs + frozen identity string + matte/gritty clause) and the per-clip verify→anticipate→adapt→reverify protocol recorded in `episode-10-great-wall-script.md`.
+
+| # | Asset | Model | Local file | Status |
+|---|---|---|---|---|
+| 1 | Costume still #1 — Hazel as Ming corvée laborer, shoulder pole + brick baskets, Jinshanling dawn | image-edit-pro, 1024x1024, 5 refs | `assets/still1_costume_greatwall.png` | Sent to owner 2026-08-26 — awaiting approval |
+
+QC notes per asset are in the session log; owner decisions recorded here as they come.

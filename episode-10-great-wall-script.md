@@ -36,6 +36,27 @@
 **Pinned comment:** all of the above, cited plainly, + AI-disclosure line + follow CTA.
 **Channel engagement question:** "Which job would've broken you first: soldier, convict, or draftee? 👇"
 
+## Era-accuracy bible (researched & verified 2026-08-26 — every prompt checks against this; owner instruction: verify everything era-specific before any generation)
+
+**Hazel's costume (female commoner laborer, northern China, 1567):**
+- Cross-collar (right-over-left, youren) short cotton/hemp jacket (ao) in a muted, undyed or pale color — sumptuary law restricted commoners to plain, light/dull colors; NO bright yellow (imperial), no rich reds, no embroidery, no silk.
+- Loose trousers (ku) for labor — trousers, not the mamian skirt, for a woman doing hauling work; skirt variant would read wealthy-urban and impede the job.
+- Straw sandals; hair bound up in a simple cloth wrap/kerchief; a plain cloth sash at the waist. Optional: cloth leg-wraps.
+- Weathered, dusty, sweat-marked; fabric coarse homespun with visible weave.
+
+**Zhao & male laborers:** blue or undyed cloth jacket + trousers (documented porter/laborer dress), cloth head-wrap or bare topknot, straw sandals, shoulder poles with rope-slung baskets or back-frames. Convict gangs may show heavier wear.
+
+**Soldiers on the wall:** northern Ming frontier troops — brigandine (fabric coat with internal riveted plates, visible rivet studs), steel helmets; NOT samurai armor, NOT Qing braids-and-queue (queue is Qing — NO shaved foreheads/braids anywhere; Ming men wear full hair in a topknot), NOT fantasy lamellar.
+- **Qi Jiguang (general):** distinguished but field-practical — brigandine coat with rivet studs, officer's helmet or wrapped topknot when inspecting, commanding bearing; age ~39 in 1567.
+
+**Construction methods (all documented):** brick relay lines / human chains up the slope; shoulder poles and back-baskets; handcarts on flatter ground; windlass/pulley-and-basket over drops; kilned grey-blue bricks; rammed-earth core faced with brick; sticky-rice lime mortar (pale grey-white paste); masons with wooden trowels/tampers.
+
+**Wall appearance at Jinshanling 1567:** UNDER CONSTRUCTION — finished lower courses of grey brick + sections of exposed rammed-earth core + wooden scaffolding (lashed timber poles); hollow watchtowers in various stages; crenellations only on completed stretches. Steep, ridge-following. Pine-covered mountains, northern Hebei.
+
+**Props:** silver = boat-shaped sycee/yuanbao ingots with stamped marks (NOT coins, NOT bars); ledgers = bound paper books, brush + ink, clerk stamps red seal ink; rations = millet/steamed buns; ropes = hemp, hand-laid.
+
+**Anachronism blocklist (goes into every prompt as negative guidance):** no Qing-era queues/shaved foreheads, no silk brocade on laborers, no bright imperial yellow, no samurai/Japanese armor elements, no modern tools (metal wheelbarrows, steel scaffolds, hard hats), no finished-tourist-wall look (no restored Badaling appearance), no Han-dynasty or fantasy-wuxia costume drift.
+
 ## Production notes
 - Palette: grey stone, pine-green ridge, dust haze; dawn → dusk → torchlit night across the 8 clips (linear one-day flow, Opening Law compliant).
 - Sound: chisel/hammer chorus + rope creak + ridge wind; the kneeling wave in clip 4 is the only moment the work-noise dips; no music until the edit decides otherwise.
