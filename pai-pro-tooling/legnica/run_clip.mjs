@@ -45,6 +45,17 @@ const SELFIE_CAMERA_NOTE = `This is a first-person selfie-style point-of-view sh
 
 const THIRD_PERSON_CAMERA_NOTE = `This is an OBJECTIVE third-person cinematic shot — not her own held camera; the camera exists independently in the scene. Single continuous unbroken shot, one camera angle throughout, no cuts, no scene changes, real-time continuous take.`;
 
+// PERMANENT, UNCONDITIONAL — added 2026-08-26 after the shields-forward
+// check was silently disabled on clip 7 simply because that clip's own
+// scene/action text no longer happened to contain the word "shield" (it had
+// been rewritten to remove a different defect). The model still rendered
+// background shields anyway — any battlefield crowd shot defaults to them
+// whether or not the prompt mentions them — so a keyword-gated check can
+// never fully protect against this. Fix: this block is injected into EVERY
+// clip's prompt, unconditionally, regardless of what that clip's own scene
+// text says, so there is no wording path that can turn it off.
+const BATTLEFIELD_BACKGROUND_RULE = `BATTLEFIELD BACKGROUND — PERMANENT RULE, applies to every soldier or crowd visible anywhere in this shot, foreground or background, named in this scene's own text or not: any soldier holding a shield must be shown actively gripping it OUT IN FRONT of their body, its painted face oriented toward whatever direction that soldier is themselves facing — NEVER a shield visible face-on to the camera on a soldier whose back is turned to the camera (that combination is anatomically impossible and must never be rendered), and NEVER a shield slung across or resting on a soldier's back while they stand in an active formation. If a soldier's back is toward the camera, their shield (if any) reads from its rear/inner side or is mostly hidden behind their own body — it does not show its painted front. Apply this to every visible shield in the frame, not just ones this scene's own description specifically calls out.`;
+
 // Locked appearance for Duke Henry II the Pious — reused verbatim in every clip
 // he appears in (2, 3, 8, 9) so he reads as the same person across generations,
 // same identity-consistency discipline as HAZEL's CHARACTER_LOCK.
@@ -66,11 +77,27 @@ const STANDING_RULES = [
     check: (p) => !/holding the camera on herself|camera still on herself|camera on herself/i.test(p),
   },
   {
+    // Made UNCONDITIONAL 2026-08-26 — this used to only fire when the clip's
+    // OWN scene/action text contained the word "shield", which meant
+    // rewriting a clip to remove one specific shield-related defect could
+    // silently disable this check entirely, even though background shields
+    // still render in every battlefield crowd shot regardless of whether
+    // the prompt mentions them. Now checks that the permanent, always-
+    // injected BATTLEFIELD_BACKGROUND_RULE block actually made it into the
+    // prompt — a structural guard, not a per-clip keyword gate — plus, when
+    // THIS clip's own text also describes a specific shield, that it still
+    // uses the forward/never-on-back phrasing.
     name: "shields-held-forward-never-on-back",
-    appliesTo: (clip) => /shield/i.test(clip.scene + " " + clip.action),
-    check: (p) =>
-      /shield[s]?[^.]{0,80}(forward|front|facing (the )?(enemy|horizon|opposing|each other))/i.test(p) &&
-      /never[^.]{0,40}(on (his|their|the) back|on the back|slung on the back)/i.test(p),
+    appliesTo: () => true,
+    check: (p, clip) => {
+      const baselinePresent = /BATTLEFIELD BACKGROUND — PERMANENT RULE/.test(p);
+      const ownText = (clip.scene || "") + " " + (clip.action || "");
+      if (!/shield/i.test(ownText)) return baselinePresent;
+      const perClipOk =
+        /shield[s]?[^.]{0,80}(forward|front|facing (the )?(enemy|horizon|opposing|each other))/i.test(ownText) &&
+        /never[^.]{0,40}(on (his|their|the) back|on the back|slung on the back)/i.test(ownText);
+      return baselinePresent && perClipOk;
+    },
   },
   {
     name: "armies-face-each-other-not-rear-facing",
@@ -136,6 +163,8 @@ function buildPrompt(clip) {
   const characterBlocks = (clip.characters || []).map((name) => CHARACTER_BLOCKS[name]).filter(Boolean);
   return [
     IDENTITY_BLOCK,
+    ``,
+    BATTLEFIELD_BACKGROUND_RULE,
     ``,
     ...characterBlocks.flatMap((block) => [block, ``]),
     `CAMERA MODE: ${cameraNote}`,
