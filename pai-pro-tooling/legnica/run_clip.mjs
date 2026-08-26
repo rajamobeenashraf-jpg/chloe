@@ -108,6 +108,22 @@ const STANDING_RULES = [
       return true;
     },
   },
+  {
+    // Added 2026-08-26 after clip 5 (owner-caught): the base SELFIE_CAMERA_NOTE
+    // already says she must move forward, never stay rigidly face-on while
+    // moving, but that's inherited boilerplate — it didn't stop the model
+    // rendering her static/face-on while surrounding soldiers surged forward
+    // past her in an active pursuit, which reads as her moving BACKWARD
+    // relative to the crowd. Any clip that puts her inside a crowd's motion
+    // (a pursuit, chase, charge she's swept into) must explicitly restate,
+    // for HER specifically, that she is running forward in the same
+    // direction and pace as everyone else — inherited camera-mode notes are
+    // not enough on their own for this specific failure mode.
+    name: "swept-into-crowd-motion-needs-explicit-forward-running",
+    appliesTo: (clip) =>
+      clip.cameraMode === "selfie" && /(pursuit|chase|swept (along|into)|surging past|surging around)/i.test(clip.scene + " " + clip.action),
+    check: (p) => /she[^.]{0,80}(runs|running|sprint(s|ing)?|moves?)[^.]{0,40}(forward|same (direction|pace)|matching (the )?(pursuit|charge|pace))/i.test(p),
+  },
 ];
 
 function runStandingChecks(clip, prompt) {
