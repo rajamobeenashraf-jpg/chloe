@@ -11,7 +11,7 @@ birds are the only surviving dinosaur lineage. Solo character (Hazel), vertical
 ## 1 · YouTube title
 **Finalized (owner decision, vidIQ CTR score 97/100, validated against real IG/TikTok outlier data in this niche):**
 `You are the last person who will ever see a dinosaur alive.`
-This line is also the Instagram POV title and (trimmed to 10 words) the cover/thumbnail's visual hook banner — see §7. No video reshoot; clip1a is unchanged.
+This line is also the Instagram POV title. The video itself and the cover/thumbnail now carry a tightened on-screen variant of this line as a burned-in visual hook — see §7 (no reshoot; it's a text overlay on the existing clip1a footage, top of frame, 0:00–0:07).
 
 Earlier candidates (not selected):
 - Straight: `I time travelled to 66 million BC — the day the dinosaurs died`
@@ -48,13 +48,24 @@ Spoken hook (first 3s): *"I just arrived in Hell Creek. It's 66 million years BC
 ## 6 · Facebook caption
 > I time travelled to the day the dinosaurs went extinct — and spent it with a baby Triceratops named Tank. Would you have stayed? #timetravel #history
 
-## 7 · Thumbnail/cover spec
+## 7 · Thumbnail/cover spec (calm variant — matches clip1a's actual opening frame)
 - Hazel, selfie-vlog angle, mud-streaked field gear, 30–45% of frame
 - Expression: awe (distinct from dread/delight used on other episodes)
 - Background: Triceratops (Tank) beside her, T-Rex family visible in the haze behind
-- Banner text (≤10 words, owner-finalized hook line, trimmed from 12 to fit the cap): `"You're the last person who'll ever see a dinosaur alive."`
+- Banner text (≤10 words, matches the implemented video overlay exactly — see production log): `"POV: You are last person to see a dinosaur alive."`
 - Year stamp: `66,000,000 BC` — amber (past)
 - No episode number; frame one = this composition
+
+See below for a second, high-tension thumbnail option (owner-requested).
+
+## 7b · Thumbnail/cover spec — high-tension/chaos variant (owner-requested)
+- Hazel, selfie-arm extended framing, mid-run, caught in a single frozen instant of real danger — not a posed action shot
+- Expression: genuine terror — wide eyes, open mouth mid-gasp, hair whipping across her face
+- Scene: fire-escape beat (matches clip8) — wall of flame and thick smoke on the horizon, glowing embers falling through the air, motion blur on the background selling real speed
+- Tank bolting in visible panic beside her, head down, frill catching firelight
+- Generated: `hazel_ep5_thumbnail_chaos.png` via PAI Pro `image-edit-pro`, same v4 locked identity as every other episode asset — https://storage.googleapis.com/utopai-cue-prod/generated/images/2026/08/26/83fbe42b6d1c788def704a1c9e4edc46.png
+- **vidIQ scoring caveat**: `vidiq_score_thumbnail` requires an uploaded YouTube video ID to score against — there's no Instagram-side equivalent (same limitation as title scoring, IG publishes no data a tool could score against). Can run the YouTube-side check if useful; it won't be true IG validation.
+- Banner text: not yet chosen for this variant — reuse the same hook line as 7a, or a punchier stake-line, owner's call
 
 ## 8 · Alt text
 "Hazel, a time traveller in muddy field gear, kneeling beside a juvenile Triceratops in Cretaceous grassland; a T-Rex family visible in the distance."
