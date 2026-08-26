@@ -224,3 +224,11 @@
 - Generated clip 6 (taskId `452106d3-e20b-445c-9ef5-d544e41fbaf2`, 4.06s, 2.22MB).
 - Self-QC (frame extraction, 3fps): clean result, no findings. She's braced under wooden debris/cover, muddy, wardrobe correct; a full line of mounted Mongol horse archers (correct lamellar/steppe-helmet identity) firing directly toward her position, arrows visible in flight against the dust; no dialogue, matching script; non-graphic.
 - File: `pai-pro/projects/legnica/assets/clip6_v1.mp4` (4.06s, 2,215,258 bytes) — sent to owner per §20 for approval.
+
+## 2026-08-26 (cont.) — Clip 6 approved and locked; clip 7 ("collapse") built and generated (first attempt, clean)
+- Owner approved clip 6 and said to continue.
+- Built clip 7 from the script's "Total war — collapse" row (4s): continuous chaos with clip 6, she ducks behind a nearby soldier's braced shield (explicit forward/never-on-back language, anchored to the same danger direction established since clips 5-6), European soldiers breaking formation and a banner falling around her, her shouted fragmented line, ending on her gaze/camera beginning to search and catching on Henry's position — the bridge into clip 8.
+- Ran the double-verification law: pass one clean both runs (camera-device + shields-forward checks, both passed); pass two (manual read + geometric trace) confirmed the shield's danger-facing direction was explicitly anchored to the established geometry, not reused generic language.
+- Generated clip 7 (taskId `070c41fe-f0a6-4689-b631-1a7630a5b1de`, 4.06s, 2.51MB).
+- Self-QC (frame extraction, 3fps): clean result. She's braced behind a soldier's large round shield, soldiers visibly scattering/breaking formation in the background, a drooping banner visible; the ending frame shows her turning away mid-search with a lone standing armored figure visible in the distance — a strong, fortuitous setup for clip 8's bridge onto Henry. No graphic content, no shield-orientation issues found.
+- File: `pai-pro/projects/legnica/assets/clip7_v1.mp4` (4.06s, 2,507,935 bytes) — sent to owner per §20 for approval.
