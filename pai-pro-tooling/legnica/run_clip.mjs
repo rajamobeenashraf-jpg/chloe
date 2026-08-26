@@ -93,6 +93,22 @@ const STANDING_RULES = [
       const baselinePresent = /BATTLEFIELD BACKGROUND — PERMANENT RULE/.test(p);
       const ownText = (clip.scene || "") + " " + (clip.action || "");
       if (!/shield/i.test(ownText)) return baselinePresent;
+      // A shield described as inert ground debris (lying/scattered/fallen/
+      // abandoned, with no soldier actively carrying THAT shield) isn't an
+      // orientation claim at all — found on clip 10B's aerial debris-field
+      // description, which mentions "shields" lying in the mud and has no
+      // carried-shield language near that mention, but does mention
+      // "soldiers" elsewhere in the same clip for an unrelated reason (the
+      // still-resolvable soldiers during the early part of the camera's
+      // rise). A text-wide carried-by-person check false-positived on that
+      // unrelated mention, so this looks specifically within the shield
+      // mention's own sentence/vicinity instead of the whole clip's text.
+      const shieldContextMatch = ownText.match(/[^.]{0,60}\bshield[s]?\b[^.]{0,60}/i);
+      const shieldContext = shieldContextMatch ? shieldContextMatch[0] : ownText;
+      const isCarriedByPerson = /(soldier|carrying|holds?|holding|braced|worn|wearing|slung on (his|her|their) back)/i.test(shieldContext);
+      const isGroundDebrisOnly =
+        /shield[s]?[^.]{0,40}(lying|scattered|abandoned|fallen|planted|littering|strewn)/i.test(ownText) && !isCarriedByPerson;
+      if (isGroundDebrisOnly) return baselinePresent;
       const perClipOk =
         /shield[s]?[^.]{0,80}(forward|front|facing (the )?(enemy|horizon|opposing|each other))/i.test(ownText) &&
         /never[^.]{0,40}(on (his|their|the) back|on the back|slung on the back)/i.test(ownText);
