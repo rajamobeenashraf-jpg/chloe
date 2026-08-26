@@ -307,3 +307,22 @@ Found on Legnica, clip 10 (a death scene's aftermath shot): the episode's own bo
 - **"No graphic gore, no dismemberment, no blood spray anywhere in this episode" bans specific things — dismemberment, severed limbs, exposed internal gore, and blood actively spraying/spurting from a live wound — it does NOT ban blood itself.** A death or serious-injury scene should show a real, visible, prominent blood pool/wound consistent with what actually happened; sanitizing it to zero blood is its own kind of inaccuracy, not the safe default.
 - **When in doubt about how far a general content-safety rule extends to a specific shot, don't silently apply the strictest possible reading and call the result a "fix" — flag it as a judgment call before writing it into the clip's own prompt text.** Same failure shape as §23's over-literal keyword matching, but for creative/tonal judgment instead of automated checks — the boilerplate's actual scope was narrower than the inference drawn from it.
 - Applies to every future episode: violent-death content should read as real war cinema (a visible wound, a real blood pool), not a bloodless PG version of the same event — the non-graphic cap is specifically about dismemberment/spray/exposed gore, not about removing blood entirely.
+
+## 25. Transitions must never let audio touch silence at a cut — reverse-engineered from Chloe vs History (owner mandate, 2026-08-26 — PERMANENT, same weight as §12–§15, §17–§24)
+
+Owner flagged the Legnica edit's transitions as "very bad" compared to Chloe vs History's, which look natural/smooth despite also being hard-cut vertical AI content — asked for a reverse-engineering pass on her actual technique rather than assuming cut TYPE was the problem. Two independent Gemini-eyes analyses (`ask` mode) against her Titanic long-form (`youtube.com/watch?v=HZRdKlOHogk`), tracking 25+ cut points for cut type, continuity carrier, and audio timing, converged strongly. Root cause: the standing per-clip audio-fade rule (0.08s fade-out/fade-in at every clip edge) guarantees a ~0.16s dip toward near-silence at literally every cut — the exact opposite of her technique, where not one analyzed cut has an audible gap. Cut TYPE was never the problem (she also predominantly uses true hard cuts); the gap is entirely in what happens to sound and motion AT the cut. Full cut-by-cut breakdown in `chloe-transitions-study.md` on the episode branch this was found on.
+
+**What she does at nearly every cut (confirmed across 25+ analyzed cut points):**
+1. **Audio never touches silence at the cut.** Sound either pre-laps the visual cut 100–600ms early (J-cut) or runs one continuous ambient/music bed underneath both shots (L-cut) — never a gap.
+2. **Cuts land mid-motion, not on stillness** — a walk continuing, a turning head, a door opening, a fall in progress.
+3. **A diegetic sound or action triggers the cut** — a door latch, a shutter click, a thud, a horn, a music sting landing on frame 0 — giving it a motivated cause.
+4. **Consistent on-screen subject anchor** — camera distance/arm angle/head position stay put across the cut even when environment changes entirely.
+5. **Eyeline matching** — she looks toward something; the cut reveals what she was looking at.
+6. **Energy-level shifts use audio filtering/dampening across the transition, never an abrupt drop to silence.**
+
+**Permanent rules, effective immediately:**
+- **Edit stage (whatever assembles the final cut): the per-clip audio fade must shrink to a pure digital-click guard (≈15–20ms), never a perceptible dip.** This does not reopen the already-rejected full audio crossfade across a cut (still forbidden — confirmed to desync incoming clips' audio from video); it only shortens the two independent same-clip edge fades.
+- **Any pair of adjacent clips whose sound design is already scripted as continuous/bridged gets a true zero-fade hard audio join at that boundary, matching the hard video cut** — a fade there only reintroduces the dip the continuous sound design was written to avoid.
+- **When scripting a clip that bridges to another, favor landing the cut mid-action rather than on a settled/static pose**, and where natural, give the moment a diegetic trigger sound.
+- **Eyeline-match bridges are a confirmed, reusable technique** — use them deliberately when a clip ends on a character looking toward something the next clip reveals.
+- Applies to every future episode's edit-stage tooling and every future clip's scene/action/sound writing from the start of the session, not just after a complaint.
