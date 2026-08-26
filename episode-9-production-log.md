@@ -1582,3 +1582,81 @@ made explicit and directions proposed; nothing actioned pending their
 call.
 
 ## STATUS: findings reported, awaiting owner decision on the lighting arc (clip10/11/12a-c)
+
+## Round 15 — no-regeneration fix: dissolve + grade at clip08b→clip10 (2026-08-26)
+
+Owner ruled out regeneration explicitly ("I do not want another regeneration")
+and asked for a transition between the clips instead. Built a real prototype
+before asking anything further: a short video-only crossfade at the
+clip08b→clip10 join, tucked entirely inside the caption-free silent gap right
+after "exists yet." (so it touches neither her dialogue nor the burned-in
+caption), plus a moderate `colorbalance`/`saturation` grade pulling
+clip10/clip11 partway toward clip08b's neutral daylight tone so the dissolve
+has less of a gap to close. Sent as an isolated ~4.6s preview with one flag:
+every clip in this project has been a hard cut, zero dissolves, per
+`creative-direction.md` §16 (also cited in `build_final_cut.mjs`'s and
+`apply_prelap.mjs`'s own header comments) — this would be the first
+exception anywhere in the project. Owner replied "do it."
+
+**Implemented for real, both halves of what was offered:**
+
+**clip08b -> clip10_respect (done).** Re-rendered the *full* clip10_respect
+and clip11_mirror (not just their opening seconds) with the approved grade
+(`colorbalance=rs=-0.12:gs=-0.02:bs=0.12:rm=-0.07:gm=0:bm=0.07,eq=saturation=0.95`)
+so the whole "chapter" is internally consistent rather than just its lead-in
+— written to `clip10_respect_graded.mp4` / `clip11_mirror_graded.mp4`
+(originals untouched, kept). Video-only `xfade` (fade, 0.18s, offset 7.44s —
+right where "EXISTS YET." ends and clip08b's trimmed tail begins) between
+`clip08b_final.mp4` and the graded clip10. Audio is a plain hard concat
+through the whole join, no audio crossfade — deliberately, per the same §16
+finding from Episode 2 that a real audio crossfade desyncs the incoming
+clip's audio from its video; the existing J-cut prelap (quiet ambience
+preview under the outgoing clip's last 0.2s) still does the audio-side work
+it already did.
+
+**clip11 -> clip12a (not done — real technical blocker, not skipped for
+convenience).** Checked whether the same treatment could reach this older,
+still-open jump from round 11. It can't, cleanly: `clip12a_thesis1`'s first
+caption ("TWENTY YEARS.") starts at literal t=0.0 — zero caption-free
+headroom on the incoming side, versus clip11's own comfortable 0.52s tail
+(8.52s to its 9.04s end). Any dissolve here would blend clip11's tail with
+clip12a's video *while its first caption is burned in*, i.e. the caption
+would visibly fade/ghost in through the transition — which breaks the
+caption system's own locked spec (hard cut in/out, no animation, owner-
+approved 2026-08-23) to partially fix the transitions spec. Rather than
+quietly ship a fudged version or silently drop the request, leaving this one
+as a hard cut. Real options if the owner wants this boundary addressed too:
+regeneration (still the clean fix, per round 11 and round 14's confirmation
+grading alone doesn't close it), or accepting a shifted caption start (moves
+"TWENTY YEARS." off its whisper-measured word-sync point by ~0.15-0.2s) to
+open up dissolve room — not applied without asking, since it trades one
+locked spec for another.
+
+**Pipeline note, not a tooling change:** `build_final_cut.mjs` itself is
+untouched and still assembles pure hard cuts by default — correct, since
+every other cut in the episode (and every other episode) should stay that
+way unless the owner says otherwise. This one dissolve was built as a
+one-off manual render (new segment covering clip08b through the outro,
+xfade + concat, stitched onto the unchanged clip01-clip08a segment reused
+directly from the prior master) rather than a change to the shared script.
+Practical consequence for future sessions: if the giza pipeline gets
+rebuilt again for an unrelated reason (`qc_pass` -> `apply_prelap` ->
+`build_final_cut`), it will regenerate the plain hard-cut version and this
+dissolve will need to be manually reapplied — flagging this so it isn't a
+surprise later. Treating this as a one-off exception for this episode, not
+a change to the channel-wide hard-cuts-only rule — `creative-direction.md`
+§16 is unchanged. If the owner wants it promoted to a standing rule, that's
+a separate, explicit call.
+
+**Verified in the full assembled master** (not just the isolated preview):
+frame-count sanity exact (3101 frames = 129.208s x 24fps, no truncation);
+spot-checked the untouched clip08a->clip08b hard cut (unaffected, identical
+to before) and the new dissolve region directly in context — clean blend,
+no caption ghosting, lands exactly where the isolated preview showed.
+Runtime 129.33s -> 129.21s (the 0.18s dissolve overlap). File naming: the
+canonical `giza_final_cut.mp4` / `giza_final_cut_compressed.mp4` now point
+at the version with the dissolve+grade; the prior pure-hard-cut version is
+preserved as `giza_final_cut_hardcuts_only_pretransition.mp4` (+
+`_compressed`), not deleted.
+
+## STATUS: delivered — clip08b→clip10 dissolve+grade live; clip11→clip12a still open (blocked on caption headroom, not actioned)
