@@ -1,1 +1,10 @@
 .claude/settings.local.json
+
+# Generated video/image files stay out of git per CLAUDE.md's standing
+# rule -- they're retrievable from PAI/Higgsfield by job ID (see each
+# episode's production log manifest) or rebuildable from the committed
+# edit-stage tooling + manifests. Matches existing precedent (troy/salem
+# never committed their qc/*.mp4 or assets/*.mp4 either).
+pai-pro-tooling/*/qc/*.mp4
+pai-pro-tooling/*/assets/*.mp4
+pai-pro-tooling/*/assets/*.png
