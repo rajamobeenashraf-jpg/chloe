@@ -89,6 +89,19 @@ async function probeVideoDuration(filePath) {
 // nothing on the other side to bridge to.
 const CLICK_GUARD = 0.02; // imperceptible, only prevents a waveform-discontinuity pop
 
+// NOTE 2026-08-26: investigated a targeted volume-lift patch on clip10's
+// trailing ~0.6s to address the confirmed dead-silence gap at the
+// clip10->clip10B join (see production log). Abandoned: measurement
+// showed clip10's tail is genuine digital silence (no signal at all, not
+// just quiet), so no gain filter can recover it -- confirmed by testing
+// the `volume` filter's `enable` time-gate on this exact file, which
+// produced zero measurable change on the near-zero tail while working
+// correctly elsewhere in the same clip. This is a content-level gap in
+// the original clip10 generation, not fixable at the edit layer without
+// either a small regeneration or a sourced/generated ambient bed to
+// bridge the specific gap -- reported to the owner rather than shipped
+// as an unverified "fix."
+
 async function qcOneClip(clip, { isFirst, isLast }) {
   const srcPath = path.join(ASSETS_DIR, `${clip.id}_v1.mp4`);
   const outPath = path.join(QC_DIR, `${clip.id}_qc.mp4`);
