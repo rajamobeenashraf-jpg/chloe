@@ -26,8 +26,15 @@ present in the assets dir if one is ever needed.
 | `clip9_shelter` | 12s | `e4189fc2-3221-48c2-841c-83db2d17a31b` | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/ac86d47cec9f85571e21811af0e56df9.mp4 |
 | `clip10_outro` | 14s | `9f39011b-277f-4ea5-800b-75913216087d` | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/21/f8f1934edfa00f0d4e65fb17d27c2079.mp4 |
 
-## Final assembled cut
-- Local path: `/home/user/pai-pro/projects/dino/assets/dino_final_cut.mp4` (+ `dino_final_cut_compressed.mp4` for delivery)
-- Runtime: **125.541667s** (3013 frames @ 24fps, frame-count-verified against expected duration)
-- 11 segments, all hard cuts (no dissolves — creative-direction.md §16)
+## Final assembled cut (current — post clip1a/1b split, clip3 timing fix, both cards)
+- Local path: `/home/user/pai-pro/projects/dino/assets/dino_final_cut.mp4` (720×1280) (+ `dino_final_cut_compressed.mp4` for delivery)
+- Runtime: **131.593s** (3158 frames @ 24fps, frame-count-verified against expected duration)
+- 12 segments, all hard cuts (no dissolves — creative-direction.md §16)
 - Assembled via `pai-pro-tooling/dino/{captions_data.mjs, qc_pass.mjs, build_final_cut.mjs}` (mirrored to `/home/user/pai-pro/projects/dino/`)
+
+## 4K upscale deliverable (owner-directed, Topaz via Higgsfield)
+- Source: `dino_final_cut.mp4` above, unchanged (no reshoot — see production log's "Hook line, corrected approach" note)
+- Higgsfield job ID: `8ff243b9-6694-4da9-8773-5a22b537b807` (`upscale_video`, provider `topaz`, resolution `2160p`, aspect_ratio `auto`)
+- Result: 2160×3840, 24fps, duration 131.593s (exact match to source) — verified via ffprobe + visual spot-check at two timestamps
+- **Uncompressed result URL (owner-requested, not re-hosted/compressed):** https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260825_233038_8ff243b9-6694-4da9-8773-5a22b537b807.mp4
+- File size ~740MB. This is Higgsfield's own CDN link, not this session's file-delivery path (file exceeds its 30MB cap) — retrievable independent of this session, but confirm with Higgsfield how long result URLs stay live if this needs to survive long-term.
