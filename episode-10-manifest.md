@@ -11,6 +11,7 @@ Engine: PAI Pro · project dir `/home/user/pai-pro/projects/greatwall/` · all g
 
 | 6 | Costume still v3, uploaded to public CDN for use as a video reference (Troy precedent: text-only wardrobe drifts in video-gen) | Higgsfield media_upload | CDN: `.../5df1b068-3c04-48ee-b80e-53a1b39e2e53.png` | Reference asset, not a deliverable |
 | 7 | **Clip 1 v1** — LINEAR OPEN, dawn brick-relay line, Tumu Crisis thesis line, 9s | video-generation | `assets/clip1_v1.mp4` | Superseded — owner flagged dialogue pace (293 wpm, too fast for the calm register); see script v3 pacing correction |
-| 8 | **Clip 1 v2** — same scene, dialogue trimmed to 25 words/~167 wpm (natural conversational pace) | video-generation | `assets/clip1_v2.mp4` | Sent to owner 2026-08-26 — awaiting approval |
+| 8 | **Clip 1 v2** — same scene, dialogue trimmed to 25 words/~167 wpm | video-generation | `assets/clip1_v2.mp4` | Superseded — owner said still too fast |
+| 9 | **Clip 1 v3** — 24 words/10s ≈ 144 wpm, explicit pause beats written into the line, duration extended 9s→10s | video-generation | `assets/clip1_v3.mp4` | Sent to owner 2026-08-26 — awaiting approval |
 
 QC notes per asset are in the session log; owner decisions recorded here as they come. Note: ffmpeg is not currently installed in this environment (package mirror gaps on last attempt) — needed later for frame extraction/QC and final assembly; will retry before the edit stage.
