@@ -9,4 +9,7 @@ Engine: PAI Pro · project dir `/home/user/pai-pro/projects/greatwall/` · all g
 | 4 | Zhao (NPC) — drafted villager laborer, blue cloth, topknot, shoulder pole | image-generation-pro, 1024x1024, no refs (NPC, no identity lock) | `assets/still2_zhao.png` | Sent to owner 2026-08-26 — awaiting approval |
 | 5 | General Qi Jiguang (NPC) — Ming brigandine armor, inspecting a brick | image-generation-pro, 1024x1024, no refs (NPC, no identity lock) | `assets/still3_qi_jiguang.png` | Sent to owner 2026-08-26 — awaiting approval |
 
-QC notes per asset are in the session log; owner decisions recorded here as they come.
+| 6 | Costume still v3, uploaded to public CDN for use as a video reference (Troy precedent: text-only wardrobe drifts in video-gen) | Higgsfield media_upload | CDN: `.../5df1b068-3c04-48ee-b80e-53a1b39e2e53.png` | Reference asset, not a deliverable |
+| 7 | **Clip 1** — LINEAR OPEN, dawn brick-relay line, Tumu Crisis thesis line, 9s, PAI video-generation (5 identity refs + costume ref, 9:16, 720p, audio) | video-generation | `assets/clip1_v1.mp4` | Sent to owner 2026-08-26 — awaiting approval |
+
+QC notes per asset are in the session log; owner decisions recorded here as they come. Note: ffmpeg is not currently installed in this environment (package mirror gaps on last attempt) — needed later for frame extraction/QC and final assembly; will retry before the edit stage.
