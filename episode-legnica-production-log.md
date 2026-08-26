@@ -216,3 +216,11 @@
 - Ran both verification passes clean, then regenerated (taskId `9e9bfd32-9997-4afa-886f-7dad3d7ee3f8`, 11.05s, 7.72MB).
 - Self-QC (frame extraction at 3fps this time for finer coverage, specifically checking the opening frames closely per the above): forward-leaning running posture with genuine motion (windswept hair, dynamic arm position) confirmed from the very first sampled frame, and held consistently at multiple checkpoints across the whole clip (opening, mid-shot, arrow-storm peak, dive ending) — no recurrence of the static/backward-reading pose anywhere sampled this time. Dense arrow storm and shield-forward orientation both still intact.
 - File: `pai-pro/projects/legnica/assets/clip5_v1.mp4` (11.05s, 7,718,329 bytes) — sent to owner per §20 for approval.
+
+## 2026-08-26 (cont.) — Clip 5 approved and locked; clip 6 ("archers") built and generated (first attempt, clean)
+- Owner approved clip 5 and said to continue.
+- Built clip 6 from the script's "Total war — archers" row (4s, no dialogue, no named characters): direct continuation of clip 5's dive-for-cover pose, she's braced behind debris, camera raised just enough to keep her face and the Mongol horse archers (same distance/direction as clip 5's trap) in the same frame, arrows visible in flight, sound-bridged rumble continuing uninterrupted from clip 5.
+- Ran the double-verification law: pass one clean both runs (only the camera-device check applied — no shields, no crowd-pursuit motion, no named characters, no dialogue question in this shot); pass two (manual read + explicit geometric trace per §26) confirmed the archers' direction is explicitly anchored to clip 5's established geometry, not a new arbitrary side.
+- Generated clip 6 (taskId `452106d3-e20b-445c-9ef5-d544e41fbaf2`, 4.06s, 2.22MB).
+- Self-QC (frame extraction, 3fps): clean result, no findings. She's braced under wooden debris/cover, muddy, wardrobe correct; a full line of mounted Mongol horse archers (correct lamellar/steppe-helmet identity) firing directly toward her position, arrows visible in flight against the dust; no dialogue, matching script; non-graphic.
+- File: `pai-pro/projects/legnica/assets/clip6_v1.mp4` (4.06s, 2,215,258 bytes) — sent to owner per §20 for approval.
