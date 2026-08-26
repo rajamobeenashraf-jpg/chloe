@@ -48,9 +48,48 @@ const THIRD_PERSON_CAMERA_NOTE = `This is an OBJECTIVE third-person cinematic sh
 // Locked appearance for Duke Henry II the Pious — reused verbatim in every clip
 // he appears in (2, 3, 8, 9) so he reads as the same person across generations,
 // same identity-consistency discipline as HAZEL's CHARACTER_LOCK.
-const HENRY_DESCRIPTION = `DUKE HENRY II THE PIOUS (recurring named historical figure — appearance LOCKED, must match exactly every time he appears): a Polish-Silesian duke in his early-to-mid forties, weathered and grim-faced, dark hair with a short beard. Mounted on an armored grey warhorse. ARMOR — must look exactly like a real mid-13th-century European knight as depicted in period art such as the Maciejowski Bible (c. 1240s): from head to hip, his ENTIRE body is covered ONLY by a mail hauberk (interlinked riveted steel rings, draping and flexible like cloth, covering torso, shoulders, and arms down to the wrists with no separate shoulder or arm pieces of any kind) and a mail coif covering the head/neck. Over the coif, a plain rounded steel skull-cap helmet (a simple dome, like an upside-down bowl) with ONE straight flat nose-bar hanging down the center of the face — that is the ONLY thing on his face, nothing else. HARD EXCLUSIONS, absolutely none of the following may appear anywhere on him: no plate armor of any kind, no shaped/articulated steel pauldrons, spaulders, vambraces, gauntlets, cuisses, or greaves, no hinged or pointed visor, no pointed or angular "Gothic" helmet shape, no chin/cheek guards, no brow ridge, nothing resembling 14th–15th century knight armor. Over the mail, a plain loose cloth surcoat bearing his real historical heraldry — a black eagle on a gold/yellow field (the Piast dynasty's Silesian eagle) — and a matching personal banner nearby. The nose-bar and coif leave his eyes, cheeks, and mouth fully visible and readable throughout.`;
+const HENRY_DESCRIPTION = `DUKE HENRY II THE PIOUS (recurring named historical figure — appearance LOCKED, must match exactly every time he appears): a Polish-Silesian duke in his early-to-mid forties, weathered and grim-faced, dark hair with a short beard. Mounted on an armored grey warhorse. ARMOR — must look exactly like a real mid-13th-century European knight as depicted in period art such as the Maciejowski Bible (c. 1240s): from head to hip, his ENTIRE body is covered ONLY by a mail hauberk (interlinked riveted steel rings, draping and flexible like cloth, covering torso, shoulders, and arms down to the wrists with no separate shoulder or arm pieces of any kind) and a mail coif covering the head/neck. Over the coif, a plain rounded steel skull-cap helmet (a simple dome, like an upside-down bowl) with ONE straight flat nose-bar hanging down the center of the face — that is the ONLY thing on his face, nothing else. HARD EXCLUSIONS, absolutely none of the following may appear anywhere on him: no plate armor of any kind, no shaped/articulated steel pauldrons, spaulders, vambraces, gauntlets, cuisses, or greaves, no hinged or pointed visor, no pointed or angular "Gothic" helmet shape, no chin/cheek guards, no brow ridge, nothing resembling 14th–15th century knight armor. Over the mail, a plain loose cloth surcoat bearing his real historical heraldry — a black eagle on a gold/yellow field (the Piast dynasty's Silesian eagle) — and a matching personal banner nearby. The nose-bar and coif leave his face clearly visible and readable throughout — his eyes, cheeks, and mouth are never obscured.`;
 
 const CHARACTER_BLOCKS = { henry: HENRY_DESCRIPTION };
+
+// Standing regression checklist — every rule we've already had to fix once,
+// checked against EVERY generation from here on, not just whatever's being
+// iterated on this round. Added 2026-08-26 after the same shield-orientation
+// bug that was fixed on clip 1 (and audited into clips 3/7) silently regressed
+// on clip 2 across several unrelated rewrites, because each dry-run only
+// checked for that round's specific new fix. This is the fix for that gap
+// itself: a hard, mandatory, cumulative check, not a per-fix keyword check.
+const STANDING_RULES = [
+  {
+    name: "no-camera-device-visible",
+    appliesTo: () => true,
+    check: (p) => !/holding the camera on herself|camera still on herself|camera on herself/i.test(p),
+  },
+  {
+    name: "shields-held-forward-never-on-back",
+    appliesTo: (clip) => /shield/i.test(clip.scene + " " + clip.action),
+    check: (p) =>
+      /shield[s]?[^.]{0,80}(forward|front|facing (the )?(enemy|horizon|opposing|each other))/i.test(p) &&
+      /never[^.]{0,40}(on (his|their|the) back|on the back|slung on the back)/i.test(p),
+  },
+  {
+    name: "armies-face-each-other-not-rear-facing",
+    appliesTo: (clip) => /(enemy army|opposing (army|ranks)|opposite side|two armies|facing each other)/i.test(clip.scene + " " + clip.action),
+    check: (p) =>
+      /facing (the )?(enemy|each other|opposing)/i.test(p) &&
+      !/(soldiers|army|men)[^.]{0,40}(from behind|backs turned|facing away)/i.test(p),
+  },
+  {
+    name: "named-character-face-visible-when-speaking",
+    appliesTo: (clip) => (clip.characters || []).length > 0,
+    check: (p) => /face[^.]{0,30}(visible|readable)/i.test(p),
+  },
+];
+
+function runStandingChecks(clip, prompt) {
+  const results = STANDING_RULES.filter((r) => r.appliesTo(clip)).map((r) => ({ name: r.name, pass: r.check(prompt) }));
+  return { results, failed: results.filter((r) => !r.pass) };
+}
 
 function buildPrompt(clip) {
   const cameraNote = clip.cameraMode === "selfie" ? SELFIE_CAMERA_NOTE : THIRD_PERSON_CAMERA_NOTE;
@@ -92,8 +131,15 @@ async function main() {
   console.error(`[run_clip ${clip.n}] duration=${clip.duration}s cameraMode=${clip.cameraMode}`);
   console.error(`[run_clip ${clip.n}] prompt chars=${prompt.length}`);
 
+  const { results, failed } = runStandingChecks(clip, prompt);
+  for (const r of results) console.error(`[run_clip ${clip.n}] standing-check ${r.pass ? "PASS" : "FAIL"}: ${r.name}`);
+  if (failed.length > 0) {
+    console.log(JSON.stringify({ ok: false, klass: "standing-rule-violation", failed: failed.map((f) => f.name) }));
+    process.exit(3);
+  }
+
   if (args.dryRun) {
-    console.log(JSON.stringify({ ok: true, dryRun: true, n: clip.n, prompt, duration: clip.duration, outPath }, null, 2));
+    console.log(JSON.stringify({ ok: true, dryRun: true, n: clip.n, prompt, duration: clip.duration, outPath, standingChecks: results }, null, 2));
     return;
   }
 
