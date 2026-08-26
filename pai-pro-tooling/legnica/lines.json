@@ -1,0 +1,173 @@
+[
+  {
+    "id": "clip1",
+    "duration": 7.041667,
+    "captions": [
+      {
+        "start": 0.2,
+        "end": 5.5,
+        "text": "April, 1241. Europe is about to face the Mongols."
+      }
+    ]
+  },
+  {
+    "id": "clip1B",
+    "duration": 11.041667,
+    "captions": [
+      {
+        "start": 1,
+        "end": 3,
+        "text": "Grandsons of Genghis Khan..."
+      },
+      {
+        "start": 3.2,
+        "end": 6,
+        "text": "You already burned Beijing to the ground. Why are you here?"
+      },
+      {
+        "start": 7,
+        "end": 9.5,
+        "text": "The world is not so easily finished."
+      }
+    ]
+  },
+  {
+    "id": "clip2",
+    "duration": 12.041667,
+    "captions": [
+      {
+        "start": 0.5,
+        "end": 2.5,
+        "text": "Duke Henry the Second. He's leading them."
+      },
+      {
+        "start": 3,
+        "end": 4.5,
+        "text": "How many are we fighting?"
+      },
+      {
+        "start": 5,
+        "end": 6.2,
+        "text": "Enough."
+      },
+      {
+        "start": 9,
+        "end": 10.8,
+        "text": "Hold the line!"
+      }
+    ]
+  },
+  {
+    "id": "clip3",
+    "duration": 12.041667,
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 1.4,
+        "text": "They're moving—"
+      },
+      {
+        "start": 5,
+        "end": 6.6,
+        "text": "Wait— they're retreating?"
+      },
+      {
+        "start": 7.5,
+        "end": 11.6,
+        "text": "No. Watch. This is what they do — they lure you into chasing them, then they turn back and finish you."
+      }
+    ]
+  },
+  {
+    "id": "clip4",
+    "duration": 5.041667,
+    "captions": [
+      {
+        "start": 0.5,
+        "end": 2,
+        "text": "They're fleeing! After them!"
+      },
+      {
+        "start": 2.3,
+        "end": 4.2,
+        "text": "No— don't chase them!"
+      }
+    ]
+  },
+  {
+    "id": "clip5",
+    "duration": 11.041667,
+    "captions": [
+      {
+        "start": 3.5,
+        "end": 8,
+        "text": "They pulled them straight out of formation. Just like I told them—"
+      }
+    ]
+  },
+  {
+    "id": "clip6",
+    "duration": 4.041667,
+    "captions": []
+  },
+  {
+    "id": "clip7",
+    "duration": 6.041667,
+    "captions": [
+      {
+        "start": 1,
+        "end": 4.8,
+        "text": "They aren't fighting us head-on—they're SURROUNDING us!"
+      }
+    ]
+  },
+  {
+    "id": "clip8",
+    "duration": 6.041667,
+    "captions": [
+      {
+        "start": 1,
+        "end": 4.8,
+        "text": "Henry's still fighting... they're surrounding him."
+      }
+    ]
+  },
+  {
+    "id": "clip9",
+    "duration": 9.041667,
+    "captions": [
+      {
+        "start": 1.4,
+        "end": 2.4,
+        "text": "No—"
+      }
+    ]
+  },
+  {
+    "id": "clip10",
+    "duration": 5.041667,
+    "captions": [
+      {
+        "start": 1.8,
+        "end": 4.2,
+        "text": "Henry II is dead."
+      }
+    ]
+  },
+  {
+    "id": "clip10B",
+    "duration": 9.041667,
+    "captions": []
+  },
+  {
+    "id": "clip11",
+    "duration": 6.041667,
+    "captions": [
+      {
+        "start": 2.3,
+        "end": 4.8,
+        "text": "Legnica... 1241."
+      }
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Liberation Serif,50,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,2.5,0,1,2,1,2,60,60,320,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.94,Default,,0,0,0,,APRIL, 1241.
+Dialogue: 0,0:00:02.92,0:00:03.12,Default,,0,0,0,,EUROPE IS
+Dialogue: 0,0:00:03.12,0:00:03.46,Default,,0,0,0,,ABOUT TO
+Dialogue: 0,0:00:03.46,0:00:03.86,Default,,0,0,0,,FACE THE
+Dialogue: 0,0:00:03.86,0:00:04.40,Default,,0,0,0,,MONGOLS.

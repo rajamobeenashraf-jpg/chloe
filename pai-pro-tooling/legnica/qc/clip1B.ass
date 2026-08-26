@@ -1,0 +1,24 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Liberation Serif,50,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-1,0,0,0,100,100,2.5,0,1,2,1,2,60,60,320,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.00,0:00:01.65,Default,,0,0,0,,GRANDSONS OF
+Dialogue: 0,0:00:01.65,0:00:02.48,Default,,0,0,0,,GENGHIS KHAN...
+Dialogue: 0,0:00:02.48,0:00:03.44,Default,,0,0,0,,YOU ALREADY
+Dialogue: 0,0:00:03.44,0:00:04.22,Default,,0,0,0,,BURNED BEIJING
+Dialogue: 0,0:00:04.22,0:00:04.62,Default,,0,0,0,,TO THE
+Dialogue: 0,0:00:04.62,0:00:04.92,Default,,0,0,0,,GROUND.
+Dialogue: 0,0:00:05.10,0:00:05.42,Default,,0,0,0,,WHY ARE
+Dialogue: 0,0:00:05.42,0:00:05.92,Default,,0,0,0,,YOU HERE?
+Dialogue: 0,0:00:06.16,0:00:06.46,Default,,0,0,0,,THE WORLD
+Dialogue: 0,0:00:06.46,0:00:06.86,Default,,0,0,0,,IS NOT
+Dialogue: 0,0:00:06.86,0:00:07.50,Default,,0,0,0,,SO EASILY
+Dialogue: 0,0:00:07.50,0:00:07.94,Default,,0,0,0,,FINISHED.
