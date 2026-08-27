@@ -130,7 +130,9 @@ still comes ONLY from her 5 canonical masters (plates never carry characters).
 
 | Clip | File | PAI task ID | URL | Status |
 |---|---|---|---|---|
-| 1a hook walk (12s) | `clip1a_hook.mp4` | `fb51e465-0f01-450e-bcdb-cccf19e85765` | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/27/c1625b76d17c3e5d9f2c66306281035c.mp4 | delivered to owner 2026-08-27 — QC: 12.05s 720×1280 24fps, audio 44.1kHz, freezedetect 0, dialogue whisper-verified word-perfect with the directed pause (0.8s) after "that badly."; identity holds across contact-sheet frames — awaiting owner decision |
+| 1a hook walk v1 (12s, 720p) | `clip1a_hook.mp4` | PAI `fb51e465-0f01-450e-bcdb-cccf19e85765` | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/27/c1625b76d17c3e5d9f2c66306281035c.mp4 | SUPERSEDED — owner corrections 2026-08-27: background kids made "that boy" ambiguous; quality too low |
+| 1a hook walk v2 (12s, 1080p, empty yard) | `clip1a_hook_v2.mp4` | PAI `b6b9083c-0565-41cc-b659-309dc8cee0b8` | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/27/a3c83e43abe66016233ebee1c1214cf2.mp4 | delivered — QC: 12.10s 1080×1920 7.7Mbps, freezes 0, dialogue word-perfect w/ pause — head-to-head, awaiting owner engine pick |
+| 1a hook walk 4K (12s, empty yard) | `clip1a_hook_4k_higgsfield.mp4` | Higgsfield seedance_2_0 `07f78285-d4cc-4100-90dc-becb0ab4c2d5` (264 cr) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_195512_07f78285-d4cc-4100-90dc-becb0ab4c2d5.mp4 | delivered — QC: 12.04s 2160×3840 HEVC 10-bit 14.4Mbps, freezes 0, dialogue word-perfect — head-to-head, awaiting owner engine pick (would supersede the Ep1 PAI-primary decision for this episode) |
 
 ## E. Generated stills manifest (updated as stills are produced)
 
