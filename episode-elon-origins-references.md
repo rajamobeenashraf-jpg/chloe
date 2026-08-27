@@ -188,6 +188,10 @@ rules gate still runs in --check-only mode on every prompt before submission.**
 | 1b RESHOOT (fictional boy, 4s) | `clip1b_r_boy.mp4` | Higgsfield seedance_2_5 `f90ad18b-8052-47aa-9bbd-ae37d4fb806c` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_223023_f90ad18b-8052-47aa-9bbd-ae37d4fb806c.mp4 | **APPROVED by owner 2026-08-27**; supersedes likeness-boy 1b |
 | 2 RESHOOT (fictional boy, 12s) | `clip2_r_vic20.mp4` | Higgsfield seedance_2_5 `d7587606-6052-4129-9738-172f708df83c` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_223038_d7587606-6052-4129-9738-172f708df83c.mp4 | **APPROVED by owner 2026-08-27**; supersedes likeness-boy Scene 2 |
 
+| 2b CRT-game insert (4s) | `clip2b_insert.mp4` | Higgsfield seedance_2_5 `84a6197c-df7d-437f-9571-072b4ed1e467` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_230417_84a6197c-df7d-437f-9571-072b4ed1e467.mp4 | delivered — QC: 4.06s, freezes 0, code→game transition works, era-plausible sprites (score text garbled, unreadable at speed — noted) — awaiting owner |
+| 7c LIFTOFF (4s) | `clip7c_liftoff.mp4` | Higgsfield seedance_2_5 `f7c0d917-9601-4223-974d-9429e3795839` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_230403_f7c0d917-9601-4223-974d-9429e3795839.mp4 | delivered — QC: 4.06s 12.4Mbps, freezes 0, ignition/blast/climb-out matches pad plate, dawn light — awaiting owner |
+| 3 ONER (22s) | `scene3_oner.mp4` | Higgsfield seedance_2_5 `9667939a-c9ea-4d65-8626-8232190a396e` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_230403_9667939a-c9ea-4d65-8626-8232190a396e.mp4 | delivered — QC CONFIRMED DEFECT: the line "He sleeps on the floor and showers at a public gym." is MISSING from the rendered audio (whisper-verified); identity/staging/exchange otherwise strong, freezes 0 — owner decides regenerate or waive per §19/§20 |
+
 ## E. Generated stills manifest (updated as stills are produced)
 
 **SET APPROVED BY OWNER 2026-08-27 ("ok" on the delivered v2 round).** All six
