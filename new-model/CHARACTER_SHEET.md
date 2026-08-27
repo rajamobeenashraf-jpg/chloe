@@ -1,6 +1,7 @@
-# CHARACTER SHEET — [NAME TBD] (new model, built from real photographs)
+# CHARACTER SHEET — ELLE (built from real photographs)
 
-Status: TEMPLATE — waiting on the owner's photo set. Fill every `[ ... ]` slot from
+Name: **ELLE** (owner lock 2026-08-27). Niche: lifestyle & beauty.
+Status: photo set complete (37 received, ~24 usable, two looks) — prep in progress. Fill every `[ ... ]` slot from
 the real photos before any generation. This file is the single source of truth for
 this character; no other project's rules or references apply.
 
