@@ -88,6 +88,24 @@ Write once, from observation of the real photos. Paste-ready values, no flattery
 Clothing · Hairstyle · Makeup · Pose · Location · Lighting · Camera angle ·
 Expression · Accessories. Everything not on this list is IDENTITY and frozen.
 
+## PER-VIDEO LOOK SYSTEM (owner requirement, locked 2026-08-27)
+
+The channel niche is lifestyle & beauty: **every video gets a different outfit,
+a different hairstyle, and a different makeup style.** Rules that make that safe:
+
+- New look per video = makeup dial position + hairstyle description + wardrobe
+  description. Nothing else changes. Face, hairline, skin identity, and the
+  body spec below are pasted frozen into every generation.
+- Hairstyle changes NEVER touch the hairline/baby hairs/face-framing clause.
+- Makeup changes ALWAYS carry the "look comes from the makeup, face unchanged
+  underneath" clause. Never instruct makeup removal.
+- **Body spec (frozen once approved): slim, attractive, feminine figure —
+  moderate and realistic, same figure in every video.** Her real face pairs
+  with this body; adjustment stays plausible so nothing reads as AI. Exact
+  wording to be locked after she approves the first full-body test renders.
+- QC per video: identity check against golden refs (face at 100% zoom) PLUS
+  body-consistency check against the previous approved videos.
+
 ---
 
 ## FROZEN PROMPT BLOCKS (paste verbatim — never paraphrase)
