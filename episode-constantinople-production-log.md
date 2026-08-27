@@ -39,3 +39,13 @@ Owner picked costume OPTION 1 (rust war-correspondent) and asked for a Soul re-r
 | `b0c36e1a-9bf5-45bc-b19e-983389a49e3a` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_222029_b0c36e1a-9bf5-45bc-b19e-983389a49e3a.png | FAIL — collage (hood-up variant in center panel); costume correct |
 
 **Finding: Soul (soul_2) collaged 4 of 5 renders at 9:16 with long prompts — the anti-collage instruction does not fix it on this model. Nano Banana Pro produced 3/3 clean frames with identical instructions.** Awaiting owner decision on next step.
+
+### Costume lock, round 4 (2026-08-27, Nano Banana Pro STRICT identity protocol, 6 refs incl. front portrait)
+Owner rejected the round-2 NBP option-1 face as identity drift ("looking a different person") and ordered a strict-prompt NBP regeneration. Prompt rebuilt in the CHARACTER_LOCK Tier-3 strict style ("IDENTITY-PRESERVING RE-RENDER... references WIN over prompt text, zero reinterpretation, if the render shows a different-looking woman it is WRONG"), with the iris color spec (amber-honey to olive-green, dark limbal ring) written in, and the approved 01_front_portrait added as a 6th reference.
+
+| Job ID | Result URL | QC |
+|---|---|---|
+| `56d24663-16b2-423d-9bb4-21ee284b2322` (take A) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_222355_56d24663-16b2-423d-9bb4-21ee284b2322.png | Clean single frame; identity strong vs Tier-1 (iris band, brows, freckle pattern, jaw, lips, long bronde); richer skin texture/freckles; costume correct, no bag |
+| `41591415-d3f8-402d-9712-354931d56809` (take B) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_222355_41591415-d3f8-402d-9712-354931d56809.png | Clean single frame; identity strong; cloak clasp visible, soft half-smile; costume correct, no bag |
+
+Awaiting owner pick (A or B) → that image becomes the costume lock; next: full-body wardrobe reference in the same costume, then the Seedance test clip.
