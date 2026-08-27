@@ -124,7 +124,14 @@ const CLIP_TRIM = {
   clip9: 5.625,
 };
 
+// Owner decision, 2026-08-27: clip5 opens on ~4.5s of near-static
+// standing-crowd footage before Hazel's line starts (dialogue measured
+// at local 4.56s) -- doesn't deliver the "sprinting/wheel-around/volley"
+// action the script called for during that window, reads as dead time.
+// Head-trim 3.0s off the start (owner's explicit instruction) rather
+// than regenerate; this lands her line at local ~1.56s instead of 4.56s.
 const CLIP_HEAD_TRIM = {
+  clip5: 3.0,
   clip10: 0.58333,
 };
 
