@@ -61,3 +61,13 @@ Awaiting owner pick (A or B) → that image becomes the costume lock; next: full
 
 - Seedance 2.5 cost preflight: **12s 9:16 = 78 credits** → full episode (~15 clips) projects to ~1,200–1,600 credits for one clean pass. Balance comfortably covers multiple rounds.
 - Awaiting owner full-body pick → then the approved Seedance dialogue TEST CLIP (clip 2 boat beat as the test, in the locked costume) goes immediately after.
+
+### Full-body v2, round 6 (2026-08-27) — owner rejected round-5 full-bodies (identity/realism); strict regen with full-body master refs
+Fix applied: the two canonical FULL-BODY reference views (09_fullbody_front `e35e4fd7`, 10_fullbody_34 `caf8fab5`) added to the reference set (they anchor face-at-distance + proportions); prompt gained a "FACE FIDELITY AT DISTANCE" clause and a candid mid-step documentary scene (not a posed lookbook stance). Face-zoom crops extracted for QC before delivery.
+
+| Job ID | Result URL | QC |
+|---|---|---|
+| `cd13a62c-14fc-4992-87b8-158d763e14f7` (v2 A) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_223343_cd13a62c-14fc-4992-87b8-158d763e14f7.png | PASS at face zoom (freckles, brows, hazel, lips, jaw, bronde); candid mid-step; costume correct incl. clasped short cloak, flat shoes; recommended |
+| `1984383d-6f7d-41bc-9f26-c1d6e12a7e58` (v2 B) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_223343_1984383d-6f7d-41bc-9f26-c1d6e12a7e58.png | Face consistent but softer at zoom, less freckle detail; cloak rendered LONGER (full cape) than the locked short travel cloak | 
+
+Standing lesson for every future full-body/wide generation (all episodes): ALWAYS include the two full-body master refs + the face-fidelity-at-distance clause; extract and check a face crop before delivering.
