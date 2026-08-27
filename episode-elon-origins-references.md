@@ -65,6 +65,26 @@ General rules:
 | ELON-31 | 31 · 2002 LA | Fuller face than the 90s, short dark-brown hair now full, confident set jaw, tall broad-shouldered | Dark blazer over open-collar dress shirt, jeans (Sc.4a); shirtsleeves at the drafting table (Sc.4b) |
 | ELON-37 | 37 · 2008 | Same man heavier-set, visible exhaustion: shadowed eyes, stubble, stress lines, hair short | Dark zip fleece/jacket over t-shirt (crisis office); shirtsleeves signing papers (Sc.8b) |
 
+### NEW PRODUCTION REFS: THE ACTOR SET (fictional character, one man aging)
+
+Design spec: longer angular face, squared jaw, subtle cleft chin, deep-set cool
+grey-blue eyes, straight brows, slightly aquiline nose with bridge bump, thin
+upper lip, light-olive skin with faint acne scarring, medium-brown wavy hair.
+Anchor = age 31 (generated from spec); ages 12/24/37 derived FROM the anchor as
+reference so the family resemblance holds. Anchor CDN media_id (Higgsfield):
+`adf5d752-474b-4e97-a728-cd6181bf8e48`.
+
+| Ref | File | Status |
+|---|---|---|
+| ACTOR-31 (anchor) | `actor_ref_age31.png` | delivered 2026-08-27 — awaiting owner approval |
+| ACTOR-12 | `actor_ref_age12.png` | delivered — awaiting approval (QC note: reads ~13-15, taller than "small and slight") |
+| ACTOR-24 | `actor_ref_age24.png` | delivered — awaiting approval (QC note: reads polished/late-20s; unkempt-overworked feel only partial) |
+| ACTOR-37 | `actor_ref_age37.png` | delivered — awaiting approval (QC: strong — same man, visibly worn) |
+
+On approval: clips 1b and 2 (shot with the retired likeness boy) need owner-
+authorized reshoots with ACTOR-12; then scene 3a reshoots on Higgsfield with
+ACTOR-24 (fictional face — no deepfake-filter exposure).
+
 ## C. LOCATIONS & PROPS — per scene (era-accuracy notes)
 
 | Scene | Location | Period dressing / props | Lighting & grade lock |
