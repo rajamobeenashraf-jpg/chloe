@@ -89,15 +89,19 @@ documented events" — plus sources in the pinned comment.
 ## 3. Final script (~256 spoken words ≈ 100–110s — inside the channel's 90–200s Shorts cap)
 
 **SCENE 1 — HOOK**
-VISUAL: Dusty 1980s schoolyard, Pretoria. Hazel arrives, sees a small boy sitting
-alone against a wall, withdrawn, a book in his hands. (OWNER DECISION 2026-08-27:
-no visible bruise/injury on screen — engine safety filters block injured-child
-imagery; Hazel's dialogue carries the hospital fact.)
+VISUAL: Dusty 1980s schoolyard, Pretoria — staged as SHOT/REVERSE-SHOT (owner
+decision 2026-08-27, option A: Hazel and the boy NEVER share a frame — engine
+safety filters block adult+child composites; applies to every 1983 beat, stills
+and clips). 1a: Hazel walks in talk-to-lens, schoolyard behind her, glancing
+off-frame right. 1b: hard cut — the boy alone against the wall, withdrawn, a
+book in his hands (no visible injury — owner decision; Hazel's dialogue carries
+the hospital fact).
 HAZEL (to lens): "See that boy? He just got out of hospital. Kids at school beat
 him that badly. One day... he'll be the richest man on Earth."
 
 **SCENE 2**
-VISUAL: Night. The boy at an early-80s home computer, screen glow, code.
+VISUAL: Night. The boy alone at an early-80s home computer, screen glow, code
+(solo frame — same shot/reverse-shot rule; Hazel is voice-over only here).
 HAZEL (V.O.): "South Africa. The 1980s. His name is Elon. School is brutal, so he
 hides in books and computers. At twelve, he builds a video game — and sells it."
 
@@ -158,8 +162,9 @@ go. Hazel — out of time."
 
 | # | Dur | Location / period | Hazel | Elon | Dialogue | Key visual details | Tone |
 |---|-----|-------------------|-------|------|----------|--------------------|------|
-| 1 | 10s | Schoolyard, Pretoria, 1980s, day | Walks in (forward walk §14), talk-to-lens, glances toward boy | Boy (~12): sits alone against wall, withdrawn, book (no visible injury — owner decision) | Hook lines | Dust, worn brick, distant kids playing (populated §17) | Protective, ominous promise |
-| 2 | 8s | Boy's room, night, early 80s | Leans in doorway watching | Boy typing at early-80s computer | V.O. | CRT glow, BASIC-style code, posters | Escape, wonder |
+| 1a | 7s | Schoolyard, Pretoria, 1980s, day | SOLO: walks in (forward walk §14), talk-to-lens, glances off-frame right | — | Hook lines | Dust, worn brick, distant kids playing behind her (populated §17) | Protective, ominous promise |
+| 1b | 4s | Schoolyard wall | — | SOLO: boy (~12) sits alone against wall, withdrawn, book, eyes down (no visible injury — owner decision) | (silent under her last hook line) | Hard warm light, long shadow, isolation | Loneliness |
+| 2 | 8s | Boy's room, night, early 80s | V.O. only (no Hazel in frame) | SOLO: boy typing at early-80s computer | V.O. | CRT glow, BASIC-style code, posters | Escape, wonder |
 | 3a | 8s | Palo Alto office, 1995, night | Steps through clutter, picks up empty noodle cup | Musk 24, coding intently | "1995. He's twenty-four..." | Sleeping bag under desk, pizza boxes, one CRT monitor | Grind |
 | 3b | 8s | Same office | Sits on desk edge, asks | Looks up briefly, answers, back to screen | Q&A exchange | Screen light on both faces | Matter-of-fact conviction |
 | 4a | 6s | Office tower exit, 2002, day | Watches from across the street | Musk ~31, suit, box of papers, small smile | V.O. starts | Glass tower, morning light | Triumph |
