@@ -128,11 +128,20 @@ still comes ONLY from her 5 canonical masters (plates never carry characters).
 
 ## E2. CLIP MANIFEST (job IDs + URLs — the durable record; media dies with the container)
 
+**ENGINE DECISION (owner, 2026-08-27): this episode shoots on HIGGSFIELD
+seedance_2_0, mode=std, resolution=4k, 9:16, generate_audio=true — supersedes
+the Episode-1 "PAI Pro primary" decision FOR THIS EPISODE (head-to-head on clip
+1a: owner picked the Higgsfield 4K take). Hazel identity refs = her 5 canonical
+masters as Higgsfield media_ids (ab6ed7ea / 65efdd42 / c12f057a / e1be7c64 /
+6443f901); ELON age refs by their Higgsfield media_ids from section E. Standing
+quality order: 4K on every clip (~264 cr per 12s). The run_clip.mjs standing-
+rules gate still runs in --check-only mode on every prompt before submission.**
+
 | Clip | File | PAI task ID | URL | Status |
 |---|---|---|---|---|
 | 1a hook walk v1 (12s, 720p) | `clip1a_hook.mp4` | PAI `fb51e465-0f01-450e-bcdb-cccf19e85765` | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/27/c1625b76d17c3e5d9f2c66306281035c.mp4 | SUPERSEDED — owner corrections 2026-08-27: background kids made "that boy" ambiguous; quality too low |
-| 1a hook walk v2 (12s, 1080p, empty yard) | `clip1a_hook_v2.mp4` | PAI `b6b9083c-0565-41cc-b659-309dc8cee0b8` | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/27/a3c83e43abe66016233ebee1c1214cf2.mp4 | delivered — QC: 12.10s 1080×1920 7.7Mbps, freezes 0, dialogue word-perfect w/ pause — head-to-head, awaiting owner engine pick |
-| 1a hook walk 4K (12s, empty yard) | `clip1a_hook_4k_higgsfield.mp4` | Higgsfield seedance_2_0 `07f78285-d4cc-4100-90dc-becb0ab4c2d5` (264 cr) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_195512_07f78285-d4cc-4100-90dc-becb0ab4c2d5.mp4 | delivered — QC: 12.04s 2160×3840 HEVC 10-bit 14.4Mbps, freezes 0, dialogue word-perfect — head-to-head, awaiting owner engine pick (would supersede the Ep1 PAI-primary decision for this episode) |
+| 1a hook walk v2 (12s, 1080p, empty yard) | `clip1a_hook_v2.mp4` | PAI `b6b9083c-0565-41cc-b659-309dc8cee0b8` | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/27/a3c83e43abe66016233ebee1c1214cf2.mp4 | head-to-head loser — superseded by the Higgsfield 4K take (owner pick 2026-08-27) |
+| 1a hook walk 4K (12s, empty yard) | `clip1a_hook_4k_higgsfield.mp4` | Higgsfield seedance_2_0 `07f78285-d4cc-4100-90dc-becb0ab4c2d5` (264 cr) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_195512_07f78285-d4cc-4100-90dc-becb0ab4c2d5.mp4 | **APPROVED by owner 2026-08-27 ("file 2 higgsfield") — this IS clip 1a.** QC: 12.04s 2160×3840 HEVC 10-bit 14.4Mbps, freezes 0, dialogue word-perfect |
 
 ## E. Generated stills manifest (updated as stills are produced)
 
