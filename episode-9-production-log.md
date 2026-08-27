@@ -1963,13 +1963,21 @@ documented in `pai-pro/docs/api_service.md`'s Topaz BYOK section). Wrote
 `pai-pro/projects/giza/upscale_final.mjs` for this (estimate-only unless
 `--commit` is passed — checked the cost before spending).
 - output target: 2160x3840
-- requestId: `01a042e4-78b1-7007-be44-9b950df06df3`
-- estimate: $4.60, ~315–338s — submitted (`--commit`), running in background
-  as of this entry; will log the completed taskId/output path once it lands.
+- requestId: `01a042e4-ce31-719f-b1bb-1ba8151bb284`, taskId: `fdf6ea99-5d49-49cb-b292-fd4e61151d81`
+- actual cost: $4.60, wall time 804.5s (~13.4min — longer than the 299-310s
+  estimate, PAI's estimate is evidently optimistic for a 2-minute-source 4K
+  job; not a problem, just noting for next time)
+- output: `giza_final_cut_4k.mp4` — verified 2160x3840, 24fps, 2872 frames
+  (exact match to source, no dropped/duplicated frames), 119.688s, HEVC,
+  466.8MB
+- delivery copy: same bitrate recipe as `build_final_cut.mjs`'s existing
+  `giza_final_cut_compressed.mp4` convention (libx264, 1300k/1400k/2800k,
+  aac 96k) applied to the 4K master → `giza_final_cut_4k_compressed.mp4`,
+  20.3MB (well under the 30MB chat limit) — sent to owner.
 
 Neither upscale changes any content — resolution/sharpness only. No owner
 regeneration-approval gate applies (that rule covers clip regeneration; this
 is delivery finishing on an already-approved cut and an already-in-progress
 thumbnail task).
 
-## STATUS: in progress — thumbnail built and upscaled to 4K (sent to owner), final-video 4K upscale submitted and running
+## STATUS: delivered — thumbnail built and upscaled to 4K, final-video upscaled to 4K (2160x3840), both sent to owner
