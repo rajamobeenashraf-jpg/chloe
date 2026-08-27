@@ -1,5 +1,5 @@
 # Episode — "I Watched Elon Musk Become Elon Musk" (working title)
-**Hazel Out of Time · Full life-journey arc (1980s → 2008 → today) · Draft v2, 2026-08-27 — AWAITING OWNER APPROVAL**
+**Hazel Out of Time · Full life-journey arc (1980s → 2008 → today) · v2 + Scene 7 — SCRIPT LOCKED BY OWNER 2026-08-27** (hook = Scene 1 as scripted, ending = Scene 9 as scripted, unless owner picks an alternative)
 
 v2 supersedes v1 per owner direction 2026-08-27: the episode is about ELON MUSK's
 whole road to success — how hard it was — not specifically the space story. Space
