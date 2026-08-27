@@ -193,6 +193,8 @@ rules gate still runs in --check-only mode on every prompt before submission.**
 | 3 ONER (22s) | `scene3_oner.mp4` | Higgsfield seedance_2_5 `9667939a-c9ea-4d65-8626-8232190a396e` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_230403_9667939a-c9ea-4d65-8626-8232190a396e.mp4 | v1 SUPERSEDED (missing line; owner ordered regen) |
 | 3 ONER v2 (22s) | `scene3_oner_v2.mp4` | Higgsfield seedance_2_5 `aec3c055-2fa7-47a1-9fd4-210f89e87534` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_231435_aec3c055-2fa7-47a1-9fd4-210f89e87534.mp4 | **APPROVED by owner 2026-08-27** (compressed review copy delivered; 35MB 1080p master is the edit source) |
 
+| 4a tower exit (6s) | `clip4a_tower.mp4` | Higgsfield seedance_2_5 `d727ef37-e6f6-46ad-965f-4f9ab00ecfed` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_232708_d727ef37-e6f6-46ad-965f-4f9ab00ecfed.mp4 | delivered — QC: 6.08s, freezes 0, over-shoulder staging correct, ACTOR-31 match, era-correct sedan wipe — awaiting owner |
+
 ## E. Generated stills manifest (updated as stills are produced)
 
 **SET APPROVED BY OWNER 2026-08-27 ("ok" on the delivered v2 round).** All six
