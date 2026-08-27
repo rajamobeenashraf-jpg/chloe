@@ -1,7 +1,11 @@
 // Legnica episode — final cut assembly. Every transition is a TRUE HARD
 // CUT (creative-direction.md §16); a single ffmpeg filter_complex concat
-// pass over the 13 captioned/loudnorm'd clips from qc_pass.mjs plus the
-// end text card (post-production only per the script, no generation).
+// pass over the 13 captioned/loudnorm'd clips from qc_pass.mjs.
+//
+// Owner decision, 2026-08-27: drop the end text card entirely -- the
+// episode now ends on clip11 itself, fading naturally to black/silence
+// (FADE_OUT_DURATION) instead of cutting to a title card.
+const FADE_OUT_DURATION = 1.0;
 import fs from "node:fs/promises";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
@@ -37,12 +41,11 @@ async function main() {
   await fs.mkdir(ASSETS_DIR, { recursive: true });
 
   const manifest = JSON.parse(await fs.readFile(path.join(QC_DIR, "durations.json"), "utf8"));
-  const ids = [...CLIPS.map((c) => c.id), "textcard"];
-  manifest.textcard = await probeVideoDuration(path.join(QC_DIR, "textcard_qc.mp4"));
+  const ids = CLIPS.map((c) => c.id);
   const clipPaths = ids.map((id) => path.join(QC_DIR, `${id}_qc.mp4`));
 
   const expectedTotal = ids.reduce((sum, id) => sum + manifest[id], 0);
-  console.log(`[cut] ${ids.length} clips (13 scripted + text card), expected total runtime ${expectedTotal.toFixed(2)}s`);
+  console.log(`[cut] ${ids.length} clips, expected total runtime ${expectedTotal.toFixed(2)}s (ending on a ${FADE_OUT_DURATION}s fade to black/silence, no text card)`);
 
   const masterPath = path.join(ASSETS_DIR, "legnica_final_cut.mp4");
 
@@ -51,9 +54,13 @@ async function main() {
   for (let i = 0; i < clipPaths.length; i++) {
     filterParts.push(`[${i}:v][${i}:a]`);
   }
-  const filterComplex = `${filterParts.join("")}concat=n=${clipPaths.length}:v=1:a=1[outv][outa]`;
+  const fadeStart = (expectedTotal - FADE_OUT_DURATION).toFixed(3);
+  const filterComplex =
+    `${filterParts.join("")}concat=n=${clipPaths.length}:v=1:a=1[catv][cata];` +
+    `[catv]fade=t=out:st=${fadeStart}:d=${FADE_OUT_DURATION}[outv];` +
+    `[cata]afade=t=out:st=${fadeStart}:d=${FADE_OUT_DURATION}[outa]`;
 
-  console.log(`[cut] concatenating ${clipPaths.length} pieces via single filter_complex concat...`);
+  console.log(`[cut] concatenating ${clipPaths.length} pieces via single filter_complex concat, fading out the last ${FADE_OUT_DURATION}s...`);
   await run("ffmpeg", [
     "-y", ...inputs,
     "-filter_complex", filterComplex,
