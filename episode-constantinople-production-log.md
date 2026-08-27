@@ -98,3 +98,10 @@ Root-cause fixes applied (all three validated by result): (1) reference set = SI
 
 **STANDING NBP RECIPE (this project, all future NBP still generations): single-view refs only (never the grid sheets), approved-portrait finish wording (never amped "raw realism" language), face-at-distance clause on any shot where her face is small, explicit short-cloak/no-bag lines, count=4 with face-crop QC before delivery.**
 Awaiting owner pick (1-4) → wardrobe locked end-to-end → Seedance test clip next.
+
+### SEEDANCE TEST CLIP delivered (2026-08-27) — job `a7c7890c-4e2d-4da1-bedf-07e9a857309a`
+- Params: seedance_2_5, mode=omni_reference (t2v rejects refs — 422 documented; omni_reference is the identity-reference mode), 12s, 9:16, 1080p, generate_audio, 4 single-view identity refs. Cost 78 cr. Result: https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_225028_a7c7890c-4e2d-4da1-bedf-07e9a857309a.mp4 (12.06s, 1080x1920, 24fps, HEVC+AAC, 7.4MB — sent to owner uncompressed).
+- freezedetect (raw source): CLEAN, zero freeze events.
+- Frame QC (1s/6s/11s): identity HOLDS at speech frames (hazel iris, brows, lips, bronde, tan+freckles); §29 delivery direction executed — she genuinely turns and points at the chain mid-clip instead of lens-locking; geometry correct (chain from tower across harbor, ships beyond it, walled city, boat). ONE deviation: the cloak HOOD is UP over her head (prompt said hood down) — reads naturally on the water but is a costume deviation; owner to rule. Lip-sync quality = owner's watch-through call.
+- Wardrobe lock state: portrait = strict-NBP take A (56d24663); full-body = fixed-NBP variant 4 (e55b0f9a), owner-approved "Approved continue". (Owner also re-requested the earlier fullbody_v2 A/B pair + crops for comparison — re-sent; if he re-picks, the lock updates.)
+- AWAITING: owner verdict on the test clip = the engine validation gate. On approval, full clip production begins (clip-by-clip, each sent on completion per §20).
