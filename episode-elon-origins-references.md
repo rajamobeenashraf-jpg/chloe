@@ -185,6 +185,9 @@ rules gate still runs in --check-only mode on every prompt before submission.**
 
 | 2 VIC-20 night (12s, ambient-only for edit VO) | `clip2_vic20_4k.mp4` | Higgsfield seedance_2_0 `d17ed48e-b765-44f1-a691-9a9cd6412cc1` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_203830_d17ed48e-b765-44f1-a691-9a9cd6412cc1.mp4 | delivered 2026-08-27 — QC: 12.04s 2160×3840 10-bit, freezes 0, matches ELON-12 + bedroom plate (VIC-20, cassette drive, code grows on CRT) — awaiting owner decision |
 
+| 1b RESHOOT (fictional boy, 4s) | `clip1b_r_boy.mp4` | Higgsfield seedance_2_5 `f90ad18b-8052-47aa-9bbd-ae37d4fb806c` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_223023_f90ad18b-8052-47aa-9bbd-ae37d4fb806c.mp4 | delivered — QC: 4.06s 1080×1920 10-bit 6.8Mbps, freezes 0, matches ACTOR-12 — awaiting owner; supersedes likeness-boy 1b |
+| 2 RESHOOT (fictional boy, 12s) | `clip2_r_vic20.mp4` | Higgsfield seedance_2_5 `d7587606-6052-4129-9738-172f708df83c` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_223038_d7587606-6052-4129-9738-172f708df83c.mp4 | delivered — QC: 12.06s 1080×1920 10-bit, freezes 0, VIC-20/room matches plate, boy matches ACTOR-12 — awaiting owner; supersedes likeness-boy Scene 2 |
+
 ## E. Generated stills manifest (updated as stills are produced)
 
 **SET APPROVED BY OWNER 2026-08-27 ("ok" on the delivered v2 round).** All six
