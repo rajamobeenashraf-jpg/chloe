@@ -103,12 +103,29 @@ const CLICK_GUARD = 0.02; // imperceptible, only prevents a waveform-discontinui
 // Owner decision, 2026-08-26: clip9's confirmed ~1.0s frozen tail
 // (creative-direction.md §30) gets trimmed rather than regenerated, even
 // though this cuts into the tail end of the "aftermath, still unfolding"
-// beat. Trim point is the exact last pre-freeze frame boundary measured
-// by freezedetect on the raw source (8.04167s of clip9's 9.041667s runtime
-// -- everything from there to the end was confirmed frozen). clip9's own
-// caption ("NO—", 1.50-1.78s) is well before this point and unaffected.
+// beat. Original trim point was the exact last pre-freeze frame boundary
+// measured by freezedetect on the raw source (8.04167s of clip9's
+// 9.041667s runtime). clip9's own caption ("NO—", 1.50-1.78s) is well
+// before this point and unaffected.
+//
+// SECOND owner trim, 2026-08-27: after the freeze fix, the owner watched
+// the assembled cut and flagged the span from absolute 1:20 to 1:23
+// (80.0s-83.0s) as a held, static reaction that drags -- confirmed by
+// reviewing the actual frames: clip9's last ~2.4s is an unchanging
+// hands-over-mouth hold, and clip10's first ~0.6s (before her line
+// starts around 2.7s local) is another held beat before anything new
+// happens. Reverified the exact absolute timestamps against the owner
+// before cutting, per their explicit request. Tightened clip9's trim
+// further (5.61667s -> now 5.625s local, i.e. absolute 80.0s) and added
+// a head-trim to clip10 (removing its first 0.58333s, i.e. up to
+// absolute 83.0s in the old timeline) -- both land well clear of any
+// dialogue/caption timing in either clip.
 const CLIP_TRIM = {
-  clip9: 8.04167,
+  clip9: 5.625,
+};
+
+const CLIP_HEAD_TRIM = {
+  clip10: 0.58333,
 };
 
 // Owner decision, 2026-08-26: fix clip10's dead-silence tail (confirmed
@@ -139,8 +156,15 @@ async function qcOneClip(clip, { isFirst, isLast }) {
   const outPath = path.join(QC_DIR, `${clip.id}_qc.mp4`);
 
   const videoDuration = await probeVideoDuration(srcPath);
-  const outputDuration = CLIP_TRIM[clip.id] ? Math.min(CLIP_TRIM[clip.id], videoDuration) : videoDuration;
+  const headTrim = CLIP_HEAD_TRIM[clip.id] || 0;
+  const availableDuration = videoDuration - headTrim;
+  const outputDuration = CLIP_TRIM[clip.id] ? Math.min(CLIP_TRIM[clip.id], availableDuration) : availableDuration;
   const trimNote = CLIP_TRIM[clip.id] ? ` (trimmed from ${videoDuration}s to drop the frozen tail, §30)` : "";
+  const headTrimNote = headTrim ? ` (head-trimmed ${headTrim}s per owner request, dragging static hold)` : "";
+  // -ss before -i re-bases the stream's own PTS to 0 at the seek point, so
+  // any caption times burned via the ass filter must shift by the same
+  // amount to stay synced to the actual (now-shifted) dialogue audio.
+  const seekArgs = headTrim ? ["-ss", String(headTrim)] : [];
 
   const fadeParts = [];
   if (isFirst) fadeParts.push(`afade=t=in:st=0:d=${CLICK_GUARD}`);
@@ -157,10 +181,10 @@ async function qcOneClip(clip, { isFirst, isLast }) {
     : [];
 
   if (clip.captions.length === 0) {
-    console.log(`[qc] ${clip.id}: no captions, loudnorm + ${fadeNote}${trimNote}`);
+    console.log(`[qc] ${clip.id}: no captions, loudnorm + ${fadeNote}${trimNote}${headTrimNote}`);
     if (hasBed) {
       await run("ffmpeg", [
-        "-y", "-i", srcPath, ...bedInputArgs,
+        "-y", ...seekArgs, "-i", srcPath, ...bedInputArgs,
         "-filter_complex", `[0:a]loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}[dial];${ambientBedFilterComplex(outputDuration, "[dial]")}`,
         "-map", "0:v", "-map", "[aout]",
         "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
@@ -169,7 +193,7 @@ async function qcOneClip(clip, { isFirst, isLast }) {
       ]);
     } else {
       await run("ffmpeg", [
-        "-y", "-i", srcPath,
+        "-y", ...seekArgs, "-i", srcPath,
         "-af", `loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}`,
         "-c:v", "copy",
         "-c:a", "aac", "-b:a", "192k",
@@ -181,12 +205,15 @@ async function qcOneClip(clip, { isFirst, isLast }) {
   }
 
   const assPath = path.join(QC_DIR, `${clip.id}.ass`);
-  await fs.writeFile(assPath, buildAss(clip.captions));
+  const shiftedCaptions = headTrim
+    ? clip.captions.map((c) => ({ ...c, start: Math.max(0, c.start - headTrim), end: Math.max(0, c.end - headTrim) }))
+    : clip.captions;
+  await fs.writeFile(assPath, buildAss(shiftedCaptions));
 
-  console.log(`[qc] ${clip.id}: burning ${clip.captions.length} caption(s) + loudnorm + ${fadeNote}${trimNote}`);
+  console.log(`[qc] ${clip.id}: burning ${clip.captions.length} caption(s) + loudnorm + ${fadeNote}${trimNote}${headTrimNote}`);
   if (hasBed) {
     await run("ffmpeg", [
-      "-y", "-i", srcPath, ...bedInputArgs,
+      "-y", ...seekArgs, "-i", srcPath, ...bedInputArgs,
       "-filter_complex",
       `[0:v]ass=${assPath}[vout];[0:a]loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}[dial];${ambientBedFilterComplex(outputDuration, "[dial]")}`,
       "-map", "[vout]", "-map", "[aout]",
@@ -197,7 +224,7 @@ async function qcOneClip(clip, { isFirst, isLast }) {
     ]);
   } else {
     await run("ffmpeg", [
-      "-y", "-i", srcPath,
+      "-y", ...seekArgs, "-i", srcPath,
       "-vf", `ass=${assPath}`,
       "-af", `loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}`,
       "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p",
