@@ -97,6 +97,13 @@ General rules:
   hospital fact.** Script + this sheet updated accordingly. Attempt 3 submitted
   with the injury language fully removed (fictional-character framing kept per
   CHARACTER_LOCK rule 7).
+- Attempt 3 (bruise-free, fictional framing, mechanically verified clean):
+  **PAI 400 — same safety-policy block.** Conclusion: the trigger is NOT the
+  injury — it is the adult-woman + child composite itself (identity-matched
+  child imagery is what the filter refuses). The rule-7 recipe is spent for
+  this composition on PAI. HALTED again; owner to choose staging: split
+  solo shots (shot/reverse-shot, works for stills AND clips) vs. trying the
+  composite on the Higgsfield fallback engine.
 
 ## E. Generated stills manifest (updated as stills are produced)
 
