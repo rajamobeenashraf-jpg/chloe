@@ -100,8 +100,12 @@ HAZEL (to lens): "See that boy? He just got out of hospital. Kids at school beat
 him that badly. One day... he'll be the richest man on Earth."
 
 **SCENE 2**
-VISUAL: Night. The boy alone at an early-80s home computer, screen glow, code
+VISUAL 2a: Night. The boy alone at an early-80s home computer, screen glow, code
 (solo frame — same shot/reverse-shot rule; Hazel is voice-over only here).
+VISUAL 2b (OWNER-APPROVED ADDITION 2026-08-27, ~4s insert): hard cut to a tight
+close-up of the CRT — the green BASIC code gives way to a tiny primitive space
+game running (blocky 1983 sprites, phosphor glow, scanlines), timed under
+"...he builds a video game — and sells it."
 HAZEL (V.O.): "South Africa. The 1980s. His name is Elon. School is brutal, so he
 hides in books and computers. At twelve, he builds a video game — and sells it."
 
@@ -149,6 +153,10 @@ VISUAL 7b (~6s): Hard cut — low angle at the base of the pad, a slow push up
 the rocket against the dawn sky, rim-lit.
 HAZEL (V.O.): "And the money left is enough for this one launch. Just one.
 Fly... or it's all over."
+VISUAL 7c — LIFTOFF (OWNER-APPROVED ADDITION 2026-08-27, ~4s): ignition — flame
+and dust blast across the tiny pad, the rocket climbs out of frame over the
+ocean. Scene 8's first words ("It flies.") land ON this shot at the edit; the
+rest of the V.O. carries over the orbit cut.
 
 **SCENE 8**
 VISUAL: Hard cuts: Falcon 1 reaching orbit, Earth below → a NASA contract
@@ -176,13 +184,15 @@ as-scripted, same delegation.)
 |---|-----|-------------------|-------|------|----------|--------------------|------|
 | 1a | 12s | Schoolyard, Pretoria, 1980s, day | SOLO: walks in (forward walk §14), talk-to-lens, glances off-frame left mid-line | — | Full 27-word hook (~11s spoken — §9 count-the-beats) | EMPTY after-hours yard — NO other people (owner correction 2026-08-27 on v1: background kids made "See that boy?" ambiguous; the 1b cut must show the ONLY boy). Worn brick, dust, long shadows | Protective, ominous promise |
 | 1b | 4s | Schoolyard wall | — | SOLO: boy (~12) sits alone against wall, withdrawn, book, eyes down (no visible injury — owner decision) | (silent under her last hook line) | Hard warm light, long shadow, isolation | Loneliness |
-| 2 | 8s | Boy's room, night, early 80s | V.O. only (no Hazel in frame) | SOLO: boy typing at early-80s computer | V.O. | CRT glow, BASIC-style code, posters | Escape, wonder |
+| 2a | 8s | Boy's room, night, early 80s | V.O. only (no Hazel in frame) | SOLO: boy typing at early-80s computer | V.O. | CRT glow, BASIC-style code, posters | Escape, wonder |
+| 2b | 4s | CRT close-up insert | — | — | (under "...builds a video game — and sells it.") | Green code gives way to a tiny blocky space game; phosphor glow, scanlines | Proof on screen |
 | 3 | 22s ONER | Palo Alto office, 1995, night | One unbroken take: steps through clutter, noodle cup, narration to lens, turns to him, asks | Coding intently; looks up briefly, answers, back to screen | Full Scene 3 dialogue | Sleeping bag, pizza boxes, CRT glow; no mid-scene cut | Grind, then conviction |
 | 4a | 6s | Office tower exit, 2002, day | Watches from across the street | Musk ~31, suit, box of papers, small smile | V.O. starts | Glass tower, morning light | Triumph |
 | 4b | 7s | Drafting table | Hand traces blueprint edge | Musk's hands unroll rocket blueprint, car sketch beside | V.O. continues | Blueprint texture, pencil sketch | The bet |
 | 5+6 | 26s ONER | Crisis office, 2008, night | One unbroken take: doorway (V.O.), crosses room, sits across from him, asks gently | Head in hands, then lifts head, answers with tired steadiness | V.O. + her question + his answer | Blue screen glow, two faces, one lamp; no cut through the emotional build | Rock bottom, then the core |
 | 7a | 10s | Omelek Island pad, dawn | Walks toward the pad, looking up (forward walk §14) | — | V.O. first half | Wide: rocket, ocean every side, tiny island scale | Last-chance stakes |
 | 7b | 6s | Base of the pad | — | — | V.O. second half ("Just one. Fly... or it's all over.") | Low angle, slow push up the rocket, dawn rim light | The bet, monumental |
+| 7c | 4s | Pad, liftoff | — | — | ("It flies." lands here at the edit) | Ignition, flame and dust blast, rocket climbs out of frame over the ocean | Release |
 | 8a | 5s | Space, Sept 2008 | — | — | V.O. "It flies..." | Falcon 1 stage over Earth's curve | Release |
 | 8b | 7s | Office, Dec 2008 | — | Signing papers | V.O. NASA + Christmas Eve lines | Christmas lights out the window, handshake | Rescue |
 | 9a | 6s | Montage beats | — | — | V.O. "Rockets that land..." | Booster landing → Tesla street → astronauts (3 hard-cut micro-beats) | Awe |
