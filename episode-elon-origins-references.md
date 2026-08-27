@@ -126,6 +126,12 @@ still comes ONLY from her 5 canonical masters (plates never carry characters).
   solo shots (shot/reverse-shot, works for stills AND clips) vs. trying the
   composite on the Higgsfield fallback engine.
 
+## E2. CLIP MANIFEST (job IDs + URLs — the durable record; media dies with the container)
+
+| Clip | File | PAI task ID | URL | Status |
+|---|---|---|---|---|
+| 1a hook walk (12s) | `clip1a_hook.mp4` | `fb51e465-0f01-450e-bcdb-cccf19e85765` | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/27/c1625b76d17c3e5d9f2c66306281035c.mp4 | delivered to owner 2026-08-27 — QC: 12.05s 720×1280 24fps, audio 44.1kHz, freezedetect 0, dialogue whisper-verified word-perfect with the directed pause (0.8s) after "that badly."; identity holds across contact-sheet frames — awaiting owner decision |
+
 ## E. Generated stills manifest (updated as stills are produced)
 
 **SET APPROVED BY OWNER 2026-08-27 ("ok" on the delivered v2 round).** All six
