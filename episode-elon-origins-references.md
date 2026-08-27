@@ -143,7 +143,7 @@ rules gate still runs in --check-only mode on every prompt before submission.**
 | 1a hook walk v2 (12s, 1080p, empty yard) | `clip1a_hook_v2.mp4` | PAI `b6b9083c-0565-41cc-b659-309dc8cee0b8` | https://storage.googleapis.com/utopai-cue-prod/generated/videos/2026/08/27/a3c83e43abe66016233ebee1c1214cf2.mp4 | head-to-head loser — superseded by the Higgsfield 4K take (owner pick 2026-08-27) |
 | 1a hook walk 4K (12s, empty yard) | `clip1a_hook_4k_higgsfield.mp4` | Higgsfield seedance_2_0 `07f78285-d4cc-4100-90dc-becb0ab4c2d5` (264 cr) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_195512_07f78285-d4cc-4100-90dc-becb0ab4c2d5.mp4 | **APPROVED by owner 2026-08-27 ("file 2 higgsfield") — this IS clip 1a.** QC: 12.04s 2160×3840 HEVC 10-bit 14.4Mbps, freezes 0, dialogue word-perfect |
 
-| 1b boy reverse shot (4s) | `clip1b_boy_4k.mp4` | Higgsfield seedance_2_0 `1dcff543-bf6b-4fc3-8f6d-0c39c8a90672` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_201607_1dcff543-bf6b-4fc3-8f6d-0c39c8a90672.mp4 | delivered 2026-08-27 — QC: 4.04s 2160×3840 HEVC 10-bit, freezes 0, matches ELON-12 ref, silent ambient audio — awaiting owner decision |
+| 1b boy reverse shot (4s) | `clip1b_boy_4k.mp4` | Higgsfield seedance_2_0 `1dcff543-bf6b-4fc3-8f6d-0c39c8a90672` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_201607_1dcff543-bf6b-4fc3-8f6d-0c39c8a90672.mp4 | APPROVED by owner 2026-08-27 |
 
 ## E. Generated stills manifest (updated as stills are produced)
 
