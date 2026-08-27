@@ -1934,3 +1934,42 @@ version (with clip05_irony still in) preserved as
 `giza_final_cut_v5_with_clip05.mp4` (+ `_compressed`).
 
 ## STATUS: delivered — clip05_irony removed, episode now 119.67s / 13 clips, dense caption-presence re-verified after the cut
+
+## Round 20 — Instagram thumbnail (POV hook + Hazel + pyramids) + 4K delivery upscales (2026-08-27)
+
+Built the thumbnail from two existing frame sources rather than a fresh PAI
+generation: `clip01_vista` (Hazel POV close-up, pyramid+river background) and
+`clip08b` (the royal-procession wide, Hemiunu + gilded litter + attendants
+against the pyramid). Sampled both at 0.5–1s steps, picked one frame from
+each via contact sheet, composited Hazel's close-up over the clip08b wide so
+the finished frame reads as a single POV shot (Hazel in foreground, the
+royal procession + pyramid behind her) — matches the "POV hook + Hazel +
+pyramids" brief. Base composite: 720x1280.
+
+**Thumbnail 4K upscale** — Higgsfield `upscale_image` (bytedance backend,
+resolution=4k). Preflighted cost first (`get_cost:true` → 2 credits), then
+submitted for real.
+- media_id (source): `5e1f5936-dd0c-4212-8ffc-bd2d36b6c907`
+- job id: `95e5deee-c889-4b2c-9cd1-32205994ad1e`
+- result: `https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_110115_95e5deee-c889-4b2c-9cd1-32205994ad1e.png`
+  (2304x4096, saved locally as `thumb_upscaled_4k.png`) — sent to owner.
+
+**Final-video 4K upscale** — `giza_final_cut.mp4` (current post-round-19
+master: 720x1280, 24fps, 2872f, 119.671s) run through PAI's raw upscale
+passthrough (`pai_upscale_client.js`: create→accept→upload→complete→poll),
+same bypass-the-canvas-node-id precedent as this episode's clip generation.
+Backend is Topaz Proteus (`filters:[{model:"prob-4"}]` — same engine
+documented in `pai-pro/docs/api_service.md`'s Topaz BYOK section). Wrote
+`pai-pro/projects/giza/upscale_final.mjs` for this (estimate-only unless
+`--commit` is passed — checked the cost before spending).
+- output target: 2160x3840
+- requestId: `01a042e4-78b1-7007-be44-9b950df06df3`
+- estimate: $4.60, ~315–338s — submitted (`--commit`), running in background
+  as of this entry; will log the completed taskId/output path once it lands.
+
+Neither upscale changes any content — resolution/sharpness only. No owner
+regeneration-approval gate applies (that rule covers clip regeneration; this
+is delivery finishing on an already-approved cut and an already-in-progress
+thumbnail task).
+
+## STATUS: in progress — thumbnail built and upscaled to 4K (sent to owner), final-video 4K upscale submitted and running
