@@ -49,6 +49,10 @@ documented events" — plus sources in the pinned comment.
 - 2008: Falcon 1 flights 1–3 had failed; Tesla was nearly bankrupt; Musk's own
   words: "I put in all money I had, didn't own a house & had to borrow money from
   friends to pay rent."
+- The fourth Falcon 1 launched from Omelek Island (Kwajalein Atoll, Pacific);
+  it was readied in roughly eight weeks after flight 3 (Aug 3 → Sept 28, 2008),
+  and Musk has said the company's remaining money was enough for essentially
+  that one more attempt.
 - The turn: Falcon 1 flight 4 reached orbit Sept 28, 2008 (first privately
   developed liquid-fuel rocket to do so); NASA awarded SpaceX the ~$1.6B cargo
   contract in late Dec 2008; Tesla's rescue financing closed on CHRISTMAS EVE
@@ -82,7 +86,7 @@ documented events" — plus sources in the pinned comment.
 
 ---
 
-## 3. Final script (~229 spoken words ≈ 90–100s)
+## 3. Final script (~256 spoken words ≈ 100–110s — inside the channel's 90–200s Shorts cap)
 
 **SCENE 1 — HOOK**
 VISUAL: Dusty 1980s schoolyard, Pretoria. Hazel arrives, sees a small boy sitting
@@ -123,14 +127,22 @@ HAZEL: "You could lose everything. Why not stop?"
 ELON: "When something is important enough, you do it. Even if the odds are
 against you."
 
-**SCENE 7**
+**SCENE 7 — THE LAST ROCKET**
+VISUAL: Dawn. A tiny island in the middle of the Pacific Ocean. Falcon 1 stands
+slim and white on its launch pad, ocean on every side. Hazel walks toward it,
+looking up (forward walk, §14).
+HAZEL (V.O.): "A tiny island in the Pacific. This is Falcon 1 — rocket number
+four. The team built it in about eight weeks. And the money left is enough for
+this one launch. Just one. Fly... or it's all over."
+
+**SCENE 8**
 VISUAL: Hard cuts: Falcon 1 reaching orbit, Earth below → a NASA contract
 signing → Christmas lights outside a window, papers signed at a desk.
-HAZEL (V.O.): "Then everything turns. His fourth rocket reaches orbit. NASA
-signs a billion-dollar deal. And on Christmas Eve, Tesla is saved — days before
-the money runs out."
+HAZEL (V.O.): "It flies. His fourth rocket reaches orbit. NASA signs a
+billion-dollar deal. And on Christmas Eve, Tesla is saved — days before the
+money runs out."
 
-**SCENE 8 — ENDING**
+**SCENE 9 — ENDING**
 VISUAL: Hard cuts: a booster landing upright → city street full of Teslas →
 astronauts walking to the pad. Then back to the 1980s schoolyard — Hazel alone
 where the boy sat, talk-to-lens.
@@ -140,7 +152,7 @@ go. Hazel — out of time."
 
 ---
 
-## 4. Scene-by-scene breakdown (12 clips, all ≤13s — inside PAI's 15.2s cap; 9:16)
+## 4. Scene-by-scene breakdown (13 clips, all ≤13s — inside PAI's 15.2s cap; 9:16)
 
 | # | Dur | Location / period | Hazel | Elon | Dialogue | Key visual details | Tone |
 |---|-----|-------------------|-------|------|----------|--------------------|------|
@@ -152,12 +164,13 @@ go. Hazel — out of time."
 | 4b | 7s | Drafting table | Hand traces blueprint edge | Musk's hands unroll rocket blueprint, car sketch beside | V.O. continues | Blueprint texture, pencil sketch | The bet |
 | 5 | 10s | Crisis office, 2008, night | In doorway, still | Head in hands, TV replays failing rocket | V.O. quiet | Blue screen glow, empty coffee cups | Rock bottom |
 | 6 | 12s | Same room | Sits across from him, asks gently | Lifts head, answers with tired steadiness | Her question, his answer | Two faces, one lamp | The core of the episode |
-| 7a | 5s | Space, Sept 2008 | — | — | V.O. "Then everything turns..." | Falcon 1 stage over Earth's curve | Release |
-| 7b | 7s | Office, Dec 2008 | — | Signing papers | V.O. NASA + Christmas Eve lines | Christmas lights out the window, handshake | Rescue |
-| 8a | 6s | Montage beats | — | — | V.O. "Rockets that land..." | Booster landing → Tesla street → astronauts (3 hard-cut micro-beats) | Awe |
-| 8b | 10s | Schoolyard again, day | Talk-to-lens where the boy sat, calm slight smile | — | Closing lines + sign-off | Same wall, same dust — bookend | Quiet emotion |
+| 7 | 12s | Omelek Island pad, Kwajalein Atoll, Sept 2008, dawn | Walks toward the pad, looking up (forward walk §14) | — | V.O. "This is Falcon 1 — rocket number four..." | Slim white rocket against dawn sky, ocean on every side, tiny island scale | Last-chance stakes |
+| 8a | 5s | Space, Sept 2008 | — | — | V.O. "It flies..." | Falcon 1 stage over Earth's curve | Release |
+| 8b | 7s | Office, Dec 2008 | — | Signing papers | V.O. NASA + Christmas Eve lines | Christmas lights out the window, handshake | Rescue |
+| 9a | 6s | Montage beats | — | — | V.O. "Rockets that land..." | Booster landing → Tesla street → astronauts (3 hard-cut micro-beats) | Awe |
+| 9b | 10s | Schoolyard again, day | Talk-to-lens where the boy sat, calm slight smile | — | Closing lines + sign-off | Same wall, same dust — bookend | Quiet emotion |
 
-Estimated runtime: ~97s + natural pauses ≈ 100–110s. All transitions TRUE HARD
+Estimated runtime: ~108s + natural pauses ≈ 110–120s. All transitions TRUE HARD
 CUTS (§16). Every prompt carries the single-continuous-take block, frozen
 identity string, §13 realism bar, §14 forward-walk rule, no-camera-device
 negative, freezedetect + silence checks at edit (§25–26). Young-Elon continuity:
@@ -174,7 +187,7 @@ each of the four ages needs its own locked look reference before clip work.
 3. "I've seen kings and pharaohs. But today I'm watching a bullied kid in South
    Africa... because of what he becomes."
 
-## 6. Ending options (Scene 8 alternatives)
+## 6. Ending options (Scene 9 alternatives)
 
 1. **(As scripted)** "But I met him here — a bruised kid with a book. He just
    never let go."
