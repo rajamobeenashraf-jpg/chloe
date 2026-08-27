@@ -1,186 +1,189 @@
-# Episode — "The Day the World Laughed at Elon Musk" (working title)
-**Hazel Out of Time · Moscow 2002 → founding of SpaceX · Draft v1, 2026-08-27 — AWAITING OWNER APPROVAL**
+# Episode — "I Watched Elon Musk Become Elon Musk" (working title)
+**Hazel Out of Time · Full life-journey arc (1980s → 2008 → today) · Draft v2, 2026-08-27 — AWAITING OWNER APPROVAL**
 
-Companion piece to the Falcon 1 four-flights narration script (this branch's earlier work):
-this episode is the ORIGIN (why SpaceX exists), that one is the STRUGGLE (2006–2008).
-They can run as a two-part series.
+v2 supersedes v1 per owner direction 2026-08-27: the episode is about ELON MUSK's
+whole road to success — how hard it was — not specifically the space story. Space
+is one chapter, not the frame. (v1, the Moscow-2002/SpaceX-founding script, is
+preserved in git history at commit 8b487f5 — strong enough to become its own
+spin-off episode later, and the Falcon 1 four-failures narration script from
+earlier in this session remains a possible sequel.)
 
 ---
 
 ## 1. Episode concept
 
-**Chosen period: February 2002 — Musk's final trip to Moscow to buy a rocket, the
-rejection, and the flight home where SpaceX was born.**
+**A time-hop episode: Hazel jumps through the four hardest moments of Musk's life
+— bullied kid (1980s), broke founder sleeping in his office (1995), the
+all-in bet (2002), and the year everything nearly died (2008) — ending on what it
+all became.** The time-travel format is the advantage here: no other channel
+format can put one witness in a 1980s Pretoria schoolyard and a 2008 crisis room
+inside 90 seconds.
 
-Why this beats the alternatives for a 90-second Hazel episode:
-- It has a single, complete dramatic arc in one 48-hour window: rejection → decision
-  → founding. No montage of years needed.
-- It contains the single most cinematic documented moment of Musk's early life: the
-  spreadsheet on the flight home and the line "I think we can build this rocket
-  ourselves" (documented by Jim Cantrell, who was sitting next to him).
-- The "buying a rocket in Russia" premise is a real, verified, almost unbelievable
-  hook — no exaggeration required.
-- It sets up the already-drafted Falcon 1 failures episode as a direct sequel.
-- Rejected alternatives: Zip2 1995 (weaker visuals, weaker stakes), PayPal 2000
-  (corporate, not emotional), 2008 near-bankruptcy (already covered by the other
-  script).
+Emotional spine: every stop shows the SAME person being underestimated and
+refusing to quit — so the ending ("the richest man alive... I met him as a
+bruised kid with a book") lands as one continuous arc, not a list of facts.
 
-**Living-person note (owner-decided):** Musk appears on screen as a "younger Elon"
-cinematic reconstruction. Recommended mitigation, consistent with the channel's
-credibility playbook: a small on-screen tag in the opening seconds — "A cinematic
-reconstruction of documented events" — and the pinned comment lists sources.
+**Living-person note (owner-decided):** Musk appears on screen at four ages as a
+cinematic reconstruction. Recommended mitigation, per the credibility playbook:
+small on-screen tag in the opening seconds — "A cinematic reconstruction of
+documented events" — plus sources in the pinned comment.
 
 ---
 
 ## 2. Historical fact check
 
-**Documented facts used (verified via web research 2026-08-27):**
-- 2001: Musk conceived "Mars Oasis" — landing a small greenhouse on Mars to grow the
-  first plants on another planet, to reignite public interest in space and boost
-  NASA's budget.
-- Late 2001 and February 2002: Musk travelled to Moscow (with Jim Cantrell; Mike
-  Griffin joined the Feb 2002 trip) to buy refurbished Dnepr ICBMs as cheap launch
-  vehicles. He was 30.
-- The Russians did not take him seriously and the quoted price rose between
-  meetings; the deal collapsed. (Vance's biography reports ~$8M per missile on the
-  final trip — the script deliberately stays vague with "keep raising the price"
-  since the exact figure varies by account. The often-retold "spitting" incident is
-  contested and is deliberately EXCLUDED.)
-- On the flight home, Musk showed Cantrell a spreadsheet costing out a rocket's raw
-  materials (a small fraction of market launch prices — reported as ~2–3%) and said
-  "I think we can build this rocket ourselves." (Cantrell's firsthand account.)
-- SpaceX was founded within months (incorporated 2002, first HQ an El Segundo, CA
-  warehouse). Musk ultimately put ~$100M of his own money in (his own figure, 2012
-  60 Minutes interview with Scott Pelley).
-- Falcon 1 flights 1–3 failed (2006, 2007, 2008); flight 4 reached orbit
-  September 28, 2008 — first privately developed liquid-fuel rocket to do so.
-- "When something is important enough, you do it even if the odds are not in your
-  favor." — real Musk quote, 2012 60 Minutes interview (Snopes-verified).
+**Documented facts used (web-verified 2026-08-27):**
+- Childhood, Pretoria, South Africa: severely bullied at school; one attack (he
+  was beaten and thrown down a flight of stairs) hospitalized him (Ashlee Vance's
+  2015 biography; widely corroborated). He was the smallest, bookish kid; escaped
+  into books and computers.
+- Age 12 (1983/84): taught himself programming, wrote the game "Blastar," sold it
+  to PC and Office Technology magazine for ~$500.
+- 1995 (age 24): co-founded Zip2 with brother Kimbal in Palo Alto; they slept in
+  the office and showered at the YMCA to avoid paying apartment rent (both
+  brothers' own accounts). Zip2 sold 1999 for ~$307M; Musk's share ~$22M.
+- X.com → PayPal; eBay bought PayPal in Oct 2002 for $1.5B (Musk's share
+  ~$175M). At ~31 he was rich enough to never work again.
+- Instead he invested ~$100M into SpaceX and ~$70M into Tesla (his own stated
+  figures).
+- 2008: Falcon 1 flights 1–3 had failed; Tesla was nearly bankrupt; Musk's own
+  words: "I put in all money I had, didn't own a house & had to borrow money from
+  friends to pay rent."
+- The turn: Falcon 1 flight 4 reached orbit Sept 28, 2008 (first privately
+  developed liquid-fuel rocket to do so); NASA awarded SpaceX the ~$1.6B cargo
+  contract in late Dec 2008; Tesla's rescue financing closed on CHRISTMAS EVE
+  2008 — Musk has said the company was about three days from bankruptcy.
+- Later: Falcon boosters land and refly; Tesla became the world's most valuable
+  carmaker; SpaceX flew NASA astronauts (2020); Musk became the world's richest
+  person (2021 onward).
+- "When something is important enough, you do it even if the odds are not in
+  your favor." — real Musk quote, 2012 60 Minutes interview (Snopes-verified).
 
-**Cinematic reconstructions (clearly not claimed as fact):**
-- Hazel's presence and all her dialogue — the time-travel frame.
-- All of Elon's on-screen dialogue is reconstruction: Scene 4's line transplants his
-  real 2012 quote into the 2002 setting (his documented words, not words documented
-  AS SPOKEN in that moment); Scene 6's line is near-verbatim from Cantrell's account
-  of the actual flight.
-- Interior details of the Moscow meeting (room, faces, vodka glasses) — period-
-  accurate dressing of a documented event, not a photographic record.
-- Timeline compression: "he made his money on the internet" is used instead of "he
-  just sold PayPal" because the eBay/PayPal sale closed in October 2002 — AFTER
-  these trips. In Feb 2002 his wealth was the Zip2 sale plus his (large, not yet
-  liquid) PayPal stake. The vague phrasing is deliberate accuracy, not laziness.
+**Cinematic reconstructions (not claimed as fact):**
+- Hazel's presence and all her lines — the time-travel frame.
+- Elon's Scene 3 line ("Rent costs money. The company needs it more.") is a
+  reconstruction of the brothers' documented reasoning (Kimbal: "We built Zip2 by
+  sleeping in our office so we didn't need to pay rent for an apartment").
+- Elon's Scene 6 line transplants his real 2012 quote into the 2008 setting —
+  his documented words, not words recorded as spoken in that moment.
+- Scene interiors (schoolyard, office, crisis room) are period-accurate dressing
+  of documented situations, not photographic records.
 
-**Corrections to the owner's rough idea:**
-- "Atom bomb" — nothing of the kind exists in Musk's history and it is not in the
-  script. The kernel of truth: the rockets he tried to buy in Russia were
-  decommissioned nuclear MISSILES (Dneprs, minus warheads), sold as satellite
-  launchers. The script says "rocket," never "bomb."
+**Deliberate simplifications (accuracy-safe):**
+- "His internet companies sell for millions" covers Zip2 + PayPal without
+  misdating the PayPal payout.
+- The PayPal CEO ouster (2000) is omitted for time — it can carry a future
+  episode.
+- "Days before the money runs out" (not "hours") for Tesla — matches Musk's own
+  "about three days" account.
+- No "atom bomb" anywhere (owner's earlier rough note): the kernel of truth is
+  that the rockets he once tried to BUY in Russia were decommissioned nuclear
+  missiles sold as satellite launchers — v1 territory, not in this cut.
 
 ---
 
-## 3. Final script (~203 spoken words ≈ 90–100s)
+## 3. Final script (~229 spoken words ≈ 90–100s)
 
-**SCENE 1**
-VISUAL: Night. Snow falling. Hazel on a Moscow street, talk-to-lens, a lit
-government building behind her.
-HAZEL: "Moscow. 2002. It's freezing. And inside that building... a man is being
-laughed at. His name is Elon Musk."
+**SCENE 1 — HOOK**
+VISUAL: Dusty 1980s schoolyard, Pretoria. Hazel arrives, sees a small boy sitting
+alone against a wall — bruised face, a book in his hands.
+HAZEL (to lens): "See that boy? He just got out of hospital. Kids at school beat
+him that badly. One day... he'll be the richest man on Earth."
 
 **SCENE 2**
-VISUAL: Hazel at a doorway, peeking into a wood-panelled meeting room. Young Musk
-(30) at a long table across from Russian officials. Vodka glasses. Papers.
-HAZEL (whisper): "Wait — that's him? He's only thirty. He made his money on the
-internet. And he flew here... to buy a rocket."
+VISUAL: Night. The boy at an early-80s home computer, screen glow, code.
+HAZEL (V.O.): "South Africa. The 1980s. His name is Elon. School is brutal, so he
+hides in books and computers. At twelve, he builds a video game — and sells it."
 
 **SCENE 3**
-VISUAL: The meeting. An official slides a paper across; another shakes his head,
-smirking. Musk's jaw tightens. Hazel watches from the side of the room.
-HAZEL (V.O.): "His dream sounds crazy. He wants to send a tiny greenhouse to
-Mars — to make the world care about space again. But the Russians keep raising the
-price. To them, he's not serious. He's a tourist."
+VISUAL: 1995, tiny Palo Alto office at night. Musk (24) coding; a sleeping bag
+under the desk. Hazel steps through the clutter, picks up an empty noodle cup.
+HAZEL: "1995. He's twenty-four. This little office is his company... and his
+home. He sleeps on the floor and showers at a public gym."
+HAZEL (to Elon): "Why live like this?"
+ELON: "Rent costs money. The company needs it more."
 
 **SCENE 4**
-VISUAL: Cold street outside. Musk walks out, coat on, jaw set. Hazel falls into
-step beside him.
-HAZEL: "They said no. Why don't you stop? This looks impossible."
-ELON: "When something is important enough, you do it. Even if the odds are against
-you."
+VISUAL: 2002. Musk, early 30s, walks out of an office tower with a box of
+papers. Hard cut: a rocket blueprint unrolled; an electric-car sketch beside it.
+HAZEL (V.O.): "It pays off. His internet companies sell for millions. He's rich
+at thirty-one. He could stop forever. Instead, he bets almost everything on two
+impossible ideas: rockets... and electric cars."
 
 **SCENE 5**
-VISUAL: Airplane cabin, night flight home. Two colleagues clink drinks a row back.
-Musk opens a laptop. Hazel in the next seat, noticing.
-HAZEL: "Everyone thinks this trip failed. But on the flight home... he opens his
-laptop."
+VISUAL: 2008. Dark office, screens replaying a failing rocket. Musk, head in his
+hands. Hazel watches from the doorway.
+HAZEL (V.O., quiet): "2008. Everything is dying. Three rockets have failed.
+Tesla is almost broke. And he's borrowing money from friends... just to pay
+rent."
 
 **SCENE 6**
-VISUAL: Close on the glowing spreadsheet — columns of materials and numbers. Musk
-turns the screen toward his colleague.
-ELON: "I think we can build this rocket ourselves."
+VISUAL: Hazel sits down across from him. Quiet room.
+HAZEL: "You could lose everything. Why not stop?"
+ELON: "When something is important enough, you do it. Even if the odds are
+against you."
 
 **SCENE 7**
-VISUAL: Hazel leans over the seat back, talk-to-lens, the spreadsheet glow on her
-face.
-HAZEL: "He did the math. The materials in a rocket cost only a small part of its
-price. So... why not build his own?"
+VISUAL: Hard cuts: Falcon 1 reaching orbit, Earth below → a NASA contract
+signing → Christmas lights outside a window, papers signed at a desk.
+HAZEL (V.O.): "Then everything turns. His fourth rocket reaches orbit. NASA
+signs a billion-dollar deal. And on Christmas Eve, Tesla is saved — days before
+the money runs out."
 
-**SCENE 8**
-VISUAL: Hard cut. A huge, EMPTY warehouse, daylight through high windows. Musk
-alone in the middle of it, looking up. Hazel at the edge of frame, watching.
-HAZEL (V.O.): "A few months later, he starts SpaceX — in an empty warehouse. He
-puts a hundred million dollars of his own money into it."
-
-**SCENE 9**
-VISUAL: Hard cuts: Falcon 1 lifting off a small island pad → fire/failure flash →
-launch again → Earth from orbit, the rocket stage gleaming.
-HAZEL (V.O.): "The first three launches fail. The fourth one... reaches orbit."
-
-**SCENE 10**
-VISUAL: Back to the snowy Moscow street from Scene 1. Hazel talk-to-lens, calm.
-HAZEL: "I stood in that room when they laughed at him. Nobody is laughing now.
-Hazel — out of time."
+**SCENE 8 — ENDING**
+VISUAL: Hard cuts: a booster landing upright → city street full of Teslas →
+astronauts walking to the pad. Then back to the 1980s schoolyard — Hazel alone
+where the boy sat, talk-to-lens.
+HAZEL: "Rockets that land themselves. Cars that changed the world. The richest
+man alive. But I met him here — a bruised kid with a book. He just never let
+go. Hazel — out of time."
 
 ---
 
-## 4. Scene-by-scene breakdown (10 clips, all ≤13s — inside PAI's 15.2s cap; 9:16)
+## 4. Scene-by-scene breakdown (12 clips, all ≤13s — inside PAI's 15.2s cap; 9:16)
 
 | # | Dur | Location / period | Hazel | Elon | Dialogue | Key visual details | Tone |
 |---|-----|-------------------|-------|------|----------|--------------------|------|
-| 1 | 8s | Moscow street, night, Feb 2002 | Talk-to-lens, walking slowly toward building (forward walk, §14) | — | Hook line | Snow falling, breath fog, lit windows, period cars | Cold, mysterious |
-| 2 | 8s | Building corridor/doorway | Peeks around doorframe, whispers to lens | Seated at table, mid-meeting | "Wait — that's him?..." | Wood panels, long table, vodka glasses, 3–4 Russian officials (populated, §17) | Surprise |
-| 3 | 12s | Meeting room | Standing at the side, eyes moving between the men | Receives paper, jaw tightens, sits back | V.O. greenhouse/price lines | Paper sliding across table, a smirk, dismissive hand-wave | Humiliation, tension |
-| 4 | 12s | Street outside, night | Falls into step beside him | Walking, coat, controlled anger softening to conviction | Her question, his answer | Two-shot walking, snow, streetlight pools | Quiet determination |
-| 5 | 8s | Airplane cabin, night | Next seat, glances at him then to lens | Opens laptop | "Everyone thinks this trip failed..." | Dim cabin, reading light, two colleagues with drinks behind | Turning point begins |
-| 6 | 8s | Airplane cabin | Leaning in, watching the screen | Turns laptop toward colleague, speaks | His documented line | Spreadsheet glow, columns of numbers | Spark / revelation |
-| 7 | 10s | Airplane cabin | Talk-to-lens over the seat back, screen glow on her face | Working, background | "He did the math..." | Intimate close framing | Excitement, disbelief |
-| 8 | 10s | Empty El Segundo warehouse, mid-2002, day | At frame edge, watching him | Alone in vast space, looking up, slow turn | V.O. SpaceX founding lines | Shafts of daylight, bare concrete, huge emptiness | Scale of the bet |
-| 9 | 9s | Launch pad island → orbit, 2006–2008 | — (V.O. only) | — | "Three launches fail. The fourth..." | 3 hard-cut beats: liftoff, failure flash, Earth-from-orbit | Payoff |
-| 10 | 8s | Moscow street (Scene 1 framing) | Talk-to-lens, calm, slight smile | — | Closing lines + sign-off | Same snow, same light — visual bookend | Quiet triumph |
+| 1 | 10s | Schoolyard, Pretoria, 1980s, day | Walks in (forward walk §14), talk-to-lens, glances toward boy | Boy (~12): sits alone against wall, bruised, book | Hook lines | Dust, worn brick, distant kids playing (populated §17) | Protective, ominous promise |
+| 2 | 8s | Boy's room, night, early 80s | Leans in doorway watching | Boy typing at early-80s computer | V.O. | CRT glow, BASIC-style code, posters | Escape, wonder |
+| 3a | 8s | Palo Alto office, 1995, night | Steps through clutter, picks up empty noodle cup | Musk 24, coding intently | "1995. He's twenty-four..." | Sleeping bag under desk, pizza boxes, one CRT monitor | Grind |
+| 3b | 8s | Same office | Sits on desk edge, asks | Looks up briefly, answers, back to screen | Q&A exchange | Screen light on both faces | Matter-of-fact conviction |
+| 4a | 6s | Office tower exit, 2002, day | Watches from across the street | Musk ~31, suit, box of papers, small smile | V.O. starts | Glass tower, morning light | Triumph |
+| 4b | 7s | Drafting table | Hand traces blueprint edge | Musk's hands unroll rocket blueprint, car sketch beside | V.O. continues | Blueprint texture, pencil sketch | The bet |
+| 5 | 10s | Crisis office, 2008, night | In doorway, still | Head in hands, TV replays failing rocket | V.O. quiet | Blue screen glow, empty coffee cups | Rock bottom |
+| 6 | 12s | Same room | Sits across from him, asks gently | Lifts head, answers with tired steadiness | Her question, his answer | Two faces, one lamp | The core of the episode |
+| 7a | 5s | Space, Sept 2008 | — | — | V.O. "Then everything turns..." | Falcon 1 stage over Earth's curve | Release |
+| 7b | 7s | Office, Dec 2008 | — | Signing papers | V.O. NASA + Christmas Eve lines | Christmas lights out the window, handshake | Rescue |
+| 8a | 6s | Montage beats | — | — | V.O. "Rockets that land..." | Booster landing → Tesla street → astronauts (3 hard-cut micro-beats) | Awe |
+| 8b | 10s | Schoolyard again, day | Talk-to-lens where the boy sat, calm slight smile | — | Closing lines + sign-off | Same wall, same dust — bookend | Quiet emotion |
 
-Estimated runtime: ~93s + natural pauses ≈ 95–105s. All transitions TRUE HARD CUTS
-(§16). Every clip prompt must carry the single-continuous-take block, the frozen
-identity string, §13 realism bar, and the no-camera-device negative. Scene 9 is
-three separately generated beats, hard-cut — never an AI transition.
-
----
-
-## 5. Hook options (alternatives for Scene 1)
-
-1. **(As scripted)** "Moscow. 2002. It's freezing. And inside that building... a
-   man is being laughed at. His name is Elon Musk."
-2. "In 2002, you could fly to Russia and try to buy a rocket. One man actually
-   did. I followed him there."
-3. "I just watched a room full of Russian rocket men laugh someone out of the
-   building. They have no idea what he does next."
-
-## 6. Ending options (alternatives for Scene 10)
-
-1. **(As scripted)** "I stood in that room when they laughed at him. Nobody is
-   laughing now."
-2. "They saw a tourist with a crazy dream. I saw the beginning of SpaceX."
-3. "Every rocket that flies today started right here — on a laptop, on a plane,
-   after a 'no.'"
+Estimated runtime: ~97s + natural pauses ≈ 100–110s. All transitions TRUE HARD
+CUTS (§16). Every prompt carries the single-continuous-take block, frozen
+identity string, §13 realism bar, §14 forward-walk rule, no-camera-device
+negative, freezedetect + silence checks at edit (§25–26). Young-Elon continuity:
+each of the four ages needs its own locked look reference before clip work.
 
 ---
 
-*Status: draft v1. Nothing generated. Awaiting owner approval of concept + script
-before any stills or clips (standard gates: costume stills → clip-by-clip → cut).*
+## 5. Hook options (Scene 1 alternatives)
+
+1. **(As scripted)** "See that boy? He just got out of hospital. Kids at school
+   beat him that badly. One day... he'll be the richest man on Earth."
+2. "The richest man in the world got beaten up at this school so badly he ended
+   up in hospital. I went back to see the day nobody believed in him."
+3. "I've seen kings and pharaohs. But today I'm watching a bullied kid in South
+   Africa... because of what he becomes."
+
+## 6. Ending options (Scene 8 alternatives)
+
+1. **(As scripted)** "But I met him here — a bruised kid with a book. He just
+   never let go."
+2. "Everyone sees the richest man on Earth. I saw the boy nobody bet on."
+3. "Success didn't happen to him. He dragged it out of three failed rockets, a
+   dying car company, and a schoolyard where nobody saw him coming."
+
+---
+
+*Status: draft v2. Nothing generated. Awaiting owner approval of concept +
+script (and hook/ending choice) before any stills or clips — standard gates:
+look stills (Hazel per era + four young-Elon age refs) → clip-by-clip → cut.*
