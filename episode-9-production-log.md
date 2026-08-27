@@ -1798,3 +1798,101 @@ after. Prior version preserved as `giza_final_cut_v3_preclip06fix.mp4`
 (+ `_compressed`), not overwritten.
 
 ## STATUS: delivered — clip06_empathy caption timing corrected on independent re-measurement, rest of the episode unchanged
+
+## Round 18 — full-episode caption audit: real bugs found, round-17's scope was too narrow (2026-08-27)
+
+Owner reported round 17 didn't fix it: captions still wrong elsewhere in the
+episode — some stretches with no captions at all during real dialogue, some
+showing text that doesn't match the delivery. Correct call. Round 17 checked
+one clip; the problem was episode-wide. Full re-audit this round, two
+findings, both real, both fixed.
+
+**Finding 1 — six clips had genuinely wrong caption timing**, found by
+transcribing every clip's actual audio independently (medium.en) and
+checking word-level coverage against the currently-burned captions, then
+cross-referencing anything suspicious against `captions_data_lines_backup.mjs`
+— the pre-round-10 line-level data, itself built from real silencedetect and,
+for the hardest cases, frame-by-frame verification. That backup turned out to
+be the right ground truth for most of what was wrong: the round-10
+chunk-conversion's own whisper pass mis-timed several clips, and its 89-100%
+"match" self-check only verified *word text*, never cross-checked *timing*
+against the already-verified line data sitting right next to it in the repo.
+Root cause identified, not just papered over.
+
+Worst case: **clip03_food** — "FOR BREAKFAST?" (her line) was showing
+2.76-3.58s, *inside* the Clerk's "Beer is safer than the river." turn
+(2.541-4.425s per the verified backup) — captions overlapping the wrong
+speaker, and the corrected gap where she actually says it (1.4-2.541s) was
+going completely uncaptioned. This is the exact clip round F already flagged
+as impossible to place by audio alone (no silence gap anywhere in
+2.541-7.881s to anchor on) — a fresh whisper pass hit the identical wall
+(matched "beer" to the wrong of two detected instances). **clip10_respect**
+was missing the first ~1.3s of an already-verified continuous line (captions
+started at 4.72 vs. the verified 3.397 start) — checked this one extra
+carefully since a sparse visual sample looked like she was just smiling, not
+talking, but real silencedetect settled it: a genuine 0.36s pause ends at
+3.397, then 1.7s of unbroken sound — the acoustic signature of speech
+starting right there, matching the backup's number almost to the
+millisecond. **clip04_jobjoin** had caption-free gaps of up to 1.94s during
+a line round 3 specifically frame-verified as continuous speech with no real
+pause anywhere. **clip08a_prostrate**'s closing pause (the "on Earth...
+...through someone's armpit" comedic beat) had been swallowed to a zero-gap
+cut. **clip11_mirror** re-introduced almost the exact bug round F already
+fixed once (a word timed 1.4s away from the rest of its own line). **clip07_
+setpiece** had merged two words across a documented real breathing gap.
+
+Fix, applied per-clip based on how reliable fresh audio alignment actually
+was: clip07/08a's non-ambiguous portions used a fresh medium.en pass directly;
+clip03/04/10/11 (and 08a's one ambiguous line) used word-count-proportional
+splitting *inside* the already-verified backup line windows instead — same
+fallback this project has used before (clip09a_stone, round 8) for exactly
+this situation: precise audio alignment isn't trustworthy, but the line/
+speaker boundaries are, so split proportionally within them rather than trust
+a shaky new alignment. Two clips checked with **no fix needed** despite
+initially looking off: clip02_costume's backup line data (2.150s start) was
+itself wrong — segment-level whisper plus the current captions both agree
+the line starts at 0.00s; clip05_irony's current timing matched a clean
+re-transcription almost exactly. Not every discrepancy from the backup meant
+the backup was right — checked each one rather than applying it as a blanket
+rule.
+
+**Finding 2 — a real regression, independent of any timing question: the
+clip08b/clip10 dissolve segment (built round 15, rebuilt round 16) never had
+captions burned onto it at all.** Building that segment switched to
+loudnorm+fade-only "clean" source files so captions could be burned *after*
+compositing (the technique that unblocked clip11->clip12a in round 16) — but
+unlike the round-16 segment, this one's ffmpeg command never actually
+included the `ass=` burn step. Verified directly: dense frame sampling across
+clip08b's and clip10's entire spoken dialogue in the delivered round-16/17
+master showed zero caption text anywhere, at any timestamp checked. Every
+caption for both clips — 10 chunks on clip08b, 4 on clip10 — had been
+missing from the delivered video since round 15, through rounds 16 and 17,
+without being caught: verification each round checked the dissolve
+transition itself and the lighting, never re-swept the whole clip for caption
+presence. That gap is what let this ship twice. Root cause: no `ass=` filter
+in that segment's `filter_complex`, plain and avoidable.
+
+Fixed by rebuilding the clip08b+clip10 dissolve segment with a merged,
+offset-corrected `.ass` (clip08b unchanged, clip10 at its corrected timing)
+burned onto the composited crossfade output — same approach round 16 already
+used correctly for the other segment, just actually applied here this time.
+
+**Verification this round was deliberately more thorough than "check the
+transition."** Densely sampled the caption-text band (the fixed screen
+region the word-chunk style always occupies) at 1fps across the *entire*
+128.7s master and visually confirmed real caption text appears at the right
+moments in every one of the 14 clips, not just spot-checked near cut points
+— specifically built to catch exactly the class of bug (a whole clip's
+captions silently absent) that slipped through round 16/17's narrower
+checks. Frame-count sanity exact: 3089 frames = 128.708s x 24fps. Runtime
+unchanged in substance (128.75s -> 128.71s, a rounding artifact of
+re-encoding, not a content change — no clip's duration changed, only caption
+timing and the fixed caption-burn step). Audio/video sync re-verified on
+every rebuilt segment: 6-97ms throughout, consistent with this project's
+established non-dissolve baseline, no new drift introduced.
+
+Prior version preserved as `giza_final_cut_v4_missing_captions_bug.mp4`
+(+ `_compressed`) rather than silently overwritten — the actual bug, kept
+on record rather than erased.
+
+## STATUS: delivered — 6 clips retimed against verified ground truth, clip08b/clip10's missing captions (a real round-15 regression, shipped 2 rounds undetected) fixed, whole episode densely re-verified for caption presence
