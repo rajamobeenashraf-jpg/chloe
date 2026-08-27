@@ -1896,3 +1896,41 @@ Prior version preserved as `giza_final_cut_v4_missing_captions_bug.mp4`
 on record rather than erased.
 
 ## STATUS: delivered — 6 clips retimed against verified ground truth, clip08b/clip10's missing captions (a real round-15 regression, shipped 2 rounds undetected) fixed, whole episode densely re-verified for caption presence
+
+## Round 19 — remove clip05_irony entirely (2026-08-27)
+
+Owner request (clear, unambiguous — located precisely by the "you are all
+sighted"/"you're all cited" homophone from round 18's own transcription
+work): cut the clip that comes right after clip04_jobjoin's "You're all
+cited." line — that's `clip05_irony`, the scribe/tally-wall scene ("Absent
+— brewing day... I found the aliens — they're accountants."). Direct
+instruction, no clarification needed, not a QC action.
+
+Removed the entry from `CLIPS` in `captions_data.mjs`, comment left in its
+place per the standing convention (round 13's precedent) — explains the
+removal, points to this log entry, notes nothing is deleted on disk
+(`assets/clip05_irony.mp4` and its `qc/` derivatives untouched, full entry
+recoverable from git history). `clip04_jobjoin` now runs straight into
+`clip06_empathy`; `apply_prelap.mjs` picked up the new adjacency
+automatically (array-order-driven, same as every prior clip removal this
+project).
+
+Rebuilt only what changed: `qc_pass`/`apply_prelap` for all 13 remaining
+clips, then a fresh clip01-clip08a hard-cut segment (7 clips now, was 8) —
+the clip08b-onward tail (both dissolve clusters) is completely unaffected
+by a removal earlier in the episode, so reused directly from the round-18
+master rather than rebuilt from scratch. Frame-count sanity exact: 2872
+frames = 119.667s x 24fps (129.208 - clip05's 9.042s, matches). Frame-
+checked the new clip04->clip06 hard cut directly: clean, no artifact,
+"CITED." holds through to the cut, clip06 starts clean on the other side.
+
+**Given round 18's miss, re-ran the full dense caption-presence sweep on
+this rebuild too** rather than assuming the untouched tail carried over
+correctly — 1fps sampling of the caption band across the entire new
+119.67s runtime, confirmed real text at the right moments in all 13
+remaining clips, including specifically the clip04->clip06 join and the
+reused clip08b/clip10/clip11/12a/12b/12c tail. Nothing regressed. Prior
+version (with clip05_irony still in) preserved as
+`giza_final_cut_v5_with_clip05.mp4` (+ `_compressed`).
+
+## STATUS: delivered — clip05_irony removed, episode now 119.67s / 13 clips, dense caption-presence re-verified after the cut
