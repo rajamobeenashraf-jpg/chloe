@@ -1660,3 +1660,88 @@ preserved as `giza_final_cut_hardcuts_only_pretransition.mp4` (+
 `_compressed`), not deleted.
 
 ## STATUS: delivered — clip08b→clip10 dissolve+grade live; clip11→clip12a still open (blocked on caption headroom, not actioned)
+
+## Round 16 — extend dissolves through the dusk chapter + fix a real audio/video sync bug (2026-08-27)
+
+Owner flagged two more transitions as awkward, again via garbled voice
+dictation: located precisely by searching the script rather than guessing —
+"the word slave" is the last word of `clip12a_thesis1` ("...nobody who
+built this was a slave."), and "and the god king" is the first line of
+`clip12b_thumb` ("And the god-king who commissioned it?"). So complaint 1 =
+clip12a_thesis1 -> clip12b_thumb. Complaint 2, "last and second-last," =
+the final two clips of the episode, clip12b_thumb -> clip12c_outro.
+
+**Better dissolve technique, unlocks the previously-blocked boundary too.**
+Round 15 left clip11_mirror -> clip12a_thesis1 as a hard cut because
+clip12a's first caption starts at literal t=0 — no room for a video
+dissolve without the caption itself visibly ghosting through the blend
+(breaking the caption system's own no-animation rule). Worked out a cleaner
+approach this round: build the dissolve on CLEAN footage (loudnorm+fade,
+no captions burned in) instead of on the already-captioned `_final.mp4`
+files, then burn a single re-timed caption pass on TOP of the composited
+result afterward. Each caption still hard-cuts on/off at full opacity
+exactly per its measured timing (nothing about the caption's own behavior
+changes) — it just may appear while the video underneath is still
+resolving a blend a few frames deep, which reads fine and arguably clues
+the viewer into the scene change a beat earlier. This retroactively
+unblocks clip11->clip12a too, so did all three remaining internal
+boundaries in the dusk chapter in one pass: clip11_mirror -> clip12a_thesis1,
+clip12a_thesis1 -> clip12b_thumb, clip12b_thumb -> clip12c_outro. No color
+grade forced onto clip12a/b/c (round 14 already established grading them
+brighter/warmer looks washed out, flat pyramid rendering with no
+directional sunlight to grade back in) — dissolve only, letting it read as
+a natural "time passing" cue between golden hour and dusk rather than
+pretending the two match.
+
+**Per-boundary dissolve duration chosen from each clip's own real headroom**,
+not one blanket number: clip11's tail (after "HORIZON.") gives 0.52s, used
+0.18s. clip12a's tail (after "SLAVE.") gives only 0.1617s, so 0.12s was used
+there specifically (frame-margin verified: dissolve starts ~0.04s, about
+one frame, after the caption's own end — confirmed in the rendered output,
+"SLAVE." stays crisp through the point where the blend visibly begins, no
+ghosting). clip12b's tail (after "OF TUESDAYS.") gives 0.46s, used 0.18s.
+Merged `.ass` built by a one-off script (offsets derived from each xfade's
+own offset parameter, chained through 3 dissolves) — spot-checked the
+rendered result at all three boundaries directly, captions land exactly
+where designed, no overlap between adjacent lines' text.
+
+**Caught and fixed a real bug from round 15's approach, before it shipped
+again.** Building each dissolve segment's audio as a plain concat of the
+*full* clip audio tracks (unchanged from before) while the video xfade
+shortens the *video* track by the dissolve duration at each boundary
+created a genuine audio/video length mismatch — checked directly on round
+15's already-delivered file: video 129.208s vs audio 128.883s, a 0.325s
+gap, versus the pure-hard-cut baseline (video 129.333s, audio 129.338s,
+5ms apart — normal). That's real drift, not rounding: dissolve boundaries
+compress video timing without touching audio timing unless audio is
+trimmed to match. Fix: trim the *outgoing* clip's audio to end at the same
+offset the video xfade starts at (dropping only trailing silence already
+confirmed caption-free/silent at every one of these boundaries — nothing
+spoken is touched), letting the *incoming* clip's audio play in full. Redid
+round 15's clip08b->clip10 segment with this fix alongside the three new
+boundaries, so the whole tail of the episode (clip08b onward) was rebuilt
+in this round. Verified on every segment before final assembly: video vs.
+audio stream duration now agree within 7-16ms everywhere (sub-frame,
+matches the pure-hard-cut baseline's own normal tolerance) instead of
+hundreds of milliseconds off.
+
+**Rebuilt the full master**: `giza_final_cut.mp4` reassembled from the
+unchanged clip01-clip08a segment (reused directly, re-verified) + a
+corrected clip08b->clip10 dissolve segment + the new 3-dissolve
+clip11-through-outro segment. Frame-count sanity exact: 3090 frames =
+128.750s x 24fps, no truncation. Runtime 129.21s -> 128.75s (four dissolve
+overlaps now: 0.18+0.18+0.12+0.18=0.66s, against round 15's single 0.18s).
+Verified all three new boundaries directly in the assembled master (not
+isolated previews): clean blends, zero caption-text ghosting, dialogue
+lands on the right frames. `captions_data.mjs`'s TRANSITIONS-array comment
+updated to describe reality (10 of 14 boundaries still true hard cuts per
+§16; 4 are one-off dissolve exceptions, not a change to the array itself
+or to `build_final_cut.mjs`, which still defaults to pure hard cuts — same
+"needs manual reapplication if the pipeline is ever rebuilt" caveat as
+round 15, now covering all four). Prior versions preserved, nothing
+deleted: `giza_final_cut_v2_hadaudiosync_bug.mp4` (+ `_compressed`) is
+round 15's output with the audio-drift bug, kept for reference rather than
+silently overwritten; `giza_final_cut_hardcuts_only_pretransition.mp4`
+(round 14's pure-hard-cut baseline) still on disk too.
+
+## STATUS: delivered — all 4 planned dissolves live (08b→10, 11→12a, 12a→12b, 12b→12c), audio/video sync bug from round 15 fixed in the same pass
