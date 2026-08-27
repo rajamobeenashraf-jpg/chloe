@@ -165,7 +165,7 @@ as-scripted, same delegation.)
 
 | # | Dur | Location / period | Hazel | Elon | Dialogue | Key visual details | Tone |
 |---|-----|-------------------|-------|------|----------|--------------------|------|
-| 1a | 12s | Schoolyard, Pretoria, 1980s, day | SOLO: walks in (forward walk §14), talk-to-lens, glances off-frame left mid-line | — | Full 27-word hook (~11s spoken — §9 count-the-beats) | Dust, worn brick, distant kids playing behind her (populated §17) | Protective, ominous promise |
+| 1a | 12s | Schoolyard, Pretoria, 1980s, day | SOLO: walks in (forward walk §14), talk-to-lens, glances off-frame left mid-line | — | Full 27-word hook (~11s spoken — §9 count-the-beats) | EMPTY after-hours yard — NO other people (owner correction 2026-08-27 on v1: background kids made "See that boy?" ambiguous; the 1b cut must show the ONLY boy). Worn brick, dust, long shadows | Protective, ominous promise |
 | 1b | 4s | Schoolyard wall | — | SOLO: boy (~12) sits alone against wall, withdrawn, book, eyes down (no visible injury — owner decision) | (silent under her last hook line) | Hard warm light, long shadow, isolation | Loneliness |
 | 2 | 8s | Boy's room, night, early 80s | V.O. only (no Hazel in frame) | SOLO: boy typing at early-80s computer | V.O. | CRT glow, BASIC-style code, posters | Escape, wonder |
 | 3a | 8s | Palo Alto office, 1995, night | Steps through clutter, picks up empty noodle cup | Musk 24, coding intently | "1995. He's twenty-four..." | Sleeping bag under desk, pizza boxes, one CRT monitor | Grind |
