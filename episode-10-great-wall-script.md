@@ -58,6 +58,9 @@
 
 **Anachronism blocklist (goes into every prompt as negative guidance):** no Qing-era queues/shaved foreheads, no silk brocade on laborers, no bright imperial yellow, no samurai/Japanese armor elements, no modern tools (metal wheelbarrows, steel scaffolds, hard hats), no finished-tourist-wall look (no restored Badaling appearance), no Han-dynasty or fantasy-wuxia costume drift.
 
+## Standing guard added 2026-08-27: NPCs never address the camera
+Clip 4 v5 showed BOTH Hazel and Qi Jiguang looking directly into the lens simultaneously during the opening beat — reads as two people posing for a photo, not a conversation. Root cause: no prompt ever said NPCs shouldn't do this. Per the house conversation-triangle rule, ONLY Hazel breaks the fourth wall (asides to viewer, direct address on key lines) — Zhao, Qi Jiguang, and every other era character look at HER or at the action, never at the camera, ever. State this explicitly in every remaining clip's prompt. Also: establish NPC approach/positioning concretely (e.g. "walks directly toward her") rather than vaguely ("walks into view") to avoid awkward mid-scene distance.
+
 ## PERMANENT RULE (owner instruction, 2026-08-27): dialogue approval gate before every clip generation
 Before generating ANY clip from here forward, show the owner that clip's dialogue rewritten in plain, simple English — no jokes, no flourish, no stiff/documentary-narrator phrasing, everyday spoken language, facts stated directly. Wait for explicit approval on the dialogue text itself. Only after that approval, generate the clip. This is separate from and in addition to the standing per-clip verify→anticipate→adapt→reverify→generate→self-QC protocol — the dialogue gate comes first, before any generation attempt (including v1).
 
