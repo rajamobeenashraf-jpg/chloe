@@ -84,10 +84,25 @@ General rules:
 
 ## E. Generated stills manifest (updated as stills are produced)
 
-All v1/v2 stills generated 2026-08-27 and delivered in chat the moment they
-existed. Owner gave a blanket "yes, do your best" go-ahead on the v1 review
-(2026-08-27), authorizing one fix round: v2 regenerations of the four flagged
-stills. Final per-still approval still pending owner's word.
+**SET APPROVED BY OWNER 2026-08-27 ("ok" on the delivered v2 round).** All six
+uploaded to Higgsfield storage — permanent CDN URLs (host
+`https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/<id>.png`):
+
+| Ref | CDN id |
+|---|---|
+| HAZEL-WARDROBE-FB v2 | `0e952cf3-0a5d-4820-b27c-1c08f7dac612` |
+| HAZEL-WARDROBE-CU v2 | `0d7a887f-e170-4556-bd08-de994567f7bb` |
+| ELON-12 v2 | `206eec5e-f91e-49eb-8503-131d3479deef` |
+| ELON-24 v2 | `0d65e24d-be0b-4374-a5a6-4aed0ed05476` |
+| ELON-31 | `48117be1-ada5-425f-97ed-4772c11b9f15` |
+| ELON-37 | `284ef9dd-b9e6-4b2c-9ff6-78f5effa0eee` |
+
+Usage: the ELON refs are the locked generation references for their ages. The
+HAZEL wardrobe stills are wardrobe/continuity guides ONLY — per
+CHARACTER_LOCK.md's permanent lock, generated outputs NEVER serve as identity
+references for Hazel; her identity refs remain the canonical 20-image set
+(the 5 Tier-1/2 masters in every prompt), with the traveler wardrobe restated
+in text.
 
 | ID | File (in `projects/elon/assets/`) | Engine/model | Status |
 |---|---|---|---|
