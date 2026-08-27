@@ -84,11 +84,16 @@ General rules:
 
 ## E. Generated stills manifest (updated as stills are produced)
 
+All v1/v2 stills generated 2026-08-27 and delivered in chat the moment they
+existed. Owner gave a blanket "yes, do your best" go-ahead on the v1 review
+(2026-08-27), authorizing one fix round: v2 regenerations of the four flagged
+stills. Final per-still approval still pending owner's word.
+
 | ID | File (in `projects/elon/assets/`) | Engine/model | Status |
 |---|---|---|---|
-| HAZEL-WARDROBE-FB | `hazel_traveler_fullbody.png` | PAI image-edit-pro + 5 refs | generated 2026-08-27, delivered in chat — awaiting owner decision |
-| HAZEL-WARDROBE-CU | `hazel_traveler_chestup.png` | PAI image-edit-pro + 5 refs | generated 2026-08-27, delivered in chat — awaiting owner decision |
-| ELON-12 | `elon_ref_age12_1983.png` | PAI image-generation-pro | generated 2026-08-27, delivered in chat — awaiting owner decision |
-| ELON-24 | `elon_ref_age24_1995.png` | PAI image-generation-pro | generated 2026-08-27, delivered in chat — awaiting owner decision |
-| ELON-31 | `elon_ref_age31_2002.png` | PAI image-generation-pro | generated 2026-08-27, delivered in chat — awaiting owner decision |
-| ELON-37 | `elon_ref_age37_2008.png` | PAI image-generation-pro | generated 2026-08-27, delivered in chat — awaiting owner decision |
+| HAZEL-WARDROBE-FB | `hazel_traveler_fullbody_v2.png` | PAI image-edit-pro + 5 refs | v2 (straight-leg jeans, short cord necklace, de-glam) — delivered, awaiting approval; v1 superseded |
+| HAZEL-WARDROBE-CU | `hazel_traveler_chestup_v2.png` | PAI image-edit-pro + 5 refs | v2 (no eye makeup, light-hazel eyes restored) — delivered, awaiting approval; v1 superseded (glam drift) |
+| ELON-12 | `elon_ref_age12_1983_v2.png` | PAI image-generation-pro | v2 (family-resemblance push, plain grey socks) — delivered, awaiting approval; v1 superseded |
+| ELON-24 | `elon_ref_age24_1995_v2.png` | PAI image-generation-pro | v2 (documented 1995 thinning hair now obvious) — delivered, awaiting approval; v1 superseded |
+| ELON-31 | `elon_ref_age31_2002.png` | PAI image-generation-pro | v1 kept under owner go-ahead — awaiting final approval |
+| ELON-37 | `elon_ref_age37_2008.png` | PAI image-generation-pro | v1 kept under owner go-ahead — awaiting final approval |
