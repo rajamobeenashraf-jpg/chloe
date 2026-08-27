@@ -29,3 +29,13 @@ Engine switch per owner question: stills now run on Nano Banana Pro with the ref
 | `a5480838-f6d5-438c-ba9f-dd9a2aaeba06` | 3 charcoal adventurer (charcoal-brown bodice, cream underdress, umber skirt) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_221424_a5480838-f6d5-438c-ba9f-dd9a2aaeba06.png | PASS identity vs Tier-1; clean frame; no bag |
 
 Awaiting owner costume pick. Next after the pick: full-body still in the chosen costume (wardrobe reference for all clip prompts), then the Seedance dialogue test clip in that costume.
+
+### Costume lock attempt, round 3 (2026-08-27, Soul soul_2, owner-requested re-render of option 1 rust)
+Owner picked costume OPTION 1 (rust war-correspondent) and asked for a Soul re-render. Both takes COLLAGED again — even with the explicit anti-collage opener that worked on Nano Banana Pro.
+
+| Job ID | Result URL | QC |
+|---|---|---|
+| `41990c7b-60d2-467e-b929-436d97a52546` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_222029_41990c7b-60d2-467e-b929-436d97a52546.png | FAIL — collage (tiled copies); center panel costume correct |
+| `b0c36e1a-9bf5-45bc-b19e-983389a49e3a` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_222029_b0c36e1a-9bf5-45bc-b19e-983389a49e3a.png | FAIL — collage (hood-up variant in center panel); costume correct |
+
+**Finding: Soul (soul_2) collaged 4 of 5 renders at 9:16 with long prompts — the anti-collage instruction does not fix it on this model. Nano Banana Pro produced 3/3 clean frames with identical instructions.** Awaiting owner decision on next step.
