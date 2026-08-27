@@ -65,7 +65,7 @@ General rules:
 | 8b | Office, late Dec 2008 | Papers being signed at a desk, a handshake, window behind with out-of-focus Christmas lights | Warm tungsten interior, bokeh lights |
 | 9a | Montage micro-beats | Falcon booster landing upright on legs · city street with multiple Teslas in traffic · two astronauts in white-and-black suits walking to a pad | Each beat its own natural grade; hard cuts |
 
-## C2. ENVIRONMENT SHEET (owner-ordered 2026-08-27 — locations generated BEFORE clips)
+## C2. ENVIRONMENT SHEET (owner-ordered 2026-08-27 — APPROVED BY OWNER 2026-08-27)
 
 Seven empty location plates (no people — they dodge identity/safety filters and
 serve as clean scene references). Each generated from the era-accuracy specs in
@@ -73,13 +73,13 @@ section C; prompts in `projects/elon/prompts/env/`.
 
 | ID | File | Covers scenes | Status |
 |---|---|---|---|
-| ENV-1983-SCHOOLYARD | `env_1983_schoolyard.png` | 1a, 1b, 9b | QC pass — delivered 2026-08-27, awaiting owner approval |
-| ENV-1983-BEDROOM | `env_1983_bedroom.png` | 2 | QC pass — delivered 2026-08-27, awaiting owner approval |
-| ENV-1995-OFFICE | `env_1995_office.png` | 3a, 3b | QC pass — delivered 2026-08-27, awaiting owner approval |
-| ENV-2002-BLUEPRINT | `env_2002_blueprint.png` | 4b | QC pass — delivered 2026-08-27, awaiting owner approval |
-| ENV-2008-CRISIS | `env_2008_crisis.png` | 5, 6 | QC pass — delivered 2026-08-27, awaiting owner approval |
-| ENV-2008-PAD | `env_2008_pad.png` | 7 (Falcon 1 / Omelek hero) | QC pass — delivered 2026-08-27, awaiting owner approval |
-| ENV-2008-ORBIT | `env_2008_orbit.png` | 8a | QC pass — delivered 2026-08-27, awaiting owner approval |
+| ENV-1983-SCHOOLYARD | `env_1983_schoolyard.png` | 1a, 1b, 9b | APPROVED by owner 2026-08-27 |
+| ENV-1983-BEDROOM | `env_1983_bedroom.png` | 2 | APPROVED by owner 2026-08-27 |
+| ENV-1995-OFFICE | `env_1995_office.png` | 3a, 3b | APPROVED by owner 2026-08-27 |
+| ENV-2002-BLUEPRINT | `env_2002_blueprint.png` | 4b | APPROVED by owner 2026-08-27 |
+| ENV-2008-CRISIS | `env_2008_crisis.png` | 5, 6 | APPROVED by owner 2026-08-27 |
+| ENV-2008-PAD | `env_2008_pad.png` | 7 (Falcon 1 / Omelek hero) | APPROVED by owner 2026-08-27 |
+| ENV-2008-ORBIT | `env_2008_orbit.png` | 8a | APPROVED by owner 2026-08-27 |
 
 Not plated (generated at clip stage): Scene 4a tower exit, 8b Christmas office,
 9a montage micro-beats (booster landing / Tesla street / astronauts).
