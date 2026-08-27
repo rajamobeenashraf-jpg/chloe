@@ -6,6 +6,18 @@
 // episode now ends on clip11 itself, fading naturally to black/silence
 // (FADE_OUT_DURATION) instead of cutting to a title card.
 const FADE_OUT_DURATION = 1.0;
+
+// Owner decision, 2026-08-27 (same session, later): bring the battle
+// name/year back, but as an ON-SCREEN card burned over the last 5s of
+// live footage (not a separate black card scene) -- reuses the same
+// wording as the old text card. Positioned near the TOP of frame
+// (SUB_STYLE's dialogue captions sit near the bottom, MarginV 320) so
+// it never collides with clip11's own word-synced dialogue captions,
+// which are still playing during part of this window.
+const TITLE_CARD_DURATION = 5.0;
+const TITLE_CARD_LINE1 = "BATTLE OF LEGNICA";
+const TITLE_CARD_LINE2 = "1241 · MONGOL VICTORY";
+const FONT_BOLD = "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf";
 import fs from "node:fs/promises";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
@@ -55,12 +67,18 @@ async function main() {
     filterParts.push(`[${i}:v][${i}:a]`);
   }
   const fadeStart = (expectedTotal - FADE_OUT_DURATION).toFixed(3);
+  const titleCardStart = (expectedTotal - TITLE_CARD_DURATION).toFixed(3);
+  const escText = (s) => s.replace(/\\/g, "\\\\").replace(/:/g, "\\:").replace(/'/g, "\u2019");
+  const drawText = (text, y) =>
+    `drawtext=fontfile=${FONT_BOLD}:text='${escText(text)}':fontcolor=white:fontsize=44:` +
+    `borderw=3:bordercolor=black@0.85:x=(w-text_w)/2:y=${y}:enable='gte(t\\,${titleCardStart})'`;
   const filterComplex =
     `${filterParts.join("")}concat=n=${clipPaths.length}:v=1:a=1[catv][cata];` +
-    `[catv]fade=t=out:st=${fadeStart}:d=${FADE_OUT_DURATION}[outv];` +
+    `[catv]${drawText(TITLE_CARD_LINE1, 130)},${drawText(TITLE_CARD_LINE2, 195)}[titled];` +
+    `[titled]fade=t=out:st=${fadeStart}:d=${FADE_OUT_DURATION}[outv];` +
     `[cata]afade=t=out:st=${fadeStart}:d=${FADE_OUT_DURATION}[outa]`;
 
-  console.log(`[cut] concatenating ${clipPaths.length} pieces via single filter_complex concat, fading out the last ${FADE_OUT_DURATION}s...`);
+  console.log(`[cut] concatenating ${clipPaths.length} pieces via single filter_complex concat, on-screen title card for the last ${TITLE_CARD_DURATION}s, fading out the last ${FADE_OUT_DURATION}s...`);
   await run("ffmpeg", [
     "-y", ...inputs,
     "-filter_complex", filterComplex,
