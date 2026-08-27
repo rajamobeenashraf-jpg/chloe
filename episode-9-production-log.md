@@ -1981,3 +1981,42 @@ is delivery finishing on an already-approved cut and an already-in-progress
 thumbnail task).
 
 ## STATUS: delivered — thumbnail built and upscaled to 4K, final-video upscaled to 4K (2160x3840), both sent to owner
+
+## Round 21 — thumbnail v2: real visual hook + the locked hook-text banner (2026-08-27)
+
+Owner rejected v1 (too plain — Hazel selfie over a calm royal-procession
+background, no text). Root cause: v1 never carried the hook line the owner
+had already locked in the same session (`"POV: They Leveled the Pyramid
+Using Only the Stars"`, given verbatim earlier and confirmed as final,
+per-`hazel-out-of-time`-skill workflow) — it was built before that line
+existed and nothing then went back to add it. Rebuilt against the skill's
+§7 cover spec instead of re-composited guesswork:
+
+- **Visual hook** — swapped the background entirely. Sampled `clip07_setpiece`
+  (the rope-haul/scaffolding set-piece — a massive stone under active
+  construction, workers straining, real danger/effort) instead of the static
+  procession; picked the frame where Hazel is mid-reaction in the middle of
+  the pull. This is a single native frame (not a composite of two clips like
+  v1) — matches spec's "modern-feeling Hazel inside an epic era scene"
+  juxtaposition test far better, and Hazel now sits at ~35-40% of frame per
+  spec (v1's close-up ran well over that).
+- **Text hook** — white top banner, black bold (Liberation Sans Bold),
+  2 lines: "POV: They Leveled the Pyramid" / "Using Only the Stars" — the
+  owner's exact locked wording, 9 words, unchanged (this line is final, not
+  mine to re-optimize). Built with ffmpeg drawbox+drawtext (textfile= inputs,
+  avoids drawtext's `:`-escaping trap) rather than regenerating the image
+  from a prompt, since text rendering in diffusion output is unreliable and
+  this line is locked verbatim.
+- **Year stamp** — "2560 BC", amber/darkgoldenrod, top-right corner, per
+  spec's amber-for-past rule.
+- Self-checked against the skill's cover checklist before shipping: visual
+  hook ✓, text hook adds a stake rather than describing the image ✓, year
+  stamp + color rule ✓, expression (urgent/reacting) distinct from the
+  clip01/clip08b expressions already used on other covers this episode ✓,
+  bottom corners clear ✓, legibility verified by downscaling to 150px wide
+  before upscaling — text still fully readable at that size.
+- Base composite 720x1280 → Higgsfield `upscale_image` 4k (2160x3840,
+  media_id `c0befb09-4aee-4407-a5a7-8941a5b98e1d`, job
+  `72dcb0a2-4e89-422e-b91a-2ce929cc0dd6`) — sent to owner for approval.
+
+## STATUS: delivered — thumbnail v2 (visual hook + locked hook-text banner + year stamp) sent to owner for approval
