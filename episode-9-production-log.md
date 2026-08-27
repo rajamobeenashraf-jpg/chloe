@@ -1745,3 +1745,56 @@ silently overwritten; `giza_final_cut_hardcuts_only_pretransition.mp4`
 (round 14's pure-hard-cut baseline) still on disk too.
 
 ## STATUS: delivered — all 4 planned dissolves live (08b→10, 11→12a, 12a→12b, 12b→12c), audio/video sync bug from round 15 fixed in the same pass
+
+## Round 17 — word-by-word caption/lip-sync check on clip06_empathy (2026-08-27)
+
+Owner asked for a rigorous check: every word of clip06_empathy's captions
+against her actual lip movement. Two independent passes, not just one:
+
+**Pass 1 — Gemini eyes `captions` mode** against a generated intended
+`.srt`, on the currently-burned `clip06_empathy_final.mp4`. 1 candidate
+finding (severity 2, a prop/hieroglyph-styling note, unrelated to captions),
+0 confirmed. Summary: captions align accurately with speech and timing.
+Consistent with the standing rule that unverified low-severity findings are
+hints — noted, not treated as proof the captions are correct on its own.
+
+**Pass 2 — independent re-transcription**, `faster-whisper` on `medium.en`
+(the original round-10 chunk pass used `small.en` for this clip) against
+the clip's actual rendered audio, word-level timestamps. All 13 words
+transcribe exactly as scripted — "The next course covers it forever. Then
+why paint it? We saw it." — 0.82-1.00 confidence throughout, no content
+error. Compared word-for-word against the currently-burned caption times:
+5 of 7 chunks were off by 1-2 frames (normal cross-model measurement
+noise, not acted on). Two were real: **"THEN WHY" was appearing 0.08s
+(~2 frames) before the new measurement's word-onset, and "PAINT IT?" was
+disappearing 0.20s (~5 frames) before "it?" actually finishes** — the
+caption going dark while she's still visibly mid-word.
+
+**Also frame-checked directly** (not just trusting either machine pass):
+pulled raw, caption-free frames at each of the three lines' active windows
+to confirm the *right* speaker's mouth is open/articulating — Djedi
+visibly speaking during his two lines (~t=3.4, ~t=6.7), her visible
+articulation during the middle line. No speaker-mismatch, no case of a
+caption sitting over a closed mouth. The exact sub-frame boundary itself
+is genuinely hard to read by eye at this shot's profile camera angle,
+which is exactly why the two corrected numbers come from the medium.en
+re-measurement rather than from eyeballing frames — same basis every other
+clip's caption timing in this file was originally built on.
+
+**Fixed directly** (caption timing correction, not a regeneration — same
+QC-rule carve-out used for every conform-level fix this project): retimed
+all 7 of clip06_empathy's chunks to the medium.en measurement in
+`captions_data.mjs`, full reasoning in the dated comment there. Reran
+`qc_pass.mjs` + `apply_prelap.mjs` (all 14 clips — only clip06 actually
+changed, rest byte-identical in content). Rebuilt the master from a fresh
+clip01-clip08a hard-cut segment (only piece touched by this fix) reattached
+to the round-16 clip08b-onward tail, reused directly since the dissolve
+work there is untouched by this fix. Frame-count sanity exact: 3090 frames,
+128.750s, unchanged from round 16 (a timing-only fix inside one clip
+doesn't change any clip's duration). Verified both corrected boundaries
+directly in the rebuilt master: "THEN WHY" now appears right at its new
+mark, "PAINT IT?" now holds through its extended window and clears cleanly
+after. Prior version preserved as `giza_final_cut_v3_preclip06fix.mp4`
+(+ `_compressed`), not overwritten.
+
+## STATUS: delivered — clip06_empathy caption timing corrected on independent re-measurement, rest of the episode unchanged
