@@ -71,3 +71,17 @@ Fix applied: the two canonical FULL-BODY reference views (09_fullbody_front `e35
 | `1984383d-6f7d-41bc-9f26-c1d6e12a7e58` (v2 B) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_223343_1984383d-6f7d-41bc-9f26-c1d6e12a7e58.png | Face consistent but softer at zoom, less freckle detail; cloak rendered LONGER (full cape) than the locked short travel cloak | 
 
 Standing lesson for every future full-body/wide generation (all episodes): ALWAYS include the two full-body master refs + the face-fidelity-at-distance clause; extract and check a face crop before delivering.
+
+### Full-body rounds 7-8 (2026-08-27) — owner rejected NBP full-bodies twice; SOUL with SHORT PROMPT solves it
+- Round 7 (NBP, strictest prompt, 8 refs, 4 variants `92e1cf91`/`e2579c59`/`1be0c429`/`88408379`): 2 identity-passes (var 1, var 4), 2 identity FAILS (vars 2-3 — most photo-realistic skin of the batch but a DIFFERENT woman). Owner rejected the set. KEY FINDING: on NBP, pushing raw documentary realism harder pulls the face AWAY from the references — identity and realism fight each other on that model.
+- Round 8 (owner order: use Soul): **SHORT-PROMPT Soul method — 4/4 CLEAN single frames, identity held in all four.** Root cause of the earlier Soul collages was the ~450-word prompt, not the model: Soul is trained on her identity and needs no identity string; a ~150-word prompt with a single-frame guard produced zero collages.
+
+| Job ID | Result URL | QC notes |
+|---|---|---|
+| `5d11ae40` (soul fb1) | .../hf_20260827_224034_5d11ae40-aa43-4f9f-8e03-0383eb3e0c93.png | Clean, identity strong, closed lace shoes; cloak rendered FULL-LENGTH (not short); tiny hip pouch half-visible |
+| `7c7d33f6` (soul fb2) | .../hf_20260827_224034_7c7d33f6-0d40-4f78-8edf-9335d3d18710.png | Clean, strongest freckles, hood draped; small belt pouch appeared |
+| `e6eaa1b9` (soul fb3) | .../hf_20260827_224034_e6eaa1b9-533d-4c25-b022-1b358da7d2e3.png | Clean, identity good; crossbody bag appeared (violates no-bag) |
+| `ad7b8259` (soul fb4) | .../hf_20260827_224034_ad7b8259-3cc7-46ee-9c73-c8c945be8e16.png | Clean, identity good; crossbody satchel clearly visible (violates no-bag) |
+
+**PERMANENT ENGINE RULE for this project's stills (owner-driven, confirmed by results): character stills = Higgsfield Soul with SHORT prompts (identity from training); NBP = fallback for cases Soul can't do. Note for the pick: bags crept back into fb3/fb4 and the cloak rendered full-length in all four — flag to owner with the choice.**
+Awaiting owner pick of full-body (1-4).
