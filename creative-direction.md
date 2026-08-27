@@ -367,3 +367,14 @@ Owner's instruction, verbatim intent: the twelve speaking behaviors reverse-engi
 **Measurable gate (mandatory, script stage — part of §21 pass one):** run `tools/voice-check/voice_check.py <dialogue.txt> --register epic|comedy` on the episode's assembled dialogue BEFORE any generation. Hard thresholds: FK grade ≤5.0 · ≥90% one-to-two-syllable words · ≤10 words/sentence average; the tool also lists every 3+ syllable word (each must be a proper noun, a same-breath-glossed era term, or rewritten) and possible passives for the manual read. A metrics PASS is necessary, not sufficient — points 1–3, 5, 10–12 are confirmed in the §21 pass-two manual read. Word budget: ~170 spoken words per minute of runtime (her measured epic rate).
 
 First application: the Constantinople 1453 script v1 measures FK 2.2 · 93.8% short words · 5.0 words/sentence — PASS.
+
+## 29. GAZE / FACE / BODY — natural delivery direction in every talk-to-lens prompt (owner mandate 2026-08-27 — PERMANENT, applied situationally; same weight as §12–§15, §17–§28)
+
+Owner observation, 2026-08-27: the reference channel's talk-to-lens delivery is casual and natural — her eyes VISIT the lens rather than locking on it, her expressions match the situation, and her body is always doing something (walking, leaning, settling into a seat) — while a generated persona defaults to news-anchor mode: planted feet, unbroken eye contact, neutral-pleasant face, constant energy. The model fills any undirected gap with that anchor default, so the direction must be explicit in EVERY talk-to-lens prompt.
+
+Every talk-to-lens clip prompt carries three direction lines, each written for THAT scene's situation (permanent rule, situational content):
+- **GAZE:** where her eyes are for each beat — at the thing she names when she names it (the eye version of point-and-name), scanning surroundings when something is happening, over her shoulder at a threat, and the lens ONLY for the key sentences. Never continuous lens lock.
+- **FACE:** the one expression this clip's register demands, described physically (per the §2 emotional performance library) — "eyes flicking to the side, jaw tight, breath visible", never just "she looks scared". The expression arrives before the words confirm it.
+- **BODY:** what she is physically doing while talking — walking, turning, leaning, crouching, sitting, weight shifts. True stillness is reserved for beats where stillness IS the direction (a hide, a grief freeze) — and then it is stated as the direction, not left as a default.
+
+"Depends on situation" (owner's wording): the rule is always applied, but its content follows the scene — a quiet outro directs slow movement and long lens holds; a battle beat directs darting eyes and fragmentary lens contact. The §21 pass-two manual read checks that all three lines are present and match the scene's register. Lens-locked anchor delivery in a render is a defect (same §19 approval path as any other).
