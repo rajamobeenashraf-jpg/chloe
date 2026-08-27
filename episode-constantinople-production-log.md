@@ -108,3 +108,10 @@ Awaiting owner pick (1-4) → wardrobe locked end-to-end → Seedance test clip 
 
 ### CLIP 1 TEST with owner-designated references (2026-08-27) — job `a62b4763-7a49-41b3-963e-ec7a5a7f9201`
 Owner order: use the four fullbody_v2 images (v2 A + v2 B + both face crops) as the reference set and regenerate clip 1 as a test. Crops uploaded via media_upload (`edbf407e`, `0665be5a`); full-bodies imported (`d35e74b0`, `1e3dd43d`). Seedance 2.5 omni_reference, 12s, 9:16, 1080p, audio. Result: https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_230011_a62b4763-7a49-41b3-963e-ec7a5a7f9201.mp4 (12.06s, 7.8MB, sent to owner). freezedetect: CLEAN. Awaiting owner verdict ("Then I will tell you what to do").
+
+### CLIP 1 TEST #3 — locked character sheets as refs (2026-08-27) — job `3ee30d71-b26e-4dec-938d-8da20d732dd3`
+Owner order: regenerate clip 1 using ONLY the locked canonical character sheets from the default branch (turnaround `cdde55af` + face detail `ef2a1822`) — no newly created reference set. Same prompt/settings as test #2 (Seedance omni_reference, 12s, 9:16, 1080p, audio), with an added instruction that the sheets show ONE person and the costume comes from text. Result: https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_230734_3ee30d71-b26e-4dec-938d-8da20d732dd3.mp4 (12.06s, 4.3MB). freezedetect: CLEAN. Sent to owner for a three-way comparison:
+- Test #1: clip 2 boat, refs = single-view masters (front portrait, 3/4s, full-body master)
+- Test #2: clip 1 walls, refs = owner-designated fullbody_v2 set (2 stills + 2 face crops)
+- Test #3: clip 1 walls, refs = locked character sheets only
+Owner's verdict picks the reference recipe for the remaining clips.
