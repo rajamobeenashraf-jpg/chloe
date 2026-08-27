@@ -97,50 +97,116 @@ const CLICK_GUARD = 0.02; // imperceptible, only prevents a waveform-discontinui
 // the `volume` filter's `enable` time-gate on this exact file, which
 // produced zero measurable change on the near-zero tail while working
 // correctly elsewhere in the same clip. This is a content-level gap in
-// the original clip10 generation, not fixable at the edit layer without
-// either a small regeneration or a sourced/generated ambient bed to
-// bridge the specific gap -- reported to the owner rather than shipped
-// as an unverified "fix."
+// the original clip10 generation; owner decided to fix it a different
+// way instead of regenerating -- see CLIP10_GAP_FILLER below.
+
+// Owner decision, 2026-08-26: clip9's confirmed ~1.0s frozen tail
+// (creative-direction.md §30) gets trimmed rather than regenerated, even
+// though this cuts into the tail end of the "aftermath, still unfolding"
+// beat. Trim point is the exact last pre-freeze frame boundary measured
+// by freezedetect on the raw source (8.04167s of clip9's 9.041667s runtime
+// -- everything from there to the end was confirmed frozen). clip9's own
+// caption ("NO—", 1.50-1.78s) is well before this point and unaffected.
+const CLIP_TRIM = {
+  clip9: 8.04167,
+};
+
+// Owner decision, 2026-08-26: fix clip10's dead-silence tail (confirmed
+// genuine digital silence, not fixable by any gain filter -- see NOTE
+// above) WITHOUT regenerating the clip. Approach: mix a very low-level
+// synthesized ambient bed (brown noise, heavily lowpassed to read as
+// distant wind/rumble rather than hiss/static) underneath clip10's own
+// audio for its full duration. Verified this raises the dead tail from
+// true silence (-inf/-46.7dB) to a plausible continuing ambient floor
+// (~-28dB) with silencedetect finding zero silent stretches afterward,
+// while leaving the louder dialogue portions untouched in practice (the
+// bed sits well under any real content, only becoming audible where
+// nothing else is). This is the §29 "audio must never touch silence at
+// a cut" principle applied via synthesis instead of a source regeneration.
+const CLIP_AMBIENT_BED = new Set(["clip10"]);
+
+function ambientBedFilterComplex(inputDuration, dialogueLabel) {
+  return (
+    `[1:a]lowpass=f=500,lowpass=f=500,volume=0.025,asetpts=PTS-STARTPTS[bed];` +
+    `${dialogueLabel}asetpts=PTS-STARTPTS[dial2];` +
+    `[dial2][bed]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0,` +
+    `aresample=async=1:first_pts=0,asetpts=PTS-STARTPTS[aout]`
+  );
+}
 
 async function qcOneClip(clip, { isFirst, isLast }) {
   const srcPath = path.join(ASSETS_DIR, `${clip.id}_v1.mp4`);
   const outPath = path.join(QC_DIR, `${clip.id}_qc.mp4`);
 
   const videoDuration = await probeVideoDuration(srcPath);
+  const outputDuration = CLIP_TRIM[clip.id] ? Math.min(CLIP_TRIM[clip.id], videoDuration) : videoDuration;
+  const trimNote = CLIP_TRIM[clip.id] ? ` (trimmed from ${videoDuration}s to drop the frozen tail, §30)` : "";
 
   const fadeParts = [];
   if (isFirst) fadeParts.push(`afade=t=in:st=0:d=${CLICK_GUARD}`);
-  if (isLast) fadeParts.push(`afade=t=out:st=${(videoDuration - CLICK_GUARD).toFixed(3)}:d=${CLICK_GUARD}`);
+  if (isLast) fadeParts.push(`afade=t=out:st=${(outputDuration - CLICK_GUARD).toFixed(3)}:d=${CLICK_GUARD}`);
   const fadeSuffix = fadeParts.length ? `,${fadeParts.join(",")}` : "";
-  const fadeNote = fadeParts.length ? `outer-edge click-guard (${CLICK_GUARD * 1000}ms)` : "no fade -- true hard audio join per §29";
+  const hasBed = CLIP_AMBIENT_BED.has(clip.id);
+  const noteParts = [];
+  if (fadeParts.length) noteParts.push(`outer-edge click-guard (${CLICK_GUARD * 1000}ms)`);
+  if (hasBed) noteParts.push("synthesized ambient-bed mix to kill dead-silent tail");
+  const fadeNote = noteParts.length ? noteParts.join(" + ") : "no fade -- true hard audio join per §29";
+
+  const bedInputArgs = hasBed
+    ? ["-f", "lavfi", "-i", `anoisesrc=color=brown:amplitude=1:sample_rate=44100:duration=${outputDuration + 1}`]
+    : [];
 
   if (clip.captions.length === 0) {
-    console.log(`[qc] ${clip.id}: no captions, loudnorm + ${fadeNote}`);
-    await run("ffmpeg", [
-      "-y", "-i", srcPath,
-      "-af", `loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}`,
-      "-c:v", "copy",
-      "-c:a", "aac", "-b:a", "192k",
-      "-t", String(videoDuration),
-      outPath,
-    ]);
-    return { outPath, videoDuration };
+    console.log(`[qc] ${clip.id}: no captions, loudnorm + ${fadeNote}${trimNote}`);
+    if (hasBed) {
+      await run("ffmpeg", [
+        "-y", "-i", srcPath, ...bedInputArgs,
+        "-filter_complex", `[0:a]loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}[dial];${ambientBedFilterComplex(outputDuration, "[dial]")}`,
+        "-map", "0:v", "-map", "[aout]",
+        "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+        "-t", String(outputDuration),
+        outPath,
+      ]);
+    } else {
+      await run("ffmpeg", [
+        "-y", "-i", srcPath,
+        "-af", `loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}`,
+        "-c:v", "copy",
+        "-c:a", "aac", "-b:a", "192k",
+        "-t", String(outputDuration),
+        outPath,
+      ]);
+    }
+    return { outPath, videoDuration: outputDuration };
   }
 
   const assPath = path.join(QC_DIR, `${clip.id}.ass`);
   await fs.writeFile(assPath, buildAss(clip.captions));
 
-  console.log(`[qc] ${clip.id}: burning ${clip.captions.length} caption(s) + loudnorm + ${fadeNote}`);
-  await run("ffmpeg", [
-    "-y", "-i", srcPath,
-    "-vf", `ass=${assPath}`,
-    "-af", `loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}`,
-    "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p",
-    "-c:a", "aac", "-b:a", "192k",
-    "-t", String(videoDuration),
-    outPath,
-  ]);
-  return { outPath, videoDuration };
+  console.log(`[qc] ${clip.id}: burning ${clip.captions.length} caption(s) + loudnorm + ${fadeNote}${trimNote}`);
+  if (hasBed) {
+    await run("ffmpeg", [
+      "-y", "-i", srcPath, ...bedInputArgs,
+      "-filter_complex",
+      `[0:v]ass=${assPath}[vout];[0:a]loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}[dial];${ambientBedFilterComplex(outputDuration, "[dial]")}`,
+      "-map", "[vout]", "-map", "[aout]",
+      "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p",
+      "-c:a", "aac", "-b:a", "192k",
+      "-t", String(outputDuration),
+      outPath,
+    ]);
+  } else {
+    await run("ffmpeg", [
+      "-y", "-i", srcPath,
+      "-vf", `ass=${assPath}`,
+      "-af", `loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}`,
+      "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p",
+      "-c:a", "aac", "-b:a", "192k",
+      "-t", String(outputDuration),
+      outPath,
+    ]);
+  }
+  return { outPath, videoDuration: outputDuration };
 }
 
 async function main() {
