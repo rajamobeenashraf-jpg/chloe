@@ -49,3 +49,15 @@ Owner rejected the round-2 NBP option-1 face as identity drift ("looking a diffe
 | `41591415-d3f8-402d-9712-354931d56809` (take B) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_222355_41591415-d3f8-402d-9712-354931d56809.png | Clean single frame; identity strong; cloak clasp visible, soft half-smile; costume correct, no bag |
 
 Awaiting owner pick (A or B) → that image becomes the costume lock; next: full-body wardrobe reference in the same costume, then the Seedance test clip.
+
+### Costume LOCKED + full-body wardrobe reference, round 5 (2026-08-27)
+- **Owner picked take A** (`56d24663`) as the costume lock: rust war-correspondent, strict-NBP render. This image + the chosen full-body below are the wardrobe references cited in every clip prompt.
+- Full-body renders (strict NBP protocol, same 6 refs, shoes corrected to flat closed leather):
+
+| Job ID | Result URL | QC |
+|---|---|---|
+| `0862799b-6e70-4fc5-b834-6340c7a4f669` (full-body A) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_223017_0862799b-6e70-4fc5-b834-6340c7a4f669.png | Clean single frame; complete costume correct (mid-calf rust, cream hem, oatmeal sleeves, hooded cloak, belt, flat leather shoes, no bag); hard side light |
+| `7a5de65f-a996-4d79-a18b-148dba710b8c` (full-body B) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_223017_7a5de65f-a996-4d79-a18b-148dba710b8c.png | Clean single frame; costume correct; softer light, city visible, cloak draped open |
+
+- Seedance 2.5 cost preflight: **12s 9:16 = 78 credits** → full episode (~15 clips) projects to ~1,200–1,600 credits for one clean pass. Balance comfortably covers multiple rounds.
+- Awaiting owner full-body pick → then the approved Seedance dialogue TEST CLIP (clip 2 boat beat as the test, in the locked costume) goes immediately after.
