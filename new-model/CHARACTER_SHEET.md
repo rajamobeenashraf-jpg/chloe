@@ -170,7 +170,9 @@ at 100% zoom): dramatic hair changes are where drift hides.
 
 - Training set location: [ ]
 - Golden refs location: [ ]
-- fal.ai LoRA: base [ Qwen-Image-2512 ], trigger word [ ], steps [ ], weights file [ ]
+- fal.ai LoRA v1: base Qwen-Image (fal-ai/qwen-image-trainer), trigger word `3ll3`,
+  steps 1500, lr 5e-4, trained 2026-08-27, request `01a04485-3508-7f90-9349-476582c07eec`,
+  weights: https://v3b.fal.media/files/b/0aa80e18/cbwJNAgquTP7FNw5DXNSt_adapter.safetensors
 - Identity test render vs golden refs: [ pass/fail, date ]
 - First approved makeup/hair test set: [ ]
 - First approved video test: [ ]
