@@ -10,5 +10,16 @@ Style: Default,Liberation Serif,50,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:02.30,0:00:04.36,Default,,0,0,0,,LEGNICA...
-Dialogue: 0,0:00:04.36,0:00:04.90,Default,,0,0,0,,1241.
+Dialogue: 0,0:00:00.00,0:00:01.18,Default,,0,0,0,,HENRY DIED
+Dialogue: 0,0:00:01.18,0:00:01.56,Default,,0,0,0,,HERE.
+Dialogue: 0,0:00:02.32,0:00:02.74,Default,,0,0,0,,HIS ARMY
+Dialogue: 0,0:00:02.74,0:00:03.36,Default,,0,0,0,,WAS BROKEN.
+Dialogue: 0,0:00:04.08,0:00:04.52,Default,,0,0,0,,BUT THIS
+Dialogue: 0,0:00:04.52,0:00:05.20,Default,,0,0,0,,CASTLE — THE
+Dialogue: 0,0:00:05.20,0:00:05.66,Default,,0,0,0,,ONE BEHIND
+Dialogue: 0,0:00:05.66,0:00:06.08,Default,,0,0,0,,ME — NEVER
+Dialogue: 0,0:00:06.08,0:00:06.36,Default,,0,0,0,,FELL.
+Dialogue: 0,0:00:07.18,0:00:07.54,Default,,0,0,0,,THEY HELD
+Dialogue: 0,0:00:07.54,0:00:07.98,Default,,0,0,0,,IT.
+Dialogue: 0,0:00:08.60,0:00:09.04,Default,,0,0,0,,EVEN AFTER
+Dialogue: 0,0:00:09.04,0:00:09.48,Default,,0,0,0,,EVERYTHING.

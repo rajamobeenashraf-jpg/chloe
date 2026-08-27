@@ -375,7 +375,7 @@ export const CLIPS = [
   },
   {
     "id": "clip9",
-    "duration": 9.041667,
+    "duration": 5.625,
     "captions": [
       {
         "start": 1.52,
@@ -386,7 +386,7 @@ export const CLIPS = [
   },
   {
     "id": "clip10",
-    "duration": 5.041667,
+    "duration": 4.458337,
     "captions": [
       {
         "start": 2.74,
@@ -407,17 +407,72 @@ export const CLIPS = [
   },
   {
     "id": "clip11",
-    "duration": 6.041667,
+    "duration": 10.041667,
     "captions": [
       {
-        "start": 2.3,
-        "end": 4.36,
-        "text": "LEGNICA..."
+        "start": 0,
+        "end": 1.18,
+        "text": "HENRY DIED"
       },
       {
-        "start": 4.36,
-        "end": 4.9,
-        "text": "1241."
+        "start": 1.18,
+        "end": 1.56,
+        "text": "HERE."
+      },
+      {
+        "start": 2.32,
+        "end": 2.74,
+        "text": "HIS ARMY"
+      },
+      {
+        "start": 2.74,
+        "end": 3.36,
+        "text": "WAS BROKEN."
+      },
+      {
+        "start": 4.08,
+        "end": 4.52,
+        "text": "BUT THIS"
+      },
+      {
+        "start": 4.52,
+        "end": 5.2,
+        "text": "CASTLE — THE"
+      },
+      {
+        "start": 5.2,
+        "end": 5.66,
+        "text": "ONE BEHIND"
+      },
+      {
+        "start": 5.66,
+        "end": 6.08,
+        "text": "ME — NEVER"
+      },
+      {
+        "start": 6.08,
+        "end": 6.36,
+        "text": "FELL."
+      },
+      {
+        "start": 7.18,
+        "end": 7.54,
+        "text": "THEY HELD"
+      },
+      {
+        "start": 7.54,
+        "end": 7.98,
+        "text": "IT."
+      },
+      {
+        "start": 8.6,
+        "end": 9.04,
+        "text": "EVEN AFTER"
+      },
+      {
+        "start": 9.04,
+        "end": 9.48,
+        "text": "EVERYTHING."
       }
     ]
   }

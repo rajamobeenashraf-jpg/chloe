@@ -161,12 +161,22 @@
   },
   {
     "id": "clip11",
-    "duration": 6.041667,
+    "duration": 10.053991,
     "captions": [
       {
-        "start": 2.3,
-        "end": 4.8,
-        "text": "Legnica... 1241."
+        "start": 1.5,
+        "end": 4.3,
+        "text": "Henry died here. His army was broken."
+      },
+      {
+        "start": 5.0,
+        "end": 7.8,
+        "text": "But this castle — the one behind me — never fell."
+      },
+      {
+        "start": 8.2,
+        "end": 9.9,
+        "text": "They held it. Even after everything."
       }
     ]
   }
