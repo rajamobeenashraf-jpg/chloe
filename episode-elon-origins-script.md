@@ -153,8 +153,11 @@ VISUAL: Hard cuts: a booster landing upright → city street full of Teslas →
 astronauts walking to the pad. Then back to the 1980s schoolyard — Hazel alone
 where the boy sat, talk-to-lens.
 HAZEL: "Rockets that land themselves. Cars that changed the world. The richest
-man alive. But I met him here — a bruised kid with a book. He just never let
-go. Hazel — out of time."
+man alive. And I met him here — the boy nobody bet on. Hazel — out of time."
+(Ending locked 2026-08-27 under owner delegation — replaces the "bruised kid
+with a book" line, which clashed with the no-visible-bruise decision; this
+version bookends the hook's "richest man on Earth" promise. Hook locked
+as-scripted, same delegation.)
 
 ---
 
@@ -162,7 +165,7 @@ go. Hazel — out of time."
 
 | # | Dur | Location / period | Hazel | Elon | Dialogue | Key visual details | Tone |
 |---|-----|-------------------|-------|------|----------|--------------------|------|
-| 1a | 7s | Schoolyard, Pretoria, 1980s, day | SOLO: walks in (forward walk §14), talk-to-lens, glances off-frame right | — | Hook lines | Dust, worn brick, distant kids playing behind her (populated §17) | Protective, ominous promise |
+| 1a | 12s | Schoolyard, Pretoria, 1980s, day | SOLO: walks in (forward walk §14), talk-to-lens, glances off-frame left mid-line | — | Full 27-word hook (~11s spoken — §9 count-the-beats) | Dust, worn brick, distant kids playing behind her (populated §17) | Protective, ominous promise |
 | 1b | 4s | Schoolyard wall | — | SOLO: boy (~12) sits alone against wall, withdrawn, book, eyes down (no visible injury — owner decision) | (silent under her last hook line) | Hard warm light, long shadow, isolation | Loneliness |
 | 2 | 8s | Boy's room, night, early 80s | V.O. only (no Hazel in frame) | SOLO: boy typing at early-80s computer | V.O. | CRT glow, BASIC-style code, posters | Escape, wonder |
 | 3a | 8s | Palo Alto office, 1995, night | Steps through clutter, picks up empty noodle cup | Musk 24, coding intently | "1995. He's twenty-four..." | Sleeping bag under desk, pizza boxes, one CRT monitor | Grind |

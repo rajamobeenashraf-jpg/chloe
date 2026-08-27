@@ -135,3 +135,5 @@ in text.
 | ELON-24 | `elon_ref_age24_1995_v2.png` | PAI image-generation-pro | v2 (documented 1995 thinning hair now obvious) — delivered, awaiting approval; v1 superseded |
 | ELON-31 | `elon_ref_age31_2002.png` | PAI image-generation-pro | v1 kept under owner go-ahead — awaiting final approval |
 | ELON-37 | `elon_ref_age37_2008.png` | PAI image-generation-pro | v1 kept under owner go-ahead — awaiting final approval |
+| SC1A-TEST | `scene1a_hazel_solo.png` | PAI image-edit-pro + 5 masters | Scene 1a solo test still — QC pass; accepted under owner delegation ("choose whatever you think", 2026-08-27). Her rendered eyeline is off-frame LEFT → boy faces frame-right in 1b: correct reverse-shot pairing; script table updated to match. |
+| SC1B-TEST | `scene1b_boy_solo.png` | PAI image-edit-pro + ELON-12 ref | Scene 1b solo test still — QC pass vs ELON-12 (face, hair, uniform); accepted under same delegation. Split staging CONFIRMED WORKING: both solo frames passed the safety filter that blocked every composite. |
