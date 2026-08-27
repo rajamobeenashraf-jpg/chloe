@@ -28,7 +28,22 @@ Generated stills live OUTSIDE git; the manifest at the bottom records each one.
   touches the world (picks up the noodle cup in Sc.3a, hand on the blueprint
   edge in Sc.4b, sits across from Elon in Sc.6) — never a planted observer.
 
-## B. YOUNG ELON — four age looks (cinematic reconstruction of a real person)
+## B. THE ELON ROLE — RECAST AS AN ORIGINAL FICTIONAL CHARACTER (owner decision 2026-08-27)
+
+**Owner decision after the Higgsfield likeness block: the real-Musk-likeness
+reference set (v1/v2 below) is RETIRED for production.** The episode keeps the
+true, documented story and the name Elon, but the role is played by an
+ORIGINAL FICTIONAL character design (the standard biopic approach: real story,
+cast actor — not the real man's face). Rationale: (1) owner's legal comfort —
+no real-person likeness generation; (2) engine deepfake filters block
+recognizable adult-Musk references in video, a fictional face passes exactly
+like Hazel does; (3) platform synthetic-media policy safety. New "ACTOR" refs:
+one age-31 anchor generated from the design spec, then ages 12/24/37 derived
+from that anchor as reference so it reads as one man aging. The retired
+likeness stills remain in the manifest for the record only — never production
+references again.
+
+### Retired: the original likeness-based age looks (record only)
 
 General rules:
 - This is a respectful docudrama reconstruction of documented periods of Elon
