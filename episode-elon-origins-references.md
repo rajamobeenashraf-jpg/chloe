@@ -145,6 +145,8 @@ rules gate still runs in --check-only mode on every prompt before submission.**
 
 | 1b boy reverse shot (4s) | `clip1b_boy_4k.mp4` | Higgsfield seedance_2_0 `1dcff543-bf6b-4fc3-8f6d-0c39c8a90672` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_201607_1dcff543-bf6b-4fc3-8f6d-0c39c8a90672.mp4 | APPROVED by owner 2026-08-27 |
 
+| 2 VIC-20 night (12s, ambient-only for edit VO) | `clip2_vic20_4k.mp4` | Higgsfield seedance_2_0 `d17ed48e-b765-44f1-a691-9a9cd6412cc1` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_203830_d17ed48e-b765-44f1-a691-9a9cd6412cc1.mp4 | delivered 2026-08-27 — QC: 12.04s 2160×3840 10-bit, freezes 0, matches ELON-12 + bedroom plate (VIC-20, cassette drive, code grows on CRT) — awaiting owner decision |
+
 ## E. Generated stills manifest (updated as stills are produced)
 
 **SET APPROVED BY OWNER 2026-08-27 ("ok" on the delivered v2 round).** All six
