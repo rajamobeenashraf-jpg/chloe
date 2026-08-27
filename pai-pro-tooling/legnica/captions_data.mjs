@@ -186,66 +186,6 @@ export const CLIPS = [
         "start": 4.8,
         "end": 5.2,
         "text": "RETREATING?"
-      },
-      {
-        "start": 6.66,
-        "end": 6.96,
-        "text": "NO."
-      },
-      {
-        "start": 7.7,
-        "end": 7.92,
-        "text": "WATCH."
-      },
-      {
-        "start": 8.48,
-        "end": 8.7,
-        "text": "THIS IS"
-      },
-      {
-        "start": 8.7,
-        "end": 8.98,
-        "text": "WHAT THEY"
-      },
-      {
-        "start": 8.98,
-        "end": 9.18,
-        "text": "DO —"
-      },
-      {
-        "start": 9.56,
-        "end": 9.98,
-        "text": "THEY LURE"
-      },
-      {
-        "start": 9.98,
-        "end": 10.34,
-        "text": "YOU INTO"
-      },
-      {
-        "start": 10.34,
-        "end": 10.92,
-        "text": "CHASING THEM,"
-      },
-      {
-        "start": 10.92,
-        "end": 11.14,
-        "text": "THEN THEY"
-      },
-      {
-        "start": 11.14,
-        "end": 11.5,
-        "text": "TURN BACK"
-      },
-      {
-        "start": 11.5,
-        "end": 11.86,
-        "text": "AND FINISH"
-      },
-      {
-        "start": 11.86,
-        "end": 12.02,
-        "text": "YOU."
       }
     ]
   },
@@ -277,7 +217,7 @@ export const CLIPS = [
   },
   {
     "id": "clip5",
-    "duration": 11.041667,
+    "duration": 8.041667,
     "captions": [
       {
         "start": 4.56,

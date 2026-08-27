@@ -120,7 +120,18 @@ const CLICK_GUARD = 0.02; // imperceptible, only prevents a waveform-discontinui
 // a head-trim to clip10 (removing its first 0.58333s, i.e. up to
 // absolute 83.0s in the old timeline) -- both land well clear of any
 // dialogue/caption timing in either clip.
+// Owner decision, 2026-08-27: after "Wait— they're retreating?" (ends
+// 5.2s), cut the rest of clip3 -- drops the "No. Watch. This is what
+// they do..." trap explanation entirely (confirmed with the owner this
+// removes content clip4/clip5 narratively lean on; they chose to cut
+// anyway). Frame-checked 5.2-6.7s: she stays turned away from camera
+// the whole window (no return-to-lens beat exists to cut on), so picked
+// the earliest natural post-line reaction frame instead of holding on
+// a meaningless back-of-head shot -- landed on 5.333333s (frame 128 of
+// 24fps), a clear 3/4-profile reaction beat, mouth settled, still
+// facing enough toward the lens to read naturally on its own.
 const CLIP_TRIM = {
+  clip3: 5.333333,
   clip9: 5.625,
 };
 
@@ -166,7 +177,7 @@ async function qcOneClip(clip, { isFirst, isLast }) {
   const headTrim = CLIP_HEAD_TRIM[clip.id] || 0;
   const availableDuration = videoDuration - headTrim;
   const outputDuration = CLIP_TRIM[clip.id] ? Math.min(CLIP_TRIM[clip.id], availableDuration) : availableDuration;
-  const trimNote = CLIP_TRIM[clip.id] ? ` (trimmed from ${videoDuration}s to drop the frozen tail, §30)` : "";
+  const trimNote = CLIP_TRIM[clip.id] ? ` (trimmed from ${videoDuration}s to ${outputDuration}s per owner request)` : "";
   const headTrimNote = headTrim ? ` (head-trimmed ${headTrim}s per owner request, dragging static hold)` : "";
   // -ss before -i re-bases the stream's own PTS to 0 at the seek point, so
   // any caption times burned via the ass filter must shift by the same
