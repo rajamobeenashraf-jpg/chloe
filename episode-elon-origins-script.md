@@ -90,7 +90,9 @@ documented events" — plus sources in the pinned comment.
 
 **SCENE 1 — HOOK**
 VISUAL: Dusty 1980s schoolyard, Pretoria. Hazel arrives, sees a small boy sitting
-alone against a wall — bruised face, a book in his hands.
+alone against a wall, withdrawn, a book in his hands. (OWNER DECISION 2026-08-27:
+no visible bruise/injury on screen — engine safety filters block injured-child
+imagery; Hazel's dialogue carries the hospital fact.)
 HAZEL (to lens): "See that boy? He just got out of hospital. Kids at school beat
 him that badly. One day... he'll be the richest man on Earth."
 
@@ -156,7 +158,7 @@ go. Hazel — out of time."
 
 | # | Dur | Location / period | Hazel | Elon | Dialogue | Key visual details | Tone |
 |---|-----|-------------------|-------|------|----------|--------------------|------|
-| 1 | 10s | Schoolyard, Pretoria, 1980s, day | Walks in (forward walk §14), talk-to-lens, glances toward boy | Boy (~12): sits alone against wall, bruised, book | Hook lines | Dust, worn brick, distant kids playing (populated §17) | Protective, ominous promise |
+| 1 | 10s | Schoolyard, Pretoria, 1980s, day | Walks in (forward walk §14), talk-to-lens, glances toward boy | Boy (~12): sits alone against wall, withdrawn, book (no visible injury — owner decision) | Hook lines | Dust, worn brick, distant kids playing (populated §17) | Protective, ominous promise |
 | 2 | 8s | Boy's room, night, early 80s | Leans in doorway watching | Boy typing at early-80s computer | V.O. | CRT glow, BASIC-style code, posters | Escape, wonder |
 | 3a | 8s | Palo Alto office, 1995, night | Steps through clutter, picks up empty noodle cup | Musk 24, coding intently | "1995. He's twenty-four..." | Sleeping bag under desk, pizza boxes, one CRT monitor | Grind |
 | 3b | 8s | Same office | Sits on desk edge, asks | Looks up briefly, answers, back to screen | Q&A exchange | Screen light on both faces | Matter-of-fact conviction |

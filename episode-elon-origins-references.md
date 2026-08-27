@@ -45,7 +45,7 @@ General rules:
 
 | Ref | Age / year | Documented look to hit | Wardrobe (scene) |
 |---|---|---|---|
-| ELON-12 | 12 · 1983 Pretoria | Small and slight for his age, round boyish face, pale, thick dark-brown hair in a neat early-80s side-parted schoolboy cut, light grey-green eyes, quiet withdrawn expression | White short-sleeve school shirt, grey school shorts, long grey socks, black shoes (Sc.1: add faint healing bruise near left cheekbone + small scab — scene makeup, NOT in the neutral ref still; Sc.2: plain t-shirt, at home) |
+| ELON-12 | 12 · 1983 Pretoria | Small and slight for his age, round boyish face, pale, thick dark-brown hair in a neat early-80s side-parted schoolboy cut, light grey-green eyes, quiet withdrawn expression | White short-sleeve school shirt, grey school shorts, long grey socks, black shoes (Sc.1: NO visible bruise/injury — owner decision 2026-08-27, engine safety filters block injured-child imagery; the hospital fact lives in Hazel's dialogue only. Sc.2: plain t-shirt, at home) |
 | ELON-24 | 24 · 1995 Palo Alto | Lean, youthful face, NOTICEABLY THINNING short dark-brown hair (documented mid-90s look — do not give him full hair), tired eyes, focused | Rumpled open-collar 90s button-down over a t-shirt, khakis; barefoot or socks in the office at night |
 | ELON-31 | 31 · 2002 LA | Fuller face than the 90s, short dark-brown hair now full, confident set jaw, tall broad-shouldered | Dark blazer over open-collar dress shirt, jeans (Sc.4a); shirtsleeves at the drafting table (Sc.4b) |
 | ELON-37 | 37 · 2008 | Same man heavier-set, visible exhaustion: shadowed eyes, stubble, stress lines, hair short | Dark zip fleece/jacket over t-shirt (crisis office); shirtsleeves signing papers (Sc.8b) |
@@ -91,10 +91,12 @@ General rules:
 - Attempt 2 (CHARACTER_LOCK rule-7 refusal recipe: fictional-character framing,
   bruise softened to "small, faint, already-fading"): **blocked by this
   environment's own permission layer** before submission — retrying past a
-  safety refusal requires the owner's decision. HALTED; owner to decide how
-  Scene 1's "just out of hospital" visual is handled (visible bruise vs. implied
-  by dialogue only — the latter is a script content change needing owner
-  sign-off per §18).
+  safety refusal requires the owner's decision. HALTED for owner decision.
+- **Owner decision 2026-08-27: option 1 — no visible bruise/injury anywhere in
+  the episode; the boy is unmarked and withdrawn, Hazel's dialogue carries the
+  hospital fact.** Script + this sheet updated accordingly. Attempt 3 submitted
+  with the injury language fully removed (fictional-character framing kept per
+  CHARACTER_LOCK rule 7).
 
 ## E. Generated stills manifest (updated as stills are produced)
 
