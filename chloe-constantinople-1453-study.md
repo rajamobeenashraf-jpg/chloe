@@ -266,3 +266,38 @@ Pulled from the unmined parts of the evidence (metadata, daily stats, comment op
 12. **Burned-in brand + AI disclosure.** Handle watermark `@chloe.vs.history` pinned on-frame nearly every shot (rip/freeboot protection — TikTok/IG re-uploads carry attribution), plus a small "Ai" watermark (passive disclosure that defuses "you're deceiving us" without breaking immersion). Both near-free to adopt at the edit stage.
 13. **In-video discussion seeds, one per act.** Distinct from the pinned engagement question: at least three script lines exist mainly to start arguments/discussion — the Hungarian-engineer irony (613-like thread, 156 replies), the dirt-gesture meaning (617 + 96), and the Istanbul reveal (role-played in multiple threads). A plannable device: one line per act whose job is to be debated, not to inform.
 14. **Publish timing (weak signal, observation only):** posted 20:00 UTC (afternoon US, evening EU) on a Wednesday; consistent with her other uploads at 20:00. Not enough data to call it causal.
+
+---
+
+## 11. Language behavior study — how she speaks English (owner request, 2026-08-27)
+
+**Method:** full transcripts of SIX videos across every register — Constantinople 1453 (battle epic), Hastings 1066 (battle epic), Pompeii (doom), Aztecs 1520 (awe epic), Jurassic (deep-time solo), Tudor London "instantly regretted" (comedy, her #1 Short) — run through quantitative readability analysis plus a close qualitative read. ~30 vidIQ credits.
+
+### Measured numbers
+| Video | Words | Words/sentence | 1–2 syllable words | Flesch-Kincaid grade |
+|---|---|---|---|---|
+| Tudor (comedy) | 162 | 5.8 | 93% | **2.1** |
+| Hastings (battle) | 409 | 6.3 | 95% | **2.4** |
+| Jurassic | 416 | 6.4 | 92% | **3.0** |
+| Pompeii (doom) | 277 | 7.1 | 92% | **3.3** |
+| Constantinople (battle) | 471 | 8.0 | 89% | **4.5** |
+| Aztecs (awe) | 278 | 12.1 | 91% | **5.8** |
+
+**She speaks at a US grade 2–5 reading level. ~90–95% of every script is one- and two-syllable words.** Across all six videos there is essentially zero jargon: her only 3+ syllable words are everyday adverbs (actually, basically, apparently, honestly, genuinely) and unavoidable topic nouns (emperor, invasion, sacrifice). Her most-used content words across ~2,000 words of scripts: **this, that, okay, so, like, right now, here, just, really.**
+
+### The twelve speaking behaviors (the "Chloe voice" spec)
+1. **Point-and-name grammar.** Her #1 sentence shape is "This is X" / "That's Y" — she physically points and names. The viewer never holds an abstraction; everything said is attached to something on screen. ("This is the English army." "That's the shield wall." "That's him.")
+2. **Two openers run the whole system: "So," = explanation coming; "Okay," = something is happening now.** They function as paragraph breaks for the ear.
+3. **Present tense, always** — even for the future ("The ash is going to bury everything") and the aftermath ("Word spreads in minutes"). Past tense = documentary; present tense = broadcast.
+4. **Short declaratives, ~6–8 words, no nested clauses.** Her longest sentences are additive lists, never subordinate stacks. Fragments are everywhere and load-bearing: "Archers first, then the infantry, then the horses."
+5. **Jargon policy: name it, then gloss it in kid words within the same breath.** "cacao, which is basically money" · "mulsum — it's like warm wine mixed with honey" · "a Plinian eruption — it is shooting ash and rock 20 miles into the sky" · "the irregulars... they're basically here to exhaust the defenders." The term buys credibility; the instant gloss buys everyone else.
+6. **Numbers plain, anchored, and repeated.** "700 ships." "Up to 60,000 people come here every single day. 60,000." "bigger than London, bigger than Paris." "this kid is like 16." A number per beat, never two decimals, always compared to something the viewer knows.
+7. **Triads of concrete nouns instead of adjectives.** "running water, hot food, public baths" · "flowers, incense, drums" · "no cities, no roads, no anything." She describes worlds with three touchable things, not with "magnificent/bustling/ancient."
+8. **Repetition = emphasis.** "That is hot. That is really hot." "I'm okay. I'm okay." "It's holding... and it's still holding." "Don't move. Don't break."
+9. **Emotion vocabulary is physical and tiny:** scared, wrong, dead, tired, hot, insane, wild. "That's insane" is her superlative. Never "devastating," "catastrophic," "unbelievable."
+10. **She asks the viewer's question out loud, then answers it.** "So here's why this is even happening..." · "Here's the thing that absolutely gets me..." — the explainer beats are framed as gossip answering a question you were about to ask.
+11. **Agents, never passive voice.** "William says Harold swore an oath and broke it." Every action has a named doer — this alone removes most of what makes history writing hard to follow.
+12. **REGISTER SPLIT — the important nuance:** the comedy episodes DO use Gen-Z slang and irony ("That is peak," "Babe Sheen could never," "It's giving toxic workplace energy," "beef") — lines a non-native or older viewer can miss. **The epic/doom episodes have ZERO slang, zero wordplay, zero sarcasm.** Constantinople and Hastings are 100% plain: every laugh or gasp comes from the situation, not from language. The owner's read is exactly right for the epic register — and it's a deliberate register choice on her side, not her only mode.
+
+### Binding conclusion for our scripts (epic register)
+Write every Hazel line to pass: FK grade ≤5 · ≥90% words of 1–2 syllables · sentences ≤ ~10 words or an additive list · present tense · point-and-name deixis · one plain anchored number per info beat, repeated if it matters · any specialist term glossed in the same breath ("which is basically...") · zero slang, zero idiom, zero wordplay in epics · emotion in body-words · agents named, no passive voice. This is now the measurable spec for "sounds like her."
