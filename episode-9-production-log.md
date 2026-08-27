@@ -2020,3 +2020,32 @@ existed and nothing then went back to add it. Rebuilt against the skill's
   `72dcb0a2-4e89-422e-b91a-2ce929cc0dd6`) — sent to owner for approval.
 
 ## STATUS: delivered — thumbnail v2 (visual hook + locked hook-text banner + year stamp) sent to owner for approval
+
+## Round 22 — thumbnail v3: owner-specified exact source frame (2026-08-27)
+
+Owner this time named the source directly: the frame at exactly t=58.000s of
+the delivered final cut, with an instruction to strip any caption burned in
+at that instant first.
+
+- **Located the frame**: probed each remaining clip's current `qc/*_final.mp4`
+  duration in final-cut order (clip01_vista 7.750, clip02_costume 8.042,
+  clip03_food 9.042, clip04_jobjoin 11.042, clip06_empathy 7.500,
+  clip07_setpiece 13.042, clip08a_prostrate 10.042, ...) and accumulated:
+  t=58s lands 1.583s into `clip08a_prostrate` (cumulative start 56.417s) —
+  the mass-prostration/royal-approach scene (crowd kneeling toward the
+  pyramids, boy carrying a basket, Hazel's selfie arm extended toward camera).
+- **Caption check**: pulled the frame with output-side seeking (`-i` before
+  `-ss`) for frame accuracy — confirmed byte-identical to an input-seek pull
+  at the same timestamp, so no seek-precision doubt. Visually confirmed no
+  caption chunk is on screen at t=58.000s exactly (a gap between chunks) —
+  nothing needed removing, but pulled from `giza_final_cut.mp4` (the actual
+  graded/delivered master) rather than a raw asset specifically so the
+  color grade matches what's really in the video either way.
+- Applied the same treatment as v2 (unchanged, still the owner's locked
+  wording): white banner, black bold, "POV: They Leveled the Pyramid" /
+  "Using Only the Stars", amber "2560 BC" year stamp top-right.
+- Higgsfield `upscale_image` 4k (2160x3840, media_id
+  `ea52655d-10be-4236-882b-3919c2a1384c`, job
+  `eed0e0a1-e86b-41f2-b84d-75e36fae55a4`) — sent to owner.
+
+## STATUS: delivered — thumbnail v3 (owner-specified t=58s frame + locked hook-text banner + year stamp) sent to owner
