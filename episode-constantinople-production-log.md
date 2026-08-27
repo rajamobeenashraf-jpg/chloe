@@ -115,3 +115,9 @@ Owner order: regenerate clip 1 using ONLY the locked canonical character sheets 
 - Test #2: clip 1 walls, refs = owner-designated fullbody_v2 set (2 stills + 2 face crops)
 - Test #3: clip 1 walls, refs = locked character sheets only
 Owner's verdict picks the reference recipe for the remaining clips.
+
+### PRODUCTION RUN — recipe locked, clip 1 APPROVED, clip 2 delivered (2026-08-27)
+- **Owner verdicts:** Test #3 (character-sheet refs) REJECTED. Test #2 recipe LOCKED as the episode's standing method: refs = the owner-designated four (fullbody_v2 A `d35e74b0`, fullbody_v2 B `1e3dd43d`, face crop A `edbf407e`, face crop B `0665be5a`), Seedance 2.5 omni_reference, 9:16, 1080p, audio, Test-#2 prompt structure. **Test #2's video IS the official episode CLIP 1 — owner-approved, enters the edit** (`a62b4763`, hf_20260827_230011).
+- **CLIP 2** generated with the locked recipe: job `d9ce367c-511c-48de-b9b0-2db737b1235f` → https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_231809_d9ce367c-511c-48de-b9b0-2db737b1235f.mp4 (12.06s — sized per §9 word-count, script table said 10s; runtime ceiling re-check due at edit). freezedetect CLEAN. Sent to owner; AWAITING APPROVAL before clip 3. Hood-down line strengthened after the hood-up deviation in the first boat test.
+
+**Approved-clip tally: clip 1 ✔ (a62b4763) · clips 2–16 pending.**
