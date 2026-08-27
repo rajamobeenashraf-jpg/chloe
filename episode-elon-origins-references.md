@@ -76,10 +76,10 @@ reference so the family resemblance holds. Anchor CDN media_id (Higgsfield):
 
 | Ref | File | Status |
 |---|---|---|
-| ACTOR-31 (anchor) | `actor_ref_age31.png` | delivered 2026-08-27 — awaiting owner approval |
-| ACTOR-12 | `actor_ref_age12.png` | delivered — awaiting approval (QC note: reads ~13-15, taller than "small and slight") |
-| ACTOR-24 | `actor_ref_age24.png` | delivered — awaiting approval (QC note: reads polished/late-20s; unkempt-overworked feel only partial) |
-| ACTOR-37 | `actor_ref_age37.png` | delivered — awaiting approval (QC: strong — same man, visibly worn) |
+| ACTOR-31 (anchor) | `actor_ref_age31.png` | **APPROVED by owner 2026-08-27** — Higgsfield media_id `adf5d752-474b-4e97-a728-cd6181bf8e48` |
+| ACTOR-12 | `actor_ref_age12.png` | **APPROVED** — media_id `e3484fc2-78d2-4e39-a9e3-350820b781a2` |
+| ACTOR-24 | `actor_ref_age24.png` | **APPROVED** — media_id `5b04c51e-d8f6-48b3-bb0f-be0379bac404` |
+| ACTOR-37 | `actor_ref_age37.png` | **APPROVED** |
 
 On approval: clips 1b and 2 (shot with the retired likeness boy) need owner-
 authorized reshoots with ACTOR-12; then scene 3a reshoots on Higgsfield with
@@ -163,8 +163,11 @@ still comes ONLY from her 5 canonical masters (plates never carry characters).
 
 ## E2. CLIP MANIFEST (job IDs + URLs — the durable record; media dies with the container)
 
-**ENGINE DECISION (owner, 2026-08-27): this episode shoots on HIGGSFIELD
-seedance_2_0, mode=std, resolution=4k, 9:16, generate_audio=true — supersedes
+**ENGINE DECISION UPDATE (owner, 2026-08-27, second directive): reshoots and
+all clips from the recast onward shoot on HIGGSFIELD seedance_2_5,
+mode=omni_reference, resolution=1080p, bitrate_mode=high, 9:16,
+generate_audio=true. Clip 1a keeps its approved seedance_2_0 4K take.
+(Original decision, superseded for new clips: seedance_2_0, mode=std, resolution=4k, 9:16, generate_audio=true — supersedes
 the Episode-1 "PAI Pro primary" decision FOR THIS EPISODE (head-to-head on clip
 1a: owner picked the Higgsfield 4K take). Hazel identity refs = her 5 canonical
 masters as Higgsfield media_ids (ab6ed7ea / 65efdd42 / c12f057a / e1be7c64 /
