@@ -86,9 +86,9 @@ General rules:
 
 | ID | File (in `projects/elon/assets/`) | Engine/model | Status |
 |---|---|---|---|
-| HAZEL-WARDROBE-FB | `hazel_traveler_fullbody.png` | PAI image-edit-pro + 5 refs | pending owner approval |
-| HAZEL-WARDROBE-CU | `hazel_traveler_chestup.png` | PAI image-edit-pro + 5 refs | pending owner approval |
-| ELON-12 | `elon_ref_age12_1983.png` | PAI image-generation-pro | pending owner approval |
-| ELON-24 | `elon_ref_age24_1995.png` | PAI image-generation-pro | pending owner approval |
-| ELON-31 | `elon_ref_age31_2002.png` | PAI image-generation-pro | pending owner approval |
-| ELON-37 | `elon_ref_age37_2008.png` | PAI image-generation-pro | pending owner approval |
+| HAZEL-WARDROBE-FB | `hazel_traveler_fullbody.png` | PAI image-edit-pro + 5 refs | generated 2026-08-27, delivered in chat — awaiting owner decision |
+| HAZEL-WARDROBE-CU | `hazel_traveler_chestup.png` | PAI image-edit-pro + 5 refs | generated 2026-08-27, delivered in chat — awaiting owner decision |
+| ELON-12 | `elon_ref_age12_1983.png` | PAI image-generation-pro | generated 2026-08-27, delivered in chat — awaiting owner decision |
+| ELON-24 | `elon_ref_age24_1995.png` | PAI image-generation-pro | generated 2026-08-27, delivered in chat — awaiting owner decision |
+| ELON-31 | `elon_ref_age31_2002.png` | PAI image-generation-pro | generated 2026-08-27, delivered in chat — awaiting owner decision |
+| ELON-37 | `elon_ref_age37_2008.png` | PAI image-generation-pro | generated 2026-08-27, delivered in chat — awaiting owner decision |
