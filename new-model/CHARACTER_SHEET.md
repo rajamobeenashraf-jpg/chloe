@@ -170,9 +170,15 @@ at 100% zoom): dramatic hair changes are where drift hides.
 
 - Training set location: [ ]
 - Golden refs location: [ ]
-- fal.ai LoRA v1: base Qwen-Image (fal-ai/qwen-image-trainer), trigger word `3ll3`,
-  steps 1500, lr 5e-4, trained 2026-08-27, request `01a04485-3508-7f90-9349-476582c07eec`,
-  weights: https://v3b.fal.media/files/b/0aa80e18/cbwJNAgquTP7FNw5DXNSt_adapter.safetensors
+- fal.ai LoRA v1 (SUPERSEDED — undertrained, failed identity QC): 1500 steps,
+  request `01a04485-3508-7f90-9349-476582c07eec`. Do not use.
+- **fal.ai LoRA v2 (CURRENT)**: base Qwen-Image (fal-ai/qwen-image-trainer), trigger
+  word `3ll3`, steps 4000, lr 5e-4, trained 2026-08-27, request
+  `01a044b6-8ade-7b40-96e6-d4bb3e91614e`, weights:
+  https://v3b.fal.media/files/b/0aa81066/l7KI-05lU_HyIJgWRo6LX_adapter.safetensors
+  Inference: fal-ai/qwen-image, loras=[{path, scale 1.0–1.2}]. Passed Claude identity
+  QC 2026-08-27 (front neutral, smile, profile, new-scene transfer) — owner + Elle
+  approval pending.
 - Identity test render vs golden refs: [ pass/fail, date ]
 - First approved makeup/hair test set: [ ]
 - First approved video test: [ ]
