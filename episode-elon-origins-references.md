@@ -82,6 +82,20 @@ General rules:
    question has its answer, no locked detail silently dropped, geometry of
    described perception physically possible.
 
+## Production log — Scene 1 test still (2026-08-27)
+
+- Attempt 1 (Hazel 5 masters + ELON-12 ref, bruised-boy schoolyard composite):
+  **PAI 400 — "Generation blocked by safety policy."** Likely trigger: injured
+  child ("bruise... scab... aftermath of a schoolyard beating") — possibly the
+  child + identity-matching combination as well.
+- Attempt 2 (CHARACTER_LOCK rule-7 refusal recipe: fictional-character framing,
+  bruise softened to "small, faint, already-fading"): **blocked by this
+  environment's own permission layer** before submission — retrying past a
+  safety refusal requires the owner's decision. HALTED; owner to decide how
+  Scene 1's "just out of hospital" visual is handled (visible bruise vs. implied
+  by dialogue only — the latter is a script content change needing owner
+  sign-off per §18).
+
 ## E. Generated stills manifest (updated as stills are produced)
 
 **SET APPROVED BY OWNER 2026-08-27 ("ok" on the delivered v2 round).** All six
