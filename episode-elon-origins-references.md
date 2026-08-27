@@ -73,13 +73,13 @@ section C; prompts in `projects/elon/prompts/env/`.
 
 | ID | File | Covers scenes | Status |
 |---|---|---|---|
-| ENV-1983-SCHOOLYARD | `env_1983_schoolyard.png` | 1a, 1b, 9b | generated 2026-08-27 — awaiting owner |
-| ENV-1983-BEDROOM | `env_1983_bedroom.png` | 2 | generated 2026-08-27 — awaiting owner |
-| ENV-1995-OFFICE | `env_1995_office.png` | 3a, 3b | generated 2026-08-27 — awaiting owner |
-| ENV-2002-BLUEPRINT | `env_2002_blueprint.png` | 4b | generated 2026-08-27 — awaiting owner |
-| ENV-2008-CRISIS | `env_2008_crisis.png` | 5, 6 | generated 2026-08-27 — awaiting owner |
-| ENV-2008-PAD | `env_2008_pad.png` | 7 (Falcon 1 / Omelek hero) | generated 2026-08-27 — awaiting owner |
-| ENV-2008-ORBIT | `env_2008_orbit.png` | 8a | generated 2026-08-27 — awaiting owner |
+| ENV-1983-SCHOOLYARD | `env_1983_schoolyard.png` | 1a, 1b, 9b | QC pass — delivered 2026-08-27, awaiting owner approval |
+| ENV-1983-BEDROOM | `env_1983_bedroom.png` | 2 | QC pass — delivered 2026-08-27, awaiting owner approval |
+| ENV-1995-OFFICE | `env_1995_office.png` | 3a, 3b | QC pass — delivered 2026-08-27, awaiting owner approval |
+| ENV-2002-BLUEPRINT | `env_2002_blueprint.png` | 4b | QC pass — delivered 2026-08-27, awaiting owner approval |
+| ENV-2008-CRISIS | `env_2008_crisis.png` | 5, 6 | QC pass — delivered 2026-08-27, awaiting owner approval |
+| ENV-2008-PAD | `env_2008_pad.png` | 7 (Falcon 1 / Omelek hero) | QC pass — delivered 2026-08-27, awaiting owner approval |
+| ENV-2008-ORBIT | `env_2008_orbit.png` | 8a | QC pass — delivered 2026-08-27, awaiting owner approval |
 
 Not plated (generated at clip stage): Scene 4a tower exit, 8b Christmas office,
 9a montage micro-beats (booster landing / Tesla street / astronauts).
