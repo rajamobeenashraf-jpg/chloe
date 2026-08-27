@@ -121,3 +121,6 @@ Owner's verdict picks the reference recipe for the remaining clips.
 - **CLIP 2** generated with the locked recipe: job `d9ce367c-511c-48de-b9b0-2db737b1235f` → https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_231809_d9ce367c-511c-48de-b9b0-2db737b1235f.mp4 (12.06s — sized per §9 word-count, script table said 10s; runtime ceiling re-check due at edit). freezedetect CLEAN. Sent to owner; AWAITING APPROVAL before clip 3. Hood-down line strengthened after the hood-up deviation in the first boat test.
 
 **Approved-clip tally: clip 1 ✔ (a62b4763) · clips 2–16 pending.**
+
+- **CLIP 2 APPROVED by owner** (`d9ce367c`). Tally: clips 1-2 ✔.
+- **CLIP 3** (aerial insert, t2v mode — no character in frame, VO narration generated in-clip): job `49b0b0bf-e91b-41d4-a449-c61263e8eca4` → https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_232534_49b0b0bf-e91b-41d4-a449-c61263e8eca4.mp4 (6.08s). freezedetect CLEAN. Sent to owner; AWAITING APPROVAL. NOTE for the edit: per-clip generated VOICES may vary between clips — voice conformity check happens when assembling (ElevenLabs voice conversion is the fallback unifier if the owner hears drift).
