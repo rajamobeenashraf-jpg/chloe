@@ -335,3 +335,13 @@ Owner reported a ~1s freeze/"jammed screen" in the assembled Legnica cut. Ran ff
 - **Run it on the RAW source render, before any edit-stage processing**, so a finding is unambiguously attributable to the generation itself rather than something introduced by captioning/stitching.
 - **A confirmed freeze is a content defect requiring the same owner-approval path as any other confirmed clip defect** — report it, do not regenerate without explicit go-ahead; note that trimming a frozen tail (rather than regenerating) shortens the clip and may cut into an intended beat, so that tradeoff belongs to the owner too.
 - Applies to every future episode's clip QC process from the first clip generated, not just after a freeze is reported.
+
+## 27. Every non-Hazel character in a script gets a reference sheet generated before any of their clips are shot (owner mandate, 2026-08-27 — PERMANENT, same weight as §12–§15, §17–§26)
+
+Owner's instruction, verbatim intent: whoever appears in a script apart from the main model (Hazel) requires their reference sheet generated FIRST, for consistent results across clips — locked as a permanent rule for this episode, every future episode, and every future chat, not scoped to one session.
+
+- **Before generating any clip that features a character other than Hazel, generate that character's reference sheet first.** This applies per-character, per-episode the first time they appear — once a character has a locked reference sheet, reuse it across their subsequent clips/episodes rather than regenerating.
+- **Use Higgsfield's character-sheet workflow** (`get_workflow_instructions` with `{ workflow: "character-sheet" }`) to produce each sheet, matching how Hazel's own reference set was built.
+- **Read the script first to identify every named/recurring non-Hazel character before any generation starts** — background/unnamed extras with no recurring presence don't require a sheet; named characters who appear across multiple shots or return in later episodes do.
+- This does not alter `CHARACTER_LOCK.md`'s rule for Hazel herself (face never regenerated from text; the original 20 reference images remain her sole canonical refs) — it establishes the equivalent discipline for every OTHER character the scripts introduce.
+- Applies from this episode forward, in every future episode and every future chat — not a one-time step for this session only.
