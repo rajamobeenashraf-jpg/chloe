@@ -346,3 +346,24 @@ Source: `chloe-constantinople-1453-study.md` (this branch) — the full reverse-
 3. **§12 active-participant stays permanent channel-wide; ONE episode-scoped exception.** The owner declined to adopt her pure-witness posture as a general rule (it remains our differentiator, backed by her own audience's comments). Exception granted for the Constantinople-topic episode only: it may run the pure-witness war-correspondent posture end-to-end. Every other episode keeps the §12 floor unchanged.
 
 Standing collision note carried forward from `episode-ideas-backlog.md`: she posted Constantinople on 2026-08-20 — same-topic production remains a direct-collision risk until the window cools or the treatment is sharply differentiated (the study's §8 lists the differentiation path: ships-overland set-piece, Hagia Sophia interior, named defender planted in act one, memorial-grade pinned comment).
+
+## 28. The twelve-point plain-English voice — PERMANENT, every script, every episode (owner mandate 2026-08-27, same weight as §12–§15, §17–§26)
+
+Owner's instruction, verbatim intent: the twelve speaking behaviors reverse-engineered from the reference channel (`chloe-constantinople-1453-study.md` §11 — measured across six transcripts: FK grade 2.1–5.8, ~90–95% one-to-two-syllable words, 6–8 words/sentence) are ADOPTED for the Constantinople episode and ALL future video generations. Every line of dialogue — Hazel's and every NPC's — is written to this spec:
+
+1. **Point-and-name grammar** — "This is X" / "That's Y"; every statement attached to something on screen; no abstractions.
+2. **Two openers**: "So," = explanation coming · "Okay," = something happening now.
+3. **Present tense, always** — even futures and aftermath ("Word spreads in minutes").
+4. **Short declaratives** (~6–8 words, ≤10 avg), no nested clauses; fragments are load-bearing.
+5. **Jargon policy: name it, then gloss it in kid words in the same breath** ("cacao, which is basically money").
+6. **Numbers plain, anchored to something known, repeated when they matter** ("60,000 people. 60,000.").
+7. **Triads of concrete nouns instead of adjectives** ("running water, hot food, public baths").
+8. **Repetition = emphasis** ("That is hot. That is really hot.").
+9. **Emotion vocabulary physical and tiny** (scared, wrong, dead, tired, insane) — never "devastating/catastrophic".
+10. **Ask the viewer's question out loud, then answer it** ("So here's why this is even happening...").
+11. **Named agents, no passive voice** ("William says Harold swore an oath and broke it").
+12. **Register rule**: epic/doom episodes = ZERO slang, zero idiom, zero irony/wordplay — all humor and horror situational. Comedy-register episodes may use light current slang the way the reference channel does, but only where the joke still lands without it, and every slang line is flagged to the owner in the script.
+
+**Measurable gate (mandatory, script stage — part of §21 pass one):** run `tools/voice-check/voice_check.py <dialogue.txt> --register epic|comedy` on the episode's assembled dialogue BEFORE any generation. Hard thresholds: FK grade ≤5.0 · ≥90% one-to-two-syllable words · ≤10 words/sentence average; the tool also lists every 3+ syllable word (each must be a proper noun, a same-breath-glossed era term, or rewritten) and possible passives for the manual read. A metrics PASS is necessary, not sufficient — points 1–3, 5, 10–12 are confirmed in the §21 pass-two manual read. Word budget: ~170 spoken words per minute of runtime (her measured epic rate).
+
+First application: the Constantinople 1453 script v1 measures FK 2.2 · 93.8% short words · 5.0 words/sentence — PASS.
