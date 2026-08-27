@@ -85,3 +85,16 @@ Standing lesson for every future full-body/wide generation (all episodes): ALWAY
 
 **PERMANENT ENGINE RULE for this project's stills (owner-driven, confirmed by results): character stills = Higgsfield Soul with SHORT prompts (identity from training); NBP = fallback for cases Soul can't do. Note for the pick: bags crept back into fb3/fb4 and the cloak rendered full-length in all four — flag to owner with the choice.**
 Awaiting owner pick of full-body (1-4).
+
+### Full-body round 9 (2026-08-27) — owner redirected back to NBP with the drift issue FIXED
+Root-cause fixes applied (all three validated by result): (1) reference set = SINGLE-VIEW originals only — front portrait, 3/4 L, 3/4 R, both full-body masters, 3 movie frames; the 4-panel character sheets are EXCLUDED from NBP refs (grid refs dilute the face and prime multi-panel output); (2) realism language reverted to the exact finish wording of the owner-approved portrait (the amped "raw film-set" wording was pulling identity off the refs); (3) face-fidelity-at-distance clause + short-cloak + no-bag/no-pouch lines enforced.
+
+| Job ID | Result URL | QC |
+|---|---|---|
+| `e55b0f9a` (fix var 4) | .../hf_20260827_224429_e55b0f9a-c849-44a3-b2ca-83dd5ab498b8.png | **PASS — recommended.** Identity holds at zoom; full costume compliance: SHORT cloak, no bag, flat closed shoes, cream hem; candid mid-step, natural backlight, film grain |
+| `6d6991db` (fix var 1) | .../hf_20260827_224429_6d6991db-8703-450f-b938-e1e0b0e21d47.png | Identity PASS at zoom; wider environment framing |
+| `b2a1c631` (fix var 2) | .../hf_20260827_224429_b2a1c631-aaaf-47c5-ba29-bf88d11f16e0.png | Identity PASS at zoom; freckles fainter |
+| `206a722f` (fix var 3) | .../hf_20260827_224429_206a722f-b409-4cb4-b0c6-099052e58f0c.png | Identity PASS at zoom; golden backlight |
+
+**STANDING NBP RECIPE (this project, all future NBP still generations): single-view refs only (never the grid sheets), approved-portrait finish wording (never amped "raw realism" language), face-at-distance clause on any shot where her face is small, explicit short-cloak/no-bag lines, count=4 with face-crop QC before delivery.**
+Awaiting owner pick (1-4) → wardrobe locked end-to-end → Seedance test clip next.
