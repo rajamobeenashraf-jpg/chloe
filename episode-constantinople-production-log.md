@@ -241,7 +241,17 @@ Reference image (owner-approved, Option A): job `9ddd4a2c-f604-4002-b187-92d01e9
   - Camera: matches the brief exactly — Hazel stays visibly in frame the entire shot (three-quarter/side, never just a rear-view), starts watching the procession, turns fully into the lens partway through and stays there for the rest of the dialogue, one continuous take, no cuts.
   - Crowd: calm and composed in every single sampled frame — heads bowed, hands folded, no fear, no trembling, no reaction as the procession passes. Matches Chloe's reference approach exactly.
   - Hard negatives: zero soldier/floor/dagger/destruction content anywhere in the clip — confirmed clean.
-  - Sent to owner as CLIP 14 (full rewrite, replaces old 14a/14b). AWAITING OWNER APPROVAL.
+  - Sent to owner as CLIP 14 (full rewrite, replaces old 14a/14b).
+
+**CLIP 14 regeneration round 2 — standing crowd + door/entry sequencing (owner-directed, 2026-08-28):** Owner asked for two fixes to the approved rewrite: (1) crowd should stand, not kneel/sit on the ground; (2) sequencing fix — doors should open first as their own empty beat, THEN Mehmed and guards walk in through the doorway (not already inside the instant the doors open), and the crowd should lower their heads respectfully only at the moment he enters (not before). Restated full combined sequence back to owner before submitting; owner confirmed ("That's true. Continue.").
+- Submitted: job `5243859d-7f8e-479a-9098-b98787c42032` (same recipe as round 1: seedance_2_5, omni_reference, 19s, 9:16, 4 Hazel refs + Mehmed reference image + audio ref; no preset intercept this time). Same dialogue and camera plan unchanged.
+- **Result:** https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_225108_5243859d-7f8e-479a-9098-b98787c42032.mp4 (19.07s, 720x1280). freezedetect CLEAN. Frame QC at 0.5s/1.5s/2.5s/3.5s/4.5s/6s/8s/10s/12s/14s/16s/18s:
+  - Sequencing: CONFIRMED excellent — doors closed with crowd standing at 0.5s, doors open on an empty threshold at 1.5s (no one visible yet), Mehmed appears in the doorway at 2.5s, advances further at 3.5s. Exact beat order requested.
+  - Standing posture: CONFIRMED — nobody kneeling or sitting anywhere in the clip.
+  - Identity: CONFIRMED — Hazel and Mehmed both match their locked references throughout.
+  - Hard negatives: CLEAN — no soldier/floor/dagger content anywhere.
+  - Head-lowering-on-entry: INCONCLUSIVE from still-frame QC — background crowd rows stay small/edge-cropped behind Hazel's selfie framing for most of the shot; this is a motion cue a still frame can't confirm either way. Flagged honestly to owner, not claimed as confirmed.
+  - Sent to owner as CLIP 14 round 2. AWAITING OWNER APPROVAL.
 
 ### FULL EPISODE AUDIT vs. Chloe's actual footage (owner-requested, 2026-08-28)
 Owner asked for a systematic clip-by-clip comparison of clips 1-12 against Chloe's video on environment/destruction/color-grading and performance-direction granularity, verified via two additional targeted vidIQ re-watches (covering the opening walls shot, chain/harbor, and Constantine interview, plus the cannon/commander/emperor/army-enters beats already checked). Findings:
