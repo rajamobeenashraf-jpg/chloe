@@ -378,3 +378,43 @@ Every talk-to-lens clip prompt carries three direction lines, each written for T
 - **BODY:** what she is physically doing while talking — walking, turning, leaning, crouching, sitting, weight shifts. True stillness is reserved for beats where stillness IS the direction (a hide, a grief freeze) — and then it is stated as the direction, not left as a default.
 
 "Depends on situation" (owner's wording): the rule is always applied, but its content follows the scene — a quiet outro directs slow movement and long lens holds; a battle beat directs darting eyes and fragmentary lens contact. The §21 pass-two manual read checks that all three lines are present and match the scene's register. Lens-locked anchor delivery in a render is a defect (same §19 approval path as any other).
+
+## 30. Standing production engine — Seedance 2.5 via Higgsfield MCP, PAI Pro as fallback (owner mandate 2026-08-28 — PERMANENT until the owner says otherwise, same weight as §12–§15, §17–§29)
+
+Owner decision, made per-episode for Constantinople 1453 (2026-08-27) and then elevated to a standing cross-episode rule (2026-08-28): **Higgsfield Seedance 2.5 (`seedance_2_5`), 1080p, 9:16, is the default video-generation engine for every future episode/generation until the owner explicitly changes it.** PAI Pro drops from primary to fallback (used only when Seedance cannot do something PAI Pro can). This supersedes any earlier default that treated PAI Pro as the primary engine.
+
+## 31. Seedance identity/voice-consistency recipe — PERMANENT method for every character-present clip (derived from the Constantinople production, owner-approved by results)
+
+1. **Image references:** use single-view reference images only — never multi-panel character-sheet grids as `image_references` (grids dilute identity and prime multi-panel/collage output). A 4-image set (two full-body views + two face crops) is the validated standard; per-episode substitute the character's own owner-approved equivalents.
+2. **Mode:** always set `mode: "omni_reference"` whenever passing any `image_references` and/or `audio_references` — Seedance's `t2v` mode rejects reference media outright (422 error). `t2v` is fine for shots with no character on screen and no voice-reference need (e.g. a pure aerial/insert).
+3. **Voice consistency:** extract the audio track from the episode's owner-designated reference clip (the one the owner says to match), upload/confirm it as Higgsfield audio media, and pass it as an `audio_references` entry on every subsequent `generate_video` call in that episode where a character speaks — even shots with no character on screen if VO narration needs to match.
+4. **Prompt framing:** open every character-present prompt with the STRICT IDENTITY RE-RENDER framing — "the woman/man in this video MUST be the exact same person shown in the reference images; references override this text; if [description] it is WRONG" — followed by the frozen identity string from that character's lock document, verbatim, never paraphrased.
+5. **Preset intercept:** if Higgsfield returns a `preset_recommendation` notice (the prompt resembles a known preset), resubmit the identical call with `declined_preset_id` set to the returned preset id to force literal generation of the actual scripted scene.
+
+## 32. NPC continuity lock — one written physical description per recurring named character, reused verbatim (PERMANENT process rule, every episode)
+
+Any named character who appears in more than one clip gets ONE physical description, written out in full the first time they appear, and copy-pasted verbatim into every subsequent clip's prompt where they appear — never re-described or re-imagined from scratch. Write it once in the episode's production log as a dedicated "NPC lock" entry immediately after that character's first-appearance clip, and reference it by name in later entries rather than restating it. This is a project-wide method, distinct from and in addition to Hazel's own CHARACTER_LOCK.md.
+
+## 33. Real-world flags/emblems — specify the SYMBOL SHAPE explicitly, and explicitly forbid iconography crossover between sides (owner mandate 2026-08-28 — PERMANENT, same weight as §12–§15, §17–§32)
+
+Root-caused on the Constantinople episode: naming a faction's banner by name alone ("Ottoman crescent banner") is not enough — the model can render an unrelated symbol (a generic starburst was substituted for an actual crescent moon on the first two attempts) while still being "technically" the named banner. And describing an attacking group's role without an explicit exclusion let a defenders' own emblem render on the attacking side.
+
+- **Describe the actual geometric shape of any real-world flag/emblem/symbol in the prompt** — not just its name. ("A thin curved white crescent moon, like a backwards letter C, with a small five-pointed star nested inside its curve — NOT a starburst, NOT an asterisk, NOT a cross, NOT any symmetric radiating-line shape.")
+- **When two factions/sides appear in the same shot, explicitly state which iconography belongs to which side and forbid it appearing on the other** ("this attacking group must show ZERO Byzantine iconography — that cross banner belongs ONLY to the defenders").
+- Applies to any historical, national, or faction symbol in any future episode — not just Ottoman/Byzantine.
+
+## 34. Injury moments: cause must visibly connect to effect on screen (addendum to §24, owner mandate 2026-08-28 — PERMANENT)
+
+§24 already establishes that death/injury scenes should show a real, visible, non-graphic wound rather than being sanitized to zero blood. This addendum, confirmed on the Constantinople episode: **describing only the wound/blood ("he is hit," "a blood stain appears") is not enough — the model can render the wound with no visible cause, a disconnected flash/spark effect standing in for an actual weapon strike.** When an injury needs to read clearly as caused by a specific action, describe the full mechanical chain explicitly: the attacker's weapon in motion → the weapon visibly touching/entering the body at a specific point → the visible wound appearing at that exact point. Cause and effect must be unambiguous on screen, not implied by adjacency. (Separately: when the owner wants a specific injury to instead match a reference video's off-screen/implied-impact technique, that is called out explicitly per clip — it is a deliberate choice, not the default.)
+
+## 35. Re-verify a reference video's specific beat fresh before comparing our footage to it — every time, even if a related scene was studied earlier (owner mandate 2026-08-28 — PERMANENT, same weight as §12–§15, §17–§34)
+
+Confirmed necessary on the Constantinople episode twice: a prior full-episode study does not substitute for checking the exact beat in question when the owner asks for a comparison or a fix based on "what she did." Before regenerating a clip to match or differentiate from a reference video's technique, run a fresh targeted watch/analysis query on that specific scene (fighter density, timing of an action, on-screen vs. off-screen depiction, exact dialogue/timestamp) rather than relying on memory of an earlier general analysis — the specific detail being compared often was not the focus of the original study pass.
+
+## 36. Camera-movement restrictions must be written as explicit hard constraints, never assumed (owner mandate 2026-08-28 — PERMANENT, same weight as §12–§15, §17–§35)
+
+When the owner specifies a camera-behavior restriction — "no push-in," "stay wide the whole time," "keep both her and the action in frame until the end" — write it into the prompt as an explicit, repeated constraint ("DO NOT zoom or cut to a tighter close-up at any point... for the ENTIRE N seconds"), not as an implied consequence of the shot description. A generation engine will default to a more conventional shot grammar (e.g. pushing in on a speaking face) unless explicitly told not to.
+
+## 37. Restate understanding before submitting a judgment-call regeneration (refinement of the standing owner-approval-before-regeneration rule; PERMANENT)
+
+CLAUDE.md's owner-locked rule already requires explicit go-ahead before every regeneration attempt. Refinement confirmed by repeated use on the Constantinople episode: when the requested fix involves a creative or staging judgment call (not a simple, unambiguous correction), restate the specific, concrete changes back to the owner as a short checklist and get their confirmation ("is that everything, or did I miss something?") before submitting — rather than going straight from the owner's fix description to a regeneration. This catches scope gaps and misreadings before spending a generation on them.
