@@ -225,8 +225,11 @@ at the natural cut (she sits), or authorize more rolls of the oner.
   (clips 1a 4K + 9b bookend, 26s). Scene 2 sample line generated (job
   `4ed8b82d-5fb6-4dfb-a2da-fd112f055256`) and delivered — awaiting owner voice
   approval before the remaining V.O. lines are generated.
-- V.O. lines pending (on voice approval): Scene 4, Scene 5, Scene 7a+7b halves,
-  Scene 8 ("It flies." lands on 7c liftoff at the cut).
+- **Voice APPROVED by owner 2026-08-28.** All five remaining V.O. blocks
+  generated (seed_audio, element voice) and whisper-verified word-perfect:
+  Scene 4 `522846f1`, Scene 5 `f08564df`, Scene 7a `975be499`, Scene 7b
+  `2d50ec13`, Scene 8 `b9d39123` (files `vo_scene*.wav` in assets; delivered as
+  mp3s — awaiting owner V.O. set approval).
 - Then: hard-cut assembly per §16 (0.08s audio edge fades, loudnorm capped to
   frame-exact durations, ffprobe frame-count check), word-chunk captions via
   the troy tooling (measured faster-whisper timestamps), Gemini eyes QC passes
