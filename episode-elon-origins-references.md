@@ -228,13 +228,41 @@ at the natural cut (she sits), or authorize more rolls of the oner.
 - **Voice APPROVED by owner 2026-08-28.** All five remaining V.O. blocks
   generated (seed_audio, element voice) and whisper-verified word-perfect:
   Scene 4 `522846f1`, Scene 5 `f08564df`, Scene 7a `975be499`, Scene 7b
-  `2d50ec13`, Scene 8 `b9d39123` (files `vo_scene*.wav` in assets; delivered as
-  mp3s — awaiting owner V.O. set approval).
-- Then: hard-cut assembly per §16 (0.08s audio edge fades, loudnorm capped to
-  frame-exact durations, ffprobe frame-count check), word-chunk captions via
-  the troy tooling (measured faster-whisper timestamps), Gemini eyes QC passes
-  (clip set → assembled cut → captions mode), Higgsfield virality_predictor,
-  owner watch-through.
+  `2d50ec13`, Scene 8 `b9d39123` (files `vo_scene*.wav` in assets).
+  **V.O. set APPROVED by owner 2026-08-28 ("approved. Continue.").**
+
+### Assembly record (first full cut, 2026-08-28)
+
+- **Tooling (committed in `pai-pro-tooling/elon/`):** `assemble.py` builds 18
+  uniform intermediates per §16 (scale 1080x1920 lanczos, fps=24, h264 CRF16,
+  loudnorm I=-16:TP=-1.5:LRA=11, 0.08s audio-only edge fades, `-t` capped to
+  source duration, 48kHz AAC), concat-demuxer stream-copy hard cuts, duration
+  assert. `mix_vo.py` lays the V.O. track: silence-trims each block
+  (silenceremove both ends at -45dB), applies a per-line pitch-preserving
+  tempo map, plans offsets with collision asserts (no VO over VO or on-camera
+  dialogue), amix normalize=0 over the concat.
+- **Clip order (18 hard cuts):** 1a, 1b, 2a, 2b, 3(oner v2), 4a, 4b, 5, 6,
+  7a, 7b, 7c, 8a, 8b, 9a1, 9a2, 9a3, 9b. Timeline 148.20s; final cut
+  **148.24s** (2:28 — inside the ≤3:00 Shorts cap).
+- **Tempo map:** VO2 1.05×, VO4 1.13×, VO5 1.13×, VO7a 1.16×, VO7b 1.16×,
+  VO8 1.0× (pitch preserved via atempo).
+- **V.O. placements (absolute, seconds):** VO2 16.25–31.51 (over 2a+2b, clear
+  of the oner); VO4 54.50–69.26 (4a, spills into 4b); VO5 69.76–79.13 (clip 5
+  walk, ≤2.0s into clip 6's held pre-dialogue silence — verified silent);
+  VO7a 89.79–98.47; VO7b 98.77–105.53 (bridges the 7a/7b cut by design —
+  narration flows across it); VO8 105.95–118.68 ("It flies." lands on the 7c
+  liftoff, ends before the montage).
+- **QC:** duration assert passed (148.24 vs 148.20 expected); all six VO
+  blocks verified present in the final mix by window-isolated faster-whisper
+  transcription (a full-cut pass garbles speech-over-ambience — isolate the
+  window before trusting a "missing VO" flag).
+- **Files (assets, out of git):** `elon_final_cut.mp4` (1080p master, edit
+  source), `elon_final_cut_compressed.mp4` (1400k review copy, 28.6MB —
+  delivered to owner 2026-08-28), `inter/` intermediates + `concat.mp4`.
+- **Status: first full cut DELIVERED — awaiting owner's stitched-cut review.**
+- Then: word-chunk captions via the troy tooling (measured faster-whisper
+  timestamps), Gemini eyes QC passes (clip set → assembled cut → captions
+  mode), Higgsfield virality_predictor, owner watch-through.
 
 ## E. Generated stills manifest (updated as stills are produced)
 
