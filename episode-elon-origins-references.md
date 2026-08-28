@@ -306,6 +306,16 @@ owner-ordered (satisfies the §19 ask-first rule for the first attempt of each).
    re-assembled.
 Remaining points (performance, continuity, visual matching) = QC criteria
 for the re-review of the corrected cut.
+
+Correction-pass clips (delivered to owner 2026-08-28, awaiting approval):
+| Clip | File | Job | URL | QC | Status |
+|---|---|---|---|---|---|
+| OPENING ONER v2 (15s, replaces 1a; 1b drop recommended) | `clip1_oner_boy_behind.mp4` | seedance_2_5 `9e9d890e-c664-4f7a-a3c8-325d2f7bfa28` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_052838_9e9d890e-c664-4f7a-a3c8-325d2f7bfa28.mp4 | hook word-perfect, 0 freezes, boy visible behind Hazel throughout — FIRST successful adult+child same-frame Seedance render | DELIVERED — awaiting approval |
+| OFFICE EXCHANGE v2 (16s, replaces clip 6) | `clip6_exchange_v2.mp4` | seedance_2_5 `9174612c-383f-488e-9e41-8d47310deb20` (first submission `716ec4d9` failed server-side; one retry succeeded) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_053350_9174612c-383f-488e-9e41-8d47310deb20.mp4 | both lines word-perfect, 0 freezes, sit-down frame-checked at 4fps: lowers onto guest chair, desk always between them, zero contact | DELIVERED — awaiting approval |
+
+On approval: conform (clip5 trimmed ~6.8s, new opening in, 1b per owner) →
+re-assemble → mix v4 (pitch-shifted VO) → year labels + word-chunk captions →
+corrected full cut to owner.
 - Then: word-chunk captions via the troy tooling (measured faster-whisper
   timestamps), Gemini eyes QC passes (clip set → assembled cut → captions
   mode), Higgsfield virality_predictor, owner watch-through.
