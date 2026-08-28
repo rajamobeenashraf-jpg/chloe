@@ -143,3 +143,8 @@ Owner's verdict picks the reference recipe for the remaining clips.
 - **CLIP 4 APPROVED by owner (all 3 shots).** Tally: clips 1-4 approved (1: a62b4763 · 2: d9ce367c · 3: 3929e1c9 · 4a: ae68774a · 4b: f1294426 · 4c: bc84f5a8).
 
 - **CLIP 5** (sea-wall morning-after) — job `d277951d-a57a-4102-987d-0aab38e9e625` → https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_002142_d277951d-a57a-4102-987d-0aab38e9e625.mp4 (9.06s). Identity strong at zoom, gaze delivery matched the direction exactly (turn to ships, back to lens), correct flags both sides (Byzantine cross on her wall, Ottoman crescents on the enemy fleet — correct, those are the invading ships). freezedetect CLEAN. NOTE: same class of faint distant-hilltop residual as clip 3 v4, visible far background across the water — flagged to owner, not treated as a fresh rejection since it's the known accepted-severity residual. Sent; AWAITING APPROVAL.
+
+- **CLIP 5 APPROVED by owner.** Tally: clips 1-5 approved.
+
+### NPC lock — Giovanni Giustiniani (first appearance clip 6, returns clip 10 — locked description, reuse verbatim)
+"A Genoese mercenary captain in his late thirties, dark cropped hair and a short dark beard, weathered olive-toned Mediterranean skin, a strong jaw, tired but alert dark eyes; practical dented steel plate armor over mail, a plain dark surcoat with a small red-cross-on-white Genoese emblem on one shoulder (NOT the Byzantine tetragrammatic cross — a plain Latin cross, Genoa's own mark), a sword at his hip, dust and soot on his armor from the night's wall repairs."
