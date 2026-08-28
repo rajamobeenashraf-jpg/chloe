@@ -139,3 +139,5 @@ Owner's verdict picks the reference recipe for the remaining clips.
 - **4b** (wide proof shot, no character) — job `f1294426-79f7-4523-919c-439fdf0252d5` → https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_000838_f1294426-79f7-4523-919c-439fdf0252d5.mp4 (5.06s). Strong: full line of ship hulls up the torch-lit hill, oxen teams, ropes/rollers, crescent flags. Voice-matched via clip-1 audio reference (VO, no lip-sync needed). freezedetect CLEAN.
 - **4c** (selfie, closing realization) — job `bc84f5a8-d068-44f0-b818-8f521bb430be` → https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_001324_bc84f5a8-d068-44f0-b818-8f521bb430be.mp4 (5.06s). Identity strong; dread/realization expression; camp visible behind her, oxen, tents, crescent banners. freezedetect CLEAN.
 - All 3 sent to owner together as CLIP 4 (they stitch into one continuous scene at the edit per the owner-approved multi-shot design). AWAITING APPROVAL.
+
+- **CLIP 4 APPROVED by owner (all 3 shots).** Tally: clips 1-4 approved (1: a62b4763 · 2: d9ce367c · 3: 3929e1c9 · 4a: ae68774a · 4b: f1294426 · 4c: bc84f5a8).
