@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
-# V.O. mix pass v2: trim silence from each VO, re-plan offsets with collision
-# rules (no VO over VO, no VO over on-camera dialogue), remix over concat.mp4.
+# V.O. mix pass v3: trim silence from each VO, loudnorm each VO to the
+# on-camera dialogue level (clips were normalized to I=-16 at assembly; the
+# raw VOs sat at ~-25 LUFS and got buried under the ambience — owner flag
+# 2026-08-28), plan offsets with collision rules, duck the ambience bed under
+# narration via sidechain compression, remix over concat.mp4.
 import subprocess, os, re, sys
 
 FF = "/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2"
@@ -26,7 +29,7 @@ tdur = {}
 for v in VOS:
     out = f"{A}/{v}_trim.wav"
     run([FF, "-y", "-v", "error", "-i", f"{A}/{v}.wav",
-         "-af", f"silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15,areverse,silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15,areverse,atempo={TEMPO[v]}",
+         "-af", f"silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15,areverse,silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15,areverse,atempo={TEMPO[v]},loudnorm=I=-15.5:TP=-1.5:LRA=11",
          out])
     tdur[v] = dur(out)
     print(f"{v}: raw {dur(f'{A}/{v}.wav'):.2f}s -> trimmed+tempo({TEMPO[v]}) {tdur[v]:.2f}s")
@@ -60,14 +63,20 @@ assert end8 <= starts["9a1"] - 0.1, f"VO8 overruns into montage: ends {end8:.2f}
 for v in VOS:
     print(f"PLAN {v}: {plan[v]:.2f}s -> {plan[v]+tdur[v]:.2f}s")
 
-# remix
-vo_inputs, filters, mix = [], [], ["[0:a]"]
+# remix: sum the placed VOs into one track, duck the bed under it
+# (sidechaincompress: ~-30dB threshold so only actual narration triggers,
+# gentle 4:1 with slow-ish release so ambience swells back naturally),
+# then sum ducked bed + VO track.
+vo_inputs, filters, vos = [], [], []
 for i, v in enumerate(VOS, start=1):
     vo_inputs += ["-i", f"{A}/{v}_trim.wav"]
     off = int(plan[v]*1000)
     filters.append(f"[{i}:a]aresample=48000,adelay={off}|{off}[vo{i}]")
-    mix.append(f"[vo{i}]")
-fc = ";".join(filters) + f";{''.join(mix)}amix=inputs={len(mix)}:duration=first:normalize=0[aout]"
+    vos.append(f"[vo{i}]")
+filters.append(f"{''.join(vos)}amix=inputs={len(vos)}:duration=longest:normalize=0,apad,asplit=2[vs1][vs2]")
+filters.append("[0:a][vs1]sidechaincompress=threshold=0.03:ratio=4:attack=20:release=400[bed]")
+filters.append("[bed][vs2]amix=inputs=2:duration=first:normalize=0[aout]")
+fc = ";".join(filters)
 run([FF, "-y", "-v", "error", "-i", f"{A}/inter/concat.mp4", *vo_inputs,
      "-filter_complex", fc, "-map", "0:v", "-map", "[aout]",
      "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", f"{A}/elon_final_cut.mp4"])

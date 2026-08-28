@@ -256,6 +256,17 @@ at the natural cut (she sits), or authorize more rolls of the oner.
   blocks verified present in the final mix by window-isolated faster-whisper
   transcription (a full-cut pass garbles speech-over-ambience — isolate the
   window before trusting a "missing VO" flag).
+- **Mix v3 (2026-08-28, owner flag on v2: "when she talks indirectly I can
+  barely hear the voice"):** root cause — clips were loudnorm'd to I=-16 at
+  assembly but the raw VO wavs (~-25 LUFS) were mixed in un-normalized, so
+  narration played ~9 dB under on-camera dialogue. Fix in `mix_vo.py`: each
+  VO gets `loudnorm=I=-15.5:TP=-1.5` after trim+tempo (a flat +9 dB gain
+  would have clipped — VO peaks were already near 0 dB), and the ambience
+  bed is sidechain-ducked under narration (threshold 0.03, 4:1, attack 20ms,
+  release 400ms). Verified: VO windows -15.4 to -16.3 LUFS vs dialogue
+  -15.2/-15.6; full-cut peak -0.9 dB; VO2 + VO8 windows re-whispered
+  word-perfect. Placements unchanged; final 148.22s. LESSON for future
+  episodes: loudnorm every audio source entering a mix, not just the clips.
 - **Files (assets, out of git):** `elon_final_cut.mp4` (1080p master, edit
   source), `elon_final_cut_compressed.mp4` (1400k review copy, 28.6MB —
   delivered to owner 2026-08-28), `inter/` intermediates + `concat.mp4`.
