@@ -25,11 +25,14 @@ VOS = ["vo_sample_scene2", "vo_scene4", "vo_scene5", "vo_scene7a", "vo_scene7b",
 # pitch-preserving tempo per line so each block fits its window with margin
 TEMPO = {"vo_sample_scene2": 1.05, "vo_scene4": 1.13, "vo_scene5": 1.13,
          "vo_scene7a": 1.16, "vo_scene7b": 1.16, "vo_scene8": 1.0}
+# owner correction 2026-08-28: narration slightly higher in pitch — +1
+# semitone via asetrate, duration restored with atempo, before loudnorm
+PITCH = 1.0595
 tdur = {}
 for v in VOS:
     out = f"{A}/{v}_trim.wav"
     run([FF, "-y", "-v", "error", "-i", f"{A}/{v}.wav",
-         "-af", f"silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15,areverse,silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15,areverse,atempo={TEMPO[v]},loudnorm=I=-15.5:TP=-1.5:LRA=11",
+         "-af", f"silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15,areverse,silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15,areverse,atempo={TEMPO[v]},aresample=48000,asetrate={int(48000*PITCH)},aresample=48000,atempo={1/PITCH:.6f},highpass=f=70,loudnorm=I=-15.5:TP=-1.5:LRA=11",
          out])
     tdur[v] = dur(out)
     print(f"{v}: raw {dur(f'{A}/{v}.wav'):.2f}s -> trimmed+tempo({TEMPO[v]}) {tdur[v]:.2f}s")

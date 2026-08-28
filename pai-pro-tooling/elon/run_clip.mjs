@@ -11,7 +11,7 @@ import fs from "node:fs/promises";
 import { spawn } from "node:child_process";
 
 function parseArgs(argv) {
-  const out = { hazel: false, boy: false, checkOnly: false };
+  const out = { hazel: false, boy: false, checkOnly: false, sameFrame: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--prompt-file") out.promptFile = argv[++i];
@@ -20,6 +20,7 @@ function parseArgs(argv) {
     else if (a === "--image-refs") out.imageRefs = argv[++i];
     else if (a === "--resolution") out.resolution = argv[++i];
     else if (a === "--hazel") out.hazel = true;
+    else if (a === "--same-frame") out.sameFrame = true;
     else if (a === "--boy") out.boy = true;
     else if (a === "--check-only") out.checkOnly = true;
   }
@@ -47,7 +48,12 @@ const STANDING_RULES = [
     return !scrubbed.includes("porcelain") && !scrubbed.includes("rosy");
   }],
   ["no visible-injury words outside dialogue (owner 2026-08-27)", () => !/bruise|scab|wound|blood|injur/.test(outsideDialogue)],
-  ["adult+child never share a frame (owner option A)", () => !(args.hazel && args.boy)],
+  // Option A (2026-08-27) barred adult+child composites after PAI's image
+  // filter blocked them. Owner correction 2026-08-28 orders the opening shot
+  // WITH the boy visible behind Hazel, so same-frame is allowed only behind
+  // the explicit --same-frame flag (Seedance video is untested for this —
+  // if its filter also refuses, fall back to option A and report).
+  ["adult+child same frame needs the explicit --same-frame flag (owner order 2026-08-28)", () => !(args.hazel && args.boy) || args.sameFrame],
   ["duration inside engine cap (Seedance 2.5: 4-30s, owner engine directive 2026-08-27)", () => Number(args.duration) >= 4 && Number(args.duration) <= 30],
   ["aesthetic keywords block (§13 / lock rule 5)", () => low.includes("kodak portra") && low.includes("not 3d render")],
 ];

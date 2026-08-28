@@ -271,6 +271,41 @@ at the natural cut (she sits), or authorize more rolls of the oner.
   source), `elon_final_cut_compressed.mp4` (1400k review copy, 28.6MB —
   delivered to owner 2026-08-28), `inter/` intermediates + `concat.mp4`.
 - **Status: first full cut DELIVERED — awaiting owner's stitched-cut review.**
+
+### Owner correction pass (ordered 2026-08-28, 10-point list)
+
+Owner reviewed the full cut and ordered corrections; regenerations below are
+owner-ordered (satisfies the §19 ask-first rule for the first attempt of each).
+1. **Opening restaged — boy visible behind Hazel** (overrides option A
+   shot/reverse-shot for this shot; gate now takes an explicit `--same-frame`
+   flag recording the order). New ~15s oner: opens on the boy reading against
+   the wall (~3s establish), Hazel steps into the foreground, full hook
+   dialogue to lens, gestures back at him; boy never leaves frame. Job
+   `9e9d890e-c664-4f7a-a3c8-325d2f7bfa28`. NOTE: first-ever adult+child
+   same-frame attempt on Seedance video (PAI's image filter blocked
+   composites; Seedance untested) — if refused, fall back to option A and
+   report. Replaces 1a; 1b becomes optional (recommend dropping — redundant
+   once the boy is established in-shot; owner decides at approval).
+2. **Office scene restaged — lap-sit removed.** Frame scan confirmed clip6
+   opens with Hazel perched on the desk edge against his chair, and clip5's
+   tail walks her around to his side, leaning in. Fix: clip6 v2 (~16s) — she
+   stands ACROSS the desk, asks standing, moves to the separate guest chair
+   on HER side, sits, he answers; hard no-contact staging rules in prompt.
+   Job `716ec4d9-999c-4f08-b77e-3cdfed9d7597`. Clip5 tail TRIMMED at ~6.8s
+   at the conform (edit fix — before she closes in).
+3. **V.O. pitch** — owner wants her narration slightly higher, warm, clearly
+   feminine: +1 semitone (asetrate/atempo, pitch-preserving duration) +
+   highpass 70Hz before loudnorm, in `mix_vo.py`. On-camera voices untouched.
+   Both new clips' prompts also specify her voice: natural young woman's
+   voice, warm, clear, light register, not deep/husky/whispered.
+4. **Year labels** — on-screen era labels top-of-frame at each period start
+   (1983 / 1995 / 2002 / 2008 / TODAY / 1983 bookend), hard in/out, at the
+   caption pass.
+5. **Subtitles** — word-chunk caption system per the locked CLAUDE.md spec,
+   measured timestamps, after the corrected clips are approved and the cut
+   re-assembled.
+Remaining points (performance, continuity, visual matching) = QC criteria
+for the re-review of the corrected cut.
 - Then: word-chunk captions via the troy tooling (measured faster-whisper
   timestamps), Gemini eyes QC passes (clip set → assembled cut → captions
   mode), Higgsfield virality_predictor, owner watch-through.
