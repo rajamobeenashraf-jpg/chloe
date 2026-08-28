@@ -209,6 +209,15 @@ at the natural cut (she sits), or authorize more rolls of the oner.
 | 5 crisis walk (10s, silent) | `clip5_walk.mp4` | Higgsfield seedance_2_5 `538be7fb-0431-4bc1-bf89-c1ab4775d76d` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_001510_538be7fb-0431-4bc1-bf89-c1ab4775d76d.mp4 | **APPROVED by owner 2026-08-28** |
 | 6 crisis exchange (12s) | `clip6_exchange.mp4` | Higgsfield seedance_2_5 `5b7c4fe9-760d-4b7d-8e5b-08845755960f` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_001535_5b7c4fe9-760d-4b7d-8e5b-08845755960f.mp4 | **APPROVED by owner 2026-08-28** |
 
+| 7a island walk (10s) | `clip7a_walk.mp4` | seedance_2_5 `9509917b-93d9-44f3-a7e8-394be4b88f18` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_003007_9509917b-93d9-44f3-a7e8-394be4b88f18.mp4 | delivered — QC clean — awaiting owner |
+| 7b rocket hero push (6s) | `clip7b_hero.mp4` | seedance_2_5 `15671abe-fb09-4f8e-b0fc-c0516e6661d8` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_003006_15671abe-fb09-4f8e-b0fc-c0516e6661d8.mp4 | delivered — QC clean — awaiting owner |
+| 8a orbit (5s) | `clip8a_orbit.mp4` | seedance_2_5 `652687cb-348c-4f77-a367-9b5cea919233` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_003006_652687cb-348c-4f77-a367-9b5cea919233.mp4 | delivered — QC clean — awaiting owner |
+| 8b Christmas signing (7s) | `clip8b_signing.mp4` | seedance_2_5 `73ece4ed-503d-46e5-a3c4-ac73fc2dfea8` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_003006_73ece4ed-503d-46e5-a3c4-ac73fc2dfea8.mp4 | delivered — QC clean — awaiting owner |
+| 9a1 booster landing (4s) | `clip9a1_landing.mp4` | seedance_2_5 `05ece1dc-fc8d-48dc-808c-bdb05378b648` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_003006_05ece1dc-fc8d-48dc-808c-bdb05378b648.mp4 | delivered — QC clean — awaiting owner |
+| 9a2 electric street (4s) | `clip9a2_street.mp4` | seedance_2_5 `809882c8-c750-4eec-a1b4-8f7c14973b0d` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_003006_809882c8-c750-4eec-a1b4-8f7c14973b0d.mp4 | delivered — QC clean — awaiting owner |
+| 9a3 astronauts (4s) | `clip9a3_astronauts.mp4` | seedance_2_5 `558ff89e-1f9f-4408-8161-f392eaa177a4` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_003006_558ff89e-1f9f-4408-8161-f392eaa177a4.mp4 | delivered — QC clean — awaiting owner |
+| 9b bookend + sign-off (14s) | `clip9b_bookend.mp4` | seedance_2_5 `4cfac4be-20af-42bc-94f2-e5c0f91108d6` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_003006_4cfac4be-20af-42bc-94f2-e5c0f91108d6.mp4 | delivered — QC: closing speech whisper-verified complete incl. sign-off (heard "change" vs scripted "changed" — listen and judge) — awaiting owner |
+
 ## E. Generated stills manifest (updated as stills are produced)
 
 **SET APPROVED BY OWNER 2026-08-27 ("ok" on the delivered v2 round).** All six
