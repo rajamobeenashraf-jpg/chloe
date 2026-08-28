@@ -206,6 +206,9 @@ at the natural cut (she sits), or authorize more rolls of the oner.
 
 | 4b blueprint insert (7s) | `clip4b_blueprint.mp4` | Higgsfield seedance_2_5 `960433ac-a5cb-4847-b73e-24f86eea1776` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_233834_960433ac-a5cb-4847-b73e-24f86eea1776.mp4 | **APPROVED by owner 2026-08-28** (ambiguous hand accepted) |
 
+| 5 crisis walk (10s, silent) | `clip5_walk.mp4` | Higgsfield seedance_2_5 `538be7fb-0431-4bc1-bf89-c1ab4775d76d` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_001510_538be7fb-0431-4bc1-bf89-c1ab4775d76d.mp4 | delivered — QC: 10.08s, freezes 0, ends mid-sit (match-cut point); whisper flags a faint possible utterance ~0-2s (masked by edit V.O.) — awaiting owner |
+| 6 crisis exchange (12s) | `clip6_exchange.mp4` | Higgsfield seedance_2_5 `5b7c4fe9-760d-4b7d-8e5b-08845755960f` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_001535_5b7c4fe9-760d-4b7d-8e5b-08845755960f.mp4 | delivered — QC: 12.06s, freezes 0, BOTH lines whisper-verified word-perfect; seat positions continuous with shot 5 — awaiting owner |
+
 ## E. Generated stills manifest (updated as stills are produced)
 
 **SET APPROVED BY OWNER 2026-08-27 ("ok" on the delivered v2 round).** All six
