@@ -218,6 +218,21 @@ at the natural cut (she sits), or authorize more rolls of the oner.
 | 9a3 astronauts (4s) | `clip9a3_astronauts.mp4` | seedance_2_5 `558ff89e-1f9f-4408-8161-f392eaa177a4` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_003006_558ff89e-1f9f-4408-8161-f392eaa177a4.mp4 | **APPROVED by owner 2026-08-28** |
 | 9b bookend + sign-off (14s) | `clip9b_bookend.mp4` | seedance_2_5 `4cfac4be-20af-42bc-94f2-e5c0f91108d6` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_003006_4cfac4be-20af-42bc-94f2-e5c0f91108d6.mp4 | **APPROVED by owner 2026-08-28** (incl. the change/changed nuance) |
 
+## E3. EDIT STAGE (opened 2026-08-28 — all 20 shots approved)
+
+- **Hazel V.O. voice clone:** Higgsfield voice element `d9338fb1-dcd4-47a2-9753-7ddcb28007a9`
+  ("Hazel VO — Elon origins episode"), cloned from her approved on-camera audio
+  (clips 1a 4K + 9b bookend, 26s). Scene 2 sample line generated (job
+  `4ed8b82d-5fb6-4dfb-a2da-fd112f055256`) and delivered — awaiting owner voice
+  approval before the remaining V.O. lines are generated.
+- V.O. lines pending (on voice approval): Scene 4, Scene 5, Scene 7a+7b halves,
+  Scene 8 ("It flies." lands on 7c liftoff at the cut).
+- Then: hard-cut assembly per §16 (0.08s audio edge fades, loudnorm capped to
+  frame-exact durations, ffprobe frame-count check), word-chunk captions via
+  the troy tooling (measured faster-whisper timestamps), Gemini eyes QC passes
+  (clip set → assembled cut → captions mode), Higgsfield virality_predictor,
+  owner watch-through.
+
 ## E. Generated stills manifest (updated as stills are produced)
 
 **SET APPROVED BY OWNER 2026-08-27 ("ok" on the delivered v2 round).** All six
