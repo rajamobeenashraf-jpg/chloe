@@ -195,6 +195,15 @@ rules gate still runs in --check-only mode on every prompt before submission.**
 
 | 4a tower exit (6s) | `clip4a_tower.mp4` | Higgsfield seedance_2_5 `d727ef37-e6f6-46ad-965f-4f9ab00ecfed` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260827_232708_d727ef37-e6f6-46ad-965f-4f9ab00ecfed.mp4 | delivered — QC: 6.08s, freezes 0, over-shoulder staging correct, ACTOR-31 match, era-correct sedan wipe — awaiting owner |
 
+**Crisis oner (scenes 5+6) — production log 2026-08-28:** three full attempts
+failed server-side (26s, 26s, 22s; jobs 3c524496 / f3409bc3 / 60c12165) with no
+stated reason, while every component passes in isolation (ACTOR-37 alone ✓,
+crisis plate alone ✓, ACTOR-37+plate pair ✓, same 5-ref/22s shape succeeded on
+the office oner). Conclusion: the full dark-scene two-character dialogue oner
+at this complexity is unreliable on seedance_2_5 — not a content/filter block.
+HALTED full-price attempts; owner to choose: split into two proven-length shots
+at the natural cut (she sits), or authorize more rolls of the oner.
+
 ## E. Generated stills manifest (updated as stills are produced)
 
 **SET APPROVED BY OWNER 2026-08-27 ("ok" on the delivered v2 round).** All six
