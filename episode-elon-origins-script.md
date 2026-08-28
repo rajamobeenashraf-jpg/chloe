@@ -128,9 +128,13 @@ HAZEL (V.O.): "It pays off. His internet companies sell for millions. He's rich
 at thirty-one. He could stop forever. Instead, he bets almost everything on two
 impossible ideas: rockets... and electric cars."
 
-**SCENES 5+6 — MERGED INTO ONE CONTINUOUS TAKE** (OWNER-APPROVED STAGING
-UPDATE 2026-08-27: one unbroken ~26s take — the episode's emotional core plays
-without a cut. Dialogue unchanged.)
+**SCENES 5+6 — SPLIT AT THE SIT-DOWN** (owner option A, 2026-08-28: the full
+oner failed 3× server-side at this complexity while every component passed —
+see references doc production log. Two proven-length shots, match-cut on the
+action of sitting; dialogue unchanged.)
+Shot 5 (~10s, silent, V.O. space): doorway watch → cross the dark office →
+she begins to sit as the shot ends. Shot 6 (~12s): opens seated — beat,
+question, answer, held look.
 VISUAL: 2008. Dark office, screens replaying a failing rocket. The man (37),
 head in his hands. In one unbroken take: Hazel watches from the doorway as her
 V.O. plays, crosses the dark room, and sits down across from him.
@@ -189,7 +193,8 @@ as-scripted, same delegation.)
 | 3 | 22s ONER | Palo Alto office, 1995, night | One unbroken take: steps through clutter, noodle cup, narration to lens, turns to him, asks | Coding intently; looks up briefly, answers, back to screen | Full Scene 3 dialogue | Sleeping bag, pizza boxes, CRT glow; no mid-scene cut | Grind, then conviction |
 | 4a | 6s | Office tower exit, 2002, day | Watches from across the street | Musk ~31, suit, box of papers, small smile | V.O. starts | Glass tower, morning light | Triumph |
 | 4b | 7s | Drafting table | Hand traces blueprint edge | Musk's hands unroll rocket blueprint, car sketch beside | V.O. continues | Blueprint texture, pencil sketch | The bet |
-| 5+6 | 26s ONER | Crisis office, 2008, night | One unbroken take: doorway (V.O.), crosses room, sits across from him, asks gently | Head in hands, then lifts head, answers with tired steadiness | V.O. + her question + his answer | Blue screen glow, two faces, one lamp; no cut through the emotional build | Rock bottom, then the core |
+| 5 | 10s | Crisis office, 2008, night | SILENT: doorway watch, crosses room, begins to sit (match-cut on action) | Head in hands, TV replay glow | V.O. lands here at edit | Blue screen glow, papers, dead coffee cups | Rock bottom |
+| 6 | 12s | Same room | Opens seated across from him; beat; asks gently | Lifts head, answers with tired steadiness | Her question + his answer | Two faces, TV flicker | The core |
 | 7a | 10s | Omelek Island pad, dawn | Walks toward the pad, looking up (forward walk §14) | — | V.O. first half | Wide: rocket, ocean every side, tiny island scale | Last-chance stakes |
 | 7b | 6s | Base of the pad | — | — | V.O. second half ("Just one. Fly... or it's all over.") | Low angle, slow push up the rocket, dawn rim light | The bet, monumental |
 | 7c | 4s | Pad, liftoff | — | — | ("It flies." lands here at the edit) | Ignition, flame and dust blast, rocket climbs out of frame over the ocean | Release |
