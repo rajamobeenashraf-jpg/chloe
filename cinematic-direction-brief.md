@@ -1,0 +1,100 @@
+# Cinematic Direction Brief — v2 (owner-approved 2026-08-28, scoped to the Alexander/Gaugamela episode)
+
+**Origin:** the owner supplied a Hollywood feature-film cinematography brief; this v2 is the improved version confirmed with him point-by-point before writing. Approved for THIS episode; written so it can be elevated project-wide later if the owner says so. Where this brief and the project's standing rules (`creative-direction.md` §1–§37c incl. the unmerged Constantinople sections, `CHARACTER_LOCK.md`, `CLAUDE.md`) overlap, they are folded in here — one document governs, not two fighting.
+
+---
+
+## 1. FORMAT GOVERNANCE (replaces the original brief's "not a YouTube video" framing — that line was wrong for this show)
+
+- **This IS the selfie-vlog show.** V-mode — Hazel talking to her own handheld lens — is the default identity of every scene. The Chloe-formula vlog grammar is the product, not a placeholder.
+- **Nova mode (true third-person cinematography) is available PER SCENE, with owner approval, every time.** Scene-level, not shot-level (owner-confirmed 2026-08-28): an approved scene may go fully third-person where it helps, because one lone cinematic shot sandwiched between selfie shots reads as a glitch, while a coherent cinematic sequence bookended by V-mode reads as filmmaking.
+- **The decision test — a scene earns a Nova proposal ONLY if what it must communicate is structurally impossible from Hazel's own camera:** scale she is inside of, action she cannot film while living it, or §37c geometry (a face-on camera cannot show a destination growing closer). "It would look cooler" never qualifies. "The audience cannot understand the event without it" qualifies.
+- **Even inside an approved Nova scene, third-person is permission, not obligation** — Hazel's reactions stay on her own lens regardless (her face into her camera is the show's soul), and Nova shots never contain Hazel's face. Nova shows the world; V-mode shows her.
+- **Labeling convention:** every scene in every script/breakdown is labeled `V` or `NOVA (PROPOSED — owner approval pending)` until the owner approves, then `NOVA (APPROVED <date>)`. The approval step is built into the document, not remembered.
+
+## 2. DIRECTING PHILOSOPHY (kept from the owner's brief, condensed)
+
+Think: **Story → Emotion → Performance → Blocking → Composition → Camera → Edit.** The camera responds to characters; it never shows off. If a static shot creates more tension, lock it. Restraint is the engine of spectacle: if everything is epic, nothing is (the owner's brief, section 9 — and this brief obeys it about itself: short lists, hard choices). Build rhythm through contrast: stillness→movement, silence→chaos, close→wide, intimate→enormous, warm interior→harsh battlefield, her human scale→military scale. Geography before chaos: the audience must always know where Hazel, Alexander, the enemy, and the objective are — never sacrifice spatial continuity for an impressive shot. Grounded historical epic only: no fantasy framing, no exaggerated slow motion, no videogame combat, no impossible camera moves.
+
+## 3. 9:16 VERTICAL CINEMATOGRAPHY (new — the original brief silently assumed widescreen)
+
+- **Horizontal wides are the weakest shot in 9:16.** Army scale comes from **depth stacking**, not width: sharp foreground element (a spear, a shoulder, a horse's flank) → midground ranks → horizon dust, layered vertically up the frame. Never write "wide shot of the army" without specifying the depth layers.
+- **Vertical frames love height:** a rider above infantry, a raised sarissa line, a dust column, a standard against the sky — use vertical subjects to carry scale.
+- **Low angles gain unusual power in 9:16** (they fill the tall frame with subject + sky) — still only when narratively motivated.
+- **The caption band is a permanent composition constraint:** word-chunk captions sit at MarginV=320 (720×1280 units), ~68–75% down the frame. Nothing story-critical lives in that zone. Faces sit above it; foreground anchor objects sit below it.
+- **Negative space works vertically:** empty sky above a small, low-placed Hazel isolates her; ground/crowd filling the frame bottom-to-top crushes her. Choose deliberately.
+- **Mute-legibility bar (standing owner rule):** a viewer watching with no sound must follow the event from composition and staging alone.
+
+## 4. ENGINE-TRANSLATION LAYER (new — this brief directs Seedance 2.5 prompts, not a camera crew)
+
+Primary engine: Higgsfield Seedance 2.5 (`seedance_2_5`), 1080p, 9:16, per §30. PAI Pro fallback. Every cinematic intention must be written in language the model responds to; film jargon alone is wasted tokens.
+
+**Translation table (intent → prompt language):**
+| Film instruction | Working prompt language |
+|---|---|
+| Long-lens compression / isolation | "flattened, compressed perspective; the distant [X] appears stacked close behind [Y]; background softly out of focus" |
+| Wide-angle environmental vulnerability | "wide, environment-dominating perspective; [character] small in the frame, the [environment] pressing in around them" |
+| Shallow depth of field | "sharp focus on [X], background softly blurred" |
+| Deep focus for scale | "everything sharp from the [foreground object] to the horizon" |
+| Locked/static camera | "completely static locked camera, no camera movement of any kind for the entire shot" (repeat, §36-style) |
+| Slow push-in | "camera very slowly and smoothly moves closer to [X] over the full duration, no other movement" |
+| Tracking with subject | "camera travels alongside [X] at matching speed, keeping [X] in the same position in frame" |
+| Handheld energy | "handheld camera with natural human sway and small corrections" (V-mode default) |
+| Foreground occlusion | "out-of-focus [bodies/objects] passing between camera and subject at the frame edges" |
+| Silhouette | "[subject] rendered as a dark shape against [bright source], details in shadow" |
+| Motivated reveal | stage it as blocking, not camera: the subject enters the frame, or an occluding element clears — never "the camera reveals" |
+
+**Do-NOT-script list (unreliable in current video models — don't pay to rediscover it):** rack focus on command · exact focal lengths ("35mm", "85mm") · whip pans · precise camera-speed ramps · mid-shot reframing choreography with multiple beats · lens flares on cue · slow motion (also banned by section 2 anyway). If a shot's idea depends on one of these, redesign the shot.
+
+**Force-required list (works only as blunt repeated constraints, per §36):** camera-movement restrictions, no-cut/no-zoom holds, "her face NOT in frame," screen-direction requirements. State them explicitly, repeat them, never imply them.
+
+**Standing recipe (per §31, unchanged):** single-view reference images (4-set: 2 full-body + 2 face crops) · `mode: "omni_reference"` with any refs · audio reference on every speaking clip · STRICT IDENTITY RE-RENDER framing + frozen identity string verbatim · `declined_preset_id` on preset intercepts · proactive reference stills for every recurring character/faction.
+
+## 5. V-MODE ↔ NOVA STITCHING GRAMMAR (new — the hard problem of the hybrid format; nothing else covers it)
+
+1. **Enter Nova through Hazel's motivation.** The V-mode shot before a Nova shot ends on her eyeline: she looks off-lens at something → cut to the Nova shot showing what she's looking at. The cinematic shot becomes her experience, not a different TV channel.
+2. **Exit Nova into her reaction.** The first V-mode shot after a Nova beat opens on her face responding to what the Nova shot just showed.
+3. **Sound is continuous across every V/Nova seam** (§25 — audio never touches silence at a cut; the ambient bed and any diegetic sound run straight through).
+4. **Grade is identical across modes** — same palette, same light, same atmosphere, so the cut is invisible as a style change and visible only as a viewpoint change.
+5. **Nova shots never contain Hazel's face.** Her body may appear small/from-behind inside a Nova frame when geography demands it, but her face belongs to her own lens exclusively.
+6. **Screen direction is locked per episode and stated in the continuity notes** (e.g., "Macedonians advance left→right in every Nova shot; in V-mode shots the Persian line sits in the deep frame behind her"). Every Nova shot and every V-mode shot must obey the same map.
+7. **Rhythmic alternation (V→Nova→V→Nova) inside one approved scene is legitimate battle grammar** — objective wides intercut with subjective POV is how real films shoot battles around a character — PROVIDED rules 1–6 hold at every seam.
+
+## 6. PROJECT NON-NEGOTIABLES (folded in — these override any cinematic preference)
+
+- **§13 realism bar:** she reads as a real filmed human, matte/gritty documentary finish, never beauty-editorial. Hard pass/fail.
+- **§17 populated world:** living background subjects show continuous visible motion; no static plates; no defect fix that empties a shot of its required content.
+- **§22 geometric trace:** any shot with multiple oriented elements gets a written-out camera/orientation derivation before generation; a change to one element re-derives all the others.
+- **§25 sound at cuts:** J/L bridges or continuous beds; edge fades are click-guards (~15–20ms), never audible dips.
+- **§32 NPC locks:** one written physical description per recurring character, reused verbatim.
+- **§33 emblem shapes:** real-world symbols described geometrically; iconography never crosses between factions.
+- **§34 injury causality:** weapon in motion → visible contact → wound at that point. No disconnected wounds.
+- **§37a performance mechanics:** never "she looks scared" — scleral show, mouth shape, hand path, shoulder set, breath cadence. (This absorbs the original brief's section 14.)
+- **§37b destruction grading:** bleak scenes get desaturated cool grading explicitly; "dramatic lighting" alone trends warm.
+- **Each clip is an independent generation.** Continuity is engineered (reference chaining, verbatim locks, stated screen direction, §21 double verification, per-clip `freezedetect`), never assumed. Treat the clip list as ONE sequence divided into generation segments — design the edit first, then the shots.
+- **Owner gates unchanged:** every clip sent to the owner on creation (§20); no regeneration without explicit go-ahead, per attempt (§19); judgment-call fixes restated as a checklist first (§37).
+
+## 7. HISTORICAL REALITY & SCALE ENGINE (owner mandate 2026-08-28 — PERMANENT addition to this system)
+
+Knowing the history is not enough; the prompt must translate historical facts into visual quantities, spatial scale, physical consequences, and human behavior. "A huge army fights" reads to a video model as 20–50 people. The audience must FEEL the scale.
+
+1. **Fact → visual reality.** For every scene, take what the record actually says (army size, city population, terrain, season, weather, architecture, equipment) and convert it into visible quantities: density of people, depth of formations, dust, smoke, animals, civilian activity, consequences. Never stop at "a large army" — determine what that number physically looks like on screen.
+2. **A scale bible per major sequence, written before any prompt.** Army: total force, divisions (infantry/cavalry/archers/chariots), formations, banners, camp footprint. City/fortress: population, walls, towers, gates, density, terrain. Civilians: density, normal vs. panic behavior. The bible governs EVERY subsequent shot — apparent world-scale never fluctuates between clips unless the story deliberately moves into a small subgroup.
+3. **Visible-people count ≠ historical scale.** Communicate thousands through layers, not headcount: extremely deep formations, ranks dissolving into atmospheric haze at the horizon, masses of tiny moving figures, dust columns, camps and lines extending beyond the frame. Foreground = individuals; midground = dozens/hundreds; background = thousands. (This is also exactly how 9:16 depth-stacking already works — section 3.)
+4. **Events have physical consequences, as a chain: cause → impact → reaction → consequence.** Thousands moving → churned ground, dust walls, horses reacting, dense sound. Mass arrows → sky density, raised shields, impacts into earth/wood/armor, formation disruption. A strike on stone → fragmentation, dust, structural damage, human reaction — never a generic Hollywood fireball unless the material justifies it. (Extends §34 from single injuries to the whole environment.)
+5. **Do not beautify war.** A battlefield is not a travel ad. Where caused by the events on screen: dust, smoke, debris, disturbed earth, blood within §24's caps, wounded, bodies where historically appropriate, broken equipment, frightened animals, reduced visibility. Never added randomly — always caused. (Pairs with §37b's bleak grading.)
+6. **The environment evolves across a battle**: before (clear air, ordered formations, tension) → first engagement (dust rising, first casualties) → full battle (heavy dust, broken formations, wounded, scattered equipment, reduced visibility) → aftermath (hanging smoke, silence, bodies and abandoned weapons, exhausted survivors, dust settling). State the stage in every battle clip's prompt.
+7. **Location-specific realism.** Research the actual terrain, soil, season, climate, and building materials — never a generic battlefield or fantasy fortress. If the ground is dry and thousands move on it, dust is a main character; no lush grass and postcard skies because they're pretty.
+8. **Cities feel like cities; fortresses like the real fortress.** Architectural density in layers (foreground structures + midground streets + background skyline + distant fortifications + human activity), researched defensive architecture, damage matching materials.
+9. **Human behavior is varied inside coherent mass behavior.** Invasion: some run, freeze, hide, carry children, search for family, pray, fight, stand in shock. Battle: commands shouted, some advance, some hesitate, wounded seek help, horses react unpredictably, formations break and reform. Never identical extras.
+10. **The world continues beyond the frame.** Every wall, army, city, and battle implies continuation past the frame edges — the camera observes one small portion of a much larger event, never a stage set.
+11. **Research split, stated honestly:** documented facts / reasonable reconstruction / cinematic invention — invention is never presented as documented fact (pinned-comment discipline), but scenes are never left visually empty just because sources don't describe every person.
+12. **The four-question shot check — a shot is finished only when all four are YES:** Does it look cinematic? · Does it look historically believable? · Does the physical environment behave correctly? · Does the scale match the historical event?
+13. **Pre-sequence scale check before finalizing prompts:** event scale, human density, geographical scale, architectural scale, action density, environmental consequences, human reaction, clip-to-clip consistency. Any weak answer → revise before generating.
+14. **The standard:** not a movie containing historically accurate characters — a movie in which the entire world behaves according to the history. The audience should never think "a few AI people pretending"; they should think "I am looking at a real historical event."
+
+## 8. PRODUCTION BREAKDOWN FORMAT (the deliverable per clip)
+
+CLIP NUMBER / DURATION / MODE (V or NOVA+status) · Scene purpose · Blocking & actor movement · Camera strategy · Shot size · Lens/visual perspective (translated per section 4) · Camera movement · Composition (9:16-aware, caption band respected) · Focus strategy · Lighting · Environment/production design · Performance direction (§37a vocabulary) · Continuity requirements (locks, screen direction, wardrobe) · Transition into next clip (stitching rule used) · Sound/ambience.
+
+The goal, verbatim from the owner's brief: make the audience feel physically present at Gaugamela on October 1st, 331 BC. Camera invisible when it should be invisible, expressive when it should be expressive, spectacular only when the story earns it.
