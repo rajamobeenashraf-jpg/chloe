@@ -143,21 +143,18 @@ const CLIP_TRIM = {
 // action the script called for during that window, reads as dead time.
 // Head-trim 3.0s off the start (owner's explicit instruction) rather
 // than regenerate; this lands her line at local ~1.56s instead of 4.56s.
-// Owner decision, 2026-08-29: clip10B opens on Hazel's own eye-level
-// selfie framing (beat 1) before the camera detaches and rises past
-// her (beat 2) into the aftermath reveal (beat 3) -- owner wants the
-// clip to start directly on the reveal, with Hazel never in frame.
-// Frame-checked 3.5-4.0s: a sliver of her hair is still visible at
-// 3.7s, fully clean by 3.85s -- landed on 3.833333s (frame 92 @
-// 24fps), the earliest clean frame with zero trace of her. No
-// captions on this clip (visual-only), so no shift needed. Owner then
-// asked for two further 1.0s trims off the start (each frame-verified
-// clean, camera progressively higher into the rise) -- total 5.833333s.
-// clip10's head-trim (0.58333) no longer applies: clip10 was removed
-// entirely 2026-08-29, merged into the rewritten clip9.
+// clip10B's old head-trim (5.833333, applied 2026-08-29 to skip past
+// Hazel in the earlier version of this clip's opening) NO LONGER
+// APPLIES: clip10B was fully recreated 2026-08-29 (second/third
+// generation) specifically to open on a precise BEAT 1 match to clip 9's
+// last frame -- applying the old trim to the new footage would skip
+// straight past that entire continuity-matched opening (and BEAT 2's
+// camera lift) into the middle of BEAT 3, defeating the whole point of
+// the recreation. Removed; the new clip10B uses its own frame 0.
+// clip10's head-trim (0.58333) no longer applies either: clip10 was
+// removed entirely 2026-08-29, merged into the rewritten clip9.
 const CLIP_HEAD_TRIM = {
   clip5: 3.0,
-  clip10B: 5.833333,
 };
 
 // Owner decision, 2026-08-26: fix clip10's dead-silence tail (confirmed
