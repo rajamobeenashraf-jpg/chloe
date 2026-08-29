@@ -1,7 +1,7 @@
 # Alexander/Gaugamela — Production Breakdown (v1, per `cinematic-direction-brief.md`)
-**Companion to `episode-alexander-gaugamela-script.md` (v8). Dialogue unchanged from the approved script. Runtime 84s, 10 clips. Screen-direction map for the whole episode: in NOVA shots, Macedonians advance LEFT→RIGHT, Persians face right→left, Darius flees deeper-right/away; in V-mode shots, the Persian line sits in the DEEP FRAME behind Hazel. Every clip obeys this one map.**
+**Companion to `episode-alexander-gaugamela-script.md` (v9). Dialogue unchanged from the approved script. Runtime 84s, 12 clips (battle redesigned to Hollywood coverage density 2026-08-29: 5b 4s, 5c NEW 3s, 6a 6s, 6b NEW 3s, 7 10s — battle total still 31s). Screen-direction map for the whole episode: in NOVA shots, Macedonians advance LEFT→RIGHT, Persians face right→left, Darius flees deeper-right/away; in V-mode shots, the Persian line sits in the DEEP FRAME behind Hazel. Every clip obeys this one map.**
 
-**Mode summary (updated 2026-08-29 — mode decisions are now Claude's per the owner's final authority clarification; labeled here for owner visibility/veto, not pending approval):** V-mode throughout except the battle scene, where clips 5a and 6 are **NOVA — DECIDED**. 5a delivers wedge scale a POV shot can't; 6 is decided Nova on the reasoning in its entry (the mute-legibility keystone — a locked third-person frame is the only staging that guarantees "the line broke HERE" reads with sound off, and 5b/7 already carry the first-person visceral load on both sides of it). Clips 5b and 7 stay V-mode deliberately — her reactions belong to her own lens.
+**Mode summary (updated 2026-08-29 — mode decisions are Claude's per the owner's final authority clarification; labeled for visibility/veto):** V-mode throughout except the battle scene, redesigned 2026-08-29 to Hollywood coverage density (owner request — six shots across the same 31 seconds, built from parallel action + inserts + cut-on-action, never rendering any action twice per brief §8.2): **5a NOVA** (the wedge launches), **5b V** (her reaction), **5c NOVA — NEW** (the Persian line bracing, parallel action), **6a NOVA** (the impact, locked frame), **6b NOVA — NEW** (ground-level insert), **7 V** (her reaction + Darius's flight). Clips 5b and 7 stay V-mode deliberately — her reactions belong to her own lens. Battle runtime unchanged (31s), episode total unchanged (84s), now 12 clips.
 
 **Duration changes from v7 (script updated to match):** 5b 4s→5s, 6 12s→10s, 7 10s→11s. Net zero; total stays 84s. Reason: clip 6's on-camera reaction beat moves to the head of clip 7 (if 6 goes Nova, her face can't be in it), so 7 needs the extra second and 6 needs less.
 
@@ -38,7 +38,9 @@
 | 1–4 | BEFORE | "Clear pre-dawn/dawn air — no battle dust yet; tension, not chaos." |
 | 5a | FIRST ENGAGEMENT | "Dust is RISING right now, kicked up by this advance — building, not yet opaque; formations still readable." |
 | 5b | FIRST ENGAGEMENT | "The air around her ALREADY carries the rising dust of the advance she is inside of." |
-| 6 | FULL BATTLE | "The air is ALREADY heavy with dust from the fighting before this shot begins — this is NOT a clean battlefield; visibility at distance is already reduced." |
+| 5c | FIRST ENGAGEMENT | "The dust wall of the approaching charge is ALREADY rising beyond the line — building, the charge itself not yet arrived." |
+| 6a | FULL BATTLE | "The air is ALREADY heavy with dust from the fighting before this shot begins — this is NOT a clean battlefield; visibility at distance is already reduced." |
+| 6b | FULL BATTLE | "Ground-level dust ALREADY churned and bursting with every impact — same density as the impact shot this follows." |
 | 7 | FULL BATTLE→COLLAPSE | "Dust everywhere, ALREADY thick before the shot starts; scattered equipment underfoot; the field's order already dissolving." |
 | 8–9 | AFTERMATH | "Dust settling into dusk haze; smoke columns on the field's far side; the day visible on every person and surface." |
 
@@ -127,8 +129,8 @@
 - **Transition out:** hard cut to 5b on the loudest hoof-impact frame; the roar carries across the cut unbroken (§25).
 - **Sound:** horns → massed hooves building. No music. The sound of this clip continues into 5b/6/7 as one unbroken bed.
 
-## CLIP 5b — 5s — V-MODE
-- **Scene purpose:** snap back to the human being inside the event; her line; the eyeline that launches clip 6.
+## CLIP 5b — 4s — V-MODE
+- **Scene purpose:** snap back to the human being inside the event; her line; the eyeline that launches 5c.
 - **Blocking:** she's carried in the moving support line, bodies passing both frame edges; at the end her head snaps toward off-frame right — toward the front.
 - **Camera strategy:** tight, unstable, subjective — maximum contrast against 5a's smooth sweep. The gap/front is NOT in frame (behind her; §37c honest).
 - **Shot size:** tight chest-up, closest V-mode framing yet.
@@ -139,30 +141,56 @@
 - **Lighting:** identical grade to 5a (stitching rule 4).
 - **Performance (§37a):** breath audibly ragged BEFORE she speaks; the line punched out in two bursts ("We're not staying back." / "We're going WITH them."); then the head-snap right — eyes wide, lips parting — held a half-beat.
 - **Continuity:** tablet gripped visible in frame (gag object); wardrobe/dust state carries into 7.
-- **Transition out:** eyeline handoff (stitching rule 1) — she looks; cut to what she sees.
+- **Transition out:** eyeline handoff (stitching rule 1) — she looks toward the enemy; cut to what awaits the charge.
 - **Sound:** the same unbroken roar, now with close bodies, breath, leather — her line shouted over it.
 
-## CLIP 6 — 10s — **NOVA (PROPOSED — the one NEW approval this breakdown asks for)**
-- **The case FOR Nova:** this is the shot the whole episode's mute-legibility promise hangs on — "the line broke HERE." From inside the crush (V-mode), the model must render legible cause-and-effect in a chaos shot from a shoulder-height jostled camera: the highest-risk possible framing for the §22/§17 failure modes this project has already fought six rounds over on Troy/Legnica. One locked third-person frame makes the buckling line readable by construction. **The case AGAINST:** V-mode here would be more visceral and personal. **Recommendation: Nova** — 5b/7 already carry the visceral first-person load on either side of it; this beat's job is comprehension, not immersion. Owner decides.
+## CLIP 5c — 3s — **NOVA (NEW in the Hollywood-coverage redesign — parallel action, technique 1)**
+- **Scene purpose:** the OTHER side of the same seconds — the Persian line bracing to receive the charge. Coverage feel without rendering any action twice: a different subject in the same time window.
+- **Blocking:** the Persian front rank locking shields and dropping spears level toward frame-left (facing the incoming wedge); behind them, ranks compressing; at the frame's right edge, the gap's torn margin visible — men being pulled away toward some other crisis, the tear widening.
+- **Camera strategy / shot size:** one static-ish medium-wide from oblique front — close enough to read faces behind shield rims (fear, resolve, variety per engine rule 9), wide enough to read the formation.
+- **Lens/perspective:** compressed feel, ranks stacked.
+- **Camera movement (§36):** "camera holds position; no zoom, no push, for the entire 3 seconds."
+- **Composition (9:16):** spears crossing the frame as diagonals; faces lower-third; the dust wall of the approaching (unseen) charge rising frame-left-top.
+- **Focus/Lighting:** deep; identical bleached grade (stitching rule 4). FIRST ENGAGEMENT stage: dust rising, not yet opaque.
+- **Performance:** §37a on the two nearest faces — one man's jaw set, another's eyes flicking sideways toward the widening gap; no dialogue.
+- **Continuity:** Persian gear/dress only (§33 — zero Macedonian iconography); the wedge itself NOT shown (that's 6a's job — no action rendered twice); screen direction: they face LEFT, receiving the L→R attack.
+- **Transition out:** cut on action across the cut (technique 3): the spears settle level in this shot's last beat → 6a opens with the collision already arriving.
+- **Sound:** the roar swelling, closer now; shield-wood knocking as the wall locks; no music.
+
+## CLIP 6a — 6s — **NOVA — DECIDED (mode decision Claude's per the 2026-08-29 authority rule)**
+- **Why Nova:** the mute-legibility keystone — "the line broke HERE." A locked third-person frame is the only staging that guarantees the buckling reads with sound off, and 5b/7 carry the first-person load on both sides.
 - **Scene purpose:** the impact — the wedge enters the gap, the Persian line visibly breaks at the point of contact.
 - **Blocking:** wedge tip drives in from frame-left; at contact the Persian formation buckles right-of-center — shields dropping, spears turning away, men scattering sideways out of the wedge's path. Cause and effect in one sustained frame.
 - **Camera strategy:** LOCKED. Static camera, positioned on the Macedonian side (consistent with where 5b's eyeline pointed), and the action moves THROUGH the frame. After 5a's sweep, stillness reads as awe — and a locked frame is the single most legible possible staging (and the most reliably generatable).
 - **Shot size:** full formation width of the local breach in the tall frame.
 - **Lens/perspective:** compressed feel — "flattened perspective, the colliding masses stacked against each other" — collision density, not distance.
-- **Camera movement (§36, force-written):** "completely static locked camera, NO movement, NO zoom, NO cut to any closer framing at any point during the entire 10 seconds."
+- **Camera movement (§36, force-written):** "completely static locked camera, NO movement, NO zoom, NO cut to any closer framing at any point during the entire 6 seconds."
 - **Composition (9:16):** breach center-frame; Macedonian push entering lower-left; Persian mass upper-right beginning to fray at the contact point first, intact further away — the break must propagate visibly outward from one point.
 - **Focus:** deep.
 - **Lighting (§37b):** same bleached desaturated grade; dust as slate-grey, not glowing.
 - **Environment:** fully populated both sides (§17 hard, scale-bible density floor: midground hundreds, background thousands in haze). FULL BATTLE stage per the scale bible: heavy dust at distance, dropped shields and snapped sarissas at the contact point, fallen men and horses where the wedge struck (§24-compliant — visible and real, never graphic), riderless horses breaking loose. Both lines run past both frame edges.
 - **Performance:** none (no principals' faces; Alexander is inside the mass, identifiable by the wedge point only).
 - **Continuity:** §33 gear separation absolute; screen direction L→R; §22 trace mandatory (camera bearing vs. 5a's, wedge vector, breach point — all derived in writing before generation).
-- **Transition out:** exit into her reaction (stitching rule 2) — cut to clip 7 opening ON her face.
+- **Transition out:** percussive insert cut (technique 2) on the collision's loudest beat — into 6b.
 - **Sound:** the impact itself — timber-and-metal mass collision over the continuous roar; still no music.
 
-## CLIP 7 — 11s — V-MODE
+## CLIP 6b — 3s — **NOVA (NEW in the Hollywood-coverage redesign — cutaway insert, technique 2)**
+- **Scene purpose:** the impact felt at ground level — pure percussion. An insert never shows the main action, so it can never mismatch it; it deepens the moment while hiding the seam between 6a and 7.
+- **Blocking/content:** ground-level detail montage-in-one-shot: hooves hammering past close to the lens, dust bursting off the earth with each strike, a dropped Persian shield spinning on its rim into frame and settling, running feet scattering behind it. No faces, no principals, no readable single "event."
+- **Camera strategy / shot size:** locked low frame at earth level — extreme foreground detail.
+- **Lens/perspective:** shallow feel — "sharp on the ground-level detail, legs and dust motion-soft beyond."
+- **Camera movement (§36):** "camera fixed at ground level; no movement of any kind for the entire 3 seconds."
+- **Composition (9:16):** earth fills the lower half; legs/dust occupy the upper frame; the shield settles just above the caption band.
+- **Lighting:** identical bleached grade; FULL BATTLE dust density at ground level.
+- **Performance:** none.
+- **Continuity:** the dropped shield is Persian (§33); hooves travel L→R (the charge's direction — screen-direction map holds even in an insert); dust stage matches 6a exactly.
+- **Transition out:** reaction cut (stitching rule 2) — from ground chaos to her face, clip 7 opening ON her.
+- **Sound:** the roar's low frequencies dominant — ground-borne thunder, individual impacts close; no music.
+
+## CLIP 7 — 10s — V-MODE
 - **Scene purpose:** her reaction (moved here from old clip 6) + Darius's flight and the visible collapse — the battle decided on screen.
 - **Blocking:** opens tight on her, mid-reaction. Behind/past her, deep in frame, the distinct chariot-and-standard wheels and RECEDES (§37c-correct: a face-on camera showing something shrinking away is honest geometry). Persian soldiers stream past her on both sides; nearest ones visibly glance toward the fleeing chariot before breaking themselves.
-- **Camera strategy:** one continuous selfie take, two phases: reaction (0–3s), then she half-turns and the camera catches the deep-frame flight and the stream of retreat (3–11s).
+- **Camera strategy:** one continuous selfie take, two phases: reaction (0–3s), then she half-turns and the camera catches the deep-frame flight and the stream of retreat (3–10s).
 - **Shot size:** tight on her opening; loosening slightly as she turns.
 - **Lens/perspective:** her sharp; chariot deep-frame, small, distinct by silhouette and standard (visual identification, not detail).
 - **Camera movement:** jostled handheld, buffeted by the men streaming past (motivated).
@@ -215,15 +243,17 @@
 | 3→4 | **Light-motivated cut** (tent flap opens, hard light + camp sound flood in) | The transition IS the story beat: night's intimacy ends, the day of battle begins |
 | 4→5a | **J-cut** (the first horn hits before the cut) + V→Nova seam | Stitching rule 1: her world is interrupted by sound, then we see the thing the sound belongs to |
 | 5a→5b | **Action cut on the loudest hoof-impact frame**, Nova→V | Cutting on a percussive peak hides the seam; the roar runs unbroken across it (§25) |
-| 5b→6 | **Eyeline cut** (her head-snap right → what she's looking at), V→Nova | The book-standard motivated POV cut — the audience is thrown to the front because SHE looked there |
-| 6→7 | **Reaction cut**, Nova→V (from the break to her face mid-reaction) | Stitching rule 2: the event's meaning lands on the human anchor; rhythm note — this is where the edit stops accelerating and holds |
+| 5b→5c | **Eyeline cut** (her head-snap toward the enemy → the line bracing to receive), V→Nova | Parallel action: the audience is thrown to the OTHER side of the same seconds because SHE looked there |
+| 5c→6a | **Cut on action across the cut** (spears settle level → the collision arrives), Nova→Nova | Technique 3: the action spans the cut with zero temporal overlap — the brain stitches the middle |
+| 6a→6b | **Percussive insert cut** on the collision's loudest beat, Nova→Nova | Technique 2: the cutaway deepens the impact at ground level and can never mismatch the main action it doesn't show |
+| 6b→7 | **Reaction cut**, Nova→V (from ground chaos to her face mid-reaction) | Stitching rule 2: the event's meaning lands on the human anchor; rhythm note — this is where the edit stops accelerating and holds |
 | 7→8 | **Temporal transition via sound evolution** (battle roar thins into wind/creak, pre-lapped) | The engine's aftermath stage entered through sound decay, never a slam to silence — time visibly/audibly passed |
 | 8→9 | **Cut on her exhale** (breath as the diegetic trigger) | The episode's pulse slowing on camera; the aftermath's stillness earned by the cut itself |
 | 9→end | **Hold, then cut to black; ambient bed fades after picture** (L-cut into black) | Established doom/awe-outro precedent; the world outlives the frame |
 
-**Rhythm curve (brief §8.8):** longest-feeling shots at 1–4 (dread builds in stillness) → acceleration 5a–5b (5s/5s) → the held 10s Nova impact (tension via duration, not cutting) → 7's 11s deceleration inside chaos → 8–9 deliberately slow. No fixed shot length anywhere.
+**Rhythm curve (brief §8.8):** longest-feeling shots at 1–4 (dread builds in stillness) → accelerando into the impact (5a 5s → 5b 4s → 5c 3s) → the held 6s locked impact (tension via duration, not cutting) → the 3s percussive insert → 7's 10s deceleration inside chaos → 8–9 deliberately slow. Hollywood battle rhythm: shots shorten as violence approaches, hold at the peak, slow after. No fixed shot length anywhere.
 
-**Same-moment intercutting check (brief §8.2):** zero instances — every cut advances time; no action is shown twice from two angles. The battle's V/Nova alternation is sequential coverage, not cross-coverage of one moment.
+**Same-action-twice check (brief §8.2, refined):** zero instances — 5c shows the defenders (never the wedge), 6a shows the collision (the only shot that does), 6b shows ground detail (no main action). Parallel action and inserts give full Hollywood coverage density with nothing rendered twice.
 
 ---
 
