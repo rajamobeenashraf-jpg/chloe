@@ -234,6 +234,18 @@
 
 ---
 
+## MEANING LAYER (per brief §10 — the design's final layer, added 2026-08-29)
+
+**Controlling idea (one sentence, governs every shot):** *History is decided by individual human beings — one man's calm, one man's panic — and someone has to be there to write it down.* Every beat serves it: Alexander's unhurried stillness (clips 1–3, 5a, 9's "calmest point of the fastest object"), Darius's flight deciding the battle (7), and Hazel's tablet making her the witness the episode is ABOUT.
+
+**Visual motif — the tablet/stylus, upgraded from running gag to the episode's spine:** (1) pressed into her hands, fumbled — she's unready (clip 2) → (2) gripped white-knuckle through the battle, the §37a beat where her hands start toward her face and clamp the tablet instead — witnessing as an act of will (5b, 7) → (3) held UP, steady, into his eyeline — "Every word." — the day now belongs to the record (8). The §37a hand-clamp is no longer just performance mechanics; it IS the idea: her job overriding her fear.
+
+**Frame rhyme (opening ↔ closing):** clip 1 opens on stillness before the storm — a sleeping king, guards motionless, one lamp. Clip 9 closes on stillness after it — her motionless at the same kind of small fire, the plain dark behind. Same visual temperature, transformed meaning: the calm before became the quiet after, and she is now the still figure the camera holds. Clip 9's composition is staged as a deliberate echo of clip 1's (single warm light source, one still human, darkness holding the frame).
+
+**Subjective sound moment (one per episode, spent here):** clip 7's first ~2 seconds — on the cut from 6b's ground-thunder to her face, the roar falls away MUFFLED (filtered, §25-compliant, never silence): the audience is inside her head as she processes what she's seeing. Her half-turn snaps the full battle sound back in. One use, at the exact emotional peak, then never again.
+
+**Cost inside the triumph (clip 8 restaged):** the celebration stays — but between her and the erupting camp, wounded men are being carried past on shields toward the fires, and her eyes go to THEM for one beat before Alexander reaches her. Nobody comments on it. The frame holds both truths at once — his victory and its price — and her line lands differently because of what she just looked at.
+
 ## EDIT DESIGN MAP (per brief §8 — the cut TYPE chosen at every boundary, decided by drama, executed on §16 hard-cut mechanics)
 
 | Boundary | Cut type | Why this one |

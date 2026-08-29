@@ -129,7 +129,18 @@ Generation prompts are never written directly from a script. Every episode moves
 
 Claude's job is the precise director/cinematographer/editor-level specification; the video model's job is to execute it. The Alexander episode has already traversed stages 1–7 across its documents (script v8, scale bible, breakdown); stage 8 happens only on a production branch after the owner's outstanding approvals.
 
-## 10. PRODUCTION BREAKDOWN FORMAT (the deliverable per clip)
+## 10. THE MEANING LAYER (what separates award-level from competent craft — added 2026-08-29, the system's final layer)
+
+Everything above is craft. Award-level films add one more thing: **technique in service of a single idea.** Four disciplines, applied per episode:
+
+1. **One controlling idea per episode, stated in one sentence before shot design.** Every shot either serves it or earns its place some other way. (Gaugamela's: *history is decided by individual human beings — one man's calm, one man's panic — and someone has to be there to write it down.*)
+2. **A conscious visual motif that accrues meaning through repetition** — an object or image that appears at least three times and TRANSFORMS (comedy→weight, or weakness→strength). Plant it, evolve it, pay it off; never decoration. And **rhyme the frames**: the closing image should consciously echo the opening image with changed meaning.
+3. **Subjective sound at the emotional peak.** Once per episode, at most, the sound design may leave objective reality and become what the character hears — a muffled drop, a single sound isolated from the roar (§25-compliant: filtered, never a dip to silence). The audience feels the moment from inside her body. Rationed like the silence beat — one per episode or zero.
+4. **The cost stays visible inside the triumph.** A victory scene that shows only victory is propaganda; award-level war films keep the price in frame — celebration and the wounded in the same shot, joy with a graveyard behind it (the show already knows this: Ep 8's Berlin design). Never lecture it in dialogue; stage it and let it sit.
+
+**And the honest boundary of this system (recorded so no future session polishes forever):** past this layer, further specification is diminishing returns. An award-level film is finished at the edit with real footage, not in pre-production documents. When the design reaches this layer, the next quality gain comes from GENERATING — a test clip, real QC, iteration on actual frames — not from another documentation pass.
+
+## 11. PRODUCTION BREAKDOWN FORMAT (the deliverable per clip)
 
 CLIP NUMBER / DURATION / MODE (V or NOVA+status) · Scene purpose · Blocking & actor movement · Camera strategy · Shot size · Lens/visual perspective (translated per section 4) · Camera movement · Composition (9:16-aware, caption band respected) · Focus strategy · Lighting · Environment/production design · Performance direction (§37a vocabulary) · Continuity requirements (locks, screen direction, wardrobe) · Transition into next clip (stitching rule used) · Sound/ambience.
 
