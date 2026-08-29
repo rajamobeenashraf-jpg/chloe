@@ -133,21 +133,40 @@ async function main() {
 
   // Sidechain-duck the score against the clean gate track (not the noisy
   // dialogue+ambient audio -- see comment above) then mix the ducked score
-  // under the untouched, already-loudnorm'd dialogue. base volume=0.55
-  // (~-5dB) gives the score real presence in true gaps; the duck pulls it
-  // to roughly -13dB under it during measured speech windows, audible but
-  // clearly secondary. apad+-t guarantees the mixed output is never
-  // shorter than the video target regardless of the dialogue extract's
-  // own (observed slightly-short) length.
-  console.log("[mix] building sidechain-ducked mix (gated on measured speech windows)...");
+  // under the untouched, already-loudnorm'd dialogue. apad+-t guarantees
+  // the mixed output is never shorter than the video target regardless of
+  // the dialogue extract's own (observed slightly-short) length.
+  //
+  // Owner (round 4): the music is too loud overall, AND two specific clips
+  // (clip1's opening thesis statement, clip9's multi-voice horse-joke
+  // scene) should have NO music at all -- a clean opening hook and a
+  // dense, fast, overlapping-dialogue comedy scene both read better
+  // against a dry background than under a musical bed. Base volume cut
+  // 0.55->0.32 (~-4.7dB further reduction) and duck ratio deepened 6->9
+  // for a more subordinate presence during speech; MUTE_WINDOWS zeroes
+  // the score entirely (not just ducked) across those two clips'
+  // absolute-timeline spans, verified in isolation via a throwaway
+  // enable=between() test before trusting it here (execFile passes argv
+  // with no shell, so the comma inside between(t,a,b) needs a literal
+  // backslash -- "\\," in the JS source -- to survive as an escape
+  // character in ffmpeg's OWN filtergraph grammar, not a shell one).
+  const MUTE_WINDOWS = [
+    [0, 9.041667], // clip1 -- opening thesis statement
+    [83.333336, 91.375003], // clip9 -- horse-joke scene, multi-voice
+  ];
+  const muteFilters = MUTE_WINDOWS
+    .map(([s, e]) => `,volume=0:enable=between(t\\,${s.toFixed(6)}\\,${e.toFixed(6)})`)
+    .join("");
+
+  console.log("[mix] building sidechain-ducked mix (gated on measured speech windows, muted on clip1/clip9)...");
   await run("ffmpeg", [
     "-y",
     "-i", DIALOGUE_WAV,
     "-i", SCORE_TRIMMED,
     "-i", GATE_WAV,
     "-filter_complex",
-    "[1:a]volume=0.55[music_quiet];" +
-      "[music_quiet][2:a]sidechaincompress=threshold=0.05:ratio=6:attack=120:release=600:makeup=1[music_ducked];" +
+    `[1:a]volume=0.32${muteFilters}[music_quiet];` +
+      "[music_quiet][2:a]sidechaincompress=threshold=0.05:ratio=9:attack=120:release=600:makeup=1[music_ducked];" +
       `[0:a][music_ducked]amix=inputs=2:duration=longest:normalize=0[premix];` +
       `[premix]apad=whole_dur=${targetDuration.toFixed(3)}[aout]`,
     "-map", "[aout]",
