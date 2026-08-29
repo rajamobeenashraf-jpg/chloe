@@ -360,3 +360,19 @@ Same Persian-side reverse angle as the first test, this time with the frozen ENV
 Delivered per §20. **Claude QC: MAJOR IMPROVEMENT — scale issue fixed.** Frame sampling shows a wide, full-frame-width Companion cavalry formation (~25-30+ riders across, not 6-7), extending into background haze with an implied larger mass beyond, dust rising off the full formation; the impact reads as a genuine multi-rider collision (weapons/shields flying, multiple points of contact) rather than a small clash. Freezedetect PASS (6.08s, no frozen stretches). This confirms S10/S11 as the correct, complete diagnosis — the verbatim-block + depth-continuation fix resolved the scale problem entirely.
 
 **Gemini eyes qc queued on BOTH test clips** (first test still processing as of this entry — verify pass is slow on a full battle scene; v2 to be queued next) — findings to follow automatically per the owner's standing instruction, not held for a prompt.
+
+## Gemini eyes results — both multi-angle validation tests (2026-08-29)
+
+**Test v1 (uncorrected, `c0e238ea`): score 5.8/10.** 2 findings, 1 CONFIRMED: physics severity 3 at 00:03.200 — an infantry soldier launched unnaturally high/floaty off the impact. 1 DISMISSED (anatomy).
+
+**Test v2 (corrected scale fix, `c5fdb474`): score 6.2/10.** 3 findings, 2 CONFIRMED: physics severity 3 at 00:04.000 (wicker shields launching with exaggerated weightlessness), anatomy severity 3 at 00:04.200 (lead horseman's sword-hand morphs/loses the weapon on impact). 1 unverified severity-2 edit note (dust obscures the resolution too abruptly).
+
+**Neither score nor finding set blocks anything** — these are impact-physics artifacts typical of AI collision moments (also seen, unflagged, in approved 6a itself), not identity/geometry/scale failures. No CONFIRMED finding requires a regeneration under §19; noted for future prompting (impact-moment physics: weapon-hand and dropped-object weight).
+
+## Root-cause: why the reverse angle still reads as "6-9 soldiers, no depth" despite the scale fix (owner-verified via frame comparison, 2026-08-29)
+
+Owner correctly identified, and Claude confirmed by comparing 6a's frames against the reverse-angle test's frames side by side: **6a (side-on camera) shows genuine front-to-back depth — multiple distinct cavalry ranks stacked and offset, receding diagonally into frame. The reverse/head-on test shows one wide horizontal rank + a small impact cluster, no visible second/third rank behind it.**
+
+**Cause: camera geometry, not a scale-prompting failure.** A camera facing directly down the line of an oncoming charge has riders standing behind other riders OCCLUDED along the sightline — depth is physically invisible from a true head-on angle regardless of how many riders exist in the scene or how the prompt is worded. 6a's original angle is roughly perpendicular to the charge's direction of travel, which is precisely why each rank is offset sideways and visible, producing the "wave" look. The depth-continuation prompt line (S11) partly worked but the model expressed it as a WIDER single line rather than stacked depth — consistent with this geometric limitation, not a prompting miss this time.
+
+**New learning, promoted to PROMPT_LEARNINGS:** a true head-on reverse angle cannot convincingly show charge depth; an OBLIQUE offset (camera on the far side but angled diagonally, not dead-center) is required for any reverse-angle shot that also needs to read as a deep formation. Proposed as the next test, pending owner go-ahead.
