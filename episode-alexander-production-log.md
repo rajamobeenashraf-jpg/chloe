@@ -416,3 +416,13 @@ QC: Hazel identity holds (v5 face, chiton with straight-pin fibulae visible, sel
 **New learning for the ledger:** multi-person night/sleep+guard compositions are a soft-block risk category (2 of 3 attempts failed with no error message) — simplify language and minimize reference-image count as the first-line fix before assuming content is impossible.
 
 AWAITING OWNER approval on the start frame before generating the clip.
+
+## Round 12 — CLIP 1 GENERATED (2026-08-29)
+
+Generated from the approved start-frame still (`adc48e39`) via omni_reference, Hazel's episode refs for identity backup, 9s, 1080p, V-mode.
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AY | Clip 1 v1 | `38a0ea72-971b-4fd9-a542-44b70181aa49` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_061217_38a0ea72-971b-4fd9-a542-44b70181aa49.mp4 |
+
+Delivered per §20. QC: freezedetect PASS (9.06s, no frozen stretches); the glance-back-at-the-cot beat lands correctly around the 4-4.5s mark as scripted (profile turn toward Alexander, mid-line); the held deadpan close reads clean; Hazel identity, costume, and the still's composition (Alexander asleep, two guards flanking, lamplight/brazier) all held from the start frame through the full 9s; guards remained still throughout; no phone/rig ever visible. AWAITING OWNER verdict — this is CLIP 1 of 12 (6a already in the can; 10 remain after this one).
