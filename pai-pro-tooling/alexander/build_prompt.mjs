@@ -147,7 +147,13 @@ function buildStillPayload(clip) {
   parts.push(modeBlock(clip.mode));
   if (clip.hazel) parts.push(`STRICT IDENTITY RE-RENDER — ${HAZEL_IDENTITY}\n\n${HAZEL_EPISODE_LOOK}`);
   for (const npc of clip.characters || []) if (LOCKS[npc]) parts.push(LOCKS[npc]);
-  if (clip.environment) parts.push(`ENVIRONMENT: ${clip.environment}`);
+  // S4/S10 (PROMPT_LEARNINGS.md): the frozen ENVIRONMENT_BLOCK must be pasted
+  // verbatim for battle scale to render correctly — paraphrasing or omitting
+  // it silently collapses scale. The video builder below already does this;
+  // stills for battle clips need it too, since a still is often the ONLY
+  // scale-defining generation for hard-geometry shots (S1/S2).
+  if (clip.battle) parts.push(ENVIRONMENT_BLOCK);
+  else if (clip.environment) parts.push(`ENVIRONMENT: ${clip.environment}`);
   parts.push(`SCENE / COMPOSITION: ${clip.stillComposition}`);
   parts.push(`GRADE: ${GRADES[clip.grade] || clip.grade}`);
   parts.push(`CONSTRAINTS: no duplicated characters, no extra people in frame, no on-screen text or logos, no camera/phone/rig visible anywhere, no music, single still frame only.`);
