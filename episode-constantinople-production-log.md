@@ -253,6 +253,16 @@ Reference image (owner-approved, Option A): job `9ddd4a2c-f604-4002-b187-92d01e9
   - Head-lowering-on-entry: INCONCLUSIVE from still-frame QC — background crowd rows stay small/edge-cropped behind Hazel's selfie framing for most of the shot; this is a motion cue a still frame can't confirm either way. Flagged honestly to owner, not claimed as confirmed.
   - Sent to owner as CLIP 14 round 2. AWAITING OWNER APPROVAL.
 
+### CLIP 15 — final episode clip, present-day dome bridge + concluding line (2026-08-29)
+Owner asked for a concluding line mirroring Chloe's short-but-impactful closer (see the "Nobody who stood here..." line locked in the script — full derivation in the conversation, not repeated here). Script row 15 updated: duration bumped 13s → 16s to fit the extra line; owner explicitly said not to worry about the episode's overall runtime ceiling for now, decision deferred to the edit stage.
+- Submitted: job `e4e9209f-0984-487f-a4b4-72df4dabbd31` (seedance_2_5, omni_reference, 16s, 9:16, 4 Hazel refs + audio ref — no Mehmed reference needed, he doesn't appear in this clip). No preset intercept.
+- **Result:** https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260828_235705_e4e9209f-0984-487f-a4b4-72df4dabbd31.mp4 (16.04s, 720x1280). freezedetect CLEAN. Frame QC across 1s/3s/5s/7s/9s/11s/13s/14.5s/15.5s + granular end-frames at 15.7/15.85/15.95/16.0s:
+  - Identity: CONFIRMED — Hazel matches locked references throughout.
+  - Scene: CONFIRMED empty/reverent — no crowd, no soldiers, visible dust motes and light shafts through the dome windows, she looks upward toward the dome at ~5s as scripted.
+  - Fade-to-black: CONFIRMED lands exactly at the end — dimming visible at 15.95s, fully black at 16.0s.
+  - Dialogue pacing: FLAGGED, not confirmed — the scripted dialogue is long for a 16s clip; frames at 14.5s and 15.5s still show her actively mid-speech, leaving very little window before the 15.95s fade for both the scripted "beat" pause and a distinctly whispered "Hazel — out of time" sign-off. Still-frame QC can't verify audio timing; flagged to owner for an ear check rather than claimed as landing correctly.
+  - Sent to owner as CLIP 15 (final clip of the episode). AWAITING OWNER APPROVAL.
+
 ### FULL EPISODE AUDIT vs. Chloe's actual footage (owner-requested, 2026-08-28)
 Owner asked for a systematic clip-by-clip comparison of clips 1-12 against Chloe's video on environment/destruction/color-grading and performance-direction granularity, verified via two additional targeted vidIQ re-watches (covering the opening walls shot, chain/harbor, and Constantine interview, plus the cannon/commander/emperor/army-enters beats already checked). Findings:
 - **Confirmed real gaps:** Clip 1's color grading (ours warm golden-hour vs. her desaturated dusty-brown/overcast bleak tone); Clip 2's emotional tone (ours reads warm/cheerful — she's smiling — vs. her "conversational yet tense, documentary tone" despite calm visuals); Clip 12's environment (fixed in v4, see above, though v3 stays the logged final); general performance-direction granularity gap — her physical performance vocabulary is consistently more specific (scleral show, forehead tension lines, both-hands-clamping, trembling lip, panting mouth, freeze-then-retreat) than our looser directions ("hand rises to mouth," "horror-struck").
