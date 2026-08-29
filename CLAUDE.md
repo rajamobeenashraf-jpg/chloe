@@ -24,6 +24,7 @@ the clip is never gated behind Claude's own findings — see the QC rule below).
    - Made the camera decision deliberately — single vs. multiple angles, movement, coverage?
    - Calibrated character emotion to the actual required intensity (brief §11)?
    - Calibrated speech pacing/delivery per character to the actual situation, never a generic uniform pace (brief §11.3)?
+   - Stated each character's eyeline explicitly for every beat where it isn't obvious or unchanging — who is looking at whom, and when it shifts (see the Eyeline / gaze direction rule below)?
    - Checked historical scale and environmental realism (brief §7)?
    - Considered sound and music where relevant (brief §15)?
    - Considered editing and continuity?
@@ -63,6 +64,14 @@ The moment any clip finishes rendering, Claude downloads it immediately, runs th
 **Never generate an asset directly at 4K, and never upscale one to 4K, before the owner has approved it.** The sequence is always: generate/deliver at the normal working resolution → send to the owner for approval, exactly as every other clip/still is delivered per the QC rule below → only once the owner has explicitly approved it, run the deterministic upscale (`upscale_image` / `upscale_video` — content-identical, no drift risk) to 4K. This applies to every generated asset in every episode, present and future: start-frame stills, standalone reference images, and any video clip the owner later wants upscaled — not just the CHARACTER_LOCK canon set that originated this pattern.
 
 Found on the Alexander/Gaugamela episode: Clip 2's corrected start-frame still generated at nano_banana_pro's default 2K (a separate process bug, logged in `PROMPT_LEARNINGS.md` as X3) and was upscaled to 4K as part of fixing that bug — before the owner had weighed in on ordering. The owner then locked this explicit approve-before-upscale sequence as the permanent rule, independent of that bug: even when 4K is clearly the right eventual resolution, upscaling is an action that waits for approval like any other production step, never something Claude does proactively or automatically.
+
+## Eyeline / gaze direction — permanent standing rule (owner lock 2026-08-29, no exceptions)
+
+**Every prompt involving dialogue between characters explicitly states where each character's eyes are, beat by beat — this is written into the prompt every time, never left implicit.** Wardrobe, camera position, and dialogue text being detailed is not sufficient; eyeline is a basic filmmaking fundamental (arguably more basic than camera angle or pacing) and defaults to something plausible-but-wrong — a character absorbed in a prop, looking at nothing, or looking at the wrong person — whenever the prompt doesn't specify it.
+
+Found on Clip 2 (Alexander/Gaugamela): Hazel was written holding a tablet and receiving dialogue directed at her, but nothing in the prompt said where her eyes were — she rendered looking down at the tablet through the entire exchange, including the beat where Alexander speaks to her directly, instead of meeting his eyes. Fixed by stating explicitly, per beat, whose eyes are on whom and when they shift (e.g., "her eyes lift from the tablet to meet his the instant he addresses her, and hold through her own answering line; she glances back down only after she finishes speaking").
+
+**Applies to every future dialogue clip, this episode and all others**, as an explicit item on the MASTER RULE's pre-finalization checklist: before presenting a final prompt for any clip with more than one character or any character with a prop/task competing for their attention, state each character's eyeline for every beat where it isn't obvious or unchanging — who is looking at whom, when it shifts, and why.
 
 ## ElevenLabs pacing references — permanent standing rule (owner lock 2026-08-29, no exceptions)
 
