@@ -767,3 +767,28 @@ actual container -- the file IS the ProRes+PCM .mov described above, just
 served from a URL ending `.mp4`. Save it locally with a `.mov` extension
 so QuickTime/editing software auto-detects it correctly instead of trying
 to open it as a standard H.264 MP4.
+
+**Owner reported "no video" on that file.** Root cause, not a corrupted
+upload: verified the local ProRes/PCM file itself still decodes cleanly
+(video AND audio) and the CDN copy is byte-identical to it, so the file
+was never broken -- ProRes 422 HQ just isn't decodable by most non-
+professional players, and the `.mp4`-labeled URL (a platform quirk, not
+something under this project's control) compounds the confusion by
+inviting a standard-H.264 decode path that fails outright on ProRes.
+
+**Fixed with a genuinely safer choice, not a guess**: rebuilt as H.264
+(`-c:v copy` straight from `troy_final_cut_scored.mp4` -- the exact video
+bytes already proven to play correctly in every prior delivery, zero new
+encode risk) + FLAC audio (truly lossless, unlike the 192kbps AAC in the
+regular delivery copies, but far more broadly supported by real-world
+players than raw PCM-in-MP4 -- deliberately chosen over PCM for this
+reason after the ProRes failure) in a container that is honestly what its
+extension says this time (real `.mp4`, not a `.mov` wearing an `.mp4`
+name). Verified both streams decode (video AND audio explicitly, not just
+the video frame count this time) before upload. Frame-exact: 3011 frames /
+125.458333s video, matching every build this episode.
+
+Output: `troy_final_cut_MASTER_v2.mp4`, 128MB (vs. the first attempt's
+1.42GB -- FLAC compresses losslessly, so this is smaller AND safer).
+Uploaded, confirmed, byte-count verified against the CDN copy
+(128,187,653 bytes both sides) before calling it delivered.
