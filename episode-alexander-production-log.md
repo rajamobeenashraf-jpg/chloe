@@ -490,4 +490,4 @@ Three short `eleven_v3` takes generated (direction-tag model, e.g. `[urgent, bre
 |---|---|---|
 | BC | Clip 2 v3 (ElevenLabs pacing refs) | `b2bec455-e3c8-4312-b1a5-9f1ce8672d6f` |
 
-AWAITING generation + owner verdict — this is a genuine experiment, not a verified fix; if it doesn't work either, that's stronger evidence toward a real Seedance multi-speaker-tempo limitation rather than a prompting gap.
+Generated successfully: https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_084654_b2bec455-e3c8-4312-b1a5-9f1ce8672d6f.mp4 — QC PASS (9.056s, zero freeze events), delivered per §20/immediate-delivery rule. AWAITING owner verdict on whether the audio pacing references actually moved the needle — this is a genuine experiment, not a verified fix; if it doesn't work either, that's stronger evidence toward a real Seedance multi-speaker-tempo limitation rather than a prompting gap.
