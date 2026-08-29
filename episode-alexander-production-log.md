@@ -168,3 +168,13 @@ Owner picked B2 ("cute evolution") and asked for fresher, more glowing skin. B2 
 | Z | Hazel v5 candidate — B2 v2, fresh glowing skin | `8b2e8360-8b70-49ce-9aa5-438b7419a64b` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_025303_8b2e8360-8b70-49ce-9aa5-438b7419a64b.png |
 
 Delivered per §20. QC: identity holds from B2 (doe eyes, brows, denser freckles, lips, bronde hair); glow executed as luminous hydrated finish, freckles and texture clearly retained — passes the realism bar. Notes reported to owner: complexion reads warmer/more golden than B2 v1; expression straight-on vs B2's head tilt. AWAITING OWNER: lock as the v5 face, or iterate.
+
+## Round 7c — B2 v3: complexion adjustment (owner-directed 2026-08-29)
+
+Owner direction: freckles −30%, complexion +30% toward white, +15% pink. Rendered from B2 v2 (`8b2e8360`) as identity ref.
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AA | Hazel v5 candidate — B2 v3 fair+pink | `258d55c9-5b2c-4dd1-9881-b8ff58be531e` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_025616_258d55c9-5b2c-4dd1-9881-b8ff58be531e.png |
+
+Delivered per §20. QC: all three shifts executed (sparser/fainter freckles, lighter fair tone, rosy-pink flush); identity held; realism intact. Reported to owner: golden-hour light masks some of the fairness — neutral daylight render offered. AWAITING OWNER: lock as v5 or iterate.
