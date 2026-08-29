@@ -26,6 +26,26 @@
 
 **Scope change from v7, driven by the engine and flagged plainly:** v7 deliberately depicted no battle casualties at all. Under engine rule 5 ("do not beautify war") that sanitization is itself unrealistic — clips 6/7/8 now include fallen and wounded soldiers as environmental consequence, within §24's standing caps (visible and real, never graphic/gore/spray). No individual on-screen kill is depicted, so §34's cause-chain rule isn't triggered for a specific wound.
 
+**Layering rule (brief §7b.1) applied to every battle frame:** foreground ≤ ~10–15 sharp individuals (the only zone where gear/anachronism detail is legible — kept lean and controllable, matching how the reference channel's own breach scene stages it), midground dozens-to-hundreds partially dust-softened, background thousands as silhouette masses in haze.
+
+## FROZEN ENVIRONMENT_BLOCK — GAUGAMELA (paste verbatim into EVERY battle-clip prompt; becomes a constant in the episode's run_clip script, same machinery as IDENTITY_BLOCK, per brief §7b.3)
+
+> THE BATTLEFIELD OF GAUGAMELA, OCTOBER 331 BC — HARD ENVIRONMENTAL REQUIREMENTS: a vast, FLAT, open dry plain — hard pale-ochre earth, sparse scorched scrub, NO green grass, NO hills in the battle space, NO postcard-blue sky: the sky is pale, haze-white with dust. Two enormous armies share this plain and BOTH extend past the frame edges in every direction they occupy — the Persian line is several times the Macedonian force and visibly has NO END in frame; ranks recede into atmospheric dust-haze at the horizon as silhouette masses of thousands. Layering is mandatory: at most ten to fifteen fully-detailed soldiers in the sharp foreground; dozens-to-hundreds in readable formation in the midground, partially softened by dust; thousands as indistinct moving masses in the haze beyond. Dust is a main visual element the moment masses move — kicked up by feet, hooves, and wheels, hanging in the air, scaling with the action. Macedonian equipment: bronze, crimson cloaks, tall sarissa pikes reading as vertical forests above the ranks. Persian side: visibly varied contingents of many peoples, massed cavalry, scythed chariots — Persian and Macedonian gear/iconography NEVER mix on the same side. SOUND SCALE (three layers, always): close — leather, breath, individual cries; middle — massed hooves and shouted commands; far — a continuous unbroken roar of tens of thousands with no gaps in it. This world continues beyond every frame edge; the camera sees one small part of an enormous real event.
+
+**Per-clip stage line (brief §7b.4 — `stage` becomes a `clips.json` field beside `timeOfDay`; the inherited-state sentence is REQUIRED in every battle prompt):**
+| Clip | Stage | Inherited-state line for the prompt |
+|---|---|---|
+| 1–4 | BEFORE | "Clear pre-dawn/dawn air — no battle dust yet; tension, not chaos." |
+| 5a | FIRST ENGAGEMENT | "Dust is RISING right now, kicked up by this advance — building, not yet opaque; formations still readable." |
+| 5b | FIRST ENGAGEMENT | "The air around her ALREADY carries the rising dust of the advance she is inside of." |
+| 6 | FULL BATTLE | "The air is ALREADY heavy with dust from the fighting before this shot begins — this is NOT a clean battlefield; visibility at distance is already reduced." |
+| 7 | FULL BATTLE→COLLAPSE | "Dust everywhere, ALREADY thick before the shot starts; scattered equipment underfoot; the field's order already dissolving." |
+| 8–9 | AFTERMATH | "Dust settling into dusk haze; smoke columns on the field's far side; the day visible on every person and surface." |
+
+**Scale QC (brief §7b.2 — runs per battle clip beside `freezedetect`, and again at edit stage as a Gemini-eyes question):** (a) both army lines exceed the frame edges; (b) total visible population cannot be mistaken for under 100 people; (c) atmospheric dust matches the clip's assigned stage above. Any failure = report to owner per §19/§20, never silently regenerate.
+
+**Numbers rule (brief §7b.6):** the headcounts in this bible (47,000 / six figures / 2,000 horse) NEVER appear in a generation prompt — prompts get only the density language above.
+
 ---
 
 ## CLIP 1 — 9s — V-MODE
