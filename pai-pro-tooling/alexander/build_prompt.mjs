@@ -40,6 +40,20 @@ const V_MODE_BLOCK = `V-MODE (her own lens): first-person selfie-camera vlog fra
 
 const NOVA_BLOCK = `NOVA MODE (true third-person cinematography): no vlog framing. Hazel's face NEVER appears in a Nova shot. Single continuous unbroken take, no cuts, real-time.`;
 
+// 3P MODE (owner-named, adopted 2026-08-29, brief §1): true external third-person
+// camera, everyone in the scene visible INCLUDING Hazel. Distinct from Nova (which
+// excludes her face) and from V (which is her own first-person lens). Never build
+// a 3P clip on a start-frame still composed as first-person/selfie POV — that
+// mismatch voided Clip 2's first attempt (production log Round 13/"Mode
+// assignments FINAL LOCKED").
+const THIRD_P_BLOCK = `3P MODE (true external third-person camera): a real camera positioned in the scene as an independent observer — NOT anyone's point-of-view, NOT a handheld selfie, NOT vlog framing, NOT arm's-length talk-to-lens. Every person present, Hazel included, is visible on screen as a normal character in the scene; she never addresses or glances into the lens, and no phone, camera, rig, or mount is ever visible in frame. Single continuous unbroken take, one camera angle, no cuts, real-time.`;
+
+function modeBlock(mode) {
+  if (mode === "V") return V_MODE_BLOCK;
+  if (mode === "3P") return THIRD_P_BLOCK;
+  return NOVA_BLOCK;
+}
+
 // §37b battle grade / general episode palettes.
 const GRADES = {
   battle: `Bleached, desaturated, bleak war-film color grade; dust reads slate-grey, never golden, never glowing; harsh flat daylight; nothing beautiful or heroic-postcard about the light.`,
@@ -134,7 +148,7 @@ async function main() {
 
   const parts = [];
   parts.push(`FORMAT: ${clip.duration} seconds, vertical 9:16, single continuous take, real-time speed.`);
-  parts.push(clip.mode === "V" ? V_MODE_BLOCK : NOVA_BLOCK);
+  parts.push(modeBlock(clip.mode));
   if (refRoleLines.length) parts.push(`REFERENCE ROLES:\n${refRoleLines.join("\n")}`);
   if (clip.hazel) parts.push(`STRICT IDENTITY RE-RENDER — ${HAZEL_IDENTITY}\n\n${HAZEL_EPISODE_LOOK}`);
   for (const npc of clip.characters || []) if (LOCKS[npc]) parts.push(LOCKS[npc]);
