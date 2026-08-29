@@ -634,3 +634,25 @@ raining down) — both self-QC'd against `CHARACTER_LOCK.md`'s v4 checklist
 before delivery (golden-tan skin, visible freckles, glossy nude-caramel
 lips — correctly v4, not v5) and delivered for the owner's pick. Not
 upscaled to 4K, same standing rule as everything else this episode.
+
+## Thumbnail finalized: Concept D + hook text burned in (2026-08-29)
+
+Owner picked Concept D ("Whole Camp Burning") and gave a new hook line —
+"POV: Achilles was a monster, not a hero" — to burn onto it as on-screen
+text (not one of the researched D/E/F title options; a fresh line from the
+owner). Burned in deterministically with ffmpeg `drawtext` rather than
+re-running the image model, so the approved v4 face/scene is pixel-
+unchanged underneath — same no-drift-risk principle as the project's
+upscale tooling. Liberation Serif Bold (the channel's locked caption font)
+for brand consistency, white fill with a heavy black outline, placed in
+the smoke band at the top of the frame specifically so it never crosses
+her face or eyes. Output: `episode7_thumbnail_FINAL.png`, delivered to the
+owner. Not upscaled to 4K yet.
+
+Flagged one thing rather than silently noting it only in the metadata
+file: the line is a stronger claim than clip 7's actual dialogue makes
+(the clip is about what Achilles gave up, not a monster-vs-hero verdict) —
+defensible packaging since his brutality is real Iliad content (Hector's
+body, the funeral-pyre killings), but it's new content the owner supplied,
+not something either of my own researched hook options proposed, so worth
+being explicit that it's a slight widen from the in-video material.

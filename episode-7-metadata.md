@@ -16,6 +16,33 @@ final delivered FILE will be whatever cut the owner ultimately signs off.
 
 ---
 
+## FINAL SELECTION (owner, 2026-08-29)
+
+**Thumbnail: Concept D "Whole Camp Burning"** (v4 face), with on-screen
+hook text burned in: **"POV: Achilles was a monster, not a hero"** — a new
+line from the owner, not one of the D/E/F options below. Burned in
+deterministically via ffmpeg `drawtext` (not re-generated through the
+image model) so the approved v4 face/scene underneath is pixel-unchanged —
+same "deterministic edit, no drift risk" principle this project already
+uses for upscaling. Liberation Serif Bold (the channel's own locked
+caption font) for brand consistency, white with a heavy black outline,
+placed in the smoke band at the top of the frame so it never crosses her
+face. File: `episode7_thumbnail_FINAL.png`. Not yet upscaled to 4K.
+
+Note: this hook text is a stronger claim than clip 7's actual dialogue
+makes (the clip explores what Achilles gave up, not a "monster" verdict on
+him) — legitimate contrarian packaging, not fabricated, since Achilles'
+brutality (dragging Hector's body, the funeral-pyre killings) is real
+Iliad content, but flagging the gap between packaging and in-video content
+since it wasn't in either of my own researched options.
+
+**Title/video hook: still open** — D/E/F below remain the researched
+options; "POV: Achilles was a monster, not a hero" was requested
+specifically as thumbnail text, not (yet) confirmed as the YouTube title
+too. Worth the owner's explicit call on whether it doubles as both.
+
+---
+
 ## 1. Title / hook — v2, research-backed (owner rejected all of round 1)
 
 Round 1 (below, kept for the record) was rejected outright — all three
