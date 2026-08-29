@@ -76,4 +76,21 @@ Owner then asked for soft glam makeup with open straight hair. **Conflict flagge
 |---|---|---|---|
 | N | Hazel — soft glam, open straight hair (OPTION, conflicts with episode makeup lock) | `112a948e-1410-4cfc-b1cb-a6ec6169211a` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_011017_112a948e-1410-4cfc-b1cb-a6ec6169211a.png |
 
-**QC:** soft glam executed as briefed (soft neutral shadow, light liner/mascara, warm blush, luminous base with freckles showing through, glossy nude lips) — reads as real made-up skin, not plastic; open straight center-parted hair correct; no jewelry; straight-pin fibulae and hinged wax diptych both correct again. Identity holds. **Status: OPTION ONLY — not a lock. If the owner picks this look, it is recorded as his deliberate supersession of the lip-tint-only episode rule for this episode; if he picks the bare-faced half-bun (round 3b), the episode stays inside the standing rule. Decision pending.**
+**QC:** soft glam executed as briefed (soft neutral shadow, light liner/mascara, warm blush, luminous base with freckles showing through, glossy nude lips) — reads as real made-up skin, not plastic; open straight center-parted hair correct; no jewelry; straight-pin fibulae and hinged wax diptych both correct again. Identity holds.
+
+**OWNER LOCK (2026-08-29): the soft-glam open-straight-hair look IS Hazel's look for this episode.** This is the owner's deliberate, eyes-open supersession of the lip-tint-only episode makeup rule (locked 2026-08-23) FOR THIS EPISODE — the conflict and the anachronism risk were flagged to him in chat before he decided. The standing rule remains in force for other episodes unless he says otherwise. Job `112a948e` is the look-lock image.
+
+## Round 4 — Hazel's episode character sheet: the §31 4-view reference set (2026-08-29, owner-requested)
+
+Owner asked for her character sheet after locking the look. Per §31.1, NOT a multi-panel grid (grids are forbidden as Seedance references) — the "character sheet" in this pipeline is a 4-image single-view set: 2 full-body + 2 face crops of the locked look. Refs per image: the look-lock still (`112a948e`, as look anchor — the Troy-proven approved-costume-still method, NOT identity chaining) + canonical identity refs `711fc3d7` + `621dd03d`. nano_banana_pro, 3:4.
+
+| # | View | Job ID | URL |
+|---|---|---|---|
+| O | Full-body front | `72a8d0b5-19e0-4514-a6a1-9d3bfafa7d84` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_011432_72a8d0b5-19e0-4514-a6a1-9d3bfafa7d84.png |
+| P | Full-body 3/4 walking | `e5eb360a-c0c6-4409-b88e-87dcf907faab` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_011432_e5eb360a-c0c6-4409-b88e-87dcf907faab.png |
+| Q | Face close-up front | `2e4a2d55-21bb-42c6-b4c0-264f1244d9da` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_011432_2e4a2d55-21bb-42c6-b4c0-264f1244d9da.png |
+| R | Face close-up 3/4 | `83df8574-0a74-440e-b706-365ac396bbc3` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_011432_83df8574-0a74-440e-b706-365ac396bbc3.png |
+
+**QC (all four viewed at full res): PASS as a set.** Look consistent across all views — soft glam with freckles through the base, glossy nude lips, open straight center-parted bronde hair, chiton + straight-pin fibulae + belt/satchel + wax diptych; identity holds against Tier-1 (hazel eyes, brows, jawline); footwear rendered as period strappy sandals in both full-body views (no modern-shoe drift — Alexander's set still carries that flag, hers doesn't). Real skin texture at close range on both face crops.
+
+**Hazel's episode reference package is COMPLETE: look-lock still (`112a948e`) + this 4-view set = the `image_references` payload for every Seedance clip she appears in, per §31.** Delivered to owner. Remaining before the Seedance test clip: owner's verdicts on Alexander's set (incl. the boots flag), Parmenion, and Bucephalus.
