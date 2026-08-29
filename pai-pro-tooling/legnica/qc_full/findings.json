@@ -1,0 +1,34 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:12.800",
+      "category": "physics",
+      "severity": 3,
+      "description": "Mounted Mongol warrior floats slightly over muddy ground without realistic weight displacement.",
+      "end_timestamp": "00:16",
+      "fix": "Refine ground contact shadows and horse gait physics passes.",
+      "verdict": "CONFIRMED",
+      "refined_description": "The horse ridden by the warrior glides unnaturally across the wet, muddy ground without sinking, splashing, or displacing the mud."
+    },
+    {
+      "timestamp": "01:06",
+      "category": "physics",
+      "severity": 3,
+      "description": "Horse hooves clip through the fallen knight's armor and ground mesh.",
+      "end_timestamp": "01:09",
+      "fix": "Re-render horse legs with accurate character collision geometry.",
+      "verdict": "DISMISSED",
+      "refined_description": "The horse remains behind the fallen knight as he drops to the ground and runs away into the distance without its hooves clipping into the knight's armor."
+    },
+    {
+      "timestamp": "01:16",
+      "category": "background",
+      "severity": 2,
+      "description": "Field of fallen soldiers displays duplicated asset layout and floating weapons.",
+      "end_timestamp": "01:22",
+      "fix": "Randomize background bodies and adjust weapon ground placement."
+    }
+  ],
+  "summary": "The short film delivers compelling historical storytelling with strong character consistency. Minor physics and asset duplication issues occur during large-scale background action scenes. Overall execution remains visually effective for digital release.",
+  "overall_score": 5.8
+}

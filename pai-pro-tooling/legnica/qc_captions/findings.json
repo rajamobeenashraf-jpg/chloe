@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:34",
+      "category": "text",
+      "severity": 3,
+      "description": "Spoken line 'Wait, they're retreating?' lacks matching burned-in captions.",
+      "end_timestamp": "00:35",
+      "fix": "Add on-screen subtitle 'WAIT, THEY'RE RETREATING?' during dialogue.",
+      "verdict": "DISMISSED",
+      "refined_description": "The spoken line is fully captioned with on-screen burned-in text reading 'WAIT\u2014 THEY'RE' followed by 'RETREATING?' between 00:34.600 and 00:35.200."
+    },
+    {
+      "timestamp": "01:12",
+      "category": "text",
+      "severity": 2,
+      "description": "Audio states 'Henry, Duke, is dead' while subtitle shows 'HENRY II'.",
+      "end_timestamp": "01:14",
+      "fix": "Update subtitle text to match spoken dialogue: 'HENRY, DUKE, IS DEAD'."
+    }
+  ],
+  "summary": "Overall text accuracy is solid across the sequence, with minor discrepancies in subtitle synchronization and dialogue alignment.",
+  "overall_score": 7.0
+}
