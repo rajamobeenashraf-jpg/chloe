@@ -134,7 +134,7 @@
   },
   {
     "id": "clip9",
-    "duration": 11.041667,
+    "duration": 13.041667,
     "captions": [
       {
         "start": 1.0,
@@ -142,19 +142,14 @@
         "text": "He's holding them off alone— like nothing can touch him—"
       },
       {
-        "start": 4.5,
-        "end": 6.5,
-        "text": "No, no— get up, come on—"
-      },
-      {
         "start": 7.5,
-        "end": 8.7,
-        "text": "Henry! No—"
+        "end": 9.0,
+        "text": "No— no, no, no—"
       },
       {
-        "start": 9.2,
-        "end": 10.5,
-        "text": "Henry's dead."
+        "start": 11.5,
+        "end": 13.0,
+        "text": "Henry... Henry's dead."
       }
     ]
   },
