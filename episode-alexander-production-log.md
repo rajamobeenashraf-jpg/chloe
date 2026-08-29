@@ -188,3 +188,13 @@ Owner-confirmed spec: eyes +20% and BLUE (sky-blue chosen; hazel brand-marker ch
 | AB | Hazel v5 candidate — B2 v4 blue-eyed fair | `5f209b8c-bb1b-4e02-bba3-86de578d632c` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_030250_5f209b8c-bb1b-4e02-bba3-86de578d632c.png |
 
 Delivered per §20. QC: blue executed as natural sky-blue with limbal ring; freckles now a faint trace; distinctly fairer with rosy flush; lips subtly fuller; realism intact. Honest note reported: the eye ENLARGEMENT reads subtler than 20% (models resist large anatomical shifts from a same-face reference) — offered a stronger push if wanted. AWAITING OWNER: lock as v5 or iterate.
+
+## Round 7e — B2 v5: owner-verified refinement on the v3 base (2026-08-29; v4 blue-eye variant REJECTED by owner, discarded)
+
+Owner rolled back to B2 v3 as base (hazel eyes, original size — v4's blue/bigger eyes and fuller lips all discarded) and confirmed: freckles −10% more, complexion +5% fairer, pink +5% more, lips same size but 10% pinker. Rendered from v3 (`258d55c9`) as identity ref.
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AC | Hazel v5 candidate — B2 v5 refined | `0f1db5cd-b037-49b4-a31e-2b1dd2b7ba78` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_031202_0f1db5cd-b037-49b4-a31e-2b1dd2b7ba78.png |
+
+Delivered per §20. QC: hazel eyes preserved at correct size; freckles now faint-sparse; slightly fairer with a touch more rosy flush; lips unchanged in size with a pinker rose tint; realism intact. AWAITING OWNER: lock as the v5 face or iterate.
