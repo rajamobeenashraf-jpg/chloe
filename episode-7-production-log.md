@@ -649,6 +649,11 @@ the smoke band at the top of the frame specifically so it never crosses
 her face or eyes. Output: `episode7_thumbnail_FINAL.png`, delivered to the
 owner. Not upscaled to 4K yet.
 
+Owner caught "POV:" rendering smaller than the other two lines (64pt vs.
+98pt) — re-burned all three lines at matching 98pt, re-pitched the line
+spacing to 120px throughout, re-verified it still clears her hairline.
+Re-delivered.
+
 Flagged one thing rather than silently noting it only in the metadata
 file: the line is a stronger claim than clip 7's actual dialogue makes
 (the clip is about what Achilles gave up, not a monster-vs-hero verdict) —
