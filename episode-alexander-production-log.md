@@ -228,3 +228,13 @@ From v7 (`b6906b4d`).
 | AF | Hazel v5 candidate — B2 v8 | `3a397a9b-4c9f-4323-a260-b4989d321781` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_032853_3a397a9b-4c9f-4323-a260-b4989d321781.png |
 
 Delivered per §20. QC: cheek flush softened a touch; lips a shade pinker, still bare/natural with texture; freckles now the faintest near-subliminal trace (noted to owner: one more reduction effectively removes this brand marker); identity and realism intact. AWAITING OWNER pick; CHARACTER_LOCK.md still v4.
+
+## Round 7i — B2 v9: forehead freckles −50% (owner-directed 2026-08-29)
+
+From v8 (`3a397a9b`): forehead-specific freckle reduction; nose/cheek trace preserved.
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AG | Hazel v5 candidate — B2 v9, clear forehead | `a49d8038-a424-4c35-8d50-dd37ee8b44ec` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_033134_a49d8038-a424-4c35-8d50-dd37ee8b44ec.png |
+
+Delivered per §20. QC: forehead now mostly clear with real skin texture (not airbrushed); nose/cheek trace intact; identity, complexion, lips, hazel eyes all held; realism intact. AWAITING OWNER pick; CHARACTER_LOCK.md still v4.
