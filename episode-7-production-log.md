@@ -549,3 +549,43 @@ thumbnail options. Compiled `episode-7-metadata.md` at the repo root:
   call (clip 4 rope/shield clipping, clip 10 banner text).
 
 Delivered to the owner in chat alongside the three thumbnail image files.
+
+## Metadata v2: owner rejected round-1 hooks and thumbnails, asked for real research + designed key art (2026-08-29)
+
+Owner: all three hooks were generic; all three thumbnails were bad. Do
+real research (web + vidIQ) for the hook; stop using footage frames and
+generate a genuinely designed, chaotic war-scene thumbnail (fire, smoke,
+warriors).
+
+**Hook research**: `vidiq_outliers` on "Trojan War" Shorts (12mo) showed
+breakout titles in this space lean on superlative/betrayal/myth-bust
+framing, not premise-explainer first-person lines. `vidiq_keyword_research`
+(questions mode, seed "Trojan war") surfaced real opportunity data: **"is
+the trojan war recorded by the hittites"** — 4,680 searches/mo, competition
+17 (lowest of 15 results returned), opportunity score 66.1 (highest of the
+15) — a genuine low-competition gap that the episode's own pinned comment
+already substantiates (Hittite tablets naming "Wilusa"). Web research on
+Shorts hook mechanics confirmed the "first 3 seconds" framing is outdated —
+swipe decisions happen in ~1.3s, and curiosity-gap/pattern-interrupt opens
+outperform explainer opens. Wrote 3 new hooks off this, each a different
+mechanism (contrarian-fact, POV/danger, misdirection) rather than 3
+phrasings of the same "I ___" formula that was just rejected. Full detail
+and sourcing in `episode-7-metadata.md` §1.
+
+**Thumbnail regeneration**: built as real v5 Hazel generations, not
+footage frames — `nano_banana_pro`, the five locked v5 CHARACTER_LOCK
+reference job IDs (master + 4-view set) as `image_references`, frozen
+identity string pasted verbatim per the character-lock rule (never
+text-only). Two distinct designed-key-art concepts (warriors closing in
+behind her / a burning ship mid-collapse behind her), explicit historical-
+realism negative-prompting against Norse/Viking elements (a real CONFIRMED
+finding earlier in this exact production, clip 1's background ships) — did
+not recur on inspection. 9:16, 2K, not upscaled (4K-sequencing rule, same
+as every other asset this episode — waits for approval). Flagged one
+honest accuracy trade-off rather than glossing over it: both renders'
+warriors read as Classical-hoplite (crested Corinthian helmets, muscle
+cuirasses) rather than strictly Bronze Age Mycenaean gear — standard
+thumbnail/key-art genre convention, but a deliberate license worth the
+owner's explicit sign-off given this channel's fact-checking brand, so
+surfaced rather than silently shipped. Both delivered for the owner's
+pick; full detail in `episode-7-metadata.md` §7.

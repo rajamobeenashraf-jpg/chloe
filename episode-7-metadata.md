@@ -16,35 +16,77 @@ final delivered FILE will be whatever cut the owner ultimately signs off.
 
 ---
 
-## 1. Title / hook — 3 options
+## 1. Title / hook — v2, research-backed (owner rejected all of round 1)
 
-All first-person, all lead with the episode's actual strongest hook rather
-than a generic "AI historical reconstruction" framing (verified dead-end
-per the strategy report). Pick one for the YouTube title; the runner-up
-lines double as thumbnail overlay text or the pinned/engagement-question
-follow-up.
+Round 1 (below, kept for the record) was rejected outright — all three
+read as generic "I ___" first-person explainer framing, the exact
+formula already used on the slate title. Owner asked for real research
+(vidIQ + web) and something that actually breaks the pattern.
 
-**A — Myth-bust hook (recommended):**
-> **I Sailed to Troy... to Find Out If the Horse Was Real**
+**Research pulled 2026-08-29:**
+- `vidiq_outliers` on "Trojan War" Shorts (last 12 months): breakout titles
+  in this space lean on superlatives/betrayal/myth-busting, not
+  premise-explainer framing — *"How the Trojan Horse Fooled a
+  Civilization"*, *"What Trojan War Heroes REALLY Looked Like"*, *"Did the
+  Trojan War Actually Happen?"*, *"Odysseus vs The Trojan Army: Who Really
+  Won?"*.
+- `vidiq_keyword_research` (mode: questions, seed "Trojan war") surfaced
+  real monthly search volume with opportunity scores. Two standouts:
+  - **"is the trojan war recorded by the hittites"** — 4,680 searches/mo,
+    competition **17** (lowest of all 15 results), opportunity score
+    **66.1/100 (highest of all 15)**. This is a real, low-competition gap —
+    and the episode's own pinned comment already discloses this exact fact
+    (Hittite tablets naming "Wilusa"), so the hook needs zero new research
+    to back up.
+  - "why the trojan war was never about helen" — 5,236/mo, competition 22,
+    score 64.5 — confirms contrarian/misdirection framing outperforms
+    straight topic titles here.
+  - For contrast, "is the trojan war a myth" (5,328/mo) is the HIGH-
+    competition version of the same curiosity — everyone already asks
+    this; the Hittite-tablet angle answers an adjacent question almost
+    nobody is targeting yet.
+- Web research on Shorts hook mechanics (2026): the "first 3 seconds" rule
+  is outdated — viewers decide whether to swipe in about 1.3 seconds, so
+  the hook has to land in the first frame/first words, not ease in.
+  Highest-performing pattern is the "curiosity gap" (a statement that
+  violates the viewer's assumption) over a premise-explainer opener.
+  Sources: [vidIQ — Viral Hooks for YouTube Shorts](https://vidiq.com/blog/post/viral-video-hooks-youtube-shorts/),
+  [virvid.ai — Hook Structures That Stop Scroll on Shorts](https://virvid.ai/blog/first-3-seconds-hook-faceless-shorts-2026).
 
-Closest to the already-locked slate title; leads with the single strongest
-comment-bait question in the episode (clip 9's "No horse. YET." beat) and
-doubles as the channel's own engagement question, so title and comments
-section reinforce each other.
+**New options — three different mechanisms, not three phrasings of the same idea:**
 
-**B — Story-jeopardy hook:**
-> **They Told Me: Stay Off the Plain. I Didn't Last a Day.**
+**D — Contrarian-fact hook (recommended; lowest competition, highest opportunity score of anything researched):**
+> **Troy Has War Records. The Greeks Didn't Write Them.**
 
-Uses the actual "Rule one" line from clip 1, and its on-screen payoff in
-clip 5 ("Rule one. Gone by day two.") — a movie-logline stakes framing
-instead of a topic label.
+Directly targets the Hittite-tablets search gap. Violates the dominant
+assumption in this space ("is the trojan war a myth") instead of
+answering it — most viewers have never heard that Troy's enemies kept
+records too. 100% backed by the episode's existing pinned-comment
+disclosure, so no new fact-checking needed.
 
-**C — Emotional-core hook:**
-> **I Met a Soldier Who Hasn't Been Home in 9 Years (Troy)**
+**E — POV/danger pattern-interrupt:**
+> **POV: You're the Water Girl. Nobody Mentioned the Arrows.**
 
-Leads with Krethon's cord — the campfire beat flagged in the script as
-"the channel's most-quoted beat type." Best option if the goal is
-comments/shares over raw CTR — it's a slower, sadder hook than A or B.
+Breaks from exposition entirely — opens on a character-in-danger premise
+using clip 5's actual beat (an arrow hits the shield above her head on
+water duty) instead of describing the episode. "POV:" is one of the
+current highest-retention Shorts open formats per the hook research above.
+
+**F — Misdirection/contrast hook:**
+> **Everyone Remembers the Horse. Nobody Remembers This Guy.**
+
+Sets up Krethon deliberately vague ("this guy") to force a click, then
+pays off with the episode's actual emotional core instead of the myth
+everyone expects. Matches the "contrarian beats straight topic title"
+pattern confirmed in both the outlier data and the keyword data above.
+
+---
+
+### Round 1 (rejected by owner 2026-08-29 — kept for the record, not recommended)
+
+**A:** I Sailed to Troy... to Find Out If the Horse Was Real
+**B:** They Told Me: Stay Off the Plain. I Didn't Last a Day.
+**C:** I Met a Soldier Who Hasn't Been Home in 9 Years (Troy)
 
 ---
 
@@ -112,40 +154,54 @@ driving a genuine surge in Greek-antiquity search right now.
 
 ---
 
-## 7. Thumbnail — 3 options
+## 7. Thumbnail — v2, designer key art (owner rejected the footage-frame options)
 
-Per the persona brand rule (`chloe-vs-history-strategy-report.md`): same
-face every thumbnail, era costume, one landmark/prop, bright consistent
-grade — "the thumbnail does all the selling" for a curriculum-known topic
-like Troy, so minimal added text is needed.
+Round 1 (footage-extracted frames, below) was rejected — owner wants
+purpose-designed key art, not a pulled video frame: "creative and
+designer... chaotic... fire, smoke, warriors."
 
-All three are **real extracted frames from the approved footage**
-(`troy_final_cut_scored.mp4`), not new generations — per `CHARACTER_LOCK.md`
-the face is never regenerated from text, and pulling from already-approved
-footage carries zero identity-drift risk and zero generation cost. Exact
-source timestamps recorded below so any of these can be re-extracted at
-higher resolution once the episode is upscaled.
+**v2 approach**: freshly generated, NOT extracted footage, built the same
+way every other v5 Hazel asset is built — `nano_banana_pro`, fed the five
+locked v5 reference images (master + 4-view set, job IDs from
+`CHARACTER_LOCK.md`) as `image_references` with the frozen identity string
+pasted verbatim, so identity risk is the same as any other approved v5
+generation, not a new text-only face. 9:16, 2K (per the standing 4K rule —
+not upscaled until one of these is approved). Historical-realism negative
+prompting included explicitly against Norse/Viking elements, since a
+Viking-style-ships anachronism was a real CONFIRMED Gemini finding earlier
+in this exact production (clip 1) — did not recur here on inspection.
 
-**Option A — Vista / establishing (pairs with hook A or B)**
-Source: clip 1, t=4.52s absolute. Dawn beach, ships lined down the shore
-both ways, arm out mid-gesture, open genuine smile, walls faint on the
-horizon. No burned-in text — clean plate. Suggested overlay (optional):
-`"1,000 SHIPS."` or none at all — the vista sells it.
+**Concept A — "Hero" (closer, warriors closing in behind her, burning supply cart)**
+Direct alarmed eye contact with lens, ash streak on her cheek, two
+Greek warriors with spears and shields advancing behind her, dusk sky,
+smoke and embers. File: `designer_thumbnail_concept_A_hero.png`.
 
-**Option B — Myth-check / deadpan-to-lens (pairs with hook A)**
-Source: clip 9, t=90.9s absolute — the exact "...remember I said it here
-first" beat. Direct eye contact with lens, campfire + two soldiers behind
-her, dusk sky. Carries one small burned caption ("HERE FIRST.") which
-reads as intrigue on its own; can be cropped out if a clean plate is
-wanted instead. This is the strongest curiosity-hook image of the three.
+**Concept B — "Inferno" (wider, burning ship mid-collapse behind her, warriors flanking)**
+A burning ship's mast/rigging as the central landmark (ties back to
+clip 1's "thousand ships" vista), warriors flanking both sides, startled
+close-range glance. File: `designer_thumbnail_concept_B_inferno.png`.
 
-**Option C — Raid / danger (pairs with hook B)**
-Source: clip 10, t=100.35s absolute. Dynamic mid-action, blazing orange
-dusk sky behind a burning supply cart, Hazel and Krethon both in motion.
-No burned-in text. Best "something bad is about to happen" thumbnail if
-the title leans into the stay-off-the-plain jeopardy angle.
+**Honest flag, not silently glossed over**: both renders show Greek
+warriors in crested Corinthian-style helmets and ornate muscle-cuirasses —
+the "300 / Troy movie" visual shorthand for "ancient Greek warrior," which
+reads as more Classical-era (~5th century BCE hoplite) than strictly
+Bronze Age Mycenaean (~1200 BCE, which historically looked more like
+boar's-tusk helmets and Dendra-style plate armor — closer to the simpler
+"bronze-and-leather cuirass" gear the episode's own NPCs actually wear).
+This is standard thumbnail/key-art license across the whole genre (more
+recognizable to a general audience at a glance than strict Bronze Age
+gear), and doesn't touch the episode's own content or disclosure — but
+it's a deliberate accuracy trade-off worth the owner's explicit sign-off
+given this channel's fact-checking brand, not something to wave through
+silently. Can be re-prompted toward stricter Bronze Age gear if preferred.
 
-Files delivered alongside this package: `thumbnail_option_A_vista.jpg`,
+Neither has been upscaled to 4K — held per the standing 4K-sequencing rule
+until one is approved.
+
+### Round 1 (rejected by owner 2026-08-29 — kept for the record, not recommended)
+Real extracted frames from `troy_final_cut_scored.mp4` (clip 1 vista, clip
+9 deadpan-to-lens, clip 10 raid action) — rejected for not being designed/
+composed key art. Files: `thumbnail_option_A_vista.jpg`,
 `thumbnail_option_B_horse_myth.jpg`, `thumbnail_option_C_raid_action.jpg`.
 
 ---
