@@ -9,6 +9,30 @@ is marked. Latest owner decisions recorded: 2026-08-22 (ask before every clip
 regeneration + send every clip to the owner for approval, reinforced: sending
 the clip is never gated behind Claude's own findings — see the QC rule below).
 
+## MASTER RULE — mandatory pre-task rule review + application (owner lock 2026-08-29, permanent, no exceptions)
+
+**Every rule this project has ever agreed on is a permanent production rule from the moment it's agreed — never contingent on the owner reminding Claude again.** This file and the numbered docs below are the rulebook. This section governs HOW they get used: knowing a rule exists is not the same as applying it, and a rule that isn't translated into the actual generation prompt has no effect on the result.
+
+**Before any production task** — generating a still or frame, writing or revising a generation prompt, regenerating a clip, choosing camera coverage or movement, selecting a generation model, designing character performance/emotional intensity/speech pacing, designing sound or music, editing, transitions, continuity, historical reconstruction, or any other production decision — Claude must:
+1. **Identify every established rule that applies to this specific scene/clip/shot/character/decision** — name them, don't just gesture at "the rules." Check `cinematic-direction-brief.md`, `creative-direction.md`, `PROMPT_LEARNINGS.md`, and this file for anything on point.
+2. **Translate each applicable rule into concrete, situation-specific instructions inside the actual prompt.** A rule that would change the generation result must appear as prompt text, not just live in Claude's awareness. (Concrete failure case, logged 2026-08-29: Clip 2's dialogue used only attitude words — "worked up," "half-amused," "brisk" — never explicit per-character speech tempo, so Alexander's hard-locked "unhurried, never rushed" trait and Hazel's comedic-hesitation beat both got overwritten by the scene's ambient urgency. See `episode-alexander-production-log.md`.)
+3. **Run the full analysis chain before writing any prompt**: scene → historical context → dramatic purpose → environment → scale → character performance → emotional intensity → speech pacing/delivery → camera & coverage → sound/music → editing & continuity → model suitability → THEN write the prompt. Never jump straight from character + dialogue + location to a final prompt.
+4. **Actively evaluate model suitability every time**, even though Seedance 2.5 is default — check whether THIS scene has a material limitation Seedance can't meet before defaulting to it out of habit; if one is found, follow the full switch-proposal + approval process (`cinematic-direction-brief.md` §14) rather than silently continuing on Seedance or silently switching.
+5. **Before presenting any final prompt, run this checklist and fix anything that fails before finalizing, not after a poor generation reveals the gap:**
+   - Applied every relevant permanent rule, specifically, not generically?
+   - Translated those rules into actual prompt text?
+   - Made the camera decision deliberately — single vs. multiple angles, movement, coverage?
+   - Calibrated character emotion to the actual required intensity (brief §11)?
+   - Calibrated speech pacing/delivery per character to the actual situation, never a generic uniform pace (brief §11.3)?
+   - Checked historical scale and environmental realism (brief §7)?
+   - Considered sound and music where relevant (brief §15)?
+   - Considered editing and continuity?
+   - Evaluated whether the default model is genuinely the best choice for this scene, and followed §14 if not?
+
+If two established rules genuinely conflict for a given shot, name the conflict and propose the professional resolution — never silently drop one.
+
+**If a previously-agreed instruction has not yet been formally written into a permanent rule somewhere in this project's files, convert it into one now, in the correct governing document, the moment the gap is noticed** — never leave it as conversational-only memory. Applies to every category of established rule, including but not limited to: situation-based speech pacing and delivery, emotional intensity and performance, historical realism and scale, environmental realism and crowd density, physical consequences of action, camera coverage and multi-angle decisions, editing, visual and lighting continuity, sound design and music, scene pacing and retention, model selection and the model-switching protocol, character and environment consistency. A missed established rule discovered after a poor generation is a process failure, not an acceptable outcome — the objective is the best possible result on the first generation, minimizing regenerations, not catching gaps after the owner has to point them out.
+
 Read before any creative, research, or production work — these files are this project's memory:
 1. `NEW_CHAT_HANDOFF.md` — START HERE: operating manual (setup, parallel-chat rules, approval gates)
 2. `PROJECT_HANDOFF.md` — current state, locked decisions, owner preferences
