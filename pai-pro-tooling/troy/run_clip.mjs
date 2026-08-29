@@ -77,6 +77,26 @@ async function main() {
   const dialogue = fill(clip.dialogue, spec.npc);
   const action = fill(clip.action, spec.npc);
 
+  // ElevenLabs pacing-reference rule (CLAUDE.md, owner lock 2026-08-29): any
+  // clip with more than one speaking character, or where pacing carries real
+  // dramatic weight, gets per-character audio pacing references. That rule's
+  // literal mechanics (media_import_url, an audio_references param, @AudioN
+  // tags) describe Higgsfield's generate_video tool, used on a different
+  // episode's pipeline -- this project generates through PAI's own
+  // video-generation endpoint instead. submitVideo already supports
+  // reference_audio content parts (audioAssetIds), so the same rule is
+  // applied here through that real mechanism: each clip.audioRefs entry is
+  // uploaded as a reference_audio asset, in order, and described in the
+  // prompt by role/description rather than an unverified @AudioN tag syntax.
+  const audioRefs = clip.audioRefs || [];
+  const referenceRoles = audioRefs.length
+    ? [
+        ``,
+        `REFERENCE ROLES: the reference-audio tracks attached to this generation are pacing references only -- for each, take ONLY tempo, rhythm, and pause/delivery timing for the character and line(s) described; do NOT take voice, timbre, or accent from them (that comes from the character/dialogue description above). In order:`,
+        ...audioRefs.map((r, i) => `  ${i + 1}. ${r.role}`),
+      ].join("\n")
+    : "";
+
   const prompt = [
     IDENTITY_BLOCK,
     ``,
@@ -89,6 +109,7 @@ async function main() {
     `PHYSICAL ACTION / PACING: ${action}`,
     ``,
     `SOUND: ${clip.sound}.`,
+    referenceRoles,
   ].join("\n");
 
   const outPath = `assets/clip${clip.n}_v1.mp4`;
@@ -105,6 +126,14 @@ async function main() {
     imageAssetIds.push(await uploadReferenceUrl(url, "image"));
   }
 
+  const audioAssetIds = [];
+  for (const ref of audioRefs) {
+    audioAssetIds.push(await uploadReferenceUrl(ref.url, "audio"));
+  }
+  if (audioAssetIds.length) {
+    console.error(`[run_clip ${clip.n}] uploaded ${audioAssetIds.length} pacing-reference audio track(s)`);
+  }
+
   const { taskId } = await submitVideo({
     prompt,
     duration: clip.duration,
@@ -112,6 +141,7 @@ async function main() {
     resolution: "720p",
     generateAudio: true,
     imageAssetIds,
+    audioAssetIds,
   });
   console.error(`[run_clip ${clip.n}] submitted taskId=${taskId}, polling...`);
 
