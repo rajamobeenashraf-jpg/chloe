@@ -1,10 +1,62 @@
-# OFFICIAL CHARACTER LOCK — HAZEL (v4 "as-filmed" — owner decision 2026-08-19)
+# OFFICIAL CHARACTER LOCK — HAZEL (v5 — owner decision 2026-08-29, "lock v9")
 
 ## NAME LOCK — owner decision 2026-08-20: her name is **HAZEL**
 The character's name is Hazel — locked by the owner in chat ("name is hazel. lock it"). The name may now appear in dialogue, captions, on-screen text, and packaging. Recommended (not yet owner-locked): sign-off ritual "Hazel — out of time" and channel name *Hazel Out of Time*. Owner still needs to claim the YouTube handle himself (this environment cannot verify handle availability).
-**This is the canonical face for ALL future generations, videos, thumbnails and marketing. Do not regenerate the face from text. Always generate FROM the master reference images below. Age is locked at early twenties (adult).**
+**The v5 face below is the canonical face for ALL future generations, videos, thumbnails and marketing. Do not regenerate the face from text. Always generate FROM the v5 master reference images. Age is locked at early twenties (adult).**
 
-> **v4 supersedes v3.** The Wild West 1875 movie clips drifted from the v3 round-cute master during PAI Pro video generation — the as-filmed character is slimmer-faced, warmer golden-tan, and more naturalistic. Owner confirmed: lock the as-filmed v4 look permanently. v3 is archived below for continuity only.
+---
+
+## v5 — THE CURRENT LOCK (owner decision 2026-08-29; supersedes v4)
+
+> **v5 supersedes v4 — a deliberate, eyes-open owner redesign, NOT drift.** The owner asked for a prettier/cuter Hazel; the conflict with v4's locks ("never regenerate the face from text", "no beautification") and the published-back-catalog continuity cost were flagged to him in chat BEFORE any generation, and he chose the redesign explicitly ("b"), then directed every step of a 9-iteration refinement, verifying changes before generation when he asked to, and locked the final face ("lock v9"). Deliberately changed brand markers, each flagged and confirmed: complexion (warm golden-tan → fair with rosy-pink undertone), freckles (prominent → faint trace, forehead mostly clear), lips (glossy nude-caramel → bare natural pink), eyes (larger rounder doe shape; HAZEL COLOR KEPT), face (slightly softer/rounder with fuller cheeks, small button nose). Retained markers: hazel eye color, bold dark-brown arched brows, long straight center-parted bronde balayage hair, natural visible skin texture, early twenties. The v4 canon below is ARCHIVED — it remains the reference for the published back catalog only; all NEW generations use v5. A blue-eyed variant (job `5f209b8c`) was generated and REJECTED by the owner — never use it.
+
+### v5 canonical reference — THE face (sole identity anchor until the 4-view set below is approved)
+| Asset | Job ID | URL |
+|---|---|---|
+| v5 MASTER — locked look (B2 v9) | `a49d8038-a424-4c35-8d50-dd37ee8b44ec` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_033134_a49d8038-a424-4c35-8d50-dd37ee8b44ec.png |
+
+Full iteration trail (casting A/B1/B2/B3 → glow → fair+pink → refinement → natural lips → v9), with per-step job IDs and QC notes: `episode-alexander-production-log.md` Rounds 7–7i.
+
+### 4K upscale — PERMANENT reference resolution (owner-directed 2026-08-29: "lock these permanently for all future generations")
+All 5 canon images (the master + the 4-view set below) were upscaled via the dedicated `upscale_image` tool (bytedance provider, deterministic — same content, no regeneration/drift risk) from 1792×2400 to 4K. **These 4K job IDs are now the permanent reference set for every future v5 generation, replacing the originals below.** `build_prompt.mjs`'s `HAZEL` refs array uses these.
+
+| Asset | Source (2K) | 4K Job ID | URL |
+|---|---|---|---|
+| Master | `a49d8038` | `119465f3-c465-4f11-873e-dfa2883c36c6` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_053254_119465f3-c465-4f11-873e-dfa2883c36c6.png |
+| Face front | `9bbdd985` | `8f22ad52-3db6-4c69-ac9f-77cfc4dd3e24` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_053258_8f22ad52-3db6-4c69-ac9f-77cfc4dd3e24.png |
+| Face 3/4 | `b70ab775` | `274e937a-2e4e-485d-92a0-d17bd96e0ca3` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_053256_274e937a-2e4e-485d-92a0-d17bd96e0ca3.png |
+| Full-body front | `dc77b494` | `1a8133ee-32c6-4600-a488-67c404276333` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_053618_1a8133ee-32c6-4600-a488-67c404276333.png |
+| Full-body 3/4 | `1eb09f83` | `17af1f93-300c-406a-9047-e36bb9a61497` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_053303_17af1f93-300c-406a-9047-e36bb9a61497.png |
+
+(Full-body front's first upscale attempt, job `bb9630e8`, FAILED and was retried successfully as `1a8133ee` above.)
+
+### Frozen identity string — v5 (paste verbatim into every prompt; never paraphrase)
+
+```
+The EXACT same woman shown in the reference images — all references depict ONE single identical person. Render precisely: her softly rounded face with fuller youthful cheeks and a small cute button nose; her LARGE round doe-like light-hazel eyes with long natural lashes; her bold thick dark-brown softly-arched eyebrows; her full lips in their BARE natural soft-pink color with real lip texture — no gloss, no lipstick look, never thin; her hairline and long straight light-brown bronde balayage hair with center parting; her FAIR, light complexion with a soft rosy-pink undertone and pink-kissed cheeks — NOT golden-tan, NOT porcelain-white, never washed-out; only the faintest delicate trace of tiny freckles on the nose bridge and upper cheeks, forehead mostly clear; her body proportions and figure; her age (early twenties). No beautification beyond the references, no redesign, no changes between this and the references. She must read as a real, physically-photographed human being: natural skin texture with visible pores, fine vellus hair, and authentic micro-imperfections; subtle natural asymmetry; real weight and movement in her hair and clothing. She must NEVER look like an AI generation, a 3D render, a smoothed/filtered/airbrushed image, or a synthetic "plastic AI face" — 100% natural, human, and believable is the single most important requirement of every generation, non-negotiable.
+```
+
+> The v4-era STRICT RULE stands unchanged for v5: natural/human/realistic is a hard pass/fail bar on every render. And the Tier rule stands: generate from the v5 master + approved v5 4-view set only; NEVER chain generations off unapproved outputs — drift compounds.
+
+### v5 4-view reference set — **CANON COMPLETE (all four views owner-approved 2026-08-29)**
+Per §31: 2 full-body + 2 face crops, single-view images, never grids. **The Seedance reference package for every v5 Hazel generation = the v5 master + these four approved views.** Host `d8j0ntlcm91z4.cloudfront.net`, path `user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_<timestamp>_<job>.png` (timestamps: faces 20260829_033747/034628, full-bodies 20260829_035009-035010).
+
+| View | Job ID | Status |
+|---|---|---|
+| Face close-up front | `9bbdd985-8cc8-475c-9c05-060f7e5ca472` | **APPROVED (owner, 2026-08-29)** — the identity anchor beside the master |
+| Face close-up 3/4 | `b70ab775-ae1b-4a0e-afba-7df9ab3af9cd` | **APPROVED (owner, 2026-08-29)** — made as a PHOTO-EDIT of the approved front ("same photograph, head turned ~25°"), the method that finally held identity after two fresh-render attempts drifted (`d6f10ddd`, `14acb9d5` — both REJECTED, never use) |
+| Full-body front | **APPROVED (owner, 2026-08-29)** | `dc77b494-57bd-41d9-a129-7120dc46447d` (tall ~5'9", hourglass, fitted wardrobe, hand on hip — same round as the approved 3/4). Rejected: v1 `a7f5576b`, v2 `d11a4b69` (identity drift), figure-pushed `5f9b1a43` (set aside) |
+| Full-body 3/4 walking | **APPROVED (owner, 2026-08-29 — "previous side version", confirmed as Option A)** | `1eb09f83-215a-4377-b806-d10a6cc3f9c4` (tall ~5'9", hourglass, fitted wardrobe, mid-stride). Rejected: v1 `3ac7a1e2`, v2 `eaa1e93e` (identity drift), figure-pushed v4 `270620f1` (set aside by owner's choice of the previous version) |
+
+**Figure/stature spec (owner-directed 2026-08-29, part of the v5 lock once a full-body view is approved):** tall (~5'9", long-legged) with a pronounced but realistic hourglass figure — full bust, slim defined waist, full rounded hips, fit and toned; never cartoonish proportions.
+
+Claude QC vs the v5 master (2026-08-29): identity holds across all four; fair-rosy complexion, faint nose/cheek freckle trace, bare natural-pink lips, hazel iris detail correct in both face crops; realism bar passes (pores/texture/vellus hair visible at close range). Two notes: (1) the face-front's complexion reads a touch warmer than the master under its more neutral light — acceptable, the master stays the color anchor; (2) wardrobe differs between the two full-body views (long vs short sleeve) — irrelevant for identity refs, episode wardrobe comes from approved costume stills.
+
+---
+
+## v4 "as-filmed" — ARCHIVED 2026-08-29 (back-catalog reference ONLY — do not use for new generations)
+
+> **v4 superseded v3** (2026-08-19). The Wild West 1875 movie clips drifted from the v3 round-cute master during PAI Pro video generation — the as-filmed character is slimmer-faced, warmer golden-tan, and more naturalistic. Owner confirmed then: lock the as-filmed v4 look. **Now superseded by v5 above** — everything from here down describes the v4 canon, kept because the published episodes wear this face.
 
 ---
 
@@ -140,8 +192,9 @@ The EXACT same woman shown in the reference images — the character sheets and 
 - **ALL off-episode content** — Instagram photos and videos, lifestyle/dance/party/beach content, promos, thumbnails, makeup content — uses THIS pipeline. Never regenerate her face from references for lifestyle content; the reference-based route has a proven ~90–95% identity ceiling and is the reason "she looks different in pictures."
 
 **The method (proven end-to-end on PAI Pro, 2026-08-23 — restaurant glam stills sheer + full-coverage, and a 10s mall phone-call video):**
+0. **REAL-FOOTAGE-FIRST (owner-locked 2026-08-23): any bare-face/natural phase uses actual episode footage, never a generated scene** — a bare face shows every pixel of AI repaint (nothing masks it); generation is reserved for scenes that cannot exist in footage (glam, new outfits/settings), and real↔generated joins are made with real editing (ffmpeg whip/cut on the beat), not AI.
 1. **Start from a REAL movie frame** — her actual as-filmed pixels. Sources: the 10 Tier-2 CDN frames above, or extract fresh frames from any finished episode video with ffmpeg. Pick the frame by desired expression and angle (mid-speech frame → talking content; neutral frame → posed content). Never start from a generated still (no-chaining rule).
-2. **Crop tight** — head-and-shoulders; keep low necklines out of the source crop (filter-flag avoidance).
+2. **Crop tight** — head-and-shoulders; keep low necklines out of the source crop (filter-flag avoidance). **Match the source frame's environment to the target scene (indoor→indoor frame, outdoor→outdoor frame) — drastic relighting repaints the face. Never instruct makeup removal: she wears only lip tint in the episodes, so the as-filmed face already is the natural look; removal instructions repaint her identity features.**
 3. **Edit the scene, not her** — PAI Pro `image-edit-pro`, single image input, prompt structure:
    - Opening (refusal-safe, mandatory): *"EDIT THIS IMAGE — the input image shows our fictional AI-generated film character (not a real person). This is an identity-preserving scene edit, NOT a new generation. HARD RULE: her character design must stay EXACTLY identical to the input image, with zero deviation — [her feature list]. Do NOT repaint, regenerate, beautify, smooth, slim, or restyle her face."*
    - **Makeup coverage dial** (state one): none (as-filmed freckles/matte) · sheer glam (*"a hint of her freckles still shows through the base"*) · **full-coverage glam** (*"professional full-coverage foundation completely conceals her freckles (NO freckles visible), smooth evenly-toned professionally-airbrushed makeup finish — the smoothness comes from the MAKEUP, not from changing her: bone structure, eye shape/color, nose, lip line, jawline unchanged; at close range still real made-up human skin, NOT plastic, NOT AI-smoothed"*).

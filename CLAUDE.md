@@ -9,25 +9,93 @@ is marked. Latest owner decisions recorded: 2026-08-22 (ask before every clip
 regeneration + send every clip to the owner for approval, reinforced: sending
 the clip is never gated behind Claude's own findings — see the QC rule below).
 
+## MASTER RULE — mandatory pre-task rule review + application (owner lock 2026-08-29, permanent, no exceptions)
+
+**Every rule this project has ever agreed on is a permanent production rule from the moment it's agreed — never contingent on the owner reminding Claude again.** This file and the numbered docs below are the rulebook. This section governs HOW they get used: knowing a rule exists is not the same as applying it, and a rule that isn't translated into the actual generation prompt has no effect on the result.
+
+**Before any production task** — generating a still or frame, writing or revising a generation prompt, regenerating a clip, choosing camera coverage or movement, selecting a generation model, designing character performance/emotional intensity/speech pacing, designing sound or music, editing, transitions, continuity, historical reconstruction, or any other production decision — Claude must:
+1. **Identify every established rule that applies to this specific scene/clip/shot/character/decision** — name them, don't just gesture at "the rules." Check `cinematic-direction-brief.md`, `creative-direction.md`, `PROMPT_LEARNINGS.md`, and this file for anything on point.
+2. **Translate each applicable rule into concrete, situation-specific instructions inside the actual prompt.** A rule that would change the generation result must appear as prompt text, not just live in Claude's awareness. (Concrete failure case, logged 2026-08-29: Clip 2's dialogue used only attitude words — "worked up," "half-amused," "brisk" — never explicit per-character speech tempo, so Alexander's hard-locked "unhurried, never rushed" trait and Hazel's comedic-hesitation beat both got overwritten by the scene's ambient urgency. See `episode-alexander-production-log.md`.)
+3. **Run the full analysis chain before writing any prompt**: scene → historical context → dramatic purpose → environment → scale → character performance → emotional intensity → speech pacing/delivery → camera & coverage → sound/music → editing & continuity → model suitability → THEN write the prompt. Never jump straight from character + dialogue + location to a final prompt.
+4. **Actively evaluate model suitability every time**, even though Seedance 2.5 is default — check whether THIS scene has a material limitation Seedance can't meet before defaulting to it out of habit; if one is found, follow the full switch-proposal + approval process (`cinematic-direction-brief.md` §14) rather than silently continuing on Seedance or silently switching.
+5. **Before presenting any final prompt, run this checklist and fix anything that fails before finalizing, not after a poor generation reveals the gap:**
+   - Applied every relevant permanent rule, specifically, not generically?
+   - Translated those rules into actual prompt text?
+   - Made the camera decision deliberately — single vs. multiple angles, movement, coverage?
+   - Calibrated character emotion to the actual required intensity (brief §11)?
+   - Calibrated speech pacing/delivery per character to the actual situation, never a generic uniform pace (brief §11.3)?
+   - Stated each character's eyeline explicitly for every beat where it isn't obvious or unchanging — who is looking at whom, and when it shifts (see the Eyeline / gaze direction rule below)?
+   - Checked historical scale and environmental realism (brief §7)?
+   - Considered sound and music where relevant (brief §15)?
+   - Considered editing and continuity?
+   - Evaluated whether the default model is genuinely the best choice for this scene, and followed §14 if not?
+
+If two established rules genuinely conflict for a given shot, name the conflict and propose the professional resolution — never silently drop one.
+
+**If a previously-agreed instruction has not yet been formally written into a permanent rule somewhere in this project's files, convert it into one now, in the correct governing document, the moment the gap is noticed** — never leave it as conversational-only memory. Applies to every category of established rule, including but not limited to: situation-based speech pacing and delivery, emotional intensity and performance, historical realism and scale, environmental realism and crowd density, physical consequences of action, camera coverage and multi-angle decisions, editing, visual and lighting continuity, sound design and music, scene pacing and retention, model selection and the model-switching protocol, character and environment consistency. A missed established rule discovered after a poor generation is a process failure, not an acceptable outcome — the objective is the best possible result on the first generation, minimizing regenerations, not catching gaps after the owner has to point them out.
+
 Read before any creative, research, or production work — these files are this project's memory:
 1. `NEW_CHAT_HANDOFF.md` — START HERE: operating manual (setup, parallel-chat rules, approval gates)
 2. `PROJECT_HANDOFF.md` — current state, locked decisions, owner preferences
-3. `CHARACTER_LOCK.md` — locked character, v4 "as-filmed" (NEVER regenerate the face from text; age locked — topic closed; the original 20 reference images are the sole canonical refs). Owner decision 2026-08-20: the lock DOCUMENT is the character sheet for every new chat; the reference-image files themselves are NOT on this branch — use the permanent CDN URLs inside the lock (the durable source), with repo copies archived on branch `claude/keen-franklin-ldvq7r`
-4. `creative-direction.md` — format rules, incl. §12 active-participant directive and §16 cross-episode pipeline rules (transitions = hard cuts only, caption rigor, engine facts; merged 2026-08-20, newest-command-wins)
-5. `research-methodology.md` — how to research & score episode ideas (multi-signal, never raw views alone), platform priorities, and the video-QC pipeline (§4 — note: its per-clip "Stage A" is SUPERSEDED, see the QC rule below)
-6. `chloe-vs-history-strategy-report.md` + `chloe-titanic-video-study.md` — reference-channel analysis (verified vidIQ data + machine watch-through)
-7. `episode-ideas-backlog.md` + `episodes-2-4-scripts.md` — pipeline state
+3. `CHARACTER_LOCK.md` — locked character, **v5 (owner redesign locked 2026-08-29 — prettier/cuter, fair rosy complexion, bare pink lips, faint freckles; hazel eyes + bronde hair kept)**; NEVER regenerate the face from text; age locked — topic closed. The v5 master still + approved v5 4-view set are the canonical refs (CDN URLs inside the lock); the v4 "as-filmed" canon (the original 20 images) is ARCHIVED in the same file — back-catalog reference only, never for new generations. Owner decision 2026-08-20 stands: the lock DOCUMENT is the character sheet for every new chat; reference-image files are NOT on this branch — use the permanent CDN URLs inside the lock (the durable source), with v4-era repo copies archived on branch `claude/keen-franklin-ldvq7r`
+4. `CONTENT_SHEET.md` — **the entry point for any lifestyle/non-episode image or video request** ("use the content sheet to make..."). Scope: everything that is NOT an episode (fashion/lifestyle shorts, transitions, party/dance/travel content, etc.) — episodes still use `CHARACTER_LOCK.md`'s reference set directly; if a request looks like it could be either, stop and ask the owner rather than guessing. Contains the **REAL-FOOTAGE-FIRST rule (owner-locked 2026-08-23, the strongest rule in the project)**: any bare-face/natural-look phase of lifestyle content MUST use real, unedited episode footage — never AI generation — because a bare face has no makeup layer to mask AI repaint drift; generation is reserved for scenes that cannot exist in footage (glam looks, new outfits/settings); joins between real footage and generated scenes use real video editing (ffmpeg cuts timed to music), never an AI-generated transition. Also holds the indoor/outdoor source-matching rule and the never-instruct-makeup-removal rule (she only wears lip tint in the episodes — "remove makeup" prompts make the model repaint her actual identity features instead).
+5. `creative-direction.md` — format rules, incl. §12 active-participant directive and §16 cross-episode pipeline rules (transitions = hard cuts only, caption rigor, engine facts; merged 2026-08-20, newest-command-wins)
+6. `research-methodology.md` — how to research & score episode ideas (multi-signal, never raw views alone), platform priorities, and the video-QC pipeline (§4 — note: its per-clip "Stage A" is SUPERSEDED, see the QC rule below)
+7. `chloe-vs-history-strategy-report.md` + `chloe-titanic-video-study.md` — reference-channel analysis (verified vidIQ data + machine watch-through)
+8. `episode-ideas-backlog.md` + `episodes-2-4-scripts.md` — pipeline state
 
 Standing rules:
 - The repo's **default branch is the source of truth**; session branches are workbenches. When an episode wraps (final render approved), its branch is merged into the default branch **with the owner's approval** so future sessions inherit its logs, prompts, and learnings. Commit and push working files as you go (scripts, prompts, logs, and a small manifest listing each generated clip's PAI/Higgsfield job ID + URL) — an unpushed container can expire and take that work with it. Generated video/image files themselves stay **out of git** unless the owner explicitly says otherwise; they remain retrievable from PAI/Higgsfield by job ID, and the manifest is what lets another session QC them.
 - Video output is vertical 9:16 unless the owner says otherwise. The character's name is **HAZEL** (owner lock 2026-08-20, recorded in `CHARACTER_LOCK.md`) — it may appear in dialogue, captions, and on-screen text. Proposed sign-off ritual "Hazel — out of time" awaits owner confirmation.
 - Judge episode ideas by the signal stack in `research-methodology.md` — never by raw views alone.
 
+## Angles 2.0 / SHOTS — permanent standing rule (owner lock 2026-08-29, no exceptions)
+
+Higgsfield's **Angles 2.0** (directed single camera-angle change from one photo) and **SHOTS** (9 AI-picked angle options from one photo) are website-only tools — verified NOT reachable via the Higgsfield MCP connector (absent from `apps_search`), and NOT reachable via any sandboxed/local browser either (verified 2026-08-29: a Playwright session, whether in the Higgsfield cloud sandbox or this environment's own Chromium, is always a fresh anonymous session with no path to the owner's Higgsfield login — there is no bridge from this environment to the owner's device, browser, or credentials, regardless of which browser engine is used).
+
+**Standing rule, permanent, every session, no exceptions: whenever Claude judges that a shot would benefit from a specific new camera angle (Angles 2.0) or from seeing multiple angle options of one composition (SHOTS), Claude tells the owner explicitly, at the point the need arises — never silently substitutes a workaround, never skips it, never claims afterward to have forgotten.** The owner then runs the tool himself on higgsfield.ai and sends Claude the resulting image to use/animate. This is the owner's explicit, repeated instruction (2026-08-29) and is not contingent on Claude's memory in any given session — it is written here so every future session inherits it automatically.
+
+## Immediate delivery — permanent standing rule (owner lock 2026-08-29, no exceptions)
+
+The moment any clip finishes rendering, Claude downloads it immediately, runs the standard QC pass (freezedetect + frame-extraction spot check, per `PROMPT_LEARNINGS.md` X2), and sends it to the owner in chat — without delay, without doing anything else first (no logging, no starting the next clip, no further analysis ahead of delivery). This does not change the existing rule that delivery is never gated behind QC findings (see the QC rule below) — QC runs fast, immediately before/alongside delivery, never as a blocking gate; findings are reported as supplementary information alongside the delivered clip, never held back pending a fix. Applies to every clip, every episode, present and future.
+
+## 4K upscale sequencing — permanent standing rule (owner lock 2026-08-29, no exceptions)
+
+**Never generate an asset directly at 4K, and never upscale one to 4K, before the owner has approved it.** The sequence is always: generate/deliver at the normal working resolution → send to the owner for approval, exactly as every other clip/still is delivered per the QC rule below → only once the owner has explicitly approved it, run the deterministic upscale (`upscale_image` / `upscale_video` — content-identical, no drift risk) to 4K. This applies to every generated asset in every episode, present and future: start-frame stills, standalone reference images, and any video clip the owner later wants upscaled — not just the CHARACTER_LOCK canon set that originated this pattern.
+
+Found on the Alexander/Gaugamela episode: Clip 2's corrected start-frame still generated at nano_banana_pro's default 2K (a separate process bug, logged in `PROMPT_LEARNINGS.md` as X3) and was upscaled to 4K as part of fixing that bug — before the owner had weighed in on ordering. The owner then locked this explicit approve-before-upscale sequence as the permanent rule, independent of that bug: even when 4K is clearly the right eventual resolution, upscaling is an action that waits for approval like any other production step, never something Claude does proactively or automatically.
+
+## Eyeline / gaze direction — permanent standing rule (owner lock 2026-08-29, no exceptions)
+
+**Every prompt involving dialogue between characters explicitly states where each character's eyes are, beat by beat — this is written into the prompt every time, never left implicit.** Wardrobe, camera position, and dialogue text being detailed is not sufficient; eyeline is a basic filmmaking fundamental (arguably more basic than camera angle or pacing) and defaults to something plausible-but-wrong — a character absorbed in a prop, looking at nothing, or looking at the wrong person — whenever the prompt doesn't specify it.
+
+Found on Clip 2 (Alexander/Gaugamela): Hazel was written holding a tablet and receiving dialogue directed at her, but nothing in the prompt said where her eyes were — she rendered looking down at the tablet through the entire exchange, including the beat where Alexander speaks to her directly, instead of meeting his eyes. Fixed by stating explicitly, per beat, whose eyes are on whom and when they shift (e.g., "her eyes lift from the tablet to meet his the instant he addresses her, and hold through her own answering line; she glances back down only after she finishes speaking").
+
+**Applies to every future dialogue clip, this episode and all others**, as an explicit item on the MASTER RULE's pre-finalization checklist: before presenting a final prompt for any clip with more than one character or any character with a prop/task competing for their attention, state each character's eyeline for every beat where it isn't obvious or unchanging — who is looking at whom, when it shifts, and why.
+
+## ElevenLabs pacing references — permanent standing rule (owner lock 2026-08-29, no exceptions)
+
+**Every generated clip with dialogue uses ElevenLabs per-character pacing-reference audio, for this episode and every future episode, from now on — not text tempo instructions alone.** Text-only speech-pacing instructions (attitude parentheticals, even explicit contrastive tempo language) were tried twice on the same clip and failed twice to differentiate multi-character delivery — the second attempt had the tempo written directly and explicitly into the prompt and still didn't land. ElevenLabs audio pacing references, tried third, is what the owner is locking in as the standard method going forward.
+
+**Method (established on Episode/Gaugamela Clip 2, `pai-pro-tooling/alexander`):**
+1. For each speaking character in the clip, generate a short `eleven_v3` take (the model that supports inline direction tags like `[urgent, breathless]`, `[calm, unhurried, deliberate]`, `[hesitates, pause]`) reading that character's actual line(s) with the intended emotional/physical pacing baked into the direction tags — pick a voice fitting the character from `creative_list_voices`.
+2. Import each take into Higgsfield storage via `media_import_url` to get a `media_id`.
+3. Pass each as a separate `audio_references` media entry in the Seedance `generate_video` call (one per character, alongside the existing image identity/environment references — this is additive, not a replacement for the image-reference package).
+4. In the prompt's REFERENCE ROLES section, explicitly instruct the model to take **tempo, rhythm, and delivery timing** from each `@AudioN` reference for that character's lines specifically — this is a deliberate, stated reversal (for pacing-bearing clips only) of the project's general "audio references control ONLY timbre" convention, since timbre-only was never validated as the actual constraint and pacing is the thing that needed fixing.
+5. Text-based tempo instructions in the DIALOGUE block stay in the prompt too (belt-and-suspenders) — the audio references reinforce them, they don't replace writing the pacing rule into the text.
+
+This is a standing production step now, not a case-by-case judgment call: any clip with more than one speaking character, or any single-character clip where pacing carries real dramatic weight, gets pacing-reference audio before its prompt is finalized — per the MASTER RULE's checklist, this is now one of the items to verify before presenting a final prompt.
+
 ## Owner's QC rule (decided 2026-08-20 — supersedes the per-clip "Stage A" in research-methodology.md §4)
 
 - Do NOT run Gemini (or any machine video-analysis) during the clip-GENERATION
   stage. Clips are generated in PAI Pro under the existing process and the
   owner's approval gates, with no Gemini involvement.
+  **One owner-approved exception (2026-08-29): Gemini eyes MAY run on
+  VALIDATION/TEST clips at generation stage** (e.g. a new model's or method's
+  test shot, before it enters production) — because frame-sampling QC cannot
+  see motion defects. Production clips remain under the original rule:
+  edit-stage only.
 - Gemini eyes comes into action only at the EDITING stage, once all of an
   episode's clips are generated. Run it there on:
   1. the full clip set entering the edit,
