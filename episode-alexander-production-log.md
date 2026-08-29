@@ -502,4 +502,20 @@ Generated successfully: https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC
 |---|---|---|
 | BD | Clip 2 v4 (eyeline fix) | `bcc77689-28de-45a0-bf33-ee51c398111d` |
 
+QC PASS (9.056s, zero freeze events), delivered per §20/immediate-delivery rule. **Self-verification this round (owner asked directly whether pacing was re-checked — it hadn't been): ran `tools/gemini-eyes/gemini_eyes.py ask` against clip2_v4.mp4 with a targeted per-character pacing question rather than relying on the owner's ear alone.** Result: Parmenion and Hazel's pacing matched intent; Alexander's was CONFIRMED still too fast/compressed ("squeezes three distinct thoughts into barely three seconds... lacks the heavy, deliberate weight") despite his ElevenLabs audio reference being present in the generation — proof that including a pacing reference isn't sufficient on its own if the reference take itself, or the model's adherence to it for that specific character, isn't strong enough. Eyeline also only partially landed: Alexander's improved (now visibly looking at Hazel), Hazel's did not (still down at the tablet through her own line).
+
+**Owner clarification, important: pacing correctness is scene/character-appropriate, not "slower is always better."** Parmenion's fast/urgent delivery is correct and stays untouched — the only real complaint was Alexander specifically reading too fast relative to what his own §32 lock (unhurried, contrast to Parmenion) demands for this beat.
+
+## Round 17 — CLIP 2 v5: stronger Alexander pacing reference + strengthened eyeline (2026-08-29)
+
+Two isolated fixes, both owner-authorized ("prep v5 for both"):
+1. **New Alexander ElevenLabs take** (voice `1koyuv6vFWwrfTeqpDzq`), explicit multi-second silent pauses written between each sentence rather than relying on adjective tags alone — rendered take is 10s vs. ~7.5s for the original, confirming genuinely slower delivery was captured. Imported as media `633261ea-a007-4d90-b146-157443b76182`, replacing `cd0d08e6` as the `@Audio2` reference. Parmenion's and Hazel's audio references (`9e7db43a`, `360cef41`) unchanged — their pacing already worked, not touched.
+2. **Eyeline instructions rewritten again**, this time making Hazel's held eye contact the single most emphasized blocking detail in both `dialogue` and `camera` fields (explicit "MOST IMPORTANT/CRITICAL DETAIL" framing), and removing the "Hazel receiving the tablet at its edge" phrase from the CAMERA field's opening blocking list — it may have been anchoring her gaze downward as a competing instruction.
+
+| # | Item | Job ID |
+|---|---|---|
+| BE | Clip 2 v5 (Alexander pacing retake + eyeline v2) | `e368ffbd-58ce-4a8b-9335-aaa91c0087d1` |
+
+AWAITING generation + Gemini eyes self-check + owner verdict.
+
 AWAITING generation + owner verdict.
