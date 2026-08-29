@@ -340,3 +340,11 @@ Delivered per §20 (this is a TEST clip — owner's 2026-08-29 Gemini-eyes-on-te
 **Honest limitation of this QC:** whether this is TRULY "the same event, same timing, new angle" (the actual bar for the technique) vs. "a similarly-staged but independently-timed collision" is a motion-level judgment frame sampling cannot make with confidence. This is exactly the gap the owner's Gemini-eyes-on-test-clips exception exists for.
 
 **Recommendation: ONE test is a promising data point, not full validation.** Per §8.2's own bar ("never relied on blind"), this single result should not yet authorize using the technique in any production clip. No episode clip currently plans to use it — the battle sequence (5a-6b) already achieves coverage via the safe toolkit (parallel action / inserts / cut-on-action / non-trackable same-moment), zero same-action-twice instances. AWAITING OWNER verdict: promising/needs more testing/reject, and whether to run Gemini eyes on this clip for a motion check.
+
+## Owner root-cause request: why the multi-angle test under-delivered scale (2026-08-29)
+
+Owner flagged: only ~6-7 riders visible clashing, rest of the army at a visible remove — not the full-wave attack the episode requires. **Diagnosed as a Claude prompting error, confirmed, not a model or technique limitation:**
+1. The frozen ENVIRONMENT_BLOCK (§7b.3, mandatory verbatim in every battle prompt) was PARAPHRASED for this test instead of pasted verbatim — the 3-tier density-layering line (10-15 foreground / dozens-hundreds midground / thousands background) was dropped, replaced with only "thousands in haze at the horizon," which constrains nothing at close/mid range.
+2. The chosen angle (low, close, facing the charge) is the highest-risk framing for scale and needed an explicit depth-continuation line ("the charge continues in depth behind these riders") that was never written.
+
+6a v2 — the approved production clip — pasted the block verbatim and had no scale problem, confirming the block-injection rule works when actually followed. Logged as PROMPT_LEARNINGS S10/S11. Owner separately corrected Claude for not running Gemini eyes on the test clip proactively per the standing exception — acknowledged, Gemini eyes qc launched immediately (background, `gemini_qc/` output dir), no further instance to be treated as optional going forward.
