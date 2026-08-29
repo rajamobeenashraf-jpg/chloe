@@ -1,10 +1,13 @@
 .claude/settings.local.json
 
-# Generated video/image files stay out of git per CLAUDE.md's standing
-# rule -- they're retrievable from PAI/Higgsfield by job ID (see each
-# episode's production log manifest) or rebuildable from the committed
-# edit-stage tooling + manifests. Matches existing precedent (troy/salem
-# never committed their qc/*.mp4 or assets/*.mp4 either).
+# Generated video/image/audio files stay out of git per CLAUDE.md's
+# standing rule -- they're retrievable from PAI/Higgsfield/vidIQ by job
+# ID or URL (see each episode's production log manifest) or rebuildable
+# from the committed edit-stage tooling + manifests. Matches existing
+# precedent (troy/salem never committed their qc/*.mp4 or assets/*.mp4
+# either). .wav added 2026-08-29 after the Legnica generated score was
+# left untracked and kept tripping the stop-hook's git check.
 pai-pro-tooling/*/qc/*.mp4
 pai-pro-tooling/*/assets/*.mp4
 pai-pro-tooling/*/assets/*.png
+pai-pro-tooling/*/assets/*.wav
