@@ -549,3 +549,8 @@
 - Owner: cut one more second off clip10B's start. Frame-checked the new proposed point (4.833333s of the raw source, i.e. +1.0s past the prior 3.833333s trim) before applying it — still a clean, dense, Hazel-free shot of the field, camera slightly higher into the rise. Updated `CLIP_HEAD_TRIM.clip10B` to 4.833333.
 - Rebuilt: clip10B now 4.208334s (down from 5.208334s). Full cut rebuilt at **89.04s** (down exactly 1.0s from 90.04s, confirming nothing else shifted). `freezedetect` and `silencedetect` both clean.
 - File: `pai-pro-tooling/legnica/assets/legnica_final_cut.mp4` / `legnica_final_cut_compressed.mp4` (89.04s) — sent to owner.
+
+## 2026-08-29 (cont.) — Another second trimmed off clip10B's start
+- Owner: cut one more second off clip10B's start. Frame-checked the new point (5.833333s of the raw source) before applying — still clean and Hazel-free, camera further into the rise. Updated `CLIP_HEAD_TRIM.clip10B` to 5.833333.
+- Rebuilt: clip10B now 3.208334s (down from 4.208334s). Full cut rebuilt at **88.04s** (down exactly 1.0s). `freezedetect` and `silencedetect` both clean.
+- File: `pai-pro-tooling/legnica/assets/legnica_final_cut.mp4` / `legnica_final_cut_compressed.mp4` (88.04s) — sent to owner.
