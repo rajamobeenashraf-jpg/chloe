@@ -17,7 +17,7 @@ const ASSETS_DIR = path.join(PROJECT_DIR, "assets");
 const QC_DIR = path.join(PROJECT_DIR, "qc");
 
 const CUT_PATH = path.join(ASSETS_DIR, "troy_final_cut.mp4");
-const SCORE_RAW = "/tmp/claude-0/-home-user-chloe/7ac2ab27-846b-513a-a43d-cf2fae9c942b/scratchpad/score/score_raw.mp3";
+const SCORE_RAW = "/tmp/claude-0/-home-user-chloe/7ac2ab27-846b-513a-a43d-cf2fae9c942b/scratchpad/score/score_scene_matched.mp3";
 const DIALOGUE_WAV = path.join(ASSETS_DIR, "_dialogue_extract.wav");
 const SCORE_TRIMMED = path.join(ASSETS_DIR, "_score_trimmed.wav");
 const GATE_WAV = path.join(ASSETS_DIR, "_duck_gate.wav");
