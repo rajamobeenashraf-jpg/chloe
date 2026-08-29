@@ -116,3 +116,23 @@ Test shot: **clip 6a** (the impact — hardest scale shot first). Seedance 2.5, 
 - §24: compliant — mass action, nothing graphic.
 
 **Assessment for the validation question (is Seedance 2.5 fit to carry the episode): YES on scale, atmosphere, grade, and impact energy — the engine's ceiling is clearly high enough. The misses (opening dust state, wedge geometry, gear specificity) are prompt-level, not engine-level: mitigations for a v2 would be a generated start_image locking the composition, stronger negative/positive gear language, and a harder opening-state line. Per §19, NO v2 has been submitted — owner's verdict on v1 decides.**
+
+## Round 6 — clip 6a v2: the three approved fixes via the start-frame method (2026-08-29, owner-approved "v2 with the three fixes")
+
+Method: composition locked in a still first (nano_banana_pro), then Seedance 2.5 `omni_reference` generating from it. Also this round: §15 audio system committed to the brief — all clip prompts stay music-free (score is an edit-stage element).
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| T | 6a v2 start frame (composition lock still) | `9dc96a94-f13f-4210-9233-99bc14870e7a` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_021021_9dc96a94-f13f-4210-9233-99bc14870e7a.png |
+| U | 6a impact, test v2 | `63fa03dd-935b-4936-9990-cb8bfd5a9fc6` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_021157_63fa03dd-935b-4936-9990-cb8bfd5a9fc6.mp4 |
+
+Both delivered to owner per §20 on creation.
+
+**QC v2 (supplementary — owner's watch decides):**
+- §26 freezedetect: **PASS** (6.08s, no frozen stretches).
+- Fix 1 geometry: **FIXED** — wedge enters frame-left, L→R, strikes the Persian line right-of-center; a defender thrown airborne at contact; the break propagates from the contact point while the further line holds. Screen-direction map obeyed.
+- Fix 2 gear separation (§33): **FIXED** — sides fully distinct end-to-end: bronze/crimson cavalry vs. wicker spara shields, turbans, scale armor, patterned fabrics, visibly varied contingents. Residual cosmetic note: helmet crests persisted through BOTH generators despite "no crests" (reads Greek, not Roman — acceptable; logged as a learned model-disobedience).
+- Fix 3 opening dust: **LARGELY FIXED** — haze present from frame one incl. midground; foreground at 0.0–0.5s still moderately clean (better than v1).
+- Scale QC: (a) line past frame edges PASS · (b) population reads as thousands PASS · (c) dust matches FULL BATTLE stage PASS (with the minor opening-foreground note).
+
+**VALIDATED METHOD (for all future hard-geometry shots): still-first composition lock → omni_reference video. t2v alone demonstrably ignores placement geometry; a locked start frame enforces it.**
