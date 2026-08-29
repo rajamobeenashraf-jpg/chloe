@@ -148,11 +148,13 @@ const CLIP_TRIM = {
 // Frame-checked 3.5-4.0s: a sliver of her hair is still visible at
 // 3.7s, fully clean by 3.85s -- landed on 3.833333s (frame 92 @
 // 24fps), the earliest clean frame with zero trace of her. No
-// captions on this clip (visual-only), so no shift needed.
+// captions on this clip (visual-only), so no shift needed. Owner then
+// asked for a further 1.0s trimmed off the start (still clean, camera
+// slightly higher into the rise) -- total 4.833333s.
 const CLIP_HEAD_TRIM = {
   clip5: 3.0,
   clip10: 0.58333,
-  clip10B: 3.833333,
+  clip10B: 4.833333,
 };
 
 // Owner decision, 2026-08-26: fix clip10's dead-silence tail (confirmed
