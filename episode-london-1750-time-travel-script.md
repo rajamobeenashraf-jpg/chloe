@@ -15,7 +15,7 @@ This is a **different structural device** from the Chloe-formula episodes (`epis
 - **HAZEL name lock** — protagonist is HAZEL throughout, present day and 1750 alike.
 - **V-mode / direct-address floor** — first-person selfie-lens the whole runtime; she talks to the audience or reacts into the lens at least every ~5s, same floor as every other episode.
 - **CHARACTER_LOCK v5** — Hazel's face/appearance reference for any stills this script eventually needs.
-- **Sign-off ritual** — the owner's specified ending ("Oh, thank God… It was just a dream." / "And the power's back.") is used verbatim as the final button. Still flagged as an open question below whether "Hazel — out of time" gets appended after it.
+- **Sign-off ritual** — **owner decision (this episode only, 2026-08-29): do NOT append "Hazel — out of time."** The owner's specified ending ("Oh, thank God… It was just a dream." / "And the power's back.") is the final button as written, standing alone — the standard sign-off doesn't suit a dream-frame episode that already closes on its own punchline/relief beat. This is scoped to this episode's structure, not a change to the sign-off ritual for the rest of the slate.
 - **Caption system, ElevenLabs pacing references** — apply once this reaches prompt-writing, not at script stage. Flagged in Open items.
 - **Per-beat eyeline (permanent rule)** — pre-blocked at script stage this pass (see the *Eyeline:* line inside every clip with more than one character: 4, 5, 6, 7, 8, 9, 11, 12), ahead of when this rule is normally applied. Final verification/adjustment still happens when the actual generation prompts are written, since blocking can shift once camera/coverage decisions are made.
 - **Historical grounding** — ordinary household, not a documented incident, so no pinned-comment fact-check the way the other episodes need; the authenticity note below now covers the added beats (water pump, church bells, coin value, beeswax vs. tallow).
@@ -72,7 +72,7 @@ Ordinary working household, not a named historical event — grounded in general
 
 1. Signal-stack scoring not run; no production slot exists in the Ep 5–9 queue.
 2. No reference stills exist yet for Agnes, Thomas, or Bess, or for the settings (hearth room, chandler's shop, street pump) — needed before any generation starts.
-3. **Sign-off question** (unchanged from v1): confirm whether "Hazel — out of time" should still be appended after "...And the power's back," or whether this episode's dream-frame ending stands alone.
+3. ~~Sign-off question~~ — **RESOLVED (owner, 2026-08-29): no "Hazel — out of time" appended.** The script's own ending stands alone, as written in clip 13.
 4. **Runtime**: this pass grew from 93s to 109s to fit in the pump scene, Bess, and the added texture. If the ~90s target is a hard cap rather than a rough guide, the pump beat (clip 7, 9s) is the cleanest single cut to bring it back down to ~100s, or Bess's two lines could be trimmed from clips 5/6 to save another ~4–5s.
 5. Once approved, the next pass is prompt-writing: ElevenLabs pacing-reference audio for Hazel/Agnes/Thomas/Bess, camera/model selection per the MASTER RULE checklist, and final verification of the eyeline blocking already drafted in clips 4, 5, 6, 7, 8, 9, 11, 12 — none of that is decided yet, this file is story only.
 
