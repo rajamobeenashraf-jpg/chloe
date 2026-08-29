@@ -218,3 +218,13 @@ From v6 (`2edb908c`): lipstick/gloss look removed — bare natural-pink lips wit
 | AE | Hazel v5 candidate — B2 v7, natural lips | `b6906b4d-bf59-4556-a17d-122d0c481e41` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_032537_b6906b4d-bf59-4556-a17d-122d0c481e41.png |
 
 Delivered per §20. QC: lips now read as bare natural pink with visible lip texture (no lacquer shine); freckles a delicate faint trace; identity, fair rosy complexion, hazel eyes all held; realism intact. AWAITING OWNER pick; CHARACTER_LOCK.md still v4, untouched.
+
+## Round 7h — B2 v8: pinkness −5%, lips +5% pinker, freckles −5% (owner-directed 2026-08-29)
+
+From v7 (`b6906b4d`).
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AF | Hazel v5 candidate — B2 v8 | `3a397a9b-4c9f-4323-a260-b4989d321781` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_032853_3a397a9b-4c9f-4323-a260-b4989d321781.png |
+
+Delivered per §20. QC: cheek flush softened a touch; lips a shade pinker, still bare/natural with texture; freckles now the faintest near-subliminal trace (noted to owner: one more reduction effectively removes this brand marker); identity and realism intact. AWAITING OWNER pick; CHARACTER_LOCK.md still v4.
