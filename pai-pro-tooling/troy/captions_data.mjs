@@ -201,25 +201,46 @@ export const CLIPS = [
   },
   {
     id: "clip9",
+    // RE-MEASURED (2026-08-29): clip9 was reshot with corrected dusk
+    // lighting (see episode-7-production-log.md) -- fresh dialogue audio
+    // means the old whisper-derived cues below no longer apply, even
+    // though clip duration is unchanged. Re-ran make_word_chunks.py's
+    // method against the new audio: 93% direct match (27/29 words).
+    // Whisper garbled two spots in the fast multi-soldier-reaction
+    // section (heard "soldiers inside" not "soldiers hiding inside", and
+    // "A WHO would" instead of "A WHAT? Who would"), which made the raw
+    // interpolated output for "SOLDIERS HIDING"/"INSIDE." and "A WHAT?"
+    // land as overlapping timestamps -- a known failure mode in this
+    // exact section of clip9 (its quick overlapping soldier reactions
+    // have needed manual correction before, on the original take too).
+    // Corrected by hand using the reliably-matched anchors either side
+    // (HORSE — ends 2.48, YES? begins 3.66; YES? ends 3.76, WHO WOULD
+    // begins 4.02) rather than trusting the buggy interpolation:
+    // SOLDIERS HIDING / INSIDE. split proportionally by character count
+    // across whisper's own matched 2.94-3.40 span; A WHAT? given the
+    // 3.76-4.02 gap between YES? and the confirmed-clean WHO WOULD/DRAG
+    // IT? pair. Flagged honestly, not claimed as frame-verified -- same
+    // standard as clip9's previously-documented ambiguous section.
     duration: 8.057007,
     captions: [
-      { start: 0.000, end: 0.280, text: "OKAY." },
-      { start: 0.700, end: 0.980, text: "THE HORSE" },
-      { start: 0.980, end: 1.300, text: "PLAN..." },
-      { start: 1.980, end: 2.180, text: "GIANT WOODEN" },
-      { start: 2.180, end: 2.780, text: "HORSE — SOLDIERS" },
-      { start: 2.780, end: 3.400, text: "HIDING INSIDE." },
-      { start: 3.640, end: 3.720, text: "YES?" },
-      { start: 4.140, end: 4.300, text: "A WHAT?" },
-      { start: 4.300, end: 4.560, text: "WHO WOULD" },
-      { start: 4.560, end: 5.000, text: "DRAG IT?" },
-      { start: 5.000, end: 5.220, text: "...HOW MANY" },
-      { start: 5.220, end: 5.440, text: "SOLDIERS?" },
-      { start: 5.600, end: 5.980, text: "NO HORSE." },
-      { start: 6.380, end: 6.640, text: "YET." },
-      { start: 6.940, end: 7.320, text: "REMEMBER I" },
-      { start: 7.320, end: 7.540, text: "SAID IT" },
-      { start: 7.540, end: 7.840, text: "HERE FIRST." },
+      { start: 0.000, end: 0.380, text: "OKAY." },
+      { start: 0.600, end: 0.880, text: "THE HORSE" },
+      { start: 0.880, end: 1.920, text: "PLAN..." },
+      { start: 1.920, end: 2.140, text: "GIANT WOODEN" },
+      { start: 2.140, end: 2.480, text: "HORSE —" },
+      { start: 2.940, end: 3.250, text: "SOLDIERS HIDING" },
+      { start: 3.250, end: 3.400, text: "INSIDE." },
+      { start: 3.660, end: 3.760, text: "YES?" },
+      { start: 3.760, end: 4.020, text: "A WHAT?" },
+      { start: 4.020, end: 4.260, text: "WHO WOULD" },
+      { start: 4.260, end: 4.700, text: "DRAG IT?" },
+      { start: 4.700, end: 4.920, text: "...HOW MANY" },
+      { start: 4.920, end: 5.180, text: "SOLDIERS?" },
+      { start: 5.580, end: 5.980, text: "NO HORSE." },
+      { start: 6.360, end: 6.540, text: "YET." },
+      { start: 6.780, end: 7.200, text: "REMEMBER I" },
+      { start: 7.200, end: 7.460, text: "SAID IT" },
+      { start: 7.460, end: 7.800, text: "HERE FIRST." },
     ],
   },
   {
