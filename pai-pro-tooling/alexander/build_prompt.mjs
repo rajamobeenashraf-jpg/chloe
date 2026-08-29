@@ -125,15 +125,21 @@ function buildStillPayload(clip) {
     process.exit(2);
   }
 
+  // Learnings N5/S9 and Round 18 (Clip 3): reference-image COUNT is itself a
+  // failure risk — 14 refs failed twice with no error detail; 2 refs (one
+  // Hazel canon anchor + one per NPC) succeeded immediately. Keep still
+  // reference sets lean; do NOT stack the full episode-costume + full
+  // canon-4K sets together the way video generation does.
   const medias = [];
   if (clip.hazel) {
-    for (const r of REFS.HAZEL) medias.push({ value: r.value, role: "image_references" });
-    for (const r of REFS.HAZEL_CANON_4K) medias.push({ value: r.value, role: "image_references" });
+    medias.push({ value: REFS.HAZEL_CANON_4K[0].value, role: "image_references" });
+    medias.push({ value: REFS.HAZEL[0].value, role: "image_references" });
   }
   for (const npc of clip.characters || []) {
     const set = REFS[npc];
     if (!set) continue;
-    for (const r of set) medias.push({ value: r.value, role: "image_references" });
+    // Cap at 2 refs per NPC for stills, same lean-reference-set rationale.
+    for (const r of set.slice(0, 2)) medias.push({ value: r.value, role: "image_references" });
   }
 
   const parts = [];

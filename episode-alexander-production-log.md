@@ -516,6 +516,18 @@ Two isolated fixes, both owner-authorized ("prep v5 for both"):
 |---|---|---|
 | BE | Clip 2 v5 (Alexander pacing retake + eyeline v2) | `e368ffbd-58ce-4a8b-9335-aaa91c0087d1` |
 
-AWAITING generation + Gemini eyes self-check + owner verdict.
+QC PASS (9.056s, zero freeze events), delivered per §20/immediate-delivery rule. **Gemini eyes self-check run before/alongside delivery this time (not after being asked):** neither fix landed. Alexander's pacing "remains fairly rapid, fluent, and continuous... not markedly slow or unhurried" despite the all-new, genuinely-paused (10s) audio reference — the reference's own pacing did not transfer into the render at all this attempt, not even partially. Hazel's eyeline is unchanged from v3/v4 — "looking straight down at the wax tablet... rather than looking up at Alexander's face" through both the address and her own answering line, despite the instruction being rewritten as the single most emphasized blocking detail in the prompt.
 
-AWAITING generation + owner verdict.
+**Assessment:** both issues have now failed on two separate, substantively different, genuinely strengthened attempts each — the same pattern that made the camera-geometry finding (S12) credible as a real model limitation rather than a prompting gap. Likely explanations: (1) Seedance's `audio_references` may only carry voice timbre, not tempo, regardless of instruction — contradicting the hypothesis behind the ElevenLabs-pacing standing rule; (2) sustained held eye-contact-while-speaking for a secondary/background character during another character's dialogue beat may not be reliably executable from text alone in this model. No further regeneration attempted without a materially different approach — a sixth same-category attempt on either issue was judged unlikely to succeed. Owner reviewed and moved production forward ("continue to next clip") rather than pursuing a further attempt on Clip 2 for now — both issues remain open/unresolved on the current best version (v5), noted here for a future revisit rather than treated as silently accepted.
+
+## Round 18 — CLIP 3 start-frame still (2026-08-29)
+
+Applying the MASTER RULE checklist before generating: V-mode (her own lens, avoids the 3P eyeline-between-strangers problem class), single NPC (Alexander), eyeline and pacing written explicitly into `dialogue`/`camera` per §11.3 and the eyeline rule (Alexander's voice stays unhurried/economical independent of his body's physical urgency — no other character to contrast against here, unlike Clip 2; his eyes stay down on his gear except a brief glance at her on his exit line). `stillComposition` field added.
+
+Three attempts on the still, same soft-block-with-no-error-detail pattern as Clip 1's Round 11: v1 (`e19eead1`, 14 references — the `--still` mode's old default of full episode-costume + full canon-4K Hazel sets stacked together, FAILED) → v2 (`9f34b458`, trimmed to 4 references, FAILED) → v3 (`9a0a6328`, trimmed to 2 references, SUCCESS). Logged as PROMPT_LEARNINGS N7: reference-image *count* is itself a failure risk, independent of language. `build_prompt.mjs --still` fixed to cap at 1 Hazel canon anchor + 1 per NPC by default (was stacking full sets) so this can't recur silently.
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| BF | Clip 3 start-frame still (SUCCESS) | `9a0a6328-93d9-43f7-bbea-367213a3b02c` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_101030_9a0a6328-93d9-43f7-bbea-367213a3b02c.png |
+
+QC: Hazel identity holds (v5 face, freckles, hazel eyes), true selfie POV with no phone/rig visible, Alexander in background buckling his strap without looking up (per the eyeline instruction), worn scroll-case visible on the stool near the cot. One minor note, not treated as a defect: his hair reads slightly darker than "light-brown" under the dim tent lighting — likely grade, not identity drift. Delivered per §20. AWAITING OWNER approval before generating the clip.
