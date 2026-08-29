@@ -1,7 +1,7 @@
 # Alexander/Gaugamela — Production Breakdown (v1, per `cinematic-direction-brief.md`)
 **Companion to `episode-alexander-gaugamela-script.md` (v8). Dialogue unchanged from the approved script. Runtime 84s, 10 clips. Screen-direction map for the whole episode: in NOVA shots, Macedonians advance LEFT→RIGHT, Persians face right→left, Darius flees deeper-right/away; in V-mode shots, the Persian line sits in the DEEP FRAME behind Hazel. Every clip obeys this one map.**
 
-**Mode summary:** V-mode throughout except the battle scene, where clips 5a and 6 are **NOVA (PROPOSED — owner approval pending)**. Clip 5a was already owner-approved as third-person earlier (2026-08-28, morning); clip 6 is the one NEW Nova ask — see its entry for the case both ways. Clips 5b and 7 stay V-mode deliberately (her reactions belong to her own lens).
+**Mode summary (updated 2026-08-29 — mode decisions are now Claude's per the owner's final authority clarification; labeled here for owner visibility/veto, not pending approval):** V-mode throughout except the battle scene, where clips 5a and 6 are **NOVA — DECIDED**. 5a delivers wedge scale a POV shot can't; 6 is decided Nova on the reasoning in its entry (the mute-legibility keystone — a locked third-person frame is the only staging that guarantees "the line broke HERE" reads with sound off, and 5b/7 already carry the first-person visceral load on both sides of it). Clips 5b and 7 stay V-mode deliberately — her reactions belong to her own lens.
 
 **Duration changes from v7 (script updated to match):** 5b 4s→5s, 6 12s→10s, 7 10s→11s. Net zero; total stays 84s. Reason: clip 6's on-camera reaction beat moves to the head of clip 7 (if 6 goes Nova, her face can't be in it), so 7 needs the extra second and 6 needs less.
 
