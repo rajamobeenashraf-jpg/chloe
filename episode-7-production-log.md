@@ -659,6 +659,14 @@ instead: "POV: ACHILLES WAS A" / "MONSTER, NOT A HERO". Re-burned as two
 98pt lines (y=150/270), fits within frame width with margin on both
 sides, still well clear of her hairline. Re-delivered.
 
+Owner reported the text wasn't visible and asked for it moved down to
+just above her head. Re-checked the clean source frame directly rather
+than guessing: her hairline sits noticeably lower than the first pass
+assumed, leaving a large unused gap between the text and her head.
+Re-burned at y=280/400 (bottom edge ~520px, clear of even the tallest
+wind-blown hair strands), sitting immediately above her head instead of
+high in the smoke. Re-delivered.
+
 Flagged one thing rather than silently noting it only in the metadata
 file: the line is a stronger claim than clip 7's actual dialogue makes
 (the clip is about what Achilles gave up, not a monster-vs-hero verdict) —
