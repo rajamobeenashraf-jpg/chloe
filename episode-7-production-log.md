@@ -792,3 +792,57 @@ Output: `troy_final_cut_MASTER_v2.mp4`, 128MB (vs. the first attempt's
 1.42GB -- FLAC compresses losslessly, so this is smaller AND safer).
 Uploaded, confirmed, byte-count verified against the CDN copy
 (128,187,653 bytes both sides) before calling it delivered.
+
+## Reconstructed the pre-clip9-reshoot final cut, on request (2026-08-29)
+
+Owner asked for the final video from before clip9 v2 was spliced in -- the
+cut as it stood right after the "re-edit per updated default-branch
+rules" pass (commit `1c709ab`), still carrying the original too-dark
+clip9. That exact delivered file no longer exists locally (nothing
+regenerates it -- `assets/clip9_v1.mp4` and `captions_data.mjs` were both
+overwritten in place by the reshoot, per this project's own "run_clip.mjs
+writes in place" convention, and generated media stays out of git), so
+this required reconstruction, not just a re-send.
+
+**Confirmed via `git show 1c709ab:pai-pro-tooling/troy/captions_data.mjs`
+that only clip9's entry differs** between that commit and current --
+duration identical (8.057s both), but different internal caption-cue
+splits (old: "HORSE — SOLDIERS" / "HIDING INSIDE."; new: "HORSE —" /
+"SOLDIERS HIDING" / "INSIDE.", from the fresh take's different pacing) --
+and confirmed `qc_pass.mjs`/`build_final_cut.mjs`/`export_srt.mjs` are
+byte-identical between then and now (`git diff` empty), so reusing today's
+build scripts against yesterday's data is valid.
+
+**First attempt at the swap was correctly blocked** by the auto-mode
+permission classifier -- overwriting `assets/clip9_v1.mp4` and
+`captions_data.mjs` in place, even with a restore plan, reads as exactly
+the kind of live-production-file risk it's supposed to catch. Verified
+nothing had actually executed (permission checks run before any command
+in the chain), then rebuilt the approach properly: fingerprinted every
+file that would've been touched (md5sum of `clip9_v1.mp4`,
+`captions_data.mjs`, `troy_final_cut.mp4`/`_compressed.mp4`/`.srt`, all 12
+`qc/*.ass`), then did the entire reconstruction in an **isolated scratch
+copy** -- the 11 unchanged clips + the archived pre-reshoot
+`clip9_v1_dark_dusk.mp4` + the old captions data + copies of the three
+build scripts, none of it touching the live project directory at all. Ran
+`qc_pass.mjs` -> `build_final_cut.mjs` -> `export_srt.mjs` there.
+
+**Verified before delivery**: 3011 frames / 125.458333s (matches the
+current cut's runtime exactly, as expected -- clip9's reshoot never
+changed its duration, only its lighting and internal caption timing); SRT
+cue count 177, one fewer than today's 178, matching the log's own note
+that the reshoot's caption fix added one extra chunk-split in the
+corrected section; pulled a frame at the "HIDING INSIDE." caption and
+confirmed both the old chunk-split text AND visibly darker/moodier dusk
+lighting than the corrected version, versus the punchier "SOLDIERS
+HIDING" / "INSIDE." split and brighter dusk in every delivery since.
+**Re-fingerprinted the live project directory after the rebuild and diffed
+against the pre-swap fingerprint -- byte-identical, confirming nothing in
+production was touched**, before going anywhere near delivery.
+
+No music in this version -- correct, since score generation only started
+after clip9 v2 was approved, so a pre-clip9-v2 cut never had one.
+
+Output: `troy_final_cut_PRE_CLIP9_RESHOOT.mp4`, 108,767,148 bytes.
+Uploaded, confirmed, byte-count verified against the CDN copy before
+delivery.
