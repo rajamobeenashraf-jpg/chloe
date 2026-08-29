@@ -202,6 +202,74 @@ const CLIP_HIGHPASS = {
 // hiss. These clips get the highpass (if any) and fade/click-guard only.
 const CLIP_SKIP_LOUDNORM = new Set(["clip10B"]);
 
+// Owner decision, 2026-08-29: the clip1->clip1B cut has an abrupt jump in
+// the diegetic ambient's intensity/density -- clip1's audio is comparatively
+// sparse (wind, gear, an occasional horn beat) while clip1B's own generated
+// audio erupts into a dense, loud, continuous hoofbeat/horn rumble almost
+// immediately, rather than the gradual "horn's echo fading, then a RISING
+// rumble" build its own script called for. This is a content-level issue in
+// the generated audio, not a level-matching bug -- a true fix would mean
+// regenerating clip1B's opening. Owner chose a fast editing-stage smoothing
+// instead. Implemented as a TAPERED VOLUME DIP on each side of the cut
+// (never reaching true silence) rather than a real overlapping crossfade:
+// a true crossfade blends the two clips' audio within a shared window,
+// which necessarily shortens the combined audio length by the overlap
+// duration relative to the (untouched, hard-cut) video -- that would drift
+// audio out of sync with video for the rest of the episode. A tapered dip
+// achieves the same softened-transition feel without changing any clip's
+// duration, and by design never approaches zero, so it doesn't reintroduce
+// the audible "gap at cuts" bug fixed earlier this session (creative-
+// direction.md §29).
+// clip1's tail eases DOWN toward clip1B's level (floor < 1, a cut); clip1B's
+// head eases DOWN FROM a boosted level toward its own natural level (floor
+// > 1, a boost) since clip1B's own audio starts quieter than clip1 ends --
+// boosting its very start (rather than cutting it further) is what actually
+// closes the gap. Verified via measurement: clip1 natural tail ~-15.6dB,
+// clip1B natural head ~-22dB: a ~6.4dB gap. floor=1.8 (~+5dB) on clip1B's
+// head brings its start close to clip1's level; floor=0.5 (~-6dB) on
+// clip1's tail eases it down to meet partway, closing most of the jump.
+const CLIP_TAIL_SOFTEN = {
+  clip1: { duration: 0.4, floor: 0.5 },
+};
+const CLIP_HEAD_SOFTEN = {
+  clip1B: { duration: 0.4, floor: 1.8 },
+};
+
+// ffmpeg's `volume` filter (eval=frame) validates its expression once at
+// init time with `t` undefined -- any expression that does CONTINUOUS
+// arithmetic on `t` (even `min(1,t)` or `t*0.1`) evaluates to NaN at that
+// point and the whole filter silently falls back to a no-op (verified by
+// direct testing: `volume=t*0.1` and similar produce "Invalid value NaN"
+// and pass audio through completely unattenuated). Pure `if(lt(t,X),A,B)`
+// branches to fixed constants don't trigger this, since `lt(NaN,X)` just
+// resolves false and picks a valid constant branch. So a smooth ramp isn't
+// achievable directly -- build a discrete staircase of fixed-volume steps
+// instead, which sounds like a soft fade at a small enough step count/size.
+const SOFTEN_STEPS = 5;
+
+// Builds a nested if(lt(t,threshold), value, ...) chain, ascending
+// threshold order (outermost check fires first), stepping the volume from
+// `fromVol` (before/at t0) to `toVol` (at/after t0+duration) in SOFTEN_STEPS
+// even increments.
+function staircaseExpr(t0, duration, fromVol, toVol) {
+  const stepDur = duration / SOFTEN_STEPS;
+  let expr = toVol.toFixed(3); // t >= t0 + duration
+  for (let k = SOFTEN_STEPS; k >= 1; k--) {
+    const threshold = (t0 + k * stepDur).toFixed(3);
+    const value = (fromVol + (toVol - fromVol) * ((k - 1) / SOFTEN_STEPS)).toFixed(3);
+    expr = `if(lt(t\\,${threshold})\\,${value}\\,${expr})`;
+  }
+  return expr;
+}
+
+function tailSoftenExpr(outputDuration, { duration, floor }) {
+  return staircaseExpr(outputDuration - duration, duration, 1.0, floor);
+}
+
+function headSoftenExpr({ duration, floor }) {
+  return staircaseExpr(0, duration, floor, 1.0);
+}
+
 function ambientBedFilterComplex(inputDuration, dialogueLabel) {
   return (
     `[1:a]lowpass=f=500,lowpass=f=500,volume=0.025,asetpts=PTS-STARTPTS[bed];` +
@@ -234,14 +302,28 @@ async function qcOneClip(clip, { isFirst, isLast }) {
   const highpassHz = CLIP_HIGHPASS[clip.id];
   const highpassPrefix = highpassHz ? `highpass=f=${highpassHz},` : "";
   const skipLoudnorm = CLIP_SKIP_LOUDNORM.has(clip.id);
+  const tailSoften = CLIP_TAIL_SOFTEN[clip.id];
+  const headSoften = CLIP_HEAD_SOFTEN[clip.id];
+  const softenParts = [];
+  if (tailSoften) softenParts.push(`volume=volume='${tailSoftenExpr(outputDuration, tailSoften)}':eval=frame`);
+  if (headSoften) softenParts.push(`volume=volume='${headSoftenExpr(headSoften)}':eval=frame`);
+  // Soften must run BEFORE loudnorm, not after: verified by direct testing
+  // that applying it downstream of loudnorm barely survives (loudnorm's own
+  // gain-riding partially fights a short, sharp post-loudnorm level change).
+  // Placed pre-loudnorm, the taper affects too little of the clip's overall
+  // integrated loudness to change loudnorm's computed gain, so loudnorm's
+  // single overall multiplier preserves the taper's shape through to output.
+  const softenPrefix = softenParts.length ? `${softenParts.join(",")},` : "";
   const audioChain = skipLoudnorm
-    ? `${highpassPrefix}anull${fadeSuffix}`
-    : `${highpassPrefix}loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}`;
+    ? `${highpassPrefix}${softenPrefix}anull${fadeSuffix}`
+    : `${highpassPrefix}${softenPrefix}loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}`;
   const noteParts = [];
   if (fadeParts.length) noteParts.push(`outer-edge click-guard (${CLICK_GUARD * 1000}ms)`);
   if (hasBed) noteParts.push("synthesized ambient-bed mix to kill dead-silent tail");
   if (highpassHz) noteParts.push(`${highpassHz}Hz highpass to remove a low-frequency noise artifact`);
   if (skipLoudnorm) noteParts.push("loudnorm SKIPPED (deliberately near-silent clip -- loudnorm would amplify it into audible noise)");
+  if (tailSoften) noteParts.push(`tail softened to ${Math.round(tailSoften.floor * 100)}% over last ${tailSoften.duration}s (smooths the cut into the next clip)`);
+  if (headSoften) noteParts.push(`head softened from ${Math.round(headSoften.floor * 100)}% over first ${headSoften.duration}s (smooths the cut from the previous clip)`);
   const fadeNote = noteParts.length ? noteParts.join(" + ") : "no fade -- true hard audio join per §29";
 
   const bedInputArgs = hasBed
