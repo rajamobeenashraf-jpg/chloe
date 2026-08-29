@@ -285,3 +285,7 @@ Delivered per §20. Claude QC: taller/longer-legged reads clearly; waist-hip def
 
 - Owner: "make her figure more sexy" → both full-bodies re-done as PHOTO-EDITS of the approved-composition v4 pair (face/wardrobe/pose/setting held, figure accentuated): front `5f9b1a43-a3e9-482d-8465-5b0d19793d29`, 3/4 `270620f1-adc6-4a86-bfd8-149dcb8bdd92` (host d8j0ntlcm91z4, hf_20260829_035351_<job>.png). Delivered per §20, awaiting verdicts.
 - Owner asked for a portable editing-rules file for another chat → `EDITING_HANDOFF.md` created at repo root (all edit-stage rules: gates, §16 cuts, §25/§15 sound+music, conform checklist, Gemini eyes, caption system, technical QC, assembly hygiene, pipeline order) and sent to him.
+
+## Round 8f — full-body 3/4 APPROVED (2026-08-29, verified as Option A)
+
+Owner approved the PREVIOUS round's full-body 3/4 (`1eb09f83`, tall/hourglass) after an explicit which-image verification; the figure-pushed 3/4 (`270620f1`) is set aside. v5 canon now: master ✓, face front ✓, face 3/4 ✓, full-body 3/4 ✓. Remaining: full-body FRONT verdict (candidates: `dc77b494` same round as the approved 3/4, or figure-pushed `5f9b1a43`).

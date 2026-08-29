@@ -32,8 +32,8 @@ Generated 2026-08-29 from the v5 master, delivered to the owner per §20 — sta
 |---|---|---|
 | Face close-up front | `9bbdd985-8cc8-475c-9c05-060f7e5ca472` | **APPROVED (owner, 2026-08-29)** — the identity anchor beside the master |
 | Face close-up 3/4 | `b70ab775-ae1b-4a0e-afba-7df9ab3af9cd` | **APPROVED (owner, 2026-08-29)** — made as a PHOTO-EDIT of the approved front ("same photograph, head turned ~25°"), the method that finally held identity after two fresh-render attempts drifted (`d6f10ddd`, `14acb9d5` — both REJECTED, never use) |
-| Full-body front | in progress | v1 `a7f5576b` and v2 `d11a4b69` REJECTED (identity drift); v3 round carries the owner's updated figure/stature spec (taller ~5'9", pronounced hourglass, fitted wardrobe) — jobs recorded in the production log as delivered |
-| Full-body 3/4 walking | in progress | v1 `3ac7a1e2` and v2 `eaa1e93e` REJECTED (identity drift); v3 round as above |
+| Full-body front | pending owner verdict | v1 `a7f5576b` and v2 `d11a4b69` REJECTED (identity drift); candidates: tall/hourglass `dc77b494-57bd-41d9-a129-7120dc46447d` (same round as the approved 3/4) or figure-pushed `5f9b1a43` |
+| Full-body 3/4 walking | **APPROVED (owner, 2026-08-29 — "previous side version", confirmed as Option A)** | `1eb09f83-215a-4377-b806-d10a6cc3f9c4` (tall ~5'9", hourglass, fitted wardrobe, mid-stride). Rejected: v1 `3ac7a1e2`, v2 `eaa1e93e` (identity drift), figure-pushed v4 `270620f1` (set aside by owner's choice of the previous version) |
 
 **Figure/stature spec (owner-directed 2026-08-29, part of the v5 lock once a full-body view is approved):** tall (~5'9", long-legged) with a pronounced but realistic hourglass figure — full bust, slim defined waist, full rounded hips, fit and toned; never cartoonish proportions.
 
