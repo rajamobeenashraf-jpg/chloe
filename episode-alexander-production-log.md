@@ -178,3 +178,13 @@ Owner direction: freckles −30%, complexion +30% toward white, +15% pink. Rende
 | AA | Hazel v5 candidate — B2 v3 fair+pink | `258d55c9-5b2c-4dd1-9881-b8ff58be531e` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_025616_258d55c9-5b2c-4dd1-9881-b8ff58be531e.png |
 
 Delivered per §20. QC: all three shifts executed (sparser/fainter freckles, lighter fair tone, rosy-pink flush); identity held; realism intact. Reported to owner: golden-hour light masks some of the fairness — neutral daylight render offered. AWAITING OWNER: lock as v5 or iterate.
+
+## Round 7d — B2 v4: six owner-verified adjustments (2026-08-29; changes verified back to owner before generating, per his instruction)
+
+Owner-confirmed spec: eyes +20% and BLUE (sky-blue chosen; hazel brand-marker change flagged and confirmed deliberately), freckles −20% more, complexion +15% fairer, pink +10% more, lips +5% fuller. Rendered from B2 v3 (`258d55c9`) as identity ref.
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AB | Hazel v5 candidate — B2 v4 blue-eyed fair | `5f209b8c-bb1b-4e02-bba3-86de578d632c` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_030250_5f209b8c-bb1b-4e02-bba3-86de578d632c.png |
+
+Delivered per §20. QC: blue executed as natural sky-blue with limbal ring; freckles now a faint trace; distinctly fairer with rosy flush; lips subtly fuller; realism intact. Honest note reported: the eye ENLARGEMENT reads subtler than 20% (models resist large anatomical shifts from a same-face reference) — offered a stronger push if wanted. AWAITING OWNER: lock as v5 or iterate.
