@@ -1,10 +1,47 @@
-# OFFICIAL CHARACTER LOCK — HAZEL (v4 "as-filmed" — owner decision 2026-08-19)
+# OFFICIAL CHARACTER LOCK — HAZEL (v5 — owner decision 2026-08-29, "lock v9")
 
 ## NAME LOCK — owner decision 2026-08-20: her name is **HAZEL**
 The character's name is Hazel — locked by the owner in chat ("name is hazel. lock it"). The name may now appear in dialogue, captions, on-screen text, and packaging. Recommended (not yet owner-locked): sign-off ritual "Hazel — out of time" and channel name *Hazel Out of Time*. Owner still needs to claim the YouTube handle himself (this environment cannot verify handle availability).
-**This is the canonical face for ALL future generations, videos, thumbnails and marketing. Do not regenerate the face from text. Always generate FROM the master reference images below. Age is locked at early twenties (adult).**
+**The v5 face below is the canonical face for ALL future generations, videos, thumbnails and marketing. Do not regenerate the face from text. Always generate FROM the v5 master reference images. Age is locked at early twenties (adult).**
 
-> **v4 supersedes v3.** The Wild West 1875 movie clips drifted from the v3 round-cute master during PAI Pro video generation — the as-filmed character is slimmer-faced, warmer golden-tan, and more naturalistic. Owner confirmed: lock the as-filmed v4 look permanently. v3 is archived below for continuity only.
+---
+
+## v5 — THE CURRENT LOCK (owner decision 2026-08-29; supersedes v4)
+
+> **v5 supersedes v4 — a deliberate, eyes-open owner redesign, NOT drift.** The owner asked for a prettier/cuter Hazel; the conflict with v4's locks ("never regenerate the face from text", "no beautification") and the published-back-catalog continuity cost were flagged to him in chat BEFORE any generation, and he chose the redesign explicitly ("b"), then directed every step of a 9-iteration refinement, verifying changes before generation when he asked to, and locked the final face ("lock v9"). Deliberately changed brand markers, each flagged and confirmed: complexion (warm golden-tan → fair with rosy-pink undertone), freckles (prominent → faint trace, forehead mostly clear), lips (glossy nude-caramel → bare natural pink), eyes (larger rounder doe shape; HAZEL COLOR KEPT), face (slightly softer/rounder with fuller cheeks, small button nose). Retained markers: hazel eye color, bold dark-brown arched brows, long straight center-parted bronde balayage hair, natural visible skin texture, early twenties. The v4 canon below is ARCHIVED — it remains the reference for the published back catalog only; all NEW generations use v5. A blue-eyed variant (job `5f209b8c`) was generated and REJECTED by the owner — never use it.
+
+### v5 canonical reference — THE face (sole identity anchor until the 4-view set below is approved)
+| Asset | Job ID | URL |
+|---|---|---|
+| v5 MASTER — locked look (B2 v9) | `a49d8038-a424-4c35-8d50-dd37ee8b44ec` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_033134_a49d8038-a424-4c35-8d50-dd37ee8b44ec.png |
+
+Full iteration trail (casting A/B1/B2/B3 → glow → fair+pink → refinement → natural lips → v9), with per-step job IDs and QC notes: `episode-alexander-production-log.md` Rounds 7–7i.
+
+### Frozen identity string — v5 (paste verbatim into every prompt; never paraphrase)
+
+```
+The EXACT same woman shown in the reference images — all references depict ONE single identical person. Render precisely: her softly rounded face with fuller youthful cheeks and a small cute button nose; her LARGE round doe-like light-hazel eyes with long natural lashes; her bold thick dark-brown softly-arched eyebrows; her full lips in their BARE natural soft-pink color with real lip texture — no gloss, no lipstick look, never thin; her hairline and long straight light-brown bronde balayage hair with center parting; her FAIR, light complexion with a soft rosy-pink undertone and pink-kissed cheeks — NOT golden-tan, NOT porcelain-white, never washed-out; only the faintest delicate trace of tiny freckles on the nose bridge and upper cheeks, forehead mostly clear; her body proportions and figure; her age (early twenties). No beautification beyond the references, no redesign, no changes between this and the references. She must read as a real, physically-photographed human being: natural skin texture with visible pores, fine vellus hair, and authentic micro-imperfections; subtle natural asymmetry; real weight and movement in her hair and clothing. She must NEVER look like an AI generation, a 3D render, a smoothed/filtered/airbrushed image, or a synthetic "plastic AI face" — 100% natural, human, and believable is the single most important requirement of every generation, non-negotiable.
+```
+
+> The v4-era STRICT RULE stands unchanged for v5: natural/human/realistic is a hard pass/fail bar on every render. And the Tier rule stands: generate from the v5 master + approved v5 4-view set only; NEVER chain generations off unapproved outputs — drift compounds.
+
+### v5 4-view reference set (per §31: 2 full-body + 2 face crops, single-view images, never grids)
+Generated 2026-08-29 from the v5 master, delivered to the owner per §20 — status below updates on his verdict. Host `d8j0ntlcm91z4.cloudfront.net`, path `user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_033747_<job>.png`.
+
+| View | Job ID | Status |
+|---|---|---|
+| Full-body front (neutral stance) | `a7f5576b-0fb8-476e-a69a-64b569ea7a5a` | delivered, awaiting owner approval |
+| Full-body 3/4 walking | `3ac7a1e2-67e7-49c4-af42-ab07c2727894` | delivered, awaiting owner approval |
+| Face close-up front | `9bbdd985-8cc8-475c-9c05-060f7e5ca472` | delivered, awaiting owner approval |
+| Face close-up 3/4 | `d6f10ddd-6517-45e9-9b38-68a107e23f66` | delivered, awaiting owner approval |
+
+Claude QC vs the v5 master (2026-08-29): identity holds across all four; fair-rosy complexion, faint nose/cheek freckle trace, bare natural-pink lips, hazel iris detail correct in both face crops; realism bar passes (pores/texture/vellus hair visible at close range). Two notes: (1) the face-front's complexion reads a touch warmer than the master under its more neutral light — acceptable, the master stays the color anchor; (2) wardrobe differs between the two full-body views (long vs short sleeve) — irrelevant for identity refs, episode wardrobe comes from approved costume stills.
+
+---
+
+## v4 "as-filmed" — ARCHIVED 2026-08-29 (back-catalog reference ONLY — do not use for new generations)
+
+> **v4 superseded v3** (2026-08-19). The Wild West 1875 movie clips drifted from the v3 round-cute master during PAI Pro video generation — the as-filmed character is slimmer-faced, warmer golden-tan, and more naturalistic. Owner confirmed then: lock the as-filmed v4 look. **Now superseded by v5 above** — everything from here down describes the v4 canon, kept because the published episodes wear this face.
 
 ---
 

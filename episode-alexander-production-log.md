@@ -238,3 +238,9 @@ From v8 (`3a397a9b`): forehead-specific freckle reduction; nose/cheek trace pres
 | AG | Hazel v5 candidate — B2 v9, clear forehead | `a49d8038-a424-4c35-8d50-dd37ee8b44ec` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_033134_a49d8038-a424-4c35-8d50-dd37ee8b44ec.png |
 
 Delivered per §20. QC: forehead now mostly clear with real skin texture (not airbrushed); nose/cheek trace intact; identity, complexion, lips, hazel eyes all held; realism intact. AWAITING OWNER pick; CHARACTER_LOCK.md still v4.
+
+## Round 8 — HAZEL v5 LOCKED ("lock v9", 2026-08-29) + changeover executed
+
+- **v5 face LOCKED: B2 v9, job `a49d8038`.** CHARACTER_LOCK.md rewritten: v5 section with new frozen identity string (fair rosy complexion, bare natural-pink lips, faint freckle trace/clear forehead, larger doe eyes, hazel + bronde retained), full decision trail referenced, blue-eyed variant recorded as REJECTED, v4 canon ARCHIVED for back-catalog only. CLAUDE.md pointer updated to v5.
+- **v5 4-view set generated and delivered** (see CHARACTER_LOCK.md for jobs/QC): full-body front `a7f5576b`, full-body 3/4 `3ac7a1e2`, face front `9bbdd985`, face 3/4 `d6f10ddd`. Awaiting owner approval to enter the canon.
+- **Consequence for this episode (pending owner):** the approved episode Hazel slate (look-lock `112a948e` + 4-view `72a8d0b5`/`e5eb360a`/`2e4a2d55`/`83df8574`) carries the v4 face and must be REGENERATED on v5 (scribe costume + episode soft-glam look) before any Hazel clip shoots — per §19, that regeneration will be proposed and owner-approved before submission.
