@@ -130,9 +130,11 @@ const CLICK_GUARD = 0.02; // imperceptible, only prevents a waveform-discontinui
 // a meaningless back-of-head shot -- landed on 5.333333s (frame 128 of
 // 24fps), a clear 3/4-profile reaction beat, mouth settled, still
 // facing enough toward the lens to read naturally on its own.
+// clip9's frozen-tail trim (5.625) no longer applies: clip9 was fully
+// rewritten and regenerated 2026-08-29 (merged with the old clip10 into
+// one continuous fight/fall/reaction shot) and no longer has that defect.
 const CLIP_TRIM = {
   clip3: 5.333333,
-  clip9: 5.625,
 };
 
 // Owner decision, 2026-08-27: clip5 opens on ~4.5s of near-static
@@ -151,9 +153,10 @@ const CLIP_TRIM = {
 // captions on this clip (visual-only), so no shift needed. Owner then
 // asked for two further 1.0s trims off the start (each frame-verified
 // clean, camera progressively higher into the rise) -- total 5.833333s.
+// clip10's head-trim (0.58333) no longer applies: clip10 was removed
+// entirely 2026-08-29, merged into the rewritten clip9.
 const CLIP_HEAD_TRIM = {
   clip5: 3.0,
-  clip10: 0.58333,
   clip10B: 5.833333,
 };
 
@@ -169,7 +172,10 @@ const CLIP_HEAD_TRIM = {
 // bed sits well under any real content, only becoming audible where
 // nothing else is). This is the §29 "audio must never touch silence at
 // a cut" principle applied via synthesis instead of a source regeneration.
-const CLIP_AMBIENT_BED = new Set(["clip10"]);
+// Empty as of 2026-08-29: clip10 (the clip this bed was built for) was
+// removed, merged into the rewritten clip9. Mechanism kept in case a
+// future clip needs the same dead-silence fix.
+const CLIP_AMBIENT_BED = new Set();
 
 function ambientBedFilterComplex(inputDuration, dialogueLabel) {
   return (

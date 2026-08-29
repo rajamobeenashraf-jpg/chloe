@@ -134,23 +134,27 @@
   },
   {
     "id": "clip9",
-    "duration": 9.041667,
+    "duration": 11.041667,
     "captions": [
       {
-        "start": 1.4,
-        "end": 2.4,
-        "text": "No—"
-      }
-    ]
-  },
-  {
-    "id": "clip10",
-    "duration": 5.041667,
-    "captions": [
+        "start": 1.0,
+        "end": 4.0,
+        "text": "He's holding them off alone— like nothing can touch him—"
+      },
       {
-        "start": 1.8,
-        "end": 4.2,
-        "text": "Henry II is dead."
+        "start": 4.5,
+        "end": 6.5,
+        "text": "No, no— get up, come on—"
+      },
+      {
+        "start": 7.5,
+        "end": 8.7,
+        "text": "Henry! No—"
+      },
+      {
+        "start": 9.2,
+        "end": 10.5,
+        "text": "Henry's dead."
       }
     ]
   },
