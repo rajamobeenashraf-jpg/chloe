@@ -376,3 +376,15 @@ Owner correctly identified, and Claude confirmed by comparing 6a's frames agains
 **Cause: camera geometry, not a scale-prompting failure.** A camera facing directly down the line of an oncoming charge has riders standing behind other riders OCCLUDED along the sightline — depth is physically invisible from a true head-on angle regardless of how many riders exist in the scene or how the prompt is worded. 6a's original angle is roughly perpendicular to the charge's direction of travel, which is precisely why each rank is offset sideways and visible, producing the "wave" look. The depth-continuation prompt line (S11) partly worked but the model expressed it as a WIDER single line rather than stacked depth — consistent with this geometric limitation, not a prompting miss this time.
 
 **New learning, promoted to PROMPT_LEARNINGS:** a true head-on reverse angle cannot convincingly show charge depth; an OBLIQUE offset (camera on the far side but angled diagonally, not dead-center) is required for any reverse-angle shot that also needs to read as a deep formation. Proposed as the next test, pending owner go-ahead.
+
+## VALIDATION TEST v3 — oblique angle, DEPTH RECOVERED (owner-requested, 2026-08-29)
+
+Camera repositioned to the Persian side but angled ~35° off dead-center (never facing the charge head-on), per S12's diagnosis.
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AW | Multi-angle validation test v3 (oblique, depth recovered) | `08e82650-04b9-44a5-b9a2-0a5f30d9952b` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_050249_08e82650-04b9-44a5-b9a2-0a5f30d9952b.mp4 |
+
+Delivered per §20. **Claude QC: SUCCESS — genuine multi-rank depth achieved, matching 6a's own quality.** Frame sampling shows multiple distinct, offset, visibly stacked cavalry ranks receding diagonally into the dust (not a flat single line); at the impact frame (~4.5s) a soldier is thrown clear amid a deep formation still visibly pressing forward behind the contact point. Freezedetect PASS (6.08s, no frozen stretches). Gemini eyes qc queued automatically (`gemini_qc_v3/`, background) — findings to follow without being asked.
+
+**S12 hypothesis CONFIRMED by this result: oblique camera placement (never head-on) is the necessary and apparently sufficient condition for a reverse-angle shot to preserve formation depth.** Three-test validation arc complete: v1 (uncorrected scale, head-on) → v2 (corrected scale, head-on, depth still collapsed — proved it was geometry not density) → v3 (oblique, depth recovered — proved the fix). This is a genuinely useful, now well-understood technique for this episode's toolkit, still subject to the standing rule: any actual use in a production clip requires owner approval same as any other generation.
