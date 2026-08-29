@@ -589,3 +589,48 @@ thumbnail/key-art genre convention, but a deliberate license worth the
 owner's explicit sign-off given this channel's fact-checking brand, so
 surfaced rather than silently shipped. Both delivered for the owner's
 pick; full detail in `episode-7-metadata.md` §7.
+
+## Thumbnail v3: max chaos + v4 face exception (2026-08-29)
+
+Owner: A/B still not chaotic enough — "100% more chaotic," fire and deaths
+everywhere, her expression must sell it. Also directed a scoped exception:
+use the **v4** character reference set for this episode's thumbnail only,
+since Episode 7's actual footage (generated 2026-08-20/21) predates the
+2026-08-29 v5 redesign and wears the v4 face — a v5-faced thumbnail would
+mismatch the video a viewer actually clicks into. Recorded as a permanent,
+explicitly-scoped exception in `CHARACTER_LOCK.md` (v5 unaffected
+elsewhere) per the MASTER RULE's "write agreed decisions into the
+governing doc, don't leave them conversational-only" requirement. One
+phrase in the request didn't parse ("especially between kindergarten") —
+left out rather than guessed at, flagged back to the owner rather than
+silently invented.
+
+**Judgment call on "deaths," stated rather than silently applied**: pushed
+fire/smoke/combat/implied danger to the max, stopped short of graphic gore
+(no visible wounds/blood/close-up bodies) — both a platform-safety
+consideration (graphic death imagery in a thumbnail risks age-restriction
+in a way the same content mid-video doesn't) and consistent with this
+episode's own locked genre rule for its actual raid scene ("no combat by
+her... firelight-against-sunset and shouting, not clashing-swords
+spectacle"). Told the owner this rather than either silently complying or
+silently softening the request.
+
+**Build**: `nano_banana_pro`, v4's official 5-master-reference set (the
+same UUIDs `gen_image.mjs`'s `DEFAULT_REFS` already uses, confirmed against
+`CHARACTER_LOCK.md`'s v4 section), v4's frozen identity string plus both
+of its MANDATORY aesthetic/matte clauses pasted verbatim, wardrobe
+explicitly overridden to the Troy chiton in text (the v4 movie-frame refs
+show Wild West costume). Identity clause proactively reframed to
+`CHARACTER_LOCK.md`'s "fictional AI character" phrasing (its documented
+refusal-safe fallback) given the added violence content raises refusal
+risk. Same Norse/Viking negative-prompting as round 2 — no anachronisms
+found on inspection.
+
+**Concept C "Overrun"** (tight, combat closing in both sides, one implied
+fallen figure at the frame's edge, structure fire filling the background)
+and **Concept D "Whole Camp Burning"** (pulled back, multiple fires plus a
+burning ship, chaotic fighting silhouettes at several depths, embers
+raining down) — both self-QC'd against `CHARACTER_LOCK.md`'s v4 checklist
+before delivery (golden-tan skin, visible freckles, glossy nude-caramel
+lips — correctly v4, not v5) and delivered for the owner's pick. Not
+upscaled to 4K, same standing rule as everything else this episode.

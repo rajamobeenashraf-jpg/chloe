@@ -4,6 +4,8 @@
 The character's name is Hazel — locked by the owner in chat ("name is hazel. lock it"). The name may now appear in dialogue, captions, on-screen text, and packaging. Recommended (not yet owner-locked): sign-off ritual "Hazel — out of time" and channel name *Hazel Out of Time*. Owner still needs to claim the YouTube handle himself (this environment cannot verify handle availability).
 **The v5 face below is the canonical face for ALL future generations, videos, thumbnails and marketing. Do not regenerate the face from text. Always generate FROM the v5 master reference images. Age is locked at early twenties (adult).**
 
+> **Scoped exception (owner decision 2026-08-29): Episode 7 ("I Sailed to Troy") thumbnail/packaging art uses the v4 reference set, not v5.** Episode 7's actual footage (all 12 clips) was generated before the v5 redesign existed, so it wears the v4 face — a v5-faced thumbnail would visibly mismatch the video a viewer clicks into. This is a one-off, explicitly episode-scoped carve-out, not a reopening of the v4→v5 supersession: v5 remains the lock for every new generation on every other episode and every future one. Any other episode whose footage predates 2026-08-29 would have the same reasoning apply to its packaging art; anything shot after does not.
+
 ---
 
 ## v5 — THE CURRENT LOCK (owner decision 2026-08-29; supersedes v4)

@@ -198,6 +198,56 @@ silently. Can be re-prompted toward stricter Bronze Age gear if preferred.
 Neither has been upscaled to 4K — held per the standing 4K-sequencing rule
 until one is approved.
 
+## v3: owner wants far more chaos + explicit v4 face (2026-08-29)
+
+Owner: A/B weren't chaotic enough — "100% more chaotic," fire and deaths
+everywhere, her expression has to sell the chaos. Also: for this episode's
+thumbnail ONLY, use the **v4** character reference set instead of v5 —
+because Episode 7's actual rendered footage predates the v5 redesign and
+wears the v4 face, so a v5-faced thumbnail would mismatch the video itself.
+Scoped exception now recorded in `CHARACTER_LOCK.md` (v5 stays the lock
+everywhere else). One phrase in the request ("especially between
+kindergarten") didn't parse — left out rather than guessed at; flagged
+back to the owner.
+
+**Judgment call, stated rather than silently applied**: pushed fire/smoke/
+combat/implied-casualties as far as they go, but stopped short of graphic
+gore (visible wounds, blood, close-up bodies). Two reasons: platform risk
+(graphic death imagery in a thumbnail risks age-restriction, unlike the
+same thing mid-video), and it's a step past this show's own locked rule
+for this exact raid scene — "no combat by her... firelight-against-sunset
+and shouting, not clashing-swords spectacle" (`episodes-5-9-scripts.md`,
+episode 7 header). Danger and chaos, not horror content.
+
+**Build**: `nano_banana_pro`, the official v4 5-master-reference set from
+`CHARACTER_LOCK.md` (2 character sheets + 3 movie frames, same UUIDs
+`gen_image.mjs`'s `DEFAULT_REFS` already points at) as `image_references`,
+v4's frozen identity string + its two MANDATORY aesthetic/matte clauses
+pasted verbatim (all three are marked non-optional in `CHARACTER_LOCK.md`
+§Usage rules v4). Wardrobe explicitly overridden to the Troy chiton in
+text, since the v4 movie-frame refs show Wild West costume, not Troy's —
+same override technique already proven for v5. Identity clause reframed to
+the "fictional AI character" phrasing `CHARACTER_LOCK.md` §7 recommends,
+applied proactively (not just on refusal) given the added combat/violence
+content raises refusal risk. Same historical-realism negative-prompting
+against Norse/Viking elements as round 2 — did not recur.
+
+**Concept C — "Overrun"**: tight, claustrophobic framing, close combat on
+both sides of her, one implied fallen figure at the frame's edge (not
+graphic), massive structure fire filling the background.
+File: `designer_thumbnail_concept_C_overrun_v4.png`.
+
+**Concept D — "Whole Camp Burning"**: pulled back for full disaster scale —
+multiple fires plus a burning ship, huge smoke plumes, a chaotic mass of
+fighting/running silhouettes at several depths, embers raining down.
+File: `designer_thumbnail_concept_D_campburning_v4.png`.
+
+Self-QC on both against `CHARACTER_LOCK.md`'s v4 checklist before delivery:
+golden-tan skin with visible freckles, glossy nude-caramel lips, slimmer
+sculpted face — reads as v4, not v5, on both. No Viking/medieval/Roman
+anachronisms spotted. Not upscaled to 4K (same standing rule as every
+other asset this episode).
+
 ### Round 1 (rejected by owner 2026-08-29 — kept for the record, not recommended)
 Real extracted frames from `troy_final_cut_scored.mp4` (clip 1 vista, clip
 9 deadpan-to-lens, clip 10 raid action) — rejected for not being designed/
