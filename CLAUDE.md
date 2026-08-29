@@ -134,14 +134,14 @@ This is a standing production step now, not a case-by-case judgment call: any cl
 
 ## Owner's QC rule (decided 2026-08-20 — supersedes the per-clip "Stage A" in research-methodology.md §4)
 
-- Do NOT run Gemini (or any machine video-analysis) during the clip-GENERATION
-  stage. Clips are generated in PAI Pro under the existing process and the
+**PERMANENT, owner lock 2026-08-29, reinforced same day, project-wide (this episode and every future episode/chat) — no exceptions beyond the one named below.** Do NOT run Gemini eyes (or any machine video-analysis) on a PRODUCTION clip at any point before the editing stage — this explicitly includes Claude's own "proactive self-QC" on a clip immediately after it's generated/delivered, not just a formal QC pass under that name. A self-check run informally, without calling it "QC," is still a Gemini-eyes-during-production violation of this rule. Found on the Alexander/Gaugamela episode: Claude ran Gemini eyes on nearly every delivered clip this session as a self-verification habit (checking eyeline, pacing, voice consistency) — the owner had to stop this explicitly and re-lock the rule, even though it was already written above from 2026-08-20.
+- Clips are generated in PAI Pro / Higgsfield under the existing process and the
   owner's approval gates, with no Gemini involvement.
-  **One owner-approved exception (2026-08-29): Gemini eyes MAY run on
+  **The one exception (2026-08-29, reaffirmed): Gemini eyes MAY run on
   VALIDATION/TEST clips at generation stage** (e.g. a new model's or method's
   test shot, before it enters production) — because frame-sampling QC cannot
   see motion defects. Production clips remain under the original rule:
-  edit-stage only.
+  edit-stage only, always.
 - Gemini eyes comes into action only at the EDITING stage, once all of an
   episode's clips are generated. Run it there on:
   1. the full clip set entering the edit,
