@@ -58,13 +58,13 @@ const REFS = {
     { value: "9885d19e-07b9-4e38-bb32-6b95ffe75e85", note: "episode face close-up 3/4" },
   ],
   ALEXANDER: [
-    { value: "86a6746d", note: "full-body front" },
-    { value: "df75706b", note: "full-body 3/4" },
-    { value: "d80986c3", note: "face front" },
-    { value: "4cc2a502", note: "face 3/4" },
+    { value: "86a6746d-4cac-4eae-8665-faa1485279b4", note: "full-body front" },
+    { value: "df75706b-f13f-490b-b50c-f12a01782aee", note: "full-body 3/4" },
+    { value: "d80986c3-9e77-4d21-91d4-3e88a86da1ac", note: "face front" },
+    { value: "4cc2a502-b478-45f6-bcfb-49b337708ec1", note: "face 3/4" },
   ],
-  PARMENION: [{ value: "3c6c04b3", note: "reference still" }],
-  BUCEPHALUS: [{ value: "f47b67a6", note: "reference still" }],
+  PARMENION: [{ value: "3c6c04b3-54f4-4806-9fcf-34d781530bcd", note: "reference still" }],
+  BUCEPHALUS: [{ value: "f47b67a6-9772-4809-ac4c-f6acaa6eda3b", note: "reference still" }],
 };
 
 // ---------- assembly ----------
