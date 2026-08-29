@@ -148,6 +148,37 @@ Follow for the next stop.
 already owner-approved content — keeps the description and pinned comment
 from contradicting each other.)
 
+## 2b. Description (Instagram Reels / TikTok — NOT the same copy as YouTube)
+
+IG/TikTok captions truncate to ~125 characters before "more," and the
+audience skims rather than reads a full disclosure paragraph the way a
+YouTube description supports — so this leads with the same hook that's
+now burned into the cover image (Achilles) rather than reusing the
+horse-led YouTube copy verbatim, keeps the body to 2 short punches instead
+of the full fact-list, and moves to a denser hashtag block (no clickable
+links work in an IG caption, so there's no "link in bio" line to add
+here — add one manually if the post ends up carrying a bio-link CTA).
+
+```
+POV: Achilles was a monster, not a hero. 😳
+
+I spent 4 days as a water-bearer in the Greek camp outside Troy — arrows
+on the shield line, a burial truce at the walls, and the night the whole
+camp started arguing about a horse.
+
+Troy is real (Hisarlik, Turkey — found in 1871 by literally following
+Homer's map). The wooden horse? Not even in the Iliad. Hittite tablets
+from the ENEMY side back up the war's location and era.
+
+Was there really a horse? 👇 Historians, fight me in the comments.
+
+Follow for the next stop. 🕰️
+
+#Troy #TrojanWar #TrojanHorse #AncientGreece #GreekMythology #Achilles
+#History #HistoryTok #AncientHistory #Mythology #Homer #Iliad #TimeTravel
+#AIHistory #Reels #HistoryFacts
+```
+
 ## 3. Pinned comment (already scripted, unchanged)
 
 > Troy = Hisarlik, Turkey — found in 1871 by Schliemann, literally following
