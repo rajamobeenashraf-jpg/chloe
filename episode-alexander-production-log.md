@@ -305,3 +305,16 @@ Photo-edit of the v5 master (`a49d8038`) into the episode scribe look.
 | AP | v5 episode look-lock (scribe costume) | `e11d6b64-70b0-4021-839c-69e519472d9a` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_040526_e11d6b64-70b0-4021-839c-69e519472d9a.png |
 
 Delivered per §20. QC: identity holds against the v5 master (face/eyes/brows/lips/complexion/freckle trace all carried); chiton undyed coarse linen draping from both shoulders with straight-pin fibulae hardware at each shoulder; leather belt + satchel; hinged wooden diptych + bronze stylus; no jewelry; soft-glam + open hair per episode look. One period note reported: the belt closes with a modern-style frame buckle (ancient belts tied or hooked) — cosmetic, fixable in the next step's prompts or ignorable at owner's discretion. AWAITING OWNER approval before generating the four costume views.
+
+## Round 9b — Approach C step 2: the four episode costume views (2026-08-29; look-lock `e11d6b64` APPROVED by owner, belt fix ordered)
+
+Each view = photo-edit of an APPROVED canon view (wardrobe/background from the approved look-lock; belt corrected to TIED leather, no buckle; period flat sandals):
+
+| # | View | Source canon view | Job ID | URL |
+|---|---|---|---|---|
+| AQ | Episode face front | `9bbdd985` | `81a91c73-2893-413b-b67f-2c4aaa5456ea` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_040815_81a91c73-2893-413b-b67f-2c4aaa5456ea.png |
+| AR | Episode face 3/4 | `b70ab775` | `9885d19e-07b9-4e38-bb32-6b95ffe75e85` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_040816_9885d19e-07b9-4e38-bb32-6b95ffe75e85.png |
+| AS | Episode full-body front | `dc77b494` | `64c0dbae-137b-4dc8-9be2-261b61758ff8` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_040815_64c0dbae-137b-4dc8-9be2-261b61758ff8.png |
+| AT | Episode full-body 3/4 walking | `1eb09f83` | `319c14c7-13d9-408c-bcb0-76dd5bc7c67e` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_040816_319c14c7-13d9-408c-bcb0-76dd5bc7c67e.png |
+
+Delivered per §20. QC vs anchors: identity holds on all four (each one edit from an approved image); chiton/straight-pin fibulae/satchel/wax diptych consistent with the look-lock; **belt fix LANDED — tied knotted leather with hanging end, no buckle, both full-bodies**; flat period strap sandals in both full-bodies; tent-interior backdrops. Note: full-body front's pose shifted from hand-on-hip to holding the tablet two-handed (scene-appropriate, flagged not fixed). AWAITING OWNER approvals — approval completes Hazel's v5 EPISODE reference package (look-lock + 4 views = the Seedance image_references payload for her clips).
