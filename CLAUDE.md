@@ -24,6 +24,7 @@ the clip is never gated behind Claude's own findings — see the QC rule below).
    - Made the camera decision deliberately — single vs. multiple angles, movement, coverage?
    - Calibrated character emotion to the actual required intensity (brief §11)?
    - Calibrated speech pacing/delivery per character to the actual situation, never a generic uniform pace (brief §11.3)?
+   - Checked the dialogue's word count against the clip's duration at each character's situation-appropriate wpm, and adjusted the duration (not just the wording) if the math doesn't work (see the Dialogue word-count vs. clip duration rule below)?
    - Stated each character's eyeline explicitly for every beat where it isn't obvious or unchanging — who is looking at whom, and when it shifts (see the Eyeline / gaze direction rule below)?
    - Checked historical scale and environmental realism (brief §7)?
    - Considered sound and music where relevant (brief §15)?
@@ -72,6 +73,22 @@ Found on the Alexander/Gaugamela episode: Clip 2's corrected start-frame still g
 Found on Clip 2 (Alexander/Gaugamela): Hazel was written holding a tablet and receiving dialogue directed at her, but nothing in the prompt said where her eyes were — she rendered looking down at the tablet through the entire exchange, including the beat where Alexander speaks to her directly, instead of meeting his eyes. Fixed by stating explicitly, per beat, whose eyes are on whom and when they shift (e.g., "her eyes lift from the tablet to meet his the instant he addresses her, and hold through her own answering line; she glances back down only after she finishes speaking").
 
 **Applies to every future dialogue clip, this episode and all others**, as an explicit item on the MASTER RULE's pre-finalization checklist: before presenting a final prompt for any clip with more than one character or any character with a prop/task competing for their attention, state each character's eyeline for every beat where it isn't obvious or unchanging — who is looking at whom, when it shifts, and why.
+
+## Dialogue word-count vs. clip duration — permanent standing rule (owner lock 2026-08-29, no exceptions)
+
+**Before finalizing any clip's dialogue and duration, compute the words-per-minute the script actually demands, and re-decide the clip's length from that — never assume a fixed duration and hope the dialogue fits.** This check comes before writing any pacing instruction or audio reference, not after one fails: `total dialogue word count / clip duration in minutes = required wpm`. If that number exceeds what a human can actually say at the pace the scene calls for, no amount of prompt language, audio-reference tempo, or "unhurried" instruction can fix it — the clip is asking for something physically impossible, and every downstream pacing attempt will fail for a reason that was never about prompting at all.
+
+**The target wpm is situation- and character-specific, not a single fixed number** — this is the same principle as the speech-pacing rule itself, applied one level up: the dialogue's own content tells you what pace it needs.
+- Urgent/frantic delivery (a Parmenion-type beat): can run up to ~180–200 wpm, the upper edge of natural fast speech.
+- Neutral conversational delivery: ~140–160 wpm.
+- Deliberate, unhurried, weighty delivery (an Alexander-type beat, or any scene where pauses carry meaning): ~90–120 wpm — genuinely slow characters need MORE time per word, not the same time delivered slower.
+- Whispered or quiet delivery: often slower still due to breath constraints.
+
+Sum each character's lines at their own situation-appropriate target pace (plus natural beat/pause time between lines) to get the real time the scene needs, then set the clip's duration to that — not the reverse.
+
+Found on the Alexander/Gaugamela episode: Clip 2 (9s) packed 47 words of dialogue — 313 wpm implied. Clip 3 (8s) packed 44 words — 330 wpm implied. Both are roughly double even fast/urgent natural speech. Every attempt to fix Alexander's pacing specifically (rewritten text instructions, two separate ElevenLabs audio-reference retakes with genuine multi-second pauses) failed — not because of a Seedance limitation, but because his lines were consistently the longest in each clip and "unhurried" is the pace with the least room to absorb an overpacked script; Parmenion's and Hazel's shorter lines masked the same underlying problem. This was misdiagnosed as a possible model limitation (the same category as the confirmed camera-geometry finding, S12) before the actual math was checked — a real process gap, now closed.
+
+**Applies to every future clip, this episode and all others, as an explicit MASTER RULE checklist item**, checked before speech pacing/delivery is calibrated (the checklist item this feeds into) — not as a separate afterthought.
 
 ## ElevenLabs pacing references — permanent standing rule (owner lock 2026-08-29, no exceptions)
 
