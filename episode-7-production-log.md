@@ -734,3 +734,36 @@ is wrong about what they saw; means I don't yet know WHERE to look.
 Asked the owner which part of the video reads as off, rather than
 guessing further or shipping a speculative "fix" against a defect
 neither tool could locate.
+
+## Master uncompressed delivery (2026-08-29)
+
+Owner asked for the final clip again, master uncompressed version. The
+round-4 scored file's video is already master-tier (CRF16, carried
+through untouched via `-c:v copy` in every music round), but its audio is
+AAC 192kbps -- lossy, not uncompressed. Built a real mezzanine/archival
+master rather than just re-sending the same delivery file: ProRes 422 HQ
+video (`prores_ks`, profile 3, yuv422p10le) + PCM s16le audio, in a .mov
+container -- the standard professional "master" pairing, and genuinely
+uncompressed on the audio side. Re-encoded from `troy_final_cut_scored.mp4`
+(the current, round-4-music, not-yet-owner-confirmed cut), so this
+carries the same content/edit as everything already delivered, just at
+master fidelity instead of distribution compression.
+
+Verified frame-exact before delivery: 3011 frames / 125.458333s video,
+matching every other build this episode; audio duration 125.461333s
+(3ms longer, expected/harmless for PCM vs. the AAC original).
+
+Output: `troy_final_cut_MASTER.mov`, 1.42GB. Upload hit a real bug on the
+first attempt -- `curl --data-binary @file` tried to load the full 1.4GB
+into memory and OOM'd; fixed by switching to `curl -T` (streaming
+upload), the same fix this project's own tooling docs already recommend
+for large files. Re-uploaded successfully, confirmed, and the CDN copy's
+byte count verified to match the local file exactly (1,422,582,565 bytes
+both sides) before calling it delivered.
+
+Note for the owner in the delivery message: the Higgsfield upload flow
+normalizes the stored filename to a `.mp4` extension regardless of the
+actual container -- the file IS the ProRes+PCM .mov described above, just
+served from a URL ending `.mp4`. Save it locally with a `.mov` extension
+so QuickTime/editing software auto-detects it correctly instead of trying
+to open it as a standard H.264 MP4.
