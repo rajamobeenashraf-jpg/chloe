@@ -491,3 +491,15 @@ Three short `eleven_v3` takes generated (direction-tag model, e.g. `[urgent, bre
 | BC | Clip 2 v3 (ElevenLabs pacing refs) | `b2bec455-e3c8-4312-b1a5-9f1ce8672d6f` |
 
 Generated successfully: https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_084654_b2bec455-e3c8-4312-b1a5-9f1ce8672d6f.mp4 — QC PASS (9.056s, zero freeze events), delivered per §20/immediate-delivery rule. AWAITING owner verdict on whether the audio pacing references actually moved the needle — this is a genuine experiment, not a verified fix; if it doesn't work either, that's stronger evidence toward a real Seedance multi-speaker-tempo limitation rather than a prompting gap.
+
+**Owner verdict on v3: pacing itself was not flagged as a problem this time (implicit pass) — ElevenLabs pacing references locked as a new permanent standing rule in `CLAUDE.md` for every future dialogue clip, this episode and all others.** New issue found instead: Hazel is looking away from Alexander instead of at him during their exchange ("You write quickly?" / her answer) — confirmed by frame-pulling at 6.5s and 8.5s, both showing her eyes down on the tablet. Root cause: eyeline was never specified anywhere in the prompt — wardrobe, camera position, and dialogue text were all detailed, but nobody's gaze direction was ever stated. A fundamentals gap, not a subtle rule miss; owned directly, no deflection.
+
+## Round 16 — CLIP 2 v4: explicit eyeline blocking (2026-08-29)
+
+`clips.json` clip 2's `dialogue` and `camera` fields both updated: Alexander's eyes on Hazel when he addresses her; Hazel's eyes lift to meet his the instant he speaks to her and hold through her own answering line, glancing back to the tablet only after she finishes. Everything else held constant from v3 — same 3P start-frame, same text pacing instructions, same three ElevenLabs `audio_references` (Parmenion/Alexander/Hazel), same image identity references.
+
+| # | Item | Job ID |
+|---|---|---|
+| BD | Clip 2 v4 (eyeline fix) | `bcc77689-28de-45a0-bf33-ee51c398111d` |
+
+AWAITING generation + owner verdict.
