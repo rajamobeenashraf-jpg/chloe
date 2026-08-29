@@ -94,3 +94,25 @@ Owner asked for her character sheet after locking the look. Per §31.1, NOT a mu
 **QC (all four viewed at full res): PASS as a set.** Look consistent across all views — soft glam with freckles through the base, glossy nude lips, open straight center-parted bronde hair, chiton + straight-pin fibulae + belt/satchel + wax diptych; identity holds against Tier-1 (hazel eyes, brows, jawline); footwear rendered as period strappy sandals in both full-body views (no modern-shoe drift — Alexander's set still carries that flag, hers doesn't). Real skin texture at close range on both face crops.
 
 **Hazel's episode reference package is COMPLETE: look-lock still (`112a948e`) + this 4-view set = the `image_references` payload for every Seedance clip she appears in, per §31.** Delivered to owner. Remaining before the Seedance test clip: owner's verdicts on Alexander's set (incl. the boots flag), Parmenion, and Bucephalus.
+
+## Round 5 — FIRST VIDEO GENERATION: Seedance 2.5 validation test clip (clip 6a), 2026-08-29, owner-approved
+
+Owner approvals landing this round, all recorded 2026-08-29: **Alexander 4-view set APPROVED as-is** (boots flag resolved at video-prompt level — every Alexander clip prompt states period footwear/greaves; no still regen), **Parmenion APPROVED**, **Bucephalus APPROVED**, and **test-clip generation APPROVED** ("all approved, generate the test clip"). Also this round: §14 multi-model protocol committed to the brief (`86b739d`) — two mandatory asks (regeneration + model switch), approval-before-test-clip, nothing generated without approval.
+
+Test shot: **clip 6a** (the impact — hardest scale shot first). Seedance 2.5, `t2v` (no-character Nova shot — no refs needed), 6s, 1080p, 9:16, audio on. Prompt = §36 locked-camera constraint + action/composition per breakdown + frozen ENVIRONMENT_BLOCK verbatim + FULL BATTLE inherited-state line + §37b grade + 3-layer sound line. Preset intercept ("IN THE DARK") declined via `declined_preset_id` per §31.
+
+| # | Clip | Job ID | URL |
+|---|---|---|---|
+| S | 6a impact, test v1 | `a7ba2c6b-2ccf-4e21-a3b1-0bd06e38ca06` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_015350_a7ba2c6b-2ccf-4e21-a3b1-0bd06e38ca06.mp4 |
+
+**Delivered to owner per §20 immediately on completion (6.3MB, sent uncompressed — ffmpeg absent from this container; restored via imageio-ffmpeg static binary for QC).**
+
+**QC findings (supplementary per §20 — reported after delivery, owner's watch decides):**
+- §26 freezedetect: **PASS** (no frozen stretches; 6.08s, 1080×1920/24fps, HEVC, audio present).
+- Scale QC (a) both lines exceed frame edges: **PASS**. (b) population cannot read as <100: **PASS** — thousands, layered, horizon haze. (c) dust matches FULL BATTLE stage: **PARTIAL** — opening ~1s reads too clean in the foreground (dust mostly at distance); heavy dust arrives with the collision. Inherited-state line under-obeyed at the head of the clip.
+- Environment/grade: flat pale-ochre plain, haze-white sky, bleached grade, slate-grey dust — **matches the ENVIRONMENT_BLOCK closely**. Genuinely spectacular scale.
+- Geometry vs. spec: **DEVIATION** — rendered as two opposing columns charging head-on down a central corridor and colliding mid-frame, not the specified wedge-from-frame-left striking a line right-of-center with the break propagating outward. Impact and buckling DO read; the L→R screen-direction map and "break propagates from one point" do not.
+- §33 gear separation: **AT RISK** — attacking cavalry reads closer to Roman-legionary styling (crested helmets) than Companion cavalry; the two sides' gear converges in the melee frames; no visibly varied Persian contingents/scythed chariots.
+- §24: compliant — mass action, nothing graphic.
+
+**Assessment for the validation question (is Seedance 2.5 fit to carry the episode): YES on scale, atmosphere, grade, and impact energy — the engine's ceiling is clearly high enough. The misses (opening dust state, wedge geometry, gear specificity) are prompt-level, not engine-level: mitigations for a v2 would be a generated start_image locking the composition, stronger negative/positive gear language, and a harder opening-state line. Per §19, NO v2 has been submitted — owner's verdict on v1 decides.**
