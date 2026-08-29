@@ -1,7 +1,24 @@
 # Alexander/Gaugamela — Production Breakdown (v1, per `cinematic-direction-brief.md`)
 **Companion to `episode-alexander-gaugamela-script.md` (v9). Dialogue unchanged from the approved script. Runtime 84s, 12 clips (battle redesigned to Hollywood coverage density 2026-08-29: 5b 4s, 5c NEW 3s, 6a 6s, 6b NEW 3s, 7 10s — battle total still 31s). Screen-direction map for the whole episode: in NOVA shots, Macedonians advance LEFT→RIGHT, Persians face right→left, Darius flees deeper-right/away; in V-mode shots, the Persian line sits in the DEEP FRAME behind Hazel. Every clip obeys this one map.**
 
-**Mode summary (updated 2026-08-29 — mode decisions are Claude's per the owner's final authority clarification; labeled for visibility/veto):** V-mode throughout except the battle scene, redesigned 2026-08-29 to Hollywood coverage density (owner request — six shots across the same 31 seconds, built from parallel action + inserts + cut-on-action, never rendering any action twice per brief §8.2): **5a NOVA** (the wedge launches), **5b V** (her reaction), **5c NOVA — NEW** (the Persian line bracing, parallel action), **6a NOVA** (the impact, locked frame), **6b NOVA — NEW** (ground-level insert), **7 V** (her reaction + Darius's flight). Clips 5b and 7 stay V-mode deliberately — her reactions belong to her own lens. Battle runtime unchanged (31s), episode total unchanged (84s), now 12 clips.
+**Mode summary — SUPERSEDED 2026-08-29 by the three-mode system (brief §1: V / 3P / Nova).** Final locked assignment, decided per-clip by "whose experience is this beat FOR" (a beat that belongs to Hazel personally stays V even with others present; a beat that's really about witnessing something between others, or a moment that earns a staged tableau, goes 3P), not by headcount:
+
+| Clip | Mode | Why |
+|---|---|---|
+| 1 | **V** | Her hook, her voice, her discovery |
+| 2 | **3P** | Parmenion/Alexander exchange (a verified historical quote landing as a defining statement) + tablet handed to her — the quote deserves to land as a witnessed moment, not filtered through her phone |
+| 3 | **V** | The Iliad/Achilles beat — a quiet personal confidence between them, not a witnessed event, despite two people present |
+| 4 | **V** | Solo walk-and-talk |
+| 5a | **NOVA** | She is not physically at the wedge's point |
+| 5b | **V** | Her own reaction, deliberately — belongs to her lens |
+| 5c | **NOVA** | She is not in the Persian ranks |
+| 6a | **NOVA** | The impact — locked frame, no principals' faces (ALREADY SHOT, approved) |
+| 6b | **NOVA** | Ground-level insert, no characters by design |
+| 7 | **V** | Her reaction to Darius fleeing IS the point — the entire craft value is her face processing it |
+| 8 | **V** (owner-agreed 2026-08-29, reversing the earlier 3P call) | Pays off the Clip 2 running-gag plant (fumbled stylus → steady hand) — callbacks land hardest in the SAME register as the plant; this is a beat *for* her, the same way Clip 2's fumble was |
+| 9 | **V** | Her sign-off — "her face into her camera is the show's soul" (brief §1) |
+
+Battle sequence built from parallel action + inserts + cut-on-action, never rendering any action twice per brief §8.2. Battle runtime unchanged (31s), episode total unchanged (84s), 12 clips.
 
 **Duration changes from v7 (script updated to match):** 5b 4s→5s, 6 12s→10s, 7 10s→11s. Net zero; total stays 84s. Reason: clip 6's on-camera reaction beat moves to the head of clip 7 (if 6 goes Nova, her face can't be in it), so 7 needs the extra second and 6 needs less.
 
