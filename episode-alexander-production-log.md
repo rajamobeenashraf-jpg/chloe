@@ -244,3 +244,15 @@ Delivered per §20. QC: forehead now mostly clear with real skin texture (not ai
 - **v5 face LOCKED: B2 v9, job `a49d8038`.** CHARACTER_LOCK.md rewritten: v5 section with new frozen identity string (fair rosy complexion, bare natural-pink lips, faint freckle trace/clear forehead, larger doe eyes, hazel + bronde retained), full decision trail referenced, blue-eyed variant recorded as REJECTED, v4 canon ARCHIVED for back-catalog only. CLAUDE.md pointer updated to v5.
 - **v5 4-view set generated and delivered** (see CHARACTER_LOCK.md for jobs/QC): full-body front `a7f5576b`, full-body 3/4 `3ac7a1e2`, face front `9bbdd985`, face 3/4 `d6f10ddd`. Awaiting owner approval to enter the canon.
 - **Consequence for this episode (pending owner):** the approved episode Hazel slate (look-lock `112a948e` + 4-view `72a8d0b5`/`e5eb360a`/`2e4a2d55`/`83df8574`) carries the v4 face and must be REGENERATED on v5 (scribe costume + episode soft-glam look) before any Hazel clip shoots — per §19, that regeneration will be proposed and owner-approved before submission.
+
+## Round 8b — v5 4-view set: owner flagged identity drift; three views regenerated (2026-08-29, §19 approval given)
+
+Owner verdict on the first 4-view set: face-front (`9bbdd985`) MATCHES and is kept; the other three views drifted. Regeneration approved and submitted with a doubled anchor (v9 master `a49d8038` + approved face-front `9bbdd985` as joint refs) and per-feature identity-match language:
+
+| # | View (regen) | Job ID | URL |
+|---|---|---|---|
+| AH | Full-body front v2 | `d11a4b69-9add-45f3-aa27-5ee0e51872c8` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_034112_d11a4b69-9add-45f3-aa27-5ee0e51872c8.png |
+| AI | Full-body 3/4 v2 | `eaa1e93e-9bbe-4c8b-8753-2b176edef525` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_034112_eaa1e93e-9bbe-4c8b-8753-2b176edef525.png |
+| AJ | Face 3/4 v2 (gentler angle, both eyes visible) | `14acb9d5-2288-4913-8140-55576839902a` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_034112_14acb9d5-2288-4913-8140-55576839902a.png |
+
+Delivered per §20. Learnings entry pending owner verdict: doubled-anchor method (master + one approved view) as the standard fix for multi-view identity drift.
