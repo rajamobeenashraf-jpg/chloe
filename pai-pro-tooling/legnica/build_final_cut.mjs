@@ -18,6 +18,14 @@ const TITLE_CARD_DURATION = 5.0;
 const TITLE_CARD_LINE1 = "BATTLE OF LEGNICA";
 const TITLE_CARD_LINE2 = "1241 · MONGOL VICTORY";
 const FONT_BOLD = "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf";
+
+// Owner decision, 2026-08-29 (EDITING_HANDOFF.md §3): one continuous
+// generated score across the whole episode, edit-stage only -- clips
+// themselves stay generated music-free. Layered UNDER the existing
+// diegetic clip audio (never replacing it), auto-ducked via
+// sidechaincompress keyed off the dialogue/ambient mix so it drops
+// under dialogue without needing per-caption volume scheduling.
+const SCORE_FILENAME = "legnica_score_v1.wav";
 import fs from "node:fs/promises";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
@@ -72,15 +80,26 @@ async function main() {
   const drawText = (text, y) =>
     `drawtext=fontfile=${FONT_BOLD}:text='${escText(text)}':fontcolor=white:fontsize=44:` +
     `borderw=3:bordercolor=black@0.85:x=(w-text_w)/2:y=${y}:enable='gte(t\\,${titleCardStart})'`;
+  const scoreInputIndex = clipPaths.length;
   const filterComplex =
     `${filterParts.join("")}concat=n=${clipPaths.length}:v=1:a=1[catv][cata];` +
     `[catv]${drawText(TITLE_CARD_LINE1, 130)},${drawText(TITLE_CARD_LINE2, 195)}[titled];` +
     `[titled]fade=t=out:st=${fadeStart}:d=${FADE_OUT_DURATION}[outv];` +
-    `[cata]afade=t=out:st=${fadeStart}:d=${FADE_OUT_DURATION}[outa]`;
+    // Score: normalize loudness, pad/trim to the episode's exact length, then
+    // duck it via sidechaincompress keyed off cata (drops under dialogue/loud
+    // diegetic sound automatically, no per-caption volume scheduling needed).
+    // cata feeds two downstream filters (the sidechain key and the final
+    // mix), so it must be split first -- ffmpeg only lets a label be
+    // consumed once otherwise.
+    `[cata]asplit=2[cata_key][cata_mix];` +
+    `[${scoreInputIndex}:a]loudnorm=I=-23:TP=-2:LRA=11,atrim=0:${expectedTotal},apad=whole_dur=${expectedTotal},asetpts=PTS-STARTPTS[score_norm];` +
+    `[score_norm][cata_key]sidechaincompress=threshold=0.04:ratio=10:attack=15:release=400:makeup=1[score_ducked];` +
+    `[cata_mix][score_ducked]amix=inputs=2:duration=first:dropout_transition=0:normalize=0[mixed_a];` +
+    `[mixed_a]afade=t=out:st=${fadeStart}:d=${FADE_OUT_DURATION}[outa]`;
 
-  console.log(`[cut] concatenating ${clipPaths.length} pieces via single filter_complex concat, on-screen title card for the last ${TITLE_CARD_DURATION}s, fading out the last ${FADE_OUT_DURATION}s...`);
+  console.log(`[cut] concatenating ${clipPaths.length} pieces via single filter_complex concat, on-screen title card for the last ${TITLE_CARD_DURATION}s, mixing the continuous score (ducked under dialogue), fading out the last ${FADE_OUT_DURATION}s...`);
   await run("ffmpeg", [
-    "-y", ...inputs,
+    "-y", ...inputs, "-i", path.join(ASSETS_DIR, SCORE_FILENAME),
     "-filter_complex", filterComplex,
     "-map", "[outv]", "-map", "[outa]",
     "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p",
