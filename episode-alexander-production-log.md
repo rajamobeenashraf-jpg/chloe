@@ -34,3 +34,36 @@ Owner approved the three-fix regen. Same refs/model.
 **QC vs. the v1 findings:** all three fixed — no earrings (bare ears), proper hinged wax diptych (two leaves, raised frames, dark wax surface) + bronze stylus, straight-pin fibulae at both shoulders; glam eye makeup gone, eyes read bare/natural. Identity vs. Tier-1: hazel iris, freckles, bronde tied-back hair, golden-tan, brows all correct; matte finish holds. Delivered to owner; awaiting verdict. If approved, v2 is the scribe-costume lock for this episode.
 
 **Also this round (story-editorial):** retention audit system adopted as brief §12 (four-audit gate before stage 8); AUDIT 1 run on script v9 and written into the script file — one fix applied from it (clip 3 armored with continuous motion + exit-into-momentum; classified the highest skip-risk beat, kept for clip 9's payoff).
+
+## Round 3 — Alexander reference set, Parmenion, Bucephalus, Hazel hairstyle options (2026-08-29)
+
+All nano_banana_pro, 3:4. Alexander's four derived from casting candidate B (job `cd19b57d`) as image reference, with candidate A's grime level as the finish target:
+
+| # | Subject | Job ID | URL |
+|---|---|---|---|
+| E | Alexander ref — full-body front | `86a6746d-4cac-4eae-8665-faa1485279b4` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_010110_86a6746d-4cac-4eae-8665-faa1485279b4.png |
+| F | Alexander ref — full-body 3/4 | `df75706b-f13f-490b-b50c-f12a01782aee` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_010110_df75706b-f13f-490b-b50c-f12a01782aee.png |
+| G | Alexander ref — face front | `d80986c3-9e77-4d21-91d4-3e88a86da1ac` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_010110_d80986c3-9e77-4d21-91d4-3e88a86da1ac.png |
+| H | Alexander ref — face 3/4 | `4cc2a502-b478-45f6-bcfb-49b337708ec1` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_010110_4cc2a502-b478-45f6-bcfb-49b337708ec1.png |
+| I | Parmenion casting v1 | `3c6c04b3-54f4-4806-9fcf-34d781530bcd` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_010110_3c6c04b3-54f4-4806-9fcf-34d781530bcd.png |
+| J | Bucephalus ref v1 | `f47b67a6-9772-4809-ac4c-f6acaa6eda3b` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_010110_f47b67a6-9772-4809-ac4c-f6acaa6eda3b.png |
+| K | Hazel hairstyle option — low braid | `d3aa9df1-26e4-4f97-a299-97089c65155f` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_010235_d3aa9df1-26e4-4f97-a299-97089c65155f.png |
+| L | Hazel hairstyle option — low knot | `377dcc00-d19e-44d4-a878-9f1b71fab399` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_010235_377dcc00-d19e-44d4-a878-9f1b71fab399.png |
+
+**QC (all eight viewed at full res):**
+- **Alexander 4-set: identity CONSISTENT across all four views** — same face as casting B (pale blue-grey eyes, swept-back light-brown hair, clean jaw), grime target applied, matte/documentary finish holds. **One accuracy flag, reported not regenerated (§19): both full-body views render modern-looking closed lace-up boots** — Macedonian krepides were open laced sandal-boots; fix at the video-prompt level (feet rarely in frame) or one regen of the two full-body refs if the owner wants it clean at the source.
+- **Parmenion v1: PASS against his §32 lock** (silver-grey crop + beard, weathered lines, eyebrow scar, urgency in the face). Proposed as his casting lock.
+- **Bucephalus v1: PASS** — near-black bay, broad forehead, period tack (no stirrups — correct, they didn't exist yet; no horseshoes), real anatomy. Ears alert rather than pinned; acceptable for a reference. Proposed as his lock.
+- **Hazel hairstyles (owner asked mid-round; color/hairline stay locked, styling is open):** braid version — identity strong, bare eyes, no earrings, proper wax diptych; knot version — identity strong but the diptych interior lost its wax surface (bare wood). Both show ring-pins instead of straight fibulae at the shoulders (recurring minor drift, third occurrence — candidate fix: a dedicated fibula close-up reference, same pattern as Troy's waterskin ref). **My pick: the BRAID** — keeps her signature bronde hair visible for channel recognizability, period-practical, and it's the cleaner render. Owner may veto.
+
+**Character reference status:** Alexander 4-set complete (pending owner reaction + boots decision) · Parmenion cast · Bucephalus cast · Hazel scribe costume v2 approved-pending with braid variant proposed as the final look. Next: owner verdicts → any fixes → frozen ENVIRONMENT_BLOCK + §32 locks into the episode's run_clip equivalent → Seedance validation test clip (6a recommended).
+
+## Round 3b — owner hairstyle decision: HALF BUN, STRAIGHT HAIR (2026-08-29)
+
+Owner overrode the braid recommendation mid-round: half-up bun with straight hair. Generated immediately:
+
+| # | Subject | Job ID | URL |
+|---|---|---|---|
+| M | Hazel — half bun, straight hair (OWNER'S PICK) | `07fb3f58-c46a-4696-bd5d-573bc56c7e46` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_010615_07fb3f58-c46a-4696-bd5d-573bc56c7e46.png |
+
+**QC: the strongest still of the whole set.** Half-up bun + straight lengths exactly as directed; bare eyes (no makeup), no jewelry; identity holds (hazel eyes, freckles, brows, lips, golden-tan); and notably the two recurring minor drifts BOTH resolved on this take — straight-pin fibulae render correctly at both shoulders, and the wax diptych shows proper hinged leaves with a dark wax surface. Delivered to owner. **Pending his confirmation, this image is Hazel's scribe-look lock for the episode** (it would also serve as the wardrobe/hair reference passed to every Seedance clip alongside her identity refs, per §31).
