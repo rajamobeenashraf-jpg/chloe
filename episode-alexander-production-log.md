@@ -436,3 +436,10 @@ Composition: Parmenion (locked ref `3c6c04b3`) shaking Alexander (locked ref `86
 | AZ | Clip 2 start-frame v1 | `bdc9a2d8-2e2b-44fa-a001-046af7db8c8e` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_063816_bdc9a2d8-2e2b-44fa-a001-046af7db8c8e.png |
 
 Delivered per §20. QC: Hazel v5 identity holds; Parmenion reads as older/weathered/silver-grey per his lock, gripping Alexander's shoulder mid-shake; Alexander reads young/light-brown-haired, eyes opening, consistent with his lock. Tent/lamplight/brazier continuity with clip 1's world. AWAITING OWNER approval before generating the clip.
+
+## Three-mode system adopted + Angles/SHOTS API research closed out (owner mandate 2026-08-29)
+
+- **New mode: 3P ("third-person," owner-named)** — true external camera, Hazel included in frame. Now the PREFERRED third-person option whenever a scene needs one and Hazel could plausibly be present. **Nova narrowed** to a strict fallback: only when Hazel genuinely cannot be in the shot. Written into `cinematic-direction-brief.md` §1.
+- **Clip 2 → 3P mode** (3-person scene, she's genuinely there). **Clip 8 → 3P mode** (owner's choice for the reunion beat). Both need Angles 2.0/SHOTS flagging before their tableau stills are finalized, per the standing rule.
+- **Angles/SHOTS applicability corrected:** applies to ALL third-person shots (3P and Nova alike), not just 3P as first stated — the tool only cares that a shot is third-person, not whether Hazel is in frame. Candidates going forward: clips 2, 5a, 5c, 6b, 8.
+- **Deep research closed out (owner-requested): confirmed via three independent sources — MCP apps registry, MCP models catalog, and Higgsfield's own official public SDK (github.com/higgsfield-ai/higgsfield-js, checked directly) — that Angles 2.0 and SHOTS have NO developer/API surface at all, for anyone, not just this session.** This is a platform gap, not a session limitation. Standing rule (Claude flags, owner runs it himself) remains the only path unless Higgsfield ships an API for these tools in the future.
