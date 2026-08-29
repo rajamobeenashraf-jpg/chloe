@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:01.200",
+      "category": "physics",
+      "severity": 3,
+      "description": "The incoming projectile has inconsistent perspective and lighting integration prior to impact.",
+      "end_timestamp": "00:03",
+      "fix": "Adjust compositing layers and match ambient lighting on the projectile.",
+      "verdict": "CONFIRMED",
+      "refined_description": "A dark projectile with a smoke trail travels toward the fortress wall, showing unnatural lighting and flat shading that does not match the ambient night lighting or perspective."
+    },
+    {
+      "timestamp": "00:02",
+      "category": "physics",
+      "severity": 2,
+      "description": "Explosion debris dissipates rapidly without realistic dust persistence or interaction with the ground.",
+      "end_timestamp": "00:03",
+      "fix": "Extend the duration of dust simulation and debris scatter at ground level."
+    }
+  ],
+  "summary": "The visual effects shot shows a siege projectile striking a medieval fortress wall at night. The explosion and fireball dynamics are clear, though integration and physics simulation show slight compositing artifacts. Overall execution is functional for short-form VFX.",
+  "overall_score": 6.5
+}

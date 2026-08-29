@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:05.600",
+      "category": "anatomy",
+      "severity": 3,
+      "description": "The hand resting on the stone parapet unnaturally morphs and clips into a fist.",
+      "end_timestamp": "00:08",
+      "fix": "Inpaint or re-render the hand motion to ensure natural knuckle articulation without morphing.",
+      "verdict": "CONFIRMED",
+      "refined_description": "The subject's right hand resting on the stone parapet unnaturally morphs into a clenched fist without a smooth anatomical transition."
+    },
+    {
+      "timestamp": "00:00",
+      "category": "background",
+      "severity": 2,
+      "description": "The fleet of ships in the harbor drifts with stiff, repetitive motion and unnatural wake physics.",
+      "end_timestamp": "00:08",
+      "fix": "Composite dynamic water interaction and natural ship buoyancy animation."
+    }
+  ],
+  "summary": "Hazel's character identity and facial performance remain largely consistent with the reference model throughout the scene. A noticeable anatomy artifact occurs in the second half as her resting hand morphs into a clenched fist. Background elements and overall pacing are solid with minor physics stiffness on the fleet.",
+  "overall_score": 6.8
+}

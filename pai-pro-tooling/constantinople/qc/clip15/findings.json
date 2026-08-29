@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:04",
+      "category": "background",
+      "severity": 2,
+      "description": "Volumetric sunbeams through dome windows show slight parallax drift and jitter during the upward tilt.",
+      "end_timestamp": "00:09",
+      "fix": "Stabilize lighting volumetric layer against background camera tracking."
+    },
+    {
+      "timestamp": "00:14",
+      "category": "anatomy",
+      "severity": 3,
+      "description": "Mouth geometry warps slightly with unnatural tooth merging during the phrase 'Nobody who stood here'.",
+      "end_timestamp": "00:16",
+      "fix": "Re-render lip-sync phonemes with stabilized mouth interior.",
+      "verdict": "DISMISSED",
+      "refined_description": "The mouth movement and tooth rendering remain completely natural during the phrase, with no observable warping or tooth merging."
+    }
+  ],
+  "summary": "The character identity and voiceover delivery strongly match the target lock throughout the monologue. Minor lip-sync warping occurs on complex mouth shapes around the midpoint. Background elements remain largely stable with slight volumetric light jitter.",
+  "overall_score": 6.8
+}

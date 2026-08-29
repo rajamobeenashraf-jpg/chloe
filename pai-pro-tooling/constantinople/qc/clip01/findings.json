@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:04.400",
+      "category": "anatomy",
+      "severity": 3,
+      "description": "Hazel's left hand and fingers warp and stretch unnaturally when gesturing toward the army.",
+      "end_timestamp": "00:06",
+      "fix": "Inpaint the hand gesture with consistent finger geometry and natural range of motion.",
+      "verdict": "CONFIRMED",
+      "refined_description": "As the woman gestures toward the army, her extended left hand and fingers warp and unnaturally elongate."
+    },
+    {
+      "timestamp": "00:00",
+      "category": "background",
+      "severity": 2,
+      "description": "Soldiers and smoke columns in the background army show slight temporal bubbling and morphing.",
+      "end_timestamp": "00:11",
+      "fix": "Apply temporal stabilization and refine distant crowd motion tracks."
+    }
+  ],
+  "summary": "The character identity and voiceover synchronization remain largely consistent with the Hazel v4 master throughout the sequence. Minor anatomical distortion occurs during the hand gesture at the mid-point. Background crowd and smoke rendering exhibit standard minor temporal generation artifacts.",
+  "overall_score": 6.5
+}

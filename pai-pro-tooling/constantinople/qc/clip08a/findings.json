@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:00",
+      "category": "identity",
+      "severity": 3,
+      "description": "Facial features and styling show prominent glam makeup and altered facial proportions differing from the canonical v4 reference lock.",
+      "end_timestamp": "00:04",
+      "fix": "Re-generate Hazel using the canonical v4 master reference sheets with strict prompt weights against glam styling.",
+      "verdict": "DISMISSED",
+      "refined_description": "The woman's facial appearance and makeup remain consistent throughout the sequence without visible distortion or identity drift."
+    },
+    {
+      "timestamp": "00:03",
+      "category": "physics",
+      "severity": 2,
+      "description": "The crown ornament and cross atop the king's head exhibit slight edge jitter and morphing during rotation.",
+      "end_timestamp": "00:06",
+      "fix": "Apply localized temporal stabilization or an inpainting pass on the crown geometry."
+    }
+  ],
+  "summary": "The single-shot sequence features solid audio-to-lip synchronization and consistent framing. Minor tracking instability appears around the king's crown during his turn. Character fidelity deviates slightly toward modern cosmetic styling compared to the locked baseline.",
+  "overall_score": 5.8
+}

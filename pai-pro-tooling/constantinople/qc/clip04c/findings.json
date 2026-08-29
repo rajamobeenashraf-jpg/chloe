@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:00",
+      "category": "audio",
+      "severity": 2,
+      "description": "Slight lip-sync latency on opening plosives.",
+      "end_timestamp": "00:02",
+      "fix": "Nudge audio track 1-2 frames earlier to align mouth shapes."
+    },
+    {
+      "timestamp": "00:01",
+      "category": "background",
+      "severity": 2,
+      "description": "Background extras and livestock display minimal ambient motion.",
+      "end_timestamp": "00:04",
+      "fix": "Add subtle background layer animation to enhance depth."
+    }
+  ],
+  "summary": "Hazel's character identity and facial features match the canonical model accurately. Minor lip-sync softness occurs during rapid speech. Overall visual coherence and lighting integration remain solid.",
+  "overall_score": 6.8
+}

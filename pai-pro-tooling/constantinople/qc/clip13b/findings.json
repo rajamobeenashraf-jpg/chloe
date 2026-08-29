@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:02",
+      "category": "background",
+      "severity": 2,
+      "description": "Background kneeling crowd shows slight soft-focus temporal morphing and rigid poses.",
+      "end_timestamp": "00:04",
+      "fix": "Apply subtle depth-of-field blur or enhance crowd motion passes."
+    },
+    {
+      "timestamp": "00:03",
+      "category": "physics",
+      "severity": 2,
+      "description": "Hair strands along the left shoulder exhibit minor motion damping inconsistency during head turn.",
+      "end_timestamp": "00:04",
+      "fix": "Refine secondary hair physics simulation on head turn."
+    }
+  ],
+  "summary": "Character identity and facial likeness are well maintained against the Hazel reference. Lip sync and dialogue delivery are aligned with natural facial motion. Minor background crowd morphing is present but unobtrusive.",
+  "overall_score": 6.8
+}

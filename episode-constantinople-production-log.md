@@ -272,6 +272,40 @@ Owner asked for a concluding line mirroring Chloe's short-but-impactful closer (
 ### ALL 15 CLIPS APPROVED — EPISODE ENTERS EDIT STAGE (2026-08-29)
 Every clip in the episode now has an owner-approved final version. Per the owner's QC rule (CLAUDE.md), Gemini eyes was not used during generation and comes into play now, at the edit stage, on: (1) the full clip set entering the edit, (2) assembled/stitched cuts, (3) the subtitle pass. Proceeding to set up edit-stage tooling for this episode next.
 
+### EDIT-STAGE TOOLING SET UP + GEMINI EYES STEP 1 (full clip set) COMPLETE (2026-08-29)
+Set up `pai-pro-tooling/constantinople/` mirroring the Troy (Episode 7) template: `make_word_chunks.py` (adapted for final-download filenames + a zero-caption skip branch for clip07b), a new `captions_data.mjs` (24-entry `CLIPS` array, `SUB_STYLE` copied verbatim), `qc_pass.mjs` (copied unchanged, not yet run — no captions burned at this step). All 24 final clip files downloaded fresh from their canonical job URLs and duration-verified against this log (clip11 `9aa0dfde` and clip12 `f7c10637` URLs fetched live via `jobs_wait` since none were recorded here); any ambiguous leftover local files from earlier in the session were archived to `clips/superseded/` rather than trusted.
+
+**Word-chunk timing (faster-whisper) — 22/24 clips matched 97-100%.** Two needed script-to-clip reassignment (script text unchanged, just which clip's audio it belongs to):
+- Clip 10b/10c: "Every man on that wall just watched their best hope leave." was mis-assigned to 10b in the initial captions draft — whisper showed it's actually in 10c's audio. Reassigned, both now 100%. This is a captions-data fix only, not a video change.
+- **Clip 13a-1: the line "The biggest church on Earth." does not appear in either 13a-1 or 13a-2's actual rendered audio** — it was apparently dropped from the footage at some point during clip 13's multiple regeneration rounds (documented above) and never caught since captions weren't built until now. Removed from captions to match the real footage. No video defect implied, but this is new information for the owner: this line never actually made it into the approved clips.
+- Remaining sub-100% clips are a benign whisper tokenization artifact ("1,100"/"1,200" split into two tokens) or one missed leading "No." (clip10a) — inspected, timing is clean, no action needed.
+
+**Gemini eyes QC, full clip set (edit-stage step 1) — 18 CONFIRMED findings across 16 of 24 clips** (8 clips clean: 04a, 04c, 06b, 08a, 08b, 13a-2, 13b, 15). None fixed or regenerated — per the PERMANENT owner rule, every regeneration needs explicit go-ahead, reported to the owner for a decision:
+
+| Clip | Time | Category | Severity | Finding | Suggested fix |
+|---|---|---|---|---|---|
+| 01 | 0:04.4 | anatomy | 3 | Hand/fingers warp during gesture | Inpaint hand geometry |
+| 02 | 0:00.0 | background | 3 | Modern motorized ship hull in background bay | Replace with period sailing ship |
+| 03 | 0:00.0 | background | 3 | Modern residential buildings on distant hillside | Matte/replace with period terrain |
+| 04b | 0:01.0 | physics | 3 | Log rollers slide instead of rotating | Animate rolling motion |
+| 05 | 0:05.6 | anatomy | 3 | Resting hand morphs into a fist | Inpaint hand motion |
+| 06a | 0:02.6 | physics | 3 | Background worker lifting stone looks weightless | Fix background extra physics |
+| 07a | 0:08.6 | background | 3 | Modern Turkish Republic flag instead of period Ottoman standard | Replace flag asset |
+| 07a | 0:12.4 | physics | 3 | Cannon fires with no carriage recoil | Add recoil animation |
+| 07b | 0:01.2 | physics | 3 | Incoming projectile lighting/perspective inconsistent | Match ambient lighting |
+| 09 | 0:01.4 | background | 3 | Modern Turkish flag (wrong star/crescent ratio) on ladder | Replace with period banner |
+| 09 | 0:05.2 | physics | 3 | Falling soldier shows floaty ragdoll physics | Natural gravity/weight fix |
+| 10a | 0:01.4 | physics | **4** | Sword clips through armor with no deformation | Fix collision geometry |
+| 10b | 0:01.0 | physics | 3 | Tears spawn abruptly, not from tear ducts | Smooth tear transition |
+| 10b | 0:01.0 | anatomy | 3 | Hand-over-mouth finger stiffness/blend artifact | Re-render hand gesture |
+| 10c | 0:01.6 | physics | 3 | Carried knight's boots float/slide, no ground friction | Regenerate carrying motion |
+| 11 | 0:07.8 | physics | 3 | Background combat lacks weight/impact precision | Refine fight choreography |
+| 12 | 0:00.0 | background | 3 | Modern Turkish flags + modern suburban grid housing | Replace flags/buildings |
+| 13a-1 | 0:01.2 | physics | 3 | Feet slide on cobblestones while sprinting | Re-bake motion with foot IK |
+| 14 | 0:00.0 | background | 3 | Background crowd extras duplicated/stiff | Vary crowd models |
+
+**Pattern flagged:** 5 of 18 findings (clips 02, 03, 07a, 09, 12) are modern Turkish flags/buildings bleeding into backgrounds — the same anachronism class fought hard on clip 3/9 during generation, but this specific instance (modern national symbols, not minarets) slipped past the original human+vidIQ QC on already-approved clips. Reported to owner for a decision on whether any of these are worth a regeneration pass, given they're already approved and this project's regeneration-approval rule applies to every attempt.
+
 ### FULL EPISODE AUDIT vs. Chloe's actual footage (owner-requested, 2026-08-28)
 Owner asked for a systematic clip-by-clip comparison of clips 1-12 against Chloe's video on environment/destruction/color-grading and performance-direction granularity, verified via two additional targeted vidIQ re-watches (covering the opening walls shot, chain/harbor, and Constantine interview, plus the cannon/commander/emperor/army-enters beats already checked). Findings:
 - **Confirmed real gaps:** Clip 1's color grading (ours warm golden-hour vs. her desaturated dusty-brown/overcast bleak tone); Clip 2's emotional tone (ours reads warm/cheerful — she's smiling — vs. her "conversational yet tense, documentary tone" despite calm visuals); Clip 12's environment (fixed in v4, see above, though v3 stays the logged final); general performance-direction granularity gap — her physical performance vocabulary is consistently more specific (scleral show, forehead tension lines, both-hands-clamping, trembling lip, panting mouth, freeze-then-retreat) than our looser directions ("hand rises to mouth," "horror-struck").
