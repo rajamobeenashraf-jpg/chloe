@@ -295,3 +295,13 @@ Owner approved the PREVIOUS round's full-body 3/4 (`1eb09f83`, tall/hourglass) a
 Owner approved the full-body front `dc77b494` (tall/hourglass pair, matching the approved 3/4). **The v5 reference canon is COMPLETE: master `a49d8038` + face front `9bbdd985` + face 3/4 `b70ab775` + full-body front `dc77b494` + full-body 3/4 `1eb09f83`.** CHARACTER_LOCK.md updated (canon marked complete, figure/stature spec locked in); PROMPT_LEARNINGS.md updated with the confirmed methods (N4 photo-edit angle coverage, N5 drift-is-the-norm, N6 incremental chains).
 
 **NEXT (needs owner §19 approval before submission): regenerate the Alexander episode's Hazel slate on the v5 face** — the current approved slate (look-lock `112a948e` + 4-view `72a8d0b5`/`e5eb360a`/`2e4a2d55`/`83df8574`) carries the v4 face and cannot be used for v5 clips. Proposal: (1) episode look-lock still — v5 face in the scribe chiton + episode soft-glam + open straight hair (photo-edit method from the v5 master); (2) the episode 4-view set from it (photo-edit method). ~5 stills total, each delivered per §20.
+
+## Round 9 — Approach C step 1: v5 EPISODE LOOK-LOCK candidate (owner approved plan "go with C", 2026-08-29)
+
+Photo-edit of the v5 master (`a49d8038`) into the episode scribe look.
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AP | v5 episode look-lock (scribe costume) | `e11d6b64-70b0-4021-839c-69e519472d9a` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_040526_e11d6b64-70b0-4021-839c-69e519472d9a.png |
+
+Delivered per §20. QC: identity holds against the v5 master (face/eyes/brows/lips/complexion/freckle trace all carried); chiton undyed coarse linen draping from both shoulders with straight-pin fibulae hardware at each shoulder; leather belt + satchel; hinged wooden diptych + bronze stylus; no jewelry; soft-glam + open hair per episode look. One period note reported: the belt closes with a modern-style frame buckle (ancient belts tied or hooked) — cosmetic, fixable in the next step's prompts or ignorable at owner's discretion. AWAITING OWNER approval before generating the four costume views.
