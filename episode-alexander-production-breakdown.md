@@ -206,4 +206,25 @@
 
 ---
 
-**QC hooks (unchanged, apply per clip):** `freezedetect` on every raw render (§26) · dense ≥3fps identity/geometry inspection · §21 double verification before every prompt · every clip sent to owner on creation (§20) · no regeneration without go-ahead (§19).
+## EDIT DESIGN MAP (per brief §8 — the cut TYPE chosen at every boundary, decided by drama, executed on §16 hard-cut mechanics)
+
+| Boundary | Cut type | Why this one |
+|---|---|---|
+| 1→2 | **J-cut** (Parmenion's footsteps pre-lap) | Tension enters by sound before sight; the quiet is broken *for* the audience a beat early |
+| 2→3 | **Cut on diegetic sound** (the final armor-buckle) | Invisible continuity cut inside one continuous scene — same place, same people, motivated by the action completing |
+| 3→4 | **Light-motivated cut** (tent flap opens, hard light + camp sound flood in) | The transition IS the story beat: night's intimacy ends, the day of battle begins |
+| 4→5a | **J-cut** (the first horn hits before the cut) + V→Nova seam | Stitching rule 1: her world is interrupted by sound, then we see the thing the sound belongs to |
+| 5a→5b | **Action cut on the loudest hoof-impact frame**, Nova→V | Cutting on a percussive peak hides the seam; the roar runs unbroken across it (§25) |
+| 5b→6 | **Eyeline cut** (her head-snap right → what she's looking at), V→Nova | The book-standard motivated POV cut — the audience is thrown to the front because SHE looked there |
+| 6→7 | **Reaction cut**, Nova→V (from the break to her face mid-reaction) | Stitching rule 2: the event's meaning lands on the human anchor; rhythm note — this is where the edit stops accelerating and holds |
+| 7→8 | **Temporal transition via sound evolution** (battle roar thins into wind/creak, pre-lapped) | The engine's aftermath stage entered through sound decay, never a slam to silence — time visibly/audibly passed |
+| 8→9 | **Cut on her exhale** (breath as the diegetic trigger) | The episode's pulse slowing on camera; the aftermath's stillness earned by the cut itself |
+| 9→end | **Hold, then cut to black; ambient bed fades after picture** (L-cut into black) | Established doom/awe-outro precedent; the world outlives the frame |
+
+**Rhythm curve (brief §8.8):** longest-feeling shots at 1–4 (dread builds in stillness) → acceleration 5a–5b (5s/5s) → the held 10s Nova impact (tension via duration, not cutting) → 7's 11s deceleration inside chaos → 8–9 deliberately slow. No fixed shot length anywhere.
+
+**Same-moment intercutting check (brief §8.2):** zero instances — every cut advances time; no action is shown twice from two angles. The battle's V/Nova alternation is sequential coverage, not cross-coverage of one moment.
+
+---
+
+**QC hooks (unchanged, apply per clip):** `freezedetect` on every raw render (§26) · dense ≥3fps identity/geometry inspection · §21 double verification before every prompt · every clip sent to owner on creation (§20) · no regeneration without go-ahead (§19) · scale QC per brief §7b.2.
