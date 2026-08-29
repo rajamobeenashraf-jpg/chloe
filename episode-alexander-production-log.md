@@ -67,3 +67,13 @@ Owner overrode the braid recommendation mid-round: half-up bun with straight hai
 | M | Hazel — half bun, straight hair (OWNER'S PICK) | `07fb3f58-c46a-4696-bd5d-573bc56c7e46` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_010615_07fb3f58-c46a-4696-bd5d-573bc56c7e46.png |
 
 **QC: the strongest still of the whole set.** Half-up bun + straight lengths exactly as directed; bare eyes (no makeup), no jewelry; identity holds (hazel eyes, freckles, brows, lips, golden-tan); and notably the two recurring minor drifts BOTH resolved on this take — straight-pin fibulae render correctly at both shoulders, and the wax diptych shows proper hinged leaves with a dark wax surface. Delivered to owner. **Pending his confirmation, this image is Hazel's scribe-look lock for the episode** (it would also serve as the wardrobe/hair reference passed to every Seedance clip alongside her identity refs, per §31).
+
+## Round 3c — owner look exploration: soft glam + open straight hair (2026-08-29)
+
+Owner then asked for soft glam makeup with open straight hair. **Conflict flagged to him in chat BEFORE generating, per the deviation rule:** the standing episode rule (owner-locked 2026-08-23, CONTENT_SHEET/CHARACTER_LOCK) is lip-tint-only in episodes — glam belongs to the lifestyle pipeline — and glam on a 331 BC war-camp scribe is prime anachronism-comment bait (§13 realism bar / the craft-study's #1 attack vector). Generated anyway as an option for his eyes-open decision, using the lifestyle pipeline's own sheer-glam language to keep the skin real:
+
+| # | Subject | Job ID | URL |
+|---|---|---|---|
+| N | Hazel — soft glam, open straight hair (OPTION, conflicts with episode makeup lock) | `112a948e-1410-4cfc-b1cb-a6ec6169211a` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_011017_112a948e-1410-4cfc-b1cb-a6ec6169211a.png |
+
+**QC:** soft glam executed as briefed (soft neutral shadow, light liner/mascara, warm blush, luminous base with freckles showing through, glossy nude lips) — reads as real made-up skin, not plastic; open straight center-parted hair correct; no jewelry; straight-pin fibulae and hinged wax diptych both correct again. Identity holds. **Status: OPTION ONLY — not a lock. If the owner picks this look, it is recorded as his deliberate supersession of the lip-tint-only episode rule for this episode; if he picks the bare-faced half-bun (round 3b), the episode stays inside the standing rule. Decision pending.**
