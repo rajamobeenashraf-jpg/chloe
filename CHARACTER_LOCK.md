@@ -30,10 +30,12 @@ Generated 2026-08-29 from the v5 master, delivered to the owner per §20 — sta
 
 | View | Job ID | Status |
 |---|---|---|
-| Full-body front (neutral stance) | `a7f5576b-0fb8-476e-a69a-64b569ea7a5a` | delivered, awaiting owner approval |
-| Full-body 3/4 walking | `3ac7a1e2-67e7-49c4-af42-ab07c2727894` | delivered, awaiting owner approval |
-| Face close-up front | `9bbdd985-8cc8-475c-9c05-060f7e5ca472` | delivered, awaiting owner approval |
-| Face close-up 3/4 | `d6f10ddd-6517-45e9-9b38-68a107e23f66` | delivered, awaiting owner approval |
+| Face close-up front | `9bbdd985-8cc8-475c-9c05-060f7e5ca472` | **APPROVED (owner, 2026-08-29)** — the identity anchor beside the master |
+| Face close-up 3/4 | `b70ab775-ae1b-4a0e-afba-7df9ab3af9cd` | **APPROVED (owner, 2026-08-29)** — made as a PHOTO-EDIT of the approved front ("same photograph, head turned ~25°"), the method that finally held identity after two fresh-render attempts drifted (`d6f10ddd`, `14acb9d5` — both REJECTED, never use) |
+| Full-body front | in progress | v1 `a7f5576b` and v2 `d11a4b69` REJECTED (identity drift); v3 round carries the owner's updated figure/stature spec (taller ~5'9", pronounced hourglass, fitted wardrobe) — jobs recorded in the production log as delivered |
+| Full-body 3/4 walking | in progress | v1 `3ac7a1e2` and v2 `eaa1e93e` REJECTED (identity drift); v3 round as above |
+
+**Figure/stature spec (owner-directed 2026-08-29, part of the v5 lock once a full-body view is approved):** tall (~5'9", long-legged) with a pronounced but realistic hourglass figure — full bust, slim defined waist, full rounded hips, fit and toned; never cartoonish proportions.
 
 Claude QC vs the v5 master (2026-08-29): identity holds across all four; fair-rosy complexion, faint nose/cheek freckle trace, bare natural-pink lips, hazel iris detail correct in both face crops; realism bar passes (pores/texture/vellus hair visible at close range). Two notes: (1) the face-front's complexion reads a touch warmer than the master under its more neutral light — acceptable, the master stays the color anchor; (2) wardrobe differs between the two full-body views (long vs short sleeve) — irrelevant for identity refs, episode wardrobe comes from approved costume stills.
 

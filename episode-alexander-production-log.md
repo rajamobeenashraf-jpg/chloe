@@ -268,3 +268,15 @@ Owner: (a) "give her a more sexy body" → both full-body views regenerated with
 | AM | Face 3/4 v3 (photo-edit of approved front) | `b70ab775-ae1b-4a0e-afba-7df9ab3af9cd` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_034628_b70ab775-ae1b-4a0e-afba-7df9ab3af9cd.png |
 
 Delivered per §20. Claude QC: the photo-edit face 3/4 is the closest identity match yet (same session look — brows/eyes/nose/lips/complexion/freckle trace all carried). Figure change reads subtly in the casual wardrobe (noted to owner: loose tee + straight jeans hide silhouette; fitted wardrobe would show it, his call). PROMPT_LEARNINGS candidate once owner confirms: photo-edit-of-approved-view beats fresh-render for angle coverage.
+
+## Round 8d — full-body v4: taller + stronger figure (owner-directed 2026-08-29); face 3/4 APPROVED
+
+- Owner APPROVED the photo-edit face 3/4 (`b70ab775`) — both face crops now locked in the v5 canon; photo-edit-of-approved-view confirmed as the angle-coverage method (promoted in CHARACTER_LOCK.md; PROMPT_LEARNINGS update pending with the full-body verdicts).
+- Owner: height +2 inches + more pronounced figure → full-bodies regenerated at ~5'9" model stature, stronger hourglass, fitted wardrobe (fitted scoop top tucked into fitted high-waisted jeans, heeled sandals):
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AN | Full-body front v4 (tall/hourglass) | `dc77b494-57bd-41d9-a129-7120dc46447d` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_035009_dc77b494-57bd-41d9-a129-7120dc46447d.png |
+| AO | Full-body 3/4 v4 (tall/hourglass) | `1eb09f83-215a-4377-b806-d10a6cc3f9c4` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_035010_1eb09f83-215a-4377-b806-d10a6cc3f9c4.png |
+
+Delivered per §20. Claude QC: taller/longer-legged reads clearly; waist-hip definition visible in the fitted wardrobe; faces at distance hold the v5 identity; realistic proportions maintained. AWAITING OWNER verdicts to complete the canon.
