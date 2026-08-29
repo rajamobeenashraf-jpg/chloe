@@ -449,3 +449,15 @@ Delivered per §20. QC: Hazel v5 identity holds; Parmenion reads as older/weathe
 Full per-clip mode table now recorded in `episode-alexander-production-breakdown.md`'s Mode Summary, decided by content ("whose experience is this beat for") not headcount. **One reversal from earlier in the session: Clip 8 moves from 3P back to V** — Claude's own recommendation, owner-agreed: it pays off Clip 2's running-gag plant (fumbled stylus → steady hand), and callbacks land hardest in the same register as the plant. Final: 1 V · 2 3P · 3 V · 4 V · 5a Nova · 5b V · 5c Nova · 6a Nova (shot) · 6b Nova · 7 V · 8 V · 9 V.
 
 **Clip 2 correction in progress:** the existing start-frame still (`bdc9a2d8`) was built with first-person selfie POV framing — structurally incompatible with 3P (a real external camera, nobody's POV). The video job built on it (`81fb81a8`) is VOID — not to be delivered regardless of how it renders. Regenerating a proper 3P tableau still now.
+
+## Round 13b — CLIP 2 start-frame still v2, corrected for 3P (2026-08-29)
+
+`build_prompt.mjs` updated with a dedicated `THIRD_P_BLOCK` (was only V/Nova before — 3P had no prompt block of its own, which is how v1 ended up selfie-POV despite being labeled 3P). `clips.json` clip 2's `mode` field set to `"3P"`.
+
+New still hand-composed as a genuine external-observer tableau (not run through `build_prompt.mjs`'s video path, same as v1 — the still stage is composition work, not the final video prompt): Parmenion (`3c6c04b3`) gripping Alexander's (`86a6746d`) shoulder mid-shout, Alexander half-risen from the cot reaching for his sword belt, Hazel (`e11d6b64`) a few steps back near the tent flap as a genuine bystander — watching, not narrating to any lens, hands empty. Explicit negative framing in the prompt: "NOT anyone's point-of-view, NOT a handheld selfie, NOT vlog framing, NOT arm's-length talk-to-lens."
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| BA | Clip 2 start-frame v2 (3P, SUCCESS) | `4b927706-2768-43a1-baae-497afdcff229` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_071330_4b927706-2768-43a1-baae-497afdcff229.png |
+
+QC: genuine external framing achieved — all three figures visible together, Hazel reads as a bystander in the room (alert, arms empty, not addressing camera), Parmenion's urgency vs. Alexander's calm both land, tent/lamplight/brazier continuity with clip 1 holds. Identity: Parmenion silver-grey/weathered per lock; Alexander young/tousled-light-brown reaching for belt per lock; Hazel v5 look present though at a slight distance from camera (bystander blocking, by design). Delivered per §20 — sent to owner as the actual footage, no fix awaiting approval first. Flagged per the standing rule: this is a 3P shot, an Angles 2.0/SHOTS candidate (owner may run either himself on this composition before it's locked). AWAITING OWNER approval before generating the clip.
