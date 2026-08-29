@@ -545,3 +545,13 @@ Kept the lean 2-reference set (Hazel canon + Alexander) that fixed the earlier s
 **Self-QC (caught before presenting as fixed, not after):** Alexander's hair color corrected — reads as proper warm light-brown now. But NOT a clean pass: this regeneration introduced NEW drift on Hazel's side not present in v1 — her shoulder pins rendered as large ornate circular medallions instead of the locked "small plain straight-pin bronze fibulae," and her hair styled in a loose side-braid/wave instead of the locked straight center-part worn loose. One drift traded for another. Delivered with this caveat stated plainly, not presented as solved. Owner: "Create another."
 
 **v3** (`391868a8-07f4-4fdc-9424-0195ac068a84`): added the episode look-lock ref (`e11d6b64`) alongside the canon/Alexander refs (3 total, up from 2 — untested territory per N7 but held), with explicit NOT-braided/NOT-ornate-medallion contrast language matching the technique that fixed Alexander's hair. Result: clean pass — hair color correct, shoulder pins back to small plain fibulae, hair straight/center-parted/loose as locked, scroll-case visible, both identities holding. **OWNER APPROVED.**
+
+## Round 20 — CLIP 3 video (2026-08-29)
+
+Per the standing ElevenLabs pacing rule, generated per-character `eleven_v3` pacing references before finalizing the prompt: Hazel (voice `WbwwsO6cCyUItWWlHOKN`, same as Clip 2 — easy/curious then dry/amused) and Alexander (voice `1koyuv6vFWwrfTeqpDzq`, same as Clip 2 — unhurried/economical, voice independent of his body's physical urgency). Imported as media `5add4903-e22b-4a1b-91e0-9d89498616e4` (Hazel) and `15ab143f-b75c-4580-8de2-d36a261dcd98` (Alexander). Generated from the approved v3 still (`391868a8`), full identity reference set (10 images) plus the two audio references (12 medias total). A different preset intercept this time ("3D RENDER," irrelevant) — declined, resubmitted literally.
+
+| # | Item | Job ID |
+|---|---|---|
+| BH | Clip 3 video | `bc34f0ef-1bf6-40a1-9b75-e550b25eb573` |
+
+AWAITING generation + QC + delivery.
