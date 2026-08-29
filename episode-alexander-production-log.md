@@ -426,3 +426,13 @@ Generated from the approved start-frame still (`adc48e39`) via omni_reference, H
 | AY | Clip 1 v1 | `38a0ea72-971b-4fd9-a542-44b70181aa49` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_061217_38a0ea72-971b-4fd9-a542-44b70181aa49.mp4 |
 
 Delivered per §20. QC: freezedetect PASS (9.06s, no frozen stretches); the glance-back-at-the-cot beat lands correctly around the 4-4.5s mark as scripted (profile turn toward Alexander, mid-line); the held deadpan close reads clean; Hazel identity, costume, and the still's composition (Alexander asleep, two guards flanking, lamplight/brazier) all held from the start frame through the full 9s; guards remained still throughout; no phone/rig ever visible. AWAITING OWNER verdict — this is CLIP 1 of 12 (6a already in the can; 10 remain after this one).
+
+## Round 13 — CLIP 2 start-frame still (2026-08-29)
+
+Composition: Parmenion (locked ref `3c6c04b3`) shaking Alexander (locked ref `86a6746d`) awake mid-shout, Hazel (v5 look-lock `e11d6b64`) in selfie framing at the front. Note: the prompt text's "second/third reference" labels were mismatched against the actual media order (Alexander was 2nd, Parmenion 3rd, but the prose described them swapped) — verified NOT an issue in the actual render: the model correctly matched each description (silver-grey/weathered vs. young/light-brown) to the right visual identity rather than following ordinal position. Flagged as a prompt-writing lesson: describe identity by DISTINGUISHING FEATURES, not by reference-image order, since order-based labels are error-prone to write and the model doesn't reliably need them anyway.
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AZ | Clip 2 start-frame v1 | `bdc9a2d8-2e2b-44fa-a001-046af7db8c8e` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_063816_bdc9a2d8-2e2b-44fa-a001-046af7db8c8e.png |
+
+Delivered per §20. QC: Hazel v5 identity holds; Parmenion reads as older/weathered/silver-grey per his lock, gripping Alexander's shoulder mid-shake; Alexander reads young/light-brown-haired, eyes opening, consistent with his lock. Tent/lamplight/brazier continuity with clip 1's world. AWAITING OWNER approval before generating the clip.
