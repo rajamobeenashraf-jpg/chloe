@@ -198,3 +198,13 @@ Owner rolled back to B2 v3 as base (hazel eyes, original size — v4's blue/bigg
 | AC | Hazel v5 candidate — B2 v5 refined | `0f1db5cd-b037-49b4-a31e-2b1dd2b7ba78` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_031202_0f1db5cd-b037-49b4-a31e-2b1dd2b7ba78.png |
 
 Delivered per §20. QC: hazel eyes preserved at correct size; freckles now faint-sparse; slightly fairer with a touch more rosy flush; lips unchanged in size with a pinker rose tint; realism intact. AWAITING OWNER: lock as the v5 face or iterate.
+
+## Round 7f — B2 v6: +10% fairness on the verbally-locked v5 (owner pause + iteration, 2026-08-29)
+
+Owner said "lock it" on B2 v5 (`0f1db5cd`), then "stop" before any lock-document change was made (CHARACTER_LOCK.md untouched, still v4), then directed one more change: complexion +10% fairer, all else identical.
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AD | Hazel v5 candidate — B2 v6, fairer | `2edb908c-d179-453d-97ae-2806fb5f07c4` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_032017_2edb908c-d179-453d-97ae-2806fb5f07c4.png |
+
+Delivered per §20. QC: visibly fairer with the rosy flush preserved; identity, freckle trace, hazel eyes, lips all held; realism intact. AWAITING OWNER: lock v6 (or re-lock v5) — no lock-document change until the pick is final.
