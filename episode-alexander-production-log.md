@@ -280,3 +280,8 @@ Delivered per §20. Claude QC: the photo-edit face 3/4 is the closest identity m
 | AO | Full-body 3/4 v4 (tall/hourglass) | `1eb09f83-215a-4377-b806-d10a6cc3f9c4` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_035010_1eb09f83-215a-4377-b806-d10a6cc3f9c4.png |
 
 Delivered per §20. Claude QC: taller/longer-legged reads clearly; waist-hip definition visible in the fitted wardrobe; faces at distance hold the v5 identity; realistic proportions maintained. AWAITING OWNER verdicts to complete the canon.
+
+## Round 8e — full-body v5: figure pushed further via photo-edit (owner-directed 2026-08-29) + EDITING_HANDOFF.md created
+
+- Owner: "make her figure more sexy" → both full-bodies re-done as PHOTO-EDITS of the approved-composition v4 pair (face/wardrobe/pose/setting held, figure accentuated): front `5f9b1a43-a3e9-482d-8465-5b0d19793d29`, 3/4 `270620f1-adc6-4a86-bfd8-149dcb8bdd92` (host d8j0ntlcm91z4, hf_20260829_035351_<job>.png). Delivered per §20, awaiting verdicts.
+- Owner asked for a portable editing-rules file for another chat → `EDITING_HANDOFF.md` created at repo root (all edit-stage rules: gates, §16 cuts, §25/§15 sound+music, conform checklist, Gemini eyes, caption system, technical QC, assembly hygiene, pipeline order) and sent to him.
