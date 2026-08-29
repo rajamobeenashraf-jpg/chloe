@@ -81,6 +81,27 @@ async function main() {
     `drawtext=fontfile=${FONT_BOLD}:text='${escText(text)}':fontcolor=white:fontsize=44:` +
     `borderw=3:bordercolor=black@0.85:x=(w-text_w)/2:y=${y}:enable='gte(t\\,${titleCardStart})'`;
   const scoreInputIndex = clipPaths.length;
+
+  // Owner decision, 2026-08-29: clip10B is now almost entirely diegetic-silent
+  // (its own generation was deliberately scripted with no music/effects, per
+  // the owner's request, to stop it fighting the shared score) -- with
+  // nothing else in the mix, the score there reads as noticeably thinner than
+  // clip9's fuller mix (dialogue + crying + battle ambient + score together),
+  // even though the score's own ducked level measures the same in both
+  // clips. Boost the score specifically during clip10B's span so that clip
+  // doesn't play back feeling quieter than its neighbors.
+  let clip10BStart = 0;
+  for (const id of ids) {
+    if (id === "clip10B") break;
+    clip10BStart += manifest[id];
+  }
+  const clip10BEnd = clip10BStart + (manifest.clip10B || 0);
+  const hasClip10B = ids.includes("clip10B");
+  const SCORE_BOOST_DB = 5;
+  const scoreBoostFilter = hasClip10B
+    ? `,volume=${SCORE_BOOST_DB}dB:enable='between(t,${clip10BStart},${clip10BEnd})'`
+    : "";
+
   const filterComplex =
     `${filterParts.join("")}concat=n=${clipPaths.length}:v=1:a=1[catv][cata];` +
     `[catv]${drawText(TITLE_CARD_LINE1, 130)},${drawText(TITLE_CARD_LINE2, 195)}[titled];` +
@@ -93,7 +114,7 @@ async function main() {
     // consumed once otherwise.
     `[cata]asplit=2[cata_key][cata_mix];` +
     `[${scoreInputIndex}:a]loudnorm=I=-23:TP=-2:LRA=11,atrim=0:${expectedTotal},apad=whole_dur=${expectedTotal},asetpts=PTS-STARTPTS[score_norm];` +
-    `[score_norm][cata_key]sidechaincompress=threshold=0.04:ratio=10:attack=15:release=400:makeup=1[score_ducked];` +
+    `[score_norm][cata_key]sidechaincompress=threshold=0.04:ratio=10:attack=15:release=400:makeup=1${scoreBoostFilter}[score_ducked];` +
     `[cata_mix][score_ducked]amix=inputs=2:duration=first:dropout_transition=0:normalize=0[mixed_a];` +
     `[mixed_a]afade=t=out:st=${fadeStart}:d=${FADE_OUT_DURATION}[outa]`;
 

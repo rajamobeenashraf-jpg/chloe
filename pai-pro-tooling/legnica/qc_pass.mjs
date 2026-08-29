@@ -174,6 +174,34 @@ const CLIP_HEAD_TRIM = {
 // future clip needs the same dead-silence fix.
 const CLIP_AMBIENT_BED = new Set();
 
+// Owner decision, 2026-08-29: clip10B's recreated audio (silent/ambient-only
+// per the no-music generation instruction) carries a faint low-frequency
+// rumble artifact below ~150Hz (verified via spectrogram: a smeared
+// broadband band under ~1.5kHz, constant for the clip's full duration -- a
+// synthesis artifact, not real wind/ambient texture). At its native level
+// (~-61 to -64dB raw) this would be inaudible, but the universal
+// loudnorm=I=-16 step below tries to bring EVERY clip's integrated loudness
+// up to the same -16 LUFS target regardless of how quiet its actual content
+// is -- on a clip this quiet, that means a large gain boost, which turned
+// the faint rumble into a loud broadband hiss across nearly the whole
+// spectrum (measured -17.8dB mean after loudnorm, vs -61.6dB raw). THIS,
+// not the raw artifact itself, is the actual root cause of the "noise in
+// the background" the owner reported. Root-caused and fixed below by
+// skipping loudnorm entirely for this clip (see CLIP_SKIP_LOUDNORM) rather
+// than trying to filter around a problem loudnorm itself was creating.
+// The highpass still runs as a light safety net against the underlying
+// rumble at its native (now un-amplified) level.
+const CLIP_HIGHPASS = {
+  clip10B: 150,
+};
+
+// See CLIP_HIGHPASS above: clips that are deliberately near-silent
+// (diegetic-audio-free, relying entirely on the shared score) must not be
+// run through loudnorm's fixed -16 LUFS integrated-loudness target, which
+// otherwise amplifies whatever quiet noise floor exists into an audible
+// hiss. These clips get the highpass (if any) and fade/click-guard only.
+const CLIP_SKIP_LOUDNORM = new Set(["clip10B"]);
+
 function ambientBedFilterComplex(inputDuration, dialogueLabel) {
   return (
     `[1:a]lowpass=f=500,lowpass=f=500,volume=0.025,asetpts=PTS-STARTPTS[bed];` +
@@ -203,9 +231,17 @@ async function qcOneClip(clip, { isFirst, isLast }) {
   if (isLast) fadeParts.push(`afade=t=out:st=${(outputDuration - CLICK_GUARD).toFixed(3)}:d=${CLICK_GUARD}`);
   const fadeSuffix = fadeParts.length ? `,${fadeParts.join(",")}` : "";
   const hasBed = CLIP_AMBIENT_BED.has(clip.id);
+  const highpassHz = CLIP_HIGHPASS[clip.id];
+  const highpassPrefix = highpassHz ? `highpass=f=${highpassHz},` : "";
+  const skipLoudnorm = CLIP_SKIP_LOUDNORM.has(clip.id);
+  const audioChain = skipLoudnorm
+    ? `${highpassPrefix}anull${fadeSuffix}`
+    : `${highpassPrefix}loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}`;
   const noteParts = [];
   if (fadeParts.length) noteParts.push(`outer-edge click-guard (${CLICK_GUARD * 1000}ms)`);
   if (hasBed) noteParts.push("synthesized ambient-bed mix to kill dead-silent tail");
+  if (highpassHz) noteParts.push(`${highpassHz}Hz highpass to remove a low-frequency noise artifact`);
+  if (skipLoudnorm) noteParts.push("loudnorm SKIPPED (deliberately near-silent clip -- loudnorm would amplify it into audible noise)");
   const fadeNote = noteParts.length ? noteParts.join(" + ") : "no fade -- true hard audio join per §29";
 
   const bedInputArgs = hasBed
@@ -213,11 +249,11 @@ async function qcOneClip(clip, { isFirst, isLast }) {
     : [];
 
   if (clip.captions.length === 0) {
-    console.log(`[qc] ${clip.id}: no captions, loudnorm + ${fadeNote}${trimNote}${headTrimNote}`);
+    console.log(`[qc] ${clip.id}: no captions, ${skipLoudnorm ? "" : "loudnorm + "}${fadeNote}${trimNote}${headTrimNote}`);
     if (hasBed) {
       await run("ffmpeg", [
         "-y", ...seekArgs, "-i", srcPath, ...bedInputArgs,
-        "-filter_complex", `[0:a]loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}[dial];${ambientBedFilterComplex(outputDuration, "[dial]")}`,
+        "-filter_complex", `[0:a]${audioChain}[dial];${ambientBedFilterComplex(outputDuration, "[dial]")}`,
         "-map", "0:v", "-map", "[aout]",
         "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
         "-t", String(outputDuration),
@@ -226,7 +262,7 @@ async function qcOneClip(clip, { isFirst, isLast }) {
     } else {
       await run("ffmpeg", [
         "-y", ...seekArgs, "-i", srcPath,
-        "-af", `loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}`,
+        "-af", `${audioChain}`,
         "-c:v", "copy",
         "-c:a", "aac", "-b:a", "192k",
         "-t", String(outputDuration),
@@ -242,12 +278,12 @@ async function qcOneClip(clip, { isFirst, isLast }) {
     : clip.captions;
   await fs.writeFile(assPath, buildAss(shiftedCaptions));
 
-  console.log(`[qc] ${clip.id}: burning ${clip.captions.length} caption(s) + loudnorm + ${fadeNote}${trimNote}${headTrimNote}`);
+  console.log(`[qc] ${clip.id}: burning ${clip.captions.length} caption(s) + ${skipLoudnorm ? "" : "loudnorm + "}${fadeNote}${trimNote}${headTrimNote}`);
   if (hasBed) {
     await run("ffmpeg", [
       "-y", ...seekArgs, "-i", srcPath, ...bedInputArgs,
       "-filter_complex",
-      `[0:v]ass=${assPath}[vout];[0:a]loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}[dial];${ambientBedFilterComplex(outputDuration, "[dial]")}`,
+      `[0:v]ass=${assPath}[vout];[0:a]${audioChain}[dial];${ambientBedFilterComplex(outputDuration, "[dial]")}`,
       "-map", "[vout]", "-map", "[aout]",
       "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p",
       "-c:a", "aac", "-b:a", "192k",
@@ -258,7 +294,7 @@ async function qcOneClip(clip, { isFirst, isLast }) {
     await run("ffmpeg", [
       "-y", ...seekArgs, "-i", srcPath,
       "-vf", `ass=${assPath}`,
-      "-af", `loudnorm=I=-16:TP=-1.5:LRA=11${fadeSuffix}`,
+      "-af", `${audioChain}`,
       "-c:v", "libx264", "-crf", "16", "-preset", "medium", "-pix_fmt", "yuv420p",
       "-c:a", "aac", "-b:a", "192k",
       "-t", String(outputDuration),
