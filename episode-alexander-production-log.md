@@ -531,3 +531,15 @@ Three attempts on the still, same soft-block-with-no-error-detail pattern as Cli
 | BF | Clip 3 start-frame still (SUCCESS) | `9a0a6328-93d9-43f7-bbea-367213a3b02c` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_101030_9a0a6328-93d9-43f7-bbea-367213a3b02c.png |
 
 QC: Hazel identity holds (v5 face, freckles, hazel eyes), true selfie POV with no phone/rig visible, Alexander in background buckling his strap without looking up (per the eyeline instruction), worn scroll-case visible on the stool near the cot. One minor note, not treated as a defect: his hair reads slightly darker than "light-brown" under the dim tent lighting — likely grade, not identity drift. Delivered per §20. AWAITING OWNER approval before generating the clip.
+
+**Owner verdict:** Clip 2 approved. Clip 3 still flagged for identity drift (Alexander's hair color) — regenerate.
+
+## Round 19 — CLIP 3 start-frame v2: hair-color drift fix, new wardrobe drift introduced (2026-08-29)
+
+Kept the lean 2-reference set (Hazel canon + Alexander) that fixed the earlier soft-block failures, swapped Alexander's reference to a closer face shot (`d80986c3`, face front) for tighter color lock, and added explicit anti-drift language compensating for the warm lamplight grade shifting perceived hair color darker.
+
+| # | Item | Job ID |
+|---|---|---|
+| BG | Clip 3 start-frame v2 | `6712a698-6d26-4d16-ac9c-21c0e8446a16` |
+
+**Self-QC (caught before presenting as fixed, not after):** Alexander's hair color corrected — reads as proper warm light-brown now. But NOT a clean pass: this regeneration introduced NEW drift on Hazel's side not present in v1 — her shoulder pins rendered as large ornate circular medallions instead of the locked "small plain straight-pin bronze fibulae," and her hair styled in a loose side-braid/wave instead of the locked straight center-part worn loose. One drift traded for another. Delivered with this caveat stated plainly, not presented as solved. AWAITING owner direction on next step.
