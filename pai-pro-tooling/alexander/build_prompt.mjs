@@ -50,12 +50,23 @@ const GRADES = {
 // Reference media (Higgsfield job IDs / media IDs; see production log for URLs).
 const REFS = {
   // v5 episode package (owner-approved 2026-08-29) — the v4-era set is retired.
+  // Episode-costume views are 2K (photo-edits of the canon); the canon itself is
+  // 4K per the owner's permanent-upscale lock (CHARACTER_LOCK.md).
   HAZEL: [
     { value: "e11d6b64-70b0-4021-839c-69e519472d9a", note: "v5 episode look-lock (scribe costume)" },
     { value: "64c0dbae-137b-4dc8-9be2-261b61758ff8", note: "episode full-body front" },
     { value: "319c14c7-13d9-408c-bcb0-76dd5bc7c67e", note: "episode full-body 3/4 walking" },
     { value: "81a91c73-2893-413b-b67f-2c4aaa5456ea", note: "episode face close-up front" },
     { value: "9885d19e-07b9-4e38-bb32-6b95ffe75e85", note: "episode face close-up 3/4" },
+  ],
+  // Canon identity anchors at 4K (permanent, owner-locked 2026-08-29) — pass alongside
+  // the episode-costume refs above when a generation needs the highest-fidelity face lock.
+  HAZEL_CANON_4K: [
+    { value: "119465f3-c465-4f11-873e-dfa2883c36c6", note: "master, 4K" },
+    { value: "8f22ad52-3db6-4c69-ac9f-77cfc4dd3e24", note: "face front, 4K" },
+    { value: "274e937a-2e4e-485d-92a0-d17bd96e0ca3", note: "face 3/4, 4K" },
+    { value: "1a8133ee-32c6-4600-a488-67c404276333", note: "full-body front, 4K" },
+    { value: "17af1f93-300c-406a-9047-e36bb9a61497", note: "full-body 3/4, 4K" },
   ],
   ALEXANDER: [
     { value: "86a6746d-4cac-4eae-8665-faa1485279b4", note: "full-body front" },

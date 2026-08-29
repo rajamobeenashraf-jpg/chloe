@@ -17,6 +17,19 @@ The character's name is Hazel — locked by the owner in chat ("name is hazel. l
 
 Full iteration trail (casting A/B1/B2/B3 → glow → fair+pink → refinement → natural lips → v9), with per-step job IDs and QC notes: `episode-alexander-production-log.md` Rounds 7–7i.
 
+### 4K upscale — PERMANENT reference resolution (owner-directed 2026-08-29: "lock these permanently for all future generations")
+All 5 canon images (the master + the 4-view set below) were upscaled via the dedicated `upscale_image` tool (bytedance provider, deterministic — same content, no regeneration/drift risk) from 1792×2400 to 4K. **These 4K job IDs are now the permanent reference set for every future v5 generation, replacing the originals below.** `build_prompt.mjs`'s `HAZEL` refs array uses these.
+
+| Asset | Source (2K) | 4K Job ID | URL |
+|---|---|---|---|
+| Master | `a49d8038` | `119465f3-c465-4f11-873e-dfa2883c36c6` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_053254_119465f3-c465-4f11-873e-dfa2883c36c6.png |
+| Face front | `9bbdd985` | `8f22ad52-3db6-4c69-ac9f-77cfc4dd3e24` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_053258_8f22ad52-3db6-4c69-ac9f-77cfc4dd3e24.png |
+| Face 3/4 | `b70ab775` | `274e937a-2e4e-485d-92a0-d17bd96e0ca3` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_053256_274e937a-2e4e-485d-92a0-d17bd96e0ca3.png |
+| Full-body front | `dc77b494` | `1a8133ee-32c6-4600-a488-67c404276333` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_053618_1a8133ee-32c6-4600-a488-67c404276333.png |
+| Full-body 3/4 | `1eb09f83` | `17af1f93-300c-406a-9047-e36bb9a61497` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_053303_17af1f93-300c-406a-9047-e36bb9a61497.png |
+
+(Full-body front's first upscale attempt, job `bb9630e8`, FAILED and was retried successfully as `1a8133ee` above.)
+
 ### Frozen identity string — v5 (paste verbatim into every prompt; never paraphrase)
 
 ```

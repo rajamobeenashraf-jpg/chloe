@@ -24,6 +24,12 @@ Standing rules:
 - Video output is vertical 9:16 unless the owner says otherwise. The character's name is **HAZEL** (owner lock 2026-08-20, recorded in `CHARACTER_LOCK.md`) — it may appear in dialogue, captions, and on-screen text. Proposed sign-off ritual "Hazel — out of time" awaits owner confirmation.
 - Judge episode ideas by the signal stack in `research-methodology.md` — never by raw views alone.
 
+## Angles 2.0 / SHOTS — permanent standing rule (owner lock 2026-08-29, no exceptions)
+
+Higgsfield's **Angles 2.0** (directed single camera-angle change from one photo) and **SHOTS** (9 AI-picked angle options from one photo) are website-only tools — verified NOT reachable via the Higgsfield MCP connector (absent from `apps_search`), and NOT reachable via any sandboxed/local browser either (verified 2026-08-29: a Playwright session, whether in the Higgsfield cloud sandbox or this environment's own Chromium, is always a fresh anonymous session with no path to the owner's Higgsfield login — there is no bridge from this environment to the owner's device, browser, or credentials, regardless of which browser engine is used).
+
+**Standing rule, permanent, every session, no exceptions: whenever Claude judges that a shot would benefit from a specific new camera angle (Angles 2.0) or from seeing multiple angle options of one composition (SHOTS), Claude tells the owner explicitly, at the point the need arises — never silently substitutes a workaround, never skips it, never claims afterward to have forgotten.** The owner then runs the tool himself on higgsfield.ai and sends Claude the resulting image to use/animate. This is the owner's explicit, repeated instruction (2026-08-29) and is not contingent on Claude's memory in any given session — it is written here so every future session inherits it automatically.
+
 ## Owner's QC rule (decided 2026-08-20 — supersedes the per-clip "Stage A" in research-methodology.md §4)
 
 - Do NOT run Gemini (or any machine video-analysis) during the clip-GENERATION

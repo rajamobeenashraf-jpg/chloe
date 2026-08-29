@@ -90,3 +90,14 @@ egress-blocked in this environment; formula corroborated across multiple seconda
 **Adoption plan:** the episode's `build_prompt.mjs` (pai-pro-tooling/alexander/) implements the
 template order, @-tag reference roles, static-camera phrasing, constraint lists, and
 cause-before-reaction structure. First production clip validates items 1–6 → promote to verified.
+
+## EXTERNAL TOOLS OUT OF REACH — Angles 2.0 / SHOTS (owner standing rule, see CLAUDE.md)
+
+Higgsfield's **Angles 2.0** (one photo → a directed new camera angle) and **SHOTS** (one photo → 9
+AI-picked angle options) would materially help exactly the kind of angle-finding problem S12
+describes — but both are website-only, verified unreachable from this environment (not in the
+MCP `apps_search` registry; a sandboxed/local Playwright browser is always an anonymous session
+with no path to the owner's login, confirmed 2026-08-29, regardless of browser engine).
+**Permanent rule (owner lock 2026-08-29): whenever a shot would benefit from either tool, tell
+the owner at the point the need arises — he runs it himself and sends back the result.** Never
+silently work around this, never skip it. Full rule: `CLAUDE.md`.
