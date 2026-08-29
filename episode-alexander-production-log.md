@@ -256,3 +256,15 @@ Owner verdict on the first 4-view set: face-front (`9bbdd985`) MATCHES and is ke
 | AJ | Face 3/4 v2 (gentler angle, both eyes visible) | `14acb9d5-2288-4913-8140-55576839902a` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_034112_14acb9d5-2288-4913-8140-55576839902a.png |
 
 Delivered per §20. Learnings entry pending owner verdict: doubled-anchor method (master + one approved view) as the standard fix for multi-view identity drift.
+
+## Round 8c — body update + face-3/4 photo-edit method (owner-directed 2026-08-29)
+
+Owner: (a) "give her a more sexy body" → both full-body views regenerated with an hourglass figure spec (realistic, same casual wardrobe); (b) round-8b face 3/4 still mismatched → "try harder" → NEW METHOD: photo-EDIT of the approved face-front itself ("same photograph, head turned ~25°"), front image as dominant ref, master as identity check only.
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AK | Full-body front v3 (updated figure) | `298ca6a2-b875-4cd3-b436-517e63a66075` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_034546_298ca6a2-b875-4cd3-b436-517e63a66075.png |
+| AL | Full-body 3/4 v3 (updated figure) | `85ca9dda-026b-4748-b51c-00ee62e64aae` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_034546_85ca9dda-026b-4748-b51c-00ee62e64aae.png |
+| AM | Face 3/4 v3 (photo-edit of approved front) | `b70ab775-ae1b-4a0e-afba-7df9ab3af9cd` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_034628_b70ab775-ae1b-4a0e-afba-7df9ab3af9cd.png |
+
+Delivered per §20. Claude QC: the photo-edit face 3/4 is the closest identity match yet (same session look — brows/eyes/nose/lips/complexion/freckle trace all carried). Figure change reads subtly in the casual wardrobe (noted to owner: loose tee + straight jeans hide silhouette; fitted wardrobe would show it, his call). PROMPT_LEARNINGS candidate once owner confirms: photo-edit-of-approved-view beats fresh-render for angle coverage.
