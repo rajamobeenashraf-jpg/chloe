@@ -30,6 +30,9 @@ Rule of use: consult this file at §9 stage 8 (prompt writing), before every pro
 | # | Finding | Evidence | Date |
 |---|---|---|---|
 | N1 | Also ignores "no crests" negation on helmets (same failure as S3 — cross-model). Positive description required. | `9dc96a94` | 2026-08-29 |
+| N4 | **PHOTO-EDIT beats fresh-render for angle coverage:** two fresh-rendered face-3/4s drifted to a different woman (`d6f10ddd`, `14acb9d5`, both owner-rejected) even with doubled refs; framing it as "PHOTO EDIT of the first reference — same photograph, head turned ~25°" held identity on the first try (`b70ab775`, owner-approved). Standard method for multi-view sets and any same-subject variation. | v5 canon build | 2026-08-29 |
+| N5 | Multi-view identity drift is the norm, not the exception, when rendering fresh angles from refs: 4 of the first 6 v5 view renders drifted (full-bodies v1+v2, face-3/4 v1+v2). Budget for rejection rounds; owner's eye is the gate. | v5 canon build | 2026-08-29 |
+| N6 | Incremental single-change iteration works cleanly on a same-face chain (glow → fair → pink → lips → freckles, 9 steps, identity held throughout when each step named "the ONLY change") — but big anatomical asks (eyes +20%) render subtler than requested; the model resists large feature shifts from a same-face ref. | Rounds 7–7i | 2026-08-29 |
 | N2 | Executes complex two-army compositions with placement language well in a STILL (where Seedance t2v fails in motion) — which is why the start-frame method works. | `9dc96a94` | 2026-08-29 |
 | N3 | Look/wardrobe drift risk in video is fixed by passing an approved costume STILL as a reference, not by longer text (text-only wardrobe drifted twice on Troy). | Troy log, clip-1 attempts | 2026-08 (Troy) |
 

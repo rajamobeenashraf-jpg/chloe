@@ -25,14 +25,14 @@ The EXACT same woman shown in the reference images — all references depict ONE
 
 > The v4-era STRICT RULE stands unchanged for v5: natural/human/realistic is a hard pass/fail bar on every render. And the Tier rule stands: generate from the v5 master + approved v5 4-view set only; NEVER chain generations off unapproved outputs — drift compounds.
 
-### v5 4-view reference set (per §31: 2 full-body + 2 face crops, single-view images, never grids)
-Generated 2026-08-29 from the v5 master, delivered to the owner per §20 — status below updates on his verdict. Host `d8j0ntlcm91z4.cloudfront.net`, path `user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_033747_<job>.png`.
+### v5 4-view reference set — **CANON COMPLETE (all four views owner-approved 2026-08-29)**
+Per §31: 2 full-body + 2 face crops, single-view images, never grids. **The Seedance reference package for every v5 Hazel generation = the v5 master + these four approved views.** Host `d8j0ntlcm91z4.cloudfront.net`, path `user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_<timestamp>_<job>.png` (timestamps: faces 20260829_033747/034628, full-bodies 20260829_035009-035010).
 
 | View | Job ID | Status |
 |---|---|---|
 | Face close-up front | `9bbdd985-8cc8-475c-9c05-060f7e5ca472` | **APPROVED (owner, 2026-08-29)** — the identity anchor beside the master |
 | Face close-up 3/4 | `b70ab775-ae1b-4a0e-afba-7df9ab3af9cd` | **APPROVED (owner, 2026-08-29)** — made as a PHOTO-EDIT of the approved front ("same photograph, head turned ~25°"), the method that finally held identity after two fresh-render attempts drifted (`d6f10ddd`, `14acb9d5` — both REJECTED, never use) |
-| Full-body front | pending owner verdict | v1 `a7f5576b` and v2 `d11a4b69` REJECTED (identity drift); candidates: tall/hourglass `dc77b494-57bd-41d9-a129-7120dc46447d` (same round as the approved 3/4) or figure-pushed `5f9b1a43` |
+| Full-body front | **APPROVED (owner, 2026-08-29)** | `dc77b494-57bd-41d9-a129-7120dc46447d` (tall ~5'9", hourglass, fitted wardrobe, hand on hip — same round as the approved 3/4). Rejected: v1 `a7f5576b`, v2 `d11a4b69` (identity drift), figure-pushed `5f9b1a43` (set aside) |
 | Full-body 3/4 walking | **APPROVED (owner, 2026-08-29 — "previous side version", confirmed as Option A)** | `1eb09f83-215a-4377-b806-d10a6cc3f9c4` (tall ~5'9", hourglass, fitted wardrobe, mid-stride). Rejected: v1 `3ac7a1e2`, v2 `eaa1e93e` (identity drift), figure-pushed v4 `270620f1` (set aside by owner's choice of the previous version) |
 
 **Figure/stature spec (owner-directed 2026-08-29, part of the v5 lock once a full-body view is approved):** tall (~5'9", long-legged) with a pronounced but realistic hourglass figure — full bust, slim defined waist, full rounded hips, fit and toned; never cartoonish proportions.

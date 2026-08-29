@@ -289,3 +289,9 @@ Delivered per §20. Claude QC: taller/longer-legged reads clearly; waist-hip def
 ## Round 8f — full-body 3/4 APPROVED (2026-08-29, verified as Option A)
 
 Owner approved the PREVIOUS round's full-body 3/4 (`1eb09f83`, tall/hourglass) after an explicit which-image verification; the figure-pushed 3/4 (`270620f1`) is set aside. v5 canon now: master ✓, face front ✓, face 3/4 ✓, full-body 3/4 ✓. Remaining: full-body FRONT verdict (candidates: `dc77b494` same round as the approved 3/4, or figure-pushed `5f9b1a43`).
+
+## Round 8g — v5 CANON COMPLETE (2026-08-29)
+
+Owner approved the full-body front `dc77b494` (tall/hourglass pair, matching the approved 3/4). **The v5 reference canon is COMPLETE: master `a49d8038` + face front `9bbdd985` + face 3/4 `b70ab775` + full-body front `dc77b494` + full-body 3/4 `1eb09f83`.** CHARACTER_LOCK.md updated (canon marked complete, figure/stature spec locked in); PROMPT_LEARNINGS.md updated with the confirmed methods (N4 photo-edit angle coverage, N5 drift-is-the-norm, N6 incremental chains).
+
+**NEXT (needs owner §19 approval before submission): regenerate the Alexander episode's Hazel slate on the v5 face** — the current approved slate (look-lock `112a948e` + 4-view `72a8d0b5`/`e5eb360a`/`2e4a2d55`/`83df8574`) carries the v4 face and cannot be used for v5 clips. Proposal: (1) episode look-lock still — v5 face in the scribe chiton + episode soft-glam + open straight hair (photo-edit method from the v5 master); (2) the episode 4-view set from it (photo-edit method). ~5 stills total, each delivered per §20.
