@@ -131,15 +131,27 @@
       "endingState": "He walks on into the noise; she watches him go, tablet lowered; cut lands on her exhale."
     },
     {
-      "id": "9", "duration": 9, "mode": "V", "hazel": true, "characters": [],
+      "id": "9a", "duration": 18, "mode": "V", "hazel": true, "characters": [],
       "grade": "dusk", "battle": false,
       "environment": "Dusk deepening, campfires relighting across the camp — a frame consciously rhyming clip 1's lamplit opening.",
-      "scene": "Outro, talk-to-lens, quiet: the empire line, then softer the Homer/Achilles payoff, then the sign-off. The final shot is built around the one idea the viewer should leave with.",
-      "timeline": "0-4s: the empire lines. 4-8s: (beat, softer) the Homer/Achilles lines. 8-9s: (quiet) the sign-off.",
-      "dialogue": "HAZEL: \"Cyrus built that empire two hundred and twenty years ago. It ended today, because a man who overslept his own war refused to win it in the dark — and because one king turned his chariot around.\" (beat, softer) \"He keeps Homer under his pillow. He wants to outlive Achilles. Twelve years from today, he's dead at thirty-two — and somehow that's still longer than he thought he'd get.\" (quiet) \"Hazel — out of time.\"",
-      "camera": "Her handheld selfie lens, steady now; campfires relighting in the deep frame behind her. The camera never cuts.",
-      "continuity": "Frame-rhyme with clip 1 (small warm lights in darkness behind her); tablet visible, held calmly; battle-dust softened but present.",
-      "sound": "Fires catching, low camp murmur settling, night insects beginning; her voice close and quiet.",
+      "scene": "Outro part 1, talk-to-lens: the empire line lands as a weighty, matter-of-fact reveal — the gravity of the fact does the work, not a slowed performance. Ends on a held beat that sets up the hard cut into 9b's tonal pivot.",
+      "timeline": "0-1s: beat, she settles to speak. 1-17s: the empire line (36 words @ ~130 wpm — weighty but not yet softened). 17-18s: hold on her steady expression, hard cut to 9b.",
+      "dialogue": "PACING: weighty, matter-of-fact reveal — not rushed, not urgent; the fact's own gravity carries the pace, target ~130 wpm. HAZEL (steady, direct to lens, matter-of-fact, not yet soft): \"Cyrus built that empire two hundred and twenty years ago. It ended today, because a man who overslept his own war refused to win it in the dark — and because one king turned his chariot around.\"",
+      "camera": "Her handheld selfie lens, steady; campfires relighting in the deep frame behind her. EYELINE: her eyes stay on the lens/viewer for the entire line — she is not writing here, the tablet is held low and calm, out of her sightline, and her gaze never drops to it. The camera never cuts.",
+      "continuity": "Frame-rhyme with clip 1 (small warm lights in darkness behind her); tablet visible, held calmly, out of her eyeline; battle-dust softened but present.",
+      "sound": "Fires catching, low camp murmur settling, night insects beginning; her voice level and matter-of-fact — the softening begins in 9b, not here.",
+      "endingState": "Hold one beat on her steady expression after the line lands; hard cut to 9b."
+    },
+    {
+      "id": "9b", "duration": 22, "mode": "V", "hazel": true, "characters": [],
+      "grade": "dusk", "battle": false,
+      "environment": "Same dusk moment, continuing directly from 9a with no time skip — campfires relighting across the camp, frame still rhyming clip 1's lamplit opening.",
+      "scene": "Outro part 2, talk-to-lens: the softer Homer/Achilles payoff, then quieter still for the sign-off. This is the final shot of the episode — built around the one idea the viewer should leave with.",
+      "timeline": "0-16.5s: (softer than 9a) the Homer/Achilles lines (29 words @ ~105 wpm). 16.5-17.5s: beat, quieter still. 17.5-20.5s: (quiet) the sign-off (4 words @ ~75 wpm, breath-constrained true-quiet delivery). 20.5-22s: hold, sign-off lands.",
+      "dialogue": "PACING PER BEAT: first beat noticeably softer and slower than 9a's matter-of-fact delivery — target ~105 wpm. Second beat quieter still — target ~75 wpm, genuinely quiet/breath-constrained, not just a text label. HAZEL (softer than 9a, still direct to lens, the affection under the fact now audible): \"He keeps Homer under his pillow. He wants to outlive Achilles. Twelve years from today, he's dead at thirty-two — and somehow that's still longer than he thought he'd get.\" (beat, quieter still) HAZEL (quiet, unhurried, letting it land): \"Hazel — out of time.\"",
+      "camera": "Her handheld selfie lens, steady, picking up immediately from 9a's hard cut — same continuous moment. EYELINE: her eyes stay on the lens/viewer through both lines, unbroken, including the sign-off; the tablet remains visible but out of her sightline throughout. The camera never cuts.",
+      "continuity": "Continues directly from 9a (same dusk light, same fire position, no reset); frame-rhyme with clip 1 (small warm lights in darkness behind her); tablet visible, held calmly, out of her eyeline; battle-dust softened but present.",
+      "sound": "Fires catching, low camp murmur settling, night insects beginning; her voice drops close and quiet across both lines, quietest on the sign-off.",
       "endingState": "Her face lit by fire in the near-dark, the sign-off landing; hold one beat."
     }
   ]
