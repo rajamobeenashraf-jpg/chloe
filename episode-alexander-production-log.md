@@ -348,3 +348,15 @@ Owner flagged: only ~6-7 riders visible clashing, rest of the army at a visible 
 2. The chosen angle (low, close, facing the charge) is the highest-risk framing for scale and needed an explicit depth-continuation line ("the charge continues in depth behind these riders") that was never written.
 
 6a v2 — the approved production clip — pasted the block verbatim and had no scale problem, confirming the block-injection rule works when actually followed. Logged as PROMPT_LEARNINGS S10/S11. Owner separately corrected Claude for not running Gemini eyes on the test clip proactively per the standing exception — acknowledged, Gemini eyes qc launched immediately (background, `gemini_qc/` output dir), no further instance to be treated as optional going forward.
+
+## VALIDATION TEST v2 — corrected retest, scale issue fixed (owner-requested, 2026-08-29)
+
+Same Persian-side reverse angle as the first test, this time with the frozen ENVIRONMENT_BLOCK pasted VERBATIM (per §7b.3, correcting the S10 error) plus a new explicit depth-continuation line for the close/low angle (S11 mitigation).
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AV | Multi-angle validation test v2 (corrected, full-scale) | `c5fdb474-9b1c-4f55-84cd-17ec1f9ca85d` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_044442_c5fdb474-9b1c-4f55-84cd-17ec1f9ca85d.mp4 |
+
+Delivered per §20. **Claude QC: MAJOR IMPROVEMENT — scale issue fixed.** Frame sampling shows a wide, full-frame-width Companion cavalry formation (~25-30+ riders across, not 6-7), extending into background haze with an implied larger mass beyond, dust rising off the full formation; the impact reads as a genuine multi-rider collision (weapons/shields flying, multiple points of contact) rather than a small clash. Freezedetect PASS (6.08s, no frozen stretches). This confirms S10/S11 as the correct, complete diagnosis — the verbatim-block + depth-continuation fix resolved the scale problem entirely.
+
+**Gemini eyes qc queued on BOTH test clips** (first test still processing as of this entry — verify pass is slow on a full battle scene; v2 to be queued next) — findings to follow automatically per the owner's standing instruction, not held for a prompt.
