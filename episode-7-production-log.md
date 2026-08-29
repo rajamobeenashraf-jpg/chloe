@@ -515,3 +515,37 @@ Owner: remove music entirely from clip1 (opening thesis) and the horse-joke camp
 **Verified with accurate `atrim`-based comparisons** (not the unreliable `-ss` seeking from earlier in this episode's QC): clip1 and clip9 windows now read within 0.1-0.2dB of the pure dialogue-only baseline at the same timestamps -- effectively silent, confirming the mute. A control window in clip6 (never asked to be touched) still shows a real, measurable music contribution over the same dialogue-only baseline, just smaller than the previous round's (~+1.6dB now vs ~+2.7dB before) -- confirms the general volume cut landed without accidentally silencing everything. No clipping (max -0.9dB), frame-exact (125.458s / 3011 frames), freezedetect clean.
 
 Sent for review; 4K upscale still deliberately not re-run.
+
+## Publishing metadata package compiled (2026-08-29)
+
+Owner asked for the episode's metadata plus 3 hook/title options and 3
+thumbnail options. Compiled `episode-7-metadata.md` at the repo root:
+
+- **3 title/hook options**, written from the actual locked script rather
+  than generically — a myth-bust angle (clip 9's "no horse. YET." beat,
+  doubles as the channel's own engagement question), a story-jeopardy angle
+  (clip 1/clip 5's "Rule one" plant-and-payoff), and an emotional-core angle
+  (Krethon's nine-years cord beat, flagged in the script as the channel's
+  most-quoted beat type).
+- **Description, tags, category, hashtags** — description reuses the
+  existing owner-approved pinned-comment disclosure almost verbatim so the
+  two don't contradict each other; tags weighted toward the rising-search
+  terms already verified in `research-methodology.md` (Trojan War +529%,
+  Agamemnon +1,757%, Troy +160%).
+- **3 thumbnail options** — real extracted frames from
+  `troy_final_cut_scored.mp4` (clip 1 vista/gesture, clip 9 deadpan-to-lens
+  on the horse line, clip 10 raid action), not new generations: zero
+  identity-drift risk per `CHARACTER_LOCK.md`'s never-regenerate-the-face
+  rule, zero generation cost. Source timestamps recorded in the metadata
+  file for re-extraction at 4K later.
+- **Asset inventory**: current best cut + CDN link, noted the local 4K file
+  (`troy_final_cut_4k.mp4`) is STALE (built from the rejected round-1
+  score, predates all three music fixes) and must not be delivered as-is.
+  Re-flagged the still-open per-clip Higgsfield job-ID manifest gap
+  (originally noted at Gate 2 as not reconstructible locally) rather than
+  attempting a speculative history-mining reconstruction that's a
+  materially different task from what was actually asked this round.
+  Re-surfaced the two still-open QC items awaiting the owner's fix-or-waive
+  call (clip 4 rope/shield clipping, clip 10 banner text).
+
+Delivered to the owner in chat alongside the three thumbnail image files.
