@@ -208,3 +208,13 @@ Owner said "lock it" on B2 v5 (`0f1db5cd`), then "stop" before any lock-document
 | AD | Hazel v5 candidate — B2 v6, fairer | `2edb908c-d179-453d-97ae-2806fb5f07c4` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_032017_2edb908c-d179-453d-97ae-2806fb5f07c4.png |
 
 Delivered per §20. QC: visibly fairer with the rosy flush preserved; identity, freckle trace, hazel eyes, lips all held; realism intact. AWAITING OWNER: lock v6 (or re-lock v5) — no lock-document change until the pick is final.
+
+## Round 7g — B2 v7: natural bare-pink lips + freckles −5% (owner-directed 2026-08-29)
+
+From v6 (`2edb908c`): lipstick/gloss look removed — bare natural-pink lips with real lip texture; freckles softened another ~5%.
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AE | Hazel v5 candidate — B2 v7, natural lips | `b6906b4d-bf59-4556-a17d-122d0c481e41` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_032537_b6906b4d-bf59-4556-a17d-122d0c481e41.png |
+
+Delivered per §20. QC: lips now read as bare natural pink with visible lip texture (no lacquer shine); freckles a delicate faint trace; identity, fair rosy complexion, hazel eyes all held; realism intact. AWAITING OWNER pick; CHARACTER_LOCK.md still v4, untouched.
