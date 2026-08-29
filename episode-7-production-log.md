@@ -426,3 +426,26 @@ This is the final Episode 7 deliverable pending: the clip10 banner text decision
 Two-day reminder fired as scheduled. Demoed the proposed gold speaker-color variant on clip 4 (quartermaster's three lines in gold, Hazel's own lines white) alongside a direct comparison still. Owner: "No. The white text is good for all the speakers." Decision is final and documented in CLAUDE.md -- no color-coding for any future episode's captions unless the owner raises it again themselves. No production files changed (the demo was rendered standalone on a copy of clip4; the actual episode cut was never touched by this experiment, so nothing to revert).
 
 Recap of what's still open to wrap Episode 7: clip10's banner-text finding (fix or waive), Higgsfield virality_predictor, and the owner's final watch-through/sign-off.
+
+## Re-edit pass against the updated default-branch editing rules (2026-08-29)
+
+A parallel session's Alexander-episode work (branch `claude/pai-connectivity-test-5phlq2`) landed a large rulebook overhaul on the default branch — 66 commits, including a new `EDITING_HANDOFF.md` (portable edit-stage rulebook: cuts/transitions, sound & music, visual conform, Gemini QC, captions, technical QC, repo hygiene, order of operations) and `creative-direction.md` §21-§26. Merged cleanly into this branch (no conflicts) before re-checking Episode 7 against every rule in it. Note: the merge also brought `CHARACTER_LOCK.md` v5 (owner face redesign) and several generation-stage rules (Angles 2.0, immediate delivery, 4K sequencing, eyeline direction, ElevenLabs pacing refs) — these govern *new* footage going forward; v4 "as-filmed" is archived as back-catalog reference only, and nothing in the merge asks for Episode 7 (already shot on v4) to be reshot.
+
+**§26 (freezedetect mandatory) — checked, clean.** Ran `ffmpeg freezedetect` on all 12 raw clip sources and on the assembled cut: zero freezes anywhere.
+
+**§25 (no true silence at a cut) — real defect found and fixed.** `qc_pass.mjs`'s per-clip edge fade was `0.08s` in/out — exactly the value creative-direction.md §25 names as the root cause of an audible ~0.16s near-silence dip at every hard cut. Changed to `0.02s` (pure digital-click guard, per the rule's own ≈15-20ms target). Rebuilt: `qc_pass.mjs` (all 12 clips clean) → `build_final_cut.mjs` (125.46s, 3011 frames — unchanged, confirming this is audio-envelope-only) → `export_srt.mjs` (177 cues, unchanged).
+
+Verified with `silencedetect` on the new build at three sampled cut points rather than trusting the parameter change alone:
+- clip1→2 (9.042s): one isolated ~21ms dip centered on the cut — the clean signature of the new 20+20ms fade design, well under the old fade's ~160ms combined window and below the range where a gap reads as a perceptible dropout.
+- clip11→12 (112.375s): no silence event overlapping the cut at all; the nearest one starts 39ms after (a post-cut dialogue breath, not the fade).
+- clip6→7 (57.25s): this stretch has genuinely quiet ambient dialogue on both sides of the cut regardless of fade duration (near-continuous low-level readings across the whole sampled window) — a content characteristic, not an edit artifact; not something the fade-duration change is meant to fix.
+
+Also ran the project's own `detect_silence.sh` (per-clip pre-mix gap check, d=0.12) on all 12 raw sources as a sanity pass: every clip's silence pattern matches ordinary conversational pauses, nothing pathological (clips 5 and 10 have continuous speech, no gaps at all).
+
+**Music/sound design — confirmed gap, NOT actioned.** `EDITING_HANDOFF.md` §3 now expects one continuous edit-stage score with story-beat-timed entries/exits, plus a rationed subjective-sound beat and a diegetic-trigger/J-cut/L-cut approach to bridging cuts. Episode 7 currently has no music or ambient-bed track at all — the §25 J-cut/L-cut/energy-shift guidance can't be applied independently of this gap either, since there's no continuous audio layer to bridge cuts with yet. Per the same document's standing gate, generating a score needs owner approval *before* generation — not actioned, flagging for a decision rather than generating unilaterally.
+
+**Job-ID manifest — confirmed gap, not backfilled this pass.** Standing rule calls for a manifest of each clip's PAI/Higgsfield job ID + URL; `clips.json` has none recorded and no separate manifest file exists. Not reconstructible from anything local (no job-history log found on disk). Flagging rather than attempting a reconstruction that's out of scope for this re-edit.
+
+**2K upscale intentionally NOT re-run yet.** The existing `troy_final_cut_2k.mp4` predates this fix. Re-upscaling is a ~20 minute job; holding off until it's clear whether music/sound design is also landing, so the upscale happens once against a fully-finished cut rather than twice.
+
+Updated `troy_final_cut.mp4` / `troy_final_cut_compressed.mp4` (fade fix only, everything else byte-identical in content — same runtime, same frame count, same captions/cards) sent to owner for review.
