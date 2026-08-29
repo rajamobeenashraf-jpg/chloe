@@ -64,6 +64,19 @@ The moment any clip finishes rendering, Claude downloads it immediately, runs th
 
 Found on the Alexander/Gaugamela episode: Clip 2's corrected start-frame still generated at nano_banana_pro's default 2K (a separate process bug, logged in `PROMPT_LEARNINGS.md` as X3) and was upscaled to 4K as part of fixing that bug — before the owner had weighed in on ordering. The owner then locked this explicit approve-before-upscale sequence as the permanent rule, independent of that bug: even when 4K is clearly the right eventual resolution, upscaling is an action that waits for approval like any other production step, never something Claude does proactively or automatically.
 
+## ElevenLabs pacing references — permanent standing rule (owner lock 2026-08-29, no exceptions)
+
+**Every generated clip with dialogue uses ElevenLabs per-character pacing-reference audio, for this episode and every future episode, from now on — not text tempo instructions alone.** Text-only speech-pacing instructions (attitude parentheticals, even explicit contrastive tempo language) were tried twice on the same clip and failed twice to differentiate multi-character delivery — the second attempt had the tempo written directly and explicitly into the prompt and still didn't land. ElevenLabs audio pacing references, tried third, is what the owner is locking in as the standard method going forward.
+
+**Method (established on Episode/Gaugamela Clip 2, `pai-pro-tooling/alexander`):**
+1. For each speaking character in the clip, generate a short `eleven_v3` take (the model that supports inline direction tags like `[urgent, breathless]`, `[calm, unhurried, deliberate]`, `[hesitates, pause]`) reading that character's actual line(s) with the intended emotional/physical pacing baked into the direction tags — pick a voice fitting the character from `creative_list_voices`.
+2. Import each take into Higgsfield storage via `media_import_url` to get a `media_id`.
+3. Pass each as a separate `audio_references` media entry in the Seedance `generate_video` call (one per character, alongside the existing image identity/environment references — this is additive, not a replacement for the image-reference package).
+4. In the prompt's REFERENCE ROLES section, explicitly instruct the model to take **tempo, rhythm, and delivery timing** from each `@AudioN` reference for that character's lines specifically — this is a deliberate, stated reversal (for pacing-bearing clips only) of the project's general "audio references control ONLY timbre" convention, since timbre-only was never validated as the actual constraint and pacing is the thing that needed fixing.
+5. Text-based tempo instructions in the DIALOGUE block stay in the prompt too (belt-and-suspenders) — the audio references reinforce them, they don't replace writing the pacing rule into the text.
+
+This is a standing production step now, not a case-by-case judgment call: any clip with more than one speaking character, or any single-character clip where pacing carries real dramatic weight, gets pacing-reference audio before its prompt is finalized — per the MASTER RULE's checklist, this is now one of the items to verify before presenting a final prompt.
+
 ## Owner's QC rule (decided 2026-08-20 — supersedes the per-clip "Stage A" in research-methodology.md §4)
 
 - Do NOT run Gemini (or any machine video-analysis) during the clip-GENERATION
