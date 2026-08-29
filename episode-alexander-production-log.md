@@ -324,3 +324,19 @@ Delivered per §20. QC vs anchors: identity holds on all four (each one edit fro
 - **Hazel v5 EPISODE reference package APPROVED and wired into build_prompt.mjs:** look-lock `e11d6b64` + episode views `64c0dbae` (fullbody front), `319c14c7` (fullbody 3/4), `81a91c73` (face front), `9885d19e` (face 3/4). The v4-era episode set (112a948e + 4 views) is RETIRED.
 - **Clip 6a is IN THE CAN**: the owner-approved validation v2 (`63fa03dd`) is production footage — 1080p, on-spec after the three fixes, approved after his watch. 11 clips remain: 1, 2, 3, 4, 5a, 5b, 5c, 6b, 7, 8, 9.
 - **Production order:** script order, 1 → 9 (6a skipped). Per-clip package process (owner-approved improvement): each clip = ONE approval ask covering its start-frame still + the clip generation; §20 delivery per item; §19 for any regen attempt.
+
+## VALIDATION TEST — video-reference re-angling (owner-requested, before Clip 1 package, 2026-08-29)
+
+Per brief §8.2: "experimental and unproven: video-reference re-angling... permitted only after a dedicated validation test, never relied on blind." Owner asked for this test before production began. Design: clip 6a's approved footage (`63fa03dd`) as `video_references`, re-prompted for the SAME collision from the PERSIAN side facing the oncoming charge (reverse of 6a's Macedonian-side static frame) — a materially different, genuinely useful coverage angle if it works.
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| AU | Multi-angle validation test (Persian-side reverse of 6a) | `c0e238ea-eb79-4203-abb0-3656a5fe6798` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_042547_c0e238ea-eb79-4203-abb0-3656a5fe6798.mp4 |
+
+Delivered per §20 (this is a TEST clip — owner's 2026-08-29 Gemini-eyes-on-test-clips exception applies if he wants a machine second opinion; not yet run).
+
+**Claude QC (supplementary, frame-sampled):** freezedetect PASS (6.08s, no frozen stretches). Result reads as a COHERENT reverse angle of a wedge-vs-line collision: wide approach → closing → chaos (a shield thrown, a man airborne) → close impact with a mounted Macedonian rider filling the frame, shield up. Gear stays separated (wicker shields/turbans on the Persian/camera side; bronze+crimson, crested helmet on the charging side — crest recurrence again, consistent with learning S3/N1). One item flagged for the owner's own look: scattered dark particles in the air during the impact beat (frame ~4.5s) — read as dust/debris at still resolution, cannot rule out a blood-spatter read at video speed; owner's judgment governs §24 compliance here.
+
+**Honest limitation of this QC:** whether this is TRULY "the same event, same timing, new angle" (the actual bar for the technique) vs. "a similarly-staged but independently-timed collision" is a motion-level judgment frame sampling cannot make with confidence. This is exactly the gap the owner's Gemini-eyes-on-test-clips exception exists for.
+
+**Recommendation: ONE test is a promising data point, not full validation.** Per §8.2's own bar ("never relied on blind"), this single result should not yet authorize using the technique in any production clip. No episode clip currently plans to use it — the battle sequence (5a-6b) already achieves coverage via the safe toolkit (parallel action / inserts / cut-on-action / non-trackable same-moment), zero same-action-twice instances. AWAITING OWNER verdict: promising/needs more testing/reject, and whether to run Gemini eyes on this clip for a motion check.
