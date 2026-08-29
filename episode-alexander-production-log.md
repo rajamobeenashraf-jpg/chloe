@@ -158,3 +158,13 @@ Owner chose to redesign Hazel prettier/cuter (Option B) after the costs were fla
 | Y | B3 — fresh max-cute cast (new face, brand markers kept) | `3fc4b9e7-6062-4af1-9028-26a2a4bd1685` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_024241_3fc4b9e7-6062-4af1-9028-26a2a4bd1685.png |
 
 All four delivered to owner per §20. QC: realism bar PASSES on all four (real skin, freckles, no plastic). A/B1 hold v4 identity closely; B2 reads as her cuter sister (bigger eyes, heavier lashes, denser freckles); B3 is a distinctly different, softer, rounder-faced woman — girl-next-door cute, casual selfie energy. AWAITING OWNER PICK. NOTE: no lock changes made — CHARACTER_LOCK.md stays v4 until the owner locks a winner; if a B candidate wins, a v5 lock document + new 20-image-class reference canon + re-shot 4-view sets are required before any episode generation uses the new face, and the Alexander episode's approved Hazel slate would need regeneration under §19 gates.
+
+## Round 7b — B2 chosen as the v5 direction; glow iteration (owner-requested 2026-08-29)
+
+Owner picked B2 ("cute evolution") and asked for fresher, more glowing skin. B2 v2 generated with B2 (`e5868b86`) as identity ref; glow written as real hydrated-skin luminosity with freckles/pores explicitly preserved (anti-plastic clauses hard).
+
+| # | Item | Job ID | URL |
+|---|---|---|---|
+| Z | Hazel v5 candidate — B2 v2, fresh glowing skin | `8b2e8360-8b70-49ce-9aa5-438b7419a64b` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_025303_8b2e8360-8b70-49ce-9aa5-438b7419a64b.png |
+
+Delivered per §20. QC: identity holds from B2 (doe eyes, brows, denser freckles, lips, bronde hair); glow executed as luminous hydrated finish, freckles and texture clearly retained — passes the realism bar. Notes reported to owner: complexion reads warmer/more golden than B2 v1; expression straight-on vs B2's head tilt. AWAITING OWNER: lock as the v5 face, or iterate.
