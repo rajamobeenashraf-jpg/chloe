@@ -29,6 +29,11 @@ Standing rules:
 - Do NOT run Gemini (or any machine video-analysis) during the clip-GENERATION
   stage. Clips are generated in PAI Pro under the existing process and the
   owner's approval gates, with no Gemini involvement.
+  **One owner-approved exception (2026-08-29): Gemini eyes MAY run on
+  VALIDATION/TEST clips at generation stage** (e.g. a new model's or method's
+  test shot, before it enters production) — because frame-sampling QC cannot
+  see motion defects. Production clips remain under the original rule:
+  edit-stage only.
 - Gemini eyes comes into action only at the EDITING stage, once all of an
   episode's clips are generated. Run it there on:
   1. the full clip set entering the edit,

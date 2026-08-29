@@ -136,3 +136,12 @@ Both delivered to owner per §20 on creation.
 - Scale QC: (a) line past frame edges PASS · (b) population reads as thousands PASS · (c) dust matches FULL BATTLE stage PASS (with the minor opening-foreground note).
 
 **VALIDATED METHOD (for all future hard-geometry shots): still-first composition lock → omni_reference video. t2v alone demonstrably ignores placement geometry; a locked start frame enforces it.**
+
+## Round 6 verdicts + tooling round (2026-08-29)
+
+- **6a v2 (`63fa03dd`) OWNER-APPROVED. Seedance 2.5 validation COMPLETE — the engine is validated for this episode's production.** The start-frame method (still `9dc96a94` → omni_reference) is the validated standard for hard-geometry shots.
+- **Owner-approved QC exception: Gemini eyes may run on VALIDATION/TEST clips at generation stage** (production clips stay edit-stage-only). Recorded in CLAUDE.md's QC section.
+- **Prompt-infrastructure round (owner: "start all three"):**
+  1. `PROMPT_LEARNINGS.md` created — per-model verified obey/ignore ledger (9 Seedance findings, 3 nano_banana, seeded from today's jobs) + the researched Seedance 2.5 official prompt dialect (@-tag reference roles, modular template, static-camera phrasing, cause-before-reaction, constraint lists, ending states, occlusion restatement, final-frame chaining). Standing rule: update after every generation round; consult at §9 stage 8.
+  2. Seedance 2.5 prompting research done (fal.ai guide in full + corroborating sources; official BytePlus doc egress-blocked — formula corroborated via secondaries). Distilled into the learnings file.
+  3. `pai-pro-tooling/alexander/build_prompt.mjs` + `clips.json` built (the Troy pattern adapted for the MCP workflow): assembles each clip's full prompt from frozen blocks (Hazel v4 identity string + episode-look lock, §32 NPC locks verbatim, ENVIRONMENT_BLOCK, V/Nova mode blocks, §37b grades) + per-clip fields, in the researched template order, with @-tag reference roles and the media list auto-built from which characters appear. Smoke-tested on 6a and 2. All 12 clips populated from the approved script; stage-8 rule: finalize each clip's timeline/states against the breakdown before generation.

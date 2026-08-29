@@ -1,0 +1,144 @@
+{
+  "_note": "Alexander/Gaugamela v9 — per-clip fields consumed by build_prompt.mjs. Scene/timeline/continuity text here is drawn from the approved script table; per §9 stage 8, FINALIZE each clip's timeline/startingState/endingState against episode-alexander-production-breakdown.md (the full 15-field direction) before generation, and log any edit. startImage: fill with the approved composition-lock still's job ID for hard-geometry shots (learnings S2). audioRef: fill once the episode voice reference exists (§31).",
+  "clips": [
+    {
+      "id": "1", "duration": 9, "mode": "V", "hazel": true, "characters": ["ALEXANDER"],
+      "grade": "dawn", "battle": false,
+      "environment": "Pre-dawn interior of a Macedonian command tent at the Gaugamela camp: lamplight and a brazier, canvas walls, a simple cot. Two armed Macedonian guards stand motionless over the sleeping man. FIRST FRAME already shows this strange image.",
+      "scene": "LINEAR OPEN, hook front-loaded. Hazel whispers to her own lens while armed guards watch a sleeping man by lamplight; she glances back at the cot mid-line; the last ~3 seconds HOLD on her slow deadpan into the lens, no words.",
+      "dialogue": "HAZEL (whisper): \"Gaugamela. 331 BC. Tonight, an empire two hundred and twenty years old gets a new owner — and the man who's about to take it—\" (glance back at the cot) \"—is still asleep.\" Alexander sleeps; he never speaks.",
+      "camera": "Her handheld selfie lens, arm's length, slight natural sway; the cot with the sleeping king readable behind her over her shoulder. The camera never cuts.",
+      "continuity": "ALEXANDER asleep per his lock; Hazel scribe wardrobe established here and locked for the episode; guards' Macedonian gear only.",
+      "sound": "Tent-canvas rustle, distant camp murmur, brazier tick, her whisper.",
+      "endingState": "Her held deadpan filling frame, eyes to lens; cot and guards unchanged behind her."
+    },
+    {
+      "id": "2", "duration": 9, "mode": "V", "hazel": true, "characters": ["ALEXANDER", "PARMENION"],
+      "grade": "dawn", "battle": false,
+      "environment": "Same command tent, minutes later; lamplight, first grey pre-dawn light at the tent flap.",
+      "scene": "Parmenion strides in visibly rattled and shakes the sleeping king awake. Alexander wakes instantly calm, already reaching for his sword belt, unhurried. Mid-scene a wax tablet is pressed into Hazel's hands without explanation; she fumbles the stylus (running-gag plant).",
+      "timeline": "0-2s: Parmenion enters, shakes him, speaks. 2-5s: Alexander wakes calm, reaches for sword belt, Parmenion presses his question. 5-8s: Alexander answers while buckling armor, half-amused; the tablet is pressed into Hazel's hands. 8-9s: her fumbled-stylus line.",
+      "dialogue": "PARMENION (shaking him): \"My lord. MY LORD.\" PARMENION (worked up): \"You could have taken them in the dark last night. Why do you STILL refuse a night attack?\" ALEXANDER (buckling armor, half-amused): \"I will not steal a victory, Parmenion. Let it be daylight, and let it be earned.\" ALEXANDER (to Hazel, brisk): \"You write quickly?\" HAZEL (fumbling the stylus): \"...Apparently as of right now, yes.\"",
+      "camera": "Her handheld selfie lens catching the exchange past her shoulder; she pivots naturally between the men and her own face. The camera never cuts.",
+      "continuity": "Both NPC locks verbatim; the wax diptych tablet and stylus debut here and are tracked for the rest of the episode.",
+      "sound": "Urgent footsteps, canvas, armor small-sounds, the exchange close-mic'd.",
+      "endingState": "Tablet in her hands, stylus recovered awkwardly; Alexander mid-arming; Parmenion still tense."
+    },
+    {
+      "id": "3", "duration": 8, "mode": "V", "hazel": true, "characters": ["ALEXANDER"],
+      "grade": "dawn", "battle": false,
+      "environment": "Same tent; a worn leather scroll-case lies by the cot (worn, plain — never an ornate fantasy prop).",
+      "scene": "Arming continues through the WHOLE beat — he buckles, checks the blade, moves; the scene must never read as two people pausing to chat. She nods at the scroll-case; his answers land mid-motion; he is OUT of the tent on his last word — the scene exits into momentum.",
+      "timeline": "0-2s: she nods at the scroll-case, asks. 2-5s: he answers without looking up, still arming. 5-8s: her line, then his final line landing mid-stride as he snaps the last buckle and exits on the last word.",
+      "dialogue": "HAZEL: \"What's that?\" ALEXANDER (not looking up): \"Homer. Aristotle's own copy — he corrected it himself. Sleeps under my pillow. With the dagger.\" HAZEL: \"You brought a book to a war.\" ALEXANDER (snapping the last buckle, already moving past her, the look landing mid-stride): \"I brought the only book that matters. Achilles didn't get old either. I intend to beat that record too.\"",
+      "camera": "Her handheld selfie lens tracking his motion past her; she turns to follow his exit. The camera never cuts.",
+      "continuity": "ALEXANDER lock; motion never stops; scroll-case worn leather.",
+      "sound": "Armor small-sounds, canvas, distant horses waking.",
+      "endingState": "Tent flap swinging from his exit; she is turning to follow."
+    },
+    {
+      "id": "4", "duration": 10, "mode": "V", "hazel": true, "characters": ["ALEXANDER", "BUCEPHALUS"],
+      "grade": "dawn", "battle": false,
+      "environment": "Walking through the waking Macedonian camp to the horse lines at first light; in the distance the Persian campfires stretch to the horizon with no visible end. A separately-guarded plain tent with two armed guards, NO royal iconography.",
+      "scene": "Walk-and-talk to the horse lines: the horizon of Persian fires behind her; Bucephalus pins his ears at everyone but Alexander (who is nearby at the lines); passing the guarded tent she drops her voice for the captives fact.",
+      "timeline": "0-3s: walking, the fires line the horizon behind her, first line. 3-7s: at the horse lines — Bucephalus, ears pinned, calms only toward Alexander; her Bucephalus line. 7-10s: passing the separately-guarded tent, quieter, the captives line.",
+      "dialogue": "HAZEL: \"Darius pulled soldiers from more than twenty different peoples for this. Twenty.\" HAZEL: \"This is Bucephalus. Only he's ever been allowed to ride him.\" HAZEL (quieter, passing the guarded tent): \"That one — Darius's own mother and wife. Captured two years ago. Still here.\"",
+      "camera": "Her handheld selfie lens, walking; deep frame carries the endless fires, then the horse lines, then the guarded tent. The camera never cuts.",
+      "continuity": "BUCEPHALUS lock debuts exactly as written; Persian fires innumerable, no visible end; guarded tent plain.",
+      "sound": "Camp waking — hooves shifting, leather, low voices, fires; her voice close.",
+      "endingState": "She is past the guarded tent, glancing back at it; horse lines behind."
+    },
+    {
+      "id": "5a", "duration": 5, "mode": "NOVA", "hazel": false, "characters": ["ALEXANDER", "BUCEPHALUS"],
+      "grade": "battle", "battle": true, "stage": "FIRST ENGAGEMENT",
+      "inheritedState": "Dust is RISING right now, kicked up by this advance — building, not yet opaque; formations still readable.",
+      "scene": "THE WEDGE FORMS (zero jokes from here; no Hazel in frame). The episode's ONE sweeping camera move: travelling alongside the Companion cavalry wedge as it assembles and drives left-to-right, Alexander at its point on Bucephalus, the torn gap in the Persian line deep frame-right. No dialogue — horns and massed hooves only.",
+      "camera": "The single sweeping lateral travel of the episode: camera moves parallel with the wedge, keeping Alexander's point in the right third of frame, the gap deep frame-right growing nearer. One move only; no zoom, no cut.",
+      "continuity": "ALEXANDER + BUCEPHALUS locks; Macedonian bronze/crimson only on the wedge; Persian side distinct; screen direction LEFT-to-RIGHT absolute; §22 written trace filed with the prompt.",
+      "sound": "Horns, then massed hooves building. Close: leather, breath; middle: massed hooves, shouted commands; far: continuous unbroken roar. This bed continues unbroken into 5b/6/7.",
+      "endingState": "Wedge at full gallop, point aimed at the gap deep frame-right; dust building behind.",
+      "constraints": "Hazel does not appear. No faces of hers anywhere."
+    },
+    {
+      "id": "5b", "duration": 4, "mode": "V", "hazel": true, "characters": [],
+      "grade": "battle", "battle": true, "stage": "FIRST ENGAGEMENT",
+      "inheritedState": "The air around her ALREADY carries the rising dust of the advance she is inside of.",
+      "scene": "Hard cut to her own lens inside the advance: tight, jostled, bodies passing both frame edges, the front NOT in frame behind her. Breath ragged before she speaks. Ends on her head snapping toward the enemy — the eyeline that launches 5c.",
+      "dialogue": "HAZEL (breath ragged): \"We're not staying back. We're going WITH them.\"",
+      "camera": "Her handheld selfie lens, tight and jostled by the moving column; real shake, bodies clipping both edges. The camera never cuts.",
+      "continuity": "Her battle-state begins: dust on her, hair loosening; tablet clamped under one arm.",
+      "sound": "Same unbroken bed as 5a heard from inside it: hooves, armor, breath ragged and close.",
+      "endingState": "Her head snapped toward the enemy line off-frame — the launching eyeline."
+    },
+    {
+      "id": "5c", "duration": 3, "mode": "NOVA", "hazel": false, "characters": [],
+      "grade": "battle", "battle": true, "stage": "FIRST ENGAGEMENT",
+      "inheritedState": "The dust wall of the approaching charge is ALREADY rising beyond the line — building, the charge itself not yet arrived.",
+      "scene": "THE OTHER SIDE, same seconds (parallel action): the Persian front rank locking shields and dropping spears level toward the incoming — UNSEEN — charge; faces behind shield rims: one jaw set, one man's eyes flicking toward the widening gap at frame's edge; the charge's dust wall rising beyond. No dialogue. The wedge itself is NEVER shown (that is 6a's job — no action rendered twice).",
+      "camera": "The camera never moves. Locked frame on the Persian front rank, facing LEFT (receiving the left-to-right attack).",
+      "continuity": "Persian gear and dress ONLY — zero Macedonian iconography anywhere in frame; they face LEFT; in the last beat the spears settle level (the action that spans the cut into 6a).",
+      "sound": "Same unbroken bed from the receiving side: the roar far, commands near, shields locking close.",
+      "endingState": "Spears settled level, shields locked, dust wall taller beyond the line.",
+      "constraints": "The incoming charge is never visible."
+    },
+    {
+      "id": "6a", "duration": 6, "mode": "NOVA", "hazel": false, "characters": [],
+      "grade": "battle", "battle": true, "stage": "FULL BATTLE",
+      "inheritedState": "The air is ALREADY heavy with dust from the fighting before this shot begins — this is NOT a clean battlefield; visibility at distance is already reduced.",
+      "startImage": "9dc96a94-f13f-4210-9233-99bc14870e7a",
+      "scene": "THE IMPACT. The Macedonian cavalry wedge (bronze helmets, crimson cloaks, leveled lances, entering from frame-left) charges the remaining distance left-to-right and SLAMS into the massed Persian infantry line right-of-center. At the point of contact the Persian formation visibly BUCKLES — wicker shields dropping, spears turning away, men scattering sideways out of the wedge's path — and the break propagates outward from that single contact point while the Persian line further from the breach still holds intact. Cause and effect in one sustained frame. At the contact point: dropped shields, snapped spears, men and horses falling (visible and real, never graphic or gory), riderless horses breaking loose.",
+      "camera": "The camera never moves. Completely static locked camera, no zoom, no pan, no cut, no change of framing at any point during the entire 6 seconds; compressed flattened telephoto perspective stacking the colliding masses.",
+      "continuity": "The two armies' equipment NEVER mixes: bronze-and-crimson cavalry from the left, varied Persian contingents with wicker shields, turbans, patterned fabrics on the right. Screen direction LEFT-to-RIGHT.",
+      "sound": "Hoofbeats accelerating, then the impact itself — a timber-and-metal mass collision landing over the roar. Close: leather, breath, individual cries; middle: massed hooves, shouted commands; far: continuous unbroken roar.",
+      "endingState": "The breach torn open right-of-center, break still spreading outward; the far line still holding; dust thickened over the contact point.",
+      "_status": "VALIDATED v2 (job 63fa03dd, owner-approved 2026-08-29). Regenerate only with fresh owner approval per §19."
+    },
+    {
+      "id": "6b", "duration": 3, "mode": "NOVA", "hazel": false, "characters": [],
+      "grade": "battle", "battle": true, "stage": "FULL BATTLE",
+      "inheritedState": "Ground-level dust ALREADY churned and bursting with every impact — same density as the impact shot this follows.",
+      "scene": "GROUND-LEVEL INSERT (cutaway): locked low frame at earth level — hooves hammering past close to the lens, dust bursting with each strike, a dropped Persian wicker-and-hide shield spinning on its rim into frame and settling, running feet scattering. No faces, no dialogue. The main action is never shown.",
+      "camera": "The camera never moves. Locked static frame at ground level.",
+      "continuity": "The dropped shield is Persian; hooves travel LEFT-to-RIGHT (the charge's direction — the screen-direction map holds even in an insert); dust density matches 6a exactly.",
+      "sound": "Percussion foreground: hoof-strikes hammering earth close; the roar continuous above.",
+      "endingState": "The shield settled flat, still trembling with each near hoof-strike.",
+      "constraints": "No faces anywhere in frame."
+    },
+    {
+      "id": "7", "duration": 10, "mode": "V", "hazel": true, "characters": [],
+      "grade": "battle", "battle": true, "stage": "FULL BATTLE collapsing toward COLLAPSE",
+      "inheritedState": "Dust everywhere, ALREADY thick before the shot starts; scattered equipment underfoot; the field's order already dissolving.",
+      "scene": "DARIUS FLEES — opens ON her face: scleral show, mouth dropping to a full O, hands rising then clamping the tablet, shoulders pulling in. She half-turns; deep in frame a distinct chariot-and-standard wheels hard and recedes AWAY (deeper-right); nearby Persians glance toward it, one beat, then break and run — the collapse streaming past her on both sides, wounded among them, equipment underfoot. NOTE: this clip carries the episode's ONE subjective-sound beat (a ~2s muffle at the realization) — implemented at the EDIT stage, not in generation audio.",
+      "timeline": "0-3s: her face reacts first — eyes, mouth, hands clamping the tablet. 3-6s: she half-turns; the chariot wheels and recedes deep in frame; nearby Persians glance toward it. 6-10s: one beat — then they break and run past her on both sides; her breathless lines.",
+      "dialogue": "HAZEL (breathless): \"...That's him. He's LEAVING. And now everyone else is too.\"",
+      "camera": "Her handheld selfie lens: opens tight on her face, widens as she half-turns so the deep frame carries the fleeing chariot and the breaking line; the collapse streams past both edges. The camera never cuts.",
+      "continuity": "The chariot recedes deeper-right/away (geometrically honest — never toward a face-on camera); her battle-state heavy now: dust-caked, hair loose, tablet clamped.",
+      "sound": "The roar fracturing: individual cries closer, running feet, equipment clattering underfoot; her breath ragged and close.",
+      "endingState": "The collapse streaming past her; the chariot a receding speck; her eyes back to the lens."
+    },
+    {
+      "id": "8", "duration": 8, "mode": "V", "hazel": true, "characters": ["ALEXANDER", "BUCEPHALUS"],
+      "grade": "dusk", "battle": false,
+      "environment": "Dusk at the camp's edge; the field's day visible on every person and surface; smoke columns far off; the camp erupting around his return — held LOW and distant. Wounded visible among the celebrating (the cost stays inside the triumph).",
+      "scene": "He returns dust-caked, Bucephalus lathered; he dismounts near her before anyone else reaches him, glances at the tablet still gripped tight in her now-steady hand; the exchange; he is already walking on, pulled into the noise.",
+      "timeline": "0-3s: he rides in, dismounts near her; the camp's eruption stays low and distant. 3-6s: his glance at the tablet, his line — almost a smile. 6-8s: her answer, holding it up, no longer fumbling; he is already walking on.",
+      "dialogue": "ALEXANDER (almost a smile): \"Get all of it down?\" HAZEL (holding up the tablet, no longer fumbling): \"Every word. Even the ones about stealing victories.\"",
+      "camera": "Her handheld selfie lens; he enters the deep frame, dismounts into mid-frame near her; she turns between him and her lens. The camera never cuts.",
+      "continuity": "ALEXANDER + BUCEPHALUS locks (horse lathered, led off behind him); her battle-state persists (dust, loose hair) but her hand is now steady — the running-gag payoff.",
+      "sound": "Camp eruption held LOW and distant (restraint); his voice and hers close; fires catching.",
+      "endingState": "He walks on into the noise; she watches him go, tablet lowered; cut lands on her exhale."
+    },
+    {
+      "id": "9", "duration": 9, "mode": "V", "hazel": true, "characters": [],
+      "grade": "dusk", "battle": false,
+      "environment": "Dusk deepening, campfires relighting across the camp — a frame consciously rhyming clip 1's lamplit opening.",
+      "scene": "Outro, talk-to-lens, quiet: the empire line, then softer the Homer/Achilles payoff, then the sign-off. The final shot is built around the one idea the viewer should leave with.",
+      "timeline": "0-4s: the empire lines. 4-8s: (beat, softer) the Homer/Achilles lines. 8-9s: (quiet) the sign-off.",
+      "dialogue": "HAZEL: \"Cyrus built that empire two hundred and twenty years ago. It ended today, because a man who overslept his own war refused to win it in the dark — and because one king turned his chariot around.\" (beat, softer) \"He keeps Homer under his pillow. He wants to outlive Achilles. Twelve years from today, he's dead at thirty-two — and somehow that's still longer than he thought he'd get.\" (quiet) \"Hazel — out of time.\"",
+      "camera": "Her handheld selfie lens, steady now; campfires relighting in the deep frame behind her. The camera never cuts.",
+      "continuity": "Frame-rhyme with clip 1 (small warm lights in darkness behind her); tablet visible, held calmly; battle-dust softened but present.",
+      "sound": "Fires catching, low camp murmur settling, night insects beginning; her voice close and quiet.",
+      "endingState": "Her face lit by fire in the near-dark, the sign-off landing; hold one beat."
+    }
+  ]
+}
