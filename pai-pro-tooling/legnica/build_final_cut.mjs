@@ -14,9 +14,11 @@ const FADE_OUT_DURATION = 1.0;
 // (SUB_STYLE's dialogue captions sit near the bottom, MarginV 320) so
 // it never collides with clip11's own word-synced dialogue captions,
 // which are still playing during part of this window.
+// Owner decision, 2026-08-29: drop "MONGOL VICTORY" from the card's second
+// line -- just the year now.
 const TITLE_CARD_DURATION = 5.0;
 const TITLE_CARD_LINE1 = "BATTLE OF LEGNICA";
-const TITLE_CARD_LINE2 = "1241 · MONGOL VICTORY";
+const TITLE_CARD_LINE2 = "1241";
 const FONT_BOLD = "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf";
 
 // Owner decision, 2026-08-29 (EDITING_HANDOFF.md §3): one continuous

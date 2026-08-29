@@ -143,6 +143,11 @@ const CLIP_TRIM = {
 // action the script called for during that window, reads as dead time.
 // Head-trim 3.0s off the start (owner's explicit instruction) rather
 // than regenerate; this lands her line at local ~1.56s instead of 4.56s.
+// Owner asked for an additional 0.5s trimmed 2026-08-29 -- frame-checked
+// 2.9-3.6s of the raw source first: she's already running/mid-speech
+// throughout that whole window in every sampled frame, no discontinuity
+// at the new cut point. Total head-trim now 3.5s; her line now lands at
+// local ~1.06s.
 // clip10B's old head-trim (5.833333, applied 2026-08-29 to skip past
 // Hazel in the earlier version of this clip's opening) NO LONGER
 // APPLIES: clip10B was fully recreated 2026-08-29 (second/third
@@ -154,7 +159,7 @@ const CLIP_TRIM = {
 // clip10's head-trim (0.58333) no longer applies either: clip10 was
 // removed entirely 2026-08-29, merged into the rewritten clip9.
 const CLIP_HEAD_TRIM = {
-  clip5: 3.0,
+  clip5: 3.5,
 };
 
 // Owner decision, 2026-08-26: fix clip10's dead-silence tail (confirmed

@@ -696,3 +696,9 @@
 - Owner: that fix should be discarded (their earlier description was a mistake) -- the real music/transition complaint is elsewhere, not clip1->clip1B. Asked to revert clip1/clip1B to how they were in the previous version and leave them alone.
 - Reverted `qc_pass.mjs`'s `CLIP_TAIL_SOFTEN`/`CLIP_HEAD_SOFTEN` mechanism and all related code (staircase expression builder, filter-chain wiring) back to the prior commit's state -- clip1 and clip1B are unmodified again, byte-for-byte matching how they were before that fix. Rebuilt the full pipeline (96.88s) to confirm.
 - Owner's restated complaint is about the transition from "clip two to clip three" -- verifying with the owner exactly which clip boundary this refers to before touching anything, since the episode has both a sequential viewer-facing numbering and this project's own file-id numbering (clip1, clip1B, clip2, clip3...) that don't necessarily line up the same way.
+
+## 2026-08-29 (cont.) — Extended clip5's head-trim, dropped "MONGOL VICTORY" from the title card
+- Owner: cut an additional 0.5s off clip5's start, and remove "MONGOL VICTORY" from the end title card (keep just the year).
+- Frame-checked 2.9-3.6s of clip5's raw source before extending the trim: she's already running/mid-speech throughout, no discontinuity at the new cut point. `CLIP_HEAD_TRIM.clip5` 3.0 -> 3.5s; her line now lands at local ~1.06s.
+- `TITLE_CARD_LINE2` changed from "1241 · MONGOL VICTORY" to "1241".
+- Rebuilt the full pipeline: runtime 96.38s (down exactly 0.5s, confirming nothing else shifted). `freezedetect`/`silencedetect` clean. Frame-verified the title card reads correctly.
