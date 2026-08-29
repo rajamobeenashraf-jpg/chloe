@@ -674,3 +674,63 @@ defensible packaging since his brutality is real Iliad content (Hector's
 body, the funeral-pyre killings), but it's new content the owner supplied,
 not something either of my own researched hook options proposed, so worth
 being explicit that it's a slight widen from the in-video material.
+
+## Owner reports audio/lip-sync mismatch on the round-4 file (2026-08-29)
+
+Owner: the delivered round-4 file's wording doesn't match lip movement,
+and it was fine before. Investigated rather than assuming either way.
+
+**False lead, corrected rather than shipped as a finding**: silencedetect
+on `troy_final_cut.mp4`'s clip1 window matched the round-4 scored file
+exactly up to 4.58s, then diverged by a consistent ~44ms from 6.9s
+onward -- looked exactly like a real, localized audio discontinuity.
+Traced it through the whole pipeline (raw dialogue extraction, a
+rewritten single-pass mix that skips the extraction step entirely) and
+the "shifted" numbers persisted everywhere -- including, decisively, on
+`clip1_v1.mp4`, the RAW pre-concat, pre-mix, straight-from-generation
+source clip, in complete isolation from any of this project's tooling.
+That proves the opposite of what it first looked like: there is no
+drift, no discontinuity, nothing introduced by `mix_music.mjs` or by any
+round of music mixing. The only outlier measurement was my own very
+first baseline (plain `silencedetect` on the full multi-stream
+`troy_final_cut.mp4` container) -- reading audio through a bare filter on
+a multi-track container vs. an isolated single-stream extraction shifts
+`silencedetect`'s own threshold-crossing report by ~40ms with zero
+actual change in the underlying samples. Flagging this clearly as a
+retracted lead, not a fix -- didn't want a wrong root-cause to stand
+uncorrected in this log.
+
+**Gemini eyes, both edit-stage passes required at this stage, run against
+the actual delivered file + its current SRT:**
+- `qc` mode (checks audio/lip-sync as an explicit category among others):
+  score 6.2/10, 2 CONFIRMED, neither about audio/lip-sync -- both are
+  already-known, already-decided items (clip4 rope/finger morph at
+  00:30.4, the clip5 arrow-impact finding at 00:40 the owner already
+  chose to leave as-is). No lip-sync finding anywhere in the episode.
+- `captions` mode (text-to-speech sync vs. the SRT, the more targeted
+  check for this exact complaint): sweep found 4 candidates; verify hit
+  sustained Gemini 503 overload on the last item and crashed before
+  writing findings.json, but not before logging **01:44.600 [text] ->
+  CONFIRMED** (two others at 00:00/00:14 DISMISSED). Retried twice more;
+  both retries hit all-three-models-exhausted 503s before completing --
+  a real, sustained API overload right now, not a quota wall, so
+  continuing to blind-retry stopped being productive. Full finding
+  description never recovered.
+- Located 01:44.6 independently: absolute 104.6s = clip11 local 1.267s --
+  right at the start of one of the 3 owner-approved on-screen cards
+  ("BEHIND HER: SHE SAID IT FIRST.", cards at local 1.2-5.2s), and just
+  after the "OF THIS." spoken cue (ends 1.16s local). Pulled the actual
+  frame: card renders clean, correctly spelled, good contrast, clear of
+  her face -- but her mouth is still visibly open/mid-speech ~107ms after
+  the caption's stated end, a small, plausible natural trail-off rather
+  than an obvious defect. Can't rule out this is what Gemini flagged, but
+  can't confirm it either without the actual finding text.
+
+**Net position, not a fix**: no confirmed, described lip-sync defect
+anywhere in the episode from either of the project's own established
+Gemini eyes checks, and my own audio forensics -- after retracting a
+wrong lead -- found no real timing drift either. Doesn't mean the owner
+is wrong about what they saw; means I don't yet know WHERE to look.
+Asked the owner which part of the video reads as off, rather than
+guessing further or shipping a speculative "fix" against a defect
+neither tool could locate.
