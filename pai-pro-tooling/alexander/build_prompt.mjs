@@ -14,6 +14,14 @@
 // constraint-list negatives, positive-description for costume details).
 //
 // Usage: node build_prompt.mjs --clip 6a [--start-image <job_or_media_id>]
+//        node build_prompt.mjs --clip 2 --still   (start-frame STILL payload)
+//
+// --still emits a nano_banana_pro image payload instead of a seedance_2_5
+// video payload. It exists so no start-frame still is ever hand-assembled
+// again: it hardcodes resolution:"4k" (owner permanent lock, 2026-08-29 —
+// missed once on Clip 2 v2 because the still was hand-written outside this
+// script and the model's 2k default went unnoticed) and always includes
+// HAZEL_CANON_4K alongside the episode-costume refs when Hazel is in frame.
 
 import fs from "node:fs/promises";
 
@@ -99,8 +107,48 @@ function parseArgs(argv) {
   for (let i = 0; i < argv.length; i++) {
     if (argv[i] === "--clip") out.clip = argv[++i];
     else if (argv[i] === "--start-image") out.startImage = argv[++i];
+    else if (argv[i] === "--still") out.still = true;
   }
   return out;
+}
+
+function buildStillPayload(clip) {
+  if (!clip.stillComposition) {
+    console.error(`clip "${clip.id}" has no "stillComposition" field in clips.json — add one (a single-moment external-observer composition description) before generating its start frame.`);
+    process.exit(2);
+  }
+
+  const medias = [];
+  if (clip.hazel) {
+    for (const r of REFS.HAZEL) medias.push({ value: r.value, role: "image_references" });
+    for (const r of REFS.HAZEL_CANON_4K) medias.push({ value: r.value, role: "image_references" });
+  }
+  for (const npc of clip.characters || []) {
+    const set = REFS[npc];
+    if (!set) continue;
+    for (const r of set) medias.push({ value: r.value, role: "image_references" });
+  }
+
+  const parts = [];
+  parts.push(`FORMAT: single cinematic film still, vertical 9:16, the opening composition of a scene — this is a START FRAME for a video generation, not a finished shot.`);
+  parts.push(modeBlock(clip.mode));
+  if (clip.hazel) parts.push(`STRICT IDENTITY RE-RENDER — ${HAZEL_IDENTITY}\n\n${HAZEL_EPISODE_LOOK}`);
+  for (const npc of clip.characters || []) if (LOCKS[npc]) parts.push(LOCKS[npc]);
+  if (clip.environment) parts.push(`ENVIRONMENT: ${clip.environment}`);
+  parts.push(`SCENE / COMPOSITION: ${clip.stillComposition}`);
+  parts.push(`GRADE: ${GRADES[clip.grade] || clip.grade}`);
+  parts.push(`CONSTRAINTS: no duplicated characters, no extra people in frame, no on-screen text or logos, no camera/phone/rig visible anywhere, no music, single still frame only.`);
+
+  return {
+    clip: clip.id,
+    model: "nano_banana_pro",
+    params: {
+      resolution: "4k",
+      aspect_ratio: "9:16",
+    },
+    medias,
+    prompt: parts.join("\n\n"),
+  };
 }
 
 async function main() {
@@ -114,6 +162,11 @@ async function main() {
   if (!clip) {
     console.error(`no clip "${args.clip}" in clips.json`);
     process.exit(2);
+  }
+
+  if (args.still) {
+    console.log(JSON.stringify(buildStillPayload(clip), null, 2));
+    return;
   }
 
   // Media list, in order, so @-tags line up: start image first if present,
