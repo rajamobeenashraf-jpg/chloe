@@ -49,12 +49,13 @@ const GRADES = {
 
 // Reference media (Higgsfield job IDs / media IDs; see production log for URLs).
 const REFS = {
+  // v5 episode package (owner-approved 2026-08-29) — the v4-era set is retired.
   HAZEL: [
-    { value: "112a948e-1410-4cfc-b1cb-a6ec6169211a", note: "look-lock still (soft glam, open hair)" },
-    { value: "72a8d0b5-19e0-4514-a6a1-9d3bfafa7d84", note: "full-body front" },
-    { value: "e5eb360a-c0c6-4409-b88e-87dcf907faab", note: "full-body 3/4 walking" },
-    { value: "2e4a2d55-21bb-42c6-b4c0-264f1244d9da", note: "face close-up front" },
-    { value: "83df8574-0a74-440e-b706-365ac396bbc3", note: "face close-up 3/4" },
+    { value: "e11d6b64-70b0-4021-839c-69e519472d9a", note: "v5 episode look-lock (scribe costume)" },
+    { value: "64c0dbae-137b-4dc8-9be2-261b61758ff8", note: "episode full-body front" },
+    { value: "319c14c7-13d9-408c-bcb0-76dd5bc7c67e", note: "episode full-body 3/4 walking" },
+    { value: "81a91c73-2893-413b-b67f-2c4aaa5456ea", note: "episode face close-up front" },
+    { value: "9885d19e-07b9-4e38-bb32-6b95ffe75e85", note: "episode face close-up 3/4" },
   ],
   ALEXANDER: [
     { value: "86a6746d", note: "full-body front" },

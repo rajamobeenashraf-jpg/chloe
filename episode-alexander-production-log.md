@@ -318,3 +318,9 @@ Each view = photo-edit of an APPROVED canon view (wardrobe/background from the a
 | AT | Episode full-body 3/4 walking | `1eb09f83` | `319c14c7-13d9-408c-bcb0-76dd5bc7c67e` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_040816_319c14c7-13d9-408c-bcb0-76dd5bc7c67e.png |
 
 Delivered per §20. QC vs anchors: identity holds on all four (each one edit from an approved image); chiton/straight-pin fibulae/satchel/wax diptych consistent with the look-lock; **belt fix LANDED — tied knotted leather with hanging end, no buckle, both full-bodies**; flat period strap sandals in both full-bodies; tent-interior backdrops. Note: full-body front's pose shifted from hand-on-hip to holding the tablet two-handed (scene-appropriate, flagged not fixed). AWAITING OWNER approvals — approval completes Hazel's v5 EPISODE reference package (look-lock + 4 views = the Seedance image_references payload for her clips).
+
+## PRODUCTION START (owner: "all approved, start production" — 2026-08-29)
+
+- **Hazel v5 EPISODE reference package APPROVED and wired into build_prompt.mjs:** look-lock `e11d6b64` + episode views `64c0dbae` (fullbody front), `319c14c7` (fullbody 3/4), `81a91c73` (face front), `9885d19e` (face 3/4). The v4-era episode set (112a948e + 4 views) is RETIRED.
+- **Clip 6a is IN THE CAN**: the owner-approved validation v2 (`63fa03dd`) is production footage — 1080p, on-spec after the three fixes, approved after his watch. 11 clips remain: 1, 2, 3, 4, 5a, 5b, 5c, 6b, 7, 8, 9.
+- **Production order:** script order, 1 → 9 (6a skipped). Per-clip package process (owner-approved improvement): each clip = ONE approval ask covering its start-frame still + the clip generation; §20 delivery per item; §19 for any regen attempt.
