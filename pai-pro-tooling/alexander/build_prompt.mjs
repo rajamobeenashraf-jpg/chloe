@@ -18,10 +18,17 @@
 //
 // --still emits a nano_banana_pro image payload instead of a seedance_2_5
 // video payload. It exists so no start-frame still is ever hand-assembled
-// again: it hardcodes resolution:"4k" (owner permanent lock, 2026-08-29 —
-// missed once on Clip 2 v2 because the still was hand-written outside this
-// script and the model's 2k default went unnoticed) and always includes
-// HAZEL_CANON_4K alongside the episode-costume refs when Hazel is in frame.
+// again, and it always includes HAZEL_CANON_4K alongside the episode-costume
+// refs when Hazel is in frame (identity anchors, unaffected by the resolution
+// rule below).
+//
+// Resolution: generates at "2k" (working resolution) on purpose. Owner
+// permanent lock 2026-08-29 (CLAUDE.md "4K upscale sequencing"): NEVER
+// generate or upscale directly to 4K — deliver at working resolution, get
+// owner approval, THEN upscale to 4K via the separate upscale_image tool.
+// (Earlier same day, Clip 2 v2 hit the model's 2k default by accident before
+// this rule existed — see PROMPT_LEARNINGS X3 — the owner then locked the
+// approve-before-upscale sequence as the permanent rule regardless.)
 
 import fs from "node:fs/promises";
 
@@ -143,7 +150,10 @@ function buildStillPayload(clip) {
     clip: clip.id,
     model: "nano_banana_pro",
     params: {
-      resolution: "4k",
+      // Working resolution — do NOT set to "4k" here. Owner permanent lock:
+      // upscale to 4K only after the owner approves this still (CLAUDE.md
+      // "4K upscale sequencing").
+      resolution: "2k",
       aspect_ratio: "9:16",
     },
     medias,

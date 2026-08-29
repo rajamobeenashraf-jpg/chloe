@@ -30,6 +30,12 @@ Higgsfield's **Angles 2.0** (directed single camera-angle change from one photo)
 
 **Standing rule, permanent, every session, no exceptions: whenever Claude judges that a shot would benefit from a specific new camera angle (Angles 2.0) or from seeing multiple angle options of one composition (SHOTS), Claude tells the owner explicitly, at the point the need arises — never silently substitutes a workaround, never skips it, never claims afterward to have forgotten.** The owner then runs the tool himself on higgsfield.ai and sends Claude the resulting image to use/animate. This is the owner's explicit, repeated instruction (2026-08-29) and is not contingent on Claude's memory in any given session — it is written here so every future session inherits it automatically.
 
+## 4K upscale sequencing — permanent standing rule (owner lock 2026-08-29, no exceptions)
+
+**Never generate an asset directly at 4K, and never upscale one to 4K, before the owner has approved it.** The sequence is always: generate/deliver at the normal working resolution → send to the owner for approval, exactly as every other clip/still is delivered per the QC rule below → only once the owner has explicitly approved it, run the deterministic upscale (`upscale_image` / `upscale_video` — content-identical, no drift risk) to 4K. This applies to every generated asset in every episode, present and future: start-frame stills, standalone reference images, and any video clip the owner later wants upscaled — not just the CHARACTER_LOCK canon set that originated this pattern.
+
+Found on the Alexander/Gaugamela episode: Clip 2's corrected start-frame still generated at nano_banana_pro's default 2K (a separate process bug, logged in `PROMPT_LEARNINGS.md` as X3) and was upscaled to 4K as part of fixing that bug — before the owner had weighed in on ordering. The owner then locked this explicit approve-before-upscale sequence as the permanent rule, independent of that bug: even when 4K is clearly the right eventual resolution, upscaling is an action that waits for approval like any other production step, never something Claude does proactively or automatically.
+
 ## Owner's QC rule (decided 2026-08-20 — supersedes the per-clip "Stage A" in research-methodology.md §4)
 
 - Do NOT run Gemini (or any machine video-analysis) during the clip-GENERATION
