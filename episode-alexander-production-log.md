@@ -400,3 +400,19 @@ Score 5.5/10. 2 findings, both CONFIRMED: physics severity 3 at 00:01.800 (rear 
 - **All 5 v5 canon images upscaled to 4K** via the dedicated `upscale_image` tool (deterministic, bytedance provider, no drift risk — content-identical to the approved originals, resolution only). Full-body front's first attempt (`bb9630e8`) failed; retried successfully as `1a8133ee`. **Owner directive: these 4K job IDs are now the PERMANENT reference set for all future v5 generations.** Recorded in CHARACTER_LOCK.md; `build_prompt.mjs` updated with a `HAZEL_CANON_4K` refs array.
 - **Owner confirmed:** `bitrate_mode: "high"` and Seedance `video_edit` mode both get a validation test BEFORE any production reliance — same discipline as the multi-angle technique. Neither tested yet; queued for when next relevant (video_edit test candidate: 6a v2's confirmed shield-physics finding).
 - **Web-app tools investigated (Higgsfield Angles 2.0, SHOTS, Zooms):** confirmed not reachable via MCP (absent from `apps_search`) and not reachable via any browser this environment can launch (Higgsfield cloud sandbox Playwright confirmed working but anonymous/unauthenticated — verified by loading the real Angles 2.0 page; no bridge exists from this environment to the owner's Higgsfield login regardless of browser engine, including a literal "use Google Chrome" request). **Owner permanent standing rule recorded in CLAUDE.md: whenever Claude judges a shot would benefit from Angles 2.0 (directed angle) or SHOTS (9 angle options), Claude tells the owner at the point the need arises — never substitutes a workaround, never skips it.** Owner runs the tool himself and sends the result back.
+
+## Round 11 — CLIP 1 start-frame still (2026-08-29)
+
+Two failures before success: v1 (`30645b6d`) and v2 (`14c05402`) both FAILED with no error detail returned — likely content-safety soft-block on "bare-chested/armed guards over a sleeping man" framing (matches the v4-era canon's documented "07_low_angle refused 3x" pattern). v3 succeeded after softening language (no "bare-chested," neutral "ceremonial watch" framing) AND dropping from 3 to 2 reference images (Hazel look-lock + Alexander only, episode-face-front ref removed).
+
+| # | Item | Job ID | Status |
+|---|---|---|---|
+| — | Clip 1 start-frame v1 | `30645b6d-eece-4194-a35f-034db900b835` | FAILED, no error detail |
+| — | Clip 1 start-frame v2 | `14c05402-8a1a-48e1-8cd0-730a4913312a` | FAILED, no error detail |
+| AX | Clip 1 start-frame v3 (SUCCESS) | `adc48e39-903c-47c6-9119-d792a372d82c` | Delivered per §20 |
+
+QC: Hazel identity holds (v5 face, chiton with straight-pin fibulae visible, selfie arm-reach with no phone); Alexander asleep on cot, tousled light-brown hair, consistent silhouette; two guards in bronze/crimson flanking, still and respectful; warm lamplight + brazier; tent canvas. One deviation noted: guards' spears not visible in this still (arms at sides) — acceptable for a still, can be restated in the video clip prompt if the owner wants them visible.
+
+**New learning for the ledger:** multi-person night/sleep+guard compositions are a soft-block risk category (2 of 3 attempts failed with no error message) — simplify language and minimize reference-image count as the first-line fix before assuming content is impossible.
+
+AWAITING OWNER approval on the start frame before generating the clip.
