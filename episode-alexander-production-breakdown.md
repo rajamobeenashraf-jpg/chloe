@@ -246,6 +246,18 @@
 
 **Cost inside the triumph (clip 8 restaged):** the celebration stays — but between her and the erupting camp, wounded men are being carried past on shields toward the fires, and her eyes go to THEM for one beat before Alexander reaches her. Nobody comments on it. The frame holds both truths at once — his victory and its price — and her line lands differently because of what she just looked at.
 
+## EMOTIONAL PERFORMANCE MAP — CLIP 7, the episode's peak (per brief §11.9; the worked example for this episode — clips 2, 8, 9 get theirs at prompt-writing stage)
+
+- **Starting state:** adrenalized overwhelm carried in from 5b/6b — breath ragged, gripping the tablet, intensity ~3 (fear, contained by her task).
+- **Trigger:** through the dust, the royal chariot wheels and turns away.
+- **Recognition moment:** ~1.5s in — the beat where she understands WHAT this means (the king is running; the battle is decided). The subjective sound-muffle (§10) marks this from inside her head.
+- **Intensity:** **3, not 5** — deliberately. Derivation (§11.1): enormous event severity, but low personal threat in this moment (the fighting is moving AWAY from her), she has a task (witness/record), she is "observed" by her own lens (the V-mode complication), and Hazel's persona filter caps outward display. Traumatic-shock behavior at this level is QUIETER, not bigger.
+- **Physical manifestation (the §37a mechanics, now intensity-justified):** scleral show and the "O" mouth at recognition — then the CATCH: hands rise toward her face and clamp the tablet instead (the motif: the job overriding the fear); shoulders in; blinking slows; her eyes track the chariot rather than the camera.
+- **Voice:** the line is nearly under her breath, flat, stripped of all vlogger performance — "...That's him. He's LEAVING." — the emphasis on LEAVING is disbelief, not volume. Fragmented delivery: three short utterances, real pauses between.
+- **Behavior:** she does not run, does not duck — she stands in the stream of the rout, turning slowly against the flow of men passing her. Stillness inside motion.
+- **Peak:** the mask-drop — "not performing for the lens anymore" — this is the episode's SINGLE rationed mask-drop beat (brief §11, V-mode complication). It must not appear anywhere else in the episode.
+- **Exit state:** hollow steadiness — carried into clip 8's now-steady hand (the recovery is shown there, not here).
+
 ## EDIT DESIGN MAP (per brief §8 — the cut TYPE chosen at every boundary, decided by drama, executed on §16 hard-cut mechanics)
 
 | Boundary | Cut type | Why this one |
