@@ -141,9 +141,18 @@ const CLIP_TRIM = {
 // action the script called for during that window, reads as dead time.
 // Head-trim 3.0s off the start (owner's explicit instruction) rather
 // than regenerate; this lands her line at local ~1.56s instead of 4.56s.
+// Owner decision, 2026-08-29: clip10B opens on Hazel's own eye-level
+// selfie framing (beat 1) before the camera detaches and rises past
+// her (beat 2) into the aftermath reveal (beat 3) -- owner wants the
+// clip to start directly on the reveal, with Hazel never in frame.
+// Frame-checked 3.5-4.0s: a sliver of her hair is still visible at
+// 3.7s, fully clean by 3.85s -- landed on 3.833333s (frame 92 @
+// 24fps), the earliest clean frame with zero trace of her. No
+// captions on this clip (visual-only), so no shift needed.
 const CLIP_HEAD_TRIM = {
   clip5: 3.0,
   clip10: 0.58333,
+  clip10B: 3.833333,
 };
 
 // Owner decision, 2026-08-26: fix clip10's dead-silence tail (confirmed
@@ -178,7 +187,7 @@ async function qcOneClip(clip, { isFirst, isLast }) {
   const availableDuration = videoDuration - headTrim;
   const outputDuration = CLIP_TRIM[clip.id] ? Math.min(CLIP_TRIM[clip.id], availableDuration) : availableDuration;
   const trimNote = CLIP_TRIM[clip.id] ? ` (trimmed from ${videoDuration}s to ${outputDuration}s per owner request)` : "";
-  const headTrimNote = headTrim ? ` (head-trimmed ${headTrim}s per owner request, dragging static hold)` : "";
+  const headTrimNote = headTrim ? ` (head-trimmed ${headTrim}s per owner request)` : "";
   // -ss before -i re-bases the stream's own PTS to 0 at the seek point, so
   // any caption times burned via the ass filter must shift by the same
   // amount to stay synced to the actual (now-shifted) dialogue audio.
