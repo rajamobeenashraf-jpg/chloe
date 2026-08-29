@@ -22,3 +22,15 @@ All three delivered to the owner in chat on creation (§20). Higgsfield balance 
 Identity otherwise strong: eyes, freckles, hair, skin tone all read correctly against Tier-1. **Awaiting owner's go-ahead to regenerate with the three fixes.**
 
 **Next steps (in order):** owner verdicts on the three stills → Hazel v2 with fixes (on go-ahead) → Alexander's §31 4-image reference set derived from the approved casting look (2 full-body + 2 face crops, single-view each) → Parmenion + Bucephalus reference stills → the frozen ENVIRONMENT_BLOCK and §32 locks go into this episode's `run_clip` equivalent → Seedance validation test clip (recommend clip 6a, the locked impact — the hardest shot; if it generates well, everything easier will too).
+
+## Round 2 — Hazel scribe v2 (2026-08-29, owner-approved regeneration)
+
+Owner approved the three-fix regen. Same refs/model.
+
+| # | Subject | Job ID | URL |
+|---|---|---|---|
+| D | Hazel scribe costume v2 | `20e835f7-eb6f-463f-96d7-68814df401c9` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_005719_20e835f7-eb6f-463f-96d7-68814df401c9.png |
+
+**QC vs. the v1 findings:** all three fixed — no earrings (bare ears), proper hinged wax diptych (two leaves, raised frames, dark wax surface) + bronze stylus, straight-pin fibulae at both shoulders; glam eye makeup gone, eyes read bare/natural. Identity vs. Tier-1: hazel iris, freckles, bronde tied-back hair, golden-tan, brows all correct; matte finish holds. Delivered to owner; awaiting verdict. If approved, v2 is the scribe-costume lock for this episode.
+
+**Also this round (story-editorial):** retention audit system adopted as brief §12 (four-audit gate before stage 8); AUDIT 1 run on script v9 and written into the script file — one fix applied from it (clip 3 armored with continuous motion + exit-into-momentum; classified the highest skip-risk beat, kept for clip 9's payoff).
