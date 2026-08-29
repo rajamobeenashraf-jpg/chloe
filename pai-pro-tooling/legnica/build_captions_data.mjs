@@ -2,7 +2,8 @@ import fs from "node:fs/promises";
 
 const chunks = JSON.parse(await fs.readFile(new URL("./word_chunks_legnica.json", import.meta.url), "utf8"));
 const durations = JSON.parse(await fs.readFile(new URL("./qc/durations.json", import.meta.url), "utf8"));
-const order = ["clip1","clip1B","clip2","clip3","clip4","clip5","clip6","clip7","clip8","clip9","clip10","clip10B","clip11"];
+// clip10 removed 2026-08-29: merged into the rewritten clip9 (fight/fall/reaction combined into one clip).
+const order = ["clip1","clip1B","clip2","clip3","clip4","clip5","clip6","clip7","clip8","clip9","clip10B","clip11"];
 const CLIPS = order.map((id) => ({
   id,
   duration: durations[id],

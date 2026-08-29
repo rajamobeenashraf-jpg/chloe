@@ -10,4 +10,12 @@ Style: Default,Liberation Serif,50,&H00FFFFFF,&H00FFFFFF,&H00000000,&H00000000,-
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:01.52,0:00:01.78,Default,,0,0,0,,NO—
+Dialogue: 0,0:00:00.00,0:00:00.52,Default,,0,0,0,,HE'S HOLDING
+Dialogue: 0,0:00:00.52,0:00:01.00,Default,,0,0,0,,THEM OFF
+Dialogue: 0,0:00:01.00,0:00:02.32,Default,,0,0,0,,ALONE— LIKE
+Dialogue: 0,0:00:02.32,0:00:02.94,Default,,0,0,0,,NOTHING CAN
+Dialogue: 0,0:00:02.94,0:00:04.00,Default,,0,0,0,,TOUCH HIM—
+Dialogue: 0,0:00:04.00,0:00:04.70,Default,,0,0,0,,NO— NO,
+Dialogue: 0,0:00:05.06,0:00:06.72,Default,,0,0,0,,NO, NO—
+Dialogue: 0,0:00:10.60,0:00:11.40,Default,,0,0,0,,HENRY...
+Dialogue: 0,0:00:11.40,0:00:12.28,Default,,0,0,0,,HENRY'S DEAD.

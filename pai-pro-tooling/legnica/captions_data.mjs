@@ -170,7 +170,7 @@ export const CLIPS = [
   },
   {
     "id": "clip3",
-    "duration": 12.041667,
+    "duration": 5.333333,
     "captions": [
       {
         "start": 1.16,
@@ -315,34 +315,58 @@ export const CLIPS = [
   },
   {
     "id": "clip9",
-    "duration": 5.625,
+    "duration": 13.041667,
     "captions": [
       {
-        "start": 1.52,
-        "end": 1.78,
-        "text": "NO—"
-      }
-    ]
-  },
-  {
-    "id": "clip10",
-    "duration": 4.458337,
-    "captions": [
-      {
-        "start": 2.74,
-        "end": 3.94,
-        "text": "HENRY II"
+        "start": 0,
+        "end": 0.52,
+        "text": "HE'S HOLDING"
       },
       {
-        "start": 3.94,
-        "end": 4.52,
-        "text": "IS DEAD."
+        "start": 0.52,
+        "end": 1,
+        "text": "THEM OFF"
+      },
+      {
+        "start": 1,
+        "end": 2.32,
+        "text": "ALONE— LIKE"
+      },
+      {
+        "start": 2.32,
+        "end": 2.94,
+        "text": "NOTHING CAN"
+      },
+      {
+        "start": 2.94,
+        "end": 4,
+        "text": "TOUCH HIM—"
+      },
+      {
+        "start": 4,
+        "end": 4.7,
+        "text": "NO— NO,"
+      },
+      {
+        "start": 5.06,
+        "end": 6.72,
+        "text": "NO, NO—"
+      },
+      {
+        "start": 10.6,
+        "end": 11.4,
+        "text": "HENRY..."
+      },
+      {
+        "start": 11.4,
+        "end": 12.28,
+        "text": "HENRY'S DEAD."
       }
     ]
   },
   {
     "id": "clip10B",
-    "duration": 9.041667,
+    "duration": 3.2083340000000007,
     "captions": []
   },
   {
