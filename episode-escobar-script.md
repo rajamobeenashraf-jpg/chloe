@@ -48,8 +48,8 @@ every edge. SFX map: band-stop, sub-drop, pool lap, ice, far macaw.
 
 ## SCENE 3 · THE LAKESHORE · 10s · MUSIC: playful sting ON the blast, out for the lens tag
 | 3.1 (2s) | **Torchlit wide:** party spilling to the black lakeshore, guests daring each other toward the water. | hard, mid-laugh |
-| 3.2 (2s) | **The DETONATION:** water blasts — hippo surfaces huge in spray <deep water blast>; screaming guests scatter through frame; Hazel jumps a full step. | hard, on the scatter |
-| 3.3 (3s) | **Pablo's unmoved single:** he hasn't shifted his weight; torchlight; amused. {Pablo: "Four hippos. From Africa. What I want, I bring."} Hippo in continuous motion behind (§17). | hard |
+| 3.2 (2s) | **The DETONATION:** water blasts — hippo surfaces huge in spray <deep water blast>; screaming guests scatter through frame; Hazel jumps a full step. EDIT: micro SPEED-RAMP on the spray peak (her dance/teeth-beat ramp). | hard, on the scatter |
+| 3.3 (3s) | **Pablo's unmoved single with RACK FOCUS:** focus pulls from the falling spray in foreground to his unmoved torchlit face sharpening behind it (her signature depth pull); amused. {Pablo: "Four hippos. From Africa. What I want, I bring."} Hippo in continuous motion behind (§17). | hard |
 | 3.4 (3s) | **Her lens, deadpan,** chaos-laughter behind: {Hazel: "He bought hippos."} | hard → S4 doorway |
 
 ## SCENE 4 · THE NUMBER · 13s · MUSIC: playful → **TOTAL DROPOUT on "A week."** → resumes low
@@ -97,6 +97,38 @@ LOCK: the murder is spoken, never shown.
 | 10.5 (2s) | **Her half-step closer, tight:** {Hazel: "Do you want to see how it ends?"} → **HOLD his eyes 1.5s → SMASH TO BLACK → card 【PART TWO】** | — |
 
 ---
+
+## TECHNIQUE COVERAGE VERIFICATION (owner-ordered audit vs the full 29-video inventory)
+
+Hooks: figure-speaks-first + host-seized (Victoria) 1.2–1.5 · banner 1.1 ·
+**channel watermark (her @COSMINACREATES equivalent): small static "HAZEL OUT OF
+TIME" top-right, all clips — ADDED to edit spec** · question-chapters (4,6,7,8,9,
+10 all open on her questions) · fact-on-prop (cash 4, band 4.4, ball 6.2) ·
+shock-stat + dropout (4.3) · countdown numbers (2.1, 8.3, 7.4) · whiplash arc ·
+memories w/ host inside (5.2–5.4, 7.2–7.4) · figure-notices-her (10.2) · monologue
+(9.2) · reactive asides only (3.4, 2.1) · era wardrobe · deadpan figure comedy
+(3.3, 4.5) · recurring local (Rosa) · empathy core (6.3) · CAMERA: crane (1.1) ·
+push-ins (1.3, 8.2, 9.2) · crash zoom (4.3) · whip exits (1.6) · macro insert
+(4.4) · rack focus (3.3) · speed-ramp (3.2) · locked-off menace (7.1) · lateral
+drifts (6.1, 7.3) · proximity escalation (S8–S10) · low-angle grandeur (gate plane
+10.1) · EDIT: hard cuts 2–10s · J-cut (5.1) · music states per scene · silence
+beats (10.4) · smash-black + card (10.5) · karaoke gold captions (spec) ·
+time-of-day arc (noon→night) · 8 locations. Orbit + POV insert + myth-bust land in
+Part 2 (see its verification). **Reflection shots deliberately avoided in Part 1
+(engine rule); Part 2 carries the two reflection beats with a stated fallback.**
+
+## RETENTION PLAN (per-swipe-window map)
+
+0:00–0:03 crane into party + the GRAB (is she about to die?) · 0:03–0:14 the
+silence, his voice, "Release her" (power established) · 0:14–0:23 the doom whisper
+(the audience contract) · 0:23–0:33 hippo detonation + "He bought hippos." (first
+laugh) · 0:33–0:46 "A week." crash-zoom + rats (the share/comment stat) ·
+0:46–1:01 the barefoot boy (first heart-hit) · 1:01–1:11 "Because I remember." →
+her ledger turn (the moral hinge) · 1:11–1:25 silver/lead + Congress memory (dread
+build) · 1:25–1:40 the grave line (tension peak) · 1:40–1:56 the monologue (the
+quote viewers repeat) · 1:56–2:12 the reveal → HIS FACE → "Do you want to see how
+it ends?" → BLACK (the strongest open loop; Part 2 is the answer). Every 8–12s
+window contains a new question, laugh, fact, or dread beat; no dead air anywhere.
 
 **Annexes (unchanged from v4, owner-approved):** style prefix · castings (Pablo A
 `b03141e0`, view set via photo-edit; Rosa; Young Pablo) · Hazel 7-ref package +

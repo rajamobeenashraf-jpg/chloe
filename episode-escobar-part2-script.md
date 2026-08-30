@@ -8,8 +8,9 @@ per-chapter music states. Approved dialogue unchanged. Same style prefix + wardr
 lock (Pablo stays in his exact 1987 clothes in every 2026 frame). Est. ~24 shots
 from ~19 generations.
 
-**Runtime ~110s · 8 scenes / 24 shots · Banner (scene 1): "Bringing Pablo Escobar
-to 2026 🇨🇴" · Fact locks and memorial/rooftop sensitivity staging as v1.**
+**Runtime ~118s (1:58) · 8 scenes / 27 shots · Banner (scene 1): "Bringing Pablo
+Escobar to 2026 🇨🇴" · Channel watermark "HAZEL OUT OF TIME" top-right, all clips ·
+Fact locks and memorial/rooftop sensitivity staging as v1.**
 
 ---
 
@@ -27,12 +28,16 @@ EYELINES: his sweep the world; hers stay on HIM — his face is the show.
 | 2.2 (2.5s) | **His single in the crowd, unblinking at the guide:** {Pablo, quiet: "He tells it wrong."} {Hazel, off: "He tells it the way it ended."} | hard |
 | 2.3 (3s) | **The t-shirt tracking shot:** a tourist strolls through frame wearing HIS FACE; Pablo's eyes track him across. <camera shutter> | hard |
 | 2.4 (3s) | **Two-shot, deadpan:** {Pablo: "He is wearing my face."} {Hazel: "They sell you now."} | hard |
-| 2.5 (2.5s) | **His single, the beat:** (0.4) {Pablo: "…How much?"} Hazel's half-smile at frame edge. | hard → S3 |
+| 2.5 (2.5s) | **His single, the beat:** (0.4) {Pablo: "…How much?"} Hazel's half-smile at frame edge. | hard |
+| 2.6 (6s) | **THE MYTH-BUST (her Washington cherry-tree beat, inverted):** the guide's voice carries over as the group passes: {Guide: "They say he burned two million dollars to keep his daughter warm—"} The group chuckles like it's a legend. Cut to Pablo's still face. (0.4) {Pablo, quiet: "That one is true."} | hard → S3 |
+(Scene 2 total now 20s; the restored burned-money fact lands as her myth-bust
+device — except here the myth is confirmed, which is colder.)
 
 ## SCENE 3 · THE CABLE CAR — the lookalike gag · 12s · MUSIC: none (gondola hum is the score)
 | 3.1 (3s) | **Gondola glass wide:** the Metrocable climbing over Medellín — murals, pitches, the city he bombed, alive and enormous; their reflections ghosted on the glass. {Hazel: "This is Medellín now."} | hard |
 | 3.2 (3s) | **The TEEN's single across the car,** phone lowering: {Teen: "No way. Bro looks exactly like him. Photo?"} | hard |
-| 3.3 (3s) | **Pablo's SLOW head-turn stare, static close** — the comedy is the stillness. <phone camera click> — the teen takes the selfie anyway. {Hazel, off: "He's not a lookalike."} | hard |
+| 3.3 (3s) | **Pablo's SLOW head-turn stare, static close** — the comedy is the stillness. {Hazel, off: "He's not a lookalike."} | hard |
+| 3.3b (2s) | **POV INSERT — THE PHONE SCREEN (her archery-POV / broadcast-UI trick):** the teen's phone screen fills frame — camera UI, the selfie framed: grinning teen + the unsmiling 1987 Pablo behind him. <phone camera click> | hard |
 | 3.4 (3s) | **Doors opening at the station:** {Teen, leaving, delighted: "Sick costume, man."} → **her lens, one flat look:** {Hazel: "I'm not explaining."} | hard → S4 |
 
 ## SCENE 4 · THE SHOW · 10s · MUSIC: none — the beat is cold
@@ -60,9 +65,44 @@ EYELINES: his sweep the world; hers stay on HIM — his face is the show.
 ## SCENE 8 · THE RETURN — coda · 16s · MUSIC: resolving strings; silence under the sign-off
 | 8.1 (3s) | **The park gate at dusk:** through the arch, faint and warm — 1987, his world, the party audible for one breath. He stops at the threshold, turns to her once: {Pablo: "My people are waiting."} | hard |
 | 8.2 (3s) | **Wide:** he steps through; the light takes him; the arch is just an arch. The 1987 sound cuts to night insects. | hard |
-| 8.3 (10s) | **Slow drift from the empty arch to her lens frame,** the mounted plane a black shape overhead — the series' first and last image, rhymed. {Hazel, plain: "He went back. He changed nothing. His war killed thousands of people. Everything else is gone. The only thing still growing… is the hippos."} <one distant low grunt from the dark> (0.5) {Hazel, soft: "Hazel — out of time."} **Hold to black.** | — |
+| 8.3 (10s) | **THE ORBIT CODA (her Washington-outro move):** a slow half-orbit AROUND Hazel as she speaks — the empty arch, then the dark park, then the mounted plane's black shape passing behind her as the camera circles, settling face-on for the sign-off. {Hazel, plain: "He went back. He changed nothing. His war killed thousands of people. Everything else is gone. The only thing still growing… is the hippos."} <one distant low grunt from the dark> (0.5) {Hazel, soft: "Hazel — out of time."} **Hold to black.** | — |
 
 ---
+
+## TECHNIQUE COVERAGE VERIFICATION (audit vs the full 29-video inventory)
+
+Arrival-as-answer + signature ONER morph (1.2, her Churchill step-out class) ·
+banner (1.2) + watermark (all) · tour-guide-recites-his-life (2.1, Socrates
+Acropolis) · merch/ubiquity beat + "how much?" (2.3–2.5, Caesar gift shop) ·
+MYTH-BUST (2.6, Washington cherry tree — inverted: confirmed true) ·
+lookalike/bystander gag (3.2–3.4, Churchill's "10 quid") · POV phone-screen insert
+(3.3b) · vehicle-motion camera (S3 gondola) · media-vs-reality (S4, Washington's
+Delaware painting) · figure's prophecy landing on himself (4.3) · aerial/high wide
+(5.1, Joan's parade grammar) · silhouette golden hour (5.2) · plant-payoff
+unsignposted (5.2 "Your four") · the wall = empathy core + his first silence (S6,
+Mary I gravity) · death told bluntly + the gravitas question (S7, William model) ·
+full-circle thesis callback ("Then I win", 7.4) · the choice/return (8.1–8.2,
+Joan) · ORBIT host coda (8.3, Washington outro) + hard-fact punch close · rack
+focus equivalents (4.2 foreground-blur push) · crash-zoom reserved (none in Part 2
+— its shocks are cold, not loud; deliberate) · proximity escalation (S6–S8 longest
+stillest holds) · hard cuts throughout, J-cut audio morphs (1.2, 8.1→8.2) · music
+states per scene incl. two NO-MUSIC scenes (4, 6) · karaoke gold captions (spec) ·
+7 locations · **reflection beats (3.1 glass, 4.3 screen ghost): kept as her
+technique WITH stated fallback — if reflections render badly (engine risk rule),
+reframe to over-shoulder without reflection; any change owner-consulted first.**
+
+## RETENTION PLAN (per-swipe-window map)
+
+0:00–0:12 "Show me." → the MORPH (his world becomes a theme park before your eyes)
+· 0:12–0:26 he listens to his own tour + the t-shirt + "…How much?" (comedy run) ·
+0:26–0:32 the burned-money myth — "That one is true." (chill #1) · 0:32–0:44 the
+lookalike gag + phone POV (comedy peak, share moment) · 0:44–0:54 "That is not
+me." → "They say my name." (his prophecy lands — chill #2) · 0:54–1:06 THE HIPPOS
+(the two-episode payoff) · 1:06–1:20 the wall — his first silence (the gut punch;
+zero music) · 1:20–1:40 the rooftop → "Then I win." (the line the comments will
+fight about) · 1:40–1:58 the return through the arch + orbit coda + sign-off.
+Comedy front-loaded, silence in the middle, full-circle close; every window holds
+a question or a payoff.
 
 **Annexes:** as Part 1 v5 (style prefix + 1987-wardrobe lock, castings, voice locks,
 wpm table from v1 holds, pacing refs measured, `{}` dialogue syntax, ⛓ chaining,
