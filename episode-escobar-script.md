@@ -64,11 +64,15 @@ recomputed inline. Captions (owner-locked 2026-08-30): her style — NO speaker 
 
 ## GLOBAL LOOKS (v8)
 
-**HAZEL LOOK (Part 1 = her MODE A, era-blended dressed-up):** the owner-locked
-dress from the 3 options (PENDING PICK) + Claude-styled hair/makeup to match;
-makeup always visibly on (signature: luminous base, soft liner, defined brows,
-satin rosy-nude lip — her identity anchor), jewelry + shoes per the locked
-option. Same look every shot, all episode (continuity invariant).
+**HAZEL LOOK (Part 1 = her MODE A, era-authentic 1987 glamour — LOCKED 2026-08-30):**
+black one-shoulder satin dress (draped single shoulder strap, ruched bodice,
+thigh-high slit, hem above the knee), gold door-knocker earrings, gold bangle
+stack, black ankle-strap heeled sandals; sleek low chignon swept off the bare
+shoulder with loose face-framing strands; soft-glam makeup (dewy skin, softly
+blended bronze eye, glossy juicy nude-rose lip). Wardrobe still set (full front
+`c404bef2-a4cf-4e99-af9a-2af7c2efa656` + full 3/4 `1a4aad7d-2bef-4db9-94ab-5c3d08595236`)
+joins the reference package of every Part 1 Hazel clip per N3/N7. Same look
+every shot, all episode (continuity invariant).
 **PABLO LOOK:** pale-blue open-collar short-sleeve shirt, dark slacks, white
 sneakers (approved view set) — never changes.
 **ENVIRONMENT LUXURY LAW (Part 13):** every location carries 1-2 era-loaded

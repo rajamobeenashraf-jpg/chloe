@@ -38,9 +38,28 @@ URLs: `https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_
 ### Production clips (Part 1)
 | Clip | Version | Job | Status |
 |---|---|---|---|
-| 7.1 "Silver… or lead" veranda two-shot (6s) | v1 | `a0dc4ef6-08a5-4618-8fab-28d7477ca5a9` | delivered 2026-08-30, awaiting owner |
-| 7.2 Congress memory wide (4s) | v1 | `df15a5fc-1d15-493c-aec5-0810c0f616bd` | delivered 2026-08-30, awaiting owner |
-| SEAM TEST 7.1→7.2 stitched hard cut (10s) | — | local `seam_test_71_72.mp4` (PyAV concat) | delivered 2026-08-30, awaiting owner |
+| 7.1 "Silver… or lead" veranda two-shot (6s) | v1 (SUPERSEDED — pre-framing-fix, one continuous shot) | `a0dc4ef6-08a5-4618-8fab-28d7477ca5a9` | superseded, see 7.1a/7.1b below |
+| 7.2 Congress memory wide (4s) | v1 (SUPERSEDED — read AI/unrealistic, uniform wardrobe, owner-flagged 2026-08-30) | `df15a5fc-1d15-493c-aec5-0810c0f616bd` | superseded, regeneration in progress |
+| SEAM TEST 7.1→7.2 stitched hard cut (10s) | — | local `seam_test_71_72.mp4` (PyAV concat) | superseded (source clips regenerating) |
+
+**LOG GAP NOTE (found 2026-08-30):** this table never recorded the "B"-choice split regeneration of 7.1 into 7.1a (waist-up two-shot) + 7.1b (dirty single) that fixed the framing-law-1 violation — that round happened but was never logged here. Not recoverable from this file; moving forward cleanly from this point.
+
+### 7.1a / 7.1b — WARDROBE-LOCKED REGENERATION (2026-08-30, per owner "Fix")
+Both regenerated with the full Hazel wardrobe still set (front `c404bef2`, 3/4 `1a4aad7d`) + Hazel master `119465f3` (identity backup) + Pablo A view set (face 3/4 `f6f8abf5`, full-body front `2551890b`) as image_references, plus fresh-measured seed_audio pacing refs (old truncated IDs `12184bc8`/`0f5bdf52` unrecoverable — regenerated):
+- Hazel pacing: seed_audio Ainsley rate +20, wav imported as media `0dd512c0-3688-4b11-ada7-c572f710550f` (218 wpm vs 211 target, pass; duration 2.2s — a rate-35 take at 249wpm/1.93s duration was REJECTED by the Seedance backend with a 422, isolated by bisection to be too short for the audio_references minimum length, not a content issue).
+- Pablo pacing: seed_audio Holden rate +100, wav imported as media `d3a2c3b9-f6eb-4074-b931-4c7a09d56fa5` (162 wpm vs ~151 original target, pass).
+| Clip | Job | Notes |
+|---|---|---|
+| 7.1a waist-up two-shot (4s, clamped up from scripted 3s — Seedance minimum) | `0ba088b9-8e6a-4d57-ab89-fa4d41c9c651` | submitted, rendering |
+| 7.1b dirty single (4s) | `b90c9b2e-43db-44d2-ad95-b4e77d89b8f4` | submitted, rendering (preset intercept "IN THE DARK" declined via `declined_preset_id:24bae836-2c4a-48e0-89b6-49fcc0b21612`) |
+7.1c (Hazel's plain-language explainer, "Silver is money. Lead is a bullet.") has no prior generation on record — needs a first generation, not a wardrobe redo.
+
+### 7.2 Congress memory — MAXIMUM-REALISM + ERA-ACCURACY REGENERATION (2026-08-30)
+Per the two new permanent rules (maximum realism every scene; era-accurate wardrobe/environment for ALL characters), regenerated via start-frame-first method (N2: complex multi-figure crowd scenes render better as a still, then animated) rather than direct t2v. Researched the real location: Capitolio Nacional, Bogotá — Salón Elíptico (Elliptical Room), neoclassical "Republican" architecture, the chamber's own ceiling fresco.
+| Asset | Job | Notes |
+|---|---|---|
+| Start frame v1 (nano_banana_pro/Gemini) | `f1d775cf-2801-4039-bd00-c15e652d0a54` | Delivered to owner for approval; varied period suits/hairstyles/mustaches on every man (fixes the identical-wardrobe finding), Salón Elíptico architecture, warm archival grade with film grain (fixes the AI-slop finding) |
+Awaiting owner approval of this frame before animating into the 3s video clip (locked-off camera per script; deputies turning row by row is the only motion).
 
 Pacing refs used on 7.1 (measured w/ faster-whisper before use): Hazel = seed_audio
 Ainsley rate −10, job `12184bc8` (222 wpm vs 211 target, pass); Pablo = seed_audio
