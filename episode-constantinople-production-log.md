@@ -250,7 +250,7 @@ Two findings from the edit-stage pass on the approved final (`ae855c5a`), both r
   - Fall physics: climbers thrown off the ladder (checked ~6.2s-9s) now fall with natural bending/twisting limbs, not a stiff plank-like pose. Fixed.
   - Helmets: checked a 4-climber stack on the ladder at ~3s — every attacker, including the lower/second climber, now wears a segmented steel helmet. Fixed.
   - Repulse constraint held: checked through 10.3s, no attacker crosses the crenellation line, ladder empty by the end.
-- Sent to owner as CLIP 9 v5 (replaces v4/`ae855c5a`). AWAITING APPROVAL.
+- Sent to owner as CLIP 9 v5 (replaces v4/`ae855c5a`). **REJECTED by owner — reverted to the previous version.** Owner locked v4 (`ae855c5a-88f5-43e9-b0d7-f898048ffeed`) as final; the flag, ragdoll-physics, and missing-helmet findings are WAIVED. Tally: clip 9 final = v4, `ae855c5a-88f5-43e9-b0d7-f898048ffeed` (unchanged from original approval).
 - Standing lesson for all remaining battle/crowd clips: specify symbol SHAPES explicitly (not just faction names), explicitly forbid iconography crossover between sides, and where an outcome matters narratively (repelled vs. breached), state the hard constraint on-camera explicitly rather than relying on implication.
 
 ### CLIP 10 — Giustiniani falls, 3 shots, FIRST non-selfie/third-person-documentary sequence of the episode (2026-08-28)
