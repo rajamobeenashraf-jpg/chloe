@@ -356,3 +356,72 @@ exists to prevent.
 MASTER RULE hook: before any prompt is finalized, walk this ledger — every
 MEASURED dimension must appear as concrete prompt text where applicable; a
 PENDING dimension relevant to the shot must be studied first, not guessed.
+
+## PART 9 — HER CONTINUITY SYSTEM, MEASURED (2026-08-30; Socrates, William, Anne studies)
+
+The five rules that make 6-8 location jumps feel like one continuous day:
+
+1. **Topic chains the location.** Every jump is motivated by the conversation
+   itself: talk of lineage → the portrait gallery; writing-vs-speech → the museum;
+   reading texts → the bookstore; "I can take you to see her" → the coronation.
+   The line BEFORE the cut names or implies the destination — the audience arrives
+   already knowing why.
+2. **Zero-lag arrival.** Dialogue or motivated ambience starts at 0-1s after
+   nearly every cut (tour-guide voice, lecture in progress, café room tone).
+   Longer silent establishes (3-8s) are spent ONLY on emotional resets (the Thames
+   bench, the coronation reveal). Never dead air after a jump.
+3. **Invariants carry identity across every cut:** wardrobe 100% frozen (the 'B'
+   necklace, the toga, the crown — never changes across centuries), screen
+   geography frozen (host camera-left, figure camera-right in virtually every
+   two-shot, all video long — a hard 180° discipline), consistent light family
+   per act.
+4. **Contrast cuts define new space:** extreme close-up → wide establish (or
+   reverse) at scene changes; landmark + on-screen place/year text ("Westminster
+   Abbey 1559") grounds the viewer in one second.
+5. **Emotional punctuation = transition license.** A laugh, a tear, or a
+   punchline lands, THEN the cut — the beat's closure is what makes the jump feel
+   earned rather than abrupt.
+
+APPLICATION CHECK (Escobar scripts): topic-chaining largely present (hippo line →
+lakeshore; money question → warehouse; "Were you always rich?" → memory) — but
+audit each seam for rule 1 and add rule 3's fixed screen geography: HAZEL =
+frame-LEFT, PABLO = frame-RIGHT in every two-shot of both episodes (matches the
+already-shot 7.1a spec). Wardrobe already frozen. Zero-lag arrival to be written
+into every scene's first shot.
+
+## PART 10 — HER MUSIC, SOUND & GRAPHICS SYSTEM, MEASURED (Joan, Genghis studies)
+
+MUSIC: per-chapter cues, each location/beat gets its own motif (somber pads →
+triumphant brass → festive parade → intimate piano → final crescendo); music DUCKS
+low under every line (≈ -18dB feel), swells only BETWEEN dialogue; deliberate
+dropouts/silence on punchlines and on the portal moment; comedy videos ride one
+light pizzicato bed with a sad-slide gag variation; final line often lands on an
+unresolved low hit. → Our per-scene music states match this; add: duck-under-
+dialogue as an edit rule, swell-only-between-lines, dropout ON punchlines.
+SOUND: every location has a distinct ambience bed (reverb character changes:
+stone hall wet → street dry → cathedral huge); SFX punctuate actions and cuts
+(paper rustle, door slide, hoofbeats); portal = deep whoosh + resonant hum;
+dialogue always clean and front. → matches our diegetic-only prefix; keep
+per-location reverb character as an explicit prompt line.
+GRAPHICS: top-center white pill banner with emoji, visible ONLY until the first
+scene change (~10s), then gone permanently; 1-3 word ALL-CAPS white bold captions,
+bottom-center, word-pop synced; landmark place/year serif overlays on era jumps;
+portal VFX overlay; rapid fade-to-black endings. → Banner duration rule is NEW:
+our banner should die at the first location change, not persist.
+
+## PART 11 — HER VOICE, GRADE & MOTION RULES, MEASURED (Washington study)
+
+VOICES: strict binary — figure = lower pitch, measured cadence, formal
+era-appropriate diction, faint period/regional accent; host = bright modern
+conversational GenAm. Never let the figure sound modern. → Pablo's soft, low,
+unhurried voice with gentle Colombian accent conforms; Hazel's lock conforms.
+GRADE: period/past scenes = warm low-key amber, muted earth, painterly grain;
+modern scenes = clean daylight high-key, natural skin; golden-hour finales;
+recurring palette anchored by wardrobe colors. → matches our style prefix +
+memory-grade rule; Part 2's 2026 scenes should grade CLEANER/brighter than
+Part 1's 1987 (add to Part 2 style prefix when shooting).
+MOTION: smooth gimbal/dolly energy, organic 24fps blur, no erratic handheld;
+speed-ramps softened at portal moments; AI-artifact hygiene = stable torsos in
+dialogue, subtle head turns, real prop interactions grounding hands, clear
+subject/background separation. → matches S12/§8.2 and our prop-contact habit;
+keep "stable torso, subtle head movement" as dialogue-shot prompt text.
