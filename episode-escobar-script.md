@@ -91,9 +91,14 @@ EYELINES: boy→city, never camera; Hazel→boy→lens.
 | 6.2 (3s) | **Pablo among the kids, medium:** he rolls the ball back; her question from off-frame: {Hazel: "Why give it away?"} — his eyes stay on the kids: {Pablo: "Because I remember."} | hard |
 | 6.3 (4s) | **Her lens, steady, apart from them:** jokes gone. {Hazel, quiet: "The help is real. But he kills journalists. Judges. Policemen."} | hard → S7 veranda |
 
-## SCENE 7 · SILVER OR LEAD + THE CONGRESS · 5s + 2.5s + 9s · MUSIC: the drone returns
-| 7.1 (5s) | **LOCKED frame, medium-close two-shot,** amber veranda: {Hazel: "And the people who say no to you?"} {Pablo, almost gentle: "Everyone accepts something. Silver… or lead."} His eyes never blink. The camera never moves. | hard, on her blink |
-| 7.1b (2.5s) | **NEW (v6, plain-language rule):** her lens, hushed, his stillness soft behind her shoulder: {Hazel, hushed: "Silver is money. Lead is a bullet."} (7 words at her quick-hushed 185 wpm ≈ 2.3s.) The plainly-told fact IS the chill — no decoding required. | cut + <gavel strike> |
+## SCENE 7 · SILVER OR LEAD + THE CONGRESS · 3s + 3.5s + 2.5s + 9s · MUSIC: the drone returns
+(v6.2, owner pick "B" 2026-08-30 after the 10-video framing study: the old single
+locked chest-up two-shot broke framing law 1 — both spread to edges, dead center.
+Recut her way: waist-up two-shot for the question → hard cut to a DIRTY SINGLE on
+Pablo for the menace line, per law 2.)
+| 7.1a (3s) | **LOCKED WAIST-UP TWO-SHOT (framing law 1),** amber veranda: Hazel frame-left, Pablo frame-right, standing close, BOTH fully inside frame; bottom edge cuts at the belt line; ~20% headroom of veranda beams + tropical green; eye-level. {Hazel: "And the people who say no to you?"} He listens, half-smile fixed. | hard, as his lips part |
+| 7.1b (3.5s) | **DIRTY SINGLE on Pablo (framing law 2 — the menace close-up):** over Hazel's shoulder — her soft-focus hair/shoulder slicing the LEFT edge (~15% width), his face owning the center-right ~75%; minimal headroom (curls graze the top edge); bottom cut at the collarbone; his eyes locked on her, unblinking. {Pablo, almost gentle: "Everyone accepts something. Silver… or lead."} Nothing moves but his mouth. | hard, on the last word |
+| 7.1c (2.5s) | **Her lens, hushed (plain-language rule),** his stillness soft behind her shoulder: {Hazel, hushed: "Silver is money. Lead is a bullet."} (7 words at her quick-hushed 185 wpm ≈ 2.3s.) The plainly-told fact IS the chill. | cut + <gavel strike> |
 | 7.2 (3s) | **MEMORY, chamber wide:** 1983 Congress floor — the minister at the podium, arm extended, pointing; deputies turning; the murmur rising. | hard |
 | 7.3 (3s) | **Tracking with Pablo:** he rises, buttons his jacket, walks out unhurried through the storm of voices. | hard |
 | 7.4 (3s) | **Hazel at the chamber wall, lens:** {Hazel, hushed: "He got himself elected to Congress. The justice minister stood up and told the country the truth. Months later, that minister was murdered."} | hard back to his UNCHANGED calm at the veranda → S8 |

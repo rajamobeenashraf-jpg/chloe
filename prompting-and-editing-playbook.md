@@ -345,13 +345,13 @@ exists to prevent.
 | 6 | Framing/composition (shot sizes, crops, headroom) | MEASURED | Part 7 |
 | 7 | Captions system (chunks, gold karaoke, no tags) | MEASURED + owner-locked | CLAUDE.md, scripts |
 | 8 | Portal/time-travel transition device | MEASURED + upgraded | Part 1 scripts, study doc |
-| 9 | Continuity/scene-connection (no-jumps system) | STUDY RUNNING (jobs f8266ed0, ced8ed88, cb51eb09) | → Part 9 |
-| 10 | Music system (cues, per-chapter states, silence) | STUDY RUNNING (jobs 3a4a8898, 730ebe3b) | → Part 10 |
-| 11 | Sound design (ambience, SFX, bridges) | STUDY RUNNING (same jobs as 10) | → Part 10 |
-| 12 | Graphics/overlays (banner, secondary text, effects) | STUDY RUNNING (same jobs as 10) | → Part 10 |
-| 13 | Figure/host VOICE character + accents | STUDY RUNNING (job f6307447) | → Part 11 |
-| 14 | Color & grade (era vs modern, palette, grain) | STUDY RUNNING (job f6307447) | → Part 11 |
-| 15 | Motion quality (blur, slow-mo, stabilization, artifact-hiding) | STUDY RUNNING (job f6307447) | → Part 11 |
+| 9 | Continuity/scene-connection (no-jumps system) | MEASURED | Part 9 |
+| 10 | Music system (cues, per-chapter states, silence) | MEASURED | Part 10 |
+| 11 | Sound design (ambience, SFX, bridges) | MEASURED | Part 10 |
+| 12 | Graphics/overlays (banner, secondary text, effects) | MEASURED | Part 10 |
+| 13 | Figure/host VOICE character + accents | MEASURED | Part 11 |
+| 14 | Color & grade (era vs modern, palette, grain) | MEASURED | Part 11 |
+| 15 | Motion quality (blur, slow-mo, stabilization, artifact-hiding) | MEASURED | Part 11 |
 
 MASTER RULE hook: before any prompt is finalized, walk this ledger — every
 MEASURED dimension must appear as concrete prompt text where applicable; a
