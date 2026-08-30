@@ -25,6 +25,10 @@ smile 4K `3ba4ea27` + anger 4K `d7ea2bd4`. Voice lock `b24e5759-d3c0-4c84-a184-4
 
 All casting URLs: `https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/<suffix>.png`
 
+### Pablo voice lock (owner decision 2026-08-30)
+Owner rejected the default Seedance-synthesized voice used in the first 7.1b takes ("I don't like his voice"). Rejected also: 4 Higgsfield `seed_audio` presets (Marcus, Cillian, Bram, Desmond) and 3 parameter-sculpted (pitch/rate-tuned) variants — all "bad." Owner asked specifically for a voice matching Pablo's real 1987 age (~37) with a genuine Colombian-accented English, referencing the Narcos-style portrayal. Researched the actual performance (reviews describe it as soft-spoken, restrained, "danger in his calm," never gravelly/theatrical — confirms our own already-scripted "almost gentle" direction for 7.1b). Sourced 3 real Colombian-accented English voices from ElevenLabs' library (age-labeled 35-45): AD-berto, JoseR, Nilton. **Owner picked Nilton** (`57Zk2fTHX6fnrs8DtTnO`, `eleven_multilingual_v2`) — "calm, secure, close" register.
+**LOCKED per owner directive "use pacing per our lock rules":** Nilton sample (media `19a168b5-1e2c-4848-8e48-33299e2889b3`, ElevenLabs generation of "Everyone accepts something. Silver... or lead.") is the VOICE IDENTITY/TIMBRE lock reference for every future Pablo clip. Tempo/rhythm stays on the separately-measured Higgsfield `seed_audio` pacing reference (Holden rate +100, media `d3a2c3b9-f6eb-4074-b931-4c7a09d56fa5`, 162 wpm vs ~151 target) per the standing dual-reference method — both passed together in `audio_references` with distinct REFERENCE ROLES instructions (@Audio1 = timbre only, @Audio2 = tempo only). 7.1b regenerated on this basis, job `9d6471c6-806a-4b82-8275-b56e51f0e5be`.
+
 ### Pablo A view set (generated 2026-08-30 via N4 photo-edit from anchor `b03141e0`; nano_banana_pro 2K working res, NO 4K pre-approval; delivered to owner, AWAITING APPROVAL)
 | View | Job |
 |---|---|
