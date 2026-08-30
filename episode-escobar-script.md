@@ -103,7 +103,7 @@ Rates: Hazel urgent **264** (4.40 w/s) · neutral **211** (3.52) · quick-hushed
 | 2 | P 5w+5w · P 3w · H hushed 19w | 1.8+1.8+1.1+6.2 | 2.1 (splash/flinch) | **13s** |
 | 3 | H hushed 9w · H 6w · P 6w · H 2w · P 2w · H lens 10w · P 6w | 2.9+1.7+2.1+0.6+0.7+2.8+2.1 | 2.1 | **15s** |
 | 4a | H 4w · P 1w | 1.1+0.4 | 1.5 | **3s** |
-| 4b | H quiet 19w · P 4w | 7.2+1.4 | 1.4 (memory settle) | **10s** |
+| 4b | H quiet 23w · P 4w | 8.7+1.4 | 1.4 (memory settle) | **12s** |
 | 5 | Rosa 9w · H 4w · P 3w · H quiet 10w | 2.8+1.1+1.1+3.8 | 1.2 | **10s** |
 | 6a | H 8w · P 6w | 2.3+2.1 | 0.6 | **5s** |
 | 6b | H hushed 24w | 7.8 | 1.2 | **9s** |
@@ -114,7 +114,7 @@ Rates: Hazel urgent **264** (4.40 w/s) · neutral **211** (3.52) · quick-hushed
 | 11a | H deliberate 20w | 6.5 | 0.5 | **7s** |
 | 11b | H deliberate 36w + sign-off 4w | 11.7+2.4 | 0.9 | **15s** |
 
-**Total: 13+13+15+3+10+10+5+9+15+16+11+13+7+15 = 155s (~2:34).**
+**Total: 13+13+15+3+12+10+5+9+15+16+11+13+7+15 = 157s (~2:37).**
 
 ---
 
@@ -193,9 +193,11 @@ HARD CUT sold by audio: rain on tin roofs. A Medellín hillside at dusk, decades
 dusk ago — narrow brick lanes, cooking smoke. A thin BAREFOOT BOY with dark curls
 stands looking down at the city lights. HAZEL stands in the memory a few steps away,
 exactly as she is, watching him — then turns to lens, quiet:
-"He grew up poor, right here in Medellín. He promised his mother he would be a
-millionaire by twenty-two."
+"He grew up poor, right here in Medellín. He told his mother: I am poor — but I will
+never die poor. I promise."
 *[Pablo]* (voice only, present-day, quiet): "I kept my promise."
+— (Fact-verified 2026-08-30: this is his documented line to his mother; the
+"million-by-22" version from the concept was unverifiable and is replaced.)
 — CINEMA: wide dusk frame, the boy small against the city; ONE move: slow drift
 toward Hazel's lens turn. Warmer, lifted-black memory grade per the style prefix.
 EYELINES: the boy looks at the city, never at camera; Hazel at the boy, then lens.
@@ -239,7 +241,9 @@ in a suit; deputies turning; Pablo rising, buttoning his jacket, walking out unh
 through the storm of voices. HAZEL stands against the chamber wall, watching; quick,
 hushed, to lens:
 "He got himself elected to Congress. The justice minister stood up and told the
-country the truth. A year later, that minister was murdered."
+country the truth. Months later, that minister was murdered."
+— (Fact-verified 2026-08-30: Lara Bonilla denounced him from August 1983; Escobar was
+expelled; Lara was assassinated April 30, 1984 — months, not a year.)
 — CINEMA: one slow lateral track along the chamber wall with Hazel in foreground
 profile, the confrontation deep in frame (parallel staging, no faces invented for
 real victims beyond the podium figure at distance). Warm archival-feeling light.
