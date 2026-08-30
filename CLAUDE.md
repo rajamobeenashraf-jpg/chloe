@@ -30,6 +30,7 @@ the clip is never gated behind Claude's own findings — see the QC rule below).
    - Considered sound and music where relevant (brief §15)?
    - Considered editing and continuity?
    - Evaluated whether the default model is genuinely the best choice for this scene, and followed §14 if not?
+   - **Checked the actual generated result's lighting/exposure against the episode's established grade before presenting it — not just written the grade into the prompt and assumed it landed.** (Concrete failure case, logged 2026-08-30: Clip 6b's start-frame still v1 was prompted with the correct "harsh, flat, bright daylight" grade text, but the actual generation came back noticeably darker/dimmer/moodier than every other battle shot — a real visual-continuity break that a text-only check of the prompt would never catch, since the prompt was correct and the output still drifted. Caught only because the owner looked at the delivered image and flagged it; this must be checked before delivery, every generation, not left for the owner to find.) This applies to every visual-continuity dimension, not lighting alone — color grade, dust density/color, screen direction, gear/iconography — check the pixels, not just the prompt text.
 
 If two established rules genuinely conflict for a given shot, name the conflict and propose the professional resolution — never silently drop one.
 
