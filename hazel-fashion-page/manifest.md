@@ -46,16 +46,26 @@ All derived from the SAME approved photo — no new face/pose generation, only d
 
 | Asset | Size | Source photo | Source op | Outpaint job ID | Local file |
 |---|---|---|---|---|---|
-| Profile picture (FB+IG+TikTok+YT) | 1080×1080 | look #3 `45b62bfd` (balcony) | direct crop (head-and-shoulders) | — | `hazel_profile_picture_1080x1080.png` |
-| Facebook cover | 820×312 (JPG, 55 KB) | look #3 `45b62bfd` (balcony) | `outpaint_image` to 21:9 (`d552383f-4ab9-435c-a7cb-7063fd2e24e6`), center-cropped to exact ratio | `d552383f-4ab9-435c-a7cb-7063fd2e24e6` | `hazel_facebook_cover_820x312.jpg` |
-| YouTube banner | 2560×1440 (safe area 1546×423 centered) | new look #4 `b20931c1` — same dress/Soul, distinct walking pose on a rooftop terrace (owner asked for cover + banner to be different photos, not two crops of one shot) | `outpaint_image` to 16:9 (`c550d0e8-e77f-4aa6-8df9-0d33b24c33e5`; first attempt `66c81e32` was flagged `nsfw` and discarded, retry succeeded unchanged), center-cropped/resized to exact size | `c550d0e8-e77f-4aa6-8df9-0d33b24c33e5` | `hazel_youtube_banner_2560x1440.png` |
+| Profile picture (FB+IG+TikTok+YT) | 1080×1080 | look #3 `45b62bfd` (emerald gown, balcony) | direct crop (head-and-shoulders) | — | `hazel_profile_picture_1080x1080.png` |
+| YouTube banner | 2560×1440 (safe area 1546×423 centered) | look #3 `45b62bfd` (emerald gown, balcony) | `outpaint_image` to 16:9 (`54656369-b403-4a53-b7c5-5a59410fb2f5`), center-cropped/resized to exact size | `54656369-b403-4a53-b7c5-5a59410fb2f5` | `hazel_youtube_banner_2560x1440.png` |
+| Facebook cover | 820×312 (JPG, 54 KB) | new look #5 `7221a155` — **different dress**: black satin off-shoulder mini, gold hoops + layered necklaces, black stilettos, city rooftop at dusk (owner: "give me the Facebook cover in a different dress") | `outpaint_image` to 21:9 (`6e2522e0-8a68-4bfb-a8fe-9caa777ce660`), center-cropped/resized to exact ratio | `6e2522e0-8a68-4bfb-a8fe-9caa777ce660` | `hazel_facebook_cover_black_820x312.jpg` |
 
 Sent to owner 2026-08-30. Local files are gitignored (session-local); job IDs above are the
 retrievable source in Higgsfield.
 
+**Correction log (2026-08-30):** an earlier pass misread "give me the Facebook cover in a different
+dress" as "make cover and banner different photos" and regenerated the banner as well (new look #4
+`b20931c1`, rooftop walking pose, job `c550d0e8` — first outpaint attempt `66c81e32` was flagged
+`nsfw` and discarded). Owner corrected this: only the Facebook cover was meant to change, and it
+needed an actual different DRESS (not just a different pose in the emerald gown), per the project's
+locked 3-options → owner-picks wardrobe workflow. Banner was reverted to the original look #3
+emerald/balcony crop. Look #4 (`b20931c1` / `c550d0e8`) is unused but kept logged in case it's
+wanted later.
+
 ## Status
 - [x] Owner confirmed Round 2 identity/realism (picked look #3)
 - [x] Crop/compose to platform specs (see `BRAND_KIT.md` §3)
-- [x] Cover and banner made into two distinct photos per owner request (banner now sourced from new look #4, same wardrobe/Soul)
+- [x] Facebook cover regenerated in a different dress (black satin off-shoulder), 3-option wardrobe workflow followed, owner picked
+- [x] YouTube banner reverted to original emerald-gown crop after the cover/banner mixup
 - [ ] Owner approval on final crops
 - [ ] 4K upscale (only after approval — profile pic and banner are candidates; FB cover has its own small-file-size best practice, upscale not needed there)
