@@ -44,6 +44,16 @@ All casting URLs: `https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni
   later"). He asked to be reminded.
 - Reflection shots executed her way (not a risk class); rifle-hook filter fallback
   = grip-only, owner consulted first.
+- **Part 1 reveal moved to the START (owner order 2026-08-30, script v6):** Hazel
+  tells Pablo in shot 1.4, at gunpoint, that she's from the future and knows how
+  his story ends. Knock-ons applied: 1.5 (amused disbelief), 2.1 aside ("He
+  doesn't believe me yet. He will."), Scene 10 reworked — cliffhanger is now HIM
+  believing her ("…But you already know. You've known all day."), same closing
+  question + smash to black. Runtime ~138s. Awaiting owner approval of v6 beats.
+- **"Silver or lead" clarified to owner + plain-language explainer restored as new
+  shot 7.1b** ({Hazel: "Silver is money. Lead is a bullet."}) per the standing
+  plain-language rule — the owner himself asked what "lead" meant, proving the
+  line needed the explainer.
 
 ## Next steps (in order)
 1. Pablo view set derived from casting B via photo-edit (face 3/4, laughing expression w/ teeth, full-body front in scene wardrobe, full-body 3/4) → owner approval.

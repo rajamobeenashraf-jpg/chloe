@@ -1,8 +1,16 @@
-# PART 1 SCRIPT v5 — "Visiting Pablo Escobar in 1987" (SHOT-BY-SHOT EDIT BLUEPRINT)
+# PART 1 SCRIPT v6 — "Visiting Pablo Escobar in 1987" (SHOT-BY-SHOT EDIT BLUEPRINT)
 
-**Status: DRAFT v5 — awaiting owner approval.** Owner directive 2026-08-30: rebuild
+**Status: DRAFT v6 — awaiting owner approval.** Owner directive 2026-08-30: rebuild
 both scripts purely from the 29-video reverse-engineered corpus — camera, cinematic
 shots, editing, everything in HER grammar, no residual old habits.
+
+**THE v6 CHANGE (owner order 2026-08-30): Hazel now tells Pablo AT THE START that
+she is from the future and knows his destiny (shot 1.4). Everything else is kept;
+only the beats that change touched: 1.5 (his reaction), 2.1 (the aside now runs on
+disbelief, not secrecy), 7.1b (NEW — plain-language explainer for "silver or lead,"
+per the standing plain-language rule), and Scene 10 (the reveal no longer lives
+there — the cliffhanger becomes HIM finally believing her, same closing question,
+same smash to black). Runtime ~132s → ~138s.**
 
 **THE v5 CORRECTION (the real fix):** v4 wrote each scene as one continuous take.
 Her reels are the opposite — **every scene is a MULTI-SHOT EDIT**: 3–5 shots
@@ -10,7 +18,8 @@ hard-cut together, cuts every 2–10s, shot-reverse-shot dialogue, crash-zoom
 punch-ins with bass drops on shock beats, whip-blur exits between chapters, macro
 inserts, proximity escalation (shots lengthen + tighten as emotion rises), and
 per-chapter music states. v5 is written as her editors would build it: **scene →
-shot list → cut → SFX → music state.** Approved dialogue from v4 is UNCHANGED.
+shot list → cut → SFX → music state.** Approved dialogue from v4 is unchanged
+EXCEPT the four v6 beats (1.4, 1.5, 2.1, 10.2–10.3) and the new 7.1b.
 
 **Production method for multi-shot scenes (reconciled with our verified rules):**
 - Each shot = one generation OR a digital reframe of a sibling take (crash
@@ -24,27 +33,28 @@ shot list → cut → SFX → music state.** Approved dialogue from v4 is UNCHAN
   audio continuous across them (§16).
 - Est. generations Part 1: ~28 shots from ~22 generations (6 derived reframes).
 
-**Runtime ~132s · 10 scenes / 28 shots · Locks, style prefix, character castings,
+**Runtime ~138s · 10 scenes / 29 shots · Locks, style prefix, character castings,
 wpm math, filter fallback for the rifle, banner, memory-scene approval — all as v4
-(unchanged, owner-approved). Captions: locked word-chunk system; karaoke GOLD
-active-word highlight = her spec, pending owner's earlier caption decision.**
+(unchanged, owner-approved) except the v6 beats listed above, whose wpm math is
+recomputed inline. Captions (owner-locked 2026-08-30): her style — NO speaker tags
++ karaoke GOLD active-word highlight.**
 
 ---
 
-## SCENE 1 · THE SEIZURE — cold open · 14s · MUSIC: band mid-song → DEAD SILENCE → band resumes
+## SCENE 1 · THE SEIZURE — cold open · 16s · MUSIC: band mid-song → DEAD SILENCE → band resumes
 | # | Shot (dur) | Camera & content | Cut out |
 |---|---|---|---|
 | 1.1 (2.5s) | **FIRST FRAME = THE GRAB (her hook law: frame one is a person in tension — no establish):** medium-close, HAZEL SEIZED mid-step — two men pinning her arms, a rifle rising INTO frame, party chaos bokeh behind; the band stops mid-note in the first half-second <needle-drop band stop + sub-drop>. Her breath in the silence. Banner ON: "Visiting Pablo Escobar in 1987 🇨🇴". | hard |
 | 1.2 (2s) | **The reverse — scale revealed THROUGH the silence:** the crowd parting in a diagonal, dancers frozen mid-move, drinks half-raised, the pool glaring beyond. HIS VOICE ENTERS OFF-SCREEN OVER THIS SHOT (J-cut — first dialogue by ~2.5s, her hook law): {Pablo, off: "You walk into my house with a camera."} | hard |
 | 1.3 (2s) | **Slow push, long lens across the pool, finding the voice:** PABLO at the far table, looking up, finishing: {Pablo: "Who sent you?"} | hard |
-| 1.4 (2s) | **Her single, close:** chin up, eyes ON PABLO — never the rifle. {Hazel: "Nobody. I came a very long way to hear your story."} | hard |
-| 1.5 (3s) | **His single, closer:** the long beat — his eyes reading her over the water. Then: {Pablo: "Release her."} | hard |
+| 1.4 (4s) | **Her single, close — THE REVEAL, minute one (owner order 2026-08-30):** chin up, eyes ON PABLO — never the rifle. {Hazel: "Nobody sent me. (0.4) I'm from the future, Pablo. I know how your story ends."} (16 words + 0.4 pause at her neutral 211 wpm ≈ 3.9s.) | hard |
+| 1.5 (3s) | **His single, closer:** the long beat — his eyes reading her over the water; then the slow, amused half-smile of a man hearing the first genuinely new thing anyone has dared say in his house. He doesn't believe her. He's entertained. {Pablo: "Release her."} | hard |
 | 1.6 (2.5s) | **CRANE-UP WIDE resolve — the one full-party geography shot, RISING:** the grips open; she straightens her shirt; his open hand at the empty chair across the pool; the camera lifts slowly as {Pablo: "Sit."} lands and the band restarts — the party swallowing the moment from above. (Her crane grammar: scale mid-body, never the hook.) | whip-blur exit → S2 |
 EYELINES: hers→Pablo from shot 1.2 on; his→her; guards→HIM. §17: party alive at
 every edge. SFX map: band-stop, sub-drop, pool lap, ice, far macaw.
 
 ## SCENE 2 · THE ASIDE · 9s · MUSIC: tense drone under party muffle
-| 2.1 (9s) | **Her V-mode lens, walking** (§14 forward), party bokeh streaming, one pool flare. {Hazel, hushed: "Forbes just named him one of the richest men on Earth. In six years, he'll be dead on a rooftop. He doesn't know. I do."} One eye-flick to his back on "he doesn't know." | hard, on her lens drop |
+| 2.1 (9s) | **Her V-mode lens, walking** (§14 forward), party bokeh streaming, one pool flare. {Hazel, hushed: "Forbes just named him one of the richest men on Earth. In six years, he'll be dead on a rooftop. He doesn't believe me yet. He will."} One eye-flick to his back on "he doesn't believe me." (v6: the aside now runs on his DISBELIEF — she told him at the gate; he laughed it off. The episode's engine is him slowly starting to believe.) | hard, on her lens drop |
 
 ## SCENE 3 · THE LAKESHORE · 10s · MUSIC: playful sting ON the blast, out for the lens tag
 | 3.1 (2s) | **Torchlit wide:** party spilling to the black lakeshore, guests daring each other toward the water. | hard, mid-laugh |
@@ -72,8 +82,9 @@ EYELINES: boy→city, never camera; Hazel→boy→lens.
 | 6.2 (3s) | **Pablo among the kids, medium:** he rolls the ball back; her question from off-frame: {Hazel: "Why give it away?"} — his eyes stay on the kids: {Pablo: "Because I remember."} | hard |
 | 6.3 (4s) | **Her lens, steady, apart from them:** jokes gone. {Hazel, quiet: "The help is real. But he kills journalists. Judges. Policemen."} | hard → S7 veranda |
 
-## SCENE 7 · SILVER OR LEAD + THE CONGRESS · 5s + 9s · MUSIC: the drone returns
-| 7.1 (5s) | **LOCKED frame, medium-close two-shot,** amber veranda: {Hazel: "And the people who say no to you?"} {Pablo, almost gentle: "Everyone accepts something. Silver… or lead."} His eyes never blink. The camera never moves. | cut ON her blink + <gavel strike> |
+## SCENE 7 · SILVER OR LEAD + THE CONGRESS · 5s + 2.5s + 9s · MUSIC: the drone returns
+| 7.1 (5s) | **LOCKED frame, medium-close two-shot,** amber veranda: {Hazel: "And the people who say no to you?"} {Pablo, almost gentle: "Everyone accepts something. Silver… or lead."} His eyes never blink. The camera never moves. | hard, on her blink |
+| 7.1b (2.5s) | **NEW (v6, plain-language rule):** her lens, hushed, his stillness soft behind her shoulder: {Hazel, hushed: "Silver is money. Lead is a bullet."} (7 words at her quick-hushed 185 wpm ≈ 2.3s.) The plainly-told fact IS the chill — no decoding required. | cut + <gavel strike> |
 | 7.2 (3s) | **MEMORY, chamber wide:** 1983 Congress floor — the minister at the podium, arm extended, pointing; deputies turning; the murmur rising. | hard |
 | 7.3 (3s) | **Tracking with Pablo:** he rises, buttons his jacket, walks out unhurried through the storm of voices. | hard |
 | 7.4 (3s) | **Hazel at the chamber wall, lens:** {Hazel, hushed: "He got himself elected to Congress. The justice minister stood up and told the country the truth. Months later, that minister was murdered."} | hard back to his UNCHANGED calm at the veranda → S8 |
@@ -89,10 +100,14 @@ LOCK: the murder is spoken, never shown.
 | 9.2 (13s) | **THE LONGEST SHOT OF PART 1 — her monologue grammar:** one slow push-in, medium → tight on the heavy-lidded eyes, dusk crossing his face: {Pablo: "That I came from nothing, and I bowed to no one." (0.5) "They will call me a monster. My people will call me a saint. Either way — they will say my name."} Eyes: hers→his for sentence one; past camera for sentence two; back to her on "my name." | hard → S10 gate |
 (Proximity-escalation law: S8–S10 shots run longer and tighter than S1–S4's.)
 
-## SCENE 10 · THE CLIFFHANGER · 16s · MUSIC: all out from her reveal; one sub-drop on black
+## SCENE 10 · THE CLIFFHANGER — belief lands · 17.5s · MUSIC: all out from his question; one sub-drop on black
+(v6: the reveal moved to shot 1.4 — this scene is no longer the reveal. It is the
+episode's payoff arc completing: the man who LAUGHED at her claim in minute one has
+watched her know things all day, and at the gate HE is the one who brings it back.
+Same closing question, same smash to black — the cliffhanger survives intact.)
 | 10.1 (3s) | **Walking two-shot** to the gate, the mounted plane black overhead; camera stops when they stop. {Hazel: "How does this end, Pablo?"} | hard |
-| 10.2 (4s) | **His single:** {Pablo, small smile: "It doesn't. Colombia and I have an arrangement." (0.4, studying her) "You ask questions like someone who already knows the answers."} | hard |
-| 10.3 (4s) | **HER single — the reveal, to HIM, never the lens:** {Hazel: "I do know them." (0.5) "I'm from the future, Pablo."} | hard ON the last syllable |
+| 10.2 (6s) | **His single:** {Pablo, small smile: "It doesn't. Colombia and I have an arrangement." (0.4, the smile fading, studying her) "…But you already know. You've known all day."} (15 words + 0.4 pause at his deliberate 168 wpm ≈ 5.8s.) He is not joking anymore — the first time all day he takes her claim seriously. | hard |
+| 10.3 (2.5s) | **HER single — the confirmation, to HIM, never the lens:** {Hazel, quiet: "I do." (0.5) "All of it."} (5 words + 0.5 pause at her quiet 158 wpm ≈ 2.4s.) | hard ON the last syllable |
 | 10.4 (3s) | **HIS reaction, static close-up:** the face changes — first time all day. Silence. | hard |
 | 10.5 (2s) | **Her half-step closer, tight:** {Hazel: "Do you want to see how it ends?"} → **HOLD his eyes 1.5s → SMASH TO BLACK → card 【PART TWO】** | — |
 
@@ -105,7 +120,9 @@ Hooks: frame-one-is-the-grab / host-seized (Victoria) 1.1 · first dialogue by
 top-right, all clips** · question-chapters (4,6,7,8,9,10 all open on her
 questions) · fact-on-prop (cash 4, band 4.4, ball 6.2) · shock-stat + dropout
 (4.3) · countdown numbers (2.1, 8.3, 7.4) · whiplash arc · memories w/ host inside
-(5.2–5.4, 7.2–7.4) · figure-notices-her (10.2) · monologue (9.2) · reactive asides
+(5.2–5.4, 7.2–7.4) · future-reveal at the hook (1.4, owner order — the Elizabeth
+1.1M-view dialogue formula: reveal early, spend the episode on belief) ·
+figure-notices-her → figure-BELIEVES-her (10.2) · monologue (9.2) · reactive asides
 only (3.4, 2.1) · "P.S." secondary-text device (3.4, optional) · era wardrobe ·
 deadpan figure comedy (3.3, 4.5) · recurring local (Rosa) · empathy core (6.3) ·
 CAMERA: crane-up mid-body (1.6) · push-ins (1.3, 8.2, 9.2) · crash zoom (4.3) ·
@@ -123,16 +140,20 @@ highlight. EDIT-STAGE REMINDER (owner-ordered): raise the optional "P.S." overla
 
 ## RETENTION PLAN (per-swipe-window map)
 
-0:00 THE GRAB, frame one (is she about to die?) · 0:02–0:14 the silence, his voice
-entering over it, "Release her" (power established) · 0:14–0:23 the doom whisper
-(the audience contract) · 0:23–0:33 hippo detonation + "He bought hippos." (first
-laugh) · 0:33–0:46 "A week." crash-zoom + rats (the share/comment stat) ·
-0:46–1:01 the barefoot boy (first heart-hit) · 1:01–1:11 "Because I remember." →
-her ledger turn (the moral hinge) · 1:11–1:25 silver/lead + Congress memory (dread
-build) · 1:25–1:40 the grave line (tension peak) · 1:40–1:56 the monologue (the
-quote viewers repeat) · 1:56–2:12 the reveal → HIS FACE → "Do you want to see how
-it ends?" → BLACK (the strongest open loop; Part 2 is the answer). Every 8–12s
-window contains a new question, laugh, fact, or dread beat; no dead air anywhere.
+0:00 THE GRAB, frame one (is she about to die?) · 0:02–0:16 the silence, his voice
+entering over it, then HER BOMB at gunpoint — "I'm from the future, Pablo. I know
+how your story ends." — and his amused "Release her" (double hook: danger AND the
+claim; will he believe her?) · 0:16–0:25 the doom whisper — "He doesn't believe me
+yet. He will." (the audience contract: watch belief arrive) · 0:25–0:35 hippo
+detonation + "He bought hippos." (first laugh) · 0:35–0:48 "A week." crash-zoom +
+rats (the share/comment stat) · 0:48–1:03 the barefoot boy (first heart-hit) ·
+1:03–1:13 "Because I remember." → her ledger turn (the moral hinge) · 1:13–1:30
+silver/lead + "Silver is money. Lead is a bullet." + Congress memory (dread build)
+· 1:30–1:45 the grave line (tension peak) · 1:45–2:01 the monologue (the quote
+viewers repeat) · 2:01–2:18 "You've known all day." → belief lands → HIS FACE →
+"Do you want to see how it ends?" → BLACK (the strongest open loop; Part 2 is the
+answer). Every 8–12s window contains a new question, laugh, fact, or dread beat;
+no dead air anywhere.
 
 **Annexes (unchanged from v4, owner-approved):** style prefix · castings (Pablo A
 `b03141e0`, view set via photo-edit; Rosa; Young Pablo) · Hazel 7-ref package +
