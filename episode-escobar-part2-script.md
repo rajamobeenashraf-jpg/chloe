@@ -87,9 +87,12 @@ focus equivalents (4.2 foreground-blur push) · crash-zoom reserved (none in Par
 — its shocks are cold, not loud; deliberate) · proximity escalation (S6–S8 longest
 stillest holds) · hard cuts throughout, J-cut audio morphs (1.2, 8.1→8.2) · music
 states per scene incl. two NO-MUSIC scenes (4, 6) · karaoke gold captions (spec) ·
-7 locations · **reflection beats (3.1 glass, 4.3 screen ghost): kept as her
-technique WITH stated fallback — if reflections render badly (engine risk rule),
-reframe to over-shoulder without reflection; any change owner-consulted first.**
+7 locations · **reflection beats (3.1 glass, 4.3 screen ghost): executed HER way — she achieves
+these exact shots on this same engine (gondola glass, screen ghost are hers), so
+they are prompted with her method (lens-language prompt, camera-only movement,
+zero-AI negatives, annotated camera path). Owner directive 2026-08-30: these are
+not treated as a risk class. Standard rule only: if one specific render fails, the
+owner hears before anything is changed.**
 
 ## RETENTION PLAN (per-swipe-window map)
 
