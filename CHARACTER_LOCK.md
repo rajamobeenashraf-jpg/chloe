@@ -183,6 +183,13 @@ The EXACT same woman shown in the reference images — the character sheets and 
 - Its outputs are deliverables/final content only — per the permanent lock above, they never re-enter the pipeline as references.
 - Check status: `show_characters(action='status', soul_id='1b738001-5526-4038-8cf3-f2c136841b55')`.
 
+### Hazel v5 Soul (trained 2026-08-30 — the current v5 identity's dedicated model)
+- **soul_id:** `8201212b-cf74-4f01-ad60-079e3b748be2` · name "Hazel v5" · type `soul_2` · status: training (started 2026-08-30)
+- Trained on the 5 owner-approved v5 canon images (master + 4-view set, §"4K upscale" table above).
+- Reason: a one-off `nano_banana_pro` generation from the v5 reference stills (fashion-page profile pic / cover candidates) came back with visible identity drift and an unrealistic/plastic look — flagged directly by the owner ("not looking realistic, identity is not good"). Reference-based generation is documented elsewhere in this project at a ~90-95% identity ceiling; a trained Soul is the standing fix for exactly this failure mode.
+- Once status is `ready`, use `generate_image` with `model: 'soul_2'` + this `soul_id` for all future v5 lifestyle/fashion-page generations (in place of one-off `nano_banana_pro` reference calls) — same frozen v5 identity string and realism/makeup-dial rules still apply in the prompt.
+- Check status: `show_characters(action='status', soul_id='8201212b-cf74-4f01-ad60-079e3b748be2')`.
+
 ## LIFESTYLE PIPELINE — "Scene Transplant" (owner-agreed 2026-08-23, locked)
 
 **Owner's friendly entry point for this pipeline: `CONTENT_SHEET.md`** (repo root) — the owner invokes it as "use the content sheet to make [X]". That file is a thin recipe that defers to THIS section as the source of truth.
