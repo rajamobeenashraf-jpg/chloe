@@ -76,7 +76,35 @@ const GRADES = {
   dusk: `Bronze-amber dusk, campfires relighting; muted, unpolished, documentary-real.`,
 };
 
+// Higgsfield Elements (owner-approved 2026-08-30, replaces raw image_references
+// stacking as the PRIMARY identity mechanism — see PROMPT_LEARNINGS.md E1).
+// Embed the placeholder directly in prompt text; the backend auto-injects the
+// image and rewrites it to @element_name. Verified on nano_banana_pro (still,
+// job cb4f75b5) AND seedance_2_5 (video, job 113edb7c) — identity held clean
+// across the full clip with almost no identity prose, and no drift between
+// first/last frame. Multi-character combination (multiple placeholders in one
+// prompt) is Higgsfield-documented but NOT yet verified in this project —
+// confirm on the first multi-character clip built this way.
+const ELEMENTS = {
+  HAZEL: "0dc0f31b-5fdc-4d85-bb2b-1a943eb3ca36", // "Hazel-v5"
+  ALEXANDER: "2742dd32-0b11-4a5c-9592-ad33228fc91b", // "Alexander-Gaugamela"
+  PARMENION: "1b98b608-08d0-4a4e-81e2-aba119d984e7", // "Parmenion-Gaugamela"
+  BUCEPHALUS: "08dec96c-bf43-448d-a3f3-e17c812f172c", // "Bucephalus"
+};
+
+function elementAnchorBlock(clip) {
+  const lines = [];
+  if (clip.hazel) lines.push(`<<<${ELEMENTS.HAZEL}>>> IS HAZEL — every mention of "Hazel" or "her" below refers to this exact reference; her face, hair, and identity for this entire generation come from it.`);
+  for (const npc of clip.characters || []) {
+    if (ELEMENTS[npc]) lines.push(`<<<${ELEMENTS[npc]}>>> IS ${npc} — every mention of "${npc}" below refers to this exact reference.`);
+  }
+  return lines.length ? `IDENTITY REFERENCE (Element-injected — takes priority over the description text below for face/hair/identity; the text still governs wardrobe, pose, and expression):\n${lines.join("\n")}` : null;
+}
+
 // Reference media (Higgsfield job IDs / media IDs; see production log for URLs).
+// RETAINED as a secondary/backup identity check only, now that ELEMENTS above
+// is primary — kept lean (N7) rather than removed outright, in case an Element
+// generation ever needs a raw-image fallback.
 const REFS = {
   // v5 episode package (owner-approved 2026-08-29) — the v4-era set is retired.
   // Episode-costume views are 2K (photo-edits of the canon); the canon itself is
@@ -125,27 +153,17 @@ function buildStillPayload(clip) {
     process.exit(2);
   }
 
-  // Learnings N5/S9 and Round 18 (Clip 3): reference-image COUNT is itself a
-  // failure risk — 14 refs failed twice with no error detail; 2 refs (one
-  // Hazel canon anchor + one per NPC) succeeded immediately. Keep still
-  // reference sets lean; do NOT stack the full episode-costume + full
-  // canon-4K sets together the way video generation does.
+  // E1 (PROMPT_LEARNINGS.md): Elements are now the PRIMARY identity mechanism
+  // (see elementAnchorBlock above) — no raw image_references stacked for
+  // Hazel/NPCs any more (N7's lean-reference finding, taken to its conclusion).
   const medias = [];
-  if (clip.hazel) {
-    medias.push({ value: REFS.HAZEL_CANON_4K[0].value, role: "image_references" });
-    medias.push({ value: REFS.HAZEL[0].value, role: "image_references" });
-  }
-  for (const npc of clip.characters || []) {
-    const set = REFS[npc];
-    if (!set) continue;
-    // Cap at 2 refs per NPC for stills, same lean-reference-set rationale.
-    for (const r of set.slice(0, 2)) medias.push({ value: r.value, role: "image_references" });
-  }
 
   const parts = [];
   parts.push(`FORMAT: single cinematic film still, vertical 9:16, the opening composition of a scene — this is a START FRAME for a video generation, not a finished shot.`);
   parts.push(modeBlock(clip.mode));
-  if (clip.hazel) parts.push(`STRICT IDENTITY RE-RENDER — ${HAZEL_IDENTITY}\n\n${HAZEL_EPISODE_LOOK}`);
+  const anchor = elementAnchorBlock(clip);
+  if (anchor) parts.push(anchor);
+  if (clip.hazel) parts.push(`IDENTITY DETAIL (belt-and-suspenders, secondary to the Element reference above) — ${HAZEL_IDENTITY}\n\n${HAZEL_EPISODE_LOOK}`);
   for (const npc of clip.characters || []) if (LOCKS[npc]) parts.push(LOCKS[npc]);
   // S4/S10 (PROMPT_LEARNINGS.md): the frozen ENVIRONMENT_BLOCK must be pasted
   // verbatim for battle scale to render correctly — paraphrasing or omitting
@@ -191,8 +209,11 @@ async function main() {
     return;
   }
 
-  // Media list, in order, so @-tags line up: start image first if present,
-  // then Hazel (if in frame), then each present NPC's set.
+  // E1 (PROMPT_LEARNINGS.md): Elements (elementAnchorBlock) are now the
+  // PRIMARY identity mechanism, verified on seedance_2_5 (job 113edb7c) —
+  // held clean across the full clip, no first/last-frame drift. Media list
+  // now carries only the start image and audio ref; no raw Hazel/NPC
+  // image_references stacked any more.
   const medias = [];
   const refRoleLines = [];
   let idx = 0;
@@ -202,20 +223,6 @@ async function main() {
     medias.push({ value: args.startImage || clip.startImage, role: "start_image" });
     refRoleLines.push(`${tag()} is the STARTING FRAME: the exact composition, placement of both formations, dust state, and grade of the first frame. Do not redesign it.`);
   }
-  if (clip.hazel) {
-    const first = idx + 1, last = idx + REFS.HAZEL.length;
-    for (const r of REFS.HAZEL) medias.push({ value: r.value, role: "image_references" });
-    idx = last;
-    refRoleLines.push(`@Image${first}–@Image${last} control ONLY Hazel's identity, face, hair, and wardrobe. Do not copy pose, background, lighting, or camera angle from them.`);
-  }
-  for (const npc of clip.characters || []) {
-    const set = REFS[npc];
-    if (!set) continue;
-    const first = idx + 1, last = idx + set.length;
-    for (const r of set) medias.push({ value: r.value, role: "image_references" });
-    idx = last;
-    refRoleLines.push(`@Image${first}${last > first ? `–@Image${last}` : ""} control ONLY ${npc}'s identity and costume. Do not copy pose, background, lighting, or camera angle from them.`);
-  }
   if (clip.audioRef) {
     medias.push({ value: clip.audioRef, role: "audio_references" });
     refRoleLines.push(`@Audio1 controls ONLY the speaking voice timbre. Do not copy pacing or content from it.`);
@@ -224,8 +231,10 @@ async function main() {
   const parts = [];
   parts.push(`FORMAT: ${clip.duration} seconds, vertical 9:16, single continuous take, real-time speed.`);
   parts.push(modeBlock(clip.mode));
+  const anchor = elementAnchorBlock(clip);
+  if (anchor) parts.push(anchor);
   if (refRoleLines.length) parts.push(`REFERENCE ROLES:\n${refRoleLines.join("\n")}`);
-  if (clip.hazel) parts.push(`STRICT IDENTITY RE-RENDER — ${HAZEL_IDENTITY}\n\n${HAZEL_EPISODE_LOOK}`);
+  if (clip.hazel) parts.push(`IDENTITY DETAIL (belt-and-suspenders, secondary to the Element reference above) — ${HAZEL_IDENTITY}\n\n${HAZEL_EPISODE_LOOK}`);
   for (const npc of clip.characters || []) if (LOCKS[npc]) parts.push(LOCKS[npc]);
   if (clip.startingState) parts.push(`STARTING STATE: ${clip.startingState}`);
   parts.push(`SCENE: ${clip.scene}`);

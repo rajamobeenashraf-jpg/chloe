@@ -176,6 +176,16 @@ The EXACT same woman shown in the reference images — the character sheets and 
 - **Soul renders (or any generated output) are NEVER used as references, character sheets, or training data. Ever. No exceptions.** Generated images are final content only. This closes the generational-drift loophole permanently.
 - Any future re-training (new Soul, other platforms' character features, LoRA, etc.) uses these same 20 originals as the training set — never renders.
 
+## Higgsfield Element — PRIMARY identity mechanism (owner-directed research + fix, 2026-08-30)
+
+**Root-cause fix for the persistent identity-drift complaints on the Alexander/Gaugamela episode.** Production had been generating Hazel via raw `image_references` job IDs + prose identity description on every single generation — the method this very file already documents as having "a proven ~90–95% identity ceiling" (see the Lifestyle Pipeline section below) — instead of Higgsfield's purpose-built character-consistency feature (train Soul → save as Element → embed `<<<element_id>>>` in the prompt, auto-injected). Full research + evidence: `PROMPT_LEARNINGS.md` finding E1.
+
+- **Hazel-v5 Element:** `0dc0f31b-5fdc-4d85-bb2b-1a943eb3ca36` — built from the v5 canon 4K master + 4-view set (the same 5 images listed above). **This is now the PRIMARY identity reference for every new Hazel generation, project-wide** — embed `<<<0dc0f31b-5fdc-4d85-bb2b-1a943eb3ca36>>>` directly in the prompt as Hazel's grammatical subject/anchor. The frozen identity string above stays in every prompt too, now as a secondary/belt-and-suspenders text description, not the primary mechanism.
+- Verified working on both `nano_banana_pro` (stills) and `seedance_2_5` (video, this episode's model) — test jobs `cb4f75b5` (still) and `113edb7c` (video, no first/last-frame drift). `pai-pro-tooling/alexander/build_prompt.mjs` implements this via `elementAnchorBlock`.
+- Episode NPC Elements (Alexander/Gaugamela only): Alexander-Gaugamela `2742dd32-0b11-4a5c-9592-ad33228fc91b`, Parmenion-Gaugamela `1b98b608-08d0-4a4e-81e2-aba119d984e7`, Bucephalus `08dec96c-bf43-448d-a3f3-e17c812f172c`.
+- **Open item:** multi-character prompts (multiple `<<<id>>>` placeholders together) are Higgsfield-documented as supported but not yet confirmed by an actual generation here — verify on the next multi-character clip before treating it as settled.
+- **Follow-up not yet done:** the existing trained Soul (below) is stale — trained on the archived v4 face, never retrained for v5. Retraining it on the v5 canon set would give an even more identity-faithful option for solo-Hazel shots (Soul only handles one person per generation, so it can't replace the Element for multi-character shots like clip 2/5a/6a/8).
+
 ## Higgsfield Soul (trained identity model — generation engine only, NOT a reference source)
 - **soul_id:** `1b738001-5526-4038-8cf3-f2c136841b55` · name "Model Girl v4 as-filmed" · type `soul_2` · trained 2026-08-20 · status READY · identity test render passed QC vs Tier 1 (2026-08-20)
 - Trained on the locked 20-image set above.
