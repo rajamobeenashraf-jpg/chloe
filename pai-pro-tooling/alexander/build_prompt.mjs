@@ -86,7 +86,14 @@ const GRADES = {
 // prompt) is Higgsfield-documented but NOT yet verified in this project —
 // confirm on the first multi-character clip built this way.
 const ELEMENTS = {
-  HAZEL: "0dc0f31b-5fdc-4d85-bb2b-1a943eb3ca36", // "Hazel-v5"
+  // Hazel-v5.1 (owner-accepted 2026-08-30): the plain v5-canon Element (Hazel-v5,
+  // 0dc0f31b-...) drifted toward a slimmer/more-sculpted face and a too-golden
+  // complexion versus the actual v5 lock spec (fuller/rounder face, fair-rosy
+  // skin) across ~8 correction rounds — see PROMPT_LEARNINGS.md E1 follow-up.
+  // Hazel-v5.1 adds a corrected reference image (fixed complexion + face shape,
+  // owner-approved) alongside the original 5 canon images to pull future
+  // generations toward the corrected look.
+  HAZEL: "34bb316b-c5c4-4138-86ce-73bd96b80457", // "Hazel-v5.1"
   ALEXANDER: "2742dd32-0b11-4a5c-9592-ad33228fc91b", // "Alexander-Gaugamela"
   PARMENION: "1b98b608-08d0-4a4e-81e2-aba119d984e7", // "Parmenion-Gaugamela"
   BUCEPHALUS: "08dec96c-bf43-448d-a3f3-e17c812f172c", // "Bucephalus"
