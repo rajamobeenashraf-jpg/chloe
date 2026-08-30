@@ -294,6 +294,10 @@ itself, floor-to-ceiling.
 - FRAME: deep wide down the aisle — his back HALF-TURNED far down the canyon
   (walking away mid-sentence = thrown-away delivery staging), the two
   silhouetted at the far door; 30% headroom of cash walls.
+- CAMERA (owner decision 2026-08-30, per the full-episode audit): LATERAL
+  DRIFT — the camera glides sideways, tracking alongside them at a steady
+  distance as they walk deeper down the aisle, rather than sitting static and
+  watching them shrink into the distance. Smooth, no handheld (motion hygiene).
 - PERFORMANCE: he doesn't stop walking, doesn't turn his head — the line
   tossed over his shoulder, flat (deadpan literalism type 2, zero wink).
 - DIALOGUE: {Pablo, thrown away: "The rats are a business expense."}
@@ -355,10 +359,15 @@ AMBIENCE: golden hour street — kids, a leather ball's thump, far radio cumbia,
 swallows; open street reverb. ENV: concrete homes HIS money built, paint still
 fresh — the luxury prop is the whole street.
 
-**6.1 (3s) — LATERAL DRIFT + ROSA**
-- FRAME: street-level lateral tracking drift (earned: procession-of-life move),
-  kids crossing foreground; ROSA takes Hazel's hand in BOTH of hers (real
-  contact, warmth staging).
+**6.1 (3s) — PARTIAL ARC + ROSA**
+- FRAME: street-level, kids crossing foreground; ROSA takes Hazel's hand in
+  BOTH of hers (real contact, warmth staging).
+- CAMERA (owner decision 2026-08-30, per the full-episode audit — supersedes
+  the original lateral-drift plan): PARTIAL ARC — the camera swings along a
+  curved path partway around the two women as Rosa steps in and takes
+  Hazel's hand, revealing Rosa joining from an angle rather than tracking
+  straight alongside them. Smooth, earned by the reveal (a second figure
+  entering the frame).
 - PERFORMANCE: Rosa's sincerity is total (never comic): wet-eyed gratitude,
   the double hand-clasp, a small nod on "God bless him."
 - DIALOGUE: {Rosa: "Don Pablo built our whole street. God bless him."}
@@ -430,9 +439,14 @@ GRADE: amber dusk begins here.
 - CUT: cut + <GAVEL STRIKE> — the sound IS the time machine.
 
 **7.2 (3s) — MEMORY: THE CHAMBER (as generated, owner reviewing)**
-- FRAME: static wide from the chamber rear — the minister at the podium, arm
+- FRAME: wide from the chamber rear — the minister at the podium, arm
   extended, POINTING; deputies turning row by row; window shafts + dust.
   40% headroom of chamber architecture. GRADE: memory-warm, lifted blacks.
+- CAMERA (owner decision 2026-08-30, per the full-episode audit): PARTIAL
+  ARC — the camera swings along a curved path around the chamber rather than
+  sitting static, revealing the room from a shifting angle as it moves,
+  passing across the turning deputies as the minister's point lands. Smooth,
+  earned by the reveal (deputies turning row by row = the room noticing).
 - SOUND-IN 0s: the gavel's echo decays INTO the rising murmur (zero-lag).
 - CUT: hard.
 
