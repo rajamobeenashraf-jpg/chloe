@@ -200,3 +200,19 @@ Tooling:
 - **ElevenLabs MCP** — voice.
 - **PAI Pro** at `/home/user/pai-pro` (the same engine behind Chloe VS History); active project in `.active_project`; `PAI_KEY` lives in its gitignored `.env`.
 - **Gemini eyes — primary tool: `tools/gemini-eyes/gemini_eyes.py`** (two-pass: high-res sweep, then confirm/dismiss re-watch of each serious finding at 5 fps; modes `qc` / `captions` / `study` / `ask`; auto-loads CHARACTER_LOCK.md for identity checks; usage in `tools/gemini-eyes/README.md`). The older `scripts/gemini-eyes.mjs` remains available. Both need the `GEMINI_API_KEY` env var (setup + model/quota guidance: `research-methodology.md` §5). Never commit API keys.
+
+## Reference-creator doctrine — MANDATORY APPLICATION (owner lock 2026-08-30, permanent, no exceptions)
+
+`prompting-and-editing-playbook.md` carries the complete measured doctrine
+reverse-engineered from the reference creator (@cosminacreates) — the DIMENSION
+LEDGER (story, edit grammar, camera, framing, pacing, continuity, music, sound,
+graphics, voice, grade, motion, emotion-to-camera, performance micro-sequences,
+plus wardrobe/environment and humor-delivery when their parts land). **Owner
+directive, verbatim intent: apply EACH AND EVERY learning, every time, wherever
+the situation requires it — nothing may be skipped.** This is a MASTER RULE
+checklist item: before finalizing any script beat or generation prompt, walk the
+ledger and translate every applicable dimension into concrete prompt/script text;
+a dimension left un-applied where it applies is a process failure. The doctrine
+lives on the DEFAULT BRANCH (owner-authorized sync 2026-08-30) so every future
+session inherits it regardless of working branch. Studies are measured from her
+published output; judgment calls between two valid stagings go to the owner.
