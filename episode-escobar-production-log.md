@@ -35,6 +35,20 @@ All casting URLs: `https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni
 
 URLs: `https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260830_1036xx_<job>.png` (face34+full both `103629`, laugh `103630`).
 
+### Production clips (Part 1)
+| Clip | Version | Job | Status |
+|---|---|---|---|
+| 7.1 "Silver… or lead" veranda two-shot (6s) | v1 | `a0dc4ef6-08a5-4618-8fab-28d7477ca5a9` | delivered 2026-08-30, awaiting owner |
+| 7.2 Congress memory wide (4s) | v1 | `df15a5fc-1d15-493c-aec5-0810c0f616bd` | delivered 2026-08-30, awaiting owner |
+| SEAM TEST 7.1→7.2 stitched hard cut (10s) | — | local `seam_test_71_72.mp4` (PyAV concat) | delivered 2026-08-30, awaiting owner |
+
+Pacing refs used on 7.1 (measured w/ faster-whisper before use): Hazel = seed_audio
+Ainsley rate −10, job `12184bc8` (222 wpm vs 211 target, pass); Pablo = seed_audio
+Holden rate +100, job `0f5bdf52` (151 wpm overall w/ pauses 0.36s+0.58s exactly on
+"…Silver"/"or lead"; phonemes ≈250 — validated as her command-register pattern by
+the Part 6 pacing study). eleven_v3 takes failed measurement twice (300/83 wpm) —
+seed_audio fallback per standing rule.
+
 ### Validation/test clips
 | Asset | Job | Notes |
 |---|---|---|
