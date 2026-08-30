@@ -1,11 +1,11 @@
 // Episode "The Fall of Constantinople 1453" — FINAL word-chunk caption data
 // for qc_pass.mjs. Generated from word_chunks_constantinople.json (measured
 // via make_word_chunks.py, faster-whisper, script-biased) against the FINAL
-// approved clip files in assets/ (2026-08-30, regenerated after: clip10b
-// removal, clip03 voice pitch-correction v3, clip13b extension, and a fix for
-// degenerate zero-width whisper word-alignments affecting 9 clips -- see
-// make_word_chunks.py's MIN_WORD_DUR guard) -- every clip measured fresh
-// against its actual final audio so timing never drifts from a stale render.
+// approved clip files in assets/ (2026-08-30, regenerated after: inserting
+// clip03b-1 (owner decided to drop clip03b-2), and re-rendering clip13b's
+// extension line with the explicit "Hazel VO — Constantinople episode" voice
+// element per owner instruction) -- every clip measured fresh against its
+// actual final audio so timing never drifts from a stale render.
 // Rough line-window input this was built from: captions_data_lines_backup.mjs.
 // Owner-locked word-chunk caption system per CLAUDE.md (2026-08-23): 1-2 word
 // ALL-CAPS chunks, each REPLACING the previous, on screen only while spoken,
@@ -77,6 +77,19 @@ export const CLIPS = [
       { start: 4.36, end: 5.04, text: "THOUSAND YEARS," },
       { start: 5.04, end: 5.44, text: "THAT HAS" },
       { start: 5.44, end: 5.86, text: "BEEN ENOUGH." },
+    ],
+  },
+  {
+    id: "clip03b-1",
+    duration: 6.042,
+    captions: [
+      { start: 0, end: 1.08, text: "FOR TWO" },
+      { start: 1.08, end: 1.94, text: "WEEKS, HIS" },
+      { start: 1.94, end: 2.54, text: "FLEET TRIES" },
+      { start: 2.54, end: 2.98, text: "TO FORCE" },
+      { start: 2.98, end: 3.5, text: "THE CHAIN." },
+      { start: 4.74, end: 5.22, text: "IT NEVER" },
+      { start: 5.22, end: 5.56, text: "BREAKS." },
     ],
   },
   {
@@ -372,16 +385,16 @@ export const CLIPS = [
   },
   {
     id: "clip13b",
-    duration: 7.569,
+    duration: 7.583,
     captions: [
-      { start: 1.78, end: 2.22, text: "LISTEN." },
-      { start: 3.22, end: 3.58, text: "THEY'RE NOT" },
-      { start: 3.58, end: 3.98, text: "SCREAMING." },
-      { start: 4.28, end: 4.66, text: "THEY'RE PRAYING." },
-      { start: 5.62, end: 6.02, text: "BUT NO" },
-      { start: 6.02, end: 6.34, text: "ONE CAME" },
-      { start: 6.34, end: 6.62, text: "TO THEIR" },
-      { start: 6.62, end: 6.86, text: "HELP." },
+      { start: 1.66, end: 2.22, text: "LISTEN." },
+      { start: 3.24, end: 3.58, text: "THEY'RE NOT" },
+      { start: 3.58, end: 4, text: "SCREAMING." },
+      { start: 4.28, end: 4.64, text: "THEY'RE PRAYING." },
+      { start: 5.24, end: 6, text: "BUT NO" },
+      { start: 6, end: 6.4, text: "ONE CAME" },
+      { start: 6.4, end: 6.74, text: "TO THEIR" },
+      { start: 6.74, end: 6.98, text: "HELP." },
     ],
   },
   {
