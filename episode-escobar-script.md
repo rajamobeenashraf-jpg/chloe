@@ -34,12 +34,12 @@ active-word highlight = her spec, pending owner's earlier caption decision.**
 ## SCENE 1 · THE SEIZURE — cold open · 14s · MUSIC: band mid-song → DEAD SILENCE → band resumes
 | # | Shot (dur) | Camera & content | Cut out |
 |---|---|---|---|
-| 1.1 (3s) | **Crane-down establish:** descending from above the palms into the full pool party — band, dancers, glare off the water. Banner ON: "Visiting Pablo Escobar in 1987 🇨🇴". | hard, on the grab |
-| 1.2 (2s) | **Medium, jolt:** HAZEL SEIZED — two men pin her arms mid-step; a third raises a rifle, muzzle low. The band stops mid-note <needle-drop band stop + sub-drop>. Her breath audible in the silence. | hard |
-| 1.3 (2s) | **Slow push, long lens across the pool:** the crowd parts in a diagonal; PABLO at the far table, looking up. {Pablo: "You walk into my house with a camera."} | hard |
+| 1.1 (2.5s) | **FIRST FRAME = THE GRAB (her hook law: frame one is a person in tension — no establish):** medium-close, HAZEL SEIZED mid-step — two men pinning her arms, a rifle rising INTO frame, party chaos bokeh behind; the band stops mid-note in the first half-second <needle-drop band stop + sub-drop>. Her breath in the silence. Banner ON: "Visiting Pablo Escobar in 1987 🇨🇴". | hard |
+| 1.2 (2s) | **The reverse — scale revealed THROUGH the silence:** the crowd parting in a diagonal, dancers frozen mid-move, drinks half-raised, the pool glaring beyond. (Her grammar: wides live inside the body, never as the hook.) | hard |
+| 1.3 (2s) | **Slow push, long lens across the pool:** PABLO at the far table, looking up. {Pablo: "You walk into my house with a camera."} | hard |
 | 1.4 (2s) | **Her single, close:** chin up, eyes ON PABLO — never the rifle. {Pablo, off-screen: "Who sent you?"} {Hazel: "Nobody. I came a very long way to hear your story."} | hard |
 | 1.5 (3s) | **His single, closer:** the long beat — his eyes reading her over the water. Then: {Pablo: "Release her."} | hard |
-| 1.6 (2s) | **Two-shot resolve:** the grips open; she straightens her shirt; his open hand at the empty chair. {Pablo: "Sit."} The band restarts under it. | whip-blur exit → S2 |
+| 1.6 (2.5s) | **WIDE resolve — the one full-party geography shot:** the grips open; she straightens her shirt; his open hand at the empty chair across the pool. {Pablo: "Sit."} The band restarts; the party swallows the moment. | whip-blur exit → S2 |
 EYELINES: hers→Pablo from shot 1.2 on; his→her; guards→HIM. §17: party alive at
 every edge. SFX map: band-stop, sub-drop, pool lap, ice, far macaw.
 
