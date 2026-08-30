@@ -49,6 +49,14 @@ Holden rate +100, job `0f5bdf52` (151 wpm overall w/ pauses 0.36s+0.58s exactly 
 the Part 6 pacing study). eleven_v3 takes failed measurement twice (300/83 wpm) —
 seed_audio fallback per standing rule.
 
+### Hazel Part 1 dress options (previews, delivered 2026-08-30 — owner to pick per wardrobe workflow)
+| Option | Job |
+|---|---|
+| 1 Champagne silk slip (gold chain, hoops, gold-strap sandals) | `3521877c-79c2-488b-abb5-cf8e861a272b` |
+| 2 Emerald off-shoulder 80s cocktail (gold statement earrings, bangle, nude pumps) | `f2051961-e9ae-4eea-83f1-6579bdd7a590` |
+| 3 White linen square-neck (pearl studs, gold bracelet, espadrilles) | `33b6ec3d-9105-45be-800f-ee479a11e75d` |
+Hair/makeup styled after pick. Knock-on: existing clips (7.1a/7.1b/7.2 etc.) show the old casual look — regenerate to match once locked.
+
 ### Validation/test clips
 | Asset | Job | Notes |
 |---|---|---|
