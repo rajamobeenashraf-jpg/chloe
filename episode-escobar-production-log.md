@@ -25,6 +25,16 @@ smile 4K `3ba4ea27` + anger 4K `d7ea2bd4`. Voice lock `b24e5759-d3c0-4c84-a184-4
 
 All casting URLs: `https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/<suffix>.png`
 
+### Pablo A view set (generated 2026-08-30 via N4 photo-edit from anchor `b03141e0`; nano_banana_pro 2K working res, NO 4K pre-approval; delivered to owner, AWAITING APPROVAL)
+| View | Job |
+|---|---|
+| Face 3/4 (head turned ~25° right) | `f6f8abf5-1d1b-4f45-9552-ac07acd7b01c` |
+| Laughing w/ teeth | `36fe7796-0242-4178-b4cd-75f90328d82f` |
+| Full-body front, scene wardrobe (pale-blue open-collar shirt, dark slacks, white sneakers) | `2551890b-9a5f-46b9-b842-32bac956df19` |
+| Full-body 3/4 (~35°) | `8a1c3727-8c0b-479c-a4ed-f6dea9ede202` |
+
+URLs: `https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260830_1036xx_<job>.png` (face34+full both `103629`, laugh `103630`).
+
 ### Validation/test clips
 | Asset | Job | Notes |
 |---|---|---|
