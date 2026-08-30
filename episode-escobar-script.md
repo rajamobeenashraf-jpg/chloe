@@ -74,7 +74,12 @@ blended bronze eye, glossy juicy nude-rose lip). Wardrobe still set (full front
 joins the reference package of every Part 1 Hazel clip per N3/N7. Same look
 every shot, all episode (continuity invariant).
 **PABLO LOOK:** pale-blue open-collar short-sleeve shirt, dark slacks, white
-sneakers (approved view set) — never changes.
+sneakers (approved view set) — never changes, EXCEPT the Congress chamber
+scenes (7.2-7.4), where era-accurate wardrobe for the specific setting wins
+over the invariant (owner decision 2026-08-30): a period-correct 1987
+Colombian congressman's suit, matching the "buttons his jacket" action at
+7.3. New reference view required before generating 7.3 — see production log.
+Casual look resumes immediately after Scene 7 (Scene 8 onward unaffected).
 **ENVIRONMENT LUXURY LAW (Part 13):** every location carries 1-2 era-loaded
 luxury props + motivated light, named in each scene below. 1987 Hacienda Nápoles
 = tropical-baroque opulence: white colonnades and balustrades, the mounted Piper
