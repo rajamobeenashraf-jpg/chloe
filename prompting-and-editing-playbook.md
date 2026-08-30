@@ -431,6 +431,82 @@ dialogue, subtle head turns, real prop interactions grounding hands, clear
 subject/background separation. → matches S12/§8.2 and our prop-contact habit;
 keep "stable torso, subtle head movement" as dialogue-shot prompt text.
 
+### MOTION MOVEMENTS — full scope (owner lock 2026-08-30, permanent, no exceptions)
+
+Expands the MOTION line above into its full working scope: four elements, each
+stating what is directly video-measured vs. what is Claude's own reasoned
+extension where no dedicated study has been run yet. Untested elements are
+included deliberately, per owner instruction, rather than left blank — they
+are marked so a future dedicated study can confirm or correct them, not so
+they get skipped.
+
+**1. Rig/smoothness tiers.**
+- MEASURED (this Part, Washington study): smooth gimbal/dolly energy is the
+  default whenever the camera moves; erratic handheld is never used.
+- MEASURED (Part 7 Law 5, 10-video framing study): a high/selfie camera angle
+  is reserved for vlog-style direct-address frames.
+- EXTENSION (untested as its own dedicated study, reasoned from the two
+  measured findings above): four tiers, not two —
+  1. **Locked-off** — zero rig motion (governs Camera Technique Menu item 1).
+  2. **Gimbal-smooth** — stabilized, weighted travel; the default for every
+     moving technique in the menu (items 2-16 except item 8's own register).
+  3. **Controlled organic handheld** — a deliberate, contained hand-held
+     quality (slight natural sway, not shake) reserved for a host's own
+     mobile/selfie direct-address beat (Escobar 2.1) — paired with the
+     high/selfie angle above, never used for an in-scene dramatic beat.
+  4. **Erratic/shaky handheld** — never used, full stop, in any register.
+
+**2. Speed-ramp triggers.**
+- MEASURED (this Part, Washington study): a speed-ramp is SOFTENED (slowed,
+  gentled) specifically at portal/threshold moments — a dreamlike, magical
+  register.
+- EXTENSION (untested as its own dedicated study): a second, opposite
+  register exists in practice (Escobar 3.2's micro speed-ramp on the spray
+  peak) that is not a portal beat — a brief, sharper up-ramp used as kinetic
+  punctuation on a comedic or impact beat (a splash, a snap, a sudden
+  physical payoff), the reverse treatment of the portal's gentling. Until a
+  dedicated study confirms more triggers, these two are the only sanctioned
+  registers: SOFTENED for portal/threshold/dreamlike beats, SHARP/BRIEF for
+  comedic-impact punctuation. Do not invent a third without one.
+
+**3. Easing curves.**
+- MEASURED (Part 14.D, isolated re-analysis of one push-in beat): a push-in
+  runs smooth digital ease-in, then a gentle ease-out/deceleration timed to
+  land exactly on the punchline, ~3.5-4.0s total.
+- EXTENSION (untested beyond that one push-in beat, reasoned generalization):
+  the same ease-in/then-ease-out-on-the-beat principle is the default motion
+  curve for every SUSTAINED camera move in the technique menu — arcs
+  (partial and full orbit), dolly-ins, crane-ups, lateral tracking — since a
+  constant-speed linear move reads mechanically and nothing measured
+  suggests she ever runs one at constant speed. Explicit exceptions, because
+  their own technique definitions already specify a different character:
+  whip-zoom/crash push (deliberately fast/sharp, not eased) and whip-pan
+  (deliberately fast with motion blur, not eased).
+
+**4. Drone/aerial mechanics.**
+- MEASURED (Part 12, Joan of Arc reel — "her drone law," already applied at
+  Escobar Part 2's S5.1 hippo-river reveal): the TRIGGER is scale too large
+  for an eye-level frame (a legacy/estate/battlefield reveal), paired with a
+  low angle and upward tilt tracking the character's rising gaze, held for
+  roughly a 4-second reveal.
+- EXTENSION (mechanics not captured in the condensed Part 12 table, reasoned
+  from the trigger's own register — awe/scale is consistently the slowest,
+  most lingering register measured anywhere in this playbook): a slow,
+  steady ascending or sweeping glide, never a snap or whip; real parallax
+  throughout (a true aerial move, not an optical effect); ease-in at the
+  start of the ascent/sweep, then a hold (not a hard stop) at the peak
+  reveal, matching the ~4s duration already measured for this register;
+  never erratic or handheld-feeling, full stop, per element 1 above.
+
+**Applies project-wide, this episode and all others**: before finalizing any
+clip's camera direction, state all four of these — rig tier, speed-ramp
+register (if any), easing curve, and drone/aerial mechanics (if triggered) —
+alongside the Camera Technique Menu's register and angle, as one combined
+pre-generation check. Where an EXTENSION item is used, note in the
+production log that it is untested/inferred rather than directly measured,
+so a future dedicated study can confirm or correct it without having to
+first rediscover that it was never actually verified.
+
 ## PART 12 — EMOTION-TO-CAMERA MAP + PERFORMANCE PATTERNS, MEASURED (2026-08-30, owner-ordered 10-video study: Anne, Victoria, Genghis, William, Joan, Marilyn, Washington, Socrates, Mary, Van Gogh)
 
 ### A. The camera-per-emotion map (dimension 16)
