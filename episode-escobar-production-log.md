@@ -49,13 +49,14 @@ Holden rate +100, job `0f5bdf52` (151 wpm overall w/ pauses 0.36s+0.58s exactly 
 the Part 6 pacing study). eleven_v3 takes failed measurement twice (300/83 wpm) —
 seed_audio fallback per standing rule.
 
-### Hazel Part 1 dress options (previews, delivered 2026-08-30 — owner to pick per wardrobe workflow)
+### Hazel Part 1 dress options — ROUND 2 (day-visitor correction, owner feedback 2026-08-30)
+Round 1 (party looks — champagne slip `3521877c`, emerald cocktail `f2051961`, white linen `33b6ec3d`) SUPERSEDED: owner correctly flagged the episode is a full-day VISIT (barrio, warehouse, lakeshore, veranda), not a party — look must be modern-luxurious casual-to-semi-formal day wear. Round 2 previews (delivered, owner to pick):
 | Option | Job |
 |---|---|
-| 1 Champagne silk slip (gold chain, hoops, gold-strap sandals) | `3521877c-79c2-488b-abb5-cf8e861a272b` |
-| 2 Emerald off-shoulder 80s cocktail (gold statement earrings, bangle, nude pumps) | `f2051961-e9ae-4eea-83f1-6579bdd7a590` |
-| 3 White linen square-neck (pearl studs, gold bracelet, espadrilles) | `33b6ec3d-9105-45be-800f-ee479a11e75d` |
-Hair/makeup styled after pick. Knock-on: existing clips (7.1a/7.1b/7.2 etc.) show the old casual look — regenerate to match once locked.
+| 1 Ivory silk blouse + tan tailored trousers, gold hoops + chain, leather loafers | `a27934f4-17c5-4638-b1ef-a409ec23ce6d` |
+| 2 Sage-olive belted linen shirt-dress, gold pendant + studs, white sneakers | `bf0dc815-1f98-473e-a2d9-80e557d7e1f8` |
+| 3 White tailored blouse + terracotta midi skirt, pearl studs + gold bracelet, flat sandals | `15585b7f-5348-4ad1-8226-e34cc18b6718` |
+Hair/makeup styled after pick. On lock: generate the WARDROBE STILL SET (full front + full 3/4 in the locked look, via N4 photo-edit) → owner approval → those stills join the reference package of EVERY Part 1 clip (N3: costume stills beat text). Knock-on: existing clips regenerate to match.
 
 ### Validation/test clips
 | Asset | Job | Notes |
