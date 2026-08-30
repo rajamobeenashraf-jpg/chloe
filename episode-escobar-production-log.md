@@ -18,8 +18,8 @@ smile 4K `3ba4ea27` + anger 4K `d7ea2bd4`. Voice lock `b24e5759-d3c0-4c84-a184-4
 ### NPC castings (owner approved all 2026-08-30; Pablo pick delegated to Claude)
 | Character | Decision | Job | URL suffix |
 |---|---|---|---|
-| PABLO — candidate A | rejected (smiles too openly; loses the calm-menace ambiguity) | `b03141e0-70c8-408d-b651-80f4c8cb53b0` | hf_20260830_053123_b03141e0... |
-| **PABLO — candidate B** | **SELECTED ANCHOR** — heavy-lidded unreadable eyes, faint half-smile, "the menace is the calm" | `ad980571-e9a3-4df1-a1fc-47637fcabd99` | hf_20260830_053123_ad980571... |
+| **PABLO — candidate A** | **SELECTED ANCHOR (owner pick 2026-08-30, overriding Claude's B recommendation)** — warmer, rounder, more charming-host face | `b03141e0-70c8-408d-b651-80f4c8cb53b0` | hf_20260830_053123_b03141e0... |
+| PABLO — candidate B | rejected by owner (Claude had recommended it for the calm-menace eyes) | `ad980571-e9a3-4df1-a1fc-47637fcabd99` | hf_20260830_053123_ad980571... |
 | YOUNG PABLO (memory 4b) | approved | `97158bd2-3752-4ed8-978e-10669f86b8cd` | hf_20260830_053123_97158bd2... |
 | ROSA | approved | `bd88ff09-39bf-4236-838c-125115752a7e` | hf_20260830_053123_bd88ff09... |
 
