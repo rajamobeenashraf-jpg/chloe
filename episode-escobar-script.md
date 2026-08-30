@@ -39,7 +39,10 @@ EXCEPT the four v6 beats (1.4, 1.5, 2.1, 10.2–10.3) and the new 7.1b.
   audio continuous across them (§16).
 - Est. generations Part 1: ~28 shots from ~22 generations (6 derived reframes).
 
-**Runtime ~147s · 10 scenes / 32 shots · Locks, style prefix, character castings,
+**Runtime ~147s · 10 scenes / 41 shots (recounted 2026-08-30 from the actual
+tables — earlier headers undercounted; est. ~33 generations, since punch-ins and
+some singles are digital reframes of sibling takes) · Locks, style prefix,
+character castings,
 wpm math, filter fallback for the rifle, banner, memory-scene approval — all as v4
 (unchanged, owner-approved) except the v6 beats listed above, whose wpm math is
 recomputed inline. Captions (owner-locked 2026-08-30): her style — NO speaker tags
