@@ -244,6 +244,13 @@ Two findings from the edit-stage pass on the approved final (`ae855c5a`), both r
 - **CONFIRMED — modern flag on the wall banner** (~1.4s and again ~4.8s): zoom crop shows a clean crescent-and-star banner matching the modern Turkish national flag's proportions, not a period 1453 Ottoman military standard.
 - **CONFIRMED — floaty ragdoll physics on the thrown climber** (~5.6s-6.5s): the soldier thrown off the ladder falls in a stiff, plank-like pose with arms/legs not bending naturally through the tumble.
 - Sent to owner with both findings and the clip link. AWAITING DIRECTION on whether to regenerate (flag, physics, both, or waive).
+- **Owner added a third finding**: the second/lower climber on the ladder has no helmet or head covering, unlike the other Ottoman attackers. Re-verified via zoom crop before regenerating — CONFIRMED: that climber wears only a soft cap/hood, no armor. Owner directed: fix all three, change nothing else.
+- **CLIP 9 v5 — flag + physics + helmet fix** (job `8afc8482-f8b1-4fa2-b125-8fd4b747e8c6`) → https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260830_063219_8afc8482-f8b1-4fa2-b125-8fd4b747e8c6.mp4 (11.04s, 720x1280). Preset intercept ("IN THE DARK") fired on first submit — resubmitted literally with `declined_preset_id`. freezedetect CLEAN. Whisper transcription confirms dialogue matches the script exactly. Frame QC:
+  - Flag: now a frayed, hand-sewn deep-maroon banner bearing only a single large white crescent (no star) — clearly distinct from the modern Turkish flag's design/proportions. Fixed.
+  - Fall physics: climbers thrown off the ladder (checked ~6.2s-9s) now fall with natural bending/twisting limbs, not a stiff plank-like pose. Fixed.
+  - Helmets: checked a 4-climber stack on the ladder at ~3s — every attacker, including the lower/second climber, now wears a segmented steel helmet. Fixed.
+  - Repulse constraint held: checked through 10.3s, no attacker crosses the crenellation line, ladder empty by the end.
+- Sent to owner as CLIP 9 v5 (replaces v4/`ae855c5a`). AWAITING APPROVAL.
 - Standing lesson for all remaining battle/crowd clips: specify symbol SHAPES explicitly (not just faction names), explicitly forbid iconography crossover between sides, and where an outcome matters narratively (repelled vs. breached), state the hard constraint on-camera explicitly rather than relying on implication.
 
 ### CLIP 10 — Giustiniani falls, 3 shots, FIRST non-selfie/third-person-documentary sequence of the episode (2026-08-28)
