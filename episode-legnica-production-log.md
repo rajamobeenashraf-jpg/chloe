@@ -724,3 +724,8 @@
 - Owner: the previous cover text pass was wrong on two counts — the white banner box covered/cropped part of the actual photo (looked like the scene had shifted), and the wording should have just been "POV: Mongols vs. an entire Polish army," not the full "I time travelled to 1241" line.
 - Redid it correctly: kept the underlying photo (thumbnail v2) completely untouched, no box, text drawn directly over the image with a black outline (matching the episode's own on-screen caption style) instead of a solid white background. Wording changed to "POV: MONGOLS VS. AN ENTIRE POLISH ARMY," larger font, positioned lower (~70-170px down) so it sits clearly against the sky instead of crowding the very top edge. Kept the amber "1241" year-stamp corner tag.
 - Output: `assets/thumbnail_final_with_hook_v2.png` (720×1280). Sent to owner. Not committed to git per the standing generated-media policy.
+
+## 2026-08-29 (cont.) — Cover text moved further down for visibility
+- Owner: move the text further down for easier visibility.
+- Shifted the "POV: MONGOLS VS. AN ENTIRE POLISH ARMY" text down (~150-260px from ~70-180px) so it sits against the darker smoke instead of the bright sky, clear of the top edge; nudged the "1241" year stamp down to match.
+- Output: `assets/thumbnail_final_with_hook_v3.png` (720×1280). Sent to owner as the current cover candidate.
