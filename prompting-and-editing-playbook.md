@@ -212,3 +212,60 @@ the prose carries the role. Use both together.
 - Edit level: crash-zoom + SFX on the shock stat · whip-into-hard-cut for chapter
   changes · per-chapter music themes · proximity escalation · gold keyword captions
   (gold variant still pending owner decision).
+
+## PART 6 — HER PACING DOCTRINE, MEASURED (2026-08-30, owner-ordered pacing study)
+
+Source: 8 timestamped line-by-line machine watch-throughs (Socrates 784K, Victoria,
+William, Wild West, Genghis, Anne Boleyn, Washington, Joan — pacing-study jobs
+job_81caac55 / job_702bb83a / job_2db27e24 / job_1b104f5f / job_62024d8c /
+job_e9b732fe / job_a9a9ffb2 / job_de89dded). Every spoken line transcribed with
+start/end times; wpm computed per line (±20-30% timestamp noise; patterns are
+consistent across ~170 lines, individual numbers are approximate).
+
+### The seven measured laws of her pacing
+
+1. **Baseline is fast-natural: ~180–260 wpm, median ≈ 200-210.** She is NEVER slow.
+   Informational/factual host runs are her fastest sustained delivery (190–275).
+   Codas run 204–296 — fast, with 0.3–0.4s clause pauses, never dragged.
+2. **"Slow" is never slow phonemes — it is SHORT LINES plus PLACED PAUSES.** Every
+   moment that reads slow measures 67–150 wpm only because the line is 1–4 words
+   ("Considerably." / "A saint." / "All of them?" / "Release her.") or carries one
+   0.3–0.6s pause. Phoneme rate stays natural throughout. Gravity = brevity.
+3. **Emotion accelerates, gravity shortens.** Tearful/agitated/panicked lines are
+   FAST (Anne tearful ≈260, agitated ≈257; Victoria panic ≈300). The weighty
+   figure-lines slow only via structure: William's "was it worth it? The blood…
+   the crossing… all of it?" ≈180 overall carried by three 0.3–0.4s pauses.
+4. **Command register (our Pablo): two/three-word sentences + authority pause,
+   ≈90–170 overall.** "Release her." ≈92. "Not today. Walk away." ≈109. Fast
+   phonemes, one dominant pause. Our accepted Holden pacing ref (151 wpm overall,
+   pauses at "…Silver" and "or lead", phonemes ≈250) sits exactly on this pattern.
+5. **Speaker-to-speaker gaps are TIGHT: 0.1–0.4s (mode 0.2–0.3s).** The exchange
+   is ping-pong. Long silences (1.5–8.8s) are never between lines of one exchange —
+   they are chapter transitions, reaction holds, and music/b-roll beats.
+6. **Line-length discipline: median 7–10 words (1.5–3.5s).** 20–36-word lines
+   exist only as educational runs and codas, delivered fast. The pace FEELING of a
+   dialogue scene comes from turn rate (short lines, tight gaps), not speech rate.
+7. **The micro-line reaction beat is her signature:** the figure's awe/shock is a
+   1–3 word line + a gap ("A horse?" / "4 seconds?" / "…How much?"). Cheap to
+   render, huge retention value.
+
+### What this means for our pipeline (validation + correction)
+
+- **VALIDATED: the owner's locked wpm formula lands inside her real bands.** Hazel
+  neutral 211 / urgent 264 and figure-deliberate ~168 match her measured registers.
+  The formula stays.
+- **CORRECTED USE OF THE TARGET:** the target governs PHONEME-RATE + pause budget,
+  not a stretched read. Achieve a register her way: (a) write the line SHORT,
+  (b) keep phonemes fast-natural, (c) place 1–2 deliberate pauses (0.3–0.6s) on the
+  weightiest boundary, (d) keep speaker gaps 0.2–0.3s in the TIMELINE, (e) reserve
+  long holds for transitions/reactions, never mid-exchange. A 6-word command line
+  measuring ~150 overall with correct pause placement IS her pattern — do not chase
+  a higher overall number by deleting its pauses.
+- **Pacing-reference recipe (updates the ElevenLabs/seed_audio rule's step 1):**
+  calibrate the reference take to fast-natural phonemes + the line's designed
+  pauses, then verify BOTH numbers with faster-whisper: overall wpm (with pauses)
+  against the register examples above, and pause placement/duration against the
+  script's design. Tempo-only refs whose pauses land wrong are re-made.
+- **TIMELINE prompts now state gap lengths explicitly** (e.g. "0.2s beat, then…",
+  "he lets 0.4s of silence sit before 'Silver'") — her tight-gap exchange rhythm is
+  a promptable, verifiable spec.
