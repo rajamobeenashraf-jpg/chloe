@@ -269,3 +269,59 @@ consistent across ~170 lines, individual numbers are approximate).
 - **TIMELINE prompts now state gap lengths explicitly** (e.g. "0.2s beat, then…",
   "he lets 0.4s of silence sit before 'Silver'") — her tight-gap exchange rhythm is
   a promptable, verifiable spec.
+
+## PART 7 — HER FRAMING DOCTRINE, MEASURED (2026-08-30, owner-ordered 10-video framing study)
+
+Source: shot-by-shot framing passes on 10 videos (William, Washington, Anne Boleyn,
+Socrates, Victoria, Joan, Genghis, Wild West, Marilyn, Mary Queen of Scots — jobs
+job_a7d7a194 / job_8a35685b / job_b96100a9 / job_2124d0ad / job_6e747cfd /
+job_18be65d8 / job_901e6650 / job_ecf46ac1 / job_41fdbf8c / job_8ade2789).
+~300 shots catalogued: size, placement, headroom, edge crops, camera height.
+
+### The measured framing laws
+
+1. **Two-shot sizes are LOCKED to medium or looser.** When both characters must be
+   fully in frame together, she shoots WAIST-UP or MID-THIGH-UP, side-by-side in
+   the left/right thirds, standing unnaturally close ("proximity cheating") so
+   faces stay in the central width; outer elbows may graze the edges but faces and
+   torsos are complete. Never a chest-up two-shot with the two spread to opposite
+   edges.
+2. **At chest-up and tighter, both NEVER fit — she switches to the DIRTY SINGLE:**
+   the speaker gets 70–85% of the frame, the listener is deliberately reduced to a
+   10–20% slice on one edge (cheek/shoulder/hair). The aggressive crop reads as
+   style because the speaker's face owns the center. The rare tight two-shots pack
+   the two faces into the central 70% (cheeks nearly touching), shoulders sliced.
+3. **Headroom is bimodal.** Singles/close-ups: 0–8% — hats, crowns, hair graze or
+   are sliced by the top edge to maximize the face; faces sit in the UPPER THIRD
+   so captions land clean in the center/lower third. Two-shots/masters: 15–40%
+   (up to 65% in cathedrals) — the vertical surplus is spent on environment and
+   landmark stacking, never on empty air.
+4. **Bottom cuts are standardized:** close-up → collarbone/upper chest;
+   medium → waist/belt; medium-full → mid-thigh above the knee. Feet are
+   sacrificed except in full-body master/portal/architecture shots.
+5. **Camera height: eye-level for ALL dialogue** (seated scenes drop to seated
+   eye-line). Low angles only for monuments/authority beats; high/selfie angle
+   only for vlog-style frames. No arbitrary angle changes inside an exchange.
+6. **Depth beats width.** To fit more than two people, or a listener + speaker at
+   close size, she stages along the Z-axis (foreground slice, midground subject,
+   background context) — never by shrinking people side-by-side.
+7. **The escalation rhythm per scene:** master/two-shot establishes geography →
+   ping-pong of dirty singles / clean singles for the exchange → clean close-up or
+   ECU only at the climax beat. Two-shot ratio varies by video (55–85%) but the
+   SIZES above are invariant.
+
+### Application ruling on our clip 7.1 (the owner's catch)
+
+7.1 v1 broke law 1: a chest-up two-shot with Hazel and Pablo spread to opposite
+edges — both edge-cropped with dead space (the glass) in the center, which reads
+as an accident, not her style. Two compliant options for the locked-frame menace
+beat: (a) LOCKED WAIST-UP two-shot, the two closer together, both fully inside
+the width, veranda headroom above; or (b) keep the lock but cover the exchange
+her way — waist-up two-shot for Hazel's question, hard cut to a DIRTY SINGLE on
+Pablo (Hazel's shoulder slicing one edge, his face owning the center, zero
+headroom) for "Everyone accepts something. Silver… or lead." Option (b) is the
+more-her choice: her close menace beats are always dirty singles.
+
+**Framing spec is now a MASTER-RULE checklist item:** every shot's prompt states
+shot size + which body line the bottom edge cuts + headroom % + who owns the
+center + what the edges are allowed to crop, per the laws above.
