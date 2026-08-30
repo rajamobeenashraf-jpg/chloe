@@ -65,7 +65,7 @@ Per the two new permanent rules (maximum realism every scene; era-accurate wardr
 | Asset | Job | Notes |
 |---|---|---|
 | Start frame v1 (nano_banana_pro/Gemini) | `f1d775cf-2801-4039-bd00-c15e652d0a54` | Delivered to owner for approval; varied period suits/hairstyles/mustaches on every man (fixes the identical-wardrobe finding), Salón Elíptico architecture, warm archival grade with film grain (fixes the AI-slop finding) |
-Awaiting owner approval of this frame before animating into the 3s video clip (locked-off camera per script; deputies turning row by row is the only motion).
+Owner approved the frame. Animated v2 (job `3d0ce36a-05c8-4fdf-98f6-182ce094d50e`) delivered — **owner caught a frozen-arm defect**: the minister's pointing gesture was pixel-identical for the full 4s while the crowd moved. Confirmed via freeze-detection QC (frame-diff on his region vs the crowd region: 0.49 vs 1.73 mean inter-frame diff, ~3.5x less motion; visual check at 0s/2s/4s showed an identical arm). Root cause + fix written as permanent rule PROMPT_LEARNINGS.md S14 (passive "continues/holds" language on an identity-anchored figure reads as "freeze this frame," not "keep this action alive" — fix is explicit incremental time-coded micro-motion verbs for any held gesture). Regenerated as v3 with second-by-second micro-motion language for the minister specifically (arm sway/re-angle/lower/rise, weight rock, torso lean, mouth movement) — **job `4e33c834-eb69-4311-aa9a-963cf49f7483`, QC-verified clean (minister region diff rose to 1.31, no near-zero frames) and delivered.**
 
 Pacing refs used on 7.1 (measured w/ faster-whisper before use): Hazel = seed_audio
 Ainsley rate −10, job `12184bc8` (222 wpm vs 211 target, pass); Pablo = seed_audio
