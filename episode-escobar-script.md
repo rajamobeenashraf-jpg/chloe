@@ -120,7 +120,10 @@ water. The water DETONATES — a hippo surfaces in a blast of spray; guests scre
 scatter, drinks flying. Hazel jumps a full step. PABLO does not move at all.
 *[Pablo]*, gesturing across the dark water, host-proud: "Four hippos. From Africa.
 What I want, I bring."
-HAZEL, straight to lens, deadpan, party chaos behind: "Remember the hippos."
+HAZEL, straight to lens, deadpan, party chaos behind: "He bought hippos."
+(Her-style REACTIVE aside — she reacts, never instructs the viewer; the hippo plant
+is carried by the image itself, per her plant-and-payoff grammar. Part 2's "Your
+four" pays it off unsignposted.)
 — CINEMA: ONE move — camera pushes past scattering guests to settle on the
 two-shot; torches, spray catching the light. Hippo in CONTINUOUS motion (blow,
 ears, wake) §17. EYELINES: everyone's eyes snap to the water — except Pablo's,
