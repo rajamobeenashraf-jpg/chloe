@@ -13,7 +13,9 @@ import { CLIPS, SUB_STYLE } from "./captions_data.mjs";
 const run = promisify(execFile);
 const PROJECT_DIR = new URL(".", import.meta.url).pathname;
 const ASSETS_DIR = path.join(PROJECT_DIR, "assets");
-const QC_DIR = path.join(PROJECT_DIR, "qc");
+// "qc/" is already used for the edit-stage Gemini eyes findings.json/report.md
+// per clip -- caption-burn + loudnorm output goes to a separate dir.
+const QC_DIR = path.join(PROJECT_DIR, "captioned");
 
 function assColor(hexRGB, alphaHex = "00") {
   const r = hexRGB.slice(0, 2), g = hexRGB.slice(2, 4), b = hexRGB.slice(4, 6);
