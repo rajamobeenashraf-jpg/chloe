@@ -36,6 +36,15 @@ All casting URLs: `https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni
 - 2026-08-30: owner approved all castings; delegated Pablo A/B pick → B selected.
 - Fact fixes applied to script v3: mother quote (documented version), Lara timeline ("Months later").
 
+## Owner decisions 2026-08-30 (series-scoped)
+- **Captions = her style for both parts:** NO speaker tags (owner override of the
+  locked [Speaker]-tag rule, these episodes) + karaoke GOLD active-word highlight.
+- **EDIT-STAGE REMINDER (do not skip):** when Part 1 enters the edit, ask the owner
+  about the optional "P.S." secondary overlay on shot 3.4 ("p.s. the hippos matter
+  later"). He asked to be reminded.
+- Reflection shots executed her way (not a risk class); rifle-hook filter fallback
+  = grip-only, owner consulted first.
+
 ## Next steps (in order)
 1. Pablo view set derived from casting B via photo-edit (face 3/4, laughing expression w/ teeth, full-body front in scene wardrobe, full-body 3/4) → owner approval.
 2. Rosa + Young Pablo secondary views only if their clips need them (each appears once).

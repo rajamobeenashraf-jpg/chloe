@@ -113,11 +113,13 @@ whip exits (1.6) · macro insert (4.4) · rack focus (3.3) · speed-ramp (3.2) �
 locked-off menace (7.1) · lateral drifts (6.1, 7.3) · proximity escalation
 (S8–S10) · low-angle grandeur (gate plane 10.1) · EDIT: hard cuts 2–10s · J-cuts
 (1.2, 5.1) · music states per scene · silence beats (10.4) · smash-black + card
-(10.5) · karaoke gold captions (spec) · time-of-day arc (noon→night) · 8
-locations. Orbit + POV insert + myth-bust + reflections land in Part 2 (see its
-verification). **OWNER FLAG: her captions carry NO speaker tags; our locked
-caption system uses italic [Speaker] tags on non-protagonist lines — conflict
-needs the owner's call before the edit stage.**
+(10.5) · karaoke gold captions · time-of-day arc (noon→night) · 8 locations.
+Orbit + POV insert + myth-bust + reflections land in Part 2 (see its
+verification). **CAPTION DECISION (owner, 2026-08-30): captions follow HER style
+for this series — NO speaker tags (overrides the locked [Speaker]-tag rule for
+these episodes, owner's call) + word-synced karaoke with GOLD active-word
+highlight. EDIT-STAGE REMINDER (owner-ordered): raise the optional "P.S." overlay
+(shot 3.4) for his decision when Part 1 reaches the edit.**
 
 ## RETENTION PLAN (per-swipe-window map)
 
