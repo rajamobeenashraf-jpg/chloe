@@ -49,7 +49,14 @@ All casting URLs: `https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni
   his story ends. Knock-ons applied: 1.5 (amused disbelief), 2.1 aside ("He
   doesn't believe me yet. He will."), Scene 10 reworked — cliffhanger is now HIM
   believing her ("…But you already know. You've known all day."), same closing
-  question + smash to black. Runtime ~138s. Awaiting owner approval of v6 beats.
+  question + smash to black. Awaiting owner approval of v6 beats.
+- **Cliffhanger question now ANSWERED + PORTAL DEVICE locked (owner directive
+  2026-08-30, Part 1 v6.1 / Part 2 v3):** Pablo answers "Show me." → Hazel: "Okay.
+  Let's go." → she opens the time portal (locked series device: vertical seam of
+  warm golden light, flames bend toward it, deep hum + sub-drop) → Part 1 ends on
+  them stepping TOWARD it; Part 2 frame one = them stepping INTO it, then the
+  light-hidden morph to 2026. Part 2's return (8.1–8.2) uses the same device.
+  Part 1 runtime ~144s.
 - **"Silver or lead" clarified to owner + plain-language explainer restored as new
   shot 7.1b** ({Hazel: "Silver is money. Lead is a bullet."}) per the standing
   plain-language rule — the owner himself asked what "lead" meant, proving the

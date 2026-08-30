@@ -9,8 +9,11 @@ she is from the future and knows his destiny (shot 1.4). Everything else is kept
 only the beats that change touched: 1.5 (his reaction), 2.1 (the aside now runs on
 disbelief, not secrecy), 7.1b (NEW — plain-language explainer for "silver or lead,"
 per the standing plain-language rule), and Scene 10 (the reveal no longer lives
-there — the cliffhanger becomes HIM finally believing her, same closing question,
-same smash to black). Runtime ~132s → ~138s.**
+there — the cliffhanger becomes HIM finally believing her). v6.1 (owner directive,
+same day): the closing question is ANSWERED — Pablo: "Show me." → Hazel: "Okay.
+Let's go." → she opens the TIME PORTAL (locked series device, defined at 10.7) and
+Part 1 smashes to black on them stepping toward it; Part 2 opens with the entry.
+Runtime ~132s → ~144s.**
 
 **THE v5 CORRECTION (the real fix):** v4 wrote each scene as one continuous take.
 Her reels are the opposite — **every scene is a MULTI-SHOT EDIT**: 3–5 shots
@@ -33,7 +36,7 @@ EXCEPT the four v6 beats (1.4, 1.5, 2.1, 10.2–10.3) and the new 7.1b.
   audio continuous across them (§16).
 - Est. generations Part 1: ~28 shots from ~22 generations (6 derived reframes).
 
-**Runtime ~138s · 10 scenes / 29 shots · Locks, style prefix, character castings,
+**Runtime ~144s · 10 scenes / 31 shots · Locks, style prefix, character castings,
 wpm math, filter fallback for the rifle, banner, memory-scene approval — all as v4
 (unchanged, owner-approved) except the v6 beats listed above, whose wpm math is
 recomputed inline. Captions (owner-locked 2026-08-30): her style — NO speaker tags
@@ -100,16 +103,23 @@ LOCK: the murder is spoken, never shown.
 | 9.2 (13s) | **THE LONGEST SHOT OF PART 1 — her monologue grammar:** one slow push-in, medium → tight on the heavy-lidded eyes, dusk crossing his face: {Pablo: "That I came from nothing, and I bowed to no one." (0.5) "They will call me a monster. My people will call me a saint. Either way — they will say my name."} Eyes: hers→his for sentence one; past camera for sentence two; back to her on "my name." | hard → S10 gate |
 (Proximity-escalation law: S8–S10 shots run longer and tighter than S1–S4's.)
 
-## SCENE 10 · THE CLIFFHANGER — belief lands · 17.5s · MUSIC: all out from his question; one sub-drop on black
+## SCENE 10 · THE CLIFFHANGER — belief lands, the portal opens · 23.5s · MUSIC: all out from his question; riser under the portal; sub-drop on black
 (v6: the reveal moved to shot 1.4 — this scene is no longer the reveal. It is the
 episode's payoff arc completing: the man who LAUGHED at her claim in minute one has
 watched her know things all day, and at the gate HE is the one who brings it back.
-Same closing question, same smash to black — the cliffhanger survives intact.)
+v6.1, owner directive 2026-08-30: the question is now ANSWERED — he agrees, she
+opens the time portal, and Part 1 ends on them stepping toward it; Part 2 opens at
+this same spot with them entering it. The dangling-question ending is gone.)
 | 10.1 (3s) | **Walking two-shot** to the gate, the mounted plane black overhead; camera stops when they stop. {Hazel: "How does this end, Pablo?"} | hard |
 | 10.2 (6s) | **His single:** {Pablo, small smile: "It doesn't. Colombia and I have an arrangement." (0.4, the smile fading, studying her) "…But you already know. You've known all day."} (15 words + 0.4 pause at his deliberate 168 wpm ≈ 5.8s.) He is not joking anymore — the first time all day he takes her claim seriously. | hard |
 | 10.3 (2.5s) | **HER single — the confirmation, to HIM, never the lens:** {Hazel, quiet: "I do." (0.5) "All of it."} (5 words + 0.5 pause at her quiet 158 wpm ≈ 2.4s.) | hard ON the last syllable |
 | 10.4 (3s) | **HIS reaction, static close-up:** the face changes — first time all day. Silence. | hard |
-| 10.5 (2s) | **Her half-step closer, tight:** {Hazel: "Do you want to see how it ends?"} → **HOLD his eyes 1.5s → SMASH TO BLACK → card 【PART TWO】** | — |
+| 10.5 (2s) | **Her half-step closer, tight:** {Hazel: "Do you want to see how it ends?"} | hard |
+| 10.6 (2s) | **HIS static close — the answer:** the long beat, his eyes not leaving hers; then, quietly: {Pablo: "Show me."} (2 words + 0.6 beat at his deliberate 168 wpm ≈ 1.3s.) | hard ON the word |
+| 10.7 (5s) | **THE PORTAL — the series' time-travel device, first appearance:** {Hazel, small smile: "Okay. Let's go."} (3 words at her neutral 211 wpm ≈ 0.9s) — she turns, lifts a hand, and the air beside the gate **TEARS OPEN: a vertical seam of golden light**, taller than a man <deep air-tear hum + sub-drop>, torch flames bending toward it, gold flooding both faces — HIS face lit by the impossible thing, belief now total. WIDE: two silhouettes before the burning doorway, the mounted plane black overhead — they step TOWARD the light → **SMASH TO BLACK → card 【PART TWO】** (They never enter on-screen — the entry IS Part 2's first frame.) | — |
+PORTAL LOCK (series device, recurring every episode): a vertical seam/tear of warm
+golden light, torch- or sun-flame bend toward it, deep hum + sub-drop on open. End
+frame of 10.7 ⛓-chains to Part 2 shot 1.1 (same portal, same blocking, same night).
 
 ---
 
@@ -129,8 +139,10 @@ CAMERA: crane-up mid-body (1.6) · push-ins (1.3, 8.2, 9.2) · crash zoom (4.3) 
 whip exits (1.6) · macro insert (4.4) · rack focus (3.3) · speed-ramp (3.2) ·
 locked-off menace (7.1) · lateral drifts (6.1, 7.3) · proximity escalation
 (S8–S10) · low-angle grandeur (gate plane 10.1) · EDIT: hard cuts 2–10s · J-cuts
-(1.2, 5.1) · music states per scene · silence beats (10.4) · smash-black + card
-(10.5) · karaoke gold captions · time-of-day arc (noon→night) · 8 locations.
+(1.2, 5.1) · music states per scene · silence beats (10.4) · portal device — her
+Joan/Churchill portal grammar, now the series' locked time-travel device (10.7) ·
+smash-black + card (10.7) · karaoke gold captions · time-of-day arc (noon→night) ·
+8 locations.
 Orbit + POV insert + myth-bust + reflections land in Part 2 (see its
 verification). **CAPTION DECISION (owner, 2026-08-30): captions follow HER style
 for this series — NO speaker tags (overrides the locked [Speaker]-tag rule for
@@ -150,10 +162,12 @@ rats (the share/comment stat) · 0:48–1:03 the barefoot boy (first heart-hit) 
 1:03–1:13 "Because I remember." → her ledger turn (the moral hinge) · 1:13–1:30
 silver/lead + "Silver is money. Lead is a bullet." + Congress memory (dread build)
 · 1:30–1:45 the grave line (tension peak) · 1:45–2:01 the monologue (the quote
-viewers repeat) · 2:01–2:18 "You've known all day." → belief lands → HIS FACE →
-"Do you want to see how it ends?" → BLACK (the strongest open loop; Part 2 is the
-answer). Every 8–12s window contains a new question, laugh, fact, or dread beat;
-no dead air anywhere.
+viewers repeat) · 2:01–2:24 "You've known all day." → belief lands → HIS FACE →
+"Do you want to see how it ends?" → "Show me." → THE PORTAL TEARS OPEN → two
+silhouettes stepping toward the light → BLACK (the open loop is now a PROMISE
+SHOWN, not just a question asked — the audience has seen the doorway to Part 2;
+Part 2's first frame is them entering it). Every 8–12s window contains a new
+question, laugh, fact, or dread beat; no dead air anywhere.
 
 **Annexes (unchanged from v4, owner-approved):** style prefix · castings (Pablo A
 `b03141e0`, view set via photo-edit; Rosa; Young Pablo) · Hazel 7-ref package +
