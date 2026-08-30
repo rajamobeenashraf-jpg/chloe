@@ -1,9 +1,11 @@
 # PART 2 SCRIPT v3 — "Bringing Pablo Escobar to 2026" (SHOT-BY-SHOT EDIT BLUEPRINT)
 
-**Status: DRAFT v3 — awaiting owner approval.** v3 (owner directive 2026-08-30):
-Scene 1 reworked — Pablo's "Show me." moved into Part 1's ending; Part 2 now opens
-ON the portal entry itself (frame one = them stepping into the golden seam), and
-the return in Scene 8 uses the same locked portal device. Rebuilt per the same v5 correction
+**Status: DRAFT v4 — awaiting owner approval.** v3 (owner directive 2026-08-30):
+Pablo's "Show me." moved into Part 1's ending. v4 (same day, decided from her
+measured footage): Scene 1 follows HER arrival grammar — in-media-res hook, hard-
+cut jump, tilt reveal, NO portal and NO morph on the forward jump (portals are her
+RETURN device only); Scene 8's return uses her exact portal spec (see Part 1's
+PORTAL LOCK). Rebuilt per the same v5 correction
 as Part 1: every scene is a MULTI-SHOT EDIT in her grammar — hard cuts every 2–10s,
 shot-reverse singles at line boundaries (no action re-rendered), crash-zoom
 punch-ins with drops, whip-blur chapter exits, macro inserts, proximity escalation,
@@ -11,24 +13,27 @@ per-chapter music states. Approved dialogue unchanged. Same style prefix + wardr
 lock (Pablo stays in his exact 1987 clothes in every 2026 frame). Est. ~24 shots
 from ~19 generations.
 
-**Runtime ~118s (1:58) · 8 scenes / 27 shots · Banner (scene 1): "Bringing Pablo
+**Runtime ~114s (1:54) · 8 scenes / 26 shots · Banner (scene 1): "Bringing Pablo
 Escobar to 2026 🇨🇴" · Channel watermark "HAZEL OUT OF TIME" top-right, all clips ·
 Fact locks and memorial/rooftop sensitivity staging as v1.**
 
 ---
 
-## SCENE 1 · THE ENTRY — the morph oner · 12.5s · MUSIC: the portal's hum → low riser through the morph
-(v3, owner directive 2026-08-30: Part 1 now ENDS with Pablo's "Show me." → Hazel's
-"Okay. Let's go." → the portal tearing open — so Part 2's frame one is the ENTRY
-itself, picking up at the exact spot Part 1 cut to black. No recap, no dialogue
-before the spectacle.)
+## SCENE 1 · THE ARRIVAL — her measured hook grammar · 8s · MUSIC: cinematic riser + impact hit under the tilt reveal
+(v4, decided from footage 2026-08-30: her forward jumps have NO portal and NO
+morph — a hard cut on dialogue into the figure's stunned 2026 reaction, then a
+rising tilt reveal, riser + impact hit [Joan 0:11–0:13, Socrates 0:14–0:15]; and
+her videos open in media res, first line at 0:00–0:02. The portal lives at Part
+1's ending and this episode's RETURN [S8] — never the forward jump. Frame one =
+Pablo already IN 2026, no re-shown entry, no recap.)
 | # | Shot (dur) | Camera & content | Cut out |
 |---|---|---|---|
-| 1.1 (2.5s) | **FRAME ONE = THE ENTRY:** the two from behind, silhouettes stepping INTO the vertical seam of golden light beside the 1987 gate — torch flames bending, the light swallowing them shoulder-first <the tear's deep hum + sub-drop>. (⛓-chains from Part 1's 10.7 end frame: same portal, same blocking, same night.) Banner ON: "Bringing Pablo Escobar to 2026 🇨🇴". | hard INTO the whiteout |
-| 1.2 (6s) | **THE SIGNATURE ONER (the series' one unbroken move):** two frames of pure gold light → the SAME framing walks out of the light through the SAME gate arch — and it is 2026: same gate, same mounted plane — now ticket booth, tour buses, families in shorts. Audio morphs with it: portal hum + crickets → reggaeton, kids, <ticket-scanner beep>. (Production: first/last-frame anchored morph; the light-filled frames hide the era seam.) | hard |
-| 1.3 (2s) | **His slow half-turn, medium:** scanning his changed world. {Pablo: "…Where are my guards?"} | hard |
-| 1.4 (2s) | **Her single, already walking:** {Hazel: "Gone. Everything is. Come."} | whip-blur → S2 |
+| 1.1 (2.5s) | **FRAME ONE = HIS STUNNED CLOSE-UP in hard 2026 daylight** — night-torch 1987 to blazing midday in one cut: Pablo blinking against the sun, reggaeton and crowd noise already up <crowd, kids, distant PA>. Banner ON: "Bringing Pablo Escobar to 2026 🇨🇴". First line at ~0.5s: {Pablo: "…Where are my guards?"} | hard |
+| 1.2 (3.5s) | **HER TILT REVEAL (Joan's arrival move, verbatim):** rising tilt from his 1987 leather shoes up the era clothes to his face — and behind him the reveal completes: the SAME gate, the SAME mounted plane — now ticket booth, tour buses, families in shorts <riser swelling → impact hit on the full reveal + ticket-scanner beep>. {Hazel, off then on as the tilt finds her at his shoulder: "Gone. Everything is."} | hard |
+| 1.3 (2s) | **Her single, already walking:** {Hazel: "Come."} | whip-blur → S2 |
 EYELINES: his sweep the world; hers stay on HIM — his face is the show.
+(Production win: the morph oner is CUT — no era-morph generation needed; the
+light-shock [night → day] carries the jump, her way.)
 
 ## SCENE 2 · HIS OWN TOUR · 20s · MUSIC: light comic underscore — OUT on 2.6's cut to his still face (the chill plays dry)
 | 2.1 (3s) | **Drifting wide with the tour group:** the roped ruin of his mansion; the GUIDE mid-spiel — and the real Pablo standing INSIDE the crowd, 1987 clothes: {Guide: "This is where he kept his zoo. He was killed in nineteen ninety-three—"} | hard |
@@ -70,17 +75,18 @@ device — except here the myth is confirmed, which is colder.)
 | 7.4 (8s) | **THE SERIES' LAST SLOW PUSH-IN** — his upturned face against the roofline, almost at peace; the full-circle callback: {Pablo: "A rooftop in Colombia. Not a jail cell in the United States." (0.5) "Then I win."} Hazel in soft focus behind — she says nothing; NO lens aside; the audience is left alone with it. | hard → S8 gate dusk |
 
 ## SCENE 8 · THE RETURN — coda · 16s · MUSIC: resolving strings; silence under the sign-off
-| 8.1 (3s) | **The park gate at dusk — the portal reopens (same locked device):** the golden seam standing beside the arch, and through it, faint and warm — 1987, his world, the party audible for one breath <the tear's low hum>. He stops at the threshold, turns to her once: {Pablo: "My people are waiting."} | hard |
-| 8.2 (3s) | **Wide:** he steps into the light; the seam closes behind him <hum cuts>; the arch is just an arch. The 1987 sound cuts to night insects. | hard |
+| 8.1 (3s) | **The park gate at dusk — the RETURN PORTAL (her native use of the device):** the golden-amber oval ring standing on the ground beside the arch, ~2.5× his height, plasma rim, ember particles — and through its center, warm and faint: 1987, his world, the party audible for one breath <resonant magical hum>. He stops at the threshold, turns to her once: {Pablo: "My people are waiting."} | hard |
+| 8.2 (3s) | **STATIC WIDE (her exact return framing — Joan at Notre-Dame):** he walks into the ring back-to-camera, vanishing into the golden volume; the ring dissolves <whoosh fading>; the arch is just an arch. The 1987 sound cuts to night insects. | hard |
 | 8.3 (10s) | **THE ORBIT CODA (her Washington-outro move):** a slow half-orbit AROUND Hazel as she speaks — the empty arch, then the dark park, then the mounted plane's black shape passing behind her as the camera circles, settling face-on for the sign-off. {Hazel, plain: "He went back. He changed nothing. His war killed thousands of people. Everything else is gone. The only thing still growing… is the hippos."} <one distant low grunt from the dark> (0.5) {Hazel, soft: "Hazel — out of time."} **Hold to black.** | — |
 
 ---
 
 ## TECHNIQUE COVERAGE VERIFICATION (audit vs the full 29-video inventory)
 
-Arrival-as-ENTRY (frame one = stepping into the portal, 1.1) + signature ONER
-morph (1.2, her Churchill step-out class) · portal device consistent at entry and
-return (1.1, 8.1–8.2) ·
+Arrival in HER measured grammar — in-media-res hook + hard-cut jump + rising tilt
+reveal w/ riser + impact hit (1.1–1.2, Joan 0:11–0:13) · portal reserved for the
+RETURN, her native use, exact spec from footage (8.1–8.2, Joan Notre-Dame /
+Socrates) ·
 banner (1.2) + watermark (all) · tour-guide-recites-his-life (2.1, Socrates
 Acropolis) · merch/ubiquity beat + "how much?" (2.3–2.5, Caesar gift shop) ·
 MYTH-BUST (2.6, Washington cherry tree — inverted: confirmed true) ·

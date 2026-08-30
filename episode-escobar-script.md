@@ -11,9 +11,11 @@ disbelief, not secrecy), 7.1b (NEW — plain-language explainer for "silver or l
 per the standing plain-language rule), and Scene 10 (the reveal no longer lives
 there — the cliffhanger becomes HIM finally believing her). v6.1 (owner directive,
 same day): the closing question is ANSWERED — Pablo: "Show me." → Hazel: "Okay.
-Let's go." → she opens the TIME PORTAL (locked series device, defined at 10.7) and
-Part 1 smashes to black on them stepping toward it; Part 2 opens with the entry.
-Runtime ~132s → ~144s.**
+Let's go." → HER portal (exact device measured from her Socrates/Joan footage,
+locked at 10.7) opens with 2026 glimpsed through its center, and Part 1 smashes to
+black as they walk INTO it. Part 2 does NOT re-show the entry — it opens in media
+res per her hook law (her forward jumps are hard cuts, never portals). Runtime
+~132s → ~144s.**
 
 **THE v5 CORRECTION (the real fix):** v4 wrote each scene as one continuous take.
 Her reels are the opposite — **every scene is a MULTI-SHOT EDIT**: 3–5 shots
@@ -116,10 +118,16 @@ this same spot with them entering it. The dangling-question ending is gone.)
 | 10.4 (3s) | **HIS reaction, static close-up:** the face changes — first time all day. Silence. | hard |
 | 10.5 (2s) | **Her half-step closer, tight:** {Hazel: "Do you want to see how it ends?"} | hard |
 | 10.6 (2s) | **HIS static close — the answer:** the long beat, his eyes not leaving hers; then, quietly: {Pablo: "Show me."} (2 words + 0.6 beat at his deliberate 168 wpm ≈ 1.3s.) | hard ON the word |
-| 10.7 (5s) | **THE PORTAL — the series' time-travel device, first appearance:** {Hazel, small smile: "Okay. Let's go."} (3 words at her neutral 211 wpm ≈ 0.9s) — she turns, lifts a hand, and the air beside the gate **TEARS OPEN: a vertical seam of golden light**, taller than a man <deep air-tear hum + sub-drop>, torch flames bending toward it, gold flooding both faces — HIS face lit by the impossible thing, belief now total. WIDE: two silhouettes before the burning doorway, the mounted plane black overhead — they step TOWARD the light → **SMASH TO BLACK → card 【PART TWO】** (They never enter on-screen — the entry IS Part 2's first frame.) | — |
-PORTAL LOCK (series device, recurring every episode): a vertical seam/tear of warm
-golden light, torch- or sun-flame bend toward it, deep hum + sub-drop on open. End
-frame of 10.7 ⛓-chains to Part 2 shot 1.1 (same portal, same blocking, same night).
+| 10.7 (5.5s) | **THE PORTAL — the series' time-travel device, HER exact design (measured from her footage 2026-08-30):** {Hazel, small smile: "Okay. Let's go."} (3 words at her neutral 211 wpm ≈ 0.9s) — and beside the gate a **vertical golden-amber OVAL ENERGY RING materializes, ~2.5× human height**: emissive glowing rim, swirling plasma edge, ember/spark particles drifting outward, hazy smoky core <resonant magical hum + low whoosh> — and THROUGH its center, faint and impossible: **the same gate in DAYLIGHT — tour buses, colored flags, people in shorts** (2026, glimpsed — the built-in Part 2 trailer; her Socrates portal shows the destination through the center exactly this way). Torch flames bend toward it; his face gold-lit, belief total. STATIC WIDE (her portal framing): the two walk INTO the ring back-to-camera, swallowed by the golden volume → **SMASH TO BLACK → card 【PART TWO】** | — |
+PORTAL LOCK (series device, permanent — reverse-engineered from her Socrates
+1:24–1:30 + Joan 1:20–1:22 return portals, watch jobs `job_495ee9a3` /
+`job_48a3971c`): vertical golden-amber oval energy ring standing on the ground,
+~2–2.5× human height; emissive rim, swirling plasma edge, ember particles, hazy
+core; the DESTINATION visible through the center; characters walk in back-to-
+camera; static wide; resonant magical hum + whoosh. Note her forward-jump grammar
+has NO portal (hard cut on dialogue) — we use the portal here because Part 1 ends
+at the departure itself; Part 2 opens in media res per her hook law, not on the
+portal.
 
 ---
 
@@ -163,11 +171,11 @@ rats (the share/comment stat) · 0:48–1:03 the barefoot boy (first heart-hit) 
 silver/lead + "Silver is money. Lead is a bullet." + Congress memory (dread build)
 · 1:30–1:45 the grave line (tension peak) · 1:45–2:01 the monologue (the quote
 viewers repeat) · 2:01–2:24 "You've known all day." → belief lands → HIS FACE →
-"Do you want to see how it ends?" → "Show me." → THE PORTAL TEARS OPEN → two
-silhouettes stepping toward the light → BLACK (the open loop is now a PROMISE
-SHOWN, not just a question asked — the audience has seen the doorway to Part 2;
-Part 2's first frame is them entering it). Every 8–12s window contains a new
-question, laugh, fact, or dread beat; no dead air anywhere.
+"Do you want to see how it ends?" → "Show me." → THE GOLDEN RING OPENS with 2026
+visible through its center → they walk into it → BLACK (the open loop is now a
+PROMISE SHOWN, not just a question asked — the audience literally glimpses Part
+2's world through the portal). Every 8–12s window contains a new question, laugh,
+fact, or dread beat; no dead air anywhere.
 
 **Annexes (unchanged from v4, owner-approved):** style prefix · castings (Pablo A
 `b03141e0`, view set via photo-edit; Rosa; Young Pablo) · Hazel 7-ref package +

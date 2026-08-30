@@ -57,6 +57,16 @@ All casting URLs: `https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni
   them stepping TOWARD it; Part 2 frame one = them stepping INTO it, then the
   light-hidden morph to 2026. Part 2's return (8.1–8.2) uses the same device.
   Part 1 runtime ~144s.
+- **Portal design + Part 2 hook decided from HER footage (2026-08-30, owner
+  delegated the decision):** two focused re-watch jobs (Socrates `job_495ee9a3`,
+  Joan `job_48a3971c`) established her transition grammar — forward jumps are
+  hard cuts (no portal), the golden oval-ring portal is her RETURN device, and
+  openings are in media res with the first line at 0:00–0:02. Applied: Part 1
+  ends on her exact portal (2026 visible through the center, they walk in →
+  black); Part 2 v4 opens on Pablo's stunned close-up in 2026 daylight + Joan
+  tilt-reveal (morph oner CUT — no era-morph generation needed); Part 2's return
+  uses the same portal spec. PORTAL LOCK written into the Part 1 script; full
+  measured spec in `part2-bringing-to-future-study.md`. Part 2 runtime ~114s.
 - **"Silver or lead" clarified to owner + plain-language explainer restored as new
   shot 7.1b** ({Hazel: "Silver is money. Lead is a bullet."}) per the standing
   plain-language rule — the owner himself asked what "lead" meant, proving the

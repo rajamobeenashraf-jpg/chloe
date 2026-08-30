@@ -105,6 +105,39 @@ watched scene-by-scene; walkthroughs in transcript). THE FORMULA:
 9. Nostradamus: a subversion premise + an unresolved open loop (the napkin) as
    comment bait. Victoria: the therapy/emotional-closure beat for a guarded figure.
 
+## HER TIME-TRAVEL TRANSITION GRAMMAR — MEASURED FROM FOOTAGE (2026-08-30, focused re-watch)
+
+Owner directed: take the magic-hole design from her videos. Two focused watch jobs
+(Socrates `job_495ee9a3-eeab-4d5b-a573-97446c5060f2`, Joan
+`job_48a3971c-471d-4d81-af16-7f3956a0fb0c`) answered it precisely:
+
+1. **Forward jump (past → 2026): NO portal, ever.** A direct HARD CUT on dialogue
+   into the figure's stunned 2026 reaction — Joan 0:11–0:13: "Then let me see it"
+   → cut → her close-up reaction → rising TILT REVEAL from her armor boots up to
+   the golden statue, with a low cinematic riser + impact hit. Socrates
+   0:14–0:15: dialogue close-up in the cell → hard cut → handheld selfie walking
+   at the Acropolis. No transition SFX beyond the riser/hit.
+2. **The portal is her RETURN device (2026 → past), with one consistent spec:**
+   vertical golden-amber OVAL ENERGY RING standing on the ground, ~2–2.5× human
+   height (8–9 ft); emissive glowing rim; swirling plasma edge; golden ember/
+   spark/mist particles drifting outward; hazy smoky core; in Socrates' version
+   the DESTINATION (the Greek street/temple) is visible through the center.
+   Appears already materialized (no gesture/trigger shown); the figure walks into
+   it BACK-TO-CAMERA and vanishes into the golden volume; STATIC WIDE framing;
+   resonant magical hum + whoosh that fades as it dissolves; then hard cut to the
+   host's closing coda.
+3. **Openings are in media res, first line at 0:00–0:02**, never a portal/arrival
+   (Joan: frame one = the tribunal, line at 0:00; Socrates: frame one = the cell
+   with the hemlock cup, line at 0:02).
+
+**Application (Escobar two-parter):** Part 1 ends ON her portal (justified: the
+episode ends at the departure itself — her single-video grammar never has to end
+there), with 2026 glimpsed through the ring's center as the built-in Part 2
+trailer, the two walking in back-to-camera → black. Part 2 opens in media res per
+rule 3 (hard-cut arrival + tilt reveal, no portal, no morph), and uses the portal
+natively at its RETURN (S8). This spec is the series' PORTAL LOCK, recorded in
+`episode-escobar-script.md`.
+
 ## THE TWO-PART ESCOBAR DESIGN (proposed to owner)
 
 ### Part 1 — "Visiting Pablo Escobar in 1987" (revisions to script v3)
