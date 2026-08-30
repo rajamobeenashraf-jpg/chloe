@@ -417,8 +417,13 @@ GRADE: amber dusk begins here.
 - CUT: hard on the last word.
 
 **7.1c (2.5s) — HER PLAIN EXPLAINER**
-- FRAME: her hushed lens single, his stillness soft at the frame edge behind
-  her shoulder (the threat stays in frame while she translates it).
+- FRAME: her hushed lens single, his stillness SHARP/in-focus at the frame
+  edge behind her shoulder (owner override 2026-08-30: the original "soft at
+  the frame edge" direction below was superseded — he explicitly rejected a
+  blurred/shallow-DOF Pablo for this beat; he stays fully sharp, same clarity
+  as Hazel, while completely frozen. See PROMPT_LEARNINGS.md and the
+  playbook Part 14.D for the permanent rule this created.) The threat stays
+  in frame while she translates it.
 - PERFORMANCE: hushed, zero irony (plain-language lock): flat clarity, one
   slow blink between the sentences.
 - DIALOGUE: {Hazel, hushed: "Silver is money. Lead is a bullet."} (7w @ 185.)
