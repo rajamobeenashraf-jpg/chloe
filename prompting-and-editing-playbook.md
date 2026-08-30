@@ -106,6 +106,100 @@ per-character speech pacing · identity via reference images, never text · the
 empathy-core beat (§2) — her tragic reels are our empathy beat stretched to a whole
 video.
 
+## PART 6 — OFFICIAL SEEDANCE 2.5 DOCTRINE (Higgsfield/ByteDance guide, learned 2026-08-30)
+
+**Source + access note:** `higgsfield.ai` itself is egress-blocked from this environment.
+The doctrine below comes from a complete, provenance-labelled mirror of the official
+Dreamina/ByteDance Seedance 2.5 Prompt Guide + Higgsfield's platform catalog: the
+`OSideMedia/higgsfield-ai-prompt-skill` repo (cloned locally this session — SKILL.md,
+MODE-PLAYBOOKS.md, VFX-PIPELINE.md, and 10 paste-ready templates). Items marked
+[OFFICIAL] are the vendor's own doctrine. The one thing NOT reachable is the blog's
+video examples gallery — the owner can open higgsfield.ai/blog/seedance-2-5-prompting-guide
+and higgsfield.ai/seedance-2-5-community directly, or add higgsfield.ai to this
+environment's network allowlist.
+
+### The core formula [OFFICIAL]
+```
+<Subject> performs <primary action> in <scene and environment>.
+The visuals feature <visual style>.
+Use <shot size, camera angle, camera movement>.
+Audio includes <dialogue, ambience, SFX, music>.
+```
+Four modes chosen BEFORE writing: `t2v` · `omni_reference` · `video_edit` ·
+`video_extension`. **We have only ever used the first two — the last two are new
+capabilities for this project:** `video_edit` changes ONE scoped thing inside an
+existing clip (sole-master + edit scope + preserve list + Timeline Inheritance for
+subject swaps) without regenerating it; `video_extension` adds 4–30s before or after
+an approved clip (align the boundary frame FIRST; chain ceiling ~60s).
+
+### Corrections to how WE have been prompting (each verified against the S13 test prompt)
+1. **Dialogue belongs ONLY in the audio clause, in `{}` brackets** — never inside
+   action/timeline prose. Official syntax: `()` music · `<>` SFX · `{}` dialogue ·
+   `【】` subtitles, plus a language line: "Dialogue language: <variety>. <Character>
+   says: {line}". We have always written dialogue inside the beats — change this.
+2. **The subtext trap:** ANY readable text in action prose is a voicing request — a
+   quoted glance-meaning, a remembered line, a sign — the model SPEAKS it. Write
+   visible behavior instead.
+3. **No negation stacks.** Seedance has no negative-embedding architecture; a bare
+   constraints list ("No cuts. No music. No...") parses as scene description. Legal
+   form: positive declarations with short lock tails ("single continuous take, one
+   camera angle"; "Diegetic dialogue and environmental SFX only. NO BGM. No
+   subtitles."). Our standard CONSTRAINTS block must be rewritten this way.
+4. **Age-blind rule [OFFICIAL house]: never write age words** — the content filter
+   tightens on age language; write role + build + clothing instead ("a stocky ranch
+   owner in an open-collar shirt", not "37 years old"). ⚠ CONFLICT with our locks:
+   the v5 frozen identity string contains "early twenties" and my Pablo draft lock
+   contains "37 years old". The identity string is OWNER-LOCKED — changing it needs
+   the owner's decision; flag raised, not changed.
+5. **Beat lines name characters by name + one visible marker, never by @handle** —
+   a handle used as a sentence subject is the classic cause of one character
+   rendering as two people. (Our S13 prompt said "at @Audio2's tempo" inside a beat.)
+6. **Reference roles get role + exclusion + a FIDELITY GRADE:** full-preserve /
+   partial-preserve / attribute-transfer (name the target) / loose-guide.
+7. **Multi-view reference sets must include ONE strong-expression view** — all-neutral
+   sets teach the face at rest, and "the first line of dialogue invents a mouth."
+   Canonical four: front · back · facial details neutral · facial dynamics + teeth
+   under strong emotion. ⚠ Hazel's v5 canon set is all-neutral — proposing a
+   strong-expression addition is an owner decision (canon change).
+8. **First/last frames are PROMPT STATEMENTS on 2.5** ("@Image 1 is the first
+   frame...") — there is no start_image role; this upgrades our S2/S6 start-frame
+   method: declare the role in prose, one sentence per anchor, never merged, matching
+   aspect ratios. Multi-keyframe: "Use @Image 1 through N as keyframes in this order."
+9. **2.5 caps at 720p** (no 1080p/4K lane — explains our render size); 4K comes from
+   the separate upscale step (post-approval, per the standing rule) or Seedance 2.0.
+
+### Structure doctrine [OFFICIAL]
+- **Stage long clips**: `[Generation Goal]` → `[Stage N]: Initial state / ONE primary
+  event / explicit visible End state` → `[Maintain Consistency]` (identity, count,
+  clothing, prop ownership, spatial direction, audio).
+- **Split by JOB, not only length:** physics vs performance, action vs dialogue, and
+  "the beat that needs room" are separate generations stitched in post. "A perfect
+  30s render does not exist" — generate per job, assemble.
+- **Spatial anchor blocks** (multi-character template): per character — screen
+  position (thirds + x/y%), frame occupancy, depth layer, body orientation, pose,
+  gaze, CONTACT POINTS (prevents floating), state lock; cross-character — distance,
+  eyeline, crossing rule, negative space; then one dominant camera move and a FINAL
+  FRAME line. This is our eyeline rule generalized into full blocking.
+- **Emotion = 2–4 observable cues** in a trigger→reaction→feature-change→expressed
+  form; FACS AU codes exist for muscle-level facial beats.
+- **Camera:** one dominant move per shot; FOV in degrees beats mm; niche terms get
+  translated into the visible result.
+- **Engine rules (shared 2.0/2.5):** exit-frame = implicit cut · off-screen =
+  nonexistent · ≤3 tracked characters · avoid reflection/mirror shots.
+- **Episode Style Prefix:** one frozen global style block glued verbatim to every
+  prompt of a production (format, lighting, color 60:30:10, skin realism, acting,
+  physics, continuity, audio policy) — edit once, applies everywhere; per-scene
+  override = replace one line locally. This formalizes our per-episode palette lock;
+  adopt as standard for the Escobar episode.
+- **Material budget:** 30 images / 10 videos (≤30s total) / 10 audio (≤30s total),
+  50 max; stable ranges much lower (1–8 image subjects).
+
+### Cross-check with her method (Part 1)
+Her drawn camera-path annotation (numbered points + arrows on the reference image) is
+not in the official guide — it is her own technique on top of it, and it complements
+the official first-frame prompt statement: annotated start frame carries the PATH,
+the prose carries the role. Use both together.
+
 ## PART 5 — ADOPTION CHECKLIST (used when writing any script/prompt from now on)
 
 - Script level: figure-speaks-first cold open · banner carries premise ·
