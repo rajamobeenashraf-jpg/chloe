@@ -1,4 +1,10 @@
-# PART 1 SCRIPT v6 — "Visiting Pablo Escobar in 1987" (SHOT-BY-SHOT EDIT BLUEPRINT)
+# PART 1 SCRIPT v7 — "Visiting Pablo Escobar in 1987" (SHOT-BY-SHOT EDIT BLUEPRINT)
+
+**v7 (2026-08-30): FULL 17-DIMENSION COMPLIANCE PASS** — every measured doctrine
+(playbook Parts 6-12) applied: global compliance annex added (screen geography,
+banner death, zero-lag arrivals, music duck/swell/dropout, ambience beds, motion
+hygiene) + emotion micro-sequences and earned-camera treatments written into every
+emotional beat. Dialogue unchanged from v6.1.
 
 **Status: DRAFT v6 — awaiting owner approval.** Owner directive 2026-08-30: rebuild
 both scripts purely from the 29-video reverse-engineered corpus — camera, cinematic
@@ -197,6 +203,51 @@ it, all sound stops, the ring dies to a spark → BLACK (the open loop is now a
 PROMISE SHOWN, not just a question asked — the audience literally glimpses Part
 2's world through the portal). Every 8–12s window contains a new question, laugh,
 fact, or dread beat; no dead air anywhere.
+
+## v7 ALL-DIMENSION COMPLIANCE ANNEX (applies to every shot; playbook Parts 6-12)
+
+- **SCREEN GEOGRAPHY LAW (continuity):** HAZEL = frame-LEFT, PABLO = frame-RIGHT
+  in every two-shot, all episode (matches shot 7.1a as generated). Guards/NPCs
+  never break the pair's axis.
+- **FRAMING DEFAULTS (Part 7):** two-shots at waist-up or looser, proximity-cheat,
+  both fully in frame; chest-up and tighter = singles/dirty singles only (speaker
+  owns 70-85%, listener a 10-20% edge slice); close-up headroom 0-8% (hair grazes
+  top), two-shot headroom 15-40% spent on environment; bottom cuts: collarbone /
+  waist / mid-thigh; eye-level for all dialogue.
+- **BANNER DEATH RULE (Part 10, NEW):** banner ON at 1.1, OFF permanently on the
+  cut into Scene 2 — her banners die at the first scene change, never persist.
+- **ZERO-LAG ARRIVALS (Part 9):** every scene's first shot carries sound or a
+  voice within ~1s of the cut (party ambience, rain, gavel, murmur). No dead air
+  after any location change.
+- **MUSIC BEHAVIOR (Part 10):** per-scene states as written PLUS: music ducks LOW
+  under every spoken line, swells only BETWEEN lines, hard dropouts land ON
+  punchlines/shock beats ("A week.", the hippo blast tag).
+- **AMBIENCE BEDS (Part 10):** each location gets a distinct bed + reverb
+  character (open party air → warehouse boom → hillside rain on tin → street
+  golden-hour → veranda stillness → chamber echo → dusk insects). Named per scene
+  in prompts.
+- **MOTION HYGIENE (Part 11):** dialogue shots = stable torso, subtle head turns
+  only; real prop contact grounding hands; smooth moves only, no erratic handheld.
+- **COMEDY LAW (Part 12):** Pablo never plays for laughs — total deadpan
+  commitment ("Four hippos." / "The rats are a business expense." = flat, still,
+  no smile-timing); HAZEL carries the reaction energy to lens.
+- **EMOTION BEATS (Part 12) — micro-sequences to appear as prompt text:**
+  - 1.5 Pablo's amused disbelief = laugh-ONSET only: one slow blink, the stare
+    softens, mouth corners twitch up — never a full laugh.
+  - 5.1 his "No." = grief onset: eyes soften then unfocus past camera, breath
+    audibly settles, half-smile drains; CAMERA GOES DEAD STATIC.
+  - 5.4/boy = melancholy: stillness, rain, no performance push — the V.O. carries.
+  - 8.2 grave line = GRAVITAS: posture locks, voice drops a register, heavy
+    swallow, pauses between clauses, no blink; the slow push-in is the earned move.
+  - 9.2 monologue = gravitas + the episode's one long push-in (earned: realization).
+  - 10.4 his face change = SHOCK: eyes snap wide → lips part in a silent intake →
+    total body freeze for the full 3s. No other movement.
+  - 10.6 "Show me." = deliberate calm: steady unblinking eyes, chin level.
+  - 10.7-10.8 portal = AWE: both heads tilt back tracking the bloom upward, lips
+    part, her hand grounds on his forearm for one beat.
+- **CAMERA-EARNED-BY-BEAT (Part 12):** crash zoom ONLY at 4.3's shock stat; slow
+  push-ins only at 1.3/8.2/9.2 (intimacy/realization); crane only at 1.6 (scale
+  resolve); locked-off for menace (7.1a/7.1b) and grief (5.1); no other moves.
 
 **Annexes (unchanged from v4, owner-approved):** style prefix · castings (Pablo A
 `b03141e0`, view set via photo-edit; Rosa; Young Pablo) · Hazel 7-ref package +

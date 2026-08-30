@@ -1,4 +1,8 @@
-# PART 2 SCRIPT v3 — "Bringing Pablo Escobar to 2026" (SHOT-BY-SHOT EDIT BLUEPRINT)
+# PART 2 SCRIPT v5 — "Bringing Pablo Escobar to 2026" (SHOT-BY-SHOT EDIT BLUEPRINT)
+
+**v5 (2026-08-30): FULL 17-DIMENSION COMPLIANCE PASS** — all measured doctrines
+(playbook Parts 6-12) applied via the compliance annex at the end + emotion
+micro-sequences on every emotional beat. Dialogue unchanged from v4.
 
 **Status: DRAFT v4 — awaiting owner approval.** v3 (owner directive 2026-08-30):
 Pablo's "Show me." moved into Part 1's ending. v4 (same day, decided from her
@@ -130,3 +134,52 @@ pacing refs measured, `{}` dialogue syntax, ⛓ chaining,
 deliver-on-render, ask-before-regenerate, no 4K pre-approval, violence never shown,
 memorial/rooftop/TV-drama sensitivity staging, facts to pin at research close-out:
 current hippo estimate, park details).
+
+## v5 ALL-DIMENSION COMPLIANCE ANNEX (applies to every shot; playbook Parts 6-12)
+
+- **SCREEN GEOGRAPHY LAW:** HAZEL = frame-LEFT, PABLO = frame-RIGHT in every
+  two-shot, matching Part 1. Bystanders never break the pair's axis.
+- **FRAMING DEFAULTS (Part 7):** as Part 1's annex — two-shots waist-up or looser
+  with both fully in frame; chest-up+ = singles/dirty singles; headroom bimodal
+  (0-8% singles / 15-40% two-shots spent on environment — the theme-park gate,
+  Medellín skyline, cathedral-scale memorial); bottom cuts collarbone/waist/thigh.
+- **BANNER DEATH RULE:** banner ON at 1.1 arrival, OFF permanently at Scene 2.
+- **ZERO-LAG ARRIVALS (Part 9):** every scene opens with sound within ~1s — S1
+  reggaeton+crowd already up at frame one; S2 the guide mid-spiel ON the cut; S3
+  gondola hum; S4 muffled TV; S5 hippo grunts; S6 wind+candle silence bed (the
+  ONE earned quiet arrival); S7 street cloth-flap; S8 dusk insects + PA slow-down.
+- **GRADE SPLIT (Part 11, NEW):** 2026 scenes grade CLEANER and brighter (natural
+  daylight, true skin, modern clarity) vs Part 1's warm grainy 1987 — the era
+  contrast is itself a storytelling device. Dusk scenes (S6-S8) go golden-hour.
+- **MUSIC BEHAVIOR (Part 10):** ducks under every line, swells between lines,
+  dropout on 2.5 "…How much?" and 2.6 "That one is true."; S6 keeps ZERO music.
+- **MOTION HYGIENE (Part 11):** stable torsos in dialogue; real prop contact
+  (t-shirt, phone, ticket); smooth tracking only; speed-ramp softening at the
+  portal entries.
+- **AERIAL RULE (Part 12):** S5.1's high wide of the hippo river is the episode's
+  ONE aerial — earned as a legacy-scale reveal (her drone law). No other aerials.
+- **COMEDY LAW (Part 12):** Pablo = total deadpan commitment (the lookalike stare
+  3.3, "…How much?" 2.5 with a timed beat of silence before and after); the TEEN
+  and HAZEL carry reaction energy; never cut on a punchline — hold the silence.
+- **EMOTION BEATS (Part 12) — micro-sequences as prompt text:**
+  - 1.1 arrival = SHOCK-lite: blinking against sun, eyes darting, freeze before
+    "…Where are my guards?"
+  - 2.2 "He tells it wrong." = wounded stillness: unblinking at the guide, jaw
+    sets, voice low.
+  - 2.6 "That one is true." = DEADPAN gravity: total stillness, no blink, flat
+    inflection, beat of silence before and after.
+  - 4.3 "…They say my name." = BEING-MOVED: downcast gaze to his reflection, slow
+    blinks fighting the realization, chin micro-tremor; camera static tight.
+  - 5.3 "They survived me." = melancholy: heavy-lidded eyes drop to the water,
+    soft exhale, lips press; camera dead static.
+  - 6.3 the wall = SINCERE GRIEF staging: his gaze fixes on one point → one slow
+    blink → eyes soften and well (NO tear falls — his grief stays locked) → he
+    looks away. Camera dead static, longest holds of the series, zero music.
+  - 7.3 "Can it be changed?" = vulnerability: posture stays locked but the voice
+    drops and cracks a fraction on "changed".
+  - 7.4 "Then I win." = gravitas→peace: upturned face, slow exhale, the almost-
+    smile arriving only AFTER the line; the series' last slow push-in is earned.
+  - 8.1-8.2 the return = DIGNITY EXIT: chin lifts, steady unblinking look at her,
+    deliberate turn on the heel, walks into the ring WITHOUT looking back.
+  - 8.3 coda = DIRECT-ADDRESS: unbroken lens eye contact through the orbit, one
+    slow blink on "hippos", end punch ("Hazel — out of time.") → fast black.
