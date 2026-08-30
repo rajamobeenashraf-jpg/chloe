@@ -216,3 +216,17 @@ a dimension left un-applied where it applies is a process failure. The doctrine
 lives on the DEFAULT BRANCH (owner-authorized sync 2026-08-30) so every future
 session inherits it regardless of working branch. Studies are measured from her
 published output; judgment calls between two valid stagings go to the owner.
+
+## Hazel wardrobe decision workflow (owner lock 2026-08-30, permanent, every future generation)
+
+For EVERY future generation featuring Hazel, the styling sequence is fixed:
+1. **Claude presents exactly THREE dress/outfit options** — each option complete
+   with its JEWELRY and SHOES — designed for the scene, era, and moment (informed
+   by the wardrobe/environment doctrine, playbook Part 13).
+2. **The OWNER picks the dress.** The dress decision is his alone, never
+   Claude's.
+3. **Claude then chooses the MAKEUP and HAIRSTYLE** to suit the chosen dress and
+   the moment (per the styling directive: makeup always on, identity and realism
+   intact, bronde color locked, hairstyle varies per episode).
+This is per-generation, not per-episode: any new look Hazel wears goes through
+this three-options → owner-pick → Claude-styles sequence.

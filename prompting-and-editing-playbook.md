@@ -355,6 +355,8 @@ exists to prevent.
 
 | 16 | Emotion-to-camera mapping (what earns a zoom/drone/hold) | MEASURED | Part 12 |
 | 17 | Performance patterns per emotion (micro-sequences) | MEASURED | Part 12 |
+| 18 | Wardrobe/environment/host styling (era dressing, two modes, cry-scene realism spec) | MEASURED | Part 13 |
+| 19 | Humor: joke taxonomy + delivery grammar (expressions, timing, roles) | MEASURED | Part 14 |
 
 MASTER RULE hook: before any prompt is finalized, walk this ledger — every
 MEASURED dimension must appear as concrete prompt text where applicable; a
@@ -460,3 +462,110 @@ keep "stable torso, subtle head movement" as dialogue-shot prompt text.
 
 Both dimensions are prompt-text requirements: an emotional beat's shot prompt must
 carry its micro-sequence and its earned camera treatment explicitly.
+
+## PART 13 — WARDROBE, ENVIRONMENT & HOST-STYLING DOCTRINE, MEASURED (2026-08-30, 10-video study: Catherine Howard, Elizabeth 1575, Anne of Cleves, Henry VIII, Anne Boleyn 1536, Mary I, Marie Antoinette, NY 1925, Georgian makeover, Met Gala 1948)
+
+### A. Host styling — TWO MODES (the governing discovery)
+- **MODE A — VISITING THE PAST:** she is FULLY era-costumed as a high-status
+  in-world figure (Tudor gowns with French hoods, flapper dress with finger-wave
+  bob, 1948 satin gown with victory rolls, Georgian brocade with towering updo).
+  Era headwear, era JEWELRY (pearls, period pendants, drop earrings, rings),
+  era hair architecture — a DIFFERENT hairstyle per era/video.
+- **MODE B — BRINGING TO 2026:** she stays modern (sundress/streetwear/casual
+  polish) while the FIGURE keeps era dress — the costume mismatch IS the comedy
+  engine and the "he is really here" marker.
+- **IDENTITY ANCHOR ACROSS ALL LOOKS:** her signature makeup never changes —
+  clean luminous base, sharp winged black liner, defined brows, satin rosy-nude
+  lip (era-modified only when the era demands: 1920s dark lip, 1948 red lip,
+  Georgian rouge) — plus her recognizable face. Hair color constant; STYLE varies.
+- **Hazel application:** Part 1 (visiting 1987) = MODE A, era-blended dressed-up
+  1987 look; Part 2 (2026) = MODE B, modern dressed-up. Per the owner workflow
+  lock: 3 dress options (each w/ jewelry + shoes) → owner picks → Claude styles
+  hair + makeup to the dress and moment.
+
+### B. Era environment dressing laws
+1. Architecture sells the era first: oak linenfold paneling, leaded diamond
+   windows, tapestries, stone vaults / art-deco marquees, coffered speakeasy
+   ceilings / gilded Rococo mirrors — named explicitly in prompts.
+2. Light is always MOTIVATED and period-true: beeswax candles in candelabras,
+   window god-rays with dust, firelight; volumetric haze for luxury interiors.
+3. Era-specific LUXURY props anchor status: sugar-tower centerpieces, silver
+   cigarette cases, parchment + wax seals + quills, crystal chandeliers, vintage
+   cars, live-band instruments. One or two per scene, historically loaded.
+4. Background extras carry social stratification in period dress (servants vs
+   nobles; waiters vs patrons); figures are costumed from PORTRAITURE (Holbein
+   silhouettes for Henry, the 'B' necklace for Anne).
+5. Materials vocabulary in prompts: velvet, damask, brocade, fur trim, bullion
+   embroidery, pearls — weight and texture read as wealth on camera.
+6. Era-transition device: costume/makeup change shown as story (the Georgian
+   makeover) when the format allows.
+
+### C. The Catherine Howard realism findings (crying + naturalism reference)
+- Crying built in LAYERS: pink-rimmed waterlines and inner-corner redness first,
+  glassy welling with meniscus highlights, ONE irregular tear path (never
+  uniform), pressure-flushed cheek after a face-rub, chin-wrinkle + lip tremble,
+  grief-muscle brow (inner corners pulled up and in), breath hitches and a
+  cracking voice; full sob (teeth visible, clenched fists) reserved for the
+  panic peak. Redness is subsurface (eyes/nose/cheeks), not surface makeup.
+- Physical co-regulation sells it: hand-holding with real weight over the stone,
+  a cheek caress, foreheads leaning in — contact with anatomical resistance.
+- Realism stack: pore-level skin with peach fuzz, shallow DOF (~f/2 portrait
+  lens feel), organic handheld breathing, motivated window/candle light with
+  haze, 3-6s shots in shot/reverse-shot continuity, J/L-cut audio, voice track
+  with real vocal fry and mid-sentence gasps driving the lip sync.
+- These are now the CRY-SCENE PROMPT SPEC for any future heavy-crying beat.
+
+## PART 14 — HUMOR: JOKE TAXONOMY + DELIVERY GRAMMAR, MEASURED (2026-08-30, 10-video study: Mozart, Napoleon, Henry VIII, Casanova, Beethoven, Elizabeth-dentist, Newton, Karl Marx, Shakespeare, Tesla)
+
+### A. Her joke types (dimension: what the joke IS)
+1. **Anachronistic misread** — the figure interprets a modern thing through era
+   logic (tube map = battle plan; "This man McDonald is a great general";
+   "Execution with a gesture?"; server room caressed like a sacred organ).
+2. **Deadpan literalism** — flat factual answers to grand questions ("Cow. Just
+   cooked cow." / "Gravity still appears to be functioning.").
+3. **Understatement deflation** — the host punctures era grandeur with modern
+   banality ("No one cares." / "Now it costs £35 to get in." / "We've been here
+   four minutes.").
+4. **Absurd sincerity** — total commitment to the ridiculous (waltzing at a
+   rave with one tear; weeping over the dog film Beethoven; "I was born for
+   this" at a war game).
+5. **Ego/legacy beat** — the figure meets their own fame ("I said that in 470 BC
+   for free. 22 euros?!" / "I wrote this!" / "My head is huge.").
+6. **Status inversion** — history's giant treated as an unruly toddler; the
+   host as exhausted babysitter ("I'm not explaining." / "He does this
+   everywhere.").
+7. **Smash-cut contradiction** — a to-camera claim cut in 0.2s to its opposite
+   ("I think he's feeling it." → primal terror).
+8. **Zero-beat ping-pong** — clipped Q/A volleys with no gaps ("They train for
+   war?" "No." / "For free?" "Also yes.").
+9. **Dark-history deadpan** — era brutality stated calmly, the host's shocked
+   take IS the punchline ("I prefer my method.").
+10. **Fourth-wall conspiracy** — whispered asides making the viewer accomplice
+    ("He's not letting go of the phone.").
+
+### B. Delivery grammar (dimension: how it's PLAYED)
+- **Expression vocabulary (host):** the asymmetric one-corner smirk; the
+  eyebrow flash on punchlines; the flat-lidded deadpan drop (smile collapses to
+  flat mouth + half-lidded stare); the empathetic cringe (hunched shoulders,
+  hand to clavicle, darting eyes); the patronizing head-tilt; the GENUINE
+  laughter break reserved for peak absurdity (validates the audience's laugh).
+- **Expression vocabulary (figure):** 100% sincere commitment — unblinking
+  wide-eyed conviction or heavy-lidded flat stare; NEVER winks at the joke;
+  aristocratic stillness amplifies absurdity.
+- **Timing rules:** 0.5–1s frozen beat BEFORE a dry punchline; 1–2 beat HOLD on
+  the absurd image after it (frozen Oreo, oil bottle mid-air) — never cut on
+  the punchline; zero-beat confirmations for ping-pong; smash-cut contradictions
+  at 0.2s; the silent tag (an expression, not a line, closes the beat).
+- **Role law:** figure = in-scene, era-serious, the chaos engine; host = the
+  modern anchor who mediates to camera. Visual punchline precedes verbal.
+- **PLAIN-LANGUAGE COMPATIBILITY (project lock):** her sarcasm/irony is carried
+  by FACES and CUTS — instantly readable, never coded language the viewer must
+  decode. Our plain-language rule and her humor grammar are fully compatible:
+  jokes stay plainly worded; the irony lives in expression, timing, and edit.
+- **Escobar application:** Pablo already sits in her deadpan-commitment lane
+  ("The rats are a business expense." / "…How much?" / "That one is true.") —
+  his delivery spec = era-serious flatness, zero wink, post-line stillness.
+  Hazel's lens asides get the host repertoire (deadpan drop on "He bought
+  hippos.", cringe/flat looks on "I'm not explaining.", eyebrow-flash beats),
+  and the money scene runs zero-beat ping-pong with the crash-zoom reserved for
+  "A week."
