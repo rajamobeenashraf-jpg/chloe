@@ -35,9 +35,26 @@ Model: `soul_2` (served as `text2image_soul_v2`) + `soul_id` `8201212b-cf74-4f01
 | 2 | White corset + wide-leg trousers, diamond studs, silver chain, white pumps, studio | `cc270de0-103e-4120-9665-3ef950ffbbbf` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260830_134154_cc270de0-103e-4120-9665-3ef950ffbbbf.png |
 | 3 | Emerald satin gown, thigh slit, gold drop earrings, gold strappy heels, hotel balcony golden hour | `45b62bfd-2d5f-46de-83d1-fbfe1e85e904` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260830_134159_45b62bfd-2d5f-46de-83d1-fbfe1e85e904.png |
 
+Owner picked **look #3, emerald satin gown / balcony golden hour** for all final platform assets
+(2026-08-30) — implicitly confirming Round 2 identity/realism.
+
+## Final platform assets — sourced from Round 2 look #3 (`45b62bfd-2d5f-46de-83d1-fbfe1e85e904`)
+
+All derived from the SAME approved photo — no new face/pose generation, only deterministic crop
+(profile picture) and Higgsfield `outpaint_image` scene-extension + deterministic crop/resize
+(cover/banner). Her face/pose pixels are untouched throughout.
+
+| Asset | Size | Source op | Outpaint job ID | Local file |
+|---|---|---|---|---|
+| Profile picture (FB+IG+TikTok+YT) | 1080×1080 | direct crop of `45b62bfd` (head-and-shoulders) | — | `hazel_profile_picture_1080x1080.png` |
+| Facebook cover | 820×312 (JPG, 55 KB) | `outpaint_image` to 21:9 (`d552383f-4ab9-435c-a7cb-7063fd2e24e6`), center-cropped to exact ratio | `d552383f-4ab9-435c-a7cb-7063fd2e24e6` | `hazel_facebook_cover_820x312.jpg` |
+| YouTube banner | 2560×1440 (safe area 1546×423 centered) | `outpaint_image` to 16:9 (`54656369-b403-4a53-b7c5-5a59410fb2f5`), center-cropped/resized to exact size | `54656369-b403-4a53-b7c5-5a59410fb2f5` | `hazel_youtube_banner_2560x1440.png` |
+
+Sent to owner 2026-08-30. Local files are gitignored (session-local); job IDs above are the
+retrievable source in Higgsfield.
+
 ## Status
-- [ ] Owner confirms Round 2 identity/realism is acceptable
-- [ ] Owner picks which look(s) become profile picture / FB cover / YT banner
-- [ ] Crop/compose to platform specs (see `BRAND_KIT.md` §3)
+- [x] Owner confirmed Round 2 identity/realism (picked look #3)
+- [x] Crop/compose to platform specs (see `BRAND_KIT.md` §3)
 - [ ] Owner approval on final crops
-- [ ] 4K upscale (only after approval)
+- [ ] 4K upscale (only after approval — profile pic and banner are candidates; FB cover has its own small-file-size best practice, upscale not needed there)
