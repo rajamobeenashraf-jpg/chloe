@@ -1,9 +1,9 @@
 // Episode "The Fall of Constantinople 1453" — FINAL word-chunk caption data
-// for qc_pass.mjs. Generated from word_chunks_constantinople_v2.json (measured
+// for qc_pass.mjs. Generated from word_chunks_constantinople.json (measured
 // via make_word_chunks.py, faster-whisper, script-biased) against the FINAL
-// approved clip files in assets/ (2026-08-30) — this run re-measured all 24
-// clips fresh so the three clips regenerated today (07a v5, 12 v5, 14 v4) get
-// correct timing against their actual new audio, not stale Aug-29 timestamps.
+// approved clip files in assets/ (2026-08-30, last regenerated after the
+// clip03 voice fix) -- every clip measured fresh against its actual final
+// audio so timing never drifts from a stale prior render.
 // Rough line-window input this was built from: captions_data_lines_backup.mjs.
 // Owner-locked word-chunk caption system per CLAUDE.md (2026-08-23): 1-2 word
 // ALL-CAPS chunks, each REPLACING the previous, on screen only while spoken,
@@ -64,17 +64,17 @@ export const CLIPS = [
     id: "clip03",
     duration: 6.08,
     captions: [
-      { start: 0.0, end: 0.62, text: "TRIPLE WALLS" },
-      { start: 0.62, end: 0.94, text: "ON THE" },
+      { start: 0.0, end: 0.6, text: "TRIPLE WALLS" },
+      { start: 0.6, end: 0.94, text: "ON THE" },
       { start: 0.94, end: 1.52, text: "LAND SIDE." },
-      { start: 2.14, end: 2.34, text: "A LOCKED" },
+      { start: 2.04, end: 2.34, text: "A LOCKED" },
       { start: 2.34, end: 2.88, text: "HARBOR ON" },
       { start: 2.88, end: 3.2, text: "THE SEA" },
       { start: 3.2, end: 3.58, text: "SIDE." },
-      { start: 4.06, end: 4.3, text: "FOR A" },
-      { start: 4.3, end: 4.98, text: "THOUSAND YEARS," },
-      { start: 4.98, end: 5.38, text: "THAT HAS" },
-      { start: 5.38, end: 5.8, text: "BEEN ENOUGH." },
+      { start: 4.0, end: 4.3, text: "FOR A" },
+      { start: 4.3, end: 4.96, text: "THOUSAND YEARS," },
+      { start: 4.96, end: 5.36, text: "THAT HAS" },
+      { start: 5.36, end: 5.8, text: "BEEN ENOUGH." },
     ],
   },
   {
