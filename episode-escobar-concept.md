@@ -1,131 +1,146 @@
-# Episode CONCEPT v1 — "I Met the Richest Criminal Who Ever Lived" (Pablo Escobar, Colombia 1987–1993)
+# Episode CONCEPT v2 — "I Met the Richest Criminal Who Ever Lived" (Pablo Escobar, May 1987)
 
 **Status: CONCEPT ONLY — unscored, unscheduled, unscripted.** Not yet through
 `research-methodology.md` signal-stack scoring, no owner production lock, no slot in the
-queue. Written 2026-08-30 at the owner's direct request ("90-second Escobar video, real
-events, I'm present there and talk with Pablo"). Every standard approval gate applies
-before anything gets generated.
+queue. v1 written 2026-08-30 at the owner's request; **v2 same day per owner
+redirect: single time-stop, May 1987, start-to-end, hook-first, the most interesting
+facts of his whole life delivered through the one visit.** The v1 three-time-stop
+structure (1987 → 1992 → 1993) is SUPERSEDED — kept in git history only. Every
+standard approval gate applies before anything gets generated.
 
 Written to the same spec as `episode-alexander-gaugamela-script.md`: Chloe-formula
 V-mode talk-to-lens default, single continuous take per clip, `creative-direction.md`
 §6–§21, `CHARACTER_LOCK.md` v5, HAZEL name + "Hazel — out of time" sign-off, OPENING
-LAW (linear — time only ever moves FORWARD; the three time-stops below are forward
-jumps, never flashbacks or rewinds).
+LAW (linear — one day, May 1987, time runs forward the whole episode; every future
+fact is delivered VERBALLY through her narration/asides, never as a visual
+flash-forward).
 
 ---
 
 ## The one-line premise
 
-Hazel time-travels to Colombia as a foreign journalist in 1987 and interviews Pablo
-Escobar at the height of his power — she knows exactly how his story ends, he doesn't —
-then rides the timeline forward twice (his self-built prison in 1992, the rooftop day in
-1993) so the audience watches the fall she predicted actually arrive.
+Hazel time-travels to Hacienda Nápoles in May 1987 as a visiting foreign journalist
+and spends one day with Pablo Escobar at the exact peak of his power — she knows how
+all of it ends, he doesn't — and his entire life's most interesting facts get told
+through what she sees, what he says, and what she whispers to the lens.
 
-## Why this structure (and not a single day)
+## Why May 1987 specifically is the perfect single day (this is the episode's secret weapon)
 
-The owner asked for "the very important factual events from his life" — a life-spanning
-ask. A single-day episode (the Gaugamela pattern) can't cover peak → prison → fall.
-Solution: **three time-stops, strictly forward in time** — 1987 (peak) → 1992 (La
-Catedral) → Dec 2, 1993 (the end). This satisfies the OPENING LAW (linear, forward
-only, title cards at each jump per the "EARLIER TODAY"-card precedent — here they jump
-FORWARD: "FIVE YEARS LATER") while delivering the whole arc in 90 seconds.
+The month sits in a razor-thin historical window that gives the day built-in stakes:
+
+1. **Forbes has JUST published its first-ever World's Billionaires list (1987) with
+   Escobar on it.** A cocaine trafficker, printed next to the world's legitimate rich.
+   That's the hook's engine.
+2. **Three months earlier (February 1987), his partner Carlos Lehder was captured and
+   extradited to a US prison.** Extradition is the ONLY thing Escobar fears — and in
+   May 1987 that fear is fresh, personal, and real. It powers the episode's tensest
+   conversation beat.
+3. **One month later (June 25, 1987), Colombia's Supreme Court annuls the extradition
+   treaty.** He's about to win. Hazel knows it — and knows it only buys him six years.
+
+So the day she visits, he is simultaneously: the richest criminal alive, newly
+terrified, and weeks from becoming untouchable. The audience watches him at the exact
+top of the mountain, already leaning over the far edge — classic dramatic-irony fuel.
 
 ## Hazel's in-world role: foreign journalist
 
-The Alexander episode made her a scribe; here she's a **visiting foreign journalist,
-1987**. Historically airtight — Escobar actively courted press while building his
-Robin Hood image — and it does three jobs at once: explains her camera, explains her
-access, and licenses her to ask him the pointed questions the audience is screaming.
-This satisfies §12 (active participant): she interviews, challenges, and moves through
-the story rather than observing it.
+Historically airtight — Escobar actively courted press while building his Robin Hood
+image. The role explains her camera, her access, and her license to ask him the
+questions the audience is screaming. Satisfies §12 (active participant): she
+interviews, challenges, handles the cash, moves through the story.
 
-## The dramatic irony engine (the channel's core mechanic)
+## The dramatic irony engine
 
-She knows: the Forbes money, the murders already ordered, the assassinations still
-coming, the prison, the escape, the rooftop. He knows none of it. Fear direction per
-`creative-direction.md` §2: **restrained, whispered asides, quiet dread** — the scariest
-thing in the episode is how *calm and charming* he is. Never played for jump-scares.
+She knows: the Forbes money, the murders already ordered (all pre-May-1987 facts are
+fair game as PRESENT-tense truths), the assassinations still coming, the prison, the
+escape, the rooftop. He knows none of it. Fear direction per `creative-direction.md`
+§2: **restrained, whispered asides, quiet dread** — the scariest thing in the episode
+is how *calm and charming* he is. Never jump-scares.
 
 ## The two-ledger spine (anti-glorification, structural)
 
-Every wealth stat is answered by a cost stat. The Robin Hood beat is immediately
-followed by the victims beat. This isn't a disclaimer bolted on — it's the episode's
-emotional architecture, and it's also what keeps the video on the right side of
-platform ad-suitability (see Production sensitivities below).
+Every wealth/charm beat is answered by a cost beat within ~10 seconds. The empathy
+beat sits at the episode's center. This is the moral architecture AND the
+ad-suitability strategy.
 
 ---
 
-## Beat sheet (~90s, 10 clips — durations are concept-stage, to be re-derived at scripting per the word-count/wpm rule)
+## Beat sheet (~90s, 10 clips — durations provisional until the scripted dialogue is run through the wpm formula: situation band → upper limit → ×1.20 → Hazel ×1.10; durations follow the dialogue math, never the reverse)
 
-| # | Dur | Stop | Beat | Craft job |
-|---|---|---|---|---|
-| 1 | 9s | 1987, Hacienda Nápoles gate | HOOK, mute-legible first frame: a small airplane mounted ON TOP of a ranch gate. Hazel, walking in: "Colombia, 1987. The seventh-richest man on Earth lives here. That plane over the gate? It flew his first cocaine shipment. He spends $2,500 a month… on rubber bands. To wrap the cash." | Stated-wealth hook inside the swipe window + a strange first image (why is a plane on a gate?) |
-| 2 | 8s | Nápoles grounds | Stat-drop walk: a HIPPO surfaces in the lake mid-line (she flinches — embedded drama, §7). "He built a private zoo. Four hippos. Remember the hippos — they matter later. He makes $420 million a WEEK. So much cash in storage that rats eat about ten percent of it. That's two billion dollars a year. To rats." | Stat-drops + planted payoff (hippos) + active reaction beat |
-| 3 | 10s | Nápoles veranda | MEET PABLO (conversation 1). Soft-spoken, warm, family-man charm — that IS the dread. He talks about the barrio he built, the churches, the soccer fields: "They call me the Robin Hood of Medellín." Her, level: "And the people who don't call you that?" | The featured-figure intro + her journalist role earns the confrontation |
-| 4 | 9s | Nápoles veranda | Conversation 2. His answer, perfectly calm, almost kind: "Everyone accepts something. Silver… or lead." *Plata o plomo.* Her whispered aside to lens as he's called away: "He's been elected to Congress. And he's already had the justice minister who exposed him murdered." (Lara Bonilla, 1984 — already true by 1987.) | The signature quote + irony aside; audience-knows tension |
-| 5 | 9s | Medellín street | EMPATHY CORE (the beat we never rush): she talks with a Medellín shopkeeper — the other ledger. Police officers with cash bounties on their lives. Judges. Journalists. Her, quiet, jokes gone: "In two years a presidential candidate dies. Then a passenger plane — 110 people — to kill one man who wasn't even on it." (Galán, Avianca 203 — 1989, stated as what's coming, never shown.) | The most-quoted beat type on the reference channel; drops the vlogger persona entirely |
-| 6 | 9s | **CARD: "FIVE YEARS LATER — LA CATEDRAL, 1992"** | She walks INTO a prison past guards. "This is a prison. HIS prison. He negotiated his own surrender — built it himself, on his own land, picked his own guards. Police aren't allowed within three kilometers. There's a bar. There's a jacuzzi. There's a football pitch." | Casual-shock beat (the format's "catching Alexander asleep" slot) — the prison IS the joke |
-| 7 | 9s | La Catedral | LAST CONVERSATION. Pablo, older, heavier, still calm. Her: "You were on the Forbes list. You could have stopped. Why didn't you?" Him: "I would rather have a grave in Colombia than a jail cell in the United States." Her look to the lens, silent — she knows he gets exactly that. | His real recorded worldview as the thesis line + the irony lands wordlessly |
-| 8 | 8s | La Catedral, night | ESCAPE NIGHT (July 22, 1992): the government comes to move him; soldiers stream past her in the dark, radios crackling — and he's already gone, out the back, into the fog. Non-graphic, all tension, no violence on screen. She's jostled in the chaos (embedded, §7). | The event beat — motion + confusion, §15 geometry checked at scripting |
-| 9 | 9s | **CARD: "SIXTEEN MONTHS LATER — DECEMBER 2, 1993"** — Medellín street, midday | She's on the street below the rooftops. Search-Bloc radio chatter, trucks, then — distant, off-screen — it ends. Her, quiet: "Sixteen months on the run. He burned two million dollars in cash just to keep his daughter warm. It ends today, on a rooftop — one day after his 44th birthday." | The fall, handled with restraint: sound design + her face carry it; nothing graphic shown |
-| 10 | 10s | Medellín, dusk | OUTRO: "Forbes called him the seventh-richest man in the world. Colombia counted differently — thousands dead in his war on the state. The money's gone. The cartel's gone. The only empire he left…" beat "…is the hippos. There are more than a hundred now, wild, all descended from his four." Quiet: "Hazel — out of time." | Two-ledger close + the planted hippo payoff + sincere sign-off |
+| # | Dur | Beat | Craft job |
+|---|---|---|---|
+| 1 | 9s | **HOOK** — mute-legible strange first frame: a small AIRPLANE mounted on top of a ranch gate, Hazel walking under it toward the lens. "May, 1987. Forbes just published the first world billionaires list in history — and one name on it sells cocaine. That plane over the gate flew his first shipment. I'm having lunch with him today. In six years he'll die barefoot on a rooftop. He doesn't know that. I do." | Swipe-window hook: strange image + Forbes fact + stated doom + the irony contract with the audience, all inside 9s |
+| 2 | 8s | GROUNDS WALK, stat-drops in motion: a HIPPO surfaces in the lake mid-line — she flinches (embedded drama, §7). "He built his own zoo. Four hippos — remember the hippos. He makes $420 million a WEEK. There's so much cash in storage that rats eat ten percent of it. Two billion dollars a year. Eaten. By rats." | Stat barrage + planted hippo payoff + active reaction beat |
+| 3 | 10s | **MEET PABLO** (conversation 1), veranda lunch. Soft-spoken, warm, a host — that IS the dread. The Robin Hood ledger, from HIM: the barrio with his name on it, the churches, the soccer fields, families out of the dump. *[Pablo]*: "They call me the Robin Hood of Medellín." Her, level, journalist-calm: "And the people who tell you no?" | Featured-figure intro; charm played straight so the next beat lands |
+| 4 | 9s | *[Pablo]*, perfectly calm, almost gentle: "Everyone accepts something. Silver… or lead." **Plata o plomo.** He's called away a step — her whispered aside to lens: "He got himself elected to Congress. When the justice minister exposed him — he had him murdered. That was three years ago. Everyone knows. No one can prove it." (Lara Bonilla 1984 — already true in May 1987.) | The signature quote + the first cost-ledger fact, whispered, audience-knows tension |
+| 5 | 8s | **THE MONEY ROOM** — he shows her a caleta: raw cash stacked to the ceiling. Active beat: he tosses her a band — she wraps a brick of bills herself (rubber-band callback: "$2,500 a month, just on these"). Her: "You know you could just… stop." *[Pablo]*, amused: "I offered to pay off Colombia's entire national debt. Ten billion dollars. They said no." | The single most shareable fact of his life (the debt offer) staged as dialogue, not narration + §12 hands-on beat |
+| 6 | 9s | **EMPATHY CORE** (never rushed) — the barrio: a mother thanks him by name, means it, her kids play on his soccer pitch. Hazel to lens, quiet, jokes gone: "She's not wrong. And she's not the whole story. Journalists who printed his name are dead. Judges are dead. And the worst hasn't even started — in two years a plane full of passengers comes down. A hundred and ten people. To kill one man who missed the flight." (Avianca 203, 1989 — spoken as what's coming, never shown.) | The most-quoted beat type on the reference channel: both ledgers held at once, persona fully dropped |
+| 7 | 9s | **THE FEAR** (conversation 2 — the tensest beat): back at the house, quieter. Her: "February. Your partner Lehder — they put him on a plane to an American prison. Does that scare you?" *[Pablo]*, the calm finally hardening: "I would rather have a grave in Colombia than a jail cell in the United States." Her aside, whispered: "Next month the Supreme Court kills the extradition treaty. He wins. For six years." | His real recorded worldview as thesis line + the May-1987 window doing its work: fresh fear, imminent false victory |
+| 8 | 8s | **FAREWELL** — dusk, he walks her toward the gate, host to the end. Her last question: "How does this end, Pablo?" *[Pablo]*, a small smile, utterly certain: "It doesn't. Colombia and I have an arrangement." He turns back to the house — she holds the lens in silence, two full beats. Nothing said. The audience already knows. | The irony lands wordlessly; §2 restraint — her silence IS the scream |
+| 9 | 10s | **THE FUTURE-CAST** — walking out alone under the gate plane, dusk deepening, pace rising: "Here's what he doesn't know. Two years from now, Forbes ranks him seventh-richest ON EARTH — and he blows up a passenger jet. Four years from now he surrenders — to a prison HE built. Jacuzzi. Football pitch. His own guards. Then he escapes it. Sixteen months on the run — he burns two million dollars in cash to keep his daughter warm. And on December 2nd, 1993 — one day after his 44th birthday — a rooftop in Medellín." | The rest of his life in one breathless verbal run — linear (her telling moves only forward), no visual flash-forward, OPENING-LAW clean |
+| 10 | 10s | **OUTRO** — she stops at the gate, quiet: "Forbes called him one of the richest men in history. Colombia counted differently — thousands dead in his war on the state. The money's gone. The cartel's gone. The only empire that outlived him…" beat "…is the hippos. Over a hundred of them now. Wild. All descended from his four." Quiet: "Hazel — out of time." | Two-ledger close + the planted hippo payoff + sincere sign-off |
 
-**Total: 9+8+10+9+9+9+9+8+9+10 = 90s.** All durations provisional until the scripted
-dialogue's word counts are run through the wpm formula (situation band → upper limit →
-×1.20 → Hazel ×1.10) — durations follow the dialogue math, never the reverse.
+**Total: 9+8+10+9+8+9+9+8+10+10 = 90s.**
 
----
+## Retention logic (why start-to-end holds)
 
-## Fact list to verify at research pass (all currently from general knowledge — verify before scripting)
+- 0:00–0:09 — hook: strange image + billionaire-criminal paradox + stated doom.
+- 0:09–0:36 — escalating absurd-wealth facts, each bigger than the last (zoo → $420M/week → rats → the money room → the national-debt offer at 0:36, the midpoint spike).
+- 0:36–0:54 — the turn: plata o plomo → the empathy beat (the emotional deep point).
+- 0:54–1:10 — the fear conversation + the wordless farewell (peak tension, quietest beats).
+- 1:10–1:30 — the breathless future-cast (pace UP for the final stretch, not down) → hippo payoff → sign-off.
+Every beat opens a question the next one answers; the hippos plant (0:12) pays off at 1:25.
 
-- Forbes billionaire list 1987–1993; "7th richest, ~$25B" is the 1989 figure — pin which year/number the script cites.
-- ~$420M/week revenue; ~10% of stored cash written off to rats/water (~$2.1B/yr); $2,500/month on rubber bands — all from Roberto Escobar's accounts; cite as "his brother's accounting."
-- Plane mounted over the Nápoles gate (first-shipment plane vs. replica — verify which).
+## Fact list to verify at research pass (before scripting)
+
+- Forbes first World's Billionaires list: 1987, Escobar on it (the "7th richest, ~$25B" figure is 1989 — the script keeps them separate: beat 1 uses the 1987 first-list fact, beat 9 uses the 1989 ranking).
+- Carlos Lehder captured and extradited February 1987.
+- Supreme Court annuls the extradition treaty June 25, 1987.
+- ~$420M/week revenue; ~10% of stored cash lost to rats/water; $2,500/month on rubber bands — from Roberto Escobar's accounts; attribute as "his brother's accounting."
+- The offer to pay Colombia's ~$10B national debt — widely reported; pin the best sourcing and exact framing.
+- Plane mounted over the Nápoles gate (first-shipment plane vs. replica — verify which; if replica, the line becomes "a monument to the plane that flew his first shipment").
 - Four hippos imported; 100+ descendants today.
-- Rodrigo Lara Bonilla assassinated April 1984; Luis Carlos Galán August 1989; Avianca Flight 203, November 1989 — 107 on board + 3 on the ground = 110 dead.
-- Congress: elected alternate member 1982, expelled after Lara Bonilla exposed him 1983.
-- La Catedral: surrender June 1991 (post-extradition-ban constitution), the 3km police perimeter, escape July 22, 1992.
+- Rodrigo Lara Bonilla assassinated April 1984; elected alternate congressman 1982, expelled 1983–84.
+- Guillermo Cano (El Espectador) murdered December 1986 — available for beat 6's "journalists who printed his name" line; already true in May 1987.
+- Avianca Flight 203, November 1989: 107 on board + 3 on the ground = 110; the intended target (César Gaviria) was not aboard.
+- La Catedral surrender June 1991; escape July 22, 1992.
 - "Grave in Colombia over a jail cell in the United States" — verify exact wording of the attributed quote.
-- Death: December 2, 1993, Los Olivos rooftop, day after his 44th birthday; the "barefoot" detail — verify before using.
+- Death December 2, 1993, Los Olivos rooftop, day after his 44th birthday; verify the "barefoot" detail before using it in the hook.
 - $2M burned to keep Manuela warm — from his son's account; attribute that way.
-- Police bounty program and the death toll of the narco-war — pin a defensible sourced number before the outro line.
+- Narco-war death toll — pin a defensible sourced number for the outro.
 
-## §32-style NPC lock (draft — TWO variants because he ages across the stops)
+## §32-style NPC lock (draft — single variant now, one day in 1987)
 
-**PABLO ESCOBAR (1987, stops 1–5)** — 37 years old; stocky, short (~5'6"); thick black
-curly hair, side-parted; the full dark mustache; round, soft-featured face with a
-double chin; unhurried, soft-spoken, faint permanent half-smile; open-collar
-short-sleeve shirt (white or pale blue), casual slacks, sneakers. Never raises his
-voice — menace is carried entirely by calm.
+**PABLO ESCOBAR (May 1987)** — 37 years old; stocky, short (~5'6"); thick black curly
+hair, side-parted; the full dark mustache; round, soft-featured face with a double
+chin; unhurried, soft-spoken, faint permanent half-smile; open-collar short-sleeve
+shirt (white or pale blue), casual slacks, sneakers. Never raises his voice — menace
+carried entirely by calm. Speaks English with a soft Colombian accent (house
+convention). Voice-identity lock per the standing NPC-voice rule: once his first clip
+is owner-approved, extract the 4–8s reference and reuse it in every subsequent Pablo
+clip.
 
-**PABLO ESCOBAR (1992, stops 6–8)** — same identity lock, five years heavier: fuller
-face and midsection, mustache slightly fuller, hair a touch longer; casual sweater or
-tracksuit top, sneakers. Same unhurried delivery, wearier around the eyes.
-
-He speaks English with a soft Colombian accent (house convention — all historical
-figures speak English). Voice-identity lock per the standing NPC-voice rule: once his
-first clip is owner-approved, extract the 4–8s reference and reuse it in every
-subsequent Pablo clip (both age variants — same voice).
+**Recurring-human slot (the format's named-local device):** the barrio mother in beat
+6 — one warm, specific, named presence (name TBD at scripting) so the empathy beat has
+a face.
 
 ## Production sensitivities (flagged now, before scripting)
 
-1. **No product on screen, ever.** Cash, ledgers, the zoo, the prison — never cocaine,
-   never production, never use. The wealth is filmable; the substance is not. This is
-   both taste and YouTube ad-suitability (drug content is monetization-fragile;
-   documentary framing + no depiction keeps it defensible).
-2. **All violence off-screen.** Lara Bonilla, Galán, Avianca, the rooftop — stated or
-   heard, never shown. The empathy beat and the two-ledger structure do the moral work.
-3. **No glorification.** Every charm beat is answered by a cost beat within ~10 seconds.
-   The pinned researched comment (credibility playbook) should lead with the victims'
-   ledger and sources.
-4. **Topic-lane note:** this sits outside the US-history lane, but US-market appetite
-   for Escobar content is proven (Narcos et al.). Recommend running the signal-stack
-   scoring before production lock, same as any backlog idea.
+1. **No product on screen, ever.** Cash, ledgers, the zoo, the money room — never
+   cocaine, never production, never use. Taste + YouTube ad-suitability (documentary
+   framing, no depiction).
+2. **All violence off-screen.** Lara Bonilla, Cano, Avianca, the rooftop — stated or
+   heard, never shown.
+3. **No glorification.** Every charm beat answered by a cost beat within ~10 seconds;
+   pinned researched comment leads with the victims' ledger and sources.
+4. **Topic-lane note:** outside the US-history lane, but US appetite for Escobar
+   content is proven (Narcos et al.). Recommend signal-stack scoring before production
+   lock.
 
 ## Next steps (owner gates, in order)
 
-1. Owner reads this concept — approve / redirect the structure.
+1. Owner reads this v2 — approve / redirect.
 2. Signal-stack scoring per `research-methodology.md` (on request).
-3. Full clip-by-clip script (dialogue + wpm math + eyelines + pacing references +
-   retention audit) in the Alexander-script format.
+3. Full clip-by-clip script (dialogue + wpm math + eyelines per beat + pacing
+   references + retention audit) in the Alexander-script format.
 4. Then the standard production gates: costume/character stills → clip-by-clip → edit.
