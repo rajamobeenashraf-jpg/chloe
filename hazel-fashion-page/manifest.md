@@ -48,31 +48,34 @@ All derived from the SAME approved photo — no new face/pose generation, only d
 |---|---|---|---|---|---|
 | Profile picture (FB+IG+TikTok+YT) | 1080×1080 | look #3 `45b62bfd` (emerald gown, balcony) | direct crop (head-and-shoulders) | — | `hazel_profile_picture_1080x1080.png` |
 | Facebook cover | 820×312 (JPG, 54 KB) | new look #5 `7221a155` — **different dress**: black satin off-shoulder mini, gold hoops + layered necklaces, black stilettos, city rooftop at dusk (owner: "give me the Facebook cover in a different dress") | `outpaint_image` to 21:9 (`6e2522e0-8a68-4bfb-a8fe-9caa777ce660`), center-cropped/resized to exact ratio | `6e2522e0-8a68-4bfb-a8fe-9caa777ce660` | `hazel_facebook_cover_black_820x312.jpg` |
-| YouTube banner | 2560×1440 (safe area 1546×423 centered) | new look #6-9 (`b7d6f8c4`→`4e994ad7`→`611b2cbd`→`244466ef`) — **different dress**: ivory blazer worn as deep-V dress, gold drop earrings, skyline balcony golden hour (owner: "the model's face should be visible on all devices") | Generated NATIVE 16:9 with `soul_2`, then `outpaint_image` to 1:1 (`cc7e8cbb`, from source `244466ef`) to add real sky/scene padding above AND below her (not a crop-and-zoom), then deterministically cropped (top=0, 2044×1150 window, centered horizontally) and resized to 2560×1440 — see corrected "face-safety" method below | `cc7e8cbb-8b1b-40ba-a82c-51d6f03c4387` | `hazel_youtube_banner_ivory_2560x1440.png` |
+| YouTube banner | 2560×1440 (safe area 1546×423 centered) | new look #6-9 (`b7d6f8c4`→`4e994ad7`→`611b2cbd`→`244466ef`) — **different dress**: ivory blazer worn as deep-V dress, gold drop earrings, skyline balcony golden hour (owner: "the model's face should be visible on all devices") | Generated NATIVE 16:9 with `soul_2`, `outpaint_image` to 1:1 (`cc7e8cbb`) for vertical padding, then AGAIN to 16:9 (`b40ea833`, from `cc7e8cbb`) for horizontal padding — full chain: `244466ef`→`cc7e8cbb`→`b40ea833`, final 2752×1536 — deterministically cropped (top=0, height=820, width=1458, horizontally centered on her face) and resized to 2560×1440 — see corrected v3 method below | `b40ea833-a342-4cb2-8f48-ce0fb422a2f6` | `hazel_youtube_banner_ivory_2560x1440.png` |
 
-**YouTube banner face-safety — CORRECTED method (2026-08-30, v2; supersedes the eye-line-only method
-below, which the owner correctly rejected: "only the area from her eyes to lips can be seen").**
-The original method only centered the EYE-LINE inside the 423px-tall safe band, but her whole face
-(hairline to chin) is TALLER than 423px in a close/native crop — so even with eyes centered, her
-forehead and chin still spilled outside the band and got clipped on mobile. The two constraints
-(eye-line inside the band, AND full face height ≤ band height once scaled to 1440) cannot both be
-satisfied by cropping tighter — cropping tighter to move the eye-line down also enlarges the face,
-making the height problem worse. **The real fix is to add actual canvas (more sky/scene, via
-`outpaint_image`), not to crop existing pixels tighter** — this shrinks the face's proportion of the
-frame without shrinking the face itself. Method: (1) generate native 16:9 with `soul_2`; (2) measure
-hairline-y, chin-y and eye-y in source pixels (grid-overlay + visual read, since this environment's
-opencv build lacks `CascadeClassifier`); (3) `outpaint_image` to a taller ratio (e.g. `1:1`) to add
-real headroom above (and it also adds room below, a bonus); (4) re-measure in the padded image, then
-crop with top=0 and height = min(the width-limited max, and whatever keeps face-height×1440/height
-≤ ~400) so eye-line lands centered AND the crop stays wide enough for width×16/9 to fit the padded
-canvas; resize to 2560×1440. Verify by drawing the actual 1546×423 safe-area rectangle on the final
-image before sending — don't trust eyeballed estimates alone. Apply this corrected method to every
-future Hazel YouTube banner generation.
+**YouTube banner face-safety — CORRECTED method v3 (2026-08-30, final; supersedes v2 below, which
+the owner ALSO rejected as still "only eyes till lips" — v2's chin measurement was wrong, not just
+its margin).** Two compounding mistakes in v2: (1) measurements were read off a coarse 50px-spaced
+grid at a glance, and were off by ~100px (estimated chin at source-y 590, actual was ~695) — always
+zoom the grid overlay tight on just the face and read at 25px spacing, never eyeball from a
+full-frame view; (2) v2 only padded the source vertically (1:1 outpaint), so the available crop
+width was capped at the source's original 2048px, which forced Hc≤1152 — too small a crop to fit
+this face's true ~385px height inside the 423px band with ANY margin (the math is impossible:
+hairline needs Hc≤580, chin needs Hc≥773, no overlap). **Fix: pad the canvas BOTH directions** —
+outpaint once to `1:1` (adds vertical headroom), then outpaint AGAIN to `16:9` on the result (adds
+horizontal room), which raises the width ceiling enough that a large-enough Hc becomes available
+(source went from 2048×1152 → 2048×2048 → 2752×1536). With that room, solve for Hc using EYEBROWS
+(not hairline — the two are mutually exclusive given this face's proportions, so eyebrows-to-chin is
+the achievable "whole face" target) and CHIN: Hc must satisfy eyebrow_y/Hc ≥0.353 AND chin_y/Hc
+≤0.647, i.e. Hc∈[chin_y/0.647, eyebrow_y/0.353] — pick the middle of that range for margin on both
+ends, not an edge value. Always verify the FINAL delivered file (not an intermediate) by drawing the
+actual 1546×423 rectangle on it and visually confirming a real gap between her features and every
+edge of the box — a measurement that just barely clears the boundary reads as "still cropped" to a
+real viewer even if technically compliant. Apply this full v3 method to every future Hazel YouTube
+banner generation; only the hairline/very top of her hair is expected to fall outside the safe zone,
+which is normal and not what "face visible" means.
 
-**Superseded (2026-08-30, v1, do not reuse):** the original face-safety note called for cropping
-tighter (top=0, crop-height = eye_y/target_f) to center only the eye-line — this produces a
-too-tight bust crop where the full face doesn't fit the band; kept here only so the mistake isn't
-repeated.
+**Superseded (2026-08-30, v1 and v2, do not reuse):** v1 only centered the eye-line, ignoring total
+face height. v2 fixed the concept (pad, don't crop-zoom) but used an imprecise measurement and
+padded only one axis, leaving a razor-thin/negative margin that still read as "eyes to lips only."
+Both kept here only so neither mistake is repeated.
 
 Sent to owner 2026-08-30. Local files are gitignored (session-local); job IDs above are the
 retrievable source in Higgsfield.
