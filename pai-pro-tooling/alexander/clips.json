@@ -102,7 +102,8 @@
       "continuity": "Persian gear and dress ONLY — zero Macedonian iconography anywhere in frame; they face LEFT; in the last beat the spears settle level (the action that spans the cut into 6a).",
       "sound": "Same unbroken bed from the receiving side: the roar far, commands near, shields locking close.",
       "endingState": "Spears settled level, shields locked, dust wall taller beyond the line.",
-      "constraints": "The incoming charge is never visible."
+      "constraints": "The incoming charge is never visible.",
+      "_status": "VALIDATED v4 (job ef3b5276-287d-4224-b6c8-20376ea714be, owner-approved 2026-08-30) — accepted with a known limitation: only ~1.3s of the 4.06s clip has real motion (front-rank collective spear-lowering wave), the remainder holds on a settled pose rather than continuing to animate. Root-caused across 5 video attempts (v1-v5, see PROMPT_LEARNINGS.md S13): the telephoto-compressed angle (needed to fix the density/gap problem, see stillComposition) concentrates the model's motion budget on the single sharpest foreground layer — ranks behind it read as an inert backdrop unless individually scripted, and scripting multiple staggered ranks at once (v5) overloaded the prompt and regressed to a full freeze, worse than v4's simpler single-rank version. Regenerate only with fresh owner approval per §19."
     },
     {
       "id": "6a", "duration": 6, "mode": "NOVA", "hazel": false, "characters": [],
