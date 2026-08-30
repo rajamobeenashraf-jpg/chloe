@@ -337,6 +337,12 @@ Reference image (owner-approved, Option A): job `9ddd4a2c-f604-4002-b187-92d01e9
   - Head-lowering-on-entry: INCONCLUSIVE from still-frame QC — background crowd rows stay small/edge-cropped behind Hazel's selfie framing for most of the shot; this is a motion cue a still frame can't confirm either way. Flagged honestly to owner, not claimed as confirmed.
   - Sent to owner as CLIP 14 round 2. **OWNER APPROVED (2026-08-29) — CLIP 14 round 2 (job `5243859d-7f8e-479a-9098-b98787c42032`) is FINAL, enters the edit.**
 
+### CLIP 14 — edit-stage Gemini eyes finding, re-verified (2026-08-30)
+Finding from the edit-stage pass on the approved final: "Background crowd extras duplicated/stiff," severity 3, at 0:00. Re-verified via zoom crop before reporting.
+- **CONFIRMED** — the standing crowd rows flanking the aisle are visibly identical: same dark uniform, same clasped-hands pose, same spacing, same stance repeated down the line, reading as a cloned figure rather than individual people. Visible from the opening frame.
+- Same failure class just diagnosed and fixed on Clip 12's marching army (uniform spacing/pose/silhouette reading as a tiled texture) — the same fix vocabulary (varied posture/stance, mixed clothing/detail, uneven spacing, varied head angles) would apply directly.
+- Sent to owner with the finding and the clip. AWAITING DIRECTION on whether to regenerate.
+
 ### CLIP 15 — final episode clip, present-day dome bridge + concluding line (2026-08-29)
 Owner asked for a concluding line mirroring Chloe's short-but-impactful closer (see the "Nobody who stood here..." line locked in the script — full derivation in the conversation, not repeated here). Script row 15 updated: duration bumped 13s → 16s to fit the extra line; owner explicitly said not to worry about the episode's overall runtime ceiling for now, decision deferred to the edit stage.
 - Submitted: job `e4e9209f-0984-487f-a4b4-72df4dabbd31` (seedance_2_5, omni_reference, 16s, 9:16, 4 Hazel refs + audio ref — no Mehmed reference needed, he doesn't appear in this clip). No preset intercept.
