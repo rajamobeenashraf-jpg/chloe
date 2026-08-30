@@ -11,11 +11,12 @@ disbelief, not secrecy), 7.1b (NEW — plain-language explainer for "silver or l
 per the standing plain-language rule), and Scene 10 (the reveal no longer lives
 there — the cliffhanger becomes HIM finally believing her). v6.1 (owner directive,
 same day): the closing question is ANSWERED — Pablo: "Show me." → Hazel: "Okay.
-Let's go." → HER portal (exact device measured from her Socrates/Joan footage,
-locked at 10.7) opens with 2026 glimpsed through its center, and Part 1 smashes to
-black as they walk INTO it. Part 2 does NOT re-show the entry — it opens in media
-res per her hook law (her forward jumps are hard cuts, never portals). Runtime
-~132s → ~144s.**
+Let's go." → OUR portal (owner directive: more magical than hers — spark-birth,
+clock-sweep ember rim, daylight spilling through the hole into the night, the
+world leaning in, diegetic time-bend sound; locked at 10.7–10.8) opens with 2026
+seen through its center, and Part 1 smashes to black as they walk INTO it. Part 2
+does NOT re-show the entry — it opens in media res per her hook law (her forward
+jumps are hard cuts, never portals). Runtime ~132s → ~147s.**
 
 **THE v5 CORRECTION (the real fix):** v4 wrote each scene as one continuous take.
 Her reels are the opposite — **every scene is a MULTI-SHOT EDIT**: 3–5 shots
@@ -38,7 +39,7 @@ EXCEPT the four v6 beats (1.4, 1.5, 2.1, 10.2–10.3) and the new 7.1b.
   audio continuous across them (§16).
 - Est. generations Part 1: ~28 shots from ~22 generations (6 derived reframes).
 
-**Runtime ~144s · 10 scenes / 31 shots · Locks, style prefix, character castings,
+**Runtime ~147s · 10 scenes / 32 shots · Locks, style prefix, character castings,
 wpm math, filter fallback for the rifle, banner, memory-scene approval — all as v4
 (unchanged, owner-approved) except the v6 beats listed above, whose wpm math is
 recomputed inline. Captions (owner-locked 2026-08-30): her style — NO speaker tags
@@ -105,7 +106,7 @@ LOCK: the murder is spoken, never shown.
 | 9.2 (13s) | **THE LONGEST SHOT OF PART 1 — her monologue grammar:** one slow push-in, medium → tight on the heavy-lidded eyes, dusk crossing his face: {Pablo: "That I came from nothing, and I bowed to no one." (0.5) "They will call me a monster. My people will call me a saint. Either way — they will say my name."} Eyes: hers→his for sentence one; past camera for sentence two; back to her on "my name." | hard → S10 gate |
 (Proximity-escalation law: S8–S10 shots run longer and tighter than S1–S4's.)
 
-## SCENE 10 · THE CLIFFHANGER — belief lands, the portal opens · 23.5s · MUSIC: all out from his question; riser under the portal; sub-drop on black
+## SCENE 10 · THE CLIFFHANGER — belief lands, the portal opens · 26.5s · MUSIC: all out from his question; the party music itself slows/deepens under the portal (diegetic time-bend); silence on the crossing; sub-drop on black
 (v6: the reveal moved to shot 1.4 — this scene is no longer the reveal. It is the
 episode's payoff arc completing: the man who LAUGHED at her claim in minute one has
 watched her know things all day, and at the gate HE is the one who brings it back.
@@ -118,16 +119,27 @@ this same spot with them entering it. The dangling-question ending is gone.)
 | 10.4 (3s) | **HIS reaction, static close-up:** the face changes — first time all day. Silence. | hard |
 | 10.5 (2s) | **Her half-step closer, tight:** {Hazel: "Do you want to see how it ends?"} | hard |
 | 10.6 (2s) | **HIS static close — the answer:** the long beat, his eyes not leaving hers; then, quietly: {Pablo: "Show me."} (2 words + 0.6 beat at his deliberate 168 wpm ≈ 1.3s.) | hard ON the word |
-| 10.7 (5.5s) | **THE PORTAL — the series' time-travel device, HER exact design (measured from her footage 2026-08-30):** {Hazel, small smile: "Okay. Let's go."} (3 words at her neutral 211 wpm ≈ 0.9s) — and beside the gate a **vertical golden-amber OVAL ENERGY RING materializes, ~2.5× human height**: emissive glowing rim, swirling plasma edge, ember/spark particles drifting outward, hazy smoky core <resonant magical hum + low whoosh> — and THROUGH its center, faint and impossible: **the same gate in DAYLIGHT — tour buses, colored flags, people in shorts** (2026, glimpsed — the built-in Part 2 trailer; her Socrates portal shows the destination through the center exactly this way). Torch flames bend toward it; his face gold-lit, belief total. STATIC WIDE (her portal framing): the two walk INTO the ring back-to-camera, swallowed by the golden volume → **SMASH TO BLACK → card 【PART TWO】** | — |
-PORTAL LOCK (series device, permanent — reverse-engineered from her Socrates
-1:24–1:30 + Joan 1:20–1:22 return portals, watch jobs `job_495ee9a3` /
-`job_48a3971c`): vertical golden-amber oval energy ring standing on the ground,
-~2–2.5× human height; emissive rim, swirling plasma edge, ember particles, hazy
-core; the DESTINATION visible through the center; characters walk in back-to-
-camera; static wide; resonant magical hum + whoosh. Note her forward-jump grammar
-has NO portal (hard cut on dialogue) — we use the portal here because Part 1 ends
-at the departure itself; Part 2 opens in media res per her hook law, not on the
-portal.
+| 10.7 (4s) | **THE PORTAL'S BIRTH (our device — designed to beat hers):** {Hazel, small smile: "Okay. Let's go."} (3 words at her neutral 211 wpm ≈ 0.9s) — she turns her open palm upward and a **single golden spark** rises from it and hangs in the night air <the distant party music SLOWS AND DEEPENS — time itself bending audibly — a slow, huge clock-tick beneath>. A beat. Then the spark **UNZIPS the night vertically and BLOOMS into the ring**: an oval doorway ~2.5× human height, its rim two counter-rotating currents of golden ember-dust orbiting like the sweep of a clock, faint concentric heat-haze ripples spreading through the air around it — and through its center, with true depth: **the same gate in FULL 2026 DAYLIGHT** — tour buses, colored flags, families — and that daylight **SPILLS OUT of the hole into the 1987 night**, a widening wedge of morning laid across the dark ground and up both their bodies. Two times of day in one frame. | hard |
+| 10.8 (4s) | **THE ENTRY — static wide (her framing, our physics):** the whole world leans toward the ring — torch flames bending, moths spiraling into the glow, dust and fallen leaves lifting and streaming slowly toward it, the pool's far surface rippling toward it, her hair drifting off her shoulder. His face lit by daylight-at-night, belief total. The two walk INTO the doorway back-to-camera, the daylight wrapping their silhouettes — the instant they cross, ALL SOUND STOPS; the ring **collapses inward to the single spark it was born from**, the spark dies, night restored → **SMASH TO BLACK → card 【PART TWO】** | — |
+PORTAL LOCK (series device, permanent — OURS, designed 2026-08-30 to exceed her
+measured device; her spec kept as research baseline in
+`part2-bringing-to-future-study.md`): (1) BIRTH — a single golden spark from
+Hazel's palm hangs, then unzips the air vertically and blooms into the ring
+(hers just appears pre-made); (2) FORM — vertical oval doorway ~2.5× human
+height, rim of two counter-rotating golden ember-dust currents orbiting like a
+clock's sweep, concentric heat-haze ripples around it; (3) THE LIGHT — the
+destination visible through the center with true depth, its OWN time of day, and
+its light SPILLS through into the present scene (daylight pouring into night, or
+firelight into dusk); (4) THE WORLD LEANS IN — flames bend, dust/leaves/moths
+stream toward it, water ripples, hair drifts: physics sells the magic; (5) SOUND
+— nearby diegetic music slows and deepens as it opens, a huge slow clock-tick
+under a resonant hum; total silence the instant a character crosses; the ring
+collapses back to its birth-spark and dies. Characters enter back-to-camera,
+static wide. Her forward-jump grammar still holds: NO portal on forward jumps —
+this device appears only at departures/returns. FEASIBILITY FALLBACK (flag at
+the portal TEST render, before production): if Seedance can't hold the
+see-through destination cleanly, the core falls back to opaque golden blaze
+(her style) with the light-spill kept — owner decides on the test.
 
 ---
 
@@ -148,9 +160,9 @@ whip exits (1.6) · macro insert (4.4) · rack focus (3.3) · speed-ramp (3.2) �
 locked-off menace (7.1) · lateral drifts (6.1, 7.3) · proximity escalation
 (S8–S10) · low-angle grandeur (gate plane 10.1) · EDIT: hard cuts 2–10s · J-cuts
 (1.2, 5.1) · music states per scene · silence beats (10.4) · portal device — her
-Joan/Churchill portal grammar, now the series' locked time-travel device (10.7) ·
-smash-black + card (10.7) · karaoke gold captions · time-of-day arc (noon→night) ·
-8 locations.
+genre slot, OUR upgraded design (10.7–10.8: spark-birth, clock-sweep rim,
+light-spill, world-leans-in, diegetic time-bend) · smash-black + card (10.8) ·
+karaoke gold captions · time-of-day arc (noon→night) · 8 locations.
 Orbit + POV insert + myth-bust + reflections land in Part 2 (see its
 verification). **CAPTION DECISION (owner, 2026-08-30): captions follow HER style
 for this series — NO speaker tags (overrides the locked [Speaker]-tag rule for
@@ -171,8 +183,9 @@ rats (the share/comment stat) · 0:48–1:03 the barefoot boy (first heart-hit) 
 silver/lead + "Silver is money. Lead is a bullet." + Congress memory (dread build)
 · 1:30–1:45 the grave line (tension peak) · 1:45–2:01 the monologue (the quote
 viewers repeat) · 2:01–2:24 "You've known all day." → belief lands → HIS FACE →
-"Do you want to see how it ends?" → "Show me." → THE GOLDEN RING OPENS with 2026
-visible through its center → they walk into it → BLACK (the open loop is now a
+"Do you want to see how it ends?" → "Show me." → a spark from her palm BLOOMS
+into the ring, 2026 daylight pouring through it into the night → they walk into
+it, all sound stops, the ring dies to a spark → BLACK (the open loop is now a
 PROMISE SHOWN, not just a question asked — the audience literally glimpses Part
 2's world through the portal). Every 8–12s window contains a new question, laugh,
 fact, or dread beat; no dead air anywhere.

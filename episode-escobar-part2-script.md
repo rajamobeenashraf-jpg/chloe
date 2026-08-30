@@ -4,8 +4,9 @@
 Pablo's "Show me." moved into Part 1's ending. v4 (same day, decided from her
 measured footage): Scene 1 follows HER arrival grammar — in-media-res hook, hard-
 cut jump, tilt reveal, NO portal and NO morph on the forward jump (portals are her
-RETURN device only); Scene 8's return uses her exact portal spec (see Part 1's
-PORTAL LOCK). Rebuilt per the same v5 correction
+RETURN device only); Scene 8's return uses OUR upgraded portal (owner directive:
+more magical than hers — see Part 1's PORTAL LOCK), mirrored: 1987 firelight
+spilling out into the 2026 dusk. Rebuilt per the same v5 correction
 as Part 1: every scene is a MULTI-SHOT EDIT in her grammar — hard cuts every 2–10s,
 shot-reverse singles at line boundaries (no action re-rendered), crash-zoom
 punch-ins with drops, whip-blur chapter exits, macro inserts, proximity escalation,
@@ -75,8 +76,8 @@ device — except here the myth is confirmed, which is colder.)
 | 7.4 (8s) | **THE SERIES' LAST SLOW PUSH-IN** — his upturned face against the roofline, almost at peace; the full-circle callback: {Pablo: "A rooftop in Colombia. Not a jail cell in the United States." (0.5) "Then I win."} Hazel in soft focus behind — she says nothing; NO lens aside; the audience is left alone with it. | hard → S8 gate dusk |
 
 ## SCENE 8 · THE RETURN — coda · 16s · MUSIC: resolving strings; silence under the sign-off
-| 8.1 (3s) | **The park gate at dusk — the RETURN PORTAL (her native use of the device):** the golden-amber oval ring standing on the ground beside the arch, ~2.5× his height, plasma rim, ember particles — and through its center, warm and faint: 1987, his world, the party audible for one breath <resonant magical hum>. He stops at the threshold, turns to her once: {Pablo: "My people are waiting."} | hard |
-| 8.2 (3s) | **STATIC WIDE (her exact return framing — Joan at Notre-Dame):** he walks into the ring back-to-camera, vanishing into the golden volume; the ring dissolves <whoosh fading>; the arch is just an arch. The 1987 sound cuts to night insects. | hard |
+| 8.1 (3.5s) | **The park gate at dusk — the RETURN PORTAL (our locked device, mirrored):** the spark hangs, then BLOOMS into the ring beside the arch <the park's distant PA slows and deepens; the huge slow clock-tick> — and through its center, with depth: **1987 at night, torchlight and the party**, its warm firelight SPILLING out across the 2026 dusk pavement and up his 1987 clothes — the light of his own world reaching for him. Dusk leaves lift and stream toward it. He stops at the threshold, turns to her once: {Pablo: "My people are waiting."} | hard |
+| 8.2 (3s) | **STATIC WIDE (the entry framing, matching Part 1's 10.8):** he walks into the doorway back-to-camera, the firelight wrapping his silhouette — the instant he crosses, all sound stops; the ring collapses to its spark and dies; the arch is just an arch in the 2026 dusk. Night insects fade up. | hard |
 | 8.3 (10s) | **THE ORBIT CODA (her Washington-outro move):** a slow half-orbit AROUND Hazel as she speaks — the empty arch, then the dark park, then the mounted plane's black shape passing behind her as the camera circles, settling face-on for the sign-off. {Hazel, plain: "He went back. He changed nothing. His war killed thousands of people. Everything else is gone. The only thing still growing… is the hippos."} <one distant low grunt from the dark> (0.5) {Hazel, soft: "Hazel — out of time."} **Hold to black.** | — |
 
 ---
@@ -85,8 +86,8 @@ device — except here the myth is confirmed, which is colder.)
 
 Arrival in HER measured grammar — in-media-res hook + hard-cut jump + rising tilt
 reveal w/ riser + impact hit (1.1–1.2, Joan 0:11–0:13) · portal reserved for the
-RETURN, her native use, exact spec from footage (8.1–8.2, Joan Notre-Dame /
-Socrates) ·
+RETURN — her structural slot, OUR upgraded device (8.1–8.2: spark-birth,
+light-spill, silence-on-crossing) ·
 banner (1.2) + watermark (all) · tour-guide-recites-his-life (2.1, Socrates
 Acropolis) · merch/ubiquity beat + "how much?" (2.3–2.5, Caesar gift shop) ·
 MYTH-BUST (2.6, Washington cherry tree — inverted: confirmed true) ·

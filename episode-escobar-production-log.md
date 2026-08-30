@@ -67,6 +67,21 @@ All casting URLs: `https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni
   tilt-reveal (morph oner CUT — no era-morph generation needed); Part 2's return
   uses the same portal spec. PORTAL LOCK written into the Part 1 script; full
   measured spec in `part2-bringing-to-future-study.md`. Part 2 runtime ~114s.
+- **Portal UPGRADED beyond her design (owner directive 2026-08-30: "be more
+  creative, more magical than her portals"):** our locked device now adds, over
+  her static pre-made ring — (1) a BIRTH: single golden spark from Hazel's palm
+  that unzips the air and blooms into the ring; (2) a rim of counter-rotating
+  clock-sweep ember currents + concentric heat-haze ripples; (3) the
+  destination's own time of day SPILLING through the hole (2026 daylight pouring
+  into the 1987 night; 1987 firelight into the 2026 dusk on return); (4) the
+  world leaning in — flames bend, dust/leaves/moths stream toward it, water
+  ripples, hair drifts; (5) diegetic time-bend sound (nearby music slows and
+  deepens + huge slow clock-tick; total silence on crossing; ring collapses back
+  to its spark). Part 1 10.7 split into 10.7 birth + 10.8 entry (runtime ~147s).
+  Feasibility fallback recorded in the lock: if the see-through center won't
+  render cleanly, opaque golden blaze with the light-spill kept — decided at the
+  portal TEST render, owner call. NEXT-STEPS ADDITION: a portal validation test
+  clip (Gemini-eyes-eligible as a test asset) before any production portal shot.
 - **"Silver or lead" clarified to owner + plain-language explainer restored as new
   shot 7.1b** ({Hazel: "Silver is money. Lead is a bullet."}) per the standing
   plain-language rule — the owner himself asked what "lead" meant, proving the
