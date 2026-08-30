@@ -719,3 +719,8 @@
 - Owner: put the finalized hook on the thumbnail as a top banner, per the channel's usual cover format.
 - Burned via ffmpeg `drawtext`/`drawbox` onto thumbnail v2 (no re-generation, so the image content is untouched): white banner across the top, black bold serif (LiberationSerif-Bold, matching the episode's own on-screen text), the finalized hook "I TIME TRAVELLED TO 1241 / MONGOLS VS. AN ENTIRE / POLISH ARMY" wrapped to 3 lines, plus an amber "1241" year stamp in the top-right corner per the cover spec (amber = past episode).
 - Output: `assets/thumbnail_final_with_hook.png` (720×1280). Sent to owner as the final cover. Not committed to git per the standing generated-media policy.
+
+## 2026-08-29 (cont.) — Cover text corrected: no cropping, simpler POV text, bigger and lower
+- Owner: the previous cover text pass was wrong on two counts — the white banner box covered/cropped part of the actual photo (looked like the scene had shifted), and the wording should have just been "POV: Mongols vs. an entire Polish army," not the full "I time travelled to 1241" line.
+- Redid it correctly: kept the underlying photo (thumbnail v2) completely untouched, no box, text drawn directly over the image with a black outline (matching the episode's own on-screen caption style) instead of a solid white background. Wording changed to "POV: MONGOLS VS. AN ENTIRE POLISH ARMY," larger font, positioned lower (~70-170px down) so it sits clearly against the sky instead of crowding the very top edge. Kept the amber "1241" year-stamp corner tag.
+- Output: `assets/thumbnail_final_with_hook_v2.png` (720×1280). Sent to owner. Not committed to git per the standing generated-media policy.
