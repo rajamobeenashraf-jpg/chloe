@@ -48,6 +48,25 @@ Per §31: 2 full-body + 2 face crops, single-view images, never grids. **The See
 | Full-body front | **APPROVED (owner, 2026-08-29)** | `dc77b494-57bd-41d9-a129-7120dc46447d` (tall ~5'9", hourglass, fitted wardrobe, hand on hip — same round as the approved 3/4). Rejected: v1 `a7f5576b`, v2 `d11a4b69` (identity drift), figure-pushed `5f9b1a43` (set aside) |
 | Full-body 3/4 walking | **APPROVED (owner, 2026-08-29 — "previous side version", confirmed as Option A)** | `1eb09f83-215a-4377-b806-d10a6cc3f9c4` (tall ~5'9", hourglass, fitted wardrobe, mid-stride). Rejected: v1 `3ac7a1e2`, v2 `eaa1e93e` (identity drift), figure-pushed v4 `270620f1` (set aside by owner's choice of the previous version) |
 
+### v5 EXPRESSION set — owner-approved 2026-08-30 (canon addition, part of the reference package)
+
+Per the official Seedance guidance (an all-neutral view set teaches only the resting
+face — "the first line of dialogue invents a mouth"), two strong-expression views were
+generated via the proven PHOTO-EDIT method (N4) from the approved face-front, and
+owner-approved 2026-08-30. **Include them in the Seedance reference package for every
+dialogue clip** alongside the master + 4 views (7 images total).
+
+| View | Source (2K) job | 4K job | 4K URL |
+|---|---|---|---|
+| Wide open-mouth laughing smile (teeth dynamics) | `ad19f997-1cde-4485-8489-6cef74c2d398` | `3ba4ea27-5122-4de7-aece-c24a33208afe` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260830_052930_3ba4ea27-5122-4de7-aece-c24a33208afe.png |
+| Sharp anger (brow/jaw tension, clenched-teeth hint) | `6651b1cb-d590-44f1-a02b-93be4501ccf2` | `d7ea2bd4-7c37-463e-914f-dba377a3a51c` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260830_052947_d7ea2bd4-7c37-463e-914f-dba377a3a51c.png |
+
+QC note at approval: identity markers hold (hazel iris, brows, bronde center part,
+fair-rosy, bare pink lips, real texture); cheeks read slightly slimmer than the
+master under the stretched expressions — flagged to the owner at delivery, approved
+with that noted. The master remains the shape/color anchor; these two are DYNAMICS
+references, never the identity anchor.
+
 **Figure/stature spec (owner-directed 2026-08-29, part of the v5 lock once a full-body view is approved):** tall (~5'9", long-legged) with a pronounced but realistic hourglass figure — full bust, slim defined waist, full rounded hips, fit and toned; never cartoonish proportions.
 
 Claude QC vs the v5 master (2026-08-29): identity holds across all four; fair-rosy complexion, faint nose/cheek freckle trace, bare natural-pink lips, hazel iris detail correct in both face crops; realism bar passes (pores/texture/vellus hair visible at close range). Two notes: (1) the face-front's complexion reads a touch warmer than the master under its more neutral light — acceptable, the master stays the color anchor; (2) wardrobe differs between the two full-body views (long vs short sleeve) — irrelevant for identity refs, episode wardrobe comes from approved costume stills.
