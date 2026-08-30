@@ -75,6 +75,12 @@ Owner picked OPTION 1 (crimson off-shoulder Alaïa-style bodycon), then asked fo
 |---|---|
 | Black (recommended) | `49f7a940-ef09-40b2-adb4-b35a88546dae` |
 | Bronze-gold metallic (alt, leans into wealth theme) | `b8d82b11-7cb7-4bc2-a65f-522bf3cd26f4` |
+Owner picked BLACK (agreed w/ recommendation). First styled pass (off-shoulder long-sleeve silhouette + soft waves + bronze-gold smoky eye, job `70dfd863-23ef-48bd-8e97-8ef921c2f40f`) REJECTED — owner asked for two more black options, "a little more sexy." ROUND 8 (delivered):
+| Option | Job |
+|---|---|
+| A One-shoulder black satin, draped strap, ruched bodice, thigh-high slit, mid-thigh hem | `72b037c6-78bf-4c8c-814c-0164112397a7` |
+| B Plunging black halter, waist keyhole cutout w/ gold chain, thigh slit | `d1baaf89-16f9-4e3a-9078-b301a8cc3964` |
+**OWNER LOCKED: OPTION A (one-shoulder satin, thigh-high slit, black).** This is the final Part 1 dress silhouette/color. Next: style hair/makeup to suit the asymmetric one-shoulder line → owner approval → wardrobe still set → clip regenerations.
 Hair/makeup styled after pick. On lock: generate the WARDROBE STILL SET (full front + full 3/4 in the locked look, via N4 photo-edit) → owner approval → those stills join the reference package of EVERY Part 1 clip (N3: costume stills beat text). Knock-on: existing clips regenerate to match.
 
 ### Validation/test clips
