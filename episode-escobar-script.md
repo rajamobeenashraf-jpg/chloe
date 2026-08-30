@@ -89,9 +89,11 @@ through the ring = the grade contrast IS the reveal).
 MUSIC: live brass band mid-song, full volume → stops MID-NOTE at the grab →
 DEAD SILENCE (only pool lap, ice, breath) → band restarts under "Sit."
 AMBIENCE BED: open-air party — glasses, laughter, pool water, far macaw; reverb
-= open tropical night, close voices dry.
-ENV LUXURY: torch-lit pool terrace, his vintage cars parked in a gleaming row
-beyond the crowd, white-jacketed waiters frozen mid-pour when the music stops.
+= open tropical midday air, close voices dry.
+ENV LUXURY: blazing-midday pool terrace, his vintage cars parked in a gleaming
+row beyond the crowd, white-jacketed waiters frozen mid-pour when the music
+stops. (Time arc lock: S1 is HARD NOON — torches exist only at the S10 night
+finale.)
 CONTINUITY-IN: cold open, sound at frame zero (the band's last note).
 
 **1.1 (2.5s) — FRAME ONE = THE GRAB**
@@ -110,8 +112,8 @@ CONTINUITY-IN: cold open, sound at frame zero (the band's last note).
 
 **1.2 (2s) — THE REVERSE, SCALE THROUGH SILENCE**
 - FRAME: wide from behind/over her shoulder — the crowd parting in a diagonal,
-  dancers frozen mid-move, drinks half-raised, torch flames the only movement,
-  the lit pool glaring beyond, the car row glinting far right. 25% headroom of
+  dancers frozen mid-move, drinks half-raised, a dropped napkin the only movement,
+  the sunlit pool glaring beyond, the car row glinting far right. 25% headroom of
   palms and night sky (two-shot/master headroom spent on environment).
 - CAMERA: static wide. J-CUT: his voice enters OVER this shot — first dialogue
   at ~2.5s of runtime (her hook law).
@@ -196,20 +198,21 @@ across the cut, louder→muffled as she moves.
 ## SCENE 3 · THE LAKESHORE · 10s
 MUSIC: none until the blast → one playful sting ON the spray peak → OUT
 completely for her deadpan tag (dropout-on-punchline law).
-AMBIENCE: night lake — water lap, insect bed, party spilling downhill behind;
-reverb opens (bigger night air). ENV LUXURY: servants holding torches at the
-waterline; silver drink trays abandoned on the grass.
+AMBIENCE: late-afternoon lake — water lap, bird calls, party spilling downhill
+behind; reverb opens (bigger open air). ENV LUXURY: silver drink trays abandoned
+on the grass, a white speedboat moored at the jetty. (Time arc: low warm
+afternoon sun on the water.)
 
 **3.1 (2s) — TORCHLIT WIDE**
-- FRAME: wide master, the party spilling to the black water's edge, guests
-  daring each other toward it; 30% headroom of night jungle (environment law).
+- FRAME: wide master, the party spilling to the sun-glared water's edge, guests
+  daring each other toward it; 30% headroom of jungle and afternoon sky.
 - CAMERA: static. SOUND-IN at 0s: a dare-laugh and a shriek (zero-lag).
 - CUT: hard, mid-laugh (cutting on comedy's rising edge).
 
 **3.2 (2s) — THE DETONATION**
 - FRAME: mid-wide on the waterline; the water ERUPTS — hippo head surfacing
-  huge in backlit spray; guests scatter THROUGH frame both directions; Hazel
-  (frame-left, dress catching torchlight) jumps a genuine full step.
+  huge in sun-backlit spray; guests scatter THROUGH frame both directions; Hazel
+  (frame-left, dress bright in the afternoon sun) jumps a genuine full step.
 - CAMERA: static frame, micro SPEED-RAMP on the spray peak (her dance-beat
   ramp — earned by shock). <deep water blast + screams>
 - PERFORMANCE: her startle is REAL and quick (shock spec, comic register:
@@ -217,7 +220,7 @@ waterline; silver drink trays abandoned on the grass.
 - CUT: hard on the scatter.
 
 **3.3 (3s) — HIS UNMOVED SINGLE, RACK FOCUS**
-- FRAME: dirty single — falling spray soft in foreground, HIS torchlit face
+- FRAME: dirty single — falling spray soft in foreground, HIS sunlit face
   sharpening behind it as focus pulls (her signature depth pull, earned:
   revelation-of-character); face center-right 75%, collarbone cut.
 - PERFORMANCE (deadpan commitment law): he has not moved AT ALL — same
@@ -230,7 +233,7 @@ waterline; silver drink trays abandoned on the grass.
   punchline).
 
 **3.4 (3s) — HER LENS TAG — THE DEADPAN DROP**
-- FRAME: chest-up lens single, chaos-laughter and torch flicker behind.
+- FRAME: chest-up lens single, chaos-laughter and glittering water behind.
 - PERFORMANCE (Part 14 flat-lidded deadpan drop): her party smile COLLAPSES to
   a flat mouth + half-lidded stare into the lens — hold 0.5s BEFORE the line
   (pre-punchline freeze), deliver flat, hold 0.8s AFTER (the silent tag).
@@ -532,7 +535,7 @@ scene's cathedral.
 - CUT: hard.
 
 **10.3 (2.5s) — HER CONFIRMATION**
-- FRAME: her clean single, chest-up, torchlight on her face; to HIM, never
+- FRAME: her clean single, chest-up, torchlight on her face (S10 night); to HIM, never
   the lens (the audience is eavesdropping now).
 - PERFORMANCE: quiet certainty — no smile, steady eyes, the 0.5s pause is
   hers this time.
