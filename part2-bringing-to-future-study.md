@@ -39,6 +39,18 @@ outliers (6 complete; 2 TikTok jobs still processing at write time, non-critical
    nearly uncontested territory.
 5. POV arrival grammar (1776 reel, 37s): the wake-up/arrival device + escalating
    public event + micro-reactions of bystanders — useful for Part 2's arrival beat.
+6. **Bystander micro-reactions sell "he is really here"** (completed late: Bristol
+   1612 POV, 123K — locals glare at, nearly collide with, and interrogate the silent
+   visitor; stadium-legends reel, 435K — era-authentic wardrobe blended into modern
+   crowds + natural double-takes and camera-awareness are what make the illusion
+   land). Two consequences for Part 2: (a) Pablo stays in his 1987 clothes the whole
+   episode — the fish-out-of-water marker; bystanders' double-takes ("that guy looks
+   JUST like…") are a running gag that sells his presence. (b) NEW BEAT for the
+   theme-park scene: a TOUR GUIDE leads a group past, reciting Pablo's life story,
+   while the real Pablo stands inside the crowd listening to his own tour — the
+   strongest possible fusion of the local-reaction mechanic with the legacy theme.
+   Pablo, quietly, to Hazel: "He tells it wrong." Hazel: "He tells it the way it
+   ended." (Added to beat 2 of the Part 2 design below.)
 
 ## Watched jobs (manifest)
 | Source | Views | Job |
