@@ -1,54 +1,60 @@
-# Episode SCRIPT v2 — "I Met the Richest Criminal Who Ever Lived" (Pablo Escobar, May 1987)
+# Episode SCRIPT v3 — "Visiting Pablo Escobar in 1987" (Hacienda Nápoles, May 1987)
 
-**Status: DRAFT v2 — unscored, unscheduled, awaiting owner approval.** Full rewrite of
-v1 (owner directive 2026-08-30) applying `prompting-and-editing-playbook.md` in full:
-the cosminacreates story formula (Parts 2–3) + the official Seedance 2.5 doctrine
-(Part 6) + every standing project rule. v1 is superseded — git history only.
+**Status: DRAFT v3 — unscored, unscheduled, awaiting owner approval.** Owner directive
+2026-08-30: ignore the old script-building habits entirely and build the episode the
+way the reference reels are built — from `prompting-and-editing-playbook.md` (her
+story formula, her editing grammar, her prompting method, the official Seedance 2.5
+doctrine), all of it. v1/v2 superseded — git history only.
 
-**What changed from v1, in one paragraph:** the ordinary walking intro is gone — Pablo
-speaks first, mid-confrontation, in second 0 (her every-reel opening). The episode is
-now question-driven chapters that escalate (zoo → money → Robin Hood → silver-or-lead
-→ the fear → farewell), each fact staged on a prop, with the hardest question at ~70%,
-Pablo noticing what Hazel is at the farewell, a breathless future-cast, and the plain
-hippo payoff. Every clip now carries cinematic direction (shot, ONE dominant camera
-move, lighting, blocking with contact points and eyelines) and an explicit END STATE
-so adjacent clips chain via the extracted-final-frame → declared-first-frame method.
-A frozen Episode Style Prefix makes all clips read as one film. Dialogue will be
-prompted in the official `{}` audio-clause syntax at generation time.
+**What is structurally NEW in v3 (the things her reels have that v2 still lacked):**
+1. **Pablo is the star, with real characterful dialogue** — deadpan pride, dry wit,
+   certainty (her Caesar/Henry register), not a minimal quote machine.
+2. **Memory flashbacks with Hazel standing inside them** — her Catherine Howard
+   device: the present conversation hard-cuts into a dramatized memory (his poor
+   childhood promise; his expulsion from Congress) with Hazel visible in the memory,
+   narrating to lens, then hard-cuts back. Sold by audio, not dissolves.
+3. **Pablo gets the closing monologue** — every one of her reels ends on the figure's
+   quotable speech; ours never did. His is chilling and self-aware, NOT redemptive;
+   Hazel's coda immediately after carries the cost and the payoff.
+4. **Emotional whiplash architecture:** funny/absurd front half (zoo, rats, "a week"),
+   the turn at the barrio, dark middle (silver-or-lead → Congress memory → the fear),
+   monologue, silence, then the breathless fall and the hippos.
+5. Humor comes from HIS deadpan and HER unbothered modern frankness — never mockery.
 
-## OWNER DECISIONS REQUIRED BEFORE PRODUCTION (approval of this script may grant 1–2 explicitly)
+## OWNER DECISIONS REQUIRED (approval of this script explicitly grants 1–3)
 
-1. **§38 camera coverage:** the interview scenes (clips 1, 3–8) are third-person
-   cinematic two-shots — her grammar. Hazel's asides (2, and the to-lens moments)
-   stay on the V-mode lens. Third-person scenes need per-scene owner approval under
-   §38: approving this script approves this coverage plan.
-2. **Top premise banner** "Visiting Pablo Escobar in 1987 🇨🇴" — an addition to the
-   locked caption system. Yes/no.
-3. **Age words:** per the official age-blind rule, Pablo's and Rosa's locks below are
-   written WITHOUT age words. Hazel's frozen identity string (owner-locked) still
-   contains "early twenties" — keeping it as-is until the owner decides; flagging only.
-4. **Strong-expression reference view** for Hazel (official guidance: all-neutral
-   sets make dialogue mouths unstable). Canon addition — owner gate.
-5. **Runtime: ~129s (2:09)** — inside the 90–200s cap, inside her 104–166s range.
+1. **§38 coverage:** third-person cinematic scenes (1, 2, 3, 4b, 5, 6a/6b, 7, 8, 9) +
+   Hazel's V-mode lens beats (asides inside scenes, 10, 11a, 11b).
+2. **Memory flashbacks (4b, 6b) expand the OPENING LAW** (owner-locked "time runs
+   forward"): these are dramatized memories inside a linear 1987 day — her exact
+   device. Named plainly, not slipped in: approving this script approves it.
+3. **Top premise banner** "Visiting Pablo Escobar in 1987 🇨🇴" over the hook.
+4. **Age words** — Pablo/Rosa locks are age-free (official rule); Hazel's locked
+   string untouched pending the owner. **Strong-expression Hazel reference view** —
+   canon addition, owner gate. **Runtime ~154s (2:34)** — inside 90–200s and her
+   104–166s range.
+5. Dropped from dialogue for density: the rubber-bands fact (moves to the pinned
+   researched comment). Flagged, not silent.
 
 ---
 
-**Runtime ~129s · 11 clips · Featured figure: PABLO ESCOBAR (lock below) · Recurring
-local: ROSA (one line) · Coverage: third-person interview scenes + V-mode lens asides
-per clip labels · LINEAR single day, May 1987, Hacienda Nápoles + one barrio scene**
+**Runtime ~154s · 12 scripted clips (14 generations: 4 and 6 are two-part
+present/memory builds) · PABLO ESCOBAR (speaking lead, lock below) · ROSA (one line)
+· LINEAR single day, May 1987, with two dramatized memories**
 
-## EPISODE STYLE PREFIX (frozen — glued verbatim to every generation prompt of this episode)
+## EPISODE STYLE PREFIX (frozen — glued verbatim to every generation prompt)
 
 ```
 Style: photoreal live-action documentary-cinema, vertical 9:16. No 3D render, no game
 engine, no animated-film aesthetic.
 Lighting: natural tropical daylight only — high hard sun early, long low golden light
-from the fear chapter onward, deep golden dusk for the final three clips. Single
-motivated sources; no studio fill.
+from the fear chapter onward, deep golden dusk for the final clips. MEMORY SCENES:
+same natural-light rule, warmer and slightly lifted blacks (a remembered light), never
+a filter look. Single motivated sources; no studio fill.
 Color: 60:30:10 — lush deep greens / warm earth-and-cream / one reserved accent:
-raw-cash green-and-rubber-band color only in the money chapter. Muted, unpolished
-period grade, fine film grain.
-Camera: physical cine lens character, 180-degree shutter motion blur, one dominant
+raw-cash green only in the money chapter. Muted, unpolished period grade, fine film
+grain.
+Camera: physical cine lens character, 180-degree shutter motion blur, ONE dominant
 camera move per shot.
 Skin: pore-level realism — visible micro-pores, vellus hair, capillary flush, matte
 finish, zero beauty-retouch sheen.
@@ -57,307 +63,331 @@ visible breathing; characters always reacting, never posing.
 Physics: gravity and inertia respected; real contact shadows; no floating props.
 Continuity: characters, wardrobe, props, environment locked to references across every
 cut. No identity drift.
-Audio: diegetic dialogue and environmental SFX only. NO BGM. No subtitles, no on-screen
-text. (Music and captions are edit-stage layers.)
+Audio: diegetic dialogue and environmental SFX only. NO BGM. No subtitles, no
+on-screen text. (Music, banner, captions are edit-stage layers.)
 ```
 
-## Character locks (age-free per the official rule; paste verbatim into prompts)
+## Character locks (age-free; paste verbatim into prompts)
 
 **PABLO ESCOBAR** — a stocky, short ranch patron with a round, soft-featured face and
 double chin; thick black curly hair, side-parted; full dark mustache; heavy-lidded,
-unhurried eyes; faint permanent half-smile; real skin texture with visible pores and
-sun-warmth. Open-collared pale-blue short-sleeve shirt, dark casual slacks, white
-sneakers. He never raises his voice and never hurries — soft-spoken, warm, certain;
-menace carried entirely by calm. Speaks English with a soft Colombian accent.
+unhurried eyes; faint permanent half-smile; real sun-warmed skin with visible pores.
+Open-collared pale-blue short-sleeve shirt, dark slacks, white sneakers. He never
+raises his voice and never hurries — soft-spoken, warm, certain; the menace is the
+calm. Dry, deadpan humor delivered without smiling wider. Colombian-accented English.
 
-**ROSA** — a Medellín barrio mother with dark hair pulled back, a simple cotton dress
-and apron, work-worn hands; warm, direct, unafraid. Colombian-accented English.
+**YOUNG PABLO (memory, 4b)** — a thin barefoot boy in worn shorts and a faded shirt
+on a Medellín hillside; same round face and dark curls, unmistakably the same person.
+(No age words; "boy" is a role.)
 
-**HAZEL** — per `CHARACTER_LOCK.md` v5: the frozen identity string VERBATIM + the v5
-master + 4-view reference package on every clip. Wardrobe this episode: a sage-green
-short-sleeve utility shirt tucked into high-waisted cream trousers, small leather
-crossbody bag (press-visitor practical, era-plausible, distinct from every NPC).
-Voice-identity lock media `b24e5759-d3c0-4c84-a184-44f7cc65477e` on every clip.
+**ROSA** — a Medellín barrio mother, dark hair pulled back, cotton dress and apron,
+work-worn hands; warm, direct, unafraid. Colombian-accented English.
 
-**Pablo voice:** first owner-approved Pablo clip yields the 4–8s voice-identity
-extraction; every later clip carries it with a VOICE IDENTITY role instruction.
-**Pacing references:** ElevenLabs per character per clip, measured before use, per the
-standing rule (targets in the math table).
+**HAZEL** — `CHARACTER_LOCK.md` v5: frozen identity string VERBATIM + v5 master +
+4-view package on every clip, including inside memory scenes (she appears in memories
+exactly as she is — that IS the device). Wardrobe: sage-green utility shirt,
+high-waisted cream trousers, small leather crossbody. Voice lock
+`b24e5759-d3c0-4c84-a184-44f7cc65477e` on every clip. Pablo's voice lock extracted
+from his first approved clip. ElevenLabs pacing refs per character per clip, measured
+before use.
 
-## Dialogue wpm math (computed FIRST; durations derive from it)
+## Dialogue wpm math (computed FIRST; durations derived)
 
-Rates: Hazel urgent 200→×1.32=**264** (4.40 w/s) · neutral 160→**211** (3.52) ·
-quick-hushed 140→**185** (3.08) · quiet 120→**158** (2.64) · sign-off 75→**99** (1.65)
-· Pablo deliberate 140→×1.2=**168** (2.80) · Rosa neutral 160→**192** (3.20).
+Rates: Hazel urgent **264** (4.40 w/s) · neutral **211** (3.52) · quick-hushed
+**185** (3.08) · quiet **158** (2.64) · sign-off **99** (1.65) · Pablo deliberate
+**168** (2.80) · Rosa **192** (3.20).
 
-| Clip | Lines (speaker · rate) | Words | Speech s | Business/pauses | Dur |
-|---|---|---|---|---|---|
-| 1 | P 168 (7w+3w) · H 211 (13w) · P 168 (6w) | 29 | 2.5+1.1+3.7+2.1 | 1.6 | **11s** |
-| 2 | H hushed 185 | 25 | 8.1 | 0.9 | **9s** |
-| 3 | P 168 (3w+9w) · H 211 (3w) | 15 | 1.1+3.2+0.9 | 2.8 (walk, hippo, flinch) | **9s** |
-| 4 | H 211 (6w+2w) · P 168 (6w+2w) · H 211 (22w) | 38 | 1.7+0.6+2.1+0.7+6.3 | 1.9 (beat, band-wrap) | **13s** |
-| 5 | Rosa 192 (9w) · H 211 (6w) · P 168 (11w) · H quiet 158 (10w) | 36 | 2.8+1.7+3.9+3.8 | 0.8 | **13s** |
-| 6 | H 211 (8w) · P 168 (3w+3w) · H hushed 185 (22w) | 36 | 2.3+1.1+1.1+7.1 | 1.1 | **13s** |
-| 7 | H 211 (12w) · P 168 (16w) · H hushed 185 (14w) | 42 | 3.4+5.7+4.5 | 1.1 | **15s** |
-| 8 | H 211 (7w) · P 168 (8w+10w) | 25 | 2.0+2.9+3.6 | 2.7 (incl. 2.0s silent hold) | **11s** |
-| 9 | H urgent 264 | 54 | 12.3 | 0.4 | **13s** |
-| 10 | H deliberate 185 | 20 | 6.5 | 0.6 | **7s** |
-| 11 | H deliberate 185 (36w) + sign-off 99 (4w) | 40 | 11.7+2.4 | 0.5 | **15s** |
+| Clip | Lines (speaker · rate · words) | Speech s | Business | Dur |
+|---|---|---|---|---|
+| 1 | P 7w+3w · H 15w (211) · P 7w+1w | 2.5+1.1+4.3+2.5+0.4 | 1.8 | **13s** |
+| 2 | P 5w+5w · P 3w · H hushed 19w | 1.8+1.8+1.1+6.2 | 2.1 (splash/flinch) | **13s** |
+| 3 | H hushed 9w · H 6w · P 6w · H 2w · P 2w · H lens 10w · P 6w | 2.9+1.7+2.1+0.6+0.7+2.8+2.1 | 2.1 | **15s** |
+| 4a | H 4w · P 1w | 1.1+0.4 | 1.5 | **3s** |
+| 4b | H quiet 19w · P 4w | 7.2+1.4 | 1.4 (memory settle) | **10s** |
+| 5 | Rosa 9w · H 4w · P 3w · H quiet 10w | 2.8+1.1+1.1+3.8 | 1.2 | **10s** |
+| 6a | H 8w · P 6w | 2.3+2.1 | 0.6 | **5s** |
+| 6b | H hushed 24w | 7.8 | 1.2 | **9s** |
+| 7 | H 12w · P 16w · H hushed 14w | 3.4+5.7+4.5 | 1.4 | **15s** |
+| 8 | H 11w · P 11w+20w | 3.1+3.9+7.1 | 1.9 | **16s** |
+| 9 | H 5w · P 8w+10w | 1.4+2.9+3.6 | 3.1 (incl. 2.0s hold) | **11s** |
+| 10 | H urgent 54w | 12.3 | 0.7 | **13s** |
+| 11a | H deliberate 20w | 6.5 | 0.5 | **7s** |
+| 11b | H deliberate 36w + sign-off 4w | 11.7+2.4 | 0.9 | **15s** |
 
-**Total: 11+9+9+13+13+13+15+11+13+7+15 = 129s.**
+**Total: 13+13+15+3+10+10+5+9+15+16+11+13+7+15 = 155s (~2:34).**
 
 ---
 
 ## THE SCRIPT
 
-Format per clip: **[coverage] duration — scene + dialogue** → CINEMA (shot · ONE
-dominant move · lighting · blocking with contact points + eyelines) → AUDIO (diegetic;
-edit-stage music noted separately) → END STATE (the chaining anchor: extract this
-clip's final frame → declare it as the next clip's first frame where marked ⛓).
+Per clip: scene + dialogue → CINEMA (shot · ONE move · light · blocking/eyelines) →
+AUDIO (diegetic; edit-stage music separate) → END STATE (⛓ = final frame becomes the
+next clip's declared first frame).
 
-### 1 · THE GATE — cold open [THIRD-PERSON] 11s
-FIRST FRAME already mid-confrontation: a bodyguard's forearm bars Hazel's path;
-beyond it, PABLO at a veranda table, already looking at her.
-*[Pablo]*, calm, not rising: "You walk into my house with a camera." (0.4s) "Who sent
+### 1 · THE GATE — cold open [THIRD-PERSON] 13s
+FIRST FRAME mid-confrontation: a bodyguard's forearm bars Hazel's path; beyond it,
+PABLO at the veranda table, already looking at her.
+*[Pablo]*, calm, not rising: "You walk into my house with a camera." (0.4) "Who sent
 you?"
-HAZEL, hands half-raised, steady: "Nobody. I came a very long way to hear your story —
-from you."
-A held beat — then the slow, warm smile: *[Pablo]*: "Then you eat with us. Sit." The
-guard's arm drops.
-— CINEMA: medium two-shot, camera at chest height; ONE move: slow 0.4m push-in across
-the clip; FOV ~50°. Hard late-morning sun, deep veranda shade behind him. BLOCKING:
-Hazel left third (x≈30%, midground), guard's arm foreground frame-left, Pablo right
-third (x≈70%) seated, table contact points: his forearms on the table, her sandals
-planted on the tile. EYELINES: his eyes locked on her from frame 1 and never leaving;
-hers on him; the guard watches HIM (waiting for the order), not her.
-— AUDIO: cicadas, distant ranch machinery, a horse somewhere; cutlery stillness;
-{dialogue}; NO BGM. Edit-stage: tense low drone starts here.
-— END STATE ⛓: guard's arm down at his side, Pablo's open hand gesturing to the empty
-chair, Hazel one step toward it, eyes still on him.
-— (Proposed banner overlay, edit stage: "Visiting Pablo Escobar in 1987 🇨🇴".)
+HAZEL, hands half-raised — steady, almost casual: "Nobody. I'm from the future. And
+the whole world is going to know your name."
+A long beat. The guard looks at Pablo. Then, deadpan, no smile widening:
+*[Pablo]*: "The whole world already knows my name." (0.4) "Sit."
+The guard's arm drops.
+— CINEMA: medium two-shot, chest height; ONE move: slow 0.4m push-in; FOV ~50°. Hard
+late-morning sun, deep veranda shade behind him. BLOCKING: Hazel left third (x≈30%),
+guard's forearm foreground frame-left, Pablo right third (x≈70%) seated; contact:
+his forearms on the table, her sandals on the tile. EYELINES: his eyes on her from
+frame 1, never leaving; hers on him; the guard watches HIM for the order, then her.
+— AUDIO: cicadas, distant ranch machinery, a horse; {dialogue}; NO BGM. Edit: tense
+low drone begins. Banner overlay (pending): "Visiting Pablo Escobar in 1987 🇨🇴".
+— END STATE ⛓: his open hand at the empty chair; her first step toward it.
 
-### 2 · THE ASIDE [V-MODE, her lens] 9s
-Walking a step behind him along the veranda toward the grounds, camera to her face,
-hushed and quick:
-HAZEL: "Forbes just named him one of the richest men on Earth. In six years, he'll be
+### 2 · HIS AFRICA — the flex [THIRD-PERSON] 13s
+The lake shore, walking. *[Pablo]*, gesturing wide, a proud host:
+"Giraffes. Elephants. Four hippos." (0.3) "I brought Africa to Colombia."
+The nearest HIPPO surfaces with a blast of spray — Hazel flinches a full step. Pablo
+does not move at all. *[Pablo]*, deadpan, still walking: "They like you."
+HAZEL, dropping back, hushed to lens: "Remember the hippos. In six years, he'll be
 dead on a rooftop. He doesn't know. I do."
-— CINEMA: her handheld selfie framing, chest-up; ONE move: natural walk sway, forward
-motion per §14 (she walks forward normally; NOT backward-tracking). Sunlit colonnade
-passing behind her. EYELINES: eyes to lens; one flick toward Pablo ahead on "he
-doesn't know," back to lens.
-— AUDIO: her footsteps on tile, his ahead, birds; {her hushed line}; NO BGM.
-— END STATE: she lowers the camera slightly, lifting her chin toward something
-off-frame right — the eyeline that launches clip 3.
+— CINEMA: wide two-shot at the water; ONE move: lateral track with the walk, settling
+on the surfacing; FOV ~63°. Water glare, green banks. Hippo in CONTINUOUS visible
+motion — blow, ear-flick, wake (§17). BLOCKING: Pablo water-side (he owns it), Hazel
+between camera and him. EYELINES: her eyes on the path → snap to the hippo → to his
+unmoved profile ("they like you" lands funnier because he never looks) → she drops a
+step behind and her eyes come to LENS for the whisper, one flick at his back.
+— AUDIO: <loud surface blow and splash>, water lap, birds; {dialogue}; NO BGM. Edit:
+first playful theme enters on the flinch, drops out for her whisper.
+— END STATE ⛓: the two walking on, a low warehouse ahead — the money room.
 
-### 3 · CHAPTER: THE ZOO [THIRD-PERSON] 9s
-The lake shore. *[Pablo]*, walking her along the water: "Come. My animals."
-A HIPPO surfaces loudly beside them — she flinches a full step; he doesn't move at all.
-*[Pablo]*, amused, gesturing across the water: "Four hippos. From Africa. What I want,
-I bring."
-HAZEL, straight to lens, deadpan: "Remember the hippos."
-— CINEMA: wide two-shot at the water's edge; ONE move: lateral tracking with their
-walk, settling when the hippo surfaces; FOV ~63°. Bright water glare, green banks.
-BLOCKING: Pablo nearest the water (he owns this place), Hazel between camera and him;
-hippo mid-lake, CONTINUOUS visible motion — surfacing, ear-flick, wake (§17).
-EYELINES: her eyes on the path → snap to the hippo on the splash → to Pablo on his
-line → to LENS for her tag line (the aside beat inside the scene, her signature move).
-— AUDIO: water, the hippo's blow and grunt <loud surface splash>, birds; {dialogue};
-NO BGM. Edit-stage: first playful music sting enters at the flinch.
-— END STATE ⛓: the two walking on along the shore away from camera, hippo's wake
-settling, a low ranch building ahead — the money room's exterior.
-
-### 4 · CHAPTER: THE MONEY [THIRD-PERSON with lens tag] 13s
-The money room: raw cash in bricks to the ceiling. He tosses her a rubber band; she
-catches it and wraps a loose brick herself (§12).
-HAZEL: "How much do you actually make?"
+### 3 · THE NUMBER — shock-stat chapter [THIRD-PERSON + lens tags] 15s
+The money room door swings open on cash to the ceiling.
+HAZEL, hushed to lens as she steps in: "Forbes just named him one of Earth's richest
+men. So I asked."
+To him: "How much do you actually make?"
 *[Pablo]*, patting a stack once: "Four hundred and twenty million dollars."
 HAZEL: "A year?"
-(0.4s beat) *[Pablo]*: "A week."
-HAZEL, to lens, still wrapping: "There's so much cash in storage, rats eat ten percent
-of it. He spends twenty-five hundred dollars a month on rubber bands."
-— CINEMA: interior medium; ONE move: slow push-in toward her hands and the brick; the
-"A week." beat is the edit-stage CRASH ZOOM + bass-drop moment (digital punch-in,
-within-clip, hard-cut safe). Slatted warehouse light through boards, dust motes.
-BLOCKING: cash walls on both sides (scale: stacks past both frame edges), Pablo right
-third resting a hand on a stack, Hazel center with the brick — contact points: her
-fingers on the band, his palm on the money. EYELINES: her eyes track the tossed band
-into her hands, up to HIM for both questions; his eyes on her through "a week," one
-slow glance along the cash wall; her eyes to lens for the rat line, one glance down
-at the band snap.
-— AUDIO: paper shift, the rubber band SNAP <sharp band snap>, muffled exterior;
-{dialogue}; NO BGM. Edit-stage: music cuts OUT dead on "A week." — silence sells it —
-then resumes.
-— CONTENT LOCK: cash only. No drugs, ever, in any frame.
-— END STATE ⛓: brick wrapped, set on the stack; he's already turning toward the door,
-light flaring in from outside.
+(0.4) *[Pablo]*: "A week."
+HAZEL, to lens: "So much cash that rats eat ten percent of it."
+*[Pablo]*, from deeper in the room, not turning around, dry: "The rats are a business
+expense."
+— CINEMA: interior medium; ONE move: slow push past her shoulder into the cash
+canyon; slatted board-light, dust motes; stacks past both frame edges (scale). The
+"A week." beat is the edit-stage CRASH ZOOM + music-dropout. BLOCKING: contact — his
+palm on the money, her hand trailing one stack. EYELINES: her lens tag at the door;
+her eyes to HIM for both questions; his on her through "a week"; her lens tag; his
+line thrown away with his back half-turned (the comedy of not caring).
+— AUDIO: paper shift, a rat-skitter <small skitter in the stacks>, muffled exterior;
+{dialogue}; NO BGM. — CONTENT LOCK: cash only, never product.
+— END STATE ⛓: the two silhouetted at the far door, light flaring in.
 
-### 5 · CHAPTER: ROBIN HOOD [THIRD-PERSON] 13s
-Golden afternoon, the barrio street he built — kids on a concrete pitch, neighbors, a
-radio somewhere. ROSA takes Hazel's hand in both of hers:
+### 4a · THE QUESTION [THIRD-PERSON] 3s
+Walking out into the light. HAZEL, simple: "Were you always rich?"
+*[Pablo]* stops. Looks at her. Quietly: "No."
+— CINEMA: static medium two-shot, the stop IS the beat. EYELINES: his eyes hold hers,
+then drift past her — into the memory. — AUDIO: outside air, cicadas; {dialogue}.
+— END STATE: his unfocused gaze past camera — the look the memory cuts on.
+
+### 4b · MEMORY — THE PROMISE [HER-IN-THE-MEMORY, dramatized] 10s
+HARD CUT sold by audio: rain on tin roofs. A Medellín hillside at dusk, decades of
+dusk ago — narrow brick lanes, cooking smoke. A thin BAREFOOT BOY with dark curls
+stands looking down at the city lights. HAZEL stands in the memory a few steps away,
+exactly as she is, watching him — then turns to lens, quiet:
+"He grew up poor, right here in Medellín. He promised his mother he would be a
+millionaire by twenty-two."
+*[Pablo]* (voice only, present-day, quiet): "I kept my promise."
+— CINEMA: wide dusk frame, the boy small against the city; ONE move: slow drift
+toward Hazel's lens turn. Warmer, lifted-black memory grade per the style prefix.
+EYELINES: the boy looks at the city, never at camera; Hazel at the boy, then lens.
+— AUDIO: rain on tin, dogs far off, the city's hum; {her quiet lines}; his line as
+clean V.O.; NO BGM. Edit: a single warm piano figure — the episode's only tender cue.
+— END STATE ⛓: hard cut back on his present-day face, focus returning to his eyes.
+
+### 5 · THE BARRIO — the turn [THIRD-PERSON] 10s
+Golden afternoon, the street he built — kids on the concrete pitch, neighbors, a
+radio. ROSA takes Hazel's hand in both of hers:
 *[Rosa]*: "Don Pablo built our whole street. God bless him."
-HAZEL, to Pablo, level: "Why do you give it away?"
-*[Pablo]*, watching the kids, quieter than before: "I was poor. I promised myself my
-people would not be."
-HAZEL, a few steps apart, quiet, to lens — jokes gone: "The help is real. But he kills
-journalists. Judges. Policemen."
-— CINEMA: street-level medium coverage; ONE move: slow lateral drift with the street's
-life; long golden light, ball shadows crossing frame. BLOCKING: populated street per
-§17 — kids in continuous motion, neighbors passing both frame edges; Rosa foreground
-with Hazel, Pablo midground among the kids (his one unguarded moment). EYELINES:
-Rosa's eyes on Hazel; Hazel's on Rosa, then on PABLO for her question; his eyes stay
-ON THE KIDS through his answer (deliberate — he doesn't perform this line); her eyes
-to lens for the quiet piece, steady, no glances.
-— AUDIO: kids shouting, the ball, the radio faint, street life; {dialogue}; NO BGM.
-Edit-stage: warm theme rises through Rosa, cuts to near-silence under Hazel's quiet
-lens piece.
-— END STATE ⛓: Pablo rolling the ball back to the kids; Hazel watching him do it,
-lens lowered.
+HAZEL, to Pablo, level: "Why give it away?"
+*[Pablo]*, watching the kids, quieter than anywhere else in the episode: "Because I
+remember."
+HAZEL, a few steps apart, quiet to lens — the jokes gone for good: "The help is real.
+But he kills journalists. Judges. Policemen."
+— CINEMA: street-level medium; ONE move: slow lateral drift with the street's life;
+long gold light, ball shadows. Populated per §17 — kids in continuous motion,
+neighbors past both edges. BLOCKING: Rosa foreground with Hazel; Pablo midground
+among the kids. EYELINES: Rosa on Hazel; Hazel on Rosa → on PABLO for the question;
+his eyes STAY ON THE KIDS through his answer (he does not perform it); her eyes to
+lens, steady, for the quiet piece.
+— AUDIO: kids, the ball, faint radio; {dialogue}; NO BGM. Edit: warm theme through
+Rosa — hard OUT under Hazel's lens piece. The episode's tonal hinge.
+— END STATE ⛓: Pablo rolling the ball back to the kids; Hazel watching, lens lowered.
 
-### 6 · CHAPTER: SILVER OR LEAD [THIRD-PERSON] 13s
-Back at the veranda table, tighter now.
+### 6a · SILVER OR LEAD [THIRD-PERSON] 5s
+The veranda again, tighter, the light going amber.
 HAZEL: "And the people who say no to you?"
-*[Pablo]*, perfectly calm, almost gentle: "Everyone accepts something." (0.5s)
-"Silver… or lead."
-A man appears at the veranda edge; Pablo rises, touches her shoulder in apology, steps
-away. She waits until he is clearly distant — then hushed, to lens:
-HAZEL: "Silver is money. Lead is a bullet. The last minister who came after him was
-murdered. Everyone knows. Nobody can prove it."
-— CINEMA: medium close two-shot; ONE move: none — the camera holds locked while he
-delivers the line (stillness = menace), her lens aside handheld after he leaves.
-Golden light going amber. BLOCKING: his forearms on the table, her hands around a
-coffee she never drinks. EYELINES: his eyes hold hers, unblinking, through "silver…
-or lead"; her eyes follow him as he walks away and only when he is far do they come
-to the lens; ONE flick back toward him mid-aside, back to lens.
-— AUDIO: cicadas thickening, a chair scrape, his receding footsteps; {dialogue};
-NO BGM. Edit-stage: the drone from clip 1 returns under the aside.
-— END STATE ⛓: Hazel alone at the table, his empty chair, doorway dark behind.
+*[Pablo]*, perfectly calm, almost gentle: "Everyone accepts something. Silver… or
+lead."
+— CINEMA: locked-off medium close two-shot — the camera does not move while he says
+it (stillness = menace). EYELINES: his eyes hold hers, unblinking, through the line.
+— AUDIO: cicadas thickening; {dialogue}; NO BGM. Edit: the drone returns.
+— END STATE: his level gaze — the memory cuts on HER blink.
 
-### 7 · CHAPTER: THE FEAR — the hardest question [THIRD-PERSON] 15s
-Interior, ceiling fan turning, the day's first true shade.
+### 6b · MEMORY — THE CONGRESS [HER-IN-THE-MEMORY, dramatized] 9s
+HARD CUT sold by audio: a gavel, a chamber's murmur. 1983, the Congress floor — a
+MINISTER at the podium, arm extended, pointing across the chamber at a seated Pablo
+in a suit; deputies turning; Pablo rising, buttoning his jacket, walking out unhurried
+through the storm of voices. HAZEL stands against the chamber wall, watching; quick,
+hushed, to lens:
+"He got himself elected to Congress. The justice minister stood up and told the
+country the truth. A year later, that minister was murdered."
+— CINEMA: one slow lateral track along the chamber wall with Hazel in foreground
+profile, the confrontation deep in frame (parallel staging, no faces invented for
+real victims beyond the podium figure at distance). Warm archival-feeling light.
+EYELINES: the chamber's eyes on Pablo; Pablo's on no one; Hazel's on the podium, then
+lens.
+— AUDIO: gavel <sharp gavel strike>, rising murmur, a chair scrape; {her hushed
+lines}; NO BGM. — CONTENT LOCK: the murder is spoken, never shown.
+— END STATE ⛓: hard cut back to the veranda — his same level gaze, unchanged, as if
+no time passed (the cut says: this is what sits behind the calm).
+
+### 7 · THE FEAR — the hardest question [THIRD-PERSON] 15s
+Interior, ceiling fan, the day's first true shade.
 HAZEL, direct: "February. Your partner Lehder — taken to an American prison. Are you
 afraid?"
-The warmth stops. *[Pablo]*, level, slow: "I would rather have a grave in Colombia…"
-(0.5s) "…than a jail cell in the United States."
-He looks toward the window. She turns to lens, hushed:
-HAZEL: "Next month the Supreme Court kills the extradition treaty. He wins. For six
-years."
-— CINEMA: the episode's tightest framing — close-up shot-reverse-shot proximity
-(her question in a clean single, his answer in a slow push-in close-up: proximity
-escalation, her grammar); fan-blade shadow ticking across his face. EMOTION (2–4
-observable cues, official form): after her question, his half-smile stops; his jaw
-sets; his thumb presses the armrest; the eyes do not blink through the line.
-EYELINES: her eyes on him for the question; his hold hers through both halves; on his
-window-turn her eyes come to the lens; one glance at his profile on "he wins," back.
-— AUDIO: the fan's tick, distant thunder far off, {dialogue}; NO BGM. Edit-stage:
-lowest, sparsest music of the episode — almost nothing.
-— END STATE ⛓: his profile at the window, her seated watching him, fan still turning.
+The warmth stops. His half-smile stops; his jaw sets; his thumb presses the armrest;
+he does not blink through the line:
+*[Pablo]*: "I would rather have a grave in Colombia…" (0.5) "…than a jail cell in the
+United States."
+He looks to the window. She turns to lens, hushed:
+"Next month the Supreme Court kills the extradition treaty. He wins. For six years."
+— CINEMA: the episode's tightest coverage — her question in a clean single; his
+answer a slow push-in to close-up (proximity escalation); fan-blade shadow ticking
+across his face. EYELINES: hers on him; his hold hers through both halves; on his
+window-turn hers go to lens; one glance at his profile on "he wins."
+— AUDIO: the fan's tick, far thunder; {dialogue}; NO BGM. Edit: sparsest music of
+the episode — almost nothing.
+— END STATE ⛓: his profile at the window, fan turning.
 
-### 8 · THE FAREWELL — he notices her [THIRD-PERSON] 11s
-Dusk. He walks her toward the gate, host to the end.
-HAZEL: "Last question. How does this end, Pablo?"
-*[Pablo]*, small smile, completely certain: "It doesn't. Colombia and I have an
-arrangement." (0.4s — then, studying her face:) "You ask questions like someone who
-already knows the answers."
+### 8 · THE MONOLOGUE — his closing speech [THIRD-PERSON] 16s
+Dusk through the windows. Quiet.
+HAZEL: "If people remember one thing about you, what should it be?"
+*[Pablo]*, slow, absolutely certain — not defending, stating:
+"That I came from nothing, and I bowed to no one." (0.5)
+"They will call me a monster. My people will call me a saint. Either way — they will
+say my name."
+— CINEMA: her question off a soft single; then ONE move for his speech: a very slow
+push-in from medium to close-up, dusk gold crossing his face, ending tight on the
+heavy-lidded eyes. Longest-held shot of the episode (her monologue grammar: shots
+lengthen and tighten as weight rises). EYELINES: his eyes on hers for the first
+sentence; drifting past camera to the middle distance for the second; back to her on
+"my name."
+— AUDIO: crickets beginning, the house settling; {dialogue}; NO BGM. Edit: strings
+enter under sentence two — the only swell in the episode.
+— NOTE: chilling, quotable, HIS self-image — the episode does not endorse it; 11a/11b
+answer it with the cost and the ending. (Anti-glorification structure intact.)
+— END STATE ⛓: tight on his face, dusk light, the half-smile returning.
+
+### 9 · THE FAREWELL — he notices her [THIRD-PERSON] 11s
+He walks her toward the gate, host to the end.
+HAZEL: "How does this end, Pablo?"
+*[Pablo]*, small smile, certain: "It doesn't. Colombia and I have an arrangement."
+(0.4 — then, studying her face:) "You ask questions like someone who already knows
+the answers."
 She holds his look — then her eyes settle on the lens. TWO FULL SECONDS, silent.
-— CINEMA: walking two-shot settling to a face-to-face medium; ONE move: the camera
-stops when they stop; the gate plane silhouetted above and behind them. EYELINES:
-mutual eye contact through question and answer; on his "you ask questions…" line his
-eyes narrow slightly, reading her; her eyes to lens for the silent hold — no other
-movement anywhere in frame (owner-locked restraint beat; the silence carries it).
-— AUDIO: crickets beginning, a horse led past somewhere, {dialogue}; NO BGM.
-Edit-stage: all music out for the silence.
-— END STATE ⛓: the two facing each other under the gate, his back beginning its turn
-toward the house.
+— CINEMA: walking two-shot settling face-to-face under the gate plane silhouette;
+the camera stops when they stop. EYELINES: mutual through Q and A; his eyes narrow,
+reading her, on the noticing line; hers to lens for the hold — nothing else moves.
+— AUDIO: crickets, a horse led past; {dialogue}; NO BGM. Edit: ALL music out for the
+silence.
+— END STATE ⛓: his back turning toward the house; she stands alone under the plane.
 
-### 9 · THE FUTURE-CAST [V-MODE, her lens] 13s
+### 10 · THE FALL [V-MODE, her lens] 13s
 She walks the drive out alone (forward walk, §14), dusk deepening, pace RISING:
 HAZEL: "Here's what he doesn't know. In two years, Forbes ranks him seventh-richest
 on Earth — and his men bomb a passenger plane. A hundred and ten people. Then a
 prison he builds himself. Jacuzzi. Football field. His own guards. Then he escapes.
 Hiding, he burns two million dollars to keep his daughter warm."
-— CINEMA: handheld selfie, walking energy, the ranch receding behind her; golden dusk
-flaring the lens once. EYELINES: eyes to lens, natural forward glances per §14.
-— AUDIO: her steps on gravel quickening, crickets, {her line}; NO BGM. Edit-stage:
-music DRIVES here — the fastest cutting of the edit (b-roll punch-ins of earlier
-end-frames are an edit-stage option, hard cuts only).
-— END STATE ⛓: she stops — the gate plane directly above her, silhouetted.
+— CINEMA: handheld selfie walking energy, ranch receding, one lens flare of last
+gold. EYELINES: lens, natural forward glances. — AUDIO: gravel quickening, crickets;
+{her line}; NO BGM. Edit: the music DRIVES — fastest cutting of the edit; hard-cut
+b-roll punch-ins of earlier end-frames allowed.
+— END STATE ⛓: she stops — the gate plane directly above, black against the sky.
 
-### 10 · THE DATE [V-MODE, her lens] 7s
-Still, under the plane. Slow and level:
+### 11a · THE DATE [V-MODE] 7s
+Still, under the plane. Slow, level:
 HAZEL: "December second, nineteen ninety-three. A rooftop in Medellín. One day after
 his forty-fourth birthday. His war killed thousands of people."
-— CINEMA: static handheld close-up, the plane's dark shape over her; last amber light.
-EYELINES: eyes to lens, unmoving. The deliberate-slow CONTRAST beat after 9's speed.
-— AUDIO: crickets alone; {her line}; NO BGM. Edit-stage: one low sustained note.
-— END STATE ⛓: same frame, her eyes steady — clip 11 continues the composition wider.
+— CINEMA: static handheld close-up, the plane's dark shape overhead; last amber.
+EYELINES: lens, unmoving. The slow CONTRAST beat after 10's speed.
+— AUDIO: crickets alone; {her line}; NO BGM. Edit: one low sustained note.
+— END STATE ⛓: same composition — 11b opens wider from it.
 
-### 11 · OUTRO — THE HIPPOS [V-MODE, her lens] 15s
-Same spot, framing opens slightly; the ranch dark behind, first stars.
-HAZEL, plain, quiet: "Today, everything he built is gone. The money. The cartel. This
-ranch. Except the hippos. Nobody could move them — they escaped, and kept breeding.
-Over a hundred live wild in Colombia today. All from his four."
-(0.5s) Soft: "Hazel — out of time."
-— CINEMA: ONE move: a slow drift back/wider through the whole clip (the exhale);
-dusk-to-night grade. EYELINES: eyes to lens throughout; one small glance back at the
-dark ranch on "this ranch," back to lens for everything after.
-— AUDIO: night insects, a far-off hippo grunt from the lake <distant low grunt> (the
-sound-design payoff), {her lines}; NO BGM. Edit-stage: warm resolving strings, then
-silence under the sign-off.
-— END STATE: final frame — her face, the gate plane, the dark ranch. Hold to black.
+### 11b · THE HIPPOS — coda + sign-off [V-MODE] 15s
+Framing opens; the ranch dark behind her, first stars.
+HAZEL, plain and quiet: "Today, everything he built is gone. The money. The cartel.
+This ranch. Except the hippos. Nobody could move them — they escaped, and kept
+breeding. Over a hundred live wild in Colombia today. All from his four."
+(0.5) Soft: "Hazel — out of time."
+— CINEMA: ONE move: slow drift wider through the clip (the exhale), dusk-to-night.
+EYELINES: lens throughout; one small glance at the dark ranch on "this ranch."
+— AUDIO: night insects — and one far-off hippo grunt from the black lake <distant
+low grunt> answering her (the sound-design payoff); {her lines}; NO BGM. Edit: warm
+resolving strings, silence under the sign-off. Hold final frame to black.
 
 ---
 
-## Split-by-job & chaining plan (per playbook Part 6)
+## Split-by-job & chaining plan
 
-- Every clip above is ONE job (a confrontation, an aside, a stat exchange, a quiet
-  answer) — no clip mixes physics with performance. The hippo surfacing (3) is the
-  only physics event and it shares its clip with nothing performance-critical.
-- ⛓ marks: every marked end state's final frame is extracted from the APPROVED clip
-  and declared as the next clip's first frame in prose ("@Image N is the first
-  frame…"), locking wardrobe, light, and geography across the hard cut.
-- Third-person interview scenes and V-mode asides alternate — the cut between them is
-  her signature rhythm and needs no blend: hard cut, audio continuous (§16).
+Each clip is ONE job. The memory builds (4b, 6b) are their own generations with their
+own reference packages (Young Pablo still; Congress chamber still) — present and
+memory join on audio-sold hard cuts, her exact grammar. ⛓ end-frames chain into the
+next clip's declared first frame ("@Image N is the first frame…"). Third-person ↔
+lens alternation is the cut rhythm; every transition a hard cut with continuous audio.
 
-## Edit-stage design (executed with our existing pipeline; every transition a hard cut)
+## Edit-stage design (existing pipeline; all hard cuts)
 
-Crash-zoom punch-in + music dropout on "A week." (4) · whip-out blur generated at the
-end of clip 3 into the money room's hard cut · music chapters: tense drone (1–2) →
-playful (3–4) → warm-then-silent (5) → drone returns (6) → near-nothing (7–8) →
-driving (9) → one note (10) → resolve (11) · captions per the locked word-chunk
-system (gold keyword highlight = pending owner decision) · banner overlay clips 1–2
-only (pending owner decision).
+Crash-zoom + music dropout on "A week." (3) · playful theme in/out around the hippo
+flinch (2) · warm piano only in 4b · theme hard-out at Hazel's barrio turn (5) ·
+drone for 6a/6b · near-silence 7 · the one swell under the monologue (8) · total
+silence for the noticing beat (9) · driving cue for 10 · one note 11a · resolve +
+silence 11b · captions per the locked word-chunk system (gold highlight pending) ·
+banner over clip 1 (pending).
 
-## Carried over unchanged from v1
+## Production notes carried forward
 
-Fact-verification list (concept v4 — must close before generation prompts) · content
-locks (no drugs on screen ever; all violence spoken, never shown) · ElevenLabs pacing
-+ measurement rule · Hazel voice lock on every clip · Pablo voice lock from first
-approved clip · no 4K before approval · every clip delivered to the owner the moment
-it renders · no regeneration without explicit go-ahead.
+Seedance 2.5 `omni_reference`, 720p working res; dialogue prompted in the official
+`{}` audio-clause syntax with a "Dialogue language:" line per character; positive
+declarations, no negation stacks; per-material role + exclusion + fidelity grade;
+beat lines name characters (never handles); annotated-start-frame camera paths for
+the directed moves (2's lateral track, 8's push-in) · fact-verification list from
+concept v4 must close before prompts — ADD: the millionaire-by-twenty-two promise to
+his mother (widely reported; verify wording), the 1983 Congress denunciation scene
+details · no drugs on screen ever; violence spoken, never shown · every clip
+delivered on render; no regeneration without go-ahead; no 4K before approval.
 
 ## RETENTION AUDIT
 
 | Beat | Question held | Spike |
 |---|---|---|
-| 1 · 0:00–0:11 | Is she in trouble? Who IS this? | Confrontation hook |
-| 2 · 0:11–0:20 | How does he die? | The audience-knows contract |
-| 3 · 0:20–0:29 | A private zoo?? | Hippo flinch + plant |
-| 4 · 0:29–0:42 | How rich, actually? | "A week." — the shock stat |
-| 5 · 0:42–0:55 | Is he… good? | Both ledgers stated plainly |
-| 6 · 0:55–1:08 | What happens to "no"? | Silver or lead + murdered minister |
-| 7 · 1:08–1:23 | What is he afraid of? | The grave line — tension peak |
-| 8 · 1:23–1:34 | Does he suspect her? | "…someone who already knows the answers" |
-| 9–10 · 1:34–1:54 | How does it end? | The whole fall, fast → the date, slow |
-| 11 · 1:54–2:09 | What's left? | The hippos — comment-bait payoff |
+| 1 · 0:00–0:13 | Is she in trouble? | "The whole world already knows my name." |
+| 2 · 0:13–0:26 | What IS this place? | Hippo blast + the doom whisper |
+| 3 · 0:26–0:41 | How rich, actually? | "A week." + "the rats are a business expense" |
+| 4 · 0:41–0:54 | Who was he before? | The barefoot boy — first empathy hook |
+| 5 · 0:54–1:04 | Is he good? | "Because I remember." → her ledger turn |
+| 6 · 1:04–1:18 | What happens to "no"? | Silver/lead → the Congress memory |
+| 7 · 1:18–1:33 | What does he fear? | The grave line — tension peak |
+| 8 · 1:33–1:49 | How does he see himself? | The monologue — the quote viewers repeat |
+| 9 · 1:49–2:00 | Does he suspect her? | "…someone who already knows the answers" |
+| 10–11a · 2:00–2:20 | How does it end? | The fall, fast → the date, slow |
+| 11b · 2:20–2:34 | What's left? | The hippos answer from the dark lake |
 
 ## Pre-finalization checklist (MASTER RULE — run and passed)
 
-wpm computed first, durations derived (table) · eyelines every dialogue beat ·
-plain-language literal-reading test on every line · active participant (challenges,
-wraps cash, walks the barrio) · §7 embedded drama (hippo) · §8 physical gating ·
-§9 per-beat durations · §13 realism (style prefix) · §14 forward walking (2, 9) ·
-§17 populated world (ranch staff, kids, hippo motion) · §16 hard cuts + audio
-continuity · OPENING LAW linear · camera: one dominant move per clip, third-person
-coverage flagged for §38 approval · emotion as observable cues (7) · model: Seedance
-2.5 omni_reference, 720p working res, no material limitation found · sound designed
-per chapter · facts flagged for the research pass.
+wpm computed first, durations derived · eyelines every beat · plain-language test on
+every line (the monologue is literal self-description, not irony) · active
+participant · §7 embedded drama (hippo) · §8 physical gating · §9 per-beat durations
+· §13 realism via style prefix · §14 forward walk (10) · §17 populated world · §16
+hard cuts + continuous audio · Opening-Law expansion named as owner decision 2 ·
+one dominant camera move per clip · emotion as observable cues (7, 8) · Seedance 2.5
+suitability confirmed, memory scenes included · sound designed per chapter · new
+facts added to the verification list.
