@@ -559,13 +559,44 @@ carry its micro-sequence and its earned camera treatment explicitly.
 - **Role law:** figure = in-scene, era-serious, the chaos engine; host = the
   modern anchor who mediates to camera. Visual punchline precedes verbal.
 - **PLAIN-LANGUAGE COMPATIBILITY (project lock):** her sarcasm/irony is carried
-  by FACES and CUTS — instantly readable, never coded language the viewer must
-  decode. Our plain-language rule and her humor grammar are fully compatible:
-  jokes stay plainly worded; the irony lives in expression, timing, and edit.
+  by FACES, CUTS, and VOICE — instantly readable, never coded language the
+  viewer must decode. Our plain-language rule and her humor grammar are fully
+  compatible: jokes stay plainly WORDED (literal word choice); the irony lives
+  in expression, timing, edit, AND vocal delivery. Plain-language governs word
+  choice ONLY — it does NOT mean toneless/monotone delivery (see axis C below,
+  added 2026-08-30 after this exact confusion produced a flat, un-ironic
+  Escobar take).
+
+### C. Vocal delivery grammar (dimension: how the VOICE plays it) — verified 2026-08-30, targeted cross-check of 3 videos (Caesar, Henry VIII, Elizabeth I) specifically isolating vocal tone on ironic/dry lines vs sincere lines
+**Even her flattest, most deadpan dark-humor lines are never actually toneless.** Every ironic/sarcastic/dry line found across all three videos does at least one of these exactly on the punch word, with zero exceptions:
+- **A deliberate pause** immediately before and/or after the ironic word/phrase (the "milking it" beat).
+- **A controlled pitch shift ON the key word** — a RISE for overt wit/absurdity ("acceptable," "the most Roman thing I have ever witnessed," "underbothered" — pitch leaps to mimic or puncture pomposity), or a controlled DROP for dry understatement/dark-history-deadpan ("gift shop," "about that," "oopsie," and even her darkest line — "I kept her under head for nineteen years" — delivered "relatively flat" but still with composed, deliberate downward pitch and rhythmic control, never genuine zero-inflection monotone).
+- **A distinct vocal texture**: dry glottal quality, suppressed audible amusement/smirk in the resonance, or (for colder sarcasm) a sneer/bite — contrasted sharply against her sincere lines in the SAME videos, which are breathier, warmer, slower-cadenced, with soft vocal fry and no punch-word pitch event.
+**Rule: any prompt for an ironic/dry-humor beat must specify a deliberate pause + pitch-shift (rise for overt wit, drop for dry/dark understatement) on the specific punch word(s), in addition to the plain word choice and the facial delivery grammar (axis B) — "flat vocal tone" and "zero inflection" must never be used as blanket instructions for an ironic line, even a dark-deadpan one.** This is now a permanent, project-wide requirement for every future humor/irony beat, this episode and all others — not a one-off fix.
+
 - **Escobar application:** Pablo already sits in her deadpan-commitment lane
   ("The rats are a business expense." / "…How much?" / "That one is true.") —
-  his delivery spec = era-serious flatness, zero wink, post-line stillness.
+  his delivery spec = era-serious flatness, zero wink, post-line stillness (his
+  irony, if any, is axis-B-only per the figure rule below — figures never wink).
   Hazel's lens asides get the host repertoire (deadpan drop on "He bought
-  hippos.", cringe/flat looks on "I'm not explaining.", eyebrow-flash beats),
-  and the money scene runs zero-beat ping-pong with the crash-zoom reserved for
-  "A week."
+  hippos.", cringe/flat looks on "I'm not explaining.", eyebrow-flash beats)
+  PLUS axis C vocal treatment, and the money scene runs zero-beat ping-pong
+  with the crash-zoom reserved for "A week."
+  **Camera/addressee correction (2026-08-30):** the Role law above — "host =
+  the modern anchor who mediates to camera" — was already documented from the
+  original 10-video study and applies directly to Hazel's "Silver is money.
+  Lead is a bullet." aside (7.1c): as the host delivering a wry, dark-humor
+  TRANSLATION of what a figure just said, this is a to-camera mediation beat
+  by her own established grammar, not an addressed-to-the-figure line — yet
+  the first three 7.1c generations all locked her eyeline on Pablo instead.
+  Confirmed independently: her own directly-analogous self-aware dry asides
+  ("I might be in trouble... Oopsie.") are explicitly described as
+  "fourth-wall-breaking confession[s]," while in-scene figure-to-figure dark
+  lines (Elizabeth's own dialogue) stay addressed within the scene — the
+  distinguishing factor is WHO is delivering the irony: the host mediating/
+  translating goes to camera; a figure's own in-scene dialogue stays in-scene.
+  This was a second instance of an already-documented rule not being checked
+  against the specific beat before writing the prompt — flagged the same way
+  as the plain-language/irony miss, for the same reason: check EVERY
+  applicable rule against the specific beat, not just the ones that come to
+  mind first.
