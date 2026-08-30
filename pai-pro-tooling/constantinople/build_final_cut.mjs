@@ -1,7 +1,13 @@
 // Episode "The Fall of Constantinople 1453" — final cut assembly.
 // Adapted from pai-pro-tooling/troy/build_final_cut.mjs. Every transition
 // is a TRUE HARD CUT (creative-direction.md §16) — single ffmpeg
-// filter_complex concat pass, no dissolve/mixed-filter-graph complexity.
+// filter_complex concat pass, no dissolve/mixed-filter-graph complexity --
+// EXCEPT the clip11->clip12 transition, a deliberate one-off owner-approved
+// exception (2026-08-30): a full fade to black, picture AND sound, at the
+// moment the emperor goes to fight. Implemented as a fade-out baked onto
+// clip11's own video+audio streams (at its tail) and a fade-in baked onto
+// clip12's (at its head), before the same single hard-cut concat -- every
+// other adjacent pair still meets at a true hard cut.
 import fs from "node:fs/promises";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
@@ -48,14 +54,32 @@ async function main() {
   // both 9:16) -- normalize every input to 1080x1920 (the episode's
   // engine-decision spec) before concat, or the concat filter's output pad
   // fails to configure on the first dimension mismatch.
+  const FADE_DUR = 0.5; // seconds, both picture and sound
+  const FADE_OUT_CLIP = "clip11";
+  const FADE_IN_CLIP = "clip12";
+
   const inputs = clipPaths.flatMap((p) => ["-i", p]);
   const filterParts = [];
   const scaleLines = [];
+  const audioLines = [];
   for (let i = 0; i < clipPaths.length; i++) {
-    scaleLines.push(`[${i}:v]scale=1080:1920:flags=lanczos,setsar=1[v${i}]`);
-    filterParts.push(`[v${i}][${i}:a]`);
+    const clip = CLIPS[i];
+    let vChain = `[${i}:v]scale=1080:1920:flags=lanczos,setsar=1`;
+    let aChain = `[${i}:a]anull`;
+    if (clip.id === FADE_OUT_CLIP) {
+      const dur = manifest[clip.id];
+      const st = Math.max(0, dur - FADE_DUR);
+      vChain += `,fade=t=out:st=${st.toFixed(3)}:d=${FADE_DUR}:color=black`;
+      aChain += `,afade=t=out:st=${st.toFixed(3)}:d=${FADE_DUR}`;
+    } else if (clip.id === FADE_IN_CLIP) {
+      vChain += `,fade=t=in:st=0:d=${FADE_DUR}:color=black`;
+      aChain += `,afade=t=in:st=0:d=${FADE_DUR}`;
+    }
+    scaleLines.push(`${vChain}[v${i}]`);
+    audioLines.push(`${aChain}[a${i}]`);
+    filterParts.push(`[v${i}][a${i}]`);
   }
-  const filterComplex = `${scaleLines.join(";")};${filterParts.join("")}concat=n=${clipPaths.length}:v=1:a=1[outv][outa]`;
+  const filterComplex = `${scaleLines.join(";")};${audioLines.join(";")};${filterParts.join("")}concat=n=${clipPaths.length}:v=1:a=1[outv][outa]`;
 
   console.log(`[cut] concatenating ${clipPaths.length} clips via single filter_complex concat...`);
   await run("ffmpeg", [

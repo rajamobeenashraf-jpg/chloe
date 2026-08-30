@@ -107,6 +107,22 @@ def main():
             if op == "equal":
                 for k in range(a1 - a0):
                     times[a0 + k] = (wh[b0 + k][0], wh[b0 + k][1])
+
+        # Whisper's word-level DTW alignment occasionally collapses a
+        # "matched" word to a degenerate zero-(or near-zero-)width span --
+        # seen on clip15's isolated "Istanbul." (surrounded by pauses),
+        # which whisper transcribed correctly (confirming the word IS
+        # there) but timestamped as start==end. A degenerate span would
+        # render as an invisible-duration caption, so treat it as
+        # unmatched and let the interpolation+line-window-clamp logic
+        # below (already built for the "model can't hear it" case)
+        # reconstruct a sane duration instead.
+        MIN_WORD_DUR = 0.05
+        degenerate = 0
+        for i, t in enumerate(times):
+            if t is not None and (t[1] - t[0]) < MIN_WORD_DUR:
+                times[i] = None
+                degenerate += 1
         matched = sum(1 for t in times if t)
 
         for i, t in enumerate(times):
@@ -151,8 +167,9 @@ def main():
         all_out[cid] = events
 
         wh_text = " ".join(w[2] for w in wh)
+        degen_note = f"  [{degenerate} degenerate span(s) re-interpolated]" if degenerate else ""
         print(f"== {cid}  words:{len(stoks)} matched:{matched} "
-              f"({matched / len(stoks) * 100:.0f}%)")
+              f"({matched / len(stoks) * 100:.0f}%){degen_note}")
         print(f"   script : {script_text}")
         print(f"   whisper: {wh_text}")
         for s, e, t in events:
