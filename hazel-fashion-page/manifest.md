@@ -44,11 +44,11 @@ All derived from the SAME approved photo — no new face/pose generation, only d
 (profile picture) and Higgsfield `outpaint_image` scene-extension + deterministic crop/resize
 (cover/banner). Her face/pose pixels are untouched throughout.
 
-| Asset | Size | Source op | Outpaint job ID | Local file |
-|---|---|---|---|---|
-| Profile picture (FB+IG+TikTok+YT) | 1080×1080 | direct crop of `45b62bfd` (head-and-shoulders) | — | `hazel_profile_picture_1080x1080.png` |
-| Facebook cover | 820×312 (JPG, 55 KB) | `outpaint_image` to 21:9 (`d552383f-4ab9-435c-a7cb-7063fd2e24e6`), center-cropped to exact ratio | `d552383f-4ab9-435c-a7cb-7063fd2e24e6` | `hazel_facebook_cover_820x312.jpg` |
-| YouTube banner | 2560×1440 (safe area 1546×423 centered) | `outpaint_image` to 16:9 (`54656369-b403-4a53-b7c5-5a59410fb2f5`), center-cropped/resized to exact size | `54656369-b403-4a53-b7c5-5a59410fb2f5` | `hazel_youtube_banner_2560x1440.png` |
+| Asset | Size | Source photo | Source op | Outpaint job ID | Local file |
+|---|---|---|---|---|---|
+| Profile picture (FB+IG+TikTok+YT) | 1080×1080 | look #3 `45b62bfd` (balcony) | direct crop (head-and-shoulders) | — | `hazel_profile_picture_1080x1080.png` |
+| Facebook cover | 820×312 (JPG, 55 KB) | look #3 `45b62bfd` (balcony) | `outpaint_image` to 21:9 (`d552383f-4ab9-435c-a7cb-7063fd2e24e6`), center-cropped to exact ratio | `d552383f-4ab9-435c-a7cb-7063fd2e24e6` | `hazel_facebook_cover_820x312.jpg` |
+| YouTube banner | 2560×1440 (safe area 1546×423 centered) | new look #4 `b20931c1` — same dress/Soul, distinct walking pose on a rooftop terrace (owner asked for cover + banner to be different photos, not two crops of one shot) | `outpaint_image` to 16:9 (`c550d0e8-e77f-4aa6-8df9-0d33b24c33e5`; first attempt `66c81e32` was flagged `nsfw` and discarded, retry succeeded unchanged), center-cropped/resized to exact size | `c550d0e8-e77f-4aa6-8df9-0d33b24c33e5` | `hazel_youtube_banner_2560x1440.png` |
 
 Sent to owner 2026-08-30. Local files are gitignored (session-local); job IDs above are the
 retrievable source in Higgsfield.
@@ -56,5 +56,6 @@ retrievable source in Higgsfield.
 ## Status
 - [x] Owner confirmed Round 2 identity/realism (picked look #3)
 - [x] Crop/compose to platform specs (see `BRAND_KIT.md` §3)
+- [x] Cover and banner made into two distinct photos per owner request (banner now sourced from new look #4, same wardrobe/Soul)
 - [ ] Owner approval on final crops
 - [ ] 4K upscale (only after approval — profile pic and banner are candidates; FB cover has its own small-file-size best practice, upscale not needed there)
