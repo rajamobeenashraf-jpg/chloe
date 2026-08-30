@@ -69,6 +69,12 @@ Owner picked OPTION 2 (champagne pleated midi) with "make it a bit sexy" — two
 | 2 Ivory silk halter, draped Grecian bodice, gold-tone belt, above-knee, chunky gold hoops + layered chains, gold ankle-strap heeled sandals | `aeeff53c-0469-4c5d-9ff3-ed77d5bd2986` |
 | 3 Emerald ruched-satin strapless sweetheart, sarong-draped hip, above-knee, gold-and-emerald teardrop earrings + gold cuff, metallic-gold pumps | `27fbf0b0-6e56-4ee5-8dc4-95b588b12de1` |
 NOTE: era switch means Hazel is now era-costumed for Part 1 (her Mode A). The v8 script GLOBAL LOOKS block says "MODE A pending dress pick" — consistent; wardrobe freeze + still set proceed the same way once picked.
+
+Owner picked OPTION 1 (crimson off-shoulder Alaïa-style bodycon), then asked for a color recommendation better suited to the episode. Claude recommendation: BLACK (Alaïa's own signature era color; contrasts cleanly against tropical greenery + carries the noon→night grade arc without a second look; keeps gold jewelry as the accent; avoids clashing w/ Pablo's pale-blue shirt; avoids the on-the-nose red=danger read). ROUND 7 — same silhouette, two color variants delivered (awaiting pick):
+| Option | Job |
+|---|---|
+| Black (recommended) | `49f7a940-ef09-40b2-adb4-b35a88546dae` |
+| Bronze-gold metallic (alt, leans into wealth theme) | `b8d82b11-7cb7-4bc2-a65f-522bf3cd26f4` |
 Hair/makeup styled after pick. On lock: generate the WARDROBE STILL SET (full front + full 3/4 in the locked look, via N4 photo-edit) → owner approval → those stills join the reference package of EVERY Part 1 clip (N3: costume stills beat text). Knock-on: existing clips regenerate to match.
 
 ### Validation/test clips
