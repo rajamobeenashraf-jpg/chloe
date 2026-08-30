@@ -60,6 +60,15 @@ Both regenerated with the full Hazel wardrobe still set (front `c404bef2`, 3/4 `
 | 7.1b dirty single (4s) | `b90c9b2e-43db-44d2-ad95-b4e77d89b8f4` | submitted, rendering (preset intercept "IN THE DARK" declined via `declined_preset_id:24bae836-2c4a-48e0-89b6-49fcc0b21612`) |
 7.1c (Hazel's plain-language explainer, "Silver is money. Lead is a bullet.") has no prior generation on record — needs a first generation, not a wardrobe redo.
 
+**PROCESS GAP FOUND (2026-08-30):** 7.1a's Hazel audio only carried the tempo pacing reference — it never included her permanent project-wide voice-identity lock (`b24e5759-d3c0-4c84-a184-44f7cc65477e`), which CLAUDE.md's Hazel voice-identity-lock rule requires on every Hazel clip. 7.1a is already owner-approved, so per the regeneration-approval rule this needs an explicit owner go-ahead before resubmitting — flagged, awaiting decision.
+
+### 7.1c — first generation (2026-08-30)
+Pacing target: 7 words ("Silver is money. Lead is a bullet.") at ~211 wpm (neutral-conversational band upper ×1.2 ×1.10 Hazel stack). seed_audio Ainsley: rate 20 → 95 wpm (way under, unlike the similar rate on 7.1a's line — text-dependent, the hard sentence-break pause between the two clauses doesn't compress the same way); rate 80 → 172 wpm; rate 100 → 172 wpm (plateaued, likely a fixed floor on the inter-sentence pause) — **accepted 172 wpm as the practical ceiling** (media `83ef4cc3-0555-4330-ae12-ae9ac00ffbd5`), documented shortfall vs 211 target, same practice as prior pacing sagas.
+Correctly included BOTH Hazel's permanent voice-identity lock (`b24e5759`, timbre) and the pacing ref (`83ef4cc3`, tempo) this time, plus full N7 identity package (5 canon + wardrobe stills) and Pablo's identity/wardrobe refs for his soft-focus background presence.
+| Clip | Job | QC | Notes |
+|---|---|---|---|
+| 7.1c (4s, clamped up from scripted 2.5s) | `b58cb565-cd7e-4e15-9a84-270925468dd0` | Freeze-detection clean (no near-zero frames); identity/wardrobe hold | Delivered. **Finding (non-blocking, per QC rule):** Pablo renders sharp/in-focus in the background rather than the scripted soft-focus/shallow-DOF look — owner's call whether it needs a redo. |
+
 ### 7.2 Congress memory — MAXIMUM-REALISM + ERA-ACCURACY REGENERATION (2026-08-30)
 Per the two new permanent rules (maximum realism every scene; era-accurate wardrobe/environment for ALL characters), regenerated via start-frame-first method (N2: complex multi-figure crowd scenes render better as a still, then animated) rather than direct t2v. Researched the real location: Capitolio Nacional, Bogotá — Salón Elíptico (Elliptical Room), neoclassical "Republican" architecture, the chamber's own ceiling fresco.
 | Asset | Job | Notes |
