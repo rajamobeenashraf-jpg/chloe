@@ -47,8 +47,22 @@ All derived from the SAME approved photo — no new face/pose generation, only d
 | Asset | Size | Source photo | Source op | Outpaint job ID | Local file |
 |---|---|---|---|---|---|
 | Profile picture (FB+IG+TikTok+YT) | 1080×1080 | look #3 `45b62bfd` (emerald gown, balcony) | direct crop (head-and-shoulders) | — | `hazel_profile_picture_1080x1080.png` |
-| YouTube banner | 2560×1440 (safe area 1546×423 centered) | look #3 `45b62bfd` (emerald gown, balcony) | `outpaint_image` to 16:9 (`54656369-b403-4a53-b7c5-5a59410fb2f5`), center-cropped/resized to exact size | `54656369-b403-4a53-b7c5-5a59410fb2f5` | `hazel_youtube_banner_2560x1440.png` |
 | Facebook cover | 820×312 (JPG, 54 KB) | new look #5 `7221a155` — **different dress**: black satin off-shoulder mini, gold hoops + layered necklaces, black stilettos, city rooftop at dusk (owner: "give me the Facebook cover in a different dress") | `outpaint_image` to 21:9 (`6e2522e0-8a68-4bfb-a8fe-9caa777ce660`), center-cropped/resized to exact ratio | `6e2522e0-8a68-4bfb-a8fe-9caa777ce660` | `hazel_facebook_cover_black_820x312.jpg` |
+| YouTube banner | 2560×1440 (safe area 1546×423 centered) | new look #6/#7/#8 (`b7d6f8c4`→`4e994ad7`→`611b2cbd`) — **different dress**: ivory blazer worn as deep-V dress, gold drop earrings, skyline balcony golden hour (owner: "the model's face should be visible on all devices") | Generated NATIVE 16:9 with `soul_2` (no outpaint) so no scene-extension risk; final `611b2cbd` deterministically cropped (top=0, 1470×827 window, centered horizontally) then resized to 2560×1440 so her eye-line lands at ~37% of frame height, inside the [35.3%,64.7%] band every device shows — see "YouTube banner face-safety" note below | — | `hazel_youtube_banner_ivory_2560x1440.png` |
+
+**YouTube banner face-safety finding (2026-08-30):** a full-body or even a loosely-framed chest-up
+`soul_2` render of Hazel consistently places her eye-line only ~20-27% down the frame (lots of sky
+headroom) — well above the centered 423px-tall safe band (spans 35.3%-64.7% of a 1440-tall banner)
+that mobile/tablet viewers actually see; only TV shows the full 1440px canvas. Prompt instructions
+alone ("center her face", "minimal headroom") nudge this but do not reliably hit the band. Fix: (1)
+generate the source photo NATIVE at 16:9 (not full-body 9:16 then outpainted — outpainting only
+extends the sides, it doesn't fix vertical placement and adds NSFW-flag risk on retry), (2) after
+generation, measure the actual eye-line y-pixel, then crop deterministically with top=0 and
+crop-height = eye_y / target_f (target_f ≈0.37-0.40, safely inside the band) and crop-width =
+crop-height × 16/9 centered horizontally, then resize to 2560×1440. This necessarily zooms in
+(there is no more headroom above y=0 to add), so the result reads as a closer bust/face-forward
+crop rather than a wide full-look shot — an accepted tradeoff when face-visibility-on-every-device
+is the stated priority. Apply this method to every future Hazel YouTube banner generation.
 
 Sent to owner 2026-08-30. Local files are gitignored (session-local); job IDs above are the
 retrievable source in Higgsfield.
@@ -66,6 +80,6 @@ wanted later.
 - [x] Owner confirmed Round 2 identity/realism (picked look #3)
 - [x] Crop/compose to platform specs (see `BRAND_KIT.md` §3)
 - [x] Facebook cover regenerated in a different dress (black satin off-shoulder), 3-option wardrobe workflow followed, owner picked
-- [x] YouTube banner reverted to original emerald-gown crop after the cover/banner mixup
+- [x] YouTube banner regenerated in a different dress (ivory blazer-dress), face repositioned into the device-safe zone
 - [ ] Owner approval on final crops
 - [ ] 4K upscale (only after approval — profile pic and banner are candidates; FB cover has its own small-file-size best practice, upscale not needed there)
