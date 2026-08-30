@@ -729,3 +729,8 @@
 - Owner: move the text further down for easier visibility.
 - Shifted the "POV: MONGOLS VS. AN ENTIRE POLISH ARMY" text down (~150-260px from ~70-180px) so it sits against the darker smoke instead of the bright sky, clear of the top edge; nudged the "1241" year stamp down to match.
 - Output: `assets/thumbnail_final_with_hook_v3.png` (720×1280). Sent to owner as the current cover candidate.
+
+## 2026-08-29 (cont.) — Cover text moved further down, near her head
+- Owner: bring the POV text further down, near Hazel's head, and deliver.
+- Shifted the "POV: MONGOLS VS. AN ENTIRE POLISH ARMY" text down again (~250-305px from ~150-205px) so it now sits directly above Hazel's kerchief/head against the smoke, with the "1241" year stamp nudged down to y=200 to match; underlying photo (thumbnail v2) still completely untouched.
+- Output: `assets/thumbnail_final_with_hook_v4.png` (720×1280). Sent to owner as the current cover candidate. Not committed to git per the standing generated-media policy.
