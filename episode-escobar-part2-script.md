@@ -4,7 +4,7 @@
 (playbook Parts 6-12) applied via the compliance annex at the end + emotion
 micro-sequences on every emotional beat. Dialogue unchanged from v4.
 
-**Status: DRAFT v4 — awaiting owner approval.** v3 (owner directive 2026-08-30):
+**Status: DRAFT v5 — awaiting owner approval.** v3 (owner directive 2026-08-30):
 Pablo's "Show me." moved into Part 1's ending. v4 (same day, decided from her
 measured footage): Scene 1 follows HER arrival grammar — in-media-res hook, hard-
 cut jump, tilt reveal, NO portal and NO morph on the forward jump (portals are her
