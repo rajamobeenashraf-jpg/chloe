@@ -23,17 +23,17 @@ Fact locks and memorial/rooftop sensitivity staging as v1.**
 | 1.4 (2s) | **Her single, already walking:** {Hazel: "Gone. Everything is. Come."} | whip-blur → S2 |
 EYELINES: his sweep the world; hers stay on HIM — his face is the show.
 
-## SCENE 2 · HIS OWN TOUR · 14s · MUSIC: light comic underscore, out before S3
+## SCENE 2 · HIS OWN TOUR · 20s · MUSIC: light comic underscore — OUT on 2.6's cut to his still face (the chill plays dry)
 | 2.1 (3s) | **Drifting wide with the tour group:** the roped ruin of his mansion; the GUIDE mid-spiel — and the real Pablo standing INSIDE the crowd, 1987 clothes: {Guide: "This is where he kept his zoo. He was killed in nineteen ninety-three—"} | hard |
 | 2.2 (2.5s) | **His single in the crowd, unblinking at the guide:** {Pablo, quiet: "He tells it wrong."} {Hazel, off: "He tells it the way it ended."} | hard |
-| 2.3 (3s) | **The t-shirt tracking shot:** a tourist strolls through frame wearing HIS FACE; Pablo's eyes track him across. <camera shutter> | hard |
+| 2.3 (3s) | **The t-shirt tracking shot:** a tourist strolls through frame wearing HIS FACE — pausing to photograph the ruin <camera shutter, motivated>; Pablo's eyes track him across. | hard |
 | 2.4 (3s) | **Two-shot, deadpan:** {Pablo: "He is wearing my face."} {Hazel: "They sell you now."} | hard |
 | 2.5 (2.5s) | **His single, the beat:** (0.4) {Pablo: "…How much?"} Hazel's half-smile at frame edge. | hard |
 | 2.6 (6s) | **THE MYTH-BUST (her Washington cherry-tree beat, inverted):** the guide's voice carries over as the group passes: {Guide: "They say he burned two million dollars to keep his daughter warm—"} The group chuckles like it's a legend. Cut to Pablo's still face. (0.4) {Pablo, quiet: "That one is true."} | hard → S3 |
 (Scene 2 total now 20s; the restored burned-money fact lands as her myth-bust
 device — except here the myth is confirmed, which is colder.)
 
-## SCENE 3 · THE CABLE CAR — the lookalike gag · 12s · MUSIC: none (gondola hum is the score)
+## SCENE 3 · THE CABLE CAR — the lookalike gag · 14s · MUSIC: none (gondola hum is the score)
 | 3.1 (3s) | **Gondola glass wide:** the Metrocable climbing over Medellín — murals, pitches, the city he bombed, alive and enormous; their reflections ghosted on the glass. {Hazel: "This is Medellín now."} | hard |
 | 3.2 (3s) | **The TEEN's single across the car,** phone lowering: {Teen: "No way. Bro looks exactly like him. Photo?"} | hard |
 | 3.3 (3s) | **Pablo's SLOW head-turn stare, static close** — the comedy is the stillness. {Hazel, off: "He's not a lookalike."} | hard |
@@ -108,7 +108,9 @@ Comedy front-loaded, silence in the middle, full-circle close; every window hold
 a question or a payoff.
 
 **Annexes:** as Part 1 v5 (style prefix + 1987-wardrobe lock, castings, voice locks,
-wpm table from v1 holds, pacing refs measured, `{}` dialogue syntax, ⛓ chaining,
+wpm table UPDATED from v1: S2 = 20s (adds Guide 12w @192 + Pablo 4w @168), S3 = 14s
+(adds the 2s POV insert, no new dialogue), series total 118s — all other rows hold;
+pacing refs measured, `{}` dialogue syntax, ⛓ chaining,
 deliver-on-render, ask-before-regenerate, no 4K pre-approval, violence never shown,
 memorial/rooftop/TV-drama sensitivity staging, facts to pin at research close-out:
 current hippo estimate, park details).

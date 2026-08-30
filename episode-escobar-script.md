@@ -35,11 +35,11 @@ active-word highlight = her spec, pending owner's earlier caption decision.**
 | # | Shot (dur) | Camera & content | Cut out |
 |---|---|---|---|
 | 1.1 (2.5s) | **FIRST FRAME = THE GRAB (her hook law: frame one is a person in tension — no establish):** medium-close, HAZEL SEIZED mid-step — two men pinning her arms, a rifle rising INTO frame, party chaos bokeh behind; the band stops mid-note in the first half-second <needle-drop band stop + sub-drop>. Her breath in the silence. Banner ON: "Visiting Pablo Escobar in 1987 🇨🇴". | hard |
-| 1.2 (2s) | **The reverse — scale revealed THROUGH the silence:** the crowd parting in a diagonal, dancers frozen mid-move, drinks half-raised, the pool glaring beyond. (Her grammar: wides live inside the body, never as the hook.) | hard |
-| 1.3 (2s) | **Slow push, long lens across the pool:** PABLO at the far table, looking up. {Pablo: "You walk into my house with a camera."} | hard |
-| 1.4 (2s) | **Her single, close:** chin up, eyes ON PABLO — never the rifle. {Pablo, off-screen: "Who sent you?"} {Hazel: "Nobody. I came a very long way to hear your story."} | hard |
+| 1.2 (2s) | **The reverse — scale revealed THROUGH the silence:** the crowd parting in a diagonal, dancers frozen mid-move, drinks half-raised, the pool glaring beyond. HIS VOICE ENTERS OFF-SCREEN OVER THIS SHOT (J-cut — first dialogue by ~2.5s, her hook law): {Pablo, off: "You walk into my house with a camera."} | hard |
+| 1.3 (2s) | **Slow push, long lens across the pool, finding the voice:** PABLO at the far table, looking up, finishing: {Pablo: "Who sent you?"} | hard |
+| 1.4 (2s) | **Her single, close:** chin up, eyes ON PABLO — never the rifle. {Hazel: "Nobody. I came a very long way to hear your story."} | hard |
 | 1.5 (3s) | **His single, closer:** the long beat — his eyes reading her over the water. Then: {Pablo: "Release her."} | hard |
-| 1.6 (2.5s) | **WIDE resolve — the one full-party geography shot:** the grips open; she straightens her shirt; his open hand at the empty chair across the pool. {Pablo: "Sit."} The band restarts; the party swallows the moment. | whip-blur exit → S2 |
+| 1.6 (2.5s) | **CRANE-UP WIDE resolve — the one full-party geography shot, RISING:** the grips open; she straightens her shirt; his open hand at the empty chair across the pool; the camera lifts slowly as {Pablo: "Sit."} lands and the band restarts — the party swallowing the moment from above. (Her crane grammar: scale mid-body, never the hook.) | whip-blur exit → S2 |
 EYELINES: hers→Pablo from shot 1.2 on; his→her; guards→HIM. §17: party alive at
 every edge. SFX map: band-stop, sub-drop, pool lap, ice, far macaw.
 
@@ -50,7 +50,7 @@ every edge. SFX map: band-stop, sub-drop, pool lap, ice, far macaw.
 | 3.1 (2s) | **Torchlit wide:** party spilling to the black lakeshore, guests daring each other toward the water. | hard, mid-laugh |
 | 3.2 (2s) | **The DETONATION:** water blasts — hippo surfaces huge in spray <deep water blast>; screaming guests scatter through frame; Hazel jumps a full step. EDIT: micro SPEED-RAMP on the spray peak (her dance/teeth-beat ramp). | hard, on the scatter |
 | 3.3 (3s) | **Pablo's unmoved single with RACK FOCUS:** focus pulls from the falling spray in foreground to his unmoved torchlit face sharpening behind it (her signature depth pull); amused. {Pablo: "Four hippos. From Africa. What I want, I bring."} Hippo in continuous motion behind (§17). | hard |
-| 3.4 (3s) | **Her lens, deadpan,** chaos-laughter behind: {Hazel: "He bought hippos."} | hard → S4 doorway |
+| 3.4 (3s) | **Her lens, deadpan,** chaos-laughter behind: {Hazel: "He bought hippos."} EDIT (optional, her Elizabeth "P.S." device): small secondary text, lower-left, plain: "p.s. the hippos matter later" — owner call. | hard → S4 doorway |
 
 ## SCENE 4 · THE NUMBER · 13s · MUSIC: playful → **TOTAL DROPOUT on "A week."** → resumes low
 | 4.1 (2s) | **Door-swing reveal, low wide:** warehouse doors open INTO frame; cash canyon to the ceiling, slatted light, dust motes. | hard |
@@ -100,27 +100,29 @@ LOCK: the murder is spoken, never shown.
 
 ## TECHNIQUE COVERAGE VERIFICATION (owner-ordered audit vs the full 29-video inventory)
 
-Hooks: figure-speaks-first + host-seized (Victoria) 1.2–1.5 · banner 1.1 ·
-**channel watermark (her @COSMINACREATES equivalent): small static "HAZEL OUT OF
-TIME" top-right, all clips — ADDED to edit spec** · question-chapters (4,6,7,8,9,
-10 all open on her questions) · fact-on-prop (cash 4, band 4.4, ball 6.2) ·
-shock-stat + dropout (4.3) · countdown numbers (2.1, 8.3, 7.4) · whiplash arc ·
-memories w/ host inside (5.2–5.4, 7.2–7.4) · figure-notices-her (10.2) · monologue
-(9.2) · reactive asides only (3.4, 2.1) · era wardrobe · deadpan figure comedy
-(3.3, 4.5) · recurring local (Rosa) · empathy core (6.3) · CAMERA: crane (1.1) ·
-push-ins (1.3, 8.2, 9.2) · crash zoom (4.3) · whip exits (1.6) · macro insert
-(4.4) · rack focus (3.3) · speed-ramp (3.2) · locked-off menace (7.1) · lateral
-drifts (6.1, 7.3) · proximity escalation (S8–S10) · low-angle grandeur (gate plane
-10.1) · EDIT: hard cuts 2–10s · J-cut (5.1) · music states per scene · silence
-beats (10.4) · smash-black + card (10.5) · karaoke gold captions (spec) ·
-time-of-day arc (noon→night) · 8 locations. Orbit + POV insert + myth-bust land in
-Part 2 (see its verification). **Reflection shots deliberately avoided in Part 1
-(engine rule); Part 2 carries the two reflection beats with a stated fallback.**
+Hooks: frame-one-is-the-grab / host-seized (Victoria) 1.1 · first dialogue by
+~2.5s via J-cut (1.2) · banner 1.1 · **channel watermark "HAZEL OUT OF TIME"
+top-right, all clips** · question-chapters (4,6,7,8,9,10 all open on her
+questions) · fact-on-prop (cash 4, band 4.4, ball 6.2) · shock-stat + dropout
+(4.3) · countdown numbers (2.1, 8.3, 7.4) · whiplash arc · memories w/ host inside
+(5.2–5.4, 7.2–7.4) · figure-notices-her (10.2) · monologue (9.2) · reactive asides
+only (3.4, 2.1) · "P.S." secondary-text device (3.4, optional) · era wardrobe ·
+deadpan figure comedy (3.3, 4.5) · recurring local (Rosa) · empathy core (6.3) ·
+CAMERA: crane-up mid-body (1.6) · push-ins (1.3, 8.2, 9.2) · crash zoom (4.3) ·
+whip exits (1.6) · macro insert (4.4) · rack focus (3.3) · speed-ramp (3.2) ·
+locked-off menace (7.1) · lateral drifts (6.1, 7.3) · proximity escalation
+(S8–S10) · low-angle grandeur (gate plane 10.1) · EDIT: hard cuts 2–10s · J-cuts
+(1.2, 5.1) · music states per scene · silence beats (10.4) · smash-black + card
+(10.5) · karaoke gold captions (spec) · time-of-day arc (noon→night) · 8
+locations. Orbit + POV insert + myth-bust + reflections land in Part 2 (see its
+verification). **OWNER FLAG: her captions carry NO speaker tags; our locked
+caption system uses italic [Speaker] tags on non-protagonist lines — conflict
+needs the owner's call before the edit stage.**
 
 ## RETENTION PLAN (per-swipe-window map)
 
-0:00–0:03 crane into party + the GRAB (is she about to die?) · 0:03–0:14 the
-silence, his voice, "Release her" (power established) · 0:14–0:23 the doom whisper
+0:00 THE GRAB, frame one (is she about to die?) · 0:02–0:14 the silence, his voice
+entering over it, "Release her" (power established) · 0:14–0:23 the doom whisper
 (the audience contract) · 0:23–0:33 hippo detonation + "He bought hippos." (first
 laugh) · 0:33–0:46 "A week." crash-zoom + rats (the share/comment stat) ·
 0:46–1:01 the barefoot boy (first heart-hit) · 1:01–1:11 "Because I remember." →
