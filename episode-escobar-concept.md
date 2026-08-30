@@ -1,4 +1,4 @@
-# Episode CONCEPT v3 — "I Met the Richest Criminal Who Ever Lived" (Pablo Escobar, May 1987)
+# Episode CONCEPT v4 — "I Met the Richest Criminal Who Ever Lived" (Pablo Escobar, May 1987)
 
 **Status: CONCEPT ONLY — unscored, unscheduled, unscripted.** Not yet through
 `research-methodology.md` signal-stack scoring, no owner production lock, no slot in the
@@ -6,38 +6,50 @@ queue. v1 written 2026-08-30 at the owner's request; **v2 same day per owner
 redirect: single time-stop, May 1987, start-to-end, hook-first, the most interesting
 facts of his whole life delivered through the one visit.** The v1 three-time-stop
 structure (1987 → 1992 → 1993) is SUPERSEDED — kept in git history only. **v3 same
-day per the owner's plain-language directive (see the standing rule below): every
-beat that relied on irony, implication, or an unstated contrast rewritten so the
-meaning is spoken directly in the words.** Every standard approval gate applies
-before anything gets generated.
+day per the owner's plain-language directive; v4 same day per the owner's scope
+refinement of that directive (see the standing rule below): the rule governs the
+language (no irony/sarcasm/decoding), not the amount told — beats 6 and 10 keep
+their plain rewrites, beats 7 and 8 revert to their original restrained versions,
+owner-confirmed.** Every standard approval gate applies before anything gets
+generated.
 
-## PLAIN-LANGUAGE DELIVERY — owner directive 2026-08-30 (standing rule, this episode and all future ones)
+## PLAIN-LANGUAGE DELIVERY — owner directive 2026-08-30, scope refined same day (standing rule, this episode and all future ones)
 
 Owner's instruction, verbatim intent: do not deliver facts ironically or
 sarcastically — not all viewers understand ironic language. Jokes are fine, but use
-simple, plain, straightforward language that delivers the meaning itself; the viewer
-must never have to derive the meaning.
+simple, plain, straightforward language. **Owner's same-day refinement: this is a
+rule about the LANGUAGE, not about telling everything.** The script does not have to
+spell out every conclusion — a short line or a silent beat may deliberately hold
+something back. What is forbidden is wording whose meaning lives outside the words:
+irony, sarcasm, clever phrasing the viewer has to decode.
 
-- **Every line's meaning must be fully contained in its own words.** If a line only
-  works when the viewer catches an implication, an unstated contrast, or a tone —
-  rewrite it so the point is said out loud.
+- **Whatever a line DOES say, it says in simple, direct words.** No ironic framing
+  (e.g. "the only empire that outlived him…"), no sarcasm, no complex vocabulary or
+  clever constructions. If a fact is being told, tell it straight.
+- **Holding back is allowed.** A wordless reaction, a pause, or a short understated
+  line ("He wins. For six years.") is fine — restraint is not irony. The distinction:
+  restraint says less; irony says something OTHER than what it means.
 - **Humor comes from the facts themselves, told plainly** (rats eating two billion
   dollars, a prison with a jacuzzi, a $10B offer to pay off a national debt) — never
   from the viewer decoding how a line was meant.
-- **Silence/wordless beats can carry emotion, but never carry an unstated FACT or
-  CONCLUSION** — anything the audience must know is said in words, in plain terms.
-- **Test at scripting: read each line literally.** If the literal reading delivers
-  the full intended meaning to a viewer hearing it once, it passes. If the intended
-  meaning differs from the literal words in any way, it fails — rewrite.
+- **Test at scripting: read each line literally.** If what the line literally says is
+  what it means — even if it's brief or leaves things unsaid — it passes. If it means
+  something different from or opposite to its words, it fails — rewrite.
+- Owner-confirmed applications in this concept (2026-08-30): the hippo outro (beat 10)
+  and the empathy beat (beat 6) use the rewritten plain versions; the farewell
+  silence (beat 8) and the short extradition aside (beat 7) stand as originally
+  written — both are restraint, not irony.
 - Paste-ready for `creative-direction.md` at merge time (not edited there now, per
   the parallel-chat shared-docs rule):
   > **§ Plain-language delivery (owner mandate 2026-08-30 — PERMANENT).** All
-  > narration and dialogue uses simple, direct language whose meaning is fully
-  > contained in the literal words. No irony, sarcasm, or implication-dependent
-  > lines: the viewer never has to derive the meaning. Jokes are welcome when the
-  > plainly-told fact IS the joke. Wordless beats may carry emotion but never an
-  > unstated fact or conclusion. Scripting test: if a line's literal reading does
-  > not deliver its full intended meaning on first listen, rewrite it.
+  > narration and dialogue uses simple, direct language: no irony, no sarcasm, no
+  > phrasing the viewer must decode — a line always means exactly what its words
+  > say. This governs the language, not the amount told: restraint is allowed
+  > (short understated lines, wordless beats, conclusions deliberately left
+  > unspoken); irony is not — restraint says less, irony says something other than
+  > what it means. Jokes are welcome when the plainly-told fact IS the joke.
+  > Scripting test: if a line means something different from its literal words,
+  > rewrite it.
 
 Written to the same spec as `episode-alexander-gaugamela-script.md`: Chloe-formula
 V-mode talk-to-lens default, single continuous take per clip, `creative-direction.md`
@@ -106,8 +118,8 @@ ad-suitability strategy.
 | 4 | 9s | *[Pablo]*, perfectly calm, almost gentle: "Everyone accepts something. Silver… or lead." **Plata o plomo.** He's called away a step — her whispered aside to lens: "He got himself elected to Congress. When the justice minister exposed him — he had him murdered. That was three years ago. Everyone knows. No one can prove it." (Lara Bonilla 1984 — already true in May 1987.) | The signature quote + the first cost-ledger fact, whispered, audience-knows tension |
 | 5 | 8s | **THE MONEY ROOM** — he shows her a caleta: raw cash stacked to the ceiling. Active beat: he tosses her a band — she wraps a brick of bills herself (rubber-band callback: "$2,500 a month, just on these"). Her: "You know you could just… stop." *[Pablo]*, amused: "I offered to pay off Colombia's entire national debt. Ten billion dollars. They said no." | The single most shareable fact of his life (the debt offer) staged as dialogue, not narration + §12 hands-on beat |
 | 6 | 9s | **EMPATHY CORE** (never rushed) — the barrio: a mother thanks him by name, means it, her kids play on his soccer pitch. Hazel to lens, quiet, jokes gone: "The help is real — the houses, the field, the food. But there is another side. He has journalists killed. He has judges killed. And the worst is still coming: in two years, his men will bomb a passenger plane. A hundred and ten people will die. All to kill one man — who wasn't even on board." (Avianca 203, 1989 — spoken as what's coming, never shown.) | The most-quoted beat type on the reference channel: both ledgers stated directly, persona fully dropped |
-| 7 | 9s | **THE FEAR** (conversation 2 — the tensest beat): back at the house, quieter. Her: "February. Your partner Lehder — they put him on a plane to an American prison. Does that scare you?" *[Pablo]*, the calm finally hardening: "I would rather have a grave in Colombia than a jail cell in the United States." Her aside, whispered: "Next month, Colombia's Supreme Court cancels the extradition treaty. He gets exactly what he wants. But it will only protect him for six more years." | His real recorded worldview as thesis line + the May-1987 window doing its work: fresh fear, imminent short-lived victory — all stated in plain words |
-| 8 | 8s | **FAREWELL** — dusk, he walks her toward the gate, host to the end. Her last question: "How does this end, Pablo?" *[Pablo]*, a small smile, utterly certain: "It doesn't. Colombia and I have an arrangement." He turns back to the house. She watches him go, then says quietly to the lens, plain and direct: "He truly believes that. He's wrong. In six years he'll be dead — and I'm the only person here who knows it." | §2 restraint in the performance, but the conclusion is SPOKEN, not implied — per the plain-language rule |
+| 7 | 9s | **THE FEAR** (conversation 2 — the tensest beat): back at the house, quieter. Her: "February. Your partner Lehder — they put him on a plane to an American prison. Does that scare you?" *[Pablo]*, the calm finally hardening: "I would rather have a grave in Colombia than a jail cell in the United States." Her aside, whispered: "Next month the Supreme Court kills the extradition treaty. He wins. For six years." | His real recorded worldview as thesis line + the May-1987 window doing its work: fresh fear, imminent false victory. (Owner-confirmed 2026-08-30: this version stands — short and simple IS the rule; it doesn't need to spell out more.) |
+| 8 | 8s | **FAREWELL** — dusk, he walks her toward the gate, host to the end. Her last question: "How does this end, Pablo?" *[Pablo]*, a small smile, utterly certain: "It doesn't. Colombia and I have an arrangement." He turns back to the house — she holds the lens in silence, two full beats. Nothing said. The audience already knows. | §2 restraint — her silence carries the weight. (Owner-confirmed 2026-08-30: the silent version stands — the rule is simple language, not spelling out every conclusion; beat 9 states the facts moments later anyway.) |
 | 9 | 10s | **THE FUTURE-CAST** — walking out alone under the gate plane, dusk deepening, pace rising: "Here's what he doesn't know. Two years from now, Forbes ranks him seventh-richest ON EARTH — and he blows up a passenger jet. Four years from now he surrenders — to a prison HE built. Jacuzzi. Football pitch. His own guards. Then he escapes it. Sixteen months on the run — he burns two million dollars in cash to keep his daughter warm. And on December 2nd, 1993 — one day after his 44th birthday — a rooftop in Medellín." | The rest of his life in one breathless verbal run — linear (her telling moves only forward), no visual flash-forward, OPENING-LAW clean |
 | 10 | 10s | **OUTRO** — she stops at the gate, quiet, every fact stated plainly: "Forbes called him one of the richest men in history. But his war against Colombia killed thousands of people. Today, everything he built is gone — the money, the cartel, this ranch. Except one thing. The hippos. After he died, nobody could move them, so they were left here. They escaped into the rivers and kept breeding. Today, more than a hundred wild hippos live in Colombia — all of them from his four. His money didn't survive. His power didn't survive. The hippos did." Quiet: "Hazel — out of time." | Two-ledger close + the hippo payoff, delivered as plain stated facts — the fact IS the punchline, nothing left to derive |
 
@@ -118,7 +130,7 @@ ad-suitability strategy.
 - 0:00–0:09 — hook: strange image + billionaire-criminal paradox + stated doom.
 - 0:09–0:36 — escalating absurd-wealth facts, each bigger than the last (zoo → $420M/week → rats → the money room → the national-debt offer at 0:36, the midpoint spike).
 - 0:36–0:54 — the turn: plata o plomo → the empathy beat (the emotional deep point).
-- 0:54–1:10 — the fear conversation + the farewell, her plainly-spoken "he's wrong" (peak tension, quietest beats).
+- 0:54–1:10 — the fear conversation + the wordless farewell (peak tension, quietest beats).
 - 1:10–1:30 — the breathless future-cast (pace UP for the final stretch, not down) → hippo payoff → sign-off.
 Every beat opens a question the next one answers; the hippos plant (0:12) pays off at 1:25.
 
