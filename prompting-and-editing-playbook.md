@@ -325,3 +325,34 @@ more-her choice: her close menace beats are always dirty singles.
 **Framing spec is now a MASTER-RULE checklist item:** every shot's prompt states
 shot size + which body line the bottom edge cuts + headroom % + who owns the
 center + what the edges are allowed to crop, per the laws above.
+
+## PART 8 — THE COMPLETE DIMENSION LEDGER (owner mandate 2026-08-30: EVERYTHING she does, verified — no assumed dimensions)
+
+Process rule (permanent): a dimension counts as LEARNED only when a dedicated,
+question-specific study has measured it and its doctrine is written in this
+playbook. General walkthroughs do not count — they only answer what was asked.
+Any dimension below marked PENDING blocks "we have applied everything" claims.
+Discovered-by-owner gaps (pacing, framing) are the failure mode this ledger
+exists to prevent.
+
+| # | Dimension | Status | Where |
+|---|---|---|---|
+| 1 | Story structure, hooks, chapters, beats | MEASURED | Parts 2, 29-video corpus |
+| 2 | Edit grammar: cut rhythm, punch-ins, whips, J-cuts | MEASURED | Part 3 |
+| 3 | Camera movements (crane, push, orbit, tracking) | MEASURED | Parts 2-4 |
+| 4 | Official Seedance prompting doctrine | MEASURED | Part 4 |
+| 5 | Speech pacing per situation | MEASURED | Part 6 |
+| 6 | Framing/composition (shot sizes, crops, headroom) | MEASURED | Part 7 |
+| 7 | Captions system (chunks, gold karaoke, no tags) | MEASURED + owner-locked | CLAUDE.md, scripts |
+| 8 | Portal/time-travel transition device | MEASURED + upgraded | Part 1 scripts, study doc |
+| 9 | Continuity/scene-connection (no-jumps system) | STUDY RUNNING (jobs f8266ed0, ced8ed88, cb51eb09) | → Part 9 |
+| 10 | Music system (cues, per-chapter states, silence) | STUDY RUNNING (jobs 3a4a8898, 730ebe3b) | → Part 10 |
+| 11 | Sound design (ambience, SFX, bridges) | STUDY RUNNING (same jobs as 10) | → Part 10 |
+| 12 | Graphics/overlays (banner, secondary text, effects) | STUDY RUNNING (same jobs as 10) | → Part 10 |
+| 13 | Figure/host VOICE character + accents | STUDY RUNNING (job f6307447) | → Part 11 |
+| 14 | Color & grade (era vs modern, palette, grain) | STUDY RUNNING (job f6307447) | → Part 11 |
+| 15 | Motion quality (blur, slow-mo, stabilization, artifact-hiding) | STUDY RUNNING (job f6307447) | → Part 11 |
+
+MASTER RULE hook: before any prompt is finalized, walk this ledger — every
+MEASURED dimension must appear as concrete prompt text where applicable; a
+PENDING dimension relevant to the shot must be studied first, not guessed.
