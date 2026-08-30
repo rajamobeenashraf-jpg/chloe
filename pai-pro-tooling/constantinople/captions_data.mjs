@@ -1,11 +1,10 @@
 // Episode "The Fall of Constantinople 1453" — FINAL word-chunk caption data
 // for qc_pass.mjs. Generated from word_chunks_constantinople.json (measured
 // via make_word_chunks.py, faster-whisper, script-biased) against the FINAL
-// approved clip files in assets/ (2026-08-30, regenerated after: inserting
-// clip03b-1 (owner decided to drop clip03b-2), and re-rendering clip13b's
-// extension line with the explicit "Hazel VO — Constantinople episode" voice
-// element per owner instruction) -- every clip measured fresh against its
-// actual final audio so timing never drifts from a stale render.
+// approved clip files in assets/ (2026-08-30, regenerated after: reverting
+// clip03 to the clean unprocessed voice output, and swapping clip13b to the
+// true video_extension continuous-shot version) -- every clip measured fresh
+// against its actual final audio so timing never drifts from a stale render.
 // Rough line-window input this was built from: captions_data_lines_backup.mjs.
 // Owner-locked word-chunk caption system per CLAUDE.md (2026-08-23): 1-2 word
 // ALL-CAPS chunks, each REPLACING the previous, on screen only while spoken,
@@ -64,19 +63,19 @@ export const CLIPS = [
   },
   {
     id: "clip03",
-    duration: 5.991,
+    duration: 5.99,
     captions: [
       { start: 0, end: 0.6, text: "TRIPLE WALLS" },
       { start: 0.6, end: 0.94, text: "ON THE" },
-      { start: 0.94, end: 1.54, text: "LAND SIDE." },
-      { start: 2.08, end: 2.38, text: "A LOCKED" },
-      { start: 2.38, end: 2.92, text: "HARBOR ON" },
-      { start: 2.92, end: 3.24, text: "THE SEA" },
-      { start: 3.24, end: 3.62, text: "SIDE." },
-      { start: 4.06, end: 4.36, text: "FOR A" },
-      { start: 4.36, end: 5.04, text: "THOUSAND YEARS," },
-      { start: 5.04, end: 5.44, text: "THAT HAS" },
-      { start: 5.44, end: 5.86, text: "BEEN ENOUGH." },
+      { start: 0.94, end: 1.52, text: "LAND SIDE." },
+      { start: 2.06, end: 2.34, text: "A LOCKED" },
+      { start: 2.34, end: 2.86, text: "HARBOR ON" },
+      { start: 2.86, end: 3.2, text: "THE SEA" },
+      { start: 3.2, end: 3.58, text: "SIDE." },
+      { start: 4.02, end: 4.3, text: "FOR A" },
+      { start: 4.3, end: 4.96, text: "THOUSAND YEARS," },
+      { start: 4.96, end: 5.36, text: "THAT HAS" },
+      { start: 5.36, end: 5.8, text: "BEEN ENOUGH." },
     ],
   },
   {
@@ -385,16 +384,16 @@ export const CLIPS = [
   },
   {
     id: "clip13b",
-    duration: 7.583,
+    duration: 7.559,
     captions: [
       { start: 1.66, end: 2.22, text: "LISTEN." },
-      { start: 3.24, end: 3.58, text: "THEY'RE NOT" },
-      { start: 3.58, end: 4, text: "SCREAMING." },
+      { start: 3.22, end: 3.58, text: "THEY'RE NOT" },
+      { start: 3.58, end: 3.98, text: "SCREAMING." },
       { start: 4.28, end: 4.64, text: "THEY'RE PRAYING." },
-      { start: 5.24, end: 6, text: "BUT NO" },
-      { start: 6, end: 6.4, text: "ONE CAME" },
-      { start: 6.4, end: 6.74, text: "TO THEIR" },
-      { start: 6.74, end: 6.98, text: "HELP." },
+      { start: 5.62, end: 6.08, text: "BUT NO" },
+      { start: 6.08, end: 6.48, text: "ONE CAME" },
+      { start: 6.48, end: 6.82, text: "TO THEIR" },
+      { start: 6.82, end: 7.1, text: "HELP." },
     ],
   },
   {

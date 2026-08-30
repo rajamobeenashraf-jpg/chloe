@@ -2,12 +2,20 @@
 // Adapted from pai-pro-tooling/troy/build_final_cut.mjs. Every transition
 // is a TRUE HARD CUT (creative-direction.md §16) — single ffmpeg
 // filter_complex concat pass, no dissolve/mixed-filter-graph complexity --
-// EXCEPT the clip11->clip12 transition, a deliberate one-off owner-approved
-// exception (2026-08-30): a full fade to black, picture AND sound, at the
-// moment the emperor goes to fight. Implemented as a fade-out baked onto
-// clip11's own video+audio streams (at its tail) and a fade-in baked onto
-// clip12's (at its head), before the same single hard-cut concat -- every
-// other adjacent pair still meets at a true hard cut.
+// EXCEPT two deliberate, owner-approved one-off exceptions:
+//  1. clip11->clip12: a full fade to black, picture AND sound, at the
+//     moment the emperor goes to fight (2026-08-30). Implemented as a
+//     fade-out baked onto clip11's own video+audio streams (at its tail)
+//     and a fade-in baked onto clip12's (at its head).
+//  2. clip01->clip02: a short 0.4s cross-dissolve (picture AND sound),
+//     added 2026-08-30 to soften a real, previously-documented color-grade
+//     mismatch (clip1's warm golden-hour siege tone vs clip2's cool
+//     overcast maritime tone) that read as an awkward jump cut at a hard
+//     cut. Implemented via true xfade/acrossfade between the two clips'
+//     own streams (not a fade to black -- the picture blends directly),
+//     which shortens the combined runtime by the dissolve duration since
+//     the two clips' tail/head frames overlap rather than concatenate.
+// Every other adjacent pair still meets at a true hard cut.
 import fs from "node:fs/promises";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
@@ -43,8 +51,9 @@ async function main() {
   const manifest = JSON.parse(await fs.readFile(path.join(QC_DIR, "durations.json"), "utf8"));
   const clipPaths = CLIPS.map((c) => path.join(QC_DIR, `${c.id}_qc.mp4`));
 
-  const expectedTotal = CLIPS.reduce((sum, c) => sum + manifest[c.id], 0);
-  console.log(`[cut] ${CLIPS.length} clips, expected total runtime ${expectedTotal.toFixed(2)}s`);
+  const XFADE_DUR = 0.4; // seconds, short cross-dissolve (clip01->clip02)
+  const expectedTotal = CLIPS.reduce((sum, c) => sum + manifest[c.id], 0) - XFADE_DUR;
+  console.log(`[cut] ${CLIPS.length} clips, expected total runtime ${expectedTotal.toFixed(2)}s (includes -${XFADE_DUR}s for the clip01/02 cross-dissolve overlap)`);
 
   const masterPath = path.join(ASSETS_DIR, "constantinople_final_cut.mp4");
 
@@ -57,9 +66,9 @@ async function main() {
   const FADE_DUR = 0.5; // seconds, both picture and sound
   const FADE_OUT_CLIP = "clip11";
   const FADE_IN_CLIP = "clip12";
+  const XFADE_PAIR = ["clip01", "clip02"];
 
   const inputs = clipPaths.flatMap((p) => ["-i", p]);
-  const filterParts = [];
   const scaleLines = [];
   const audioLines = [];
   for (let i = 0; i < clipPaths.length; i++) {
@@ -75,11 +84,33 @@ async function main() {
       vChain += `,fade=t=in:st=0:d=${FADE_DUR}:color=black`;
       aChain += `,afade=t=in:st=0:d=${FADE_DUR}`;
     }
+    // xfade/acrossfade require an explicit constant frame rate on both
+    // inputs to compute the overlap correctly.
+    vChain += ",fps=24";
     scaleLines.push(`${vChain}[v${i}]`);
     audioLines.push(`${aChain}[a${i}]`);
+  }
+
+  const xfadeIdx0 = CLIPS.findIndex((c) => c.id === XFADE_PAIR[0]);
+  const xfadeIdx1 = CLIPS.findIndex((c) => c.id === XFADE_PAIR[1]);
+  if (xfadeIdx1 !== xfadeIdx0 + 1) {
+    throw new Error(`XFADE_PAIR ${XFADE_PAIR.join(",")} must be adjacent in CLIPS -- got indices ${xfadeIdx0},${xfadeIdx1}`);
+  }
+  const clip01Dur = manifest[XFADE_PAIR[0]];
+  const xfadeOffset = Math.max(0, clip01Dur - XFADE_DUR);
+
+  const crossfadeLines = [
+    `[v${xfadeIdx0}][v${xfadeIdx1}]xfade=transition=fade:duration=${XFADE_DUR}:offset=${xfadeOffset.toFixed(3)}[vxfade01]`,
+    `[a${xfadeIdx0}][a${xfadeIdx1}]acrossfade=d=${XFADE_DUR}[axfade01]`,
+  ];
+
+  const filterParts = ["[vxfade01][axfade01]"];
+  for (let i = 0; i < clipPaths.length; i++) {
+    if (i === xfadeIdx0 || i === xfadeIdx1) continue;
     filterParts.push(`[v${i}][a${i}]`);
   }
-  const filterComplex = `${scaleLines.join(";")};${audioLines.join(";")};${filterParts.join("")}concat=n=${clipPaths.length}:v=1:a=1[outv][outa]`;
+  const concatCount = clipPaths.length - 1; // the xfaded pair collapses into one segment
+  const filterComplex = `${scaleLines.join(";")};${audioLines.join(";")};${crossfadeLines.join(";")};${filterParts.join("")}concat=n=${concatCount}:v=1:a=1[outv][outa]`;
 
   console.log(`[cut] concatenating ${clipPaths.length} clips via single filter_complex concat...`);
   await run("ffmpeg", [
