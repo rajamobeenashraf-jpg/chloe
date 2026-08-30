@@ -623,13 +623,36 @@ Before writing any clip's camera direction, name which of these techniques the s
 1. **Static lock (two-shot or single)** — camera never moves; used for grounded conversational beats and the light/comedic camera-address tier (Section D above).
 2. **Zoom-in freeze (optical zoom, not dolly)** — continuous zero-parallax push toward a speaker's face while a second figure holds completely motionless; used for the tense/weighty confessional-aside tier (Section D above). This is Escobar 7.1c's technique.
 3. **Full 360° orbit with real parallax** — a physical camera orbit around a subject (rig/gimbal-style move, background sweeps past confirming true 3D travel, not a flat rotation); triggered by a broad comedic shock-reveal; subject is actively moving/reacting throughout, never frozen. Verified once (Elizabeth I reel, the teeth-laugh beat) — this is NOT the same technique as the zoom-in freeze and must not be substituted for it or vice versa.
-4. **Partial arc (180° half-orbit, or a 45-90° micro-arc)** — a shorter rotational move around a pair of subjects, used to reframe a second figure (often the host) into view from behind/beside the first figure; verified repeatedly in the Catherine Howard reel around dancing and dialogue pairs. Distinct from both the full orbit and the zoom.
+4. **Partial arc (180° half-orbit, or a 45-90° micro-arc)** — a shorter rotational move around one or more subjects. Three distinct verified triggers, not one: (a) reframe a second figure (often the host) into view from behind/beside a first figure — verified repeatedly in the Catherine Howard reel around dancing and dialogue pairs, and Escobar 6.1 (Rosa stepping in); (b) reveal more of an environment's scale/architecture around a static or near-static subject rather than a second figure — Escobar 7.2 (the chamber memory); (c) carry a subject's own physical turn — a reflective/narrating beat pivoting into direct-to-camera address — so the camera's rotation and the character's turn land together as one motion, arriving on a tighter, closer frame exactly as the turn completes — Escobar 7.4 (Hazel turning from watching the chamber to addressing camera on the punch line). Distinct from both the full orbit and the zoom in all three cases.
 5. **Slow dolly-in through a scene's center axis** — camera physically travels forward between two close subjects toward a third (often the host) positioned behind/between them; used for secrecy/intimacy beats (verified: Catherine Howard's clandestine-meeting beat).
 6. **Rapid whip-zoom / crash push** — a fast, sharp snap-in to a tight close-up; used for a sudden fear/panic/shock trigger landing on a single word or name (verified: Catherine Howard's panic beat).
 7. **Whip-pan** — fast horizontal pan with motion blur; used for hard scene-to-scene transitions, not within a single dramatic beat.
-8. **Lateral Steadicam/arc tracking** — smooth constant-speed lateral glide around active movement (e.g. dancing); used to keep a background figure entering/exiting frame naturally during sustained motion.
+8. **Lateral Steadicam/arc tracking** — smooth constant-speed lateral glide around active movement (e.g. dancing, or two figures walking together — verified: Escobar 4.5); used to keep a background figure entering/exiting frame naturally during sustained motion, or to hold a steady witnessing distance alongside walking subjects without the "camera as a third character" weight of a dolly/arc.
+9. **Crash zoom to extreme macro** (e.g. an eye/pupil) — a jarring, fast push to an extreme close-up of a small detail, used as a pattern-interrupt emphasis beat, not a normal reveal (Part 15.C).
+10. **Fisheye/barrel-distortion POV** — an in-scene object (e.g. a thrown weapon) aimed directly at the lens with wide-angle distortion, breaking the fourth wall physically rather than through address (Part 15.C).
+11. **Vertical crane pull-up into darkness** — a rising, receding camera move used SPECIFICALLY as an episode-ending device for a final farewell/resolution beat; distinct from any push-in/zoom and never used mid-episode as a transition (Part 15.C).
 
-**Applies project-wide, this episode and all others**: this menu is a mandatory pre-generation check, not a reference to consult only when stuck — before writing any clip's camera direction, state which of these eight techniques the scene calls for and why, as an explicit line in the production log, before generating.
+**TRIGGER TABLE — dramatic register → technique** (the fast-lookup version of the above; use this first, then confirm against the fuller description if the register is ambiguous):
+
+| Dramatic register / story moment | Technique |
+|---|---|
+| Grounded conversation, dialogue carries the moment, nothing should compete with performance | 1. Static lock |
+| Tense/weighty confessional aside, private stakes, world freezes around the speaker | 2. Zoom-in freeze |
+| Broad comedic shock-reveal, subject actively moving/reacting | 3. Full 360° orbit |
+| A second figure needs to be reframed into an existing shot | 4a. Partial arc |
+| Revealing environmental scale/architecture around a subject | 4b. Partial arc |
+| A character's own turn from reflective/narrating into direct-camera address | 4c. Partial arc |
+| Secrecy/intimacy, camera closing distance toward a hidden or private moment | 5. Slow dolly-in |
+| Sudden fear/panic/shock landing on one word or name | 6. Rapid whip-zoom / crash push |
+| Hard scene-to-scene transition (not a within-beat move) | 7. Whip-pan |
+| Sustained walking/dancing motion, holding a steady witnessing distance | 8. Lateral Steadicam/arc tracking |
+| Jarring emphasis on one small detail, pattern-interrupt beat | 9. Crash zoom to extreme macro |
+| Breaking the fourth wall physically via an in-scene object, not address | 10. Fisheye/barrel POV |
+| Episode-ending farewell/resolution, and ONLY there | 11. Vertical crane pull-up |
+
+This table is a starting default per register, not a rigid substitute for judgment — per the MASTER RULE's "force nothing that does not belong," a register match is where to start looking, not a license to insert movement a beat hasn't earned. Where a beat doesn't cleanly match a row, name the closest register and the reasoning, rather than picking a technique first and rationalizing the register after.
+
+**Applies project-wide, this episode and all others**: this menu is a mandatory pre-generation check, not a reference to consult only when stuck — before writing any clip's camera direction, state which of these eleven techniques (using the trigger table first) the scene calls for and why, as an explicit line in the production log, before generating. This check is also now MASTER RULE checklist item (CLAUDE.md): "Made the camera decision deliberately" now means naming the specific register match from this table, not just asserting a decision was made.
 
 ### F. CROSS-CLIP TRANSITION BRIDGING (owner lock 2026-08-30, permanent, no exceptions) — found on Escobar 7.1a→7.1b→7.1c, verified against Caesar and Henry VIII reels
 
