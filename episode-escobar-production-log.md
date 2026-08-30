@@ -62,6 +62,7 @@ Round 2 also declined (blouse+trousers too formal, shirt-dress too casual). ROUN
 | 1 Blush wrap midi, layered gold necklaces + hoops, tan block heels | `56717196-8f42-4fb0-afeb-dab9f2eee6c6` |
 | 2 Champagne pleated midi, gold pendant + studs, nude strappy low heels | `7b989f6d-2cb9-4fd5-bcac-4e47ae05b1b3` |
 | 3 Off-white square-neck midi w/ tonal embroidery, pearl-gold drops, cognac flats | `caff2909-a697-4fc0-b642-2ec9bea21f04` |
+Owner picked OPTION 2 (champagne pleated midi) with "make it a bit sexy" — two elevated variants delivered: (A) V-neck thin straps + above-knee slit `ce228387-5002-4043-8d5c-3db556c83df5`; (B) cowl neck + thigh slit `388af5ee-eeb7-4835-bfb1-de672fa13044`. Awaiting A/B pick.
 Hair/makeup styled after pick. On lock: generate the WARDROBE STILL SET (full front + full 3/4 in the locked look, via N4 photo-edit) → owner approval → those stills join the reference package of EVERY Part 1 clip (N3: costume stills beat text). Knock-on: existing clips regenerate to match.
 
 ### Validation/test clips
