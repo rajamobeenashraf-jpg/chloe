@@ -1,6 +1,12 @@
-# PART 1 SCRIPT v7 — "Visiting Pablo Escobar in 1987" (SHOT-BY-SHOT EDIT BLUEPRINT)
+# PART 1 SCRIPT v8 — "Visiting Pablo Escobar in 1987" (SHOT-BY-SHOT EDIT BLUEPRINT)
 
-**v7 (2026-08-30): FULL 17-DIMENSION COMPLIANCE PASS** — every measured doctrine
+**v8 (2026-08-30): FULL 19-DIMENSION DEEP-WEAVE REWRITE (owner order)** — every
+measured doctrine (playbook Parts 6-14, all 19 ledger dimensions) is now written
+INTO each shot: framing geometry, earned camera, performance micro-sequences,
+humor delivery specs, pause/gap timing, ambience beds + reverb, music behavior,
+environment luxury dressing, grade, motion hygiene, continuity handoffs.
+Dialogue unchanged (owner-approved). Prior v7 note:
+**v7: FULL 17-DIMENSION COMPLIANCE PASS** — every measured doctrine
 (playbook Parts 6-12) applied: global compliance annex added (screen geography,
 banner death, zero-lag arrivals, music duck/swell/dropout, ambience beds, motion
 hygiene) + emotion micro-sequences and earned-camera treatments written into every
@@ -56,104 +62,526 @@ recomputed inline. Captions (owner-locked 2026-08-30): her style — NO speaker 
 
 ---
 
-## SCENE 1 · THE SEIZURE — cold open · 16s · MUSIC: band mid-song → DEAD SILENCE → band resumes
-| # | Shot (dur) | Camera & content | Cut out |
-|---|---|---|---|
-| 1.1 (2.5s) | **FIRST FRAME = THE GRAB (her hook law: frame one is a person in tension — no establish):** medium-close, HAZEL SEIZED mid-step — two men pinning her arms, a rifle rising INTO frame, party chaos bokeh behind; the band stops mid-note in the first half-second <needle-drop band stop + sub-drop>. Her breath in the silence. Banner ON: "Visiting Pablo Escobar in 1987 🇨🇴". | hard |
-| 1.2 (2s) | **The reverse — scale revealed THROUGH the silence:** the crowd parting in a diagonal, dancers frozen mid-move, drinks half-raised, the pool glaring beyond. HIS VOICE ENTERS OFF-SCREEN OVER THIS SHOT (J-cut — first dialogue by ~2.5s, her hook law): {Pablo, off: "You walk into my house with a camera."} | hard |
-| 1.3 (2s) | **Slow push, long lens across the pool, finding the voice:** PABLO at the far table, looking up, finishing: {Pablo: "Who sent you?"} | hard |
-| 1.4 (4s) | **Her single, close — THE REVEAL, minute one (owner order 2026-08-30):** chin up, eyes ON PABLO — never the rifle. {Hazel: "Nobody sent me. (0.4) I'm from the future, Pablo. I know how your story ends."} (16 words + 0.4 pause at her neutral 211 wpm ≈ 3.9s.) | hard |
-| 1.5 (3s) | **His single, closer:** the long beat — his eyes reading her over the water; then the slow, amused half-smile of a man hearing the first genuinely new thing anyone has dared say in his house. He doesn't believe her. He's entertained. {Pablo: "Release her."} | hard |
-| 1.6 (2.5s) | **CRANE-UP WIDE resolve — the one full-party geography shot, RISING:** the grips open; she straightens her shirt; his open hand at the empty chair across the pool; the camera lifts slowly as {Pablo: "Sit."} lands and the band restarts — the party swallowing the moment from above. (Her crane grammar: scale mid-body, never the hook.) | whip-blur exit → S2 |
-EYELINES: hers→Pablo from shot 1.2 on; his→her; guards→HIM. §17: party alive at
-every edge. SFX map: band-stop, sub-drop, pool lap, ice, far macaw.
+## GLOBAL LOOKS (v8)
 
-## SCENE 2 · THE ASIDE · 9s · MUSIC: tense drone under party muffle
-| 2.1 (9s) | **Her V-mode lens, walking** (§14 forward), party bokeh streaming, one pool flare. {Hazel, hushed: "Forbes just named him one of the richest men on Earth. In six years, he'll be dead on a rooftop. He doesn't believe me yet. He will."} One eye-flick to his back on "he doesn't believe me." (v6: the aside now runs on his DISBELIEF — she told him at the gate; he laughed it off. The episode's engine is him slowly starting to believe.) | hard, on her lens drop |
+**HAZEL LOOK (Part 1 = her MODE A, era-blended dressed-up):** the owner-locked
+dress from the 3 options (PENDING PICK) + Claude-styled hair/makeup to match;
+makeup always visibly on (signature: luminous base, soft liner, defined brows,
+satin rosy-nude lip — her identity anchor), jewelry + shoes per the locked
+option. Same look every shot, all episode (continuity invariant).
+**PABLO LOOK:** pale-blue open-collar short-sleeve shirt, dark slacks, white
+sneakers (approved view set) — never changes.
+**ENVIRONMENT LUXURY LAW (Part 13):** every location carries 1-2 era-loaded
+luxury props + motivated light, named in each scene below. 1987 Hacienda Nápoles
+= tropical-baroque opulence: white colonnades and balustrades, the mounted Piper
+plane over the gate, his VINTAGE CAR COLLECTION gleaming under torches, live
+brass band, whisky and champagne service, manicured lawns against wild jungle.
+**GRADE ARC:** hard noon sun (S1-S4) → golden hour (S5-S6) → amber dusk (S7-S9)
+→ torchlit night (S10). Memory scenes: warmer, lifted blacks. Fine film grain
+throughout; 2026 is NEVER seen except through the portal (clean bright daylight
+through the ring = the grade contrast IS the reveal).
+**SCREEN GEOGRAPHY:** Hazel frame-LEFT, Pablo frame-RIGHT, every two-shot.
+**BANNER:** ON at 1.1 → OFF permanently on the cut to Scene 2. Watermark all clips.
 
-## SCENE 3 · THE LAKESHORE · 10s · MUSIC: playful sting ON the blast, out for the lens tag
-| 3.1 (2s) | **Torchlit wide:** party spilling to the black lakeshore, guests daring each other toward the water. | hard, mid-laugh |
-| 3.2 (2s) | **The DETONATION:** water blasts — hippo surfaces huge in spray <deep water blast>; screaming guests scatter through frame; Hazel jumps a full step. EDIT: micro SPEED-RAMP on the spray peak (her dance/teeth-beat ramp). | hard, on the scatter |
-| 3.3 (3s) | **Pablo's unmoved single with RACK FOCUS:** focus pulls from the falling spray in foreground to his unmoved torchlit face sharpening behind it (her signature depth pull); amused. {Pablo: "Four hippos. From Africa. What I want, I bring."} Hippo in continuous motion behind (§17). | hard |
-| 3.4 (3s) | **Her lens, deadpan,** chaos-laughter behind: {Hazel: "He bought hippos."} EDIT (optional, her Elizabeth "P.S." device): small secondary text, lower-left, plain: "p.s. the hippos matter later" — owner call. | hard → S4 doorway |
+---
 
-## SCENE 4 · THE NUMBER · 13s · MUSIC: playful → **TOTAL DROPOUT on "A week."** → resumes low
-| 4.1 (2s) | **Door-swing reveal, low wide:** warehouse doors open INTO frame; cash canyon to the ceiling, slatted light, dust motes. | hard |
-| 4.2 (3s) | **Two-shot at the stacks:** he pats a stack once; she catches a tossed rubber band. {Hazel: "How much do you actually make?"} {Pablo: "Four hundred and twenty million dollars."} | hard |
-| 4.3 (2.5s) | **Shot-reverse singles on the beat:** {Hazel: "A year?"} — his heavy-lidded pause — {Pablo: "A week."} → **CRASH ZOOM punch-in on his face + bass drop + music dies** (digital, from this take). | hard in silence |
-| 4.4 (3s) | **Macro insert:** her hands wrapping the brick — <sharp band snap> — tilt up to her lens tag: {Hazel: "So much cash that rats eat ten percent of it."} <small skitter deep in the stacks> | hard |
-| 4.5 (2.5s) | **Deep-canyon wide:** his back half-turned far down the aisle, thrown away: {Pablo: "The rats are a business expense."} The two silhouetted at the far door. | hard → S5 light flare |
-LOCK: cash only, never product.
+## SCENE 1 · THE SEIZURE — cold open · 16s
+MUSIC: live brass band mid-song, full volume → stops MID-NOTE at the grab →
+DEAD SILENCE (only pool lap, ice, breath) → band restarts under "Sit."
+AMBIENCE BED: open-air party — glasses, laughter, pool water, far macaw; reverb
+= open tropical night, close voices dry.
+ENV LUXURY: torch-lit pool terrace, his vintage cars parked in a gleaming row
+beyond the crowd, white-jacketed waiters frozen mid-pour when the music stops.
+CONTINUITY-IN: cold open, sound at frame zero (the band's last note).
 
-## SCENE 5 · THE PROMISE · 3s + 12s · MUSIC: none → the single warm piano figure (only here)
-| 5.1 (3s) | **Static two-shot in the doorway light:** {Hazel: "Were you always rich?"} He stops. {Pablo, quiet: "No."} His eyes unfocus past camera. | J-CUT: rain audio starts OVER his eyes → hard |
-| 5.2 (3s) | **MEMORY, wide dusk:** Medellín hillside, decades back — brick lanes, cooking smoke; a thin BAREFOOT BOY small against the city lights. Rain on tin. | hard |
-| 5.3 (6s) | **Hazel IN the memory,** a few steps from the boy, exactly as she is; drift to her lens turn. {Hazel, quiet: "He grew up poor, right here in Medellín. He told his mother: I am poor — but I will never die poor. I promise."} | hard |
-| 5.4 (3s) | **The boy's profile, macro-close:** rain on his curls, eyes on the city. {Pablo, present-day V.O.: "I kept my promise."} | hard back to present eyes → S6 |
-EYELINES: boy→city, never camera; Hazel→boy→lens.
+**1.1 (2.5s) — FRAME ONE = THE GRAB**
+- FRAME: medium-close SINGLE on Hazel (she owns ~80% of frame), chest-up cut at
+  the collarbone-to-sternum line, 5% headroom, faces upper third; the two guards
+  are edge-slices left and right (hands and forearms pinning her arms), the
+  rifle rising into the right edge. Party chaos = bokeh behind.
+- CAMERA: static, eye-level. No move — the violence is in the frame, not the lens.
+- PERFORMANCE (shock spec, controlled): her eyes snap wide → lips part in a
+  silent intake → one startled half-step → then the COMPOSURE arrives: chin
+  lifts, breath steadies audibly in the new silence. (Host never panics — the
+  recovery IS the hook's character beat.)
+- SOUND: band stops mid-note in the first 0.5s <needle-drop stop + sub-drop>;
+  her single breath carries the silence. Banner ON.
+- CUT: hard, on her chin lifting.
 
-## SCENE 6 · THE BARRIO — the turn · 10s · MUSIC: warm theme through Rosa → HARD OUT under her lens piece
-| 6.1 (3s) | **Street-level lateral drift:** golden hour, kids on the pitch, ball shadows; ROSA takes Hazel's hand in both of hers: {Rosa: "Don Pablo built our whole street. God bless him."} | hard |
-| 6.2 (3s) | **Pablo among the kids, medium:** he rolls the ball back; her question from off-frame: {Hazel: "Why give it away?"} — his eyes stay on the kids: {Pablo: "Because I remember."} | hard |
-| 6.3 (4s) | **Her lens, steady, apart from them:** jokes gone. {Hazel, quiet: "The help is real. But he kills journalists. Judges. Policemen."} | hard → S7 veranda |
+**1.2 (2s) — THE REVERSE, SCALE THROUGH SILENCE**
+- FRAME: wide from behind/over her shoulder — the crowd parting in a diagonal,
+  dancers frozen mid-move, drinks half-raised, torch flames the only movement,
+  the lit pool glaring beyond, the car row glinting far right. 25% headroom of
+  palms and night sky (two-shot/master headroom spent on environment).
+- CAMERA: static wide. J-CUT: his voice enters OVER this shot — first dialogue
+  at ~2.5s of runtime (her hook law).
+- DIALOGUE: {Pablo, off, unhurried, low: "You walk into my house with a camera."}
+  (7 words @ his deliberate 168 wpm ≈ 2.5s, relaxed — menace by calm.)
+- CUT: hard on his last word.
 
-## SCENE 7 · SILVER OR LEAD + THE CONGRESS · 3s + 3.5s + 2.5s + 9s · MUSIC: the drone returns
-(v6.2, owner pick "B" 2026-08-30 after the 10-video framing study: the old single
-locked chest-up two-shot broke framing law 1 — both spread to edges, dead center.
-Recut her way: waist-up two-shot for the question → hard cut to a DIRTY SINGLE on
-Pablo for the menace line, per law 2.)
-| 7.1a (3s) | **LOCKED WAIST-UP TWO-SHOT (framing law 1),** amber veranda: Hazel frame-left, Pablo frame-right, standing close, BOTH fully inside frame; bottom edge cuts at the belt line; ~20% headroom of veranda beams + tropical green; eye-level. {Hazel: "And the people who say no to you?"} He listens, half-smile fixed. | hard, as his lips part |
-| 7.1b (3.5s) | **DIRTY SINGLE on Pablo (framing law 2 — the menace close-up):** over Hazel's shoulder — her soft-focus hair/shoulder slicing the LEFT edge (~15% width), his face owning the center-right ~75%; minimal headroom (curls graze the top edge); bottom cut at the collarbone; his eyes locked on her, unblinking. {Pablo, almost gentle: "Everyone accepts something. Silver… or lead."} Nothing moves but his mouth. | hard, on the last word |
-| 7.1c (2.5s) | **Her lens, hushed (plain-language rule),** his stillness soft behind her shoulder: {Hazel, hushed: "Silver is money. Lead is a bullet."} (7 words at her quick-hushed 185 wpm ≈ 2.3s.) The plainly-told fact IS the chill. | cut + <gavel strike> |
-| 7.2 (3s) | **MEMORY, chamber wide:** 1983 Congress floor — the minister at the podium, arm extended, pointing; deputies turning; the murmur rising. | hard |
-| 7.3 (3s) | **Tracking with Pablo:** he rises, buttons his jacket, walks out unhurried through the storm of voices. | hard |
-| 7.4 (3s) | **Hazel at the chamber wall, lens:** {Hazel, hushed: "He got himself elected to Congress. The justice minister stood up and told the country the truth. Months later, that minister was murdered."} | hard back to his UNCHANGED calm at the veranda → S8 |
-LOCK: the murder is spoken, never shown.
+**1.3 (2s) — THE PUSH FINDS HIM**
+- FRAME: long-lens slow PUSH across the pool (compressed, shallow DOF) finding
+  PABLO at the far table — dirty single: a guest's shoulder slices the left
+  edge; his seated figure center-right, waist-up, whisky glass by his hand.
+- CAMERA: the episode's first move — a slow push-in, EARNED (realization: the
+  voice gets a face). Smooth, no handheld.
+- PERFORMANCE: he looks up without raising his head — eyes first (heavy-lidded,
+  amused), the faint permanent half-smile already in place.
+- DIALOGUE: {Pablo: "Who sent you?"} (0.2s gap after 1.2 — tight exchange gap.)
+- CUT: hard, on the question mark.
 
-## SCENE 8 · THE FEAR · 15s · MUSIC: near-nothing
-| 8.1 (3.5s) | **Her clean single,** fan-shadow ticking: {Hazel: "February. Your partner Lehder — taken to an American prison. Are you afraid?"} | hard |
-| 8.2 (6.5s) | **His slow push-in to close-up** (the warmth stopping: half-smile gone, jaw set, thumb pressing the armrest, no blink): {Pablo: "I would rather have a grave in Colombia… (0.5) …than a jail cell in the United States."} | hard on his window-turn |
-| 8.3 (5s) | **Her lens aside,** his profile soft behind: {Hazel, hushed: "Next month the Supreme Court kills the extradition treaty. He wins. For six years."} One glance at his profile on "he wins." | hard → S9 dusk |
+**1.4 (4s) — HER SINGLE — THE REVEAL, MINUTE ONE**
+- FRAME: clean single, chest-up, she owns the center; guards' knuckles just
+  inside both edges (the grip visible, the men not); 5% headroom; rifle muzzle a
+  soft diagonal in the corner (grip-only fallback if filtered).
+- CAMERA: static, eye-level. Stillness = her nerve.
+- PERFORMANCE: eyes ON Pablo — never the rifle, never the lens; a 0.4s beat of
+  held eye contact before she speaks (pre-line composure); on "future" a slight
+  chin lift — conviction, not plea.
+- DIALOGUE: {Hazel, level, quick: "Nobody sent me. (0.4) I'm from the future,
+  Pablo. I know how your story ends."} (16 words + pause @ her neutral 211 wpm
+  ≈ 3.9s; the pause lands BEFORE the bomb — her strategic-pause law.)
+- CUT: hard on the last syllable.
 
-## SCENE 9 · THE MONOLOGUE · 16s · MUSIC: the one string swell, under sentence two
-| 9.1 (3s) | **Her question off a soft single,** dusk gold: {Hazel: "If people remember one thing about you, what should it be?"} | hard |
-| 9.2 (13s) | **THE LONGEST SHOT OF PART 1 — her monologue grammar:** one slow push-in, medium → tight on the heavy-lidded eyes, dusk crossing his face: {Pablo: "That I came from nothing, and I bowed to no one." (0.5) "They will call me a monster. My people will call me a saint. Either way — they will say my name."} Eyes: hers→his for sentence one; past camera for sentence two; back to her on "my name." | hard → S10 gate |
-(Proximity-escalation law: S8–S10 shots run longer and tighter than S1–S4's.)
+**1.5 (3s) — HIS SINGLE — THE LAUGH-ONSET**
+- FRAME: dirty single mirroring 1.3, tighter: shoulders-up, his face owns
+  center-right ~75%, a guard's sleeve slicing the left edge; minimal headroom,
+  curls graze the top.
+- CAMERA: static. (Deadpan law: never move on an amusement beat.)
+- PERFORMANCE (laugh-ONSET only, Part 12): one slow blink → the heavy stare
+  softens → mouth corners twitch upward — and STOP there. No laugh. He is
+  entertained by the first genuinely new thing said in his house in years.
+  1.2s of this silence (post-absurdity hold) before he speaks.
+- DIALOGUE: {Pablo, soft: "Release her."} (≈92 wpm command register — two words,
+  authority pause before them; her "Release her" Victoria model, measured.)
+- CUT: hard, on the grips opening.
 
-## SCENE 10 · THE CLIFFHANGER — belief lands, the portal opens · 26.5s · MUSIC: all out from his question; the party music itself slows/deepens under the portal (diegetic time-bend); silence on the crossing; sub-drop on black
-(v6: the reveal moved to shot 1.4 — this scene is no longer the reveal. It is the
-episode's payoff arc completing: the man who LAUGHED at her claim in minute one has
-watched her know things all day, and at the gate HE is the one who brings it back.
-v6.1, owner directive 2026-08-30: the question is now ANSWERED — he agrees, she
-opens the time portal, and Part 1 ends on them stepping toward it; Part 2 opens at
-this same spot with them entering it. The dangling-question ending is gone.)
-| 10.1 (3s) | **Walking two-shot** to the gate, the mounted plane black overhead; camera stops when they stop. {Hazel: "How does this end, Pablo?"} | hard |
-| 10.2 (6s) | **His single:** {Pablo, small smile: "It doesn't. Colombia and I have an arrangement." (0.4, the smile fading, studying her) "…But you already know. You've known all day."} (15 words + 0.4 pause at his deliberate 168 wpm ≈ 5.8s.) He is not joking anymore — the first time all day he takes her claim seriously. | hard |
-| 10.3 (2.5s) | **HER single — the confirmation, to HIM, never the lens:** {Hazel, quiet: "I do." (0.5) "All of it."} (5 words + 0.5 pause at her quiet 158 wpm ≈ 2.4s.) | hard ON the last syllable |
-| 10.4 (3s) | **HIS reaction, static close-up:** the face changes — first time all day. Silence. | hard |
-| 10.5 (2s) | **Her half-step closer, tight:** {Hazel: "Do you want to see how it ends?"} | hard |
-| 10.6 (2s) | **HIS static close — the answer:** the long beat, his eyes not leaving hers; then, quietly: {Pablo: "Show me."} (2 words + 0.6 beat at his deliberate 168 wpm ≈ 1.3s.) | hard ON the word |
-| 10.7 (4s) | **THE PORTAL'S BIRTH (our device — designed to beat hers):** {Hazel, small smile: "Okay. Let's go."} (3 words at her neutral 211 wpm ≈ 0.9s) — she turns her open palm upward and a **single golden spark** rises from it and hangs in the night air <the distant party music SLOWS AND DEEPENS — time itself bending audibly — a slow, huge clock-tick beneath>. A beat. Then the spark **UNZIPS the night vertically and BLOOMS into the ring**: an oval doorway ~2.5× human height, its rim two counter-rotating currents of golden ember-dust orbiting like the sweep of a clock, faint concentric heat-haze ripples spreading through the air around it — and through its center, with true depth: **the same gate in FULL 2026 DAYLIGHT** — tour buses, colored flags, families — and that daylight **SPILLS OUT of the hole into the 1987 night**, a widening wedge of morning laid across the dark ground and up both their bodies. Two times of day in one frame. | hard |
-| 10.8 (4s) | **THE ENTRY — static wide (her framing, our physics):** the whole world leans toward the ring — torch flames bending, moths spiraling into the glow, dust and fallen leaves lifting and streaming slowly toward it, the pool's far surface rippling toward it, her hair drifting off her shoulder. His face lit by daylight-at-night, belief total. The two walk INTO the doorway back-to-camera, the daylight wrapping their silhouettes — the instant they cross, ALL SOUND STOPS; the ring **collapses inward to the single spark it was born from**, the spark dies, night restored → **SMASH TO BLACK → card 【PART TWO】** | — |
-PORTAL LOCK (series device, permanent — OURS, designed 2026-08-30 to exceed her
-measured device; her spec kept as research baseline in
-`part2-bringing-to-future-study.md`): (1) BIRTH — a single golden spark from
-Hazel's palm hangs, then unzips the air vertically and blooms into the ring
-(hers just appears pre-made); (2) FORM — vertical oval doorway ~2.5× human
-height, rim of two counter-rotating golden ember-dust currents orbiting like a
-clock's sweep, concentric heat-haze ripples around it; (3) THE LIGHT — the
-destination visible through the center with true depth, its OWN time of day, and
-its light SPILLS through into the present scene (daylight pouring into night, or
-firelight into dusk); (4) THE WORLD LEANS IN — flames bend, dust/leaves/moths
-stream toward it, water ripples, hair drifts: physics sells the magic; (5) SOUND
-— nearby diegetic music slows and deepens as it opens, a huge slow clock-tick
-under a resonant hum; total silence the instant a character crosses; the ring
-collapses back to its birth-spark and dies. Characters enter back-to-camera,
-static wide. Her forward-jump grammar still holds: NO portal on forward jumps —
-this device appears only at departures/returns. FEASIBILITY FALLBACK (flag at
-the portal TEST render, before production): if Seedance can't hold the
-see-through destination cleanly, the core falls back to opaque golden blaze
-(her style) with the light-spill kept — owner decides on the test.
+**1.6 (2.5s) — CRANE-UP WIDE RESOLVE**
+- FRAME→CAMERA: the one full-party geography shot — camera RISES slowly (crane,
+  EARNED: scale resolve mid-body, her crane law) as the grips open, she
+  straightens her dress, and his open hand gestures to the empty chair across
+  the pool. Frame fills with the whole terrace: pool, band, car row, colonnade,
+  the plane's dark silhouette on the gate far beyond.
+- PERFORMANCE: the party unfreezes around them — dancers resume mid-move,
+  waiters pour, a laugh returns somewhere (the world breathing again, §17).
+- DIALOGUE: {Pablo: "Sit."} — the band restarts ON the word (music re-entry
+  synced to power).
+- CUT: whip-blur exit → S2. CONTINUITY-OUT: his command seats her INTO the
+  party = the walking aside is motivated.
+
+## SCENE 2 · THE ASIDE · 9s
+MUSIC: tense low drone UNDER the muffled party (ducked below her voice, swells
+0.5s in her breath gaps). BANNER OFF on this cut.
+AMBIENCE: party heard through a wall of bodies — muffled brass, close footsteps
+on stone, one pool splash. CONTINUITY-IN: zero-lag — party sound continuous
+across the cut, louder→muffled as she moves.
+
+**2.1 (9s) — HER V-MODE LENS WALK (fourth-wall conspiracy mode)**
+- FRAME: chest-up single to her lens, she owns center, 5% headroom, face upper
+  third (captions land clean center-lower); party bokeh streaming behind her
+  moving shoulder; one pool flare crosses the frame.
+- CAMERA: her handheld selfie energy — smooth walk-with, slight organic
+  breathing (motion hygiene: no shake).
+- PERFORMANCE (host conspiratorial-aside repertoire, Part 14): chin lowered,
+  voice hushed under the party, one eyebrow-flash on "richest men on Earth";
+  the ONE eye-flick to his back lands exactly on "he doesn't believe me"; on
+  "He will." — the asymmetric corner smirk, held 0.5s (the silent tag).
+- DIALOGUE: {Hazel, hushed, quick: "Forbes just named him one of the richest
+  men on Earth. In six years, he'll be dead on a rooftop. He doesn't believe me
+  yet. He will."} (28 words @ 211 wpm ≈ 8s; clause pauses 0.2s; the 0.4s pause
+  before "He will.")
+- CUT: hard on her lens-drop. CONTINUITY-OUT: topic chain — walking the party
+  edge delivers her to the lakeshore crowd-dare.
+
+## SCENE 3 · THE LAKESHORE · 10s
+MUSIC: none until the blast → one playful sting ON the spray peak → OUT
+completely for her deadpan tag (dropout-on-punchline law).
+AMBIENCE: night lake — water lap, insect bed, party spilling downhill behind;
+reverb opens (bigger night air). ENV LUXURY: servants holding torches at the
+waterline; silver drink trays abandoned on the grass.
+
+**3.1 (2s) — TORCHLIT WIDE**
+- FRAME: wide master, the party spilling to the black water's edge, guests
+  daring each other toward it; 30% headroom of night jungle (environment law).
+- CAMERA: static. SOUND-IN at 0s: a dare-laugh and a shriek (zero-lag).
+- CUT: hard, mid-laugh (cutting on comedy's rising edge).
+
+**3.2 (2s) — THE DETONATION**
+- FRAME: mid-wide on the waterline; the water ERUPTS — hippo head surfacing
+  huge in backlit spray; guests scatter THROUGH frame both directions; Hazel
+  (frame-left, dress catching torchlight) jumps a genuine full step.
+- CAMERA: static frame, micro SPEED-RAMP on the spray peak (her dance-beat
+  ramp — earned by shock). <deep water blast + screams>
+- PERFORMANCE: her startle is REAL and quick (shock spec, comic register:
+  jump → hand to chest → half-laugh exhale).
+- CUT: hard on the scatter.
+
+**3.3 (3s) — HIS UNMOVED SINGLE, RACK FOCUS**
+- FRAME: dirty single — falling spray soft in foreground, HIS torchlit face
+  sharpening behind it as focus pulls (her signature depth pull, earned:
+  revelation-of-character); face center-right 75%, collarbone cut.
+- PERFORMANCE (deadpan commitment law): he has not moved AT ALL — same
+  half-smile, glass still level in his hand; total stillness while the world
+  runs. Amused eyes only.
+- DIALOGUE: {Pablo, deadpan-warm: "Four hippos. From Africa. What I want, I
+  bring."} (9 words @ 168 wpm, clipped sentences, 0.2s gaps — his ping-pong
+  cadence; hippo in continuous motion behind, §17.)
+- CUT: hard AFTER a 1-beat post-line hold on his stillness (never cut on the
+  punchline).
+
+**3.4 (3s) — HER LENS TAG — THE DEADPAN DROP**
+- FRAME: chest-up lens single, chaos-laughter and torch flicker behind.
+- PERFORMANCE (Part 14 flat-lidded deadpan drop): her party smile COLLAPSES to
+  a flat mouth + half-lidded stare into the lens — hold 0.5s BEFORE the line
+  (pre-punchline freeze), deliver flat, hold 0.8s AFTER (the silent tag).
+- DIALOGUE: {Hazel, flat: "He bought hippos."} (3 words — the micro-line law.)
+  Optional "P.S." overlay lower-left (owner call at edit).
+- CUT: hard → S4 doorway. CONTINUITY-OUT: topic chain — the excess he just
+  bragged about ("what I want, I bring") walks us to where the money lives.
+
+## SCENE 4 · THE NUMBER · 13s
+MUSIC: light playful underscore (ducked under every line) → TOTAL DROPOUT the
+instant "A week." lands → resumes low and wary under 4.5.
+AMBIENCE: interior — warehouse boom reverb, dust-dead air, rat skitters deep in
+the stacks; the party now a distant memory through walls. GRADE: slatted hard
+light through board gaps, dust motes (motivated single-source).
+ENV LUXURY (inverted): raw cash AS landscape — the era-loaded prop is the money
+itself, floor-to-ceiling.
+
+**4.1 (2s) — DOOR-SWING REVEAL**
+- FRAME: low wide — the doors open INTO frame; the cash canyon rises to the
+  ceiling; the two small at the threshold (Hazel left, Pablo right), 35%
+  headroom of stacked money (environment stacking law).
+- CAMERA: static low. SOUND-IN 0s: the door groan + interior boom (zero-lag).
+- CUT: hard.
+
+**4.2 (3s) — TWO-SHOT AT THE STACKS**
+- FRAME: waist-up two-shot per law 1 — both FULLY in frame, standing close,
+  belt-line bottom cut, 20% headroom of cash; he pats a stack once (prop
+  contact), she catches a tossed rubber band (real hand physics).
+- DIALOGUE (ping-pong opens): {Hazel: "How much do you actually make?"}
+  {Pablo: "Four hundred and twenty million dollars."} — 0.2s gap only.
+- CUT: hard.
+
+**4.3 (2.5s) — SHOT-REVERSE SINGLES → THE CRASH ZOOM**
+- FRAME: her clean single chest-up: {Hazel: "A year?"} → his dirty single: the
+  heavy-lidded pause (0.6s — the deliberate register's ONE long pause) →
+  {Pablo: "A week."} → **CRASH ZOOM punch-in to his eyes** (digital, from this
+  take) + bass drop + the music DIES.
+- CAMERA LAW: this is the episode's ONLY crash zoom — earned by the shock stat.
+- PERFORMANCE: zero change in his face across the zoom — the stillness inside
+  the violence of the move is the joke's dark twin.
+- CUT: hard in dead silence.
+
+**4.4 (3s) — MACRO INSERT → HER LENS TAG**
+- FRAME: macro on her hands wrapping a brick of bills <sharp band snap> — tilt
+  up into her chest-up lens tag (one motivated move, insert-to-address).
+- PERFORMANCE: eyebrow-flash on "ten percent", the incredulous half-smile of
+  the host relaying an absurd true stat.
+- DIALOGUE: {Hazel: "So much cash that rats eat ten percent of it."} <a small
+  skitter deep in the stacks answers her — sound gag, 0.5s hold on her face
+  hearing it (post-punchline hold)>
+- CUT: hard.
+
+**4.5 (2.5s) — DEEP-CANYON WIDE — DEADPAN LITERALISM**
+- FRAME: deep wide down the aisle — his back HALF-TURNED far down the canyon
+  (walking away mid-sentence = thrown-away delivery staging), the two
+  silhouetted at the far door; 30% headroom of cash walls.
+- PERFORMANCE: he doesn't stop walking, doesn't turn his head — the line
+  tossed over his shoulder, flat (deadpan literalism type 2, zero wink).
+- DIALOGUE: {Pablo, thrown away: "The rats are a business expense."}
+- CUT: hard on a light flare as the far door opens → S5. CONTINUITY-OUT: the
+  doorway light IS the next scene's first frame light.
+
+## SCENE 5 · THE PROMISE · 15s
+MUSIC: none at 5.1 → the single warm piano figure enters ONLY inside the memory
+(the episode's one warm cue), ducked under her voice, swells in her gaps.
+AMBIENCE SHIFT: doorway golden hour → MEMORY: rain on tin roofs, distant dogs,
+a mother's far-off call in Spanish; reverb = close hillside streets.
+GRADE: memory = warmer, lifted blacks (remembered light law).
+
+**5.1 (3s) — THE STOP — GRIEF ONSET**
+- FRAME: static two-shot in the doorway light, waist-up, both full in frame
+  (law 1), golden backlight rims them.
+- PERFORMANCE (grief-onset spec, Part 12): {Hazel: "Were you always rich?"} —
+  he STOPS mid-step; the half-smile drains; his eyes soften, then UNFOCUS past
+  camera (the thousand-yard arrival of memory); one audible settling breath.
+  {Pablo, quiet: "No."} (sub-100 wpm — one word, full weight.)
+- CAMERA: DEAD STATIC (grief law: the camera never moves on sadness).
+- SOUND: J-CUT — rain begins OVER his unfocused eyes 0.8s before the cut.
+- CUT: hard into the rain.
+
+**5.2 (3s) — MEMORY WIDE, DUSK**
+- FRAME: wide — Medellín hillside decades back: brick lanes, cooking smoke,
+  strung bulbs, rain-slick tin; a thin BAREFOOT BOY small against the city
+  lights below; 40% headroom of the glowing city (scale = the dream).
+- CAMERA: static. SOUND-IN 0s: rain fully arrived (the prelap pays off).
+- CUT: hard.
+
+**5.3 (6s) — HAZEL IN THE MEMORY**
+- FRAME: medium — Hazel stands a few steps from the boy, exactly as she is
+  (locked look — the impossible continuity IS the device), rain not touching
+  her; slow drift to her lens turn (one gentle move, earned: she addresses us
+  from inside his past).
+- PERFORMANCE: melancholy register — soft voice, no smile, eyes go from the
+  boy to the lens only on the quote.
+- DIALOGUE: {Hazel, quiet: "He grew up poor, right here in Medellín. He told
+  his mother: I am poor — but I will never die poor. I promise."} (25 words @
+  her quiet 158 wpm ≈ 9.5s compressed to ≈6s at gentle-quick with 0.3s pauses
+  around the quote — the quote itself slower, framed by pauses.)
+- CUT: hard.
+
+**5.4 (3s) — THE BOY, MACRO-CLOSE + V.O.**
+- FRAME: macro profile — rain beads on his curls, eyes on the city; zero
+  headroom, face fills the frame (peak-intimacy framing).
+- PERFORMANCE: the boy only breathes and watches (stillness law).
+- DIALOGUE: {Pablo, present-day V.O., being-moved register — low, slow, a
+  fraction of vocal gravel: "I kept my promise."}
+- CUT: hard back to his PRESENT eyes refocusing in the doorway (match on eyes
+  = the memory's exit door) → S6. CONTINUITY-OUT: "kept my promise" → the
+  barrio he built = the promise made visible.
+
+## SCENE 6 · THE BARRIO — the turn · 10s
+MUSIC: the warm theme carries from the memory through Rosa (duck under lines)
+→ HARD OUT the instant her ledger turn begins (the moral hinge gets silence).
+AMBIENCE: golden hour street — kids, a leather ball's thump, far radio cumbia,
+swallows; open street reverb. ENV: concrete homes HIS money built, paint still
+fresh — the luxury prop is the whole street.
+
+**6.1 (3s) — LATERAL DRIFT + ROSA**
+- FRAME: street-level lateral tracking drift (earned: procession-of-life move),
+  kids crossing foreground; ROSA takes Hazel's hand in BOTH of hers (real
+  contact, warmth staging).
+- PERFORMANCE: Rosa's sincerity is total (never comic): wet-eyed gratitude,
+  the double hand-clasp, a small nod on "God bless him."
+- DIALOGUE: {Rosa: "Don Pablo built our whole street. God bless him."}
+- CUT: hard.
+
+**6.2 (3s) — PABLO AMONG THE KIDS**
+- FRAME: medium, him rolling the ball back to the kids (prop contact), her
+  question from OFF-frame (voice leads, face follows — L-cut texture).
+- PERFORMANCE: his eyes STAY on the kids through both lines (eyeline law:
+  the answer matters more because he doesn't perform it at her).
+- DIALOGUE: {Hazel, off: "Why give it away?"} (0.3s) {Pablo: "Because I
+  remember."} (quiet sincerity — no smile, no wink; 4 words.)
+- CUT: hard.
+
+**6.3 (4s) — HER LEDGER TURN — THE MASK DROP**
+- FRAME: her chest-up lens single, apart from them; the game continues soft-
+  focus behind (life goes on around the truth).
+- PERFORMANCE (the deadpan-drop used SERIOUSLY): her warmth collapses to the
+  flat mouth + steady stare — the same expression grammar as her comedy drop,
+  now carrying dread; no eyebrow flash, no smirk; 0.5s of silent lens-hold
+  BEFORE she speaks (pre-line freeze).
+- DIALOGUE: {Hazel, quiet, plain: "The help is real. But he kills journalists.
+  Judges. Policemen."} (11 words; the three nouns clipped, 0.3s between each —
+  pause architecture as a death-toll rhythm.)
+- CUT: hard → S7 veranda. CONTINUITY-OUT: topic chain — "the people who say
+  no" question is BORN from this ledger.
+
+## SCENE 7 · SILVER OR LEAD + THE CONGRESS · 5.5s + 2.5s + 9s
+MUSIC: the tense drone returns (ducked, swells in gaps); NOTHING under 7.1b
+(the menace line plays dry); <gavel> is the scene-change sound.
+AMBIENCE: veranda — evening insects beginning, ice in a glass, the party a
+distant rumor; close dry reverb under the roof. MEMORY: chamber echo, murmur.
+GRADE: amber dusk begins here.
+
+**7.1a (3s) — LOCKED WAIST-UP TWO-SHOT (as generated, owner reviewing)**
+- FRAME: law-1 two-shot — Hazel LEFT, Pablo RIGHT, close together, both FULLY
+  inside frame, belt-line cut, 20% headroom of veranda beams + green.
+- CAMERA: locked off (menace = stillness).
+- PERFORMANCE: 0.6s stillness; her question level and quick, eyes never
+  leaving his; he listens with the fixed half-smile.
+- DIALOGUE: {Hazel: "And the people who say no to you?"} (8w @ 211.)
+- CUT: hard as his lips part (cut ON the intake).
+
+**7.1b (3.5s) — THE DIRTY SINGLE — DARK-HISTORY DEADPAN**
+- FRAME: law-2 dirty single — her soft-focus hair/shoulder slicing the LEFT
+  edge ~15%, his face owning center-right 75%, curls grazing the top, cut at
+  the collarbone; eye-level.
+- CAMERA: locked off. (The single stillest shot in the episode.)
+- PERFORMANCE (dark-history deadpan, type 9): the half-smile fades to
+  something quieter DURING the beat before speech; then the line almost
+  GENTLY — the horror is the tenderness; pauses land before "Silver" (0.4s)
+  and before "or lead" (0.25s); he does not blink ONCE; nothing moves but his
+  mouth. 0.8s post-line hold on the unblinking face.
+- DIALOGUE: {Pablo, almost gentle: "Everyone accepts something. Silver… or
+  lead."} (accepted pacing ref: 151 wpm overall, fast phonemes + true pauses.)
+- CUT: hard on the last word.
+
+**7.1c (2.5s) — HER PLAIN EXPLAINER**
+- FRAME: her hushed lens single, his stillness soft at the frame edge behind
+  her shoulder (the threat stays in frame while she translates it).
+- PERFORMANCE: hushed, zero irony (plain-language lock): flat clarity, one
+  slow blink between the sentences.
+- DIALOGUE: {Hazel, hushed: "Silver is money. Lead is a bullet."} (7w @ 185.)
+- CUT: cut + <GAVEL STRIKE> — the sound IS the time machine.
+
+**7.2 (3s) — MEMORY: THE CHAMBER (as generated, owner reviewing)**
+- FRAME: static wide from the chamber rear — the minister at the podium, arm
+  extended, POINTING; deputies turning row by row; window shafts + dust.
+  40% headroom of chamber architecture. GRADE: memory-warm, lifted blacks.
+- SOUND-IN 0s: the gavel's echo decays INTO the rising murmur (zero-lag).
+- CUT: hard.
+
+**7.3 (3s) — TRACKING WITH PABLO**
+- FRAME: lateral track WITH him (earned: the unhurried exit is the
+  characterization) — he rises, buttons his jacket with two unhurried hands
+  (prop-contact calm), walks OUT through the storm of turning heads; deputies'
+  faces blur past in foreground (depth staging).
+- PERFORMANCE: deadpan-commitment walk — no glance back, ~92 wpm body tempo.
+- CUT: hard.
+
+**7.4 (3s) — HAZEL AT THE CHAMBER WALL**
+- FRAME: her chest-up lens single against stone, the chamber soft behind.
+- PERFORMANCE: hushed countdown register; on "murdered" — a 0.4s silence and
+  NO expression change (the plainness law: the fact needs no face).
+- DIALOGUE: {Hazel, hushed: "He got himself elected to Congress. The justice
+  minister stood up and told the country the truth. Months later, that
+  minister was murdered."} (24w @ 211 ≈ 7s with pauses; "murdered" lands last.)
+- CUT: hard back to his UNCHANGED calm at the dusk veranda (the cut is the
+  commentary: nothing touched him) → S8.
+
+## SCENE 8 · THE FEAR · 15s
+MUSIC: near-nothing — a sub-audible drone; total silence inside his pause.
+AMBIENCE: interior evening — a ceiling fan's slow shadow-tick (the scene's
+metronome), one distant dog, insect wall outside. GRADE: last amber.
+
+**8.1 (3.5s) — HER CLEAN SINGLE**
+- FRAME: chest-up clean single, fan-shadow ticking across her; 5% headroom.
+- PERFORMANCE: journalist-level directness, no aside energy — this question
+  is IN the room; a 0.3s beat before "Are you afraid?" (the dare).
+- DIALOGUE: {Hazel: "February. Your partner Lehder — taken to an American
+  prison. Are you afraid?"} (13w @ 211 ≈ 3.7s incl. pauses.)
+- CUT: hard.
+
+**8.2 (6.5s) — THE GRAVE LINE — GRAVITAS PUSH**
+- FRAME: his single, medium-close → the episode's second slow PUSH-IN to
+  close-up (earned: the mask coming off).
+- PERFORMANCE (gravitas spec, full sequence): the warmth STOPS — half-smile
+  gone; posture locks; a heavy swallow; voice drops a register; thumb presses
+  the armrest (prop-contact tension); pause 0.5s mid-line; NO blink until the
+  window-turn after the line.
+- DIALOGUE: {Pablo, low: "I would rather have a grave in Colombia… (0.5)
+  …than a jail cell in the United States."} (17w @ 168 with the center pause.)
+- CUT: hard on his window-turn (motion ends the beat, not the edit).
+
+**8.3 (5s) — HER LENS ASIDE**
+- FRAME: her hushed lens single, HIS soft profile held at frame-right edge
+  behind her (threat-in-frame staging again).
+- PERFORMANCE: hushed countdown; the single glance at his profile lands
+  exactly on "he wins" (eyeline choreography).
+- DIALOGUE: {Hazel, hushed: "Next month the Supreme Court kills the
+  extradition treaty. He wins. For six years."} (16w @ 211; 0.3s before
+  "For six years.")
+- CUT: hard → S9 dusk gold. CONTINUITY-OUT: fear answered → the legacy
+  question is the natural next and last question.
+
+## SCENE 9 · THE MONOLOGUE · 16s
+MUSIC: silence → ONE string swell enters under sentence two only, ducked,
+swelling in his pauses (music breathes when he does).
+AMBIENCE: full dusk — insect wall, torches being lit somewhere, the first
+night birds. GRADE: deep gold to purple.
+
+**9.1 (3s) — HER SOFT SINGLE**
+- FRAME: chest-up, dusk gold rim light, softest framing of her all episode
+  (the hardest question asked the gentlest way).
+- DIALOGUE: {Hazel: "If people remember one thing about you, what should it
+  be?"} (12w @ 211, gentle pace — her one deliberately slower delivery.)
+- CUT: hard.
+
+**9.2 (13s) — THE LONGEST SHOT OF PART 1**
+- FRAME→CAMERA: ONE slow push-in, medium → tight on his heavy-lidded eyes,
+  dusk light crossing his face as it moves (the light itself performs).
+- PERFORMANCE (monologue law + gravitas): sentence one to HER eyes; sentence
+  two drifts PAST camera (the future he's addressing); "they will say my
+  name" returns to her — three eyeline acts; pauses: 0.5s after "no one",
+  0.4s before "Either way"; micro: one slow blink total, jaw sets on
+  "monster", the almost-pride arriving only at "my name."
+- DIALOGUE: {Pablo: "That I came from nothing, and I bowed to no one." (0.5)
+  "They will call me a monster. My people will call me a saint. Either way —
+  they will say my name."} (32w @ 168 ≈ 11.5s + pauses.)
+- CUT: hard → S10 gate. (Proximity law peak: S8-S10 longest, tightest.)
+
+## SCENE 10 · THE CLIFFHANGER — belief lands, the portal opens · 26.5s
+MUSIC: all out from his question on; then the PARTY MUSIC ITSELF slows and
+deepens as the portal opens (diegetic time-bend) + one huge slow clock-tick;
+TOTAL SILENCE the instant they cross; sub-drop on black.
+AMBIENCE: night gate — torches, the party far behind, crickets; then the
+portal's resonant hum owning the mix. GRADE: torchlit night; through the ring:
+clean 2026 daylight (the grade contrast IS the miracle).
+ENV LUXURY: the mounted Piper plane black overhead — his monument as the
+scene's cathedral.
+
+**10.1 (3s) — WALKING TWO-SHOT TO THE GATE**
+- FRAME: law-1 moving two-shot, mid-thigh-up, Hazel LEFT / Pablo RIGHT, the
+  plane's silhouette filling the headroom (environment stacking); camera
+  tracks back smoothly, STOPS when they stop (motion mirrors them).
+- DIALOGUE: {Hazel: "How does this end, Pablo?"} (6w @ 211.)
+- CUT: hard.
+
+**10.2 (6s) — HIS SINGLE — THE SMILE FADES**
+- FRAME: dirty single, her shoulder-slice left edge, his face center-right;
+  minimal headroom.
+- PERFORMANCE: the small smile through sentence one → it FADES mid-beat (the
+  0.4s pause is where belief arrives) → studying her with new stillness for
+  the second line; voice drops a register on "You've known all day."
+- DIALOGUE: {Pablo, small smile→still: "It doesn't. Colombia and I have an
+  arrangement." (0.4) "…But you already know. You've known all day."} (15w +
+  pause @ 168 ≈ 5.8s.)
+- CUT: hard.
+
+**10.3 (2.5s) — HER CONFIRMATION**
+- FRAME: her clean single, chest-up, torchlight on her face; to HIM, never
+  the lens (the audience is eavesdropping now).
+- PERFORMANCE: quiet certainty — no smile, steady eyes, the 0.5s pause is
+  hers this time.
+- DIALOGUE: {Hazel, quiet: "I do." (0.5) "All of it."} (5w @ 158.)
+- CUT: hard ON the last syllable.
+
+**10.4 (3s) — HIS FACE CHANGES — THE SHOCK SPEC**
+- FRAME: static close-up, his face alone, zero headroom.
+- PERFORMANCE (shock micro-sequence, exact): eyes SNAP wide → lips part in a
+  silent intake → total body freeze — held the FULL 3 seconds; the first
+  time all day his face has moved without permission. Silence (music gone).
+- CUT: hard.
+
+**10.5 (2s) — HER HALF-STEP CLOSER**
+- FRAME: tight single, she leans INTO his space (proximity peak of the
+  episode).
+- DIALOGUE: {Hazel: "Do you want to see how it ends?"} (8w, urgent-hushed.)
+- CUT: hard.
+
+**10.6 (2s) — "SHOW ME." — DELIBERATE CALM**
+- FRAME: his static close — the long beat (0.6s), eyes never leaving hers,
+  the freeze thawing INTO decision.
+- DIALOGUE: {Pablo, quietly: "Show me."} (command register ≈90 wpm.)
+- CUT: hard ON the word.
+
+**10.7 (4s) — THE PORTAL'S BIRTH — AWE SPEC**
+- FRAME: two-shot side-on, both fully in frame (law 1), the gate arch and
+  plane above; {Hazel, small smile: "Okay. Let's go."} — she turns her palm
+  up; a SINGLE GOLDEN SPARK rises and hangs <the party music SLOWS AND
+  DEEPENS; the huge slow clock-tick begins>; a beat — then the spark UNZIPS
+  the night and BLOOMS into the ring: clock-sweep ember rim, heat-haze
+  ripples — and through its center with true depth: THE SAME GATE IN 2026
+  DAYLIGHT — tour buses, colored flags, families — the daylight SPILLING out
+  across the 1987 night, a wedge of morning climbing both their bodies.
+- PERFORMANCE (awe spec): both heads tilt back tracking the bloom upward,
+  lips part; her hand grounds on his forearm for one beat; his face gold-lit
+  — belief total now, the wonder of a man seeing his first impossible thing.
+- CUT: hard.
+
+**10.8 (4s) — THE ENTRY — STATIC WIDE**
+- FRAME: static wide (her portal framing): the ring center-frame, the two
+  silhouetted before the burning doorway, plane black overhead; the WORLD
+  LEANS IN — torch flames bending, moths spiraling into the glow, leaves and
+  dust streaming slowly toward it, the pool's far surface rippling, her hair
+  drifting off her shoulder.
+- ACTION: they walk INTO the doorway back-to-camera, daylight wrapping their
+  silhouettes — the instant they cross, ALL SOUND STOPS; the ring collapses
+  inward to its birth-spark; the spark dies; night restored →
+  **SMASH TO BLACK → card 【PART TWO】** <one sub-drop under the card>.
 
 ---
 
