@@ -19,7 +19,24 @@ owner approval per the 4K-sequencing rule).
 
 Local working copies (gitignored, session-local only): `hazel-fashion-page/renders/`.
 
+**Owner feedback on Round 1 (2026-08-30): "not looking realistic, identity is not good."** Root cause:
+one-off `nano_banana_pro` generation from static reference stills — this project's own documented
+~90-95% identity ceiling for reference-based generation. Fix: trained a dedicated **Hazel v5 Soul**
+(`soul_id` `8201212b-cf74-4f01-ad60-079e3b748be2`, see `CHARACTER_LOCK.md`) and regenerated as Round 2.
+
+## Round 2 — same 3 looks, regenerated with the trained Hazel v5 Soul (2026-08-30)
+
+Model: `soul_2` (served as `text2image_soul_v2`) + `soul_id` `8201212b-cf74-4f01-ad60-079e3b748be2`,
+9:16, 2K. Sent to owner for a fresh realism/identity check — not yet QC'd, not yet upscaled.
+
+| # | Look | Job ID | URL |
+|---|---|---|---|
+| 1 | Red satin bodycon, thigh slit, gold cuff+hoops, black patent pumps, city rooftop dusk | `a8fe5903-0209-49eb-a365-13dfd6641417` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260830_134150_a8fe5903-0209-49eb-a365-13dfd6641417.png |
+| 2 | White corset + wide-leg trousers, diamond studs, silver chain, white pumps, studio | `cc270de0-103e-4120-9665-3ef950ffbbbf` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260830_134154_cc270de0-103e-4120-9665-3ef950ffbbbf.png |
+| 3 | Emerald satin gown, thigh slit, gold drop earrings, gold strappy heels, hotel balcony golden hour | `45b62bfd-2d5f-46de-83d1-fbfe1e85e904` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260830_134159_45b62bfd-2d5f-46de-83d1-fbfe1e85e904.png |
+
 ## Status
+- [ ] Owner confirms Round 2 identity/realism is acceptable
 - [ ] Owner picks which look(s) become profile picture / FB cover / YT banner
 - [ ] Crop/compose to platform specs (see `BRAND_KIT.md` §3)
 - [ ] Owner approval on final crops
