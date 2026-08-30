@@ -56,6 +56,12 @@ Round 1 (party looks — champagne slip `3521877c`, emerald cocktail `f2051961`,
 | 1 Ivory silk blouse + tan tailored trousers, gold hoops + chain, leather loafers | `a27934f4-17c5-4638-b1ef-a409ec23ce6d` |
 | 2 Sage-olive belted linen shirt-dress, gold pendant + studs, white sneakers | `bf0dc815-1f98-473e-a2d9-80e557d7e1f8` |
 | 3 White tailored blouse + terracotta midi skirt, pearl studs + gold bracelet, flat sandals | `15585b7f-5348-4ad1-8226-e34cc18b6718` |
+Round 2 also declined (blouse+trousers too formal, shirt-dress too casual). ROUND 3 — elegant modern midi dresses (delivered, owner to pick):
+| Option | Job |
+|---|---|
+| 1 Blush wrap midi, layered gold necklaces + hoops, tan block heels | `56717196-8f42-4fb0-afeb-dab9f2eee6c6` |
+| 2 Champagne pleated midi, gold pendant + studs, nude strappy low heels | `7b989f6d-2cb9-4fd5-bcac-4e47ae05b1b3` |
+| 3 Off-white square-neck midi w/ tonal embroidery, pearl-gold drops, cognac flats | `caff2909-a697-4fc0-b642-2ec9bea21f04` |
 Hair/makeup styled after pick. On lock: generate the WARDROBE STILL SET (full front + full 3/4 in the locked look, via N4 photo-edit) → owner approval → those stills join the reference package of EVERY Part 1 clip (N3: costume stills beat text). Knock-on: existing clips regenerate to match.
 
 ### Validation/test clips
