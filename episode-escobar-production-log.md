@@ -111,6 +111,16 @@ seed_audio fallback per standing rule.
   plain-language rule — the owner himself asked what "lead" meant, proving the
   line needed the explainer.
 
+- **HAZEL STYLING DIRECTIVE (owner, 2026-08-30, series-wide):** Hazel appears
+  PROPERLY DRESSED UP in every episode — she came from 2026: visible tasteful
+  makeup ON (identity + realism intact — face lock untouchable), jewelry, era-
+  appropriate-yet-modern outfit with shoes, and a DIFFERENT HAIRSTYLE each
+  episode (bronde color locked; style varies: down/waves/updo/ponytail/braid
+  etc.), modeled on the reference creator's own per-era styling. This refines the
+  earlier lip-tint-only episode convention (owner's call). Styling specifics per
+  episode get owner approval at the look-design stage; wardrobe/environment
+  doctrine incoming from the 10-video study (playbook Part 13 when written).
+
 ## Next steps (in order)
 1. Pablo view set derived from casting B via photo-edit (face 3/4, laughing expression w/ teeth, full-body front in scene wardrobe, full-body 3/4) → owner approval.
 2. Rosa + Young Pablo secondary views only if their clips need them (each appears once).
