@@ -353,6 +353,9 @@ exists to prevent.
 | 14 | Color & grade (era vs modern, palette, grain) | MEASURED | Part 11 |
 | 15 | Motion quality (blur, slow-mo, stabilization, artifact-hiding) | MEASURED | Part 11 |
 
+| 16 | Emotion-to-camera mapping (what earns a zoom/drone/hold) | MEASURED | Part 12 |
+| 17 | Performance patterns per emotion (micro-sequences) | MEASURED | Part 12 |
+
 MASTER RULE hook: before any prompt is finalized, walk this ledger — every
 MEASURED dimension must appear as concrete prompt text where applicable; a
 PENDING dimension relevant to the shot must be studied first, not guessed.
@@ -425,3 +428,35 @@ speed-ramps softened at portal moments; AI-artifact hygiene = stable torsos in
 dialogue, subtle head turns, real prop interactions grounding hands, clear
 subject/background separation. → matches S12/§8.2 and our prop-contact habit;
 keep "stable torso, subtle head movement" as dialogue-shot prompt text.
+
+## PART 12 — EMOTION-TO-CAMERA MAP + PERFORMANCE PATTERNS, MEASURED (2026-08-30, owner-ordered 10-video study: Anne, Victoria, Genghis, William, Joan, Marilyn, Washington, Socrates, Mary, Van Gogh)
+
+### A. The camera-per-emotion map (dimension 16)
+
+| Emotion | Camera treatment | Edit/sound |
+|---|---|---|
+| Shock/revelation | Sudden push-in or CRASH ZOOM to CU/ECU (crash zoom reserved for temporal/dimensional shock) | hold 2-3s on the frozen face; sting or breath-whoosh |
+| Sincere grief/tears | Camera goes DEAD STATIC at tight CU/ECU — never moves during peak sadness | LONGEST holds of the video (3-5s); soft piano/strings swell or near-silence; background chatter faded |
+| Awe/scale | Low angle + upward tilt with the character's rising gaze; DRONE/AERIAL only when the scale of legacy cannot fit an eye-level frame | ~4s reveal sequences; swelling score |
+| Gravitas (heavy question/answer) | Two-shot → cut to tight CU, architectural scale behind; long lingering holds | near-silence or low drone swell |
+| Laughter | Static MCU/OTS; DO NOT cut on the punchline — let it play | natural chuckle unmasked; ambient only |
+| Deadpan comedy | Locked-off frame; refuse to cut; let the silence hang | dialogue dry and front; micro music dropouts on punchlines |
+| Dignity/defiance/exit | Static profile two-shot; hold until the character has fully left frame | portal hum/score resolution |
+| Catharsis peak | Shot-size LADDER: medium → tighter → centered ECU at the single-tear peak; handheld stops moving exactly at the vulnerability peak | longest uninterrupted hold (~4.5s); score crescendo timed to the answering line |
+| Direct-address coda | Centered MCU, slow smooth push-in, unbroken lens eye contact | swelling score; end on the punch + fast black |
+| Slow push-in generally | = intimacy/realization. Crash zoom = shock only. Orbit = coda. Aerial = legacy scale. Every move must be EARNED by its beat. |
+
+### B. Performance micro-sequences (dimension 17) — write these INTO prompts, in order
+
+- **SINCERE CRY:** eyes soften → well with unshed tears → ONE tear spills and runs → lips press/tremble subtly → slow blink → head stays STILL or drops a fraction. Shoulders never heave; stillness carries it. (Full sobbing exists only at joy-grief peaks: hands rise to mouth → caught gasp → face crumples → embrace.)
+- **SHOCK:** eyes snap wide → lips part in a silent intake → total body freeze 2-3s → only then speech.
+- **AWE:** head tilts back as eyes track UP the object → mouth drops open → a grounding touch (rail, ledge, prop clutched to chest) → whispered fragment line.
+- **GRAVITAS:** posture locks → voice drops a register → slow horizontal gaze turn → heavy swallow → pauses BETWEEN clauses; eyes never leave the listener.
+- **LAUGH (3-phase):** onset — blink, stare softens, mouth corners twitch; peak — head tips back, chest expands, audible breathy laugh; settle — chin lowers, voice returns lower, warm eye contact resumes.
+- **DEADPAN:** TOTAL stillness, locked eyeline, no blink, flat inflection, a timed beat of silence before and after the line.
+- **DIGNITY EXIT:** chin lifts → steady unblinking eye contact → deliberate turn on the heel → walks away WITHOUT looking back, posture unbent.
+- **BEING-MOVED (vindication):** downcast gaze → slow blinks fighting welling → subtle chin micro-tremor → quiet fragment line; camera static tight, golden light if available.
+- Host-vs-figure comedy law: the figure stays 100% committed and grave (never plays for laughs); the HOST carries the reaction energy (eyebrow raises, open-palm gestures, fourth-wall glance).
+
+Both dimensions are prompt-text requirements: an emotional beat's shot prompt must
+carry its micro-sequence and its earned camera treatment explicitly.
