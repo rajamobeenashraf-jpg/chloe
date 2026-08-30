@@ -65,6 +65,46 @@ outliers (6 complete; 2 TikTok jobs still processing at write time, non-critical
 | chadi.lahbat — legends in stadium crowds | 435K | job_42b13ae8 (pending) |
 Plus 24-result outlier-search metadata (hooks, formats, pacing) captured in transcript.
 
+## HER OWN BRING-TO-2026 CATALOG (YouTube pass, 2026-08-30 — 10 full watch-throughs)
+
+Her YouTube (@Cosmina.Creates) carries the catalog Instagram hid: Socrates 784K ·
+Washington 120K · Victoria 45K · Nostradamus 28K · William the Conqueror 27K · Joan
+of Arc 17K · Genghis Khan 16K · Van Gogh 15K · Da Vinci 15K · Marilyn 8K (all
+watched scene-by-scene; walkthroughs in transcript). THE FORMULA:
+
+1. **Arrival = interruption at the figure's most iconic moment** (Socrates' hemlock
+   cup — "Wait, don't drink that. I'm taking you to 2026."; Joan's trial; Victoria's
+   throne room). **Victoria's hook is the owner's requested hook, verbatim: the host
+   is RESTRAINED BY TWO GUARDS until the Queen commands "Release her."**
+2. **The tour = 4–6 modern beats in escalating order:** grandeur/monument →
+   ubiquity (money, merch, currency) → myth-debunk → irony fact →
+   romanticized-art-vs-reality (Washington on the Delaware painting: "Half the men
+   were vomiting over the side." / "They left that part out.") → institutional
+   comedy (talk show, lecture hall, airport scanner, spa).
+3. **Telling the figure their own death, bluntly, is a STANDARD beat** — William
+   hears his coffin-rupture story and laughs; Genghis cries about the horse; Joan's
+   burning is confronted head-on. Never hidden.
+4. **The figure's thesis line lands just before the portal:** "A king leaves a crown
+   to his son. I left this to everyone." · "Let them remember the Conquest. Not the
+   coffin." · "They cannot unmake a saint."
+5. **Portal + host's direct-to-camera coda** with one hard fact and a punch ("She
+   never once stopped." · "Not one painting sold while he was alive. Make the thing
+   anyway.").
+6. **The choice beat:** offered the chance not to go back — the figure chooses to
+   return (Joan). The return IS the dignity.
+7. **Dangerous-figure handling — two models:** Genghis = full comedy with atrocities
+   erased (NOT usable for Escobar; violates our anti-glorification locks). William =
+   the right model: ego-stroking + blunt truths + the gravitas question ("Was it
+   worth it? The blood? All of it?"). Escobar uses the William model plus our
+   two-ledger spine.
+8. **Validated beats we independently designed:** the tour-guide-recites-his-life
+   beat (Socrates at the Acropolis), the your-fortress-is-a-gift-shop beat (William
+   at the Tower: "£30 a ticket, fridge magnets"), the that's-not-me media beat
+   (Washington at the painting), the lookalike gag (Churchill's "10 quid for a
+   photo").
+9. Nostradamus: a subversion premise + an unresolved open loop (the napkin) as
+   comment bait. Victoria: the therapy/emotional-closure beat for a guarded figure.
+
 ## THE TWO-PART ESCOBAR DESIGN (proposed to owner)
 
 ### Part 1 — "Visiting Pablo Escobar in 1987" (revisions to script v3)
