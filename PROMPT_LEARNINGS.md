@@ -103,3 +103,8 @@ with no path to the owner's login, confirmed 2026-08-29, regardless of browser e
 **Permanent rule (owner lock 2026-08-29): whenever a shot would benefit from either tool, tell
 the owner at the point the need arises — he runs it himself and sends back the result.** Never
 silently work around this, never skip it. Full rule: `CLAUDE.md`.
+
+### Local pipeline (stitching/QC)
+| # | Finding | Evidence | Date |
+|---|---|---|---|
+| P1 | **PyAV concat must assign monotonic pts explicitly** (video: frame index at 1/fps time_base; audio: running sample count at 1/rate) and flush both encoders. Passing pts=None through re-encode produced a file whose every frame stamped t=0 — unplayable for the owner, caught only when he reported it. VERIFY every stitched file before sending: decode fully, check first/last pts span the expected duration AND audio last-sample end time (sources are 32 kHz — don't assume 48k when converting samples to seconds). | seam_test_71_72 v1 vs v2, 2026-08-30 | 2026-08-30 |
