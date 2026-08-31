@@ -10,7 +10,7 @@ order. All videos `seedance_2_5`, vertical 9:16, 1080p unless noted.
 | 1 | 9.06s | `adc48e39-903c-47c6-9119-d792a372d82c` | `38a0ea72-971b-4fd9-a542-44b70181aa49` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_061217_38a0ea72-971b-4fd9-a542-44b70181aa49.mp4 |
 | 2 | 9.06s | `6fa1e2f1-dfbe-4cfa-8620-be62dd754680` | `e368ffbd-58ce-4a8b-9335-aaa91c0087d1` (v5, LOCKED — a 17s regen against later pacing-override text, job `a13942d6-a68c-4712-bfc6-d9eb3b980439`, was tried 2026-08-31 and explicitly reverted by the owner) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_094524_e368ffbd-58ce-4a8b-9335-aaa91c0087d1.mp4 |
 | 3 | 18.08s | `391868a8-07f4-4fdc-9424-0195ac068a84` (v3) | `5b33db85-0cb0-4433-8a0e-bcb558a32be0` (final, post Alexander-voice-lock regen) | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_144353_5b33db85-0cb0-4433-8a0e-bcb558a32be0.mp4 |
-| 4 | 13.06s | not recorded (v1 failed for Roman-armor anachronism; approved still's own job ID untraced) | `71c0e85b-ae43-4f17-bb1f-9fa49768f7a6` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_151431_71c0e85b-ae43-4f17-bb1f-9fa49768f7a6.mp4 |
+| 4 | 13.06s (prior video, superseded) | `60a192b4-7c94-479c-9ded-00993be165ae` (regen round 1 candidate A, 2026-08-31 — picked over B/C/D on measured lighting-continuity match to Clip 3) | video regen PENDING (prior video `71c0e85b-ae43-4f17-bb1f-9fa49768f7a6` had a confirmed Bucephalus scale-jump defect + a coverage gap; superseded, not yet regenerated) | prior (superseded): https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_151431_71c0e85b-ae43-4f17-bb1f-9fa49768f7a6.mp4 |
 | 5a-aerial | 4.06s | `29f1b825-f9ec-413e-95e8-b0066cea4a2c` | `6578c77b-2d3b-4cbd-bd3b-95e29b83f9a7` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260829_162438_6578c77b-2d3b-4cbd-bd3b-95e29b83f9a7.mp4 |
 | 5a | 7.04s | `d65624e1-98b8-4762-98a0-58e128eec26f` (v7) | `5dbe70dd-a34d-4269-a90a-54e910e3a65e` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260830_015236_5dbe70dd-a34d-4269-a90a-54e910e3a65e.mp4 |
 | 5b | 4.04s | `e3549474-e272-4917-9f3b-1bd0850a01ec` (NOT the later v10 density-lock still `84519260-6186-4e39-8f73-ddac88ad3723` — accepted mismatch, see clips.json `_status`) | `c8d3bdfd-70fc-4f44-ac70-251d81232f1c` | https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260830_022239_c8d3bdfd-70fc-4f44-ac70-251d81232f1c.mp4 |
@@ -41,7 +41,7 @@ directly (works for any completed job regardless of age).
   rather than regenerating.
 - **Clip 6b**: a rider transiently, briefly visible on the horse ~1.5-2s
   despite explicit no-rider instructions (S15). Accepted by owner.
-- **Clip 8/9a/9b**: stills generated via `nano_banana_pro` (Higgsfield),
+- **Clip 8/9a/9b/4**: stills generated via `nano_banana_pro` (Higgsfield),
   not Gemini — a one-off exception to the mandatory Gemini-stills rule
   because the ElevenLabs/creative-flow workspace was credit-blocked at the
   time, owner-approved per clip.
