@@ -62,23 +62,6 @@ export const CLIPS = [
     ],
   },
   {
-    id: "clip03",
-    duration: 5.99,
-    captions: [
-      { start: 0, end: 0.6, text: "TRIPLE WALLS" },
-      { start: 0.6, end: 0.94, text: "ON THE" },
-      { start: 0.94, end: 1.52, text: "LAND SIDE." },
-      { start: 2.06, end: 2.34, text: "A LOCKED" },
-      { start: 2.34, end: 2.86, text: "HARBOR ON" },
-      { start: 2.86, end: 3.2, text: "THE SEA" },
-      { start: 3.2, end: 3.58, text: "SIDE." },
-      { start: 4.02, end: 4.3, text: "FOR A" },
-      { start: 4.3, end: 4.96, text: "THOUSAND YEARS," },
-      { start: 4.96, end: 5.36, text: "THAT HAS" },
-      { start: 5.36, end: 5.8, text: "BEEN ENOUGH." },
-    ],
-  },
-  {
     id: "clip03b-1",
     duration: 6.042,
     captions: [
