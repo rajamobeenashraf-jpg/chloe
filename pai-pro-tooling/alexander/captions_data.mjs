@@ -8,6 +8,11 @@
 // Clip 2: text/timing reflects the FINAL locked v5 (job e368ffbd, 9.06s,
 // pre-pacing-override dialogue) after the owner reverted a 17s regeneration
 // attempted during edit assembly 2026-08-31 — see clips.json _status.
+//
+// Clip 4: timing re-measured 2026-08-31 against the v2 regeneration (job
+// 7f770fef, fixes the Bucephalus scale-jump + mother/wife coverage gap —
+// see clips.json _status); dialogue text is unchanged from v1, only the
+// per-word timestamps shifted (new take, new pacing).
 
 export const CLIPS = [
   {
@@ -95,28 +100,28 @@ export const CLIPS = [
   },
   {
     id: "4",
-    duration: 13.056,
+    duration: 13.042,
     captions: [
-      { start: 0.000, end: 0.980, text: "DARIUS PULLED" },
-      { start: 0.980, end: 1.580, text: "SOLDIERS FROM" },
-      { start: 1.580, end: 1.860, text: "MORE THAN" },
-      { start: 1.860, end: 2.380, text: "TWENTY DIFFERENT" },
-      { start: 2.380, end: 2.940, text: "PEOPLES FOR" },
-      { start: 2.940, end: 3.240, text: "THIS." },
-      { start: 3.680, end: 3.900, text: "TWENTY." },
-      { start: 4.760, end: 5.000, text: "THIS IS" },
-      { start: 5.000, end: 5.600, text: "BUCEPHALUS." },
-      { start: 6.000, end: 6.380, text: "ONLY HE'S" },
-      { start: 6.380, end: 6.660, text: "EVER BEEN" },
-      { start: 6.660, end: 7.060, text: "ALLOWED TO" },
-      { start: 7.060, end: 7.500, text: "RIDE HIM." },
-      { start: 8.120, end: 8.500, text: "THAT ONE —" },
-      { start: 8.980, end: 9.500, text: "DARIUS'S OWN" },
-      { start: 9.500, end: 9.880, text: "MOTHER AND" },
-      { start: 9.880, end: 10.140, text: "WIFE." },
-      { start: 10.780, end: 11.140, text: "CAPTURED TWO" },
-      { start: 11.140, end: 11.640, text: "YEARS AGO." },
-      { start: 12.200, end: 12.660, text: "STILL HERE." },
+      { start: 0.000, end: 1.040, text: "DARIUS PULLED" },
+      { start: 1.040, end: 1.660, text: "SOLDIERS FROM" },
+      { start: 1.660, end: 1.980, text: "MORE THAN" },
+      { start: 1.980, end: 2.540, text: "TWENTY DIFFERENT" },
+      { start: 2.540, end: 3.160, text: "PEOPLES FOR" },
+      { start: 3.160, end: 3.440, text: "THIS." },
+      { start: 3.900, end: 4.100, text: "TWENTY." },
+      { start: 4.780, end: 5.080, text: "THIS IS" },
+      { start: 5.080, end: 5.540, text: "BUCEPHALUS." },
+      { start: 6.020, end: 6.400, text: "ONLY HE'S" },
+      { start: 6.400, end: 6.680, text: "EVER BEEN" },
+      { start: 6.680, end: 7.040, text: "ALLOWED TO" },
+      { start: 7.040, end: 7.500, text: "RIDE HIM." },
+      { start: 8.300, end: 8.700, text: "THAT ONE —" },
+      { start: 9.140, end: 9.740, text: "DARIUS'S OWN" },
+      { start: 9.740, end: 10.120, text: "MOTHER AND" },
+      { start: 10.120, end: 10.380, text: "WIFE." },
+      { start: 11.160, end: 11.520, text: "CAPTURED TWO" },
+      { start: 11.520, end: 11.980, text: "YEARS AGO." },
+      { start: 12.420, end: 12.840, text: "STILL HERE." },
     ],
   },
   {
