@@ -530,6 +530,93 @@ bottom-center, word-pop synced; landmark place/year serif overlays on era jumps;
 portal VFX overlay; rapid fade-to-black endings. → Banner duration rule is NEW:
 our banner should die at the first location change, not persist.
 
+### MUSIC & SOUND MOVEMENTS — full scope, reverse-engineering only (owner lock 2026-08-31, permanent, no exceptions)
+
+Finalizes every music/sound finding actually reverse-engineered from watching
+the reference videos, each cited to the specific video(s) it came from —
+per owner instruction, this section deliberately excludes
+`cinematic-direction-brief.md` §15 (the "Claude is the film's sound
+designer" framework) as a SOURCE, since that section is an owner-authored
+creative-direction system adopted from the owner's own text, not something
+extracted from watching her content. §15 remains the separate, valid
+execution system this project actually generates audio under (per-clip
+generation stays music-free, the score is one continuous element generated
+once at edit stage, gated by the AUDIO MAP and Hollywood Audio Test) — it is
+not contradicted or replaced by anything below; the two simply come from
+different kinds of sources, and this section is the reverse-engineered half
+only, per the same discipline already applied to MOTION MOVEMENTS.
+
+**1. Score arc = per-scene emotional register, never one mood held throughout.**
+Source: Part 15.A, exhaustive multi-dimension study of "Visiting Anne Boleyn
+in 1536." Sequence: tense ambient drone (hook/stakes) → rhythmic tension
+score with low strings and percussive pulses (antagonist/betrayal intro) →
+melancholy string melody (the room turning against her) → sustained
+high-tension strings (a strength/defiance beat) → poignant piano/cello
+swelling into a sorrowful muted register (the tragic-irony climax) → tender
+orchestral swell with a resonant fading chord (farewell/resolution).
+Independently corroborated (`cosminacreates-reel-study.md`, 6-reel study:
+"Visiting Queen Elizabeth I in 1575," "Visiting Catherine Howard in 1542,"
+"Visiting Anne Boleyn in 1536," "Visiting Henry VIII in 1541," "Visiting
+Anne of Cleves in 1541," "Visiting Mary I in 1557"): "score shifts per
+chapter (comedic → somber → swelling strings at the close)."
+
+**2. Per-chapter motif, duck/swell mechanics, dropout-on-punchline/portal.**
+Source: Part 10, Joan of Arc reel and Genghis Khan reel studies. Each
+location/beat gets its own motif (the Joan reel's specific sequence: somber
+pads → triumphant brass → festive parade → intimate piano → final
+crescendo); music ducks low (~-18dB feel) under every spoken line, swells
+only BETWEEN lines; deliberate dropouts/silence land on punchlines and on
+the portal/threshold moment; comedy videos ride one light pizzicato bed with
+a sad-slide gag variation; the final line often lands on an unresolved low
+hit.
+
+**3. Two further dropout triggers: comedic timing and horror reveals.**
+Source: `chloe-craft-study-2026-08-20.md`, machine watch-throughs of Tudor
+London (1.15M, her #1 Short), Aztecs (1.01M, highest-engagement Short),
+Pompeii (887K, doomed-day template), and Jurassic (2:52, 4.22× breakout
+Short), plus transcripts of Cleopatra, Anne Boleyn, and Woodstock. Beyond
+punchlines and portal moments (item 2), the background music also cuts out
+hard specifically for comedic-timing beats and for horror reveals — two
+more named, distinct dropout triggers, not a generic "dropout on emphasis."
+
+**4. Doom-genre sound-collapse arc.** Source: same craft study, Pompeii
+specifically. A genre-specific sound sequence for doom/tragedy episodes:
+lively ambience → low-frequency rumble → roar/screams, collapsing in
+lockstep with the narrative tone as the episode pivots — paired with a
+pacing rule that travels with it (jokes every ~10s in the first half, zero
+jokes after the pivot).
+
+**5. Sound design is scripted per scene, never left to the model.** Source:
+same craft study (item 15 of its device list). Write an explicit sound cue
+line per scene, every episode — a documentation-discipline finding, not a
+creative register, but directly evidenced by her visible practice (layered,
+deliberate diegetic ambience choices that don't read as generic/default
+audio).
+
+**6. Distinct ambience bed per location; SFX motivates actions/cuts; portal
+sound; foley as physical texture separate from score.** Source: Part 10
+(Joan/Genghis: reverb character changes per location — stone hall wet →
+street dry → cathedral huge; SFX punctuate actions and cuts — paper rustle,
+door slide, hoofbeats; portal = deep whoosh + resonant hum; dialogue always
+clean and front) and Part 15.A (Anne Boleyn: diegetic foley used as texture
+— a bowstring creak and arrow release, a baby's giggle — grounding a scene
+physically, separate from the score).
+
+**7. Audio never touches silence at a cut — applies to the music/SFX layer,
+not just dialogue.** Source: `creative-direction.md` §25, reverse-engineered
+from `chloe-transitions-study.md`'s dedicated 25+-cut-point study of "I time
+travelled to the Titanic 1912! (Vlog)." Every cut either J-cuts the next
+scene's music/ambience 100-600ms early or runs one continuous bed under both
+shots — already built into the EDITING/PACING MOVEMENTS scope (Part 3, item
+1); restated here because it governs the music/SFX layer specifically, this
+section's own concern, not just dialogue/narration continuity.
+
+**Applies project-wide, this episode and all others**: before finalizing
+any scene's audio design (per §15's own AUDIO MAP step), check items 1-7
+above as the reverse-engineered evidence base informing that design,
+alongside the Camera Technique Menu, MOTION MOVEMENTS, and EDITING/PACING
+MOVEMENTS scopes already built this session.
+
 ## PART 11 — HER VOICE, GRADE & MOTION RULES, MEASURED (Washington study)
 
 VOICES: strict binary — figure = lower pitch, measured cadence, formal
