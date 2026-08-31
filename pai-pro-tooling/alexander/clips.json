@@ -181,7 +181,7 @@
       "continuity": "The two armies' equipment NEVER mixes: bronze-and-crimson cavalry from the left, varied Persian contingents with wicker shields, turbans, patterned fabrics on the right. Screen direction LEFT-to-RIGHT.",
       "sound": "Hoofbeats accelerating, then the impact itself — a timber-and-metal mass collision landing over the roar. Close: leather, breath, individual cries; middle: massed hooves, shouted commands; far: continuous unbroken roar.",
       "endingState": "The breach torn open right-of-center, break still spreading outward; the far line still holding; dust thickened over the contact point.",
-      "_status": "VALIDATED v2 (job 63fa03dd-935b-4936-9990-cb8bfd5a9fc6, owner-approved 2026-08-29). Regenerate only with fresh owner approval per §19."
+      "_status": "VALIDATED v2 (job 63fa03dd-935b-4936-9990-cb8bfd5a9fc6, owner-approved 2026-08-29). RECONFIRMED 2026-08-31: edit-stage Gemini eyes flagged a CONFIRMED severity-3 physics finding at ~4.1s (a defender launched with an unnaturally floaty horizontal trajectory during the charge). Owner reviewed the clip directly and approved it as-is (waived) rather than regenerate — same category as 6b's S15 transient-rider and 5c's S13 motion ceiling. Regenerate only with fresh owner approval per §19."
     },
     {
       "id": "6b",
