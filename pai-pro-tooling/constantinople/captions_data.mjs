@@ -384,16 +384,16 @@ export const CLIPS = [
   },
   {
     id: "clip13b",
-    duration: 7.559,
+    duration: 8.917,
     captions: [
-      { start: 1.66, end: 2.22, text: "LISTEN." },
+      { start: 1.74, end: 2.22, text: "LISTEN." },
       { start: 3.22, end: 3.58, text: "THEY'RE NOT" },
       { start: 3.58, end: 3.98, text: "SCREAMING." },
-      { start: 4.28, end: 4.64, text: "THEY'RE PRAYING." },
-      { start: 5.62, end: 6.08, text: "BUT NO" },
-      { start: 6.08, end: 6.48, text: "ONE CAME" },
-      { start: 6.48, end: 6.82, text: "TO THEIR" },
-      { start: 6.82, end: 7.1, text: "HELP." },
+      { start: 4.28, end: 4.66, text: "THEY'RE PRAYING." },
+      { start: 5.52, end: 5.88, text: "BUT NO" },
+      { start: 5.88, end: 6.28, text: "ONE CAME" },
+      { start: 6.28, end: 6.64, text: "TO THEIR" },
+      { start: 6.64, end: 6.9, text: "HELP." },
     ],
   },
   {
