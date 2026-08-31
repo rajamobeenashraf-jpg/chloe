@@ -1,1 +1,12 @@
 .claude/settings.local.json
+
+# Generated video/image files stay out of git per CLAUDE.md standing rule —
+# retrievable from PAI/Higgsfield by job ID; the manifest is the durable record.
+pai-pro-tooling/*/assets/
+pai-pro-tooling/*/qc/*.mp4
+pai-pro-tooling/*/qc/*.ass
+pai-pro-tooling/*/qc/durations.json
+# Intermediate scratch files for the caption pipeline (word_chunks*.json is
+# kept, per pai-pro-tooling/troy/'s existing precedent, as useful reference data)
+pai-pro-tooling/*/lines*.json
+pai-pro-tooling/*/*_chunks.wav

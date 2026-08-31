@@ -2,8 +2,15 @@
   "_note": "Alexander/Gaugamela v9 — per-clip fields consumed by build_prompt.mjs. Scene/timeline/continuity text here is drawn from the approved script table; per §9 stage 8, FINALIZE each clip's timeline/startingState/endingState against episode-alexander-production-breakdown.md (the full 15-field direction) before generation, and log any edit. startImage: fill with the approved composition-lock still's job ID for hard-geometry shots (learnings S2). audioRef: fill once the episode voice reference exists (§31).",
   "clips": [
     {
-      "id": "1", "duration": 9, "mode": "V", "hazel": true, "characters": ["ALEXANDER"],
-      "grade": "dawn", "battle": false,
+      "id": "1",
+      "duration": 9,
+      "mode": "V",
+      "hazel": true,
+      "characters": [
+        "ALEXANDER"
+      ],
+      "grade": "dawn",
+      "battle": false,
       "environment": "Pre-dawn interior of a Macedonian command tent at the Gaugamela camp: lamplight and a brazier, canvas walls, a simple cot. Two armed Macedonian guards stand motionless over the sleeping man. FIRST FRAME already shows this strange image.",
       "scene": "LINEAR OPEN, hook front-loaded. Hazel whispers to her own lens while armed guards watch a sleeping man by lamplight; she glances back at the cot mid-line; the last ~3 seconds HOLD on her slow deadpan into the lens, no words.",
       "dialogue": "HAZEL (whisper): \"Gaugamela. 331 BC. Tonight, an empire two hundred and twenty years old gets a new owner — and the man who's about to take it—\" (glance back at the cot) \"—is still asleep.\" Alexander sleeps; he never speaks.",
@@ -13,21 +20,38 @@
       "endingState": "Her held deadpan filling frame, eyes to lens; cot and guards unchanged behind her."
     },
     {
-      "id": "2", "duration": 17, "mode": "3P", "hazel": true, "characters": ["ALEXANDER", "PARMENION"],
-      "grade": "dawn", "battle": false,
+      "id": "2",
+      "duration": 9,
+      "mode": "3P",
+      "hazel": true,
+      "characters": [
+        "ALEXANDER",
+        "PARMENION"
+      ],
+      "startImage": "6fa1e2f1-dfbe-4cfa-8620-be62dd754680",
+      "grade": "dawn",
+      "battle": false,
       "environment": "Same command tent, minutes later; lamplight, first grey pre-dawn light at the tent flap.",
       "stillComposition": "The instant Parmenion bursts in and shakes the waking king awake — Parmenion's hand gripping Alexander's shoulder, mid-shout, weight forward and tense. Alexander is caught mid-rise from the cot, one hand reaching toward his sword belt, face calm despite being startled awake. Hazel stands a few steps back and to the side, near the tent's edge, watching the exchange with alert attention — a genuine bystander physically present in the room, not narrating to any lens, hands empty at her sides. All three figures fully visible together in one wide external frame: Parmenion and Alexander form the foreground focal action; Hazel is a clear, readable secondary figure in the same space; believable eyelines and blocking; real depth and separation between the three bodies and the tent behind them. CAMERA: a real external observer's framing, eye-level, positioned inside the tent at a natural viewing distance, capturing all three figures together in one frame — no camera, phone, or rig in anyone's hand, no POV distortion, no fisheye, no arm's-length selfie perspective.",
       "scene": "Parmenion strides in visibly rattled and shakes the sleeping king awake. Alexander wakes instantly calm, already reaching for his sword belt, unhurried. Mid-scene a wax tablet is pressed into Hazel's hands without explanation; she fumbles the stylus (running-gag plant).",
-      "timeline": "0-1s: Parmenion enters, shakes him. 1-6.5s: Parmenion's two urgent lines land back-to-back (22 words @ 240 wpm). 6.5-8s: Alexander wakes calm, reaches for sword belt. 8-14.8s: Alexander answers, then asks Hazel (19 words @ 168 wpm, near-natural pace with emphasis, no multi-second silences). 14.8-15.2s: her hesitation beat, tablet freshly in hand. 15.2-17s: Hazel's answer (6 words @ 198 wpm).",
-      "dialogue": "PACING IS EXPLICIT PER CHARACTER AND MUST BE FOLLOWED EXACTLY (corrected per short-form retention rule — near-natural rates, NOT sub-natural, weight carried by emphasis and pause PLACEMENT, never by an overall slow rate) — do not apply one uniform tempo across this exchange; the contrast between Parmenion's urgency (~240 wpm) and Alexander's measured calm (~168 wpm) IS the scene's performance point, sustained the whole clip. PARMENION (fast, clipped, breathless with urgency, shaking him, ~240 wpm): \"My lord. MY LORD.\" — the second \"MY LORD\" louder and sharper than the first, no space between his two lines. PARMENION (still fast, words tumbling just behind his own movement, worked up, ~240 wpm): \"You could have taken them in the dark last night. Why do you STILL refuse a night attack?\" ALEXANDER (measured and economical at a near-natural pace, ~168 wpm — even while his hands move quickly buckling armor, his voice stays unhurried through EMPHASIS on key words and brief natural pauses between sentences, NOT multi-second silences and NOT a suppressed word rate): \"I will not steal a victory, Parmenion. Let it be daylight, and let it be earned.\" ALEXANDER (to Hazel, still measured, ~168 wpm, half-amused, not rushed, looking directly at her as he speaks): \"You write quickly?\" HAZEL (HER EYES ARE THE MOST IMPORTANT DETAIL OF THIS BEAT: the instant Alexander's voice turns to address her, her eyes lift OFF THE TABLET and lock onto his face — this eye contact is held, unbroken, for the rest of the shot; she does NOT look back down at the tablet, the stylus, her hands, or anywhere else while she is speaking — a full beat of hesitation before she speaks at all — thrown by the tablet suddenly in her hands, not composed yet; then a dry, slightly startled-amused delivery, ~198 wpm (Hazel-only +10% stack applied), not swept into the room's urgency, fumbling the stylus by feel without looking at it, her gaze staying on Alexander's face the entire time she talks): \"...Apparently—\" (small pause) \"—as of right now, yes.\" Only after her line fully ends and a beat passes does she finally look back down at the tablet.",
+      "timeline": "0-2s: Parmenion enters, shakes him, speaks. 2-5s: Alexander wakes calm, reaches for sword belt, Parmenion presses his question. 5-8s: Alexander answers while buckling armor, half-amused; the tablet is pressed into Hazel's hands. 8-9s: her fumbled-stylus line.",
+      "dialogue": "PACING IS EXPLICIT PER CHARACTER AND MUST BE FOLLOWED EXACTLY — do not apply one uniform tempo across this exchange; the contrast between Parmenion's urgency and Alexander's unhurried calm IS the scene's performance point, sustained the whole 9 seconds, not just on isolated lines. PARMENION (fast, clipped, breathless with urgency, shaking him): \"My lord. MY LORD.\" — the second \"MY LORD\" louder and sharper than the first, no space between his two lines. PARMENION (still fast, words tumbling just behind his own movement, worked up): \"You could have taken them in the dark last night. Why do you STILL refuse a night attack?\" ALEXANDER (EXTREMELY SLOW, unhurried, deliberate, weighty — even while his hands move quickly buckling armor, his VOICE is markedly slower than Parmenion's, with genuine two-second silences between each sentence, never rushed through — match @Audio2's tempo exactly, including its long pauses): \"I will not steal a victory, Parmenion.\" (long two-second pause, no dialogue, just his calm breathing and hands working) \"Let it be daylight,\" (brief pause) \"and let it be earned.\" (another long pause) ALEXANDER (to Hazel, still slow and unhurried, half-amused, not rushed, looking directly at her as he speaks — match @Audio2's tempo): \"You write quickly?\" HAZEL (HER EYES ARE THE MOST IMPORTANT DETAIL OF THIS BEAT: the instant Alexander's voice turns to address her, her eyes lift OFF THE TABLET and lock onto his face — this eye contact is held, unbroken, for the rest of the shot; she does NOT look back down at the tablet, the stylus, her hands, or anywhere else while she is speaking — a full beat of hesitation before she speaks at all — thrown by the tablet suddenly in her hands, not composed yet; then a dry, slightly startled-amused delivery, unhurried, not swept into the room's urgency, fumbling the stylus by feel without looking at it, her gaze staying on Alexander's face the entire time she talks): \"...Apparently—\" (small pause) \"—as of right now, yes.\" Only after her line fully ends and a beat passes does she finally look back down at the tablet.",
       "camera": "A real external observer's frame inside the tent, all three visible together; the camera holds a natural viewing distance and reframes only to keep the group readable as they move — Parmenion looming over the cot, Alexander rising into it, the tablet pressed into Hazel's hands. EYELINES ARE THE MOST CRITICAL BLOCKING DETAIL IN THIS SHOT AND MUST BE FOLLOWED EXACTLY: when Alexander speaks directly to Hazel (\"You write quickly?\"), his eyes are on her face, not on the middle distance or on Parmenion. Hazel's eyes are on the tablet ONLY during the brief silent writing beat before Alexander speaks to her — the MOMENT his voice turns toward her, her eyes come UP and lock onto his face, and stay locked on his face through her entire spoken answer; she is never looking down at the tablet, at her hands, off to the side, or at nothing while she is speaking or while he is speaking to her. This is a face-to-face exchange between two people who are looking at each other, not a woman absorbed in writing while a man talks near her. No POV, no selfie framing, nobody's eyeline is the lens. The camera never cuts.",
       "continuity": "Both NPC locks verbatim; the wax diptych tablet and stylus debut here and are tracked for the rest of the episode. Alexander's unhurried pacing here is the same locked trait as every other clip (§32) — this scene does not suspend it, it is the scene that proves it.",
       "sound": "Parmenion's footsteps and breath urgent, close, and quick; Alexander's own movements steadier and unhurried under his armor's small-sounds even as his hands work fast; canvas.",
-      "endingState": "Tablet in her hands, stylus recovered awkwardly; Alexander mid-arming; Parmenion still tense."
+      "endingState": "Tablet in her hands, stylus recovered awkwardly; Alexander mid-arming; Parmenion still tense.",
+      "_status": "VALIDATED v5 (job e368ffbd-58ce-4a8b-9335-aaa91c0087d1, owner-approved 2026-08-29; RECONFIRMED as final 2026-08-31 during edit assembly — the owner tried a 17s regeneration against the later +20%/+10% pacing-override text (job a13942d6) and then explicitly reverted to this original locked v5). duration/timeline/dialogue below reverted to the pre-pacing-override text this video actually matches (predates commit 3117b0a); the +20%/Hazel-only-stack formula does NOT apply to this clip's accepted asset. Do not regenerate without fresh owner request per §19."
     },
     {
-      "id": "3", "duration": 18, "mode": "V", "hazel": true, "characters": ["ALEXANDER"],
-      "grade": "dawn", "battle": false,
+      "id": "3",
+      "duration": 18,
+      "mode": "V",
+      "hazel": true,
+      "characters": [
+        "ALEXANDER"
+      ],
+      "grade": "dawn",
+      "battle": false,
       "environment": "Same tent; a worn leather scroll-case lies by the cot (worn, plain — never an ornate fantasy prop).",
       "stillComposition": "The opening instant of the scene, continuing directly from clip 2: Hazel's own handheld selfie framing, arm's length, viewer's eyes as the lens. Alexander is mid-arming in frame — buckling a strap, his attention on his own gear, not looking at her. A worn, plain leather scroll-case is visible by the cot, in her eyeline, the thing she has just noticed and is about to ask about. No phone, camera, rig, or mount visible. Selfie POV, natural handheld framing, Alexander readable at arm's-length distance from her.",
       "scene": "Arming continues through the WHOLE beat — he buckles, checks the blade, moves; the scene must never read as two people pausing to chat. She nods at the scroll-case; his answers land mid-motion; he is OUT of the tent on his last word — the scene exits into momentum.",
@@ -39,8 +63,16 @@
       "endingState": "Tent flap swinging from his exit; she is turning to follow."
     },
     {
-      "id": "4", "duration": 13, "mode": "V", "hazel": true, "characters": ["ALEXANDER", "BUCEPHALUS"],
-      "grade": "dawn", "battle": false,
+      "id": "4",
+      "duration": 13,
+      "mode": "V",
+      "hazel": true,
+      "characters": [
+        "ALEXANDER",
+        "BUCEPHALUS"
+      ],
+      "grade": "dawn",
+      "battle": false,
       "environment": "Walking through the waking Macedonian camp to the horse lines at first light; in the distance the Persian campfires stretch to the horizon with no visible end. A separately-guarded plain tent with two armed guards, NO royal iconography.",
       "stillComposition": "The opening instant of the scene: Hazel's own handheld selfie framing, arm's length, viewer's eyes as the lens, walking through the waking Macedonian camp at first light. Deep in frame behind her, the Persian campfires stretch to the horizon with no visible end — establishing the scale before she speaks. No phone, camera, rig, or mount visible. Selfie POV, natural handheld framing, early-morning ochre-gold light. CAMP EXTRAS MUST BE MACEDONIAN ONLY (v1 finding, 2026-08-29): any background soldiers near the tents/fires wear ONLY Macedonian gear — bronze muscle cuirass or linothorax, Phrygian or Thracian-style helmet (never a Roman-style helmet with cheek guards), crimson cloaks, small round or crescent shields (never a Roman rectangular scutum, never segmented lorica-style armor) — Roman legionary iconography of any kind is a hard fail, this episode is 331 BC Macedonia, centuries before Rome's legions existed in that form.",
       "scene": "Walk-and-talk to the horse lines: the horizon of Persian fires behind her; Bucephalus pins his ears at everyone but Alexander (who is nearby at the lines); passing the guarded tent she drops her voice for the captives fact.",
@@ -52,8 +84,14 @@
       "endingState": "She is past the guarded tent, glancing back at it; horse lines behind."
     },
     {
-      "id": "5a-aerial", "duration": 2, "mode": "NOVA", "hazel": false, "characters": [],
-      "grade": "battle", "battle": true, "stage": "FIRST ENGAGEMENT",
+      "id": "5a-aerial",
+      "duration": 4.064,
+      "mode": "NOVA",
+      "hazel": false,
+      "characters": [],
+      "grade": "battle",
+      "battle": true,
+      "stage": "FIRST ENGAGEMENT",
       "startImage": "29f1b825-f9ec-413e-95e8-b0066cea4a2c",
       "inheritedState": "The two full armies already face each other across the plain, both extending past the frame edges; the Companion cavalry wedge is just beginning to form at the Macedonian flank.",
       "stillComposition": "AERIAL CONTINUITY + SCALE FIX v4 (2026-08-29, owner flagged two new issues on v3: (1) scale still not big enough, (2) the Persian side showed a FALSE internal gap — a cluster near the front, then a large stretch of bare open ground, then a second cluster far in the distance, reading as two separate small armies rather than one massive continuous one; the 'reserve box' language also collapsed the Macedonian side into a small drilled square — dropped entirely this version). CRITICAL RULE: each army is ONE unbroken continuous mass along its own depth — there is NO empty ground inside either army's own footprint between its nearest and farthest visible ranks. The only permitted break in either formation is the single specific torn-gap feature described below — never a second large empty area. High aerial angle, close to straight-down; army coverage fills nearly the entire frame, with only ONE narrow strip of true open ground in the whole image — the no-man's-land directly between the two facing fronts. MACEDONIAN SIDE (nearer band): one continuous deep mass with no internal breaks — Craterus's pike phalanx in the center, sarissa points dense and unbroken; Alexander's Companion cavalry and hypaspists massed at the near-right edge of that same continuous body, already peeling off at a diagonal into the forming wedge; Parmenion's Thessalian cavalry massed at the left edge of the same body, held slightly back. All of it reads as one large touching army, not separate clusters. PERSIAN SIDE (rest of frame, to the horizon): one continuous deep mass, dramatically WIDER than the Macedonian side and extending well past both Macedonian flanks — light two-horse scythed chariots screening its leading edge merge directly into the massed ranks immediately behind them, touching, NOT a separate cluster with empty ground before the next; Darius and his elite guard (Immortals, Greek mercenaries) hold the center within this same continuous body; distinct cavalry wings are visible under different banners within it — Bessus's Bactrian/Scythian/Dahae cavalry nearer Alexander's advance, shown in motion, shifting to chase him; Mazaeus's Median/Parthian/Armenian cavalry on the far wing, banners and dress visibly different. The ONE permitted break: a gap — thinner, paler ranks, still part of the same continuous body, not a separate empty field — visible in the Persian center-left where Bessus's troops are shifting to chase Alexander's wing. Historical scale for density: Macedonian force ~47,000 in one compact, deep, unbroken formation; Persian force by the most-cited modern scholarly estimates (not the inflated ancient figures) roughly 90,000–100,000, several times wider and equally unbroken in depth.",
@@ -65,8 +103,17 @@
       "constraints": "No individual faces resolvable at this distance — wide scale shot only. No Hazel."
     },
     {
-      "id": "5a", "duration": 7, "mode": "NOVA", "hazel": false, "characters": ["ALEXANDER", "BUCEPHALUS"],
-      "grade": "battle", "battle": true, "stage": "FIRST ENGAGEMENT",
+      "id": "5a",
+      "duration": 7,
+      "mode": "NOVA",
+      "hazel": false,
+      "characters": [
+        "ALEXANDER",
+        "BUCEPHALUS"
+      ],
+      "grade": "battle",
+      "battle": true,
+      "stage": "FIRST ENGAGEMENT",
       "startImage": "d65624e1-98b8-4762-98a0-58e128eec26f",
       "inheritedState": "The wedge is already at full gallop, dust building thick behind it — not the slower advance of earlier versions.",
       "stillComposition": "GROUND-SHOT v7 (2026-08-29 — owner approved v6's density/composition outright, keep it exactly; two changes only: (1) remove ALL Persian presence from the frame, including the previously-approved distant horizon sliver — this shot is Alexander's own army ONLY, nothing of the enemy visible anywhere; (2) full gallop pace, not the walk/trot of v6). Alexander on Bucephalus leads at the absolute front of the formation at a full gallop, positioned in the right third of frame, moving on a diagonal (the oblique advance) — no rider is ahead of him. Immediately behind and to his left, the wedge riders are packed in tight, disciplined ranks — shoulder to shoulder, multiple full ranks deep — forming a genuine dense cavalry column at full gallop; the column's density and rank order continue unbroken all the way back, the mass continuing past the frame's left edge with no thinning. Behind the cavalry, the Macedonian phalanx's sarissa-forest silhouette is a dense, continuous wall of upright pikes stretching back into the dust haze. Everything in frame, foreground to horizon, is exclusively Macedonian — his own column and its extension. The horizon itself is empty — open plain and dust haze only, NO Persian line, NO distant band, NO enemy presence of any kind anywhere in the frame. Screen direction LEFT-to-RIGHT absolute. Heavy dust kicks up under full-gallop hooves. Bronze helmets and crimson cloaks catch the harsh flat battlefield light; sarissa points read as a bristling line above the riders.",
@@ -78,22 +125,35 @@
       "constraints": "Hazel does not appear. No faces of hers anywhere."
     },
     {
-      "id": "5b", "duration": 4, "mode": "V", "hazel": true, "characters": [],
-      "grade": "battle", "battle": true, "stage": "FIRST ENGAGEMENT",
+      "id": "5b",
+      "duration": 4,
+      "mode": "V",
+      "hazel": true,
+      "characters": [],
+      "grade": "battle",
+      "battle": true,
+      "stage": "FIRST ENGAGEMENT",
       "inheritedState": "The air around her ALREADY carries the rising dust of the advance she is inside of.",
-      "startImage": "84519260-6186-4e39-8f73-ddac88ad3723",
+      "startImage": "e3549474-e272-4917-9f3b-1bd0850a01ec",
+      "_status": "VALIDATED v1 (job c8d3bdfd-70fc-4f44-ac70-251d81232f1c, owner-accepted 2026-08-31 during edit-assembly manifest reconstruction — this was the only Clip 5b video found in generation history; its job ID was never recorded in git at the time). ACCEPTED WITH TWO KNOWN DEVIATIONS the owner explicitly approved rather than regenerating: (1) startImage is an earlier still (this one) predating the v10 density-fix lock (84519260) that clips.json previously pointed to — v10 was apparently locked after this video was already submitted; (2) dialogue in the actual video is \"We're not staying back. We're going WITH them.\" not the line originally drafted here — dialogue field below corrected to match the actual delivered audio, since the video is the accepted final asset. Do not regenerate without fresh owner request per §19.",
       "stillComposition": "LOCKED FINAL — v10, density-only fix (2026-08-30, owner-approved 2026-08-30 after two failed camera-rotation attempts, v11 and v12, both of which the model rendered as visually near-identical to v10 despite text instructions of increasing concreteness; owner locked v10's own angle as final rather than continue attempting a text-prompt rotation on this base). This is a PHOTO EDIT of the original approved mounted V-mode still — the EXACT same photograph: same selfie-lens composition, same mounted pose, same tablet/reins, same identity, same dust, same lighting and grade, same straight-on selfie camera angle (the rotation attempts are abandoned, not reattempted). The ONLY change from the original approved still: the column of riders visible behind and around her is DENSE and UNBROKEN — multiple full ranks deep, riders packed close, no thinning or gaps, continuing past the frame's edge with no visible end, matching the density established in 5a. Her pose, identity, framing, and camera distance are unchanged.",
       "scene": "Hard cut to her own lens inside the advance, mounted (reverted to V-mode, base = the original approved mounted still — owner-directed 2026-08-30): only the background army's density is increased to match 5a; everything else unchanged. Breath ragged before she speaks. Ends on her head snapping toward the enemy — the eyeline that launches 5c.",
       "timeline": "0-0.8s: jostled at a mounted trot, breath ragged, no words yet, eyes on lens. 0.8-2.6s: her line (Hazel, 8 words @ 264 wpm, ~1.8s). 2.6-4s: head snaps away from lens toward the enemy line off-frame, the launching eyeline for 5c.",
-      "dialogue": "PACING (urgent/frantic band, owner +20% override plus Hazel-only +10% stack applied — target ~264 wpm): HAZEL (breath ragged, urgent, words tumbling fast): \"I'm not staying back. I'm going with them.\"",
+      "dialogue": "PACING (urgent/frantic band, owner +20% override plus Hazel-only +10% stack applied — target ~264 wpm): HAZEL (breath ragged, urgent, words tumbling fast): \"We're not staying back. We're going WITH them.\" [text corrected 2026-08-31 to match the actual delivered audio in the accepted video, job c8d3bdfd — see _status]",
       "camera": "Her handheld selfie lens, tight and jostled by the moving column and her horse's gait; real shake, bodies clipping both edges. The camera never cuts. EYELINE: her eyes are locked on the lens/viewer for the ragged-breath opening beat and through the entire spoken line — she is talking directly to camera. The instant her line ends, her eyes and head snap away from the lens toward the enemy line off-frame (screen right, matching 5a/5c's established direction) and hold there through the clip's final beat.",
       "continuity": "Her battle-state begins: dust on her, hair loosening; mounted on a plain unlocked campaign horse, reins in one hand, tablet clamped against her body (not held); background column density matches 5a.",
       "sound": "Same unbroken bed as 5a heard from inside it: hooves, armor, breath ragged and close.",
       "endingState": "Her head snapped toward the enemy line off-frame — the launching eyeline into 5c. Alexander and the column continue driving left to right at full gallop."
     },
     {
-      "id": "5c", "duration": 3, "mode": "NOVA", "hazel": false, "characters": [],
-      "grade": "battle", "battle": true, "stage": "FIRST ENGAGEMENT",
+      "id": "5c",
+      "duration": 3,
+      "mode": "NOVA",
+      "hazel": false,
+      "characters": [],
+      "grade": "battle",
+      "battle": true,
+      "stage": "FIRST ENGAGEMENT",
       "inheritedState": "The dust wall of the approaching charge is ALREADY rising beyond the line — building, the charge itself not yet arrived.",
       "startImage": "eeba5280-76b2-44dd-a637-412accb56553",
       "stillComposition": "APPROVED FINAL — NEW CAMERA ANGLE v6 (2026-08-30, owner-approved; supersedes v1-v5's low near-eye-level frontal angle after five straight gap-patching rounds kept revealing new gaps further back). CAMERA: a slightly ELEVATED, OBLIQUE angle — raised a few feet above head height, positioned at a diagonal to the line rather than dead-on-frontal — shooting with COMPRESSED TELEPHOTO perspective (a long lens flattening depth, the same technique that reads Persian/Macedonian mass collisions as dense and unbroken elsewhere in this episode, e.g. 6a). This compression is structural, not patched: successive ranks visually stack close together with no visible ground between them, all the way to the horizon — one continuous, unbroken mass, no separated clusters. FOREGROUND: Persian infantrymen, wicker-and-hide shields, turbans, patterned fabric — zero Macedonian bronze or crimson anywhere — continuity-locked to match 6a's already-approved Persian identity (this is the same line 6a shows buckling at the wedge's impact three seconds later). Known gap from the approved still, to be corrected in the VIDEO generation's motion/camera text rather than re-editing the still further: the leveled, forward-braced spear grip and the specific single-man eyeline-toward-a-gap beat (both originally scripted, see `scene`/`camera` below) did not carry cleanly onto this new angle — build the video prompt to introduce them as motion beats within the clip's 3 seconds.",
@@ -106,8 +166,14 @@
       "_status": "VALIDATED v4 (job ef3b5276-287d-4224-b6c8-20376ea714be, owner-approved 2026-08-30) — accepted with a known limitation: only ~1.3s of the 4.06s clip has real motion (front-rank collective spear-lowering wave), the remainder holds on a settled pose rather than continuing to animate. Root-caused across 5 video attempts (v1-v5, see PROMPT_LEARNINGS.md S13): the telephoto-compressed angle (needed to fix the density/gap problem, see stillComposition) concentrates the model's motion budget on the single sharpest foreground layer — ranks behind it read as an inert backdrop unless individually scripted, and scripting multiple staggered ranks at once (v5) overloaded the prompt and regressed to a full freeze, worse than v4's simpler single-rank version. Regenerate only with fresh owner approval per §19."
     },
     {
-      "id": "6a", "duration": 6, "mode": "NOVA", "hazel": false, "characters": [],
-      "grade": "battle", "battle": true, "stage": "FULL BATTLE",
+      "id": "6a",
+      "duration": 6,
+      "mode": "NOVA",
+      "hazel": false,
+      "characters": [],
+      "grade": "battle",
+      "battle": true,
+      "stage": "FULL BATTLE",
       "inheritedState": "The air is ALREADY heavy with dust from the fighting before this shot begins — this is NOT a clean battlefield; visibility at distance is already reduced.",
       "startImage": "9dc96a94-f13f-4210-9233-99bc14870e7a",
       "scene": "THE IMPACT. The Macedonian cavalry wedge (bronze helmets, crimson cloaks, leveled lances, entering from frame-left) charges the remaining distance left-to-right and SLAMS into the massed Persian infantry line right-of-center. At the point of contact the Persian formation visibly BUCKLES — wicker shields dropping, spears turning away, men scattering sideways out of the wedge's path — and the break propagates outward from that single contact point while the Persian line further from the breach still holds intact. Cause and effect in one sustained frame. At the contact point: dropped shields, snapped spears, men and horses falling (visible and real, never graphic or gory), riderless horses breaking loose.",
@@ -115,11 +181,17 @@
       "continuity": "The two armies' equipment NEVER mixes: bronze-and-crimson cavalry from the left, varied Persian contingents with wicker shields, turbans, patterned fabrics on the right. Screen direction LEFT-to-RIGHT.",
       "sound": "Hoofbeats accelerating, then the impact itself — a timber-and-metal mass collision landing over the roar. Close: leather, breath, individual cries; middle: massed hooves, shouted commands; far: continuous unbroken roar.",
       "endingState": "The breach torn open right-of-center, break still spreading outward; the far line still holding; dust thickened over the contact point.",
-      "_status": "VALIDATED v2 (job 63fa03dd, owner-approved 2026-08-29). Regenerate only with fresh owner approval per §19."
+      "_status": "VALIDATED v2 (job 63fa03dd-935b-4936-9990-cb8bfd5a9fc6, owner-approved 2026-08-29). Regenerate only with fresh owner approval per §19."
     },
     {
-      "id": "6b", "duration": 3, "mode": "NOVA", "hazel": false, "characters": [],
-      "grade": "battle", "battle": true, "stage": "FULL BATTLE",
+      "id": "6b",
+      "duration": 3,
+      "mode": "NOVA",
+      "hazel": false,
+      "characters": [],
+      "grade": "battle",
+      "battle": true,
+      "stage": "FULL BATTLE",
       "inheritedState": "Ground-level dust ALREADY churned and bursting with every impact — same density as the impact shot this follows.",
       "startImage": "a9a5bf68-368f-483e-8dfc-9de1fccbea09",
       "stillComposition": "APPROVED FINAL — v8 (2026-08-31, owner-approved). SUPERSEDES v6 (stretch-bridge) and v7 (gap-cut): both used VERTICAL layouts (horse stacked above soldiers) and both created a downstream video defect — v6's stretched/overlapping horse leg and a soldier's leg physically FUSED into one deformed limb when Seedance animated motion from it (owner-flagged: 'horror movie'). v7 (empty-gap removed, uniform rescale, no overlap) fixed the fusion risk in principle but was superseded before a video test, in favor of the owner's own idea: stop stacking vertically at all. v8 uses a HORIZONTAL SPLIT instead — the horse (left third of frame) and the running soldiers (center-right two-thirds) occupy the SAME horizontal band, side by side, never overlapping, generated as ONE native Gemini composition (not a composite/edit chain — no stretching, no seam-blending, no patch layers). Because both subjects sit at roughly the same camera distance, their ground-contact points land at the same height in frame by ordinary perspective, so the 'two floors' problem never arises and there is nothing for a video model to fuse. Verified at the pixel level: continuous dirt/dust texture connects the horse's hoof-contact point to the soldiers' feet with no seam, no collage edge, no mesh artifact. LEFT THIRD: a dark bay Macedonian cavalry horse's lower legs and hooves at full gallop, hoof striking the ground with dust bursting at the contact point — no saddle, no rider, no stirrup (a bridle/rein across the horse's head/neck is visible, consistent with a ridden warhorse, not a violation). CENTER-RIGHT two-thirds: a dense line of running soldiers' legs and lower bodies — bare Persian legs and bronze/gold Macedonian greaves mixed together, sandals and cross-strapped boots, shields and spears held mid-stride — sharply detailed near camera, softening into dust-haze deeper in frame. FOREGROUND: a dropped Persian wicker-and-hide shield (hide-rim binding, metal boss) with scattered spears nearby, bottom-left/center. Ground: hard pale-ochre dry earth, debris (broken spear-shaft, dust clods, dropped blades), harsh bright flat daylight matching the episode grade. No faces visible anywhere.",
@@ -133,9 +205,15 @@
       "_status": "VALIDATED v10 (job 444a8fef-2e79-4fec-bf35-80f0e4992a51, owner-approved 2026-08-31) — accepted with a known limitation: a rider briefly, transiently appears on the horse around 1.5-2s before disappearing again by the final frame, despite an explicit repeated 'no rider on ANY horse, at any point' instruction. Flagged to the owner before approval; owner approved anyway. Do not regenerate without fresh owner request per §19."
     },
     {
-      "id": "7", "duration": 10, "mode": "V", "hazel": true, "characters": [],
+      "id": "7",
+      "duration": 10,
+      "mode": "V",
+      "hazel": true,
+      "characters": [],
       "audioRef": "b24e5759-d3c0-4c84-a184-44f7cc65477e",
-      "grade": "battle", "battle": true, "stage": "FULL BATTLE collapsing toward COLLAPSE",
+      "grade": "battle",
+      "battle": true,
+      "stage": "FULL BATTLE collapsing toward COLLAPSE",
       "inheritedState": "Dust everywhere, ALREADY thick before the shot starts; scattered equipment underfoot; the field's order already dissolving.",
       "startImage": "f3b6e145-e962-4abc-becf-d02e4fd796d4",
       "stillComposition": "APPROVED FINAL — v1/variant B (2026-08-31, owner-approved from 3 Gemini candidates A/B/C; a 4th candidate D was rejected before presenting — it lacked the selfie-arm-in-frame and read as third-person, non-compliant with V-mode). Generated via gemini-3-pro-image (mandatory per the Frame/still generation model rule) using the Hazel v5 canonical master as the sole identity reference, with an explicit instruction not to copy the reference's composed expression/hair/lighting — this is a new dramatic moment. V-MODE selfie framing, arm extended into frame holding the unseen lens. Her face is caught in the raw opening instant of shock: scleral show, mouth dropped into a full O, gaze wide and locked off to the side (not on the lens) at what she's just seen, hand clamping the wax tablet to her chest, shoulders pulling in. Her battle-state is escalated past all earlier appearances: dust and grime streaked across her skin and hairline, sweat sheen, hair pulled loose from its part with disturbed flyaway strands, chiton dust-caked and travel-worn. Background: hazy, chaotic battlefield dust with indistinct mounted and running figures visible on both sides plus a wounded/fallen figure — matching the script's 'collapse streaming past her on both sides, wounded among them' — without the chariot itself needing to resolve sharply in this frame (that comes later as she turns). Bleached/desaturated battle grade, harsh flat daylight.",
@@ -149,9 +227,17 @@
       "_status": "VALIDATED v1 (job 0c25b26a-1a53-40ad-804c-e55c390effaa, owner-approved 2026-08-31) — chariot-and-standard reveal, dense collapse on both sides, dialogue delivered, only a trivial 0.75s freeze at the very start. Known minor deviation: she returns her eyes to the lens earlier than scripted (~4.4s vs. the planned 6-10s window) — accepted, not pursued further. Do not regenerate without fresh owner request per §19."
     },
     {
-      "id": "8", "duration": 9, "mode": "V", "hazel": true, "characters": ["ALEXANDER", "BUCEPHALUS"],
+      "id": "8",
+      "duration": 9,
+      "mode": "V",
+      "hazel": true,
+      "characters": [
+        "ALEXANDER",
+        "BUCEPHALUS"
+      ],
       "startImage": "9f49fbf6-44a0-4900-900d-d6c6dfea3e07",
-      "grade": "dusk", "battle": false,
+      "grade": "dusk",
+      "battle": false,
       "environment": "Dusk at the camp's edge; the field's day visible on every person and surface; smoke columns far off; the camp erupting around his return — held LOW and distant. Wounded visible among the celebrating (the cost stays inside the triumph).",
       "scene": "He returns dust-caked, Bucephalus lathered; he dismounts near her before anyone else reaches him, glances at the tablet still gripped tight in her now-steady hand; the exchange; he is already walking on, pulled into the noise.",
       "timeline": "0-3s: he rides in, dismounts near her; the camp's eruption stays low and distant. 3-6s: his glance at the tablet, his line — almost a smile. 6-9s: her answer, holding it up, no longer fumbling; he is already walking on.",
@@ -165,9 +251,14 @@
       "stillComposition": "The instant that opens the clip's 0-3s beat — ALEXANDER IS ACTIVELY, VISIBLY MID-DISMOUNT, NOT SEATED: his near-side leg is already swung up and over the horse's back/rump, that foot in mid-air reaching down toward the ground, his weight shifting off the saddle and onto his other leg and arms; this must read unambiguously as a man in the middle of getting off his horse, not a man sitting on it. Reins still in hand, dust-caked cuirass, deep-red cloak visible swinging with the motion (not hidden behind him), an almost-smile just starting at the corner of his mouth as his eyes find her rather than the crowd. HARD CONSTRAINT, NON-NEGOTIABLE (round-2 v2 fix, KEEP — this rendered correctly last round): his footwear is ancient bronze greaves over leather straps ONLY — under no circumstances render dark leather combat boots, riding boots, laced ankle boots, or any modern/enclosed-shoe silhouette; if a foot is visible in frame it must clearly show the greave/strap construction with open strap lines, not a solid boot shape. HARD CONSTRAINT, NON-NEGOTIABLE (v3 fix — round 2's cleanest-wardrobe candidate dropped this entirely and rendered a plain third-person two-shot instead): this is a V-MODE SELFIE SHOT. Hazel's own selfie-holding arm/hand and forearm MUST be clearly visible occupying the lower portion of the frame, extended toward the lens exactly as in every other clip of this episode (matching round 2's candidate C, not candidate B) — this is not optional framing, it is the defining convention of this camera mode, and a composition without her arm/hand visible in frame is a failed generation regardless of how correct anything else is. Her lower jaw/chin sits at the very bottom edge of frame above her extended arm; her face is turned three-quarter away from the lens TOWARD ALEXANDER, not up and away from him and not at the viewer — she has just caught sight of him arriving and her eyes are locked on him specifically, not on the crowd, not on the sky, not on the tablet; the tablet is held low at her side in her now-steady hand, out of her own sightline. Bucephalus lathered, flanks dark with sweat and dust, ears still pinned with residual battle-tension, breath visible/heaving. Background, held low and deliberately distant: the camp's eruption of celebration — small clustered figures embracing, torches/fires being relit, a wounded figure clearly seated or supported among them, distinct from the celebrating figures (the cost inside the triumph, not foregrounded) — all soft-focus/receding, never competing with the two principals. Dusk light: bronze-amber, long shadows, the day's dust still visible caked on every surface and face. FRAMING/ORIENTATION HARD CONSTRAINT (v3 fix — two of round 2's four candidates rendered rotated ~90 degrees, horizon vertical instead of horizontal): the output must be a normal upright 9:16 portrait photograph — the ground/horizon line reads horizontal across the frame, people and the horse stand vertically upright on their feet/legs, gravity is straight down the frame. Do not rotate the composition for any reason. EYELINE for this still: her eyes are on him, specifically and unambiguously, not the lens, not upward, not past him; his eyes are on her, not the crowd — the mutual find-each-other look that the video's first 3 seconds will play out into his dismount and glance at the tablet."
     },
     {
-      "id": "9a", "duration": 15, "mode": "V", "hazel": true, "characters": [],
+      "id": "9a",
+      "duration": 15,
+      "mode": "V",
+      "hazel": true,
+      "characters": [],
       "startImage": "b42551d8-3da6-4568-975c-1812930ed33e",
-      "grade": "dusk", "battle": false,
+      "grade": "dusk",
+      "battle": false,
       "environment": "Dusk deepening, campfires relighting across the camp — a frame consciously rhyming clip 1's lamplit opening.",
       "scene": "Outro part 1, talk-to-lens: the empire line lands as a weighty, matter-of-fact reveal — the gravity of the fact does the work, not a slowed performance. Ends on a held beat that sets up the hard cut into 9b's tonal pivot.",
       "timeline": "0-1s: beat, she settles to speak. 1-13.6s: the empire line (36 words @ 172 wpm — weighty but not yet softened). 13.6-15s: hold on her steady expression, hard cut to 9b.",
@@ -181,9 +272,14 @@
       "stillComposition": "Single-character V-mode selfie composition, deliberately frame-rhyming Clip 1's lamplit opening: Hazel's selfie-arm and lower jaw/chin at the bottom edge of frame, her face turned toward the lens, steady and matter-of-fact — not smiling, not somber, a settled expression just before she speaks. Her eyes are level and direct on the lens. The wax tablet is held low at her side, calm, out of her own sightline — she is not writing, this is a direct address. Background: dusk deepening toward night, small warm campfires relighting scattered through the deep frame behind her (echoing Clip 1's darkness-and-small-lights opening image), soft-focus, low camp murmur implied by scattered distant figures settling for the night. Battle-dust on her clothing and skin is visibly softer/settled compared to earlier clips — the day's grime persists faintly but she reads calmer, steadier. Bronze-amber dusk light fading toward blue-hour, campfire glow warm against the cooling sky. EYELINE: her eyes are on the lens for this entire still, unwavering, direct — this is the opening beat of a direct-address line, not a reactive glance."
     },
     {
-      "id": "9b", "duration": 14, "mode": "V", "hazel": true, "characters": [],
+      "id": "9b",
+      "duration": 14,
+      "mode": "V",
+      "hazel": true,
+      "characters": [],
       "startImage": "0a6e7198-1cec-4a11-81e1-61e111e84220",
-      "grade": "dusk", "battle": false,
+      "grade": "dusk",
+      "battle": false,
       "environment": "Same dusk moment, continuing directly from 9a with no time skip — campfires relighting across the camp, frame still rhyming clip 1's lamplit opening.",
       "scene": "Outro part 2, talk-to-lens: the softer Homer/Achilles payoff, then quieter still for the sign-off. This is the final shot of the episode — built around the one idea the viewer should leave with.",
       "timeline": "0-10.1s: (softer than 9a) the Homer/Achilles lines (29 words @ 172 wpm). 10.1-10.9s: beat, quieter still. 10.9-13.3s: (quiet) the sign-off (4 words @ 99 wpm, breath-constrained true-quiet delivery). 13.3-14s: hold, sign-off lands.",
