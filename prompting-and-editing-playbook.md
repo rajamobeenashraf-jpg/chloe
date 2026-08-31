@@ -99,6 +99,122 @@ rest of the series confirms the same skeleton:
   highlighted gold/yellow; top banner pill only during the hook (~first 6–10s);
   small static watermark top-right.
 
+### EDITING/PACING MOVEMENTS — full scope (owner lock 2026-08-31, permanent, no exceptions)
+
+Consolidates every reverse-engineered editing/pacing finding — currently
+scattered across this Part, Parts 2, 9, 10, 15, and `creative-direction.md`
+§25 (a different FILE entirely) — into one mandatory pre-edit/pre-generation
+check, the same treatment the Camera Technique Menu and MOTION MOVEMENTS
+scope already got. Speech pacing/wpm (Part 6, plus the CLAUDE.md formula) is
+its own already-comprehensive dimension and is cross-referenced, not
+rebuilt, here.
+
+**1. Cut-boundary mechanics (`creative-direction.md` §25, PERMANENT, owner
+mandate 2026-08-26 — reverse-engineered from a dedicated 25+-cut-point study,
+`chloe-transitions-study.md`).** This is the single most important editing
+finding in the project and was previously un-cross-referenced from this
+playbook entirely:
+- Audio never touches silence at a cut — every cut either J-cuts (sound
+  pre-laps the visual cut 100-600ms early) or L-cuts (one continuous
+  ambient/music bed runs under both shots). Never a gap.
+- Cuts land mid-motion, not on stillness — a walk continuing, a turning
+  head, a door opening, a fall in progress.
+- A diegetic sound or action motivates the cut (a door latch, a shutter, a
+  thud, a horn, a music sting landing on frame 0).
+- A consistent on-screen subject anchor (camera distance, arm/head position)
+  carries across the cut even when the environment changes entirely.
+- Eyeline-matching bridges are a confirmed, reusable technique — end a clip
+  on a character looking toward something the next clip reveals.
+- Energy-level shifts (loud→quiet) use audio filtering/dampening across the
+  transition, never an abrupt drop to silence.
+- Execution rule already locked project-wide: the per-clip audio fade at
+  edit stage shrinks to a pure digital-click guard (~15-20ms), never a
+  perceptible dip; any pair of clips whose sound is already scripted as
+  continuous gets a true zero-fade join at that boundary instead.
+
+**2. Cut TYPE and timing relative to the beat (Part 3 + Part 9).**
+- Every transition is a hard cut, never a dissolve — "smoothness" comes from
+  #1 above (sound design), not the visual join itself.
+- Flashbacks/inserts enter on hard cuts sold by audio (the next scene's
+  soundscape starts at the cut) — this is #1's J-cut rule applied
+  specifically to memory/flashback entries.
+- **Emotional punctuation = transition license (Part 9):** a laugh, a tear,
+  or a punchline lands, THEN the cut. Never cut mid-beat — the beat's own
+  closure is what earns the jump.
+- **Contrast cuts define new space (Part 9):** an extreme close-up → wide
+  establish (or the reverse) specifically at scene changes, often paired
+  with an on-screen place/year text overlay to ground the viewer in one
+  second.
+
+**3. Shot-length benchmarks and proximity escalation (Part 3 + Part 15.C).**
+- Shot/idea changes every 2-10s in energetic chapters; ~2.5-3.5s average for
+  a fast-retention edit generally; final monologues run 14-25s in one held
+  close-up.
+- Proximity escalation: shot length grows and framing tightens as emotion
+  rises across a scene — "the emotional dial."
+- EXTENSION (untested as its own dedicated study, reasoned from the
+  measured escalation finding plus the Camera Technique Menu, Part 14.E):
+  as a scene's proximity escalates, camera technique should trend WITH it —
+  early/wide phase → static lock or lateral tracking (witnessing distance);
+  mid-escalation → partial arc or slow dolly-in (deliberately closing
+  distance); peak/climax → single-subject push-in or zoom-in-freeze
+  (tightest, most intimate). This joint mapping was not itself measured as
+  one finding — it synthesizes two separately-measured rules — so treat it
+  as a starting default, not a locked law, until a dedicated study confirms
+  it the way the individual pieces were each confirmed on their own.
+
+**4. Pattern-interrupt budget (Part 14.E items 9/10/11 + Part 15.C).**
+- EXTENSION (untested as its own dedicated study, reasoned from the
+  existing "earned by beat" discipline already applied to the crash zoom —
+  script's own CAMERA-EARNED-BY-BEAT law restricts it to one shock stat per
+  episode): a pattern-interrupt technique (crash zoom to macro, fisheye/
+  barrel POV, vertical crane pull-up) gets AT MOST one use per
+  scene/chapter, reserved for that chapter's single biggest emphasis beat,
+  never stacked with another interrupt in the same chapter. This mirrors
+  the "establishing shots are earned, not automatic" principle
+  (`cinematic-direction-brief.md`) generalized to the full interrupt set.
+
+**5. Chapter length, ordering, and structural templates (Part 2 + Part
+15.D).**
+- Question-driven chapters run 10-25s each, escalating in a specific
+  content order: novelty/gross-out trivia → wealth/power → the personal
+  wound → THE HARDEST QUESTION (placed at ~70-80% through the episode) →
+  legacy.
+- "Countdown irony in plain numbers" (e.g. "Anne has 15 days left. Nobody in
+  this room has told her.") is a confirmed retention device — state the
+  ticking clock explicitly, in numbers, don't leave it implicit.
+- Two structural templates exist at different grain and are compatible, not
+  competing: Part 2's broader **emotional whiplash architecture** (comedy/
+  absurdity front half → one slow, quiet tragic beat placed late →
+  philosophical close, from the full view-weighted corpus) nests the more
+  granular **six-stage narrative structure** already in Part 15.D (hook →
+  antagonist/stakes → room turns → strength/subversion → tragic-irony
+  climax → farewell/resolution, from the Anne Boleyn deep-study). Check a
+  multi-clip episode against both: the six-stage shape for beat-by-beat
+  planning, the whiplash arc for confirming the overall tonal shape lands
+  right.
+
+**6. Audio/music edit-timing (Part 10 + Part 15.A) — cross-reference only,
+already applied in script practice.** Music ducks low under every spoken
+line, swells only between lines, and drops out hard on punchlines/shock
+beats; each location carries its own distinct ambience bed and reverb
+character; the top banner pill dies permanently at the first scene change,
+never persists. These are edit-timing rules in the same family as #1-2
+above and should be checked alongside them, not treated as a separate
+concern.
+
+**7. Speech pacing/wpm — cross-reference only, not rebuilt here.** Governed
+by Part 6's seven measured laws and the CLAUDE.md wpm formula (situation
+band → ×1.20 → ×1.10 for Hazel). Do not duplicate that system in this
+section; just confirm it was checked as part of the same pass.
+
+**Applies project-wide, this episode and all others**: before finalizing
+any multi-clip sequence or scene, walk items 1-7 as one combined check
+alongside the Camera Technique Menu and MOTION MOVEMENTS scope. Where an
+EXTENSION item is used (items 3's camera-linkage, 4's interrupt budget),
+note in the production log that it is untested/inferred rather than
+directly measured, same discipline as MOTION MOVEMENTS.
+
 ## PART 4 — WHAT WE ALREADY HAD RIGHT (don't relearn)
 
 Hard cuts only (§16) · word-synced chunk captions · audio continuity across cuts ·
