@@ -571,7 +571,8 @@ SAME SHOT as a frozen figure when the freeze needs zero seam (verified: the
 Jane Seymour deathbed beat, the jousting mid-air freeze); cuts land
 mid-motion, not on stillness; a consistent on-screen subject anchor (camera
 distance, arm/head position) carries across a cut even when the environment
-changes completely.
+changes completely; eyeline-matching bridges (a clip ends on a character
+looking toward something the next clip reveals).
 
 **Sound-side elements:** topic chains the location (the line before a cut
 names or implies the destination); zero-lag arrival (dialogue or motivated
