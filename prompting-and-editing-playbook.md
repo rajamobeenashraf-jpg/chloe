@@ -208,6 +208,39 @@ by Part 6's seven measured laws and the CLAUDE.md wpm formula (situation
 band → ×1.20 → ×1.10 for Hazel). Do not duplicate that system in this
 section; just confirm it was checked as part of the same pass.
 
+**TRIGGER TABLE — situation → editing/pacing element** (the fast-lookup
+version of items 1-5 above; use this first, then confirm against the fuller
+description if a situation is ambiguous):
+
+| Situation | Cut-boundary mechanic | Shot length | Camera-technique linkage | Pattern-interrupt budget |
+|---|---|---|---|---|
+| Every hard cut, universal (never a dissolve) | Audio bridges across (J-cut or L-cut), cut lands mid-motion, a diegetic trigger motivates it, subject anchor holds | — | — | — |
+| A clip ends on a character looking toward something | Eyeline-match bridge — the next clip reveals what they were looking at | — | — | — |
+| An energy-level shift between adjacent scenes (loud→quiet) | Audio filtering/dampening across the transition, never an abrupt drop to silence | — | — | — |
+| A flashback or memory insert entry | Hard cut sold by audio — the next scene's soundscape starts at the cut (the J-cut mechanism, applied to memory entries specifically) | — | — | — |
+| High-energy/comedic chapter | (universal row applies) | 2-10s per shot/idea | — | Up to ONE, on the chapter's single biggest emphasis beat |
+| General fast-retention edit, no other row fits | (universal row applies) | ~2.5-3.5s average | — | — |
+| Final monologue/climax | (universal row applies) | 14-25s, one held close-up | — | None — competes with the monologue's own gravity |
+| Rising-tension/proximity-escalation scene | (universal row applies) | Lengthens + tightens as tension climbs | Early/wide → static lock or lateral tracking; mid-escalation → partial arc or slow dolly-in; peak → single-subject push-in or zoom-in-freeze | None — the escalation itself is the interrupt |
+| A beat closing with a laugh/tear/punchline | Cut only AFTER the beat's own closure, never mid-beat | — | — | — |
+| Scene change | Contrast cut (ECU→wide or the reverse) + landmark/place-year text overlay | — | — | — |
+| Episode-ending farewell/resolution, and ONLY there | Held long take into the cut | — | Vertical crane pull-up (Camera Technique Menu item 11) | Zero other interrupts in this beat |
+| Any dialogue/music interaction (ducking, swell, dropout timing) | See MUSIC & SOUND MOVEMENTS trigger table (Part 10) — not duplicated here | — | — | — |
+| Any character's spoken-line pacing/wpm | See CLAUDE.md's wpm formula (Part 6) — not duplicated here | — | — | — |
+
+**Chapter/episode-level structure (a different grain than the per-shot row
+above — item 5, not a per-cut decision):**
+
+| Situation | Structural element |
+|---|---|
+| Ordering a question-driven episode's chapters | Escalate in this order: novelty/gross-out trivia → wealth/power → the personal wound → THE HARDEST QUESTION (placed at ~70-80% through the episode) → legacy; each chapter 10-25s |
+| A chapter needs a dread/retention device | State the countdown explicitly, in plain numbers ("Anne has 15 days left. Nobody in this room has told her.") — never vague doom |
+| Checking a multi-clip episode's overall shape | Two compatible templates, different grain: the six-stage narrative structure (hook → antagonist/stakes → room turns → strength/subversion → tragic-irony climax → farewell/resolution) nests inside the broader emotional whiplash architecture (comedy/absurdity front half → one slow, quiet tragic beat placed late → philosophical close) |
+
+Same discipline as the Camera Technique Menu and MOTION MOVEMENTS: where a
+situation doesn't cleanly match a row, stop and ask the owner rather than
+picking silently.
+
 **Applies project-wide, this episode and all others**: before finalizing
 any multi-clip sequence or scene, walk items 1-7 as one combined check
 alongside the Camera Technique Menu and MOTION MOVEMENTS scope. Where an
@@ -510,6 +543,65 @@ frame-LEFT, PABLO = frame-RIGHT in every two-shot of both episodes (matches the
 already-shot 7.1a spec). Wardrobe already frozen. Zero-lag arrival to be written
 into every scene's first shot.
 
+### CAMERA + SOUND CONTINUITY — full scope, as one mechanism (owner lock 2026-08-31, permanent, no exceptions)
+
+Consolidates every reverse-engineered continuity finding that spans BOTH
+channels at once — Part 9's five rules above (Socrates/William/Anne studies),
+Part 14.F (found on Escobar 7.1a→7.1b→7.1c, verified against Caesar and
+Henry VIII reels), and `creative-direction.md` §25 (Titanic study). The
+central finding, not two separate checklists: her production ties the
+camera event and the sound event to the same in-world cause — a real cut
+survives because picture and sound are bridged together, not because either
+channel was fixed in isolation. Wardrobe/identity continuity is a separate
+axis, governed by `CHARACTER_LOCK.md` and the N7/N8 reference-package
+discipline — cross-referenced, not rebuilt here.
+
+**Camera-side elements:** screen geography frozen (host/figure keep the same
+frame-left/frame-right assignment all episode, a hard 180° discipline);
+consistent light family per act; exact pose-lock for a frozen/held figure
+across a cut (an explicit instruction to reproduce that literal captured
+frame, never a loose "continuing from" reference); the alternative to
+cutting at all — compositing or rack-focus-revealing a new figure INTO THE
+SAME SHOT as a frozen figure when the freeze needs zero seam (verified: the
+Jane Seymour deathbed beat, the jousting mid-air freeze); cuts land
+mid-motion, not on stillness; a consistent on-screen subject anchor (camera
+distance, arm/head position) carries across a cut even when the environment
+changes completely.
+
+**Sound-side elements:** topic chains the location (the line before a cut
+names or implies the destination); zero-lag arrival (dialogue or motivated
+ambience starts 0-1s after nearly every cut; longer silent establishes, 3-8s,
+reserved only for emotional resets); universal unbroken audio bridging
+across every cut (never independently reset at a boundary).
+
+**The joint mechanism:** a diegetic sound or action motivates and bridges
+the cut at once — a door latch, a shutter click, a thud, a horn, a music
+sting landing on frame 0 — giving the cut a single in-world cause that
+serves both channels simultaneously, rather than a camera fix and a sound
+fix applied separately.
+
+**TRIGGER TABLE — situation → continuity mechanism:**
+
+| Situation | Camera-side | Sound-side |
+|---|---|---|
+| Any cut within a continuous scene, universal | Cuts land mid-motion, not on stillness | Audio never touches silence — J-cut (100-600ms pre-lap) or one continuous bed under both shots |
+| A figure is frozen/held going into or out of a cut | Exact pose-lock to their actual last/first captured frame — never a loose "continuing from" reference | Same literal ambient bed reused across the clips, not independently resynthesized per clip |
+| A freeze needs zero seam at all | Skip the cut entirely — composite or rack-focus-reveal the new figure into the same shot as the frozen figure (Escobar 8.2+8.3 applies this 2026-08-31) | No bridging needed — there is no cut to bridge |
+| A location jump / scene change | Screen geography stays frozen (frame-left/right invariant); consistent light family per act; contrast cut (ECU→wide or reverse) | Topic-chained — the line before the cut names or implies the destination; zero-lag arrival (0-1s) |
+| An emotional reset (not a routine jump) | (as above) | Longer silent establish, 3-8s, permitted — the one exception to zero-lag |
+| A continuous first-person/selfie camera-holder across a cut | Consistent on-screen subject anchor — distance, arm angle, head position stay put even as environment changes completely | (universal row applies) |
+| Any cut, with an available in-world cause | A diegetic sound or action motivates AND bridges the cut at once (door latch, shutter, thud, horn, music sting on frame 0) — the joint mechanism, not two separate fixes | (same event serves both channels) |
+| A clip ends on a character looking toward something | Eyeline-match bridge — the next clip reveals what they were looking at | — |
+
+Same discipline as the other scopes: where a situation doesn't cleanly
+match a row, stop and ask the owner rather than picking silently.
+
+**Applies project-wide, this episode and all others**: before finalizing
+any multi-clip sequence, check both sides of this table together, not one
+channel in isolation — a fix that only addresses camera or only addresses
+sound reproduces the exact 7.1a→7.1b→7.1c failure (both were broken at
+once, and each one alone was necessary but not sufficient).
+
 ## PART 10 — HER MUSIC, SOUND & GRAPHICS SYSTEM, MEASURED (Joan, Genghis studies)
 
 MUSIC: per-chapter cues, each location/beat gets its own motif (somber pads →
@@ -611,6 +703,41 @@ shots — already built into the EDITING/PACING MOVEMENTS scope (Part 3, item
 1); restated here because it governs the music/SFX layer specifically, this
 section's own concern, not just dialogue/narration continuity.
 
+**SCORE ARC TABLE — story stage → register** (item 1's sequence, episode-arc
+grain, matching the EDITING/PACING MOVEMENTS chapter-structure table):
+
+| Story stage | Score register |
+|---|---|
+| Hook/stakes opening | Tense ambient drone |
+| Antagonist/betrayal intro | Rhythmic tension score, low strings + percussive pulses |
+| The room turning against her | Melancholy string melody |
+| Strength/defiance beat | Sustained high-tension strings |
+| Tragic-irony climax | Poignant piano/cello swelling into a sorrowful muted register |
+| Farewell/resolution | Tender orchestral swell, resonant fading chord |
+
+**TRIGGER TABLE — situation → sound element** (items 2-7, fast-lookup;
+confirm against the fuller description above if a situation is ambiguous):
+
+| Situation | Element |
+|---|---|
+| Under every spoken line | Music ducks low (~-18dB feel) |
+| Between lines, in a dialogue gap | Music swells |
+| A punchline or a portal/threshold moment | Hard dropout/silence |
+| A comedic-timing beat | Music cuts out hard |
+| A horror reveal | Music cuts out hard |
+| A comedy-genre video/episode generally | One light pizzicato bed, with a sad-slide gag variation |
+| An episode's or scene's final line | Often lands on an unresolved low hit |
+| A doom/tragedy episode's pivot | Sound design collapses in lockstep with tone: lively ambience → low-frequency rumble → roar/screams |
+| Any scene, always (process rule, not a register) | Sound design is explicitly scripted — write a sound cue line, never leave it to the model |
+| Any location | Its own distinct ambience bed + reverb character (stone hall wet → street dry → cathedral huge) |
+| An action or a cut | SFX motivates it (paper rustle, door slide, hoofbeats) |
+| The portal/threshold moment, specifically its sound | Deep whoosh + resonant hum |
+| Grounding a scene physically | Diegetic foley as texture (a bowstring creak, a baby's giggle), separate from the score |
+| Any cut, the music/SFX layer specifically | Audio never touches silence — see the EDITING/PACING MOVEMENTS trigger table (Part 3), same mechanism restated for this layer |
+
+Same discipline as the other three scopes: where a situation doesn't
+cleanly match a row, stop and ask the owner rather than picking silently.
+
 **Applies project-wide, this episode and all others**: before finalizing
 any scene's audio design (per §15's own AUDIO MAP step), check items 1-7
 above as the reverse-engineered evidence base informing that design,
@@ -700,6 +827,28 @@ they get skipped.
   start of the ascent/sweep, then a hold (not a hard stop) at the peak
   reveal, matching the ~4s duration already measured for this register;
   never erratic or handheld-feeling, full stop, per element 1 above.
+
+**TRIGGER TABLE — situation → motion element** (the fast-lookup version of
+items 1-4 above; use this first, then confirm against the fuller
+description if a situation is ambiguous):
+
+| Situation | Rig tier | Speed-ramp | Easing curve |
+|---|---|---|---|
+| Camera Technique Menu item 1 (static lock) | Locked-off | None | N/A (no movement) |
+| Any sustained moving technique (menu items 2-7, 9-14) | Gimbal-smooth | None unless triggered below | Ease-in, then ease-out on the beat |
+| Lateral Steadicam/arc tracking (menu item 8) | Its own register: smooth constant-speed lateral glide, not gimbal-smooth's ease curve | None | Constant-speed, by the technique's own definition |
+| Whip-zoom/crash push (menu item 6) | Gimbal-smooth | None | Explicit exception: fast/sharp snap, not eased |
+| Whip-pan (menu item 7) | Gimbal-smooth | None | Explicit exception: fast with motion blur, not eased |
+| Host's own mobile/selfie direct-address beat (Escobar 2.1) | Controlled organic handheld (pair with the high/selfie camera angle) | None | N/A |
+| Any situation whatsoever | Erratic/shaky handheld — NEVER used, full stop, in any register | — | — |
+| Portal/threshold/dreamlike beat | Gimbal-smooth | SOFTENED (slowed, gentled) | Ease-in, then ease-out |
+| Comedic/impact beat (a splash, a snap, a sudden physical payoff) | Gimbal-smooth | SHARP/BRIEF up-ramp | N/A (the ramp itself is the accent) |
+| Drone/aerial trigger (scale too big for eye-level) | Gimbal-smooth, never handheld-feeling | None | Ease-in at the start, then a hold (not a hard stop) at the peak, ~4s |
+
+This table is a starting default per situation, not a substitute for
+judgment — same discipline as the Camera Technique Menu: where a situation
+doesn't cleanly match a row, stop and ask the owner rather than picking
+silently, per the same ambiguous-match rule already locked for camera.
 
 **Applies project-wide, this episode and all others**: before finalizing any
 clip's camera direction, state all four of these — rig tier, speed-ramp
@@ -917,9 +1066,15 @@ Before writing any clip's camera direction, name which of these techniques the s
 16. **Static/calm macro insert** — a still or near-still extreme close-up on a small tactile or contemplative detail (hands wrapping a brick of cash, rain beading on a child's curls); used for texture and grounding, not shock. Explicitly distinct from #9 (crash zoom to extreme macro), which is the jarring, fast-push version of a macro shot reserved for a pattern-interrupt emphasis beat — the same shot SIZE (extreme macro) serves two opposite registers depending on how the camera arrives there (a hard fast push vs. holding still/settling calmly), so always specify which register a macro insert is serving.
 
 **CAMERA ANGLE / HEIGHT — a separate axis from movement, cross-referenced here for one-stop consultation (governing rule: Part 7, Law 5).** Angle and movement are independent decisions — any of the sixteen techniques above can be shot at any of these heights — so both must be checked, not just one:
-- **Eye-level** — the default for ALL dialogue (seated scenes drop to seated eye-line). No arbitrary angle changes inside a single exchange.
-- **Low angle** — monuments/authority/grandeur beats only (Escobar 10.1, the gate).
-- **High/selfie angle** — vlog-style direct-address frames only (Escobar 2.1).
+
+| Situation | Angle |
+|---|---|
+| Any dialogue exchange (default) | Eye-level (seated scenes drop to seated eye-line); no arbitrary angle changes inside one exchange |
+| Monument/authority/grandeur beat | Low angle (Escobar 10.1, the gate) |
+| Host's own vlog-style direct-address frame | High/selfie angle (Escobar 2.1) |
+
+Same discipline as the other scopes: where a situation doesn't cleanly
+match a row, stop and ask the owner rather than picking silently.
 
 **Multi-scene proximity escalation (not a per-shot pick — cross-referenced, not duplicated here).** Shot size/distance tightening as tension rises across a run of consecutive scenes (Escobar S8-S10) is an episode-arc-level pattern already governed by the edit grammar (Part 2/3, "the emotional dial") — it belongs beside Part 15's other episode-arc doctrines (music arc, per-location color grade), not as a row in this per-shot table. Flagged here only so a camera decision doesn't miss it by looking solely at this menu.
 
