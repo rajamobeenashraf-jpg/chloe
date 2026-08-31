@@ -1,0 +1,32 @@
+{
+  "findings": [
+    {
+      "timestamp": "01:12.600",
+      "category": "physics",
+      "severity": 3,
+      "description": "During the cavalry impact, a defender flies unnaturally into the air with floaty trajectory and minor limb clipping.",
+      "end_timestamp": "01:14",
+      "fix": "Re-render the impact shot with refined motion physics to ensure realistic weight and collision.",
+      "verdict": "CONFIRMED",
+      "refined_description": "During the cavalry charge, a defender is launched into the air with an unnaturally floaty, horizontal trajectory above the soldiers."
+    },
+    {
+      "timestamp": "01:29",
+      "category": "continuity",
+      "severity": 2,
+      "description": "Alexander's armor clips slightly against the horse saddle with minor motion jitter during the dismount.",
+      "end_timestamp": "01:32",
+      "fix": "Touch up armor plate alignment and smooth out character motion tracks."
+    },
+    {
+      "timestamp": "00:41",
+      "category": "background",
+      "severity": 2,
+      "description": "The horse background element shifts position and scale slightly between tracking frames.",
+      "end_timestamp": "00:44",
+      "fix": "Apply camera tracking stabilization to maintain consistent scale for background props."
+    }
+  ],
+  "summary": "The production delivers a compelling historical selfie narrative with impressive crowd scale. Visual quality is generally strong, though minor AI motion artifacts appear during high-action combat collisions. Tightening physics simulation and background continuity will make the piece seamless.",
+  "overall_score": 6.8
+}

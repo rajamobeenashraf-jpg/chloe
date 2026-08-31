@@ -1,0 +1,20 @@
+  using character lock: /home/user/chloe/CHARACTER_LOCK.md
+  uploading alexander_final_cut_compressed.mp4 (25200192 bytes, video/mp4) ...
+  processing ...
+  processing ...
+pass 1/2: sweep ...
+  (gemini-3.7-flash busy, retrying in 10s)
+  (gemini-3.7-flash busy, retrying in 25s)
+  gemini-3.7-flash unavailable, trying next model
+  [gemini-3.6-flash] in=39115 out=252 finish=STOP
+  3 candidate finding(s)
+pass 2/2: verifying 1 finding(s) at 5 fps / high res ...
+  (gemini-3.7-flash busy, retrying in 10s)
+  (gemini-3.7-flash busy, retrying in 25s)
+  gemini-3.7-flash unavailable, trying next model
+  [gemini-3.6-flash] in=16301 out=56 finish=STOP
+  01:12.600 [physics] -> CONFIRMED
+
+wrote qc_gemini/full_cut/findings.json and qc_gemini/full_cut/report.md
+summary: 3 found, 1 confirmed, 0 dismissed, score 6.8/10
+The production delivers a compelling historical selfie narrative with impressive crowd scale. Visual quality is generally strong, though minor AI motion artifacts appear during high-action combat collisions. Tightening physics simulation and background continuity will make the piece seamless.
