@@ -222,6 +222,11 @@ description if a situation is ambiguous):
 | General fast-retention edit, no other row fits | (universal row applies) | ~2.5-3.5s average | — | — |
 | Final monologue/climax | (universal row applies) | 14-25s, one held close-up | — | None — competes with the monologue's own gravity |
 | Rising-tension/proximity-escalation scene | (universal row applies) | Lengthens + tightens as tension climbs | Early/wide → static lock or lateral tracking; mid-escalation → partial arc or slow dolly-in; peak → single-subject push-in or zoom-in-freeze | None — the escalation itself is the interrupt |
+| A shock/revelation beat | (universal row applies) | Hold 2-3s on the frozen face | Sudden push-in or crash zoom (menu item 6) | — |
+| A sincere grief/tears beat | (universal row applies) | 3-5s, the longest holds in the piece | Camera goes dead static (menu item 1) | — |
+| A gravitas (heavy question/answer) beat | (universal row applies) | Long lingering holds | Two-shot → cut to tight CU (menu item 12) | — |
+| A catharsis/vulnerability peak | (universal row applies) | ~4.5s, the longest uninterrupted hold | Shot-size ladder (menu item 17) | — |
+| A laughter beat | Never cut on the punchline — let it play | — | Static MCU/OTS (menu item 1) | — |
 | A beat closing with a laugh/tear/punchline | Cut only AFTER the beat's own closure, never mid-beat | — | — | — |
 | Scene change | Contrast cut (ECU→wide or the reverse) + landmark/place-year text overlay | — | — | — |
 | Episode-ending farewell/resolution, and ONLY there | Held long take into the cut | — | Vertical crane pull-up (Camera Technique Menu item 11) | Zero other interrupts in this beat |
@@ -734,6 +739,12 @@ confirm against the fuller description above if a situation is ambiguous):
 | The portal/threshold moment, specifically its sound | Deep whoosh + resonant hum |
 | Grounding a scene physically | Diegetic foley as texture (a bowstring creak, a baby's giggle), separate from the score |
 | Any cut, the music/SFX layer specifically | Audio never touches silence — see the EDITING/PACING MOVEMENTS trigger table (Part 3), same mechanism restated for this layer |
+| A shock/revelation beat | A sting or breath-whoosh SFX |
+| A sincere grief/tears beat | Soft piano/strings swell OR near-silence, with background chatter faded |
+| A gravitas (heavy question/answer) beat | Near-silence or a low drone swell |
+| A laughter beat | Ambient only — no music |
+| A catharsis/vulnerability peak | Score crescendo timed to the answering line |
+| A direct-address coda (Camera Technique Menu item 18) | Swelling score, ending on the punch line as it cuts to fast-black |
 
 Same discipline as the other three scopes: where a situation doesn't
 cleanly match a row, stop and ask the owner rather than picking silently.
@@ -1064,8 +1075,12 @@ Before writing any clip's camera direction, name which of these techniques the s
 14. **Drone/aerial establishing** — a true aerial view, reserved for scale that cannot fit an eye-level frame (a legacy/estate/battlefield too large to read from the ground). Named in Part 12's emotion map ("DRONE/AERIAL only when the scale of legacy cannot fit an eye-level frame") but, like #12, had no row here — folded in now so it is part of the same pre-generation check rather than a rule that only lived in a different Part.
 15. **Rack focus** — the camera itself may be static or moving; focus shifts from one plane to another (foreground to background or back) to redirect attention within a single continuous shot, without a cut. Used for an unmoved figure's reaction while something else in the frame changes focus-plane (Escobar 3.3, "HIS UNMOVED SINGLE, RACK FOCUS"). This is a focus decision layered onto whatever movement/lock the shot already has, not a movement type in its own right — name it as an addition to whichever of #1-14 governs the shot's actual camera movement.
 16. **Static/calm macro insert** — a still or near-still extreme close-up on a small tactile or contemplative detail (hands wrapping a brick of cash, rain beading on a child's curls); used for texture and grounding, not shock. Explicitly distinct from #9 (crash zoom to extreme macro), which is the jarring, fast-push version of a macro shot reserved for a pattern-interrupt emphasis beat — the same shot SIZE (extreme macro) serves two opposite registers depending on how the camera arrives there (a hard fast push vs. holding still/settling calmly), so always specify which register a macro insert is serving.
+17. **Shot-size ladder (catharsis escalation)** — a multi-stage reframe WITHIN one beat: medium → tighter → centered ECU at the single emotional peak, with camera/handheld motion stopping exactly at that peak (Part 12, "Catharsis peak" row). Distinct from proximity escalation (Part 3/15.C, EDITING/PACING MOVEMENTS), which is a general framing trend across a whole SCENE — this is a specific, named multi-step reframe tied to ONE beat's own internal build, not a scene-wide tendency.
+18. **Direct-address coda (push-in to fast-black)** — centered MCU, a slow smooth push-in, unbroken lens eye contact, ending on the punch line + a fast cut to black (Part 12, "Direct-address coda" row). Reserved for a SCENE or CHAPTER's own closing beat (e.g., a to-camera button ending an act) — a different grain from item 11's vertical crane pull-up, which stays locked to the whole EPISODE's absolute final shot, and only there. Owner-confirmed 2026-08-31: these are compatible, not competing — item 11 never loses its exclusivity, this covers a smaller, repeatable grain.
 
-**CAMERA ANGLE / HEIGHT — a separate axis from movement, cross-referenced here for one-stop consultation (governing rule: Part 7, Law 5).** Angle and movement are independent decisions — any of the sixteen techniques above can be shot at any of these heights — so both must be checked, not just one:
+**Checked and resolved, not built:** Part 12's own one-line summary also says "Orbit = coda," but this is treated as inconclusive shorthand, not a rule — it directly clashes in tone with item 3's actual verified use (a broad comedic shock-reveal, subject moving), and two better-evidenced techniques already cover ending/exit registers (Dignity/defiance/exit's static hold, and item 18 above). Item 3 stays comedic-shock-only unless a future video shows an orbit genuinely used as a coda.
+
+**CAMERA ANGLE / HEIGHT — a separate axis from movement, cross-referenced here for one-stop consultation (governing rule: Part 7, Law 5).** Angle and movement are independent decisions — any of the eighteen techniques above can be shot at any of these heights — so both must be checked, not just one:
 
 | Situation | Angle |
 |---|---|
@@ -1100,10 +1115,12 @@ match a row, stop and ask the owner rather than picking silently.
 | Scale too large for an eye-level frame (a legacy/estate/battlefield) | 14. Drone/aerial establishing |
 | An unmoved figure's reaction while another element shifts focus-plane | 15. Rack focus (layered on #1-14) |
 | Calm tactile/contemplative detail, not shock | 16. Static/calm macro insert |
+| Catharsis/vulnerability peak, building within one beat | 17. Shot-size ladder |
+| A scene or chapter's own closing beat (not the episode's final shot) | 18. Direct-address coda |
 
 This table is a starting default per register, not a rigid substitute for judgment — per the MASTER RULE's "force nothing that does not belong," a register match is where to start looking, not a license to insert movement a beat hasn't earned. **Where a beat doesn't cleanly match a row, this is NOT a self-resolved judgment call — stop and ask the owner before applying anything, every time, with the closest candidate register(s) and the reasoning laid out for his decision** (owner lock 2026-08-30, permanent, no exceptions). This mirrors the standing regeneration-approval rule (CLAUDE.md's QC rule) rather than the general "use best judgment" default: an ambiguous camera-register match gets a check-in, not a silent pick, even when a defensible reasoned choice is available.
 
-**Applies project-wide, this episode and all others**: this menu is a mandatory pre-generation check, not a reference to consult only when stuck — before writing any clip's camera direction, state which of these sixteen techniques (using the trigger table first), plus the separate angle/height decision, the scene calls for and why, as an explicit line in the production log, before generating. This check is also now MASTER RULE checklist item (CLAUDE.md): "Made the camera decision deliberately" now means naming the specific register match AND angle/height from this table, not just asserting a decision was made.
+**Applies project-wide, this episode and all others**: this menu is a mandatory pre-generation check, not a reference to consult only when stuck — before writing any clip's camera direction, state which of these eighteen techniques (using the trigger table first), plus the separate angle/height decision, the scene calls for and why, as an explicit line in the production log, before generating. This check is also now MASTER RULE checklist item (CLAUDE.md): "Made the camera decision deliberately" now means naming the specific register match AND angle/height from this table, not just asserting a decision was made.
 
 ### F. CROSS-CLIP TRANSITION BRIDGING (owner lock 2026-08-30, permanent, no exceptions) — found on Escobar 7.1a→7.1b→7.1c, verified against Caesar and Henry VIII reels
 
