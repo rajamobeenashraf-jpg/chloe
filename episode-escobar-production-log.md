@@ -44,6 +44,7 @@ URLs: `https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_
 ### Production clips (Part 1)
 | Clip | Version | Job | Status |
 |---|---|---|---|
+| 1.1 Frame One — The Grab (4s, clamped up from scripted 2.5s) | v1 | `ee3e8308-98aa-482e-9dcc-8234d4807245` | **OWNER APPROVED.** QC clean: freeze-detect zero near-zero frames, static locked-off camera confirmed, controlled shock-into-composure arc lands correctly, hard-noon light correct, guards shown hands/forearms-only at edges. Rifle rendered more fully visible than the prompt's grip-only language asked for (not a filter-fallback case — generation wasn't blocked, model just rendered a normal prop weapon) and earrings are plain gold hoops rather than door-knocker style — both flagged to and accepted by the owner as-is. |
 | 7.1 "Silver… or lead" veranda two-shot (6s) | v1 (SUPERSEDED — pre-framing-fix, one continuous shot) | `a0dc4ef6-08a5-4618-8fab-28d7477ca5a9` | superseded, see 7.1a/7.1b below |
 | 7.2 Congress memory wide (4s) | v1 (SUPERSEDED — read AI/unrealistic, uniform wardrobe, owner-flagged 2026-08-30) | `df15a5fc-1d15-493c-aec5-0810c0f616bd` | superseded, regeneration in progress |
 | SEAM TEST 7.1→7.2 stitched hard cut (10s) | — | local `seam_test_71_72.mp4` (PyAV concat) | superseded (source clips regenerating) |

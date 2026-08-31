@@ -128,7 +128,9 @@ CONTINUITY-IN: cold open, sound at frame zero (the band's last note).
 - FRAME: wide from behind/over her shoulder — the crowd parting in a diagonal,
   dancers frozen mid-move, drinks half-raised, a dropped napkin the only movement,
   the sunlit pool glaring beyond, the car row glinting far right. 25% headroom of
-  palms and night sky (two-shot/master headroom spent on environment).
+  palms and hard-noon blue sky (owner lock 2026-08-31: corrects a leftover
+  "night sky" contradiction caught before generating this shot — this scene
+  is hard-noon daylight, same as 1.1) (two-shot/master headroom spent on environment).
 - CAMERA: static wide. J-CUT: his voice enters OVER this shot — first dialogue
   at ~2.5s of runtime (her hook law).
 - DIALOGUE: {Pablo, off, unhurried, low: "You walk into my house with a camera."}
