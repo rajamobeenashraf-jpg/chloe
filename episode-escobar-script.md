@@ -51,8 +51,10 @@ EXCEPT the four v6 beats (1.4, 1.5, 2.1, 10.2–10.3) and the new 7.1b.
   audio continuous across them (§16).
 - Est. generations Part 1: ~28 shots from ~22 generations (6 derived reframes).
 
-**Runtime ~150s (updated 2026-08-31: +3s for 9.3's new coda beat, net shot
-count unchanged at 41 since 8.2+8.3 merged into one shot the same day) · 10
+**Runtime ~157s (updated 2026-08-31: +3s for 9.3's new coda beat, +6s syncing
+7.4 to its actual built sarcasm+arc design (3s→9s), +1s extending 9.2's
+pauses to clear its own 14-25s monologue floor; net shot count unchanged at
+41 since 8.2+8.3 merged into one shot the same day) · 10
 scenes / 41 shots (recounted 2026-08-30 from the actual
 tables — earlier headers undercounted; est. ~33 generations, since punch-ins and
 some singles are digital reframes of sibling takes) · Locks, style prefix,
@@ -466,13 +468,15 @@ GRADE: amber dusk begins here.
 - PERFORMANCE: deadpan-commitment walk — no glance back, ~92 wpm body tempo.
 - CUT: hard.
 
-**7.4 (3s) — HAZEL AT THE CHAMBER WALL**
-- FRAME: her chest-up lens single against stone, the chamber soft behind.
-- PERFORMANCE: hushed countdown register; on "murdered" — a 0.4s silence and
-  NO expression change (the plainness law: the fact needs no face).
+**7.4 (9s) — HAZEL AT THE CHAMBER WALL (owner lock 2026-08-31: SYNCED to the actual sarcasm+arc revision built this session, job `9bfddf68` — the script text was stale, still showing the superseded plainness-law version; corrects the gap found in the third audit pass)**
+- CAMERA: front-three-quarter starting position (30-45° off her nose direction, face clearly visible, NOT a shot from behind her), then a smooth PARTIAL ARC beginning partway through the line, closing distance and reframing tighter on her face as she turns to camera — Camera Technique Menu item 4c (a reflective/narrating beat pivoting into direct-to-camera address). Real parallax confirms genuine camera travel, not a zoom.
+- FRAME: chest-up-to-waist-up, turned at the three-quarter angle against the chamber wall (soft/defocused behind, shallow depth of field), arriving at a tighter chest-up lens single as the turn completes.
+- EYELINE: 0.0-5.0s her face stays visible at the three-quarter angle, gaze off-camera into the chamber (watching the memory), unchanging. From 5.0s her head and eyes turn toward the lens, locked directly on camera by 6.5s, holding for the rest of the shot.
+- PERFORMANCE: hushed countdown register through the first two lines, plain and factual. On landing on camera, a dry, knowing quality settles into her lower lids (eyes stay flat, not warm/crinkled) and only the right corner of her mouth lifts into a small, closed-lip smirk — the left corner stays flat — peaking exactly on "murdered." This is dark, dry sarcasm (owner-directed override of the original plainness law for this specific beat), not a smile.
 - DIALOGUE: {Hazel, hushed: "He got himself elected to Congress. The justice
-  minister stood up and told the country the truth. Months later, that
-  minister was murdered."} (24w @ 211 ≈ 7s with pauses; "murdered" lands last.)
+  minister stood up and told the country the truth."} then, arriving on camera: {"Months later, that
+  minister was murdered."} (24w @ 211 ≈ 7s with pauses, plus ~2s for the turn; "murdered" lands last, on the smirk's peak.)
+- KNOWN OPEN ISSUE (not yet resolved, needs owner sign-off before final lock): QC on job `9bfddf68` found real progress — the arc/turn mechanic and mid-shot profile visibility work — but two things are still imperfect: her face reads mostly from behind/nape through roughly the first 2-3 seconds before the three-quarter angle fully resolves, and the smirk on "murdered" still leans slightly warm/symmetric rather than cleanly dry-asymmetric. This is the current best version, not a fully approved final — flag before treating this shot as done.
 - CUT: hard back to his UNCHANGED calm at the dusk veranda (the cut is the
   commentary: nothing touched him) → S8.
 
@@ -530,17 +534,18 @@ night birds. GRADE: deep gold to purple.
   be?"} (12w @ 211, gentle pace — her one deliberately slower delivery.)
 - CUT: hard.
 
-**9.2 (13s) — THE LONGEST SHOT OF PART 1**
+**9.2 (14s) — THE LONGEST SHOT OF PART 1 (owner lock 2026-08-31: duration + pause weight extended from 13s — the Editing table's own floor for a final monologue/climax is 14-25s; fixed with more pause, not more words, per the standing wpm-vs-duration rule)**
 - FRAME→CAMERA: ONE slow push-in, medium → tight on his heavy-lidded eyes,
   dusk light crossing his face as it moves (the light itself performs).
 - PERFORMANCE (monologue law + gravitas): sentence one to HER eyes; sentence
   two drifts PAST camera (the future he's addressing); "they will say my
-  name" returns to her — three eyeline acts; pauses: 0.5s after "no one",
-  0.4s before "Either way"; micro: one slow blink total, jaw sets on
+  name" returns to her — three eyeline acts; pauses: 0.7s after "no one",
+  0.6s before "Either way", 0.5s before "they will say my name" (a new third
+  pause, letting the closing clause land alone); micro: one slow blink total, jaw sets on
   "monster", the almost-pride arriving only at "my name."
-- DIALOGUE: {Pablo: "That I came from nothing, and I bowed to no one." (0.5)
-  "They will call me a monster. My people will call me a saint. Either way —
-  they will say my name."} (32w @ 168 ≈ 11.5s + pauses.)
+- DIALOGUE: {Pablo: "That I came from nothing, and I bowed to no one." (0.7)
+  "They will call me a monster. My people will call me a saint. Either way —" (0.5)
+  "they will say my name."} (32w @ 168 ≈ 11.4s + 1.8s of pauses ≈ 13.2s, plus the shot's own natural breath weight to 14s.)
 - CUT: hard.
 
 **9.3 (3s) — HER CODA (owner lock 2026-08-31: applies Camera Technique Menu item 18, resolving into the hard cut rather than fast-black since Part 1 continues into Scene 10)**
@@ -555,8 +560,11 @@ night birds. GRADE: deep gold to purple.
 MUSIC: all out from his question on; then the PARTY MUSIC ITSELF slows and
 deepens as the portal opens (diegetic time-bend) + one huge slow clock-tick;
 TOTAL SILENCE the instant they cross; sub-drop on black.
-AMBIENCE: night gate — torches, the party far behind, crickets; then the
-portal's resonant hum owning the mix. GRADE: torchlit night; through the ring:
+AMBIENCE: night gate — torches, the party far behind, crickets; then a deep
+whoosh as the portal blooms, settling into its resonant hum owning the mix
+(owner lock 2026-08-31: the whoosh was missing — the music table pairs it
+with the hum for every portal/threshold moment, never the hum alone).
+GRADE: torchlit night; through the ring:
 clean 2026 daylight (the grade contrast IS the miracle).
 ENV LUXURY: the mounted Piper plane black overhead — his monument as the
 scene's cathedral.
@@ -610,6 +618,7 @@ scene's cathedral.
 - CUT: hard ON the word.
 
 **10.7 (4s) — THE PORTAL'S BIRTH — AWE SPEC**
+- CAMERA (owner lock 2026-08-31: was missing entirely): low angle + upward tilt tracking the bloom rising and their heads tilting back with it (Part 12's Awe/scale row — the performance spec below already had this, the camera direction didn't); the move runs SOFTENED — a slowed, gentled speed-ramp with an ease-in then ease-out, the Motion table's required treatment for a portal/threshold beat, never a sharp or constant-speed move here.
 - FRAME: two-shot side-on, both fully in frame (law 1), the gate arch and
   plane above; {Hazel, small smile: "Okay. Let's go."} — she turns her palm
   up; a SINGLE GOLDEN SPARK rises and hangs <the party music SLOWS AND
@@ -624,7 +633,7 @@ scene's cathedral.
 - CUT: hard.
 
 **10.8 (4s) — THE ENTRY — VERTICAL CRANE PULL-UP INTO DARKNESS (owner lock 2026-08-31: resolves the full-audit's outstanding item — this is Part 1's episode-ending farewell/resolution beat, the exact trigger for Camera Technique Menu item 11, previously left as STATIC WIDE by default rather than a deliberate choice)**
-- CAMERA: vertical crane pull-up, rising and receding from the portal scene as they cross the threshold — this technique is reserved SPECIFICALLY for an episode-ending farewell/resolution beat (Part 14.E item 11, Part 15.C, Anne Boleyn reel) and this is that beat: Part 1's final shot before smash-to-black. Distinct from any push-in/zoom; never used mid-episode.
+- CAMERA: vertical crane pull-up, rising and receding from the portal scene as they cross the threshold — this technique is reserved SPECIFICALLY for an episode-ending farewell/resolution beat (Part 14.E item 11, Part 15.C, Anne Boleyn reel) and this is that beat: Part 1's final shot before smash-to-black. Distinct from any push-in/zoom; never used mid-episode. The ascent runs SOFTENED (owner lock 2026-08-31, Motion table's portal/threshold row) — a slowed, gentled speed-ramp with an ease-in at the start of the rise, then a hold rather than a hard stop, matching this beat's continuation of 10.7's same softened treatment.
 - FRAME: the crane rises through the frame described below (ring center-frame, the two
   silhouetted before the burning doorway, plane black overhead; the WORLD
   LEANS IN — torch flames bending, moths spiraling into the glow, leaves and
