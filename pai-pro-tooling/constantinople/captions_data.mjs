@@ -285,7 +285,7 @@ export const CLIPS = [
   },
   {
     id: "clip10c",
-    duration: 4,
+    duration: 4.041667,
     captions: [
       { start: 0, end: 0.3, text: "EVERY MAN" },
       { start: 0.3, end: 0.58, text: "ON THAT" },
