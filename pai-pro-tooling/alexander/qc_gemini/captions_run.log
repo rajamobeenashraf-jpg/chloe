@@ -1,0 +1,24 @@
+  uploading alexander_final_cut_compressed.mp4 (25200192 bytes, video/mp4) ...
+  processing ...
+  processing ...
+pass 1/2: sweep ...
+  (gemini-3.7-flash busy, retrying in 10s)
+  (gemini-3.7-flash busy, retrying in 25s)
+  gemini-3.7-flash unavailable, trying next model
+  [gemini-3.6-flash] in=41643 out=378 finish=STOP
+  4 candidate finding(s)
+pass 2/2: verifying 2 finding(s) at 5 fps / high res ...
+  (gemini-3.7-flash busy, retrying in 10s)
+  (gemini-3.7-flash busy, retrying in 25s)
+  gemini-3.7-flash unavailable, trying next model
+  [gemini-3.6-flash] in=12261 out=75 finish=STOP
+  00:03.000 [text] -> DISMISSED
+  (gemini-3.7-flash busy, retrying in 10s)
+  (gemini-3.7-flash busy, retrying in 25s)
+  gemini-3.7-flash unavailable, trying next model
+  [gemini-3.6-flash] in=16296 out=41 finish=STOP
+  00:47 [text] -> DISMISSED
+
+wrote qc_gemini/captions/findings.json and qc_gemini/captions/report.md
+summary: 4 found, 0 confirmed, 2 dismissed, score 6.8/10
+Captions generally track spoken dialogue well but periodically truncate multi-word phrases and line endings across scene transitions.

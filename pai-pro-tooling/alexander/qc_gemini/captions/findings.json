@@ -1,0 +1,40 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:03.000",
+      "category": "text",
+      "severity": 3,
+      "description": "On-screen caption truncates spoken line 'two hundred and twenty years old'.",
+      "end_timestamp": "00:05",
+      "fix": "Include full phrase 'TWO HUNDRED AND TWENTY YEARS OLD'.",
+      "verdict": "DISMISSED",
+      "refined_description": "The on-screen caption is not truncated; the spoken line appears sequentially in multi-word chunks across the video timeline, fully displaying 'EMPIRE TWO', 'HUNDRED AND', 'TWENTY YEARS', and 'OLD GETS'."
+    },
+    {
+      "timestamp": "00:17",
+      "category": "text",
+      "severity": 2,
+      "description": "Subtitle omits 'Apparently' prefix from intended transcript line.",
+      "fix": "Update caption to 'APPARENTLY \u2014 AS OF RIGHT NOW, YES.'"
+    },
+    {
+      "timestamp": "00:47",
+      "category": "text",
+      "severity": 3,
+      "description": "Subtitle drops 'CAPTURED TWO' from spoken phrase 'captured two years ago'.",
+      "fix": "Display full phrase 'CAPTURED TWO YEARS AGO.'",
+      "verdict": "DISMISSED",
+      "refined_description": "The subtitle 'CAPTURED TWO' appears correctly on screen at timestamp 00:47.000 matching the spoken audio."
+    },
+    {
+      "timestamp": "01:27",
+      "category": "text",
+      "severity": 2,
+      "description": "On-screen text cuts off closing words of 'AND NOW EVERYONE ELSE IS TOO'.",
+      "end_timestamp": "01:28",
+      "fix": "Display complete sentence 'AND NOW EVERYONE ELSE IS TOO.'"
+    }
+  ],
+  "summary": "Captions generally track spoken dialogue well but periodically truncate multi-word phrases and line endings across scene transitions.",
+  "overall_score": 6.8
+}
