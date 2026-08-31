@@ -195,6 +195,7 @@ across the cut, louder→muffled as she moves.
   moving shoulder; one pool flare crosses the frame.
 - CAMERA: her handheld selfie energy — smooth walk-with, slight organic
   breathing (motion hygiene: no shake).
+- CAMERA ANGLE (owner lock 2026-08-31): high/selfie — the lens sits above eye-level, tilted down at her, the arm's-length smartphone framing of a real selfie vlog (this is the episode's one true vlog-style direct-address shot, the Camera Angle table's own trigger), paired with the handheld rig above.
 - PERFORMANCE (host conspiratorial-aside repertoire, Part 14): chin lowered,
   voice hushed under the party, one eyebrow-flash on "richest men on Earth";
   the ONE eye-flick to his back lands exactly on "he doesn't believe me"; on
@@ -326,7 +327,7 @@ GRADE: memory = warmer, lifted blacks (remembered light law).
   camera (the thousand-yard arrival of memory); one audible settling breath.
   {Pablo, quiet: "No."} (sub-100 wpm — one word, full weight.)
 - CAMERA: DEAD STATIC (grief law: the camera never moves on sadness).
-- SOUND: J-CUT — rain begins OVER his unfocused eyes 0.8s before the cut.
+- SOUND: J-CUT — rain begins OVER his unfocused eyes 0.5s before the cut (owner lock 2026-08-31: tightened from 0.8s, which exceeded the J-cut's own 100-600ms pre-lap window, creative-direction.md §25).
 - CUT: hard into the rain.
 
 **5.2 (3s) — MEMORY WIDE, DUSK**
@@ -546,6 +547,7 @@ night birds. GRADE: deep gold to purple.
 - CAMERA: direct-address coda — centered MCU, a slow smooth push-in, unbroken lens eye contact (item 18), landing tight exactly as she finishes the line.
 - FRAME: her chest-up to the lens, dusk gold rim light carrying over from 9.1/9.2.
 - PERFORMANCE: quiet, dry, plain-worded — the same host-mediates-to-camera register as her other asides; no smirk, no eyebrow flash, a flat and knowing stillness instead.
+- MUSIC (owner decision 2026-08-31, deliberate, not an oversight): NO swelling score here, against item 18's standard music pairing — the dry, ironic tone of this line would clash with a swell; stays musically bare, carrying only Scene 9's existing ambience bed.
 - DIALOGUE: {Hazel, quiet, to camera: "He's right. They will say his name." (0.4) "They just won't agree on why."} (13w @ 185 ≈ 4.5s incl. pause; wpm target = deliberate-register upper bound 140 × 1.20 × 1.10 Hazel stack.)
 - CUT: hard → S10 gate. (Proximity law peak: S8-S10 longest, tightest.)
 
@@ -563,6 +565,7 @@ scene's cathedral.
 - FRAME: law-1 moving two-shot, mid-thigh-up, Hazel LEFT / Pablo RIGHT, the
   plane's silhouette filling the headroom (environment stacking); camera
   tracks back smoothly, STOPS when they stop (motion mirrors them).
+- CAMERA ANGLE (owner lock 2026-08-31): low angle — the gate/plane monument beat this shot's own citation in the Camera Angle table.
 - DIALOGUE: {Hazel: "How does this end, Pablo?"} (6w @ 211.)
 - CUT: hard.
 
