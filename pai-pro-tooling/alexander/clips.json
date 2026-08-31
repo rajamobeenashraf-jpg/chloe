@@ -166,6 +166,7 @@
     },
     {
       "id": "9a", "duration": 15, "mode": "V", "hazel": true, "characters": [],
+      "startImage": "b42551d8-3da6-4568-975c-1812930ed33e",
       "grade": "dusk", "battle": false,
       "environment": "Dusk deepening, campfires relighting across the camp — a frame consciously rhyming clip 1's lamplit opening.",
       "scene": "Outro part 1, talk-to-lens: the empire line lands as a weighty, matter-of-fact reveal — the gravity of the fact does the work, not a slowed performance. Ends on a held beat that sets up the hard cut into 9b's tonal pivot.",
@@ -176,6 +177,7 @@
       "sound": "Fires catching, low camp murmur settling, night insects beginning; her voice level and matter-of-fact — the softening begins in 9b, not here. NO music.",
       "endingState": "Hold one beat on her steady expression after the line lands; hard cut to 9b.",
       "audioRef": "b24e5759-d3c0-4c84-a184-44f7cc65477e",
+      "_status": "VALIDATED v1 (still candidate C via nano_banana_pro — owner-approved continuation of the Clip 8 one-off exception, ElevenLabs/creative-flow workspace still credit-blocked; video job 4d31ea3b-5efa-48ae-a410-27c5e860e43e, delivered for owner review 2026-08-31). freezedetect flagged ~12s of the 15s clip as low-motion across 7 segments; 4fps pixel-diff check confirmed continuous real motion throughout (mean diff 2.7-16, never near-zero) — a false positive from the locked steady talk-to-lens framing, not a defect. Logged as S16.",
       "stillComposition": "Single-character V-mode selfie composition, deliberately frame-rhyming Clip 1's lamplit opening: Hazel's selfie-arm and lower jaw/chin at the bottom edge of frame, her face turned toward the lens, steady and matter-of-fact — not smiling, not somber, a settled expression just before she speaks. Her eyes are level and direct on the lens. The wax tablet is held low at her side, calm, out of her own sightline — she is not writing, this is a direct address. Background: dusk deepening toward night, small warm campfires relighting scattered through the deep frame behind her (echoing Clip 1's darkness-and-small-lights opening image), soft-focus, low camp murmur implied by scattered distant figures settling for the night. Battle-dust on her clothing and skin is visibly softer/settled compared to earlier clips — the day's grime persists faintly but she reads calmer, steadier. Bronze-amber dusk light fading toward blue-hour, campfire glow warm against the cooling sky. EYELINE: her eyes are on the lens for this entire still, unwavering, direct — this is the opening beat of a direct-address line, not a reactive glance."
     },
     {
