@@ -129,8 +129,8 @@
       "continuity": "The dropped shield is Persian; hooves travel LEFT-to-RIGHT (the charge's direction — the screen-direction map holds even in an insert); dust density matches 6a exactly. EVERY horse in frame — the first and any that follow — is hooves/legs ONLY: no rider, no saddle, no stirrup on any of them, at any point, including the last frame. Persian and Macedonian gear never mixes on the same side, matching 6a.",
       "sound": "Percussion foreground: hoof-strikes hammering earth close, overlapping from more than one horse, never a gap; the roar continuous above.",
       "endingState": "In the final frame, hooves are still striking the ground with fresh dust, and soldiers are still streaming through the center-right of frame — new figures are still entering from the right edge even in the last visible instant. Only the shield, settled since early in the clip, is still.",
-      "constraints": "No faces anywhere in frame. No rider, saddle, or stirrup on ANY horse, at any point. The camera framing and the horses/soldiers' relative zones never change."
-    },
+      "constraints": "No faces anywhere in frame. No rider, saddle, or stirrup on ANY horse, at any point. The camera framing and the horses/soldiers' relative zones never change.",
+      "_status": "VALIDATED v10 (job 444a8fef-2e79-4fec-bf35-80f0e4992a51, owner-approved 2026-08-31) — accepted with a known limitation: a rider briefly, transiently appears on the horse around 1.5-2s before disappearing again by the final frame, despite an explicit repeated 'no rider on ANY horse, at any point' instruction. Flagged to the owner before approval; owner approved anyway. Do not regenerate without fresh owner request per §19."
     {
       "id": "7", "duration": 10, "mode": "V", "hazel": true, "characters": [],
       "grade": "battle", "battle": true, "stage": "FULL BATTLE collapsing toward COLLAPSE",
