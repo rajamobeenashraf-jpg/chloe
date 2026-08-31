@@ -45,10 +45,16 @@ Run: CLAUDE_CODE_REMOTE=true bash .claude/hooks/session-start.sh
    generation uses the locked reference protocol AND the frozen identity string
    VERBATIM (never paraphrase; never fair/ivory/porcelain/rosy; age locked early
    twenties; §13 realism bar + matte/gritty clause in every prompt).
-3. creative-direction.md — ALL standing rules §1–§16. Highlights: V-mode
-   talk-to-lens ONLY (Nova mode PAUSED) · single continuous takes, no "and then"
-   phrasing, state "single continuous unbroken shot, one camera angle throughout,
-   no cuts, real-time continuous take" in EVERY video prompt · physical state
+3. creative-direction.md — ALL standing rules §1–§16, §25 (cut-boundary mechanics).
+   Highlights: V-mode talk-to-lens ONLY (Nova mode PAUSED) · single continuous
+   takes, no "and then" phrasing, state "single continuous unbroken shot, no
+   internal edit-style cuts, no scene changes, real-time continuous take" in
+   EVERY video prompt — superseded 2026-08-31: the older "one camera angle
+   throughout" phrasing is dropped, since deliberate camera movement per
+   `prompting-and-editing-playbook.md`'s Camera Technique Menu/MOTION
+   MOVEMENTS/EDITING-PACING MOVEMENTS scopes is still one continuous shot and
+   satisfies this rule; only an internal cut to a new camera setup violates it
+   · physical state
    gates dialogue pacing (§8) · duration judged per beat (§9) · pre-generation
    self-check on EVERY prompt (§10) · §12 active-participant · §13 natural-human
    realism (hard pass/fail) · §14 forward walking, never backward-tracking ·
