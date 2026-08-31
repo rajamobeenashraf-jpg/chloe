@@ -182,6 +182,7 @@
     },
     {
       "id": "9b", "duration": 14, "mode": "V", "hazel": true, "characters": [],
+      "startImage": "0a6e7198-1cec-4a11-81e1-61e111e84220",
       "grade": "dusk", "battle": false,
       "environment": "Same dusk moment, continuing directly from 9a with no time skip — campfires relighting across the camp, frame still rhyming clip 1's lamplit opening.",
       "scene": "Outro part 2, talk-to-lens: the softer Homer/Achilles payoff, then quieter still for the sign-off. This is the final shot of the episode — built around the one idea the viewer should leave with.",
@@ -192,6 +193,7 @@
       "sound": "Fires catching, low camp murmur settling, night insects beginning; her voice drops close and quiet across both lines, quietest on the sign-off. NO music.",
       "endingState": "Her face lit by fire in the near-dark, the sign-off landing; hold one beat.",
       "audioRef": "b24e5759-d3c0-4c84-a184-44f7cc65477e",
+      "_status": "VALIDATED v1 (still candidate D via nano_banana_pro — owner-approved continuation of the credit-block exception; video job 88c326ec-5163-4e23-8feb-68bf53f75424, delivered for owner review 2026-08-31, EPISODE-FINAL CLIP). Historical fix applied before generation: dialogue corrected from \"Twelve years\" to \"Eight years\" (Gaugamela Oct 331 BC to Alexander's death June 323 BC). freezedetect flagged 0-7.9s as low-motion (same steady talk-to-lens pattern as 9a/S16); 4fps pixel-diff confirmed continuous real motion throughout (mean diff 2.2-7.4, never near-zero) — false positive, not a defect. Final frame (14s) lands cleanly on the scripted 'face lit by fire in the near-dark, sign-off landing' beat. Do not regenerate without fresh owner request per §19.",
       "stillComposition": "The instant immediately following 9a's hard cut — same continuous dusk moment, no reset: identical V-mode selfie framing, same fire position and dusk-deepening light as 9a's final frame, same wardrobe/tablet/battle-dust state. Her expression has softened by one small degree from 9a's matter-of-fact opening — the affection under the fact just beginning to surface at the corner of her eyes/mouth, not a smile, a warmth. Her eyes are level and direct on the lens, unbroken. The wax tablet remains held low at her side, calm, out of her sightline. Background: campfires relighting scattered through the deep frame behind her, deepening blue-hour sky, small warm lights in darkness echoing Clip 1's opening. EYELINE: her eyes are on the lens for this entire still, unwavering, direct — continuing the unbroken gaze from 9a into this new beat."
     }
   ]
