@@ -214,8 +214,11 @@ MUSIC: none until the blast → one playful sting ON the spray peak → OUT
 completely for her deadpan tag (dropout-on-punchline law).
 AMBIENCE: late-afternoon lake — water lap, bird calls, party spilling downhill
 behind; reverb opens (bigger open air). ENV LUXURY: silver drink trays abandoned
-on the grass, a white speedboat moored at the jetty. (Time arc: low warm
-afternoon sun on the water.)
+on the grass, a white speedboat moored at the jetty. (Time arc: hard noon
+sun glaring off the water, owner lock 2026-08-31 — corrects a contradiction
+found in the fourth audit pass: this scene sits inside the episode's own
+GLOBAL LOOKS grade-arc bracket "hard noon sun (S1-S4)," but previously said
+"low warm afternoon sun," a golden-hour quality that belongs to S5-S6 instead.)
 
 **3.1 (2s) — TORCHLIT WIDE**
 - FRAME: wide master, the party spilling to the sun-glared water's edge, guests
@@ -333,6 +336,7 @@ GRADE: memory = warmer, lifted blacks (remembered light law).
 - CUT: hard into the rain.
 
 **5.2 (3s) — MEMORY WIDE, DUSK**
+- GRAPHICS (owner lock 2026-08-31, was missing — Part 9 rule 4 / Part 10 GRAPHICS require a landmark/place-year overlay on every era jump, and this memory is a genuine time jump decades before 1987): on-screen serif text, one second, "MEDELLÍN, LATE 1950s" — the episode's intro banner is already permanently dead by this point, so nothing else orients the viewer into this flashback.
 - FRAME: wide — Medellín hillside decades back: brick lanes, cooking smoke,
   strung bulbs, rain-slick tin; a thin BAREFOOT BOY small against the city
   lights below; 40% headroom of the glowing city (scale = the dream).
@@ -449,6 +453,7 @@ GRADE: amber dusk begins here.
 - CUT: cut + <GAVEL STRIKE> — the sound IS the time machine.
 
 **7.2 (3s) — MEMORY: THE CHAMBER (as generated, owner reviewing)**
+- GRAPHICS (owner lock 2026-08-31, was missing — same landmark/place-year rule as 5.2; an edit-stage text overlay, no regeneration needed): on-screen serif text, one second, "BOGOTÁ, CONGRESS, 1983" — this memory is a genuine era jump to years before the story's 1987 present.
 - FRAME: wide from the chamber rear — the minister at the podium, arm
   extended, POINTING; deputies turning row by row; window shafts + dust.
   40% headroom of chamber architecture. GRADE: memory-warm, lifted blacks.
