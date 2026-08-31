@@ -51,9 +51,10 @@ EXCEPT the four v6 beats (1.4, 1.5, 2.1, 10.2–10.3) and the new 7.1b.
   audio continuous across them (§16).
 - Est. generations Part 1: ~28 shots from ~22 generations (6 derived reframes).
 
-**Runtime ~157s (updated 2026-08-31: +3s for 9.3's new coda beat, +6s syncing
+**Runtime ~157.5s (updated 2026-08-31: +3s for 9.3's new coda beat, +6s syncing
 7.4 to its actual built sarcasm+arc design (3s→9s), +1s extending 9.2's
-pauses to clear its own 14-25s monologue floor; net shot count unchanged at
+pauses to clear its own 14-25s monologue floor, +0.5s correcting 1.4's
+word-count/duration math error; net shot count unchanged at
 41 since 8.2+8.3 merged into one shot the same day) · 10
 scenes / 41 shots (recounted 2026-08-30 from the actual
 tables — earlier headers undercounted; est. ~33 generations, since punch-ins and
@@ -145,7 +146,7 @@ CONTINUITY-IN: cold open, sound at frame zero (the band's last note).
 - DIALOGUE: {Pablo: "Who sent you?"} (0.2s gap after 1.2 — tight exchange gap.)
 - CUT: hard, on the question mark.
 
-**1.4 (4s) — HER SINGLE — THE REVEAL, MINUTE ONE**
+**1.4 (4.5s) — HER SINGLE — THE REVEAL, MINUTE ONE (owner lock 2026-08-31: word count and duration corrected — the fifth audit pass caught a real arithmetic error)**
 - FRAME: clean single, chest-up, she owns the center; guards' knuckles just
   inside both edges (the grip visible, the men not); 5% headroom; rifle muzzle a
   soft diagonal in the corner (grip-only fallback if filtered).
@@ -154,8 +155,9 @@ CONTINUITY-IN: cold open, sound at frame zero (the band's last note).
   held eye contact before she speaks (pre-line composure); on "future" a slight
   chin lift — conviction, not plea.
 - DIALOGUE: {Hazel, level, quick: "Nobody sent me. (0.4) I'm from the future,
-  Pablo. I know how your story ends."} (16 words + pause @ her neutral 211 wpm
-  ≈ 3.9s; the pause lands BEFORE the bomb — her strategic-pause law.)
+  Pablo. I know how your story ends."} (14 words (was miscounted as 16) + pause
+  @ her neutral 211 wpm ≈ 4.0s speaking + 0.4s pause ≈ 4.4s; the pause lands
+  BEFORE the bomb — her strategic-pause law.)
 - CUT: hard on the last syllable.
 
 **1.5 (3s) — HIS SINGLE — THE LAUGH-ONSET**
@@ -220,7 +222,7 @@ found in the fourth audit pass: this scene sits inside the episode's own
 GLOBAL LOOKS grade-arc bracket "hard noon sun (S1-S4)," but previously said
 "low warm afternoon sun," a golden-hour quality that belongs to S5-S6 instead.)
 
-**3.1 (2s) — TORCHLIT WIDE**
+**3.1 (2s) — LAKESHORE WIDE (owner lock 2026-08-31: retitled from "TORCHLIT WIDE" — stale name from before Scene 3's grade fix; this is hard-noon daylight, no torches, and the FRAME text below never mentioned any)**
 - FRAME: wide master, the party spilling to the sun-glared water's edge, guests
   daring each other toward it; 30% headroom of jungle and afternoon sky.
 - CAMERA: static. SOUND-IN at 0s: a dare-laugh and a shriek (zero-lag).
@@ -559,7 +561,7 @@ night birds. GRADE: deep gold to purple.
 - PERFORMANCE: quiet, dry, plain-worded — the same host-mediates-to-camera register as her other asides; no smirk, no eyebrow flash, a flat and knowing stillness instead.
 - MUSIC (owner decision 2026-08-31, deliberate, not an oversight): NO swelling score here, against item 18's standard music pairing — the dry, ironic tone of this line would clash with a swell; stays musically bare, carrying only Scene 9's existing ambience bed.
 - DIALOGUE: {Hazel, quiet, to camera: "He's right. They will say his name." (0.4) "They just won't agree on why."} (13w @ 185 ≈ 4.5s incl. pause; wpm target = deliberate-register upper bound 140 × 1.20 × 1.10 Hazel stack.)
-- CUT: hard → S10 gate. (Proximity law peak: S8-S10 longest, tightest.)
+- CUT: hard → S10 gate. CONTINUITY-OUT: topic chain — his own line "they will say my name" is what she's answering; her coda motivates the walk to the gate where his name and legacy are about to be tested for real. (Proximity law peak: S8-S10 longest, tightest.)
 
 ## SCENE 10 · THE CLIFFHANGER — belief lands, the portal opens · 26.5s
 MUSIC: all out from his question on; then the PARTY MUSIC ITSELF slows and
