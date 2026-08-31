@@ -51,7 +51,9 @@ EXCEPT the four v6 beats (1.4, 1.5, 2.1, 10.2–10.3) and the new 7.1b.
   audio continuous across them (§16).
 - Est. generations Part 1: ~28 shots from ~22 generations (6 derived reframes).
 
-**Runtime ~147s · 10 scenes / 41 shots (recounted 2026-08-30 from the actual
+**Runtime ~150s (updated 2026-08-31: +3s for 9.3's new coda beat, net shot
+count unchanged at 41 since 8.2+8.3 merged into one shot the same day) · 10
+scenes / 41 shots (recounted 2026-08-30 from the actual
 tables — earlier headers undercounted; est. ~33 generations, since punch-ins and
 some singles are digital reframes of sibling takes) · Locks, style prefix,
 character castings,
@@ -514,7 +516,7 @@ metronome), one distant dog, insect wall outside. GRADE: last amber.
   CONTINUITY-OUT: fear answered → the legacy question is the natural next
   and last question.
 
-## SCENE 9 · THE MONOLOGUE · 16s
+## SCENE 9 · THE MONOLOGUE · 19s (owner lock 2026-08-31: +3s for 9.3's new coda beat)
 MUSIC: silence → ONE string swell enters under sentence two only, ducked,
 swelling in his pauses (music breathes when he does).
 AMBIENCE: full dusk — insect wall, torches being lit somewhere, the first
@@ -538,6 +540,13 @@ night birds. GRADE: deep gold to purple.
 - DIALOGUE: {Pablo: "That I came from nothing, and I bowed to no one." (0.5)
   "They will call me a monster. My people will call me a saint. Either way —
   they will say my name."} (32w @ 168 ≈ 11.5s + pauses.)
+- CUT: hard.
+
+**9.3 (3s) — HER CODA (owner lock 2026-08-31: applies Camera Technique Menu item 18, resolving into the hard cut rather than fast-black since Part 1 continues into Scene 10)**
+- CAMERA: direct-address coda — centered MCU, a slow smooth push-in, unbroken lens eye contact (item 18), landing tight exactly as she finishes the line.
+- FRAME: her chest-up to the lens, dusk gold rim light carrying over from 9.1/9.2.
+- PERFORMANCE: quiet, dry, plain-worded — the same host-mediates-to-camera register as her other asides; no smirk, no eyebrow flash, a flat and knowing stillness instead.
+- DIALOGUE: {Hazel, quiet, to camera: "He's right. They will say his name." (0.4) "They just won't agree on why."} (13w @ 185 ≈ 4.5s incl. pause; wpm target = deliberate-register upper bound 140 × 1.20 × 1.10 Hazel stack.)
 - CUT: hard → S10 gate. (Proximity law peak: S8-S10 longest, tightest.)
 
 ## SCENE 10 · THE CLIFFHANGER — belief lands, the portal opens · 26.5s
@@ -576,11 +585,13 @@ scene's cathedral.
 - DIALOGUE: {Hazel, quiet: "I do." (0.5) "All of it."} (5w @ 158.)
 - CUT: hard ON the last syllable.
 
-**10.4 (3s) — HIS FACE CHANGES — THE SHOCK SPEC**
-- FRAME: static close-up, his face alone, zero headroom.
+**10.4 (3s) — HIS FACE CHANGES — THE SHOCK SPEC (owner lock 2026-08-31: camera/sound fixed to match its own declared shock register)**
+- CAMERA: a sudden push-in toward his face, landing tight on the close-up exactly as his eyes snap wide — NOT the episode's crash zoom (that technique is already spent, reserved exclusively for 4.3's shock stat); this is Part 12's other named option for a shock/revelation beat, a quicker, snapping push rather than a slow gravitas ease.
+- FRAME: close-up, his face alone, zero headroom, arrived at via the push above.
 - PERFORMANCE (shock micro-sequence, exact): eyes SNAP wide → lips part in a
   silent intake → total body freeze — held the FULL 3 seconds; the first
-  time all day his face has moved without permission. Silence (music gone).
+  time all day his face has moved without permission.
+- SOUND: a sting or breath-whoosh SFX lands exactly on the eyes-snap-wide instant (the shock beat's own music-table pairing), then true silence for the remainder of the freeze (music gone).
 - CUT: hard.
 
 **10.5 (2s) — HER HALF-STEP CLOSER**
