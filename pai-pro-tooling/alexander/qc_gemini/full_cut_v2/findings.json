@@ -1,0 +1,44 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:09.000",
+      "category": "continuity",
+      "severity": 3,
+      "description": "Alexander is wearing full armor while lying down, contrasting with the simple tunic he wore in bed in the previous shot.",
+      "end_timestamp": "00:12",
+      "fix": "Re-render the bed scene with consistent sleeping attire before arming.",
+      "verdict": "CONFIRMED",
+      "refined_description": "There is a continuity error across the cut where Alexander transitions instantly from sleeping in a simple cloth tunic under blankets to lying down in full plate armor and greaves."
+    },
+    {
+      "timestamp": "00:36.200",
+      "category": "continuity",
+      "severity": 3,
+      "description": "Hazel's tunic shoulder fastenings switch from horizontal straight pins to circular medallions.",
+      "end_timestamp": "00:48",
+      "fix": "Ensure the shoulder pin prompt consistently specifies circular medallion fibulae across all shots.",
+      "verdict": "CONFIRMED",
+      "refined_description": "Across the scene cut at 00:36.200, the fastenings on the woman's tunic shoulders abruptly change from horizontal bar pins to round circular medallions."
+    },
+    {
+      "timestamp": "01:12.800",
+      "category": "physics",
+      "severity": 3,
+      "description": "Cavalry charge collision features airborne soldier ragdoll physics that lack natural momentum and ground impact reaction.",
+      "end_timestamp": "01:13",
+      "fix": "Adjust dynamic weight and trajectory simulation for falling soldiers.",
+      "verdict": "CONFIRMED",
+      "refined_description": "During the cavalry charge impact between 01:11.600 and 01:13.800, multiple defending infantrymen are launched into the air with unnatural ragdoll physics, hovering horizontally and floating with stiff, weightless movement lacking realistic momentum, gravity, and ground impact physics."
+    },
+    {
+      "timestamp": "01:29",
+      "category": "anatomy",
+      "severity": 2,
+      "description": "Alexander's leg slightly clips through the horse harness upon dismounting.",
+      "end_timestamp": "01:31",
+      "fix": "Clean up dismount collision geometry."
+    }
+  ],
+  "summary": "The short demonstrates strong visual fidelity and consistent lead actor likeness throughout the sequence. Several continuity jumps exist regarding character costumes, notably Alexander's armor in bed and Hazel's tunic clasps. Combat sequences exhibit minor physics clipping typical of simulated crowd renders.",
+  "overall_score": 6.8
+}
