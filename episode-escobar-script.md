@@ -486,27 +486,33 @@ metronome), one distant dog, insect wall outside. GRADE: last amber.
   prison. Are you afraid?"} (13w @ 211 ≈ 3.7s incl. pauses.)
 - CUT: hard.
 
-**8.2 (6.5s) — THE GRAVE LINE — GRAVITAS PUSH**
+**8.2+8.3 (11.5s) — THE GRAVE LINE → HER LENS ASIDE, MERGED INTO ONE CONTINUOUS SHOT (owner lock 2026-08-31: camera+sound continuity technique applied — no cut, rack-focus reveal instead)**
+- CAMERA/CONTINUITY TECHNIQUE (Part 14.F item 4, verified: Jane Seymour deathbed beat, jousting mid-air freeze): a hard cut here would need pose-lock + audio bridging across it (per Part 14.F/creative-direction.md §25) to avoid the exact "jump" defect found on 7.1a→7.1b→7.1c. Since this freeze needs zero seam at all, skip the cut entirely — Hazel is rack-focus-revealed INTO THE SAME SHOT as Pablo's held stillness instead. This was previously two separately-cut shots (old 8.2, old 8.3); merged here before generation, the same way 7.1b+7.1c were merged this session.
 - FRAME: his single, medium-close → the episode's second slow PUSH-IN to
-  close-up (earned: the mask coming off).
-- PERFORMANCE (gravitas spec, full sequence): the warmth STOPS — half-smile
-  gone; posture locks; a heavy swallow; voice drops a register; thumb presses
-  the armrest (prop-contact tension); pause 0.5s mid-line; NO blink until the
-  window-turn after the line.
+  close-up (earned: the mask coming off). On his window-turn, the push-in
+  settles and HOLDS on his profile, still and sharp, gaze fixed past camera.
+  Hazel then steps into frame-left FOREGROUND, initially soft/out-of-focus;
+  the RACK FOCUS pulls from his held profile onto her, landing her in a
+  hushed lens single with HIS soft profile held at frame-right edge behind
+  her (the original 8.3 staging, now reached via the reveal, not a cut).
+- PERFORMANCE (Pablo, gravitas spec, unchanged through the push-in AND the
+  hold): the warmth STOPS — half-smile gone; posture locks; a heavy swallow;
+  voice drops a register; thumb presses the armrest (prop-contact tension);
+  pause 0.5s mid-line; NO blink from the window-turn onward — he holds
+  completely still and sharp/in-focus through Hazel's rack-focus entrance
+  and her entire aside; no further movement from him for the rest of the shot.
 - DIALOGUE: {Pablo, low: "I would rather have a grave in Colombia… (0.5)
-  …than a jail cell in the United States."} (17w @ 168 with the center pause.)
-- CUT: hard on his window-turn (motion ends the beat, not the edit).
-
-**8.3 (5s) — HER LENS ASIDE**
-- FRAME: her hushed lens single, HIS soft profile held at frame-right edge
-  behind her (threat-in-frame staging again).
-- PERFORMANCE: hushed countdown; the single glance at his profile lands
-  exactly on "he wins" (eyeline choreography).
-- DIALOGUE: {Hazel, hushed: "Next month the Supreme Court kills the
-  extradition treaty. He wins. For six years."} (16w @ 211; 0.3s before
-  "For six years.")
-- CUT: hard → S9 dusk gold. CONTINUITY-OUT: fear answered → the legacy
-  question is the natural next and last question.
+  …than a jail cell in the United States."} (17w @ 168 with the center
+  pause.) [window-turn, hold, rack-focus reveal begins] {Hazel, hushed:
+  "Next month the Supreme Court kills the extradition treaty. He wins. For
+  six years."} (16w @ 211; 0.3s before "For six years."; EYELINE: her single
+  glance at his held profile lands exactly on "he wins.")
+- SOUND: no cut exists in this beat, so no bridging is needed — one
+  continuous ambient bed runs the entire 11.5s (the strongest possible
+  continuity, per Part 14.F/§25: nothing to bridge when there's no seam).
+- CUT: hard → S9 dusk gold, only at the very end of Hazel's line.
+  CONTINUITY-OUT: fear answered → the legacy question is the natural next
+  and last question.
 
 ## SCENE 9 · THE MONOLOGUE · 16s
 MUSIC: silence → ONE string swell enters under sentence two only, ducked,
@@ -603,12 +609,14 @@ scene's cathedral.
   — belief total now, the wonder of a man seeing his first impossible thing.
 - CUT: hard.
 
-**10.8 (4s) — THE ENTRY — STATIC WIDE**
-- FRAME: static wide (her portal framing): the ring center-frame, the two
+**10.8 (4s) — THE ENTRY — VERTICAL CRANE PULL-UP INTO DARKNESS (owner lock 2026-08-31: resolves the full-audit's outstanding item — this is Part 1's episode-ending farewell/resolution beat, the exact trigger for Camera Technique Menu item 11, previously left as STATIC WIDE by default rather than a deliberate choice)**
+- CAMERA: vertical crane pull-up, rising and receding from the portal scene as they cross the threshold — this technique is reserved SPECIFICALLY for an episode-ending farewell/resolution beat (Part 14.E item 11, Part 15.C, Anne Boleyn reel) and this is that beat: Part 1's final shot before smash-to-black. Distinct from any push-in/zoom; never used mid-episode.
+- FRAME: the crane rises through the frame described below (ring center-frame, the two
   silhouetted before the burning doorway, plane black overhead; the WORLD
   LEANS IN — torch flames bending, moths spiraling into the glow, leaves and
   dust streaming slowly toward it, the pool's far surface rippling, her hair
-  drifting off her shoulder.
+  drifting off her shoulder), receding upward and back as they cross, the scene shrinking into the surrounding
+  darkness as the crane ascends.
 - ACTION: they walk INTO the doorway back-to-camera, daylight wrapping their
   silhouettes — the instant they cross, ALL SOUND STOPS; the ring collapses
   inward to its birth-spark; the spark dies; night restored →
