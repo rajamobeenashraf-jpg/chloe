@@ -83,8 +83,8 @@
       "sound": "Camp waking \u2014 hooves shifting, leather, low voices, fires; her voice close.",
       "endingState": "She is past the guarded tent, glancing back at it; horse lines behind.",
       "constraints": "Bucephalus and Alexander must not jump, glitch, or reset between near/far screen positions or scale at any point \u2014 their apparent distance from camera changes smoothly and in one direction only as Hazel's walk continues; the two Persian women at the tent are visible but never speak, gesture at Hazel, or become the focal subject \u2014 Hazel remains the sole speaker and camera focus throughout; no royal iconography (crowns, scepters, jeweled regalia) on either woman.",
-      "_status": "REGEN ROUND 2 IN PROGRESS (2026-08-31): edit-stage Gemini eyes (full-cut v2 pass) found a CONFIRMED continuity break at the clip3/clip4 cut \u2014 Hazel's shoulder fibulae changed from the locked straight-pin style to round circular medallions in v1's start-frame still (candidate A). Owner directed a fix. stillComposition now carries an explicit FIBULAE HARD CONSTRAINT naming the exact prior failure, per this project's established pattern (S14/N8/G1: naming the specific defect, not just restating the correct default, is what suppresses it). Regenerating still + video.",
-      "startImage": "60a192b4-7c94-479c-9ded-00993be165ae"
+      "_status": "STILL v2 APPROVED (2026-08-31): round 2 candidate D (b8a8f2cf-9536-4946-8082-fdd01cb19b80, nano_banana_pro, credit-block fallback re-approved) -- fixes the round-1 fibulae defect (round medallions -> correct straight-pin fibulae, confirmed in all 4 round-2 candidates). Picked over A/B/C on measured lighting-continuity match to Clip 3's actual last frame: warmth(R-B) D=42.2 vs Clip3's 56.9, luminance D=113.3 vs Clip3's 105.3 (closest overall combined match, lowest luminance delta of the four). VIDEO REGEN v3 NOT YET SUBMITTED.",
+      "startImage": "b8a8f2cf-9536-4946-8082-fdd01cb19b80"
     },
     {
       "id": "5a-aerial",
