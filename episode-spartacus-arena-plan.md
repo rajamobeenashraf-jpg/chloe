@@ -1,176 +1,157 @@
-# EPISODE PLAN — "THE ARENA" (Spartacus, Capua, 73 BC) — first 22 seconds
+# "THE ARENA" — 1:1 RECREATION of the Troy duel, first 22 seconds
 
-**Status:** planning. No generation submitted. Two owner decisions outstanding (§6, §7).
+**Status:** in production. Reference-anchor still submitted; no clip generated yet.
 **Reference grammar:** `troy-duel-fight-scene-study.md` (Troy 2004 duel, 21 shots / 22.0s / ASL 1.05s).
 **Branch:** `claude/video-fight-scene-breakdown-b9yj1f`
 
-## 1. OWNER-LOCKED DECISIONS (2026-09-01)
+---
 
-| # | Decision | Locked value |
+## 1. WHAT THIS IS — owner directive, 2026-09-01
+
+**A shot-for-shot copy of the reference's first 22 seconds.** All 21 shots, identical
+durations, identical shot sizes, identical camera heights, identical moves, identical cut
+points, identical choreography, zero dialogue. **Three things change and nothing else:**
+
+| Reference | Ours |
+|---|---|
+| Achilles (dominant, wins) | **SPARTACUS** |
+| Hector (outmatched, trips, loses) | **HAZEL** |
+| The plain outside the walls of Troy | **The arena at Capua, 73 BC** |
+
+**Owner override, verbatim intent:** *"Ignore the rule book if you have to. I want same copy of
+this video, same to same hundred percent."* Fidelity to the reference outranks this project's
+doctrine wherever the two conflict. Specifically overridden for these 22 seconds:
+
+- **`creative-direction.md` §12 active-participant directive** — Hazel is the losing party
+  throughout. She dodges, blocks, is disarmed, is knocked down, trips, and flails from the
+  ground. This is a straight violation of §12 and is authorised by the owner.
+- **Era accuracy on weapons** — Spartacus carries the reference's Greek spear and round shield
+  rather than a Thracian *sica* and square shield. Owner chose this knowingly (see §3).
+
+**Rules deliberately KEPT**, because they protect the result rather than constrain the copy:
+maximum realism / never-AI-slop; era-accurate crowd and architecture; the v5 identity lock;
+stills generated on Gemini (`nano_banana_pro`); every clip sent to the owner on completion;
+ask before any regeneration; no 4K upscale before approval.
+
+### Owner-locked answers (2026-09-01)
+
+| # | Question | Locked |
 |---|---|---|
-| 1 | The duel | **Hazel vs Spartacus** — she is thrown onto the sand as his opponent. She survives by wits, terrain and objects, NEVER by out-fighting him. He does not kill her. |
-| 2 | Dialogue | **NONE.** Zero spoken words across all 22 seconds, matching the reference exactly. Grunts, impacts, crowd and score only. |
-| 3 | Setting | **Capua, 73 BC** — the ludus of Lentulus Batiatus. Modest Campanian amphitheatre: stone lower tier, wooden upper stands. **NOT the Colosseum** (AD 80, 153 years later). |
-| 4 | Scope | Build these 22 seconds as a proof of concept; decide on a full episode after seeing the footage. |
+| 1 | Hazel's kit | **Modern clothes with sword and shield only.** No armour of any kind. |
+| 2 | Weapons | **Copy the reference's** — Spartacus gets the spear and round shield, matching Achilles shot for shot. |
+| 3 | Ending | **She loses.** Same as Hector. No save, no turn in her favour. |
 
-## 2. WHAT "NO DIALOGUE" REMOVES
+## 2. THE COPY MAP — 21 shots, 22.0 seconds
 
-Decision 2 switches off this project's single largest rule stack for these 22 seconds. Not
-skipped — genuinely **not applicable**, because there is no speech to govern:
+Durations are the reference's own, measured. Total 22.0s exactly, ASL 1.048s.
+"Move" and "angle" are the reference's; we replicate rather than choose.
 
-- Dialogue word-count vs. clip duration, the +20% override, the Hazel +10% stack — no words, no wpm.
-- ElevenLabs per-character pacing references — nothing to pace.
-- The Hazel and NPC voice-identity locks — no voice is generated.
-- Speech pacing/delivery calibration, plain-language vs. irony, host-mediating eyeline.
-- The word-chunk caption system — nothing spoken to caption.
+| # | In–Out | Dur | Size | Angle | Move | Reference content | OUR content |
+|---|---|---|---|---|---|---|---|
+| S1 | 0:00.0–0:00.8 | 0.8 | MS | Low-to-eye | Whip/track R | Achilles charging, shield up | **Spartacus** charging across the sand, round shield up, spear couched |
+| S2 | 0:00.8–0:01.8 | 1.0 | MS | **Worm's-eye** | Rapid tilt up | Achilles airborne, spear cocked to thrust down against sky | **Spartacus** airborne, spear cocked down at lens; above him the arena's upper rim and hard white sky |
+| S3 | 0:01.8–0:02.8 | 1.0 | MFS | Low | Quick pan R | Hector dodging back, shield + spear | **Hazel** dodging back, round shield up, **sword** (kit deviation ①) |
+| S4 | 0:02.8–0:04.6 | **1.8** | FS | Eye-level | Handheld tracking both | **GEOGRAPHY** — both fighters, Troy walls + spectators on ramparts | Both fighters; behind them the **arena stands** and the full crowd |
+| S5 | 0:04.6–0:05.6 | 1.0 | MS | Eye-level | Subtle track L | Achilles thrusting spear into Hector's shield | **Spartacus** thrusting spear into **Hazel's** shield |
+| S6 | 0:05.6–0:06.6 | 1.0 | CU | Eye-level | Slight handheld fwd | Achilles' face, fierce and focused | **Spartacus'** face — **bare-headed**, so it reads exactly as the reference's does |
+| S7 | 0:06.6–0:07.7 | 1.1 | CU (weapons) | Low | Handheld whip | Spear striking Hector's armour / spear haft | Spear striking **Hazel's shield boss** — she has neither armour nor spear (kit deviation ②) |
+| S8 | 0:07.7–0:08.5 | 0.8 | — | Low, tilt up | **Whip-pan** | Troy's parapet, crowd overlooking | The **arena stands**, crowd on their feet overlooking |
+| S9 | 0:08.5–0:09.6 | 1.1 | MCU | Low | Push-in / tilt down | Hector recovering behind his shield, grunt | **Hazel** recovering behind her shield, grunt |
+| S10 | 0:09.6–0:10.8 | 1.2 | MCU | Eye-level | Fast lateral track | Achilles swinging shield/sword into Hector's frame | **Spartacus** swinging into **Hazel's** frame, shield-bash |
+| S11 | 0:10.8–0:11.8 | 1.0 | MCU | Eye-level | Track on rotation | Achilles spinning with notched round shield | **Spartacus** spinning with the round shield |
+| S12 | 0:11.8–0:12.8 | 1.0 | FS | Eye-level | **Near-static** | Hector regaining stance near Troy's great gate | **Hazel** regaining stance near the **arena gate** |
+| S13 | 0:12.8–0:13.6 | 0.8 | MFS | Low, from behind | Low tracking pan | Achilles executing a spin | **Spartacus** executing a spin |
+| S14 | 0:13.6–0:14.5 | 0.9 | MS | Over-shoulder | Fast push-in | Achilles advancing, sword outstretched | **Spartacus** advancing, sword outstretched |
+| S15 | 0:14.5–0:15.5 | 1.0 | **ECU** | Dutch / low | Shaky drop | **Hector falling**, grimace of shock | **Hazel falling**, grimace of shock |
+| S16 | 0:15.5–0:16.4 | 0.9 | CU | **Worm's-eye, ground** | **Static** | **THE TURN** — greaved leg slipping on loose rock | **THE TURN** — **Hazel's sneakered foot** slipping on loose rock in the arena sand |
+| S17 | 0:16.4–0:17.3 | 0.9 | MS | Low | Whip track R | Hector swinging wildly while going down | **Hazel** swinging wildly while going down |
+| S18 | 0:17.3–0:18.6 | 1.3 | MCU | Eye-level | Fast lateral track L | Hector slashing right-to-left | **Hazel** slashing right-to-left |
+| S19 | 0:18.6–0:19.8 | 1.2 | MS | Low | Tracking pan L | Achilles parrying effortlessly, dodging back | **Spartacus** parrying effortlessly, dodging back |
+| S20 | 0:19.8–0:20.9 | 1.1 | MFS | Low | Fast lateral push | Achilles leaping, shield raised | **Spartacus** leaping, shield raised |
+| S21 | 0:20.9–0:22.0 | 1.1 | MFS | Low | Track backward | Achilles circling, sword lowered, dust at his boots | **Spartacus** circling, sword lowered, dust at his boots. **She is beaten. Out.** |
 
-**What gets HEAVIER as a direct result**, since picture and sound now carry 100% of the story:
+### Forced deviations — three, all logged
 
-- **Sound design** is promoted from a supporting rule to the primary storytelling channel (study L10 — diegetic-forward: impacts, sand, breath, crowd; score is a low drone underneath, never in front).
-- **Eyeline** stays fully in force and matters MORE, not less — with no words, gaze is the only way the audience reads intention. Every beat states where both pairs of eyes are.
-- **Performance and emotional intensity** carry the entire arc alone.
-- **Maximum realism** and **era-accurate wardrobe/environment for every figure in frame** — a full arena crowd is exactly the Escobar-Congress failure mode (identically dressed background figures). Individual variation written explicitly into every crowd prompt.
+**① S3 — Hector carries a spear; Hazel does not.** Owner's kit choice is "sword and shield
+only," so her defensive action is shield-and-sword rather than a spear parry.
 
-## 3. THE ARC — and the one deliberate inversion
+**② S7 — the reference strikes Hector's armour and spear haft.** Hazel has neither, so the
+strike lands on her shield boss instead. Closest available equivalent.
 
-The reference's hero loses to the *ground*: Hector trips on a rock, a 0.9s macro insert of
-loose stone carrying the whole reversal (study L9).
+**③ S6 — Spartacus is bare-headed.** The reference's shot 6 is a face close-up of Achilles;
+a helmeted gladiator would render an empty visor and lose the shot entirely. Historically a
+*thraex* would be helmeted — fidelity to the reference wins, per the owner's directive.
 
-**We invert it.** Hazel is outmatched from the first frame, so her turn is not an accident that
-happens TO her — it is a choice she makes. Same macro-insert grammar, opposite meaning: where
-the reference cuts to a rock betraying a man's foot, we cut to **her hand closing on a fistful
-of sand**. The reference's turn is luck. Ours is agency — which is what the active-participant
-directive (`creative-direction.md` §12) requires, and it is the reason this reads as her scene
-rather than a costume-swapped copy.
+## 3. GENERATION GROUPING — 17 clips for 21 shots
 
-| Act | Time | Beats | Function |
+Two shots share a generation only when they share a camera setup AND a continuous action.
+
+| Gen | Shots | Subject | Doubles because |
 |---|---|---|---|
-| 1. Hook | 0:00.0–0:02.0 | B1–B2 | In media res. The blade is already falling. No setup, no context. |
-| 2. Clash | 0:02.0–0:11.0 | B3–B10 | She is purely defensive and losing. Establishes the arena, the crowd, and that she cannot win this. |
-| 3. The turn | 0:11.0–0:16.0 | B11–B15 | She stops fighting and starts thinking. Sand into the helmet slits. |
-| 4. Aftermath | 0:16.0–0:22.0 | B16–B21 | He is down on one knee, blinded. She is unarmed and could run. Neither moves. Recognition. |
+| G1 | S1 | Spartacus | — |
+| G2 | S2 | Spartacus | — |
+| G3 | S3 | Hazel | — |
+| G4 | S4 + S5 | Both | Same eye-level handheld; continuous (blade freed → thrust) |
+| G5 | S6 | Spartacus | — |
+| G6 | S7 | Weapons CU | — |
+| G7 | S8 | Crowd | — |
+| G8 | S9 + S10 | Hazel → both | Continuous, same MCU proximity (recovery → bash) |
+| G9 | S11 | Spartacus | — |
+| G10 | S12 | Hazel | — |
+| G11 | S13 | Spartacus | — |
+| G12 | S14 | Spartacus | — |
+| G13 | S15 | Hazel | — |
+| G14 | S16 | Foot / ground | — |
+| G15 | S17 + S18 | Hazel | One continuous flail, two harvested windows |
+| G16 | S19 | Spartacus | — |
+| G17 | S20 + S21 | Spartacus | Continuous: leap → land → circle back, same low MFS |
 
-## 4. BEAT SHEET — 21 beats, 22.0s, ASL 1.048s
-
-Matches the reference's measured 1.05s ASL. Every cut lands on motion (study L4). Low angle is
-the default, eye-level reserved for the beats where they are momentarily equal (study L3).
-
-| # | In–Out | Dur | Size | Angle | Move | Content | Eyeline | Sound |
-|---|---|---|---|---|---|---|---|---|
-| B1 | 0:00.0–0:00.9 | 0.9 | MS | Low-to-eye | Fast handheld track R | Spartacus driving in — griffin-crested helmet, small square shield, curved sica raised. Sand spraying off his heels. | His eyes locked on Hazel through the visor slits, never wavering | Sand impact, breath in the helmet, low drone |
-| B2 | 0:00.9–0:02.0 | 1.1 | MS | **Worm's-eye** | Rapid tilt up | The sica coming DOWN toward the lens against hard white sky and the arena's upper rim | — (blade to camera) | Blade whoosh, rising metallic tension |
-| B3 | 0:02.0–0:03.0 | 1.0 | MFS | Low | Quick pan R | Hazel throwing herself sideways, rolling through sand; the sica buries into the ground where she was | Her eyes on the blade, then snapping to him as she comes up | Blade into sand, body roll, grit |
-| B4 | 0:03.0–0:04.8 | **1.8** | FS | Eye-level | Handheld tracking both | **GEOGRAPHY SHOT** — she scrambles up, he wrenches the blade free; behind them the full amphitheatre: stone lower tier, wooden stands, several thousand spectators, the editor's box | Both on each other | Crowd roar arrives full, blade drag |
-| B5 | 0:04.8–0:05.8 | 1.0 | MS | Eye-level | Subtle track L | He advances shield-up, unhurried — the lack of hurry IS the contempt | His on her; hers flicking to his blade | Deliberate footfalls, armour rattle |
-| B6 | 0:05.8–0:06.8 | 1.0 | CU | Eye-level | Slight handheld push | Her face: real fear, and underneath it calculation. Eyes dart down-frame to something on the ground | Her eyes leave his — DOWN to the sand — then back up. This plants the turn | Her breathing forward, crowd receding |
-| B7 | 0:06.8–0:07.9 | 1.1 | CU (hands) | Low | Handheld | She grabs a discarded scutum off the sand. It is far too heavy — the rim drags | Her eyes on the shield rim | Wood-and-bronze scrape, strain |
-| B8 | 0:07.9–0:08.7 | 0.8 | — | Low, tilt up | **Whip-pan to stands** | **CROWD RE-ESTABLISH** — on their feet, roaring. Individually varied tunics, faces, ages | — | Crowd roar peaks |
-| B9 | 0:08.7–0:09.8 | 1.1 | MCU | Low | Slight push-in | His blade smashes the shield out of her grip; her arms fly wide | His on her; hers wide, losing focus | Shield-strike crack, clatter |
-| B10 | 0:09.8–0:11.0 | 1.2 | MCU | Eye-level | Fast lateral track | He shield-checks her; she goes down hard, sand exploding | Hers skyward as she falls | Body slam, sand burst |
-| B11 | 0:11.0–0:12.0 | 1.0 | FS | Eye-level | **Near-static** | She is down, propped on one arm, heels pushing her backwards through sand. He walks in. | Hers locked up at him; his down at her | Crowd DUCKS. Her breath, his footfalls |
-| B12 | 0:12.0–0:12.9 | 0.9 | CU | **Worm's-eye, ground** | **Static** | **THE TURN** — her bare heel dug into loose sand; her fingers closing around a fistful of it | — (hand only) | Grit compressing. Near-silence |
-| B13 | 0:12.9–0:13.8 | 0.9 | MS | Low | Whip track | Her arm whipping up — sand straight into the eye-slits of his helmet | Hers hard on the visor slits | Sharp throw, sand on bronze |
-| B14 | 0:13.8–0:14.8 | 1.0 | ECU | Dutch / low | Handheld snap | His helmet: sand pouring through the slits, head snapping back, gauntlet to his face | His eyes gone — that is the point | Muffled shout, gauntlet on bronze |
-| B15 | 0:14.8–0:16.0 | 1.2 | MCU | Eye-level | Fast lateral track | She is already moving — scrambling out from under him, sweeping his leading ankle as she goes | Hers on his legs, not his face | Scramble, sweep, armour shift |
-| B16 | 0:16.0–0:17.0 | 1.0 | MFS | Low | Fast lateral push | He stumbles, drops to one knee, shield arm planting to catch himself | Blind — head turning to sound | Knee into sand, shield thud |
-| B17 | 0:17.0–0:17.8 | 0.8 | — | Low, tilt up | **Whip-pan to stands** | The roar CHANGES — shock, confusion, half the crowd standing | — | Roar breaks into ragged noise |
-| B18 | 0:17.8–0:18.8 | 1.0 | MS | Low | Tracking pan | Hazel on her feet, backing off, chest heaving, hands empty and open | Hers fixed on him, never breaking | Her breathing forward |
-| B19 | 0:18.8–0:19.8 | 1.0 | MCU | Eye-level | Slight handheld | He wrenches the helmet off — real face, sand in his beard, eyes streaming, staring at her | His finding her and STAYING | Helmet off, ragged breath |
-| B20 | 0:19.8–0:20.8 | 1.0 | MS | Eye-level | **Near-static two-shot** | Ten feet apart on the sand, both breathing hard. He does not raise the sica. | Direct, mutual, unbroken | Crowd drops far back. Two breaths |
-| B21 | 0:20.8–0:22.0 | 1.2 | CU | Eye-level | Slow push-in | His face. The smallest possible change — not anger. Recognition. Hold. Out. | His on her, unbroken to the cut | Near-silence, single low sustained note |
-
-## 5. GENERATION GROUPING — 17 clips, not 21
-
-**Correction to `troy-duel-fight-scene-study.md` §3, which estimated 10–12.** Once each beat's
-camera setup is actually assigned, most beats need their own generation — two beats can only
-share one clip when they share a camera setup AND a continuous action. The honest count is 17.
-
-| Gen | Beats | Why it can double up |
-|---|---|---|
-| G1 | B1 | — |
-| G2 | B2 | — |
-| G3 | B3 | — |
-| G4 | B4 + B5 | Same eye-level handheld setup, continuous action (he frees the blade → advances) |
-| G5 | B6 | — |
-| G6 | B7 | — |
-| G7 | B8 + B17 | One crowd clip, two harvested windows; sound sells roar vs. shock |
-| G8 | B9 + B10 | Continuous action, same MCU proximity (disarm → takedown) |
-| G9 | B11 | — |
-| G10 | B12 | — |
-| G11 | B13 | — |
-| G12 | B14 | — |
-| G13 | B15 | — |
-| G14 | B16 | — |
-| G15 | B18 | — |
-| G16 | B19 | — |
-| G17 | B20 + B21 | Static two-shot that pushes in and ends tight on him — one move, two windows |
-
-Method: generate each at ~5s with ONE camera move, harvest the cleanest 1–1.5s window(s),
+Method: generate each at ~5s with one camera move, harvest the cleanest 1–1.5s window(s),
 assemble with ffmpeg cutting on motion.
 
-**Known constraints carried in:**
-- `PROMPT_LEARNINGS.md` **S12** — no dead-on head-on angles where depth must read; oblique offset. Applies to B1 and B5.
-- Crowd beats (B4, B8, B17) need explicit individual-variation language per the maximum-realism lock.
-- Hazel's identity lock must survive dust, motion blur and fast handheld. **She is never helmeted** — her face must read in every beat she appears in.
-- **Angles 2.0 / SHOTS (website-only, owner-run):** foreseeable need at start-frame stage — the standoff (B20/B21) and the arena geography (B4) are both single compositions that would benefit from multiple angle options. Flagged now per the standing rule; will raise again at the point of need.
+## 4. CAMERA — FORCE-FIT MAPPING (owner decision 2026-09-01)
 
-## 6. WARDROBE — owner decision in progress
+The owner chose to force-fit the existing Camera Technique Menu rows rather than add a combat
+register. Because this is now a copy, the camera is the reference's, not a choice — the mapping
+below records which menu row each replicated shot is being filed under, and how far that
+stretches the row's written definition. Logged so the deviation stays visible.
 
-Owner picked **Option 1 (arrived as herself — modern clothes)** with **one change**, to be
-specified by a reference picture he is sending. Base look pending that picture:
-
-- Fitted cream ribbed tank; high-waisted dark denim; both wrecked with arena dust.
-- Jewelry: fine gold chain, small gold hoops, slim modern watch.
-- Shoes: white low-top sneakers, filthy with sand.
-
-Rationale for the pick: with zero dialogue, modern clothing is the only element that
-communicates "time travel" without a word. **BLOCKED until the picture arrives** — no still or
-clip is generated before then, and the garment from the picture replaces the corresponding
-piece above. Makeup and hairstyle are Claude's call once the outfit is final.
-
-## 7. CAMERA — FORCE-FIT MAPPING (owner decision 2026-09-01)
-
-The Camera Technique Menu (playbook Part 14.E) has no combat register. Claude proposed adding
-one; **the owner chose instead to force-fit the existing rows.** That is the operating decision
-and is executed below. Claude's stated reservation was that some rows get used against their
-written definitions; the owner decided with that in front of him. Every stretch is therefore
-logged explicitly here so the deviation stays visible in the record rather than becoming
-silent drift — which is the only mitigation available under a force-fit.
-
-**Movement and angle are independent axes and both are named per beat, per the MASTER RULE.**
-
-| Beat | Menu row (force-fit) | Angle / height | Stretch against the row's written definition |
+| Shot | Row | Angle | Stretch |
 |---|---|---|---|
-| B1 | #8 lateral tracking | Low (authority) | **HEAVY** — #8 specifies smooth constant-speed Steadicam; this is fast handheld |
-| B2 | #10 fisheye/barrel POV | Worm's-eye | Light — register matches exactly (in-scene weapon aimed at lens); no fisheye distortion, and it tilts rather than holding |
-| B3 | #8 lateral tracking | Low | **HEAVY** — fast handheld pan, not a smooth glide |
-| B4 | #13 crane-up for scale/geography | Eye-level | Moderate — register matches exactly (take-in-the-whole-picture, mid-scene); mechanically a handheld FS, not a crane rising above eye-level |
-| B5 | #8 lateral tracking | Eye-level | **NONE** — sustained walking motion at a steady witnessing distance is #8's stated use |
-| B6 | #12 single-subject push-in | Eye-level | Light — register is realization; handheld rather than smooth |
-| B7 | #16 static/calm macro insert | Low | **HEAVY** — #16 is explicitly "calm, not shock"; this is urgent and handheld |
-| B8 | #7 whip-pan | Low | **HEAVY** — #7 states "scene-to-scene transitions, NOT within a single dramatic beat"; used within the beat |
-| B9 | #6 rapid whip-zoom / crash push | Low | Moderate — register matches (sudden shock); mechanic softened to a slight push, not a crash snap |
-| B10 | #8 lateral tracking | Eye-level | **HEAVY** — fast handheld |
-| B11 | #1 static lock | Eye-level | **NONE** — "menace/danger held by stillness" is exact |
-| B12 | #16 static/calm macro insert | Worm's-eye | Moderate — mechanically exact (static extreme-close tactile detail); register is a plot turn, not contemplative |
-| B13 | #8 lateral tracking | Low | **HEAVY** — whip-speed handheld |
-| B14 | #9 crash zoom to extreme macro | Dutch / low | Moderate — register matches (jarring single-detail pattern-interrupt); arrives by cut, not by a zoom push |
-| B15 | #8 lateral tracking | Eye-level | **HEAVY** — fast handheld |
-| B16 | #8 lateral tracking | Low | **HEAVY** — fast handheld |
-| B17 | #7 whip-pan | Low | **HEAVY** — within-beat again |
-| B18 | #8 lateral tracking | Low | **HEAVY** — fast handheld |
-| B19 | #12 single-subject push-in | Eye-level | Light — handheld rather than smooth |
-| B20 | #1 static lock | Eye-level | **NONE** — performance carries the beat alone; exact |
-| B21 | #12 single-subject push-in | Eye-level | **NONE** — realization/gravitas on one subject, no freeze, no second figure |
+| S1 | #8 lateral tracking | Low | **HEAVY** — #8 specifies smooth Steadicam; this is fast handheld |
+| S2 | #10 fisheye/barrel POV | Worm's-eye | Light — in-scene weapon aimed at lens is #10's stated use |
+| S3 | #8 | Low | **HEAVY** — fast handheld |
+| S4 | #13 crane-up for geography | Eye-level | Moderate — register exact; mechanically handheld, not a crane |
+| S5 | #8 | Eye-level | **NONE** — subtle lateral at a steady witnessing distance |
+| S6 | #12 single-subject push-in | Eye-level | Light — handheld, not smooth |
+| S7 | #9 crash zoom to macro | Low | Moderate — register matches; arrives by cut, not a zoom |
+| S8 | #7 whip-pan | Low | **HEAVY** — #7 states scene-to-scene only, never within a beat |
+| S9 | #12 | Low | Light — handheld |
+| S10 | #8 | Eye-level | **HEAVY** — fast handheld |
+| S11 | #4 partial arc | Eye-level | Moderate — arc carrying a subject's turn; combat, not narration |
+| S12 | #1 static lock | Eye-level | **NONE** — performance carries the beat alone |
+| S13 | #4 partial arc | Low | Moderate — arc around a subject |
+| S14 | #6 crash push | Over-shoulder | Moderate — mechanic matches; register is advance, not shock |
+| S15 | #6 crash push | Dutch / low | Moderate — shock register matches; arrives by cut |
+| S16 | #16 static macro insert | Worm's-eye | Moderate — mechanically exact; register is a plot turn, not contemplative |
+| S17 | #8 | Low | **HEAVY** — whip-speed handheld |
+| S18 | #8 | Eye-level | **HEAVY** — fast handheld |
+| S19 | #8 | Low | **HEAVY** — fast handheld |
+| S20 | #8 | Low | **HEAVY** — fast handheld |
+| S21 | #8 | Low | **HEAVY** — fast handheld |
 
-**Tally:** 4 beats match cleanly (B5, B11, B20, B21). 5 are light-to-moderate. **12 are heavy
-stretches**, concentrated in row #8 (8 uses, all combat tracking) and row #7 (2 uses, both
-within-beat).
+**Tally:** 2 clean (S5, S12), 10 light-to-moderate, **9 heavy**, all but one concentrated in
+row #8 being used for combat tracking it was never defined for.
 
-**Per row #12's own requirement, ZOOM vs DOLLY is named:** B21 is a **ZOOM** (zero parallax,
-uniform frame scaling) — at a face close-up on the closing beat, real dolly parallax would add
-background travel that competes with the performance. B6 and B19 are also ZOOM, same reason.
+## 5. ASSETS
 
-**Rows deliberately checked and excluded:** #11 (vertical crane pull-up) is episode-ending only
-and this is a proof of concept, not an episode's final shot. #18 (direct-address coda) requires
-lens eye contact; B21 is Spartacus looking at Hazel, not at camera.
+| Asset | Job ID | Status |
+|---|---|---|
+| Hazel wardrobe + identity anchor (modern clothes, shield, sword, arena) | `7abde812-430e-46ae-8f65-a5c22f9e875a` | submitted 2026-09-01 |
+
+**Still outstanding:** the owner mentioned a reference picture for one wardrobe change. It has
+not arrived. The anchor above uses the base modern-clothes look; the garment swaps in when the
+picture lands.
+
+**Spartacus design** is not yet built — needs its own locked reference set (bare-headed per
+deviation ③, spear and round shield) before any shot he appears in can generate.
