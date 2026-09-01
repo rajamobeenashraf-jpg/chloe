@@ -114,15 +114,63 @@ assemble with ffmpeg cutting on motion.
 - Hazel's identity lock must survive dust, motion blur and fast handheld. **She is never helmeted** — her face must read in every beat she appears in.
 - **Angles 2.0 / SHOTS (website-only, owner-run):** foreseeable need at start-frame stage — the standoff (B20/B21) and the arena geography (B4) are both single compositions that would benefit from multiple angle options. Flagged now per the standing rule; will raise again at the point of need.
 
-## 6. OWNER DECISION OUTSTANDING — Hazel's wardrobe
+## 6. WARDROBE — owner decision in progress
 
-Per the wardrobe workflow: three complete options, owner picks the outfit, Claude then chooses
-makeup and hair. See chat.
+Owner picked **Option 1 (arrived as herself — modern clothes)** with **one change**, to be
+specified by a reference picture he is sending. Base look pending that picture:
 
-## 7. OWNER DECISION OUTSTANDING — the camera-register gap
+- Fitted cream ribbed tank; high-waisted dark denim; both wrecked with arena dust.
+- Jewelry: fine gold chain, small gold hoops, slim modern watch.
+- Shoes: white low-top sneakers, filthy with sand.
 
-The CAMERA TECHNIQUE MENU (playbook Part 14.E) was reverse-engineered from dialogue-driven
-history reels. It has **no combat register**. Roughly 17 of these 21 beats do not cleanly match
-any row, and three would require using rows against their stated definitions. Per the owner lock
-("if the beat doesn't cleanly match any row, stop and ask the owner, every time"), this is
-raised rather than self-resolved. See chat.
+Rationale for the pick: with zero dialogue, modern clothing is the only element that
+communicates "time travel" without a word. **BLOCKED until the picture arrives** — no still or
+clip is generated before then, and the garment from the picture replaces the corresponding
+piece above. Makeup and hairstyle are Claude's call once the outfit is final.
+
+## 7. CAMERA — FORCE-FIT MAPPING (owner decision 2026-09-01)
+
+The Camera Technique Menu (playbook Part 14.E) has no combat register. Claude proposed adding
+one; **the owner chose instead to force-fit the existing rows.** That is the operating decision
+and is executed below. Claude's stated reservation was that some rows get used against their
+written definitions; the owner decided with that in front of him. Every stretch is therefore
+logged explicitly here so the deviation stays visible in the record rather than becoming
+silent drift — which is the only mitigation available under a force-fit.
+
+**Movement and angle are independent axes and both are named per beat, per the MASTER RULE.**
+
+| Beat | Menu row (force-fit) | Angle / height | Stretch against the row's written definition |
+|---|---|---|---|
+| B1 | #8 lateral tracking | Low (authority) | **HEAVY** — #8 specifies smooth constant-speed Steadicam; this is fast handheld |
+| B2 | #10 fisheye/barrel POV | Worm's-eye | Light — register matches exactly (in-scene weapon aimed at lens); no fisheye distortion, and it tilts rather than holding |
+| B3 | #8 lateral tracking | Low | **HEAVY** — fast handheld pan, not a smooth glide |
+| B4 | #13 crane-up for scale/geography | Eye-level | Moderate — register matches exactly (take-in-the-whole-picture, mid-scene); mechanically a handheld FS, not a crane rising above eye-level |
+| B5 | #8 lateral tracking | Eye-level | **NONE** — sustained walking motion at a steady witnessing distance is #8's stated use |
+| B6 | #12 single-subject push-in | Eye-level | Light — register is realization; handheld rather than smooth |
+| B7 | #16 static/calm macro insert | Low | **HEAVY** — #16 is explicitly "calm, not shock"; this is urgent and handheld |
+| B8 | #7 whip-pan | Low | **HEAVY** — #7 states "scene-to-scene transitions, NOT within a single dramatic beat"; used within the beat |
+| B9 | #6 rapid whip-zoom / crash push | Low | Moderate — register matches (sudden shock); mechanic softened to a slight push, not a crash snap |
+| B10 | #8 lateral tracking | Eye-level | **HEAVY** — fast handheld |
+| B11 | #1 static lock | Eye-level | **NONE** — "menace/danger held by stillness" is exact |
+| B12 | #16 static/calm macro insert | Worm's-eye | Moderate — mechanically exact (static extreme-close tactile detail); register is a plot turn, not contemplative |
+| B13 | #8 lateral tracking | Low | **HEAVY** — whip-speed handheld |
+| B14 | #9 crash zoom to extreme macro | Dutch / low | Moderate — register matches (jarring single-detail pattern-interrupt); arrives by cut, not by a zoom push |
+| B15 | #8 lateral tracking | Eye-level | **HEAVY** — fast handheld |
+| B16 | #8 lateral tracking | Low | **HEAVY** — fast handheld |
+| B17 | #7 whip-pan | Low | **HEAVY** — within-beat again |
+| B18 | #8 lateral tracking | Low | **HEAVY** — fast handheld |
+| B19 | #12 single-subject push-in | Eye-level | Light — handheld rather than smooth |
+| B20 | #1 static lock | Eye-level | **NONE** — performance carries the beat alone; exact |
+| B21 | #12 single-subject push-in | Eye-level | **NONE** — realization/gravitas on one subject, no freeze, no second figure |
+
+**Tally:** 4 beats match cleanly (B5, B11, B20, B21). 5 are light-to-moderate. **12 are heavy
+stretches**, concentrated in row #8 (8 uses, all combat tracking) and row #7 (2 uses, both
+within-beat).
+
+**Per row #12's own requirement, ZOOM vs DOLLY is named:** B21 is a **ZOOM** (zero parallax,
+uniform frame scaling) — at a face close-up on the closing beat, real dolly parallax would add
+background travel that competes with the performance. B6 and B19 are also ZOOM, same reason.
+
+**Rows deliberately checked and excluded:** #11 (vertical crane pull-up) is episode-ending only
+and this is a proof of concept, not an episode's final shot. #18 (direct-address coda) requires
+lens eye contact; B21 is Spartacus looking at Hazel, not at camera.
