@@ -181,7 +181,12 @@ therefore fixes the top's position explicitly rather than leaving it to the mode
 | Asset | Job ID | Status |
 |---|---|---|
 | Anchor v1 — tank + jeans base | `7abde812-430e-46ae-8f65-a5c22f9e875a` | SUPERSEDED by the owner's outfit pick |
-| **Anchor v2 — denim buckle set (final look)** | `a95a0b7b-b554-4d6d-9f30-673d2daacb35` | rendered 2026-09-01, **canon comparison NOT run — see §7** |
+| **Anchor v2 — denim buckle set** | `a95a0b7b-b554-4d6d-9f30-673d2daacb35` | RENDERED — the only live asset carrying the outfit. **Canon comparison NOT run, see §7** |
+| Anchor v3 attempt — garment photo as 6th reference | `2ec0592d-8de7-44b5-9b9c-d10aff8e62f6` | FAILED (filter) |
+| Anchor v3 attempt — garment swatch sheet | `54119ee6-6454-4680-9d6a-75a07c50c830` | FAILED (filter) |
+| Anchor v3 attempt — text-only, corrected detail | `dea5405c-1b94-4b73-928c-2610f702ff32` | FAILED — explicit **`nsfw`** status |
+| Anchor v3 attempt — text-only, de-risked wording | `f0ea11c9-acf3-4fd4-9fd0-d74d67c3954b` | FAILED (filter) |
+| Garment swatch reference (built from owner's picture) | media `fb825488-00cb-4c22-ad54-402e92eae3fd` | uploaded, unusable as a model input |
 
 The wardrobe reference picture has arrived and is locked in §5. Anchor v2 carries the final look.
 
@@ -214,3 +219,25 @@ generating video, displaying any result to the owner.
 this session as configured.** Either the two CloudFront hosts are allowlisted on the
 environment's network policy (claude.ai/code environment settings), or the owner downloads the
 17 clips and assembles them himself.
+
+## 8. BLOCKER 2 — the outfit sits on the NSFW filter boundary (found 2026-09-01)
+
+Full detail: `PROMPT_LEARNINGS.md` N9.
+
+The denim tube-top-and-mini-skirt set passes the `nano_banana_2` filter **sometimes**. Anchor v2
+rendered; four consecutive attempts to render it more precisely then failed, one with an explicit
+`nsfw` status. Wording changes did not reliably move it, so this is probabilistic, not a prompt
+bug — iterating blind just burns credits.
+
+Two findings:
+1. **A real product photo of a different partly-clothed woman cannot be used as a wardrobe
+   reference** alongside an identity-locked subject. Both attempts that included one failed. The
+   owner's reference picture is still valuable — it corrected the written description (off-centre
+   buckles, silver rivets, raw hem, flat pale wash, curved yoke) — but it informs Claude's text,
+   not the model's input.
+2. **The forward risk is worse than the current one.** Shots S15–S18 put Hazel on the ground with
+   an armed man standing over her. That position, plus this outfit, plus video generation's own
+   filter, is very likely to fail repeatedly on precisely the shots a 1:1 copy cannot drop.
+
+**Owner decision needed** — see chat. Options: accept intermittent failures and retry; adjust the
+outfit enough to clear the filter reliably while keeping the look; or change the outfit.
