@@ -147,7 +147,7 @@ row #8 being used for combat tracking it was never defined for.
 
 | Asset | Job ID | Status |
 |---|---|---|
-| Hazel wardrobe + identity anchor (modern clothes, shield, sword, arena) | `7abde812-430e-46ae-8f65-a5c22f9e875a` | submitted 2026-09-01 |
+| Hazel wardrobe + identity anchor (modern clothes, shield, sword, arena) | `7abde812-430e-46ae-8f65-a5c22f9e875a` | rendered 2026-09-01, 1536x2752, **canon comparison NOT run — see §6** |
 
 **Still outstanding:** the owner mentioned a reference picture for one wardrobe change. It has
 not arrived. The anchor above uses the base modern-clothes look; the garment swaps in when the
@@ -155,3 +155,30 @@ picture lands.
 
 **Spartacus design** is not yet built — needs its own locked reference set (bare-headed per
 deviation ③, spear and round shield) before any shot he appears in can generate.
+
+## 6. BLOCKER — media cannot be downloaded in this environment (found 2026-09-01)
+
+The Higgsfield CDN hosts are **denied by this environment's egress policy**:
+
+```
+d8j0ntlcm91z4.cloudfront.net:443 — connect_rejected (403 to CONNECT, organization policy)
+d2ol7oe51mr4n9.cloudfront.net:443 — connect_rejected (403 to CONNECT, organization policy)
+```
+
+Per `/root/.ccr/README.md`, a policy denial is to be reported, never worked around.
+
+**Still works** (these are MCP calls, not this session's egress): generating stills,
+generating video, displaying any result to the owner.
+
+**Blocked** (all require the file bytes locally):
+1. The **mandatory canon side-by-side identity comparison** before delivering any still of a
+   locked character. It did not run on `7abde812`. The owner's eyes are currently the only check.
+2. **ffmpeg QC** — freezedetect and frame-extraction spot checks on every clip.
+3. **The harvest-and-assemble method itself** — downloading 17 clips, cutting the best
+   1–1.5s window from each, and stitching 21 beats to 22.0s. This IS the recreation. Without
+   local files there is no edit.
+
+**Consequence:** generation can proceed to all 17 clips, but **the copy cannot be assembled in
+this session as configured.** Either the two CloudFront hosts are allowlisted on the
+environment's network policy (claude.ai/code environment settings), or the owner downloads the
+17 clips and assembles them himself.
