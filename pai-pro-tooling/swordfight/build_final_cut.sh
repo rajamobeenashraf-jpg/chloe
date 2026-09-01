@@ -55,7 +55,7 @@ trim() { # $1=index $2=start $3=duration
 trim 1 "${T1:-0.60}" 3.00   # cut in on the held standoff, out on the blade bind
 trim 2 "${T2:-0.30}" 3.00   # out while the bind still trembles
 trim 3 "${T3:-0.20}" 3.00   # out as she is still pushing up off the stone
-trim 4 "${T4:-0.40}" 3.00   # out mid-rise, before the rotation completes
+trim 4 "${T4:-0.55}" 3.00   # TUNED: clears the ~0.45s near-static head (motion 1.33, min diff 0.514)
 trim 5 "${T5:-0.60}" 3.00   # hold the closing two-shot to the end
 
 # --- 4. hard-cut concat -------------------------------------------------------

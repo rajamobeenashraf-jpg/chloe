@@ -224,3 +224,36 @@ CAMERA → CONTINUITY → AUDIO → ENDING STATE → CONSTRAINTS. Cause-before-r
 the sound, THEN the recoil". Constraint-list negatives (item 6) used for
 structure/physics only. Screen-geography invariant restated in every clip's
 CONTINUITY block.
+
+## CLIP QC RESULTS (objective pass, run in the Higgsfield sandbox)
+
+All clips: 1080×1920, 24fps, 4.04s, 97 frames, AAC stereo. **Seedance audio is
+32 kHz, not 48 kHz** — the exact assumption that broke a previous stitch (P1);
+`build_final_cut.sh` forces `-ar 48000` explicitly on every encode.
+
+| Clip | Freezedetect | Motion profile (mean abs inter-frame diff / 0.5s) | Min diff | Verdict |
+|---|---|---|---|---|
+| 1 | none | 2.79 / 3.27 / 5.97 / **8.52** / 7.35 / 5.47 / 4.99 / 4.20 | 2.312 | PASS — the "hold still then explode" beat landed; low hold for the first second, peak on the strike at t≈1.5s |
+| 3 | none | 7.91 / 5.42 / 6.57 / 13.58 / **15.63** / 13.80 / 8.44 / 4.54 | 2.638 | PASS — peak at t≈2.0s is the throw + floor impact, settling as she comes to rest |
+| 4 | none | **1.33** / 7.47 / 11.39 / 9.25 / 9.40 / 8.53 / 13.06 / 12.82 | **0.514** | FINDING — see below |
+
+### FINDING — clip 4 has a near-static opening (~0.45s)
+Motion at t=0.0 is 1.33 and the min inter-frame diff is 0.514, both far below
+clips 1 and 3 (2.31 / 2.64). The prompt asked her to drive explosively off the
+floor within 0.0-0.7s; instead the start-frame pose is held for roughly the
+first 0.45s before motion ramps. This is **S14 (static-pose freeze) in mild
+form** — the start-frame reference read as "preserve this frame" for a moment
+rather than "start this action". Freezedetect at -60dB/0.4s is too strict to
+flag it; the motion floor is what catches it.
+
+**Resolved in the edit, NOT by regeneration** (so no owner approval gate is
+triggered): clip 4's trim point moved 0.40s → **0.55s**, which cuts the dead
+head off entirely and still leaves a full 3.00s cut. This is exactly the reason
+the 4s-generate / 3s-cut decision was taken.
+
+**Prompting lesson for future clips (candidate S-finding):** when a start-frame
+still shows a figure in a LOADED, pre-movement pose (crouched, coiled, about to
+spring), Seedance tends to hold that pose briefly before animating. Mitigation
+to try next time: write the first timeline beat as ALREADY IN MOTION at 0.0s
+("she is already rising, halfway up, when the shot begins") rather than
+describing the movement as starting at 0.0s.
