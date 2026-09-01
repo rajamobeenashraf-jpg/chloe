@@ -188,7 +188,8 @@ therefore fixes the top's position explicitly rather than leaving it to the mode
 | Anchor v3 attempt — text-only, de-risked wording | `f0ea11c9-acf3-4fd4-9fd0-d74d67c3954b` | FAILED (filter) |
 | Garment swatch reference (built from owner's picture) | media `fb825488-00cb-4c22-ad54-402e92eae3fd` | uploaded, unusable as a model input |
 | Anchor v3 attempt — layered shirt, violence framing kept | `84e53ca3-f6c2-4ae5-aa7c-7c3286628e19` | FAILED — the isolating test |
-| **ANCHOR v4 — FINAL LOOK, layered, violence framing removed** | `cb18e004-975f-42cb-a7cc-46631346661f` | **RENDERED.** Canon comparison NOT run — see §7 |
+| Anchor v4 — layered shirt, violence framing removed | `cb18e004-975f-42cb-a7cc-46631346661f` | RENDERED — the isolating test's control. Layer since REJECTED by owner |
+| **ANCHOR v5 — FINAL LOOK (bare denim set, owner-confirmed)** | `47cf1886-85c7-4b2b-885e-b3d086c19f61` | **RENDERED first try.** Canon comparison NOT run — see §7 |
 
 The wardrobe reference picture has arrived and is locked in §5. Anchor v2 carries the final look.
 
@@ -237,8 +238,10 @@ shirt added, and `cb18e004` passed with the identical outfit once the violence f
 1. **Prompt rule going forward:** describe a combat subject by POSITION, PROPS and ENVIRONMENT,
    never by narrated victimhood. "Standing on the sand holding a shield and sword" passes;
    "losing a fight" does not.
-2. **The layered shirt stays only if the owner wants it.** It was adopted to solve a problem it
-   did not solve. The unlayered denim set (anchor v2, `a95a0b7b`) is equally viable.
+2. **The layered shirt is REJECTED (owner, 2026-09-01: "Bare denim").** It had been adopted to
+   solve a problem it did not solve. The final look is the bare two-piece denim set, no outer
+   layer — anchor v5 `47cf1886`, which carries the garment details corrected from the owner's
+   reference picture and rendered first try under the neutral framing.
 3. **Open viability question for the whole episode.** These 22 seconds ARE a woman losing a fight
    to an armed man — that is the copy, per the owner's locked decision. Seedance's video filter is
    a separate filter and is UNTESTED. **Recommendation: test the most adversarial video shot
