@@ -405,3 +405,78 @@ FLAGGED, NOT YET RESOLVED:
 CANNOT CERTIFY: fine facial identity against the v5 canon (exact eye shape,
 cheek fullness, lip colour) at 176px. The mandatory side-by-side comparison
 still has not truly been satisfied — this is a coarse check, not that check.
+
+---
+
+## OWNER REJECTION + FIX ROUND — 2026-09-01 (clips 4 and 5)
+
+**Owner feedback (message truncated mid-sentence at "I"):** the last clip is not
+good; she runs in the OPPOSITE direction; she must run TOWARD the opponent, jump,
+REVOLVE in the air, then attack; and the sword must land on his SHOULDER, not on
+his chest armour.
+
+### ROOT CAUSE — a Claude prompting error, not a model failure
+Clip 4's prompt placed the CAMERA BETWEEN the two fighters: *"the camera retreats
+ahead of her, keeping her face in frame"*, and then *"below and BEHIND her,
+camera-right, he begins to react."* With the opponent behind her and the camera in
+front, she reads as running AWAY from him, straight at the viewer. Exactly what
+the owner saw.
+
+**A crude motion measurement did NOT catch this** — the x-centroid of motion energy
+drifted left-to-right in both clips (+7.3 and +10.8 of 96 columns), which looked
+correct, because that measure includes the retreating camera's own movement. The
+owner's eye was right and the objective proxy was too coarse. Logged as a caution:
+motion-centroid direction is not a valid proxy for staging when the camera moves.
+
+**Fix:** a SIDE-ON LATERAL camera, perpendicular to the run line, with both fighters
+in frame and the whole closing distance visible across frame. This is the same
+principle as S12 (a head-on camera destroys readable geometry; an oblique/lateral
+one restores it), applied to staging rather than formation depth.
+
+### SCOPE DECISION (Claude's call, stated to owner)
+The choreography the owner describes spans clips 4 and 5, so BOTH were rebuilt.
+Fixing only clip 5 would have left the wrong-direction run in the reel.
+
+### NEW START FRAMES
+| Job | What | Notes |
+|---|---|---|
+| `afc65377-855f-43bc-a269-c1a71137e24b` | 4b charge, side-on lateral | VERIFIED BY EYE: she sprints left→right at him, hair/skirt trailing back, he is planted ahead of her facing left. Direction now unambiguous. |
+| `4c7c9cc7-8c8b-4ddf-b60d-549dbec098fe` | 5b aerial, v1 | REJECTED by Claude: read as a forward LUNGE with the blade extended, not a body revolving. Owner asked for a revolve. |
+| `ae5ae8b9-1129-4528-ab59-4789c9c823e1` | 5c aerial, v2 | Rotation and high cocked blade correct — but knight's cloak drifted gold-dominant. |
+| `6093c8ec-67a7-486a-8c26-207553bbe5d3` | **5d aerial, FINAL** | N4 photo-edit of 5c changing ONLY the cloak colour. Pose and blade preserved. |
+
+### WARDROBE DRIFT CAUGHT BY MEASUREMENT, NOT BY EYE
+Claude's first visual read called the cloak "olive-green"; a hue histogram
+corrected that — green was only 3.6%. The real defect was GOLD DOMINANCE with the
+crimson suppressed. Measured on the knight region of each frame:
+
+| Frame | median hue | RED-family | GOLD | GREEN |
+|---|---|---|---|---|
+| charge still (reference crimson) | 332.3° | 49.7% | 15.3% | 0.0% |
+| aerial 5c (defective) | 70.0° | 32.8% | 37.6% | 3.6% |
+| aerial 5d (after cloak fix) | **345.7°** | **74.5%** | **15.1%** | **0.0%** |
+
+Gold now matches the reference almost exactly (15.1% vs 15.3%) and the hue sits
+firmly in the crimson band. **Method note: a hue histogram over a character's
+region is a cheap, reliable wardrobe-continuity check that does not depend on
+Claude being able to see the image well** — worth reusing on every multi-clip
+sequence.
+
+### S14 MITIGATION APPLIED (from the clip-4 static-head finding)
+Both new clip prompts open with an explicit "SHE IS ALREADY MOVING AT FULL SPEED
+AT 0.0s / there is no still moment at the start of this shot" clause, rather than
+describing the movement as beginning at 0.0s. This is the candidate fix logged
+after clip 4 v1's ~0.45s near-static opening; this round is its first live test.
+
+### OTHER FIXES FOLDED IN
+- Clip 5's closing two-shot now states explicitly that her gaze is level,
+  unblinking and on him, and "never drops, never goes downcast, never drifts" —
+  addressing the downcast-gaze finding from the earlier visual QC.
+- Clip 5 keeps the owner-approved "reworded" stage-combat framing that cleared
+  the content filter, with the impact re-aimed to the shoulder pauldron.
+
+### JOB LEDGER — FIX ROUND
+| Job ID | Clip | Status |
+|---|---|---|
+| `1aac69e4-cb38-4c00-a6e6-1325a1275d36` | 4b — run at him → jump → revolve | Submitted |
+| `0a07f29e-de0a-4096-8b31-80c59bdb424b` | 5b — complete revolve → shoulder strike → two-shot | Submitted |
