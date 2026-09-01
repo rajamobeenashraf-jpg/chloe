@@ -367,3 +367,41 @@ Trim points: c1 @0.60, c2 @0.30, c3 @0.20, c4 @0.55, c5 @0.80 — each 3.00s.
    nothing here is approved, only delivered.
 3. Not yet run (both are post-approval steps by rule): `virality_predictor`
    pre-publish check, and any 4K upscale (approve-before-upscale lock).
+
+## VISUAL QC — FIRST ACTUAL LOOK (2026-09-01, after owner asked about the block)
+
+Method that works around the CDN block, now proven: Higgsfield sandbox
+downloads the render → extracts a frame → crops/downscales → base64 → decoded
+locally → Read as an image. **Hard constraint: sandbox_exec truncates output
+above roughly 10,000 characters** (46k truncated, 10k came through intact), so
+each image must be ~7-9k base64 = a ~5KB JPEG. The sandbox is wiped between
+calls, so every chunk requires re-downloading and re-deriving the frame.
+Practical cost: ~2-3 tool calls plus ~5k tokens per image. Viable for a handful
+of critical frames, NOT for routine per-clip QC.
+
+### Frame checked: final cut @ 13.6s (the closing two-shot)
+CONFIRMED GOOD:
+- Screen geography holds — she is camera-LEFT, he is camera-RIGHT ✓
+- His costume reads correctly: gilded/gold armour with crimson ✓
+- Her broad v5 identity markers are present: bold thick dark-brown arched brows,
+  fair complexion with rosy tone, small button nose, light-coloured eyes,
+  bronde hair drawn back off the face with the parting visible ✓
+- Continuity-of-damage carried: sweat sheen plus the reddened graze/marking on
+  her cheek, as specified for the post-fall state ✓
+- Environment/grade: stone, window light, desaturated cold look ✓
+
+FLAGGED, NOT YET RESOLVED:
+1. **Her gaze reads downcast/off to one side**, not the "eyes unblinking and
+   level" the prompt specified for the closing beat. This is the same class of
+   failure as the Escobar 7.1c eyeline drift — worth the owner's eye.
+2. **His expression reads alert/alarmed rather than dazed and beaten**, and the
+   thin dark trace at the corner of his mouth could NOT be confirmed at this
+   resolution. The reworded prompt may have softened the aftermath too far.
+3. **Possible wardrobe question**: in the wider frame a large pale/light area
+   sits lower-left where her oxblood gown should be. Could be a lit sleeve, her
+   hand, or the blade — but it does not obviously read as deep oxblood velvet.
+   Needs a closer look before the reel is called final.
+
+CANNOT CERTIFY: fine facial identity against the v5 canon (exact eye shape,
+cheek fullness, lip colour) at 176px. The mandatory side-by-side comparison
+still has not truly been satisfied — this is a coarse check, not that check.
