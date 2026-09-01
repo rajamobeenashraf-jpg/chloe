@@ -296,3 +296,29 @@ The same pattern appeared on the Ser Alaric full-body still, which failed with
 "must not resemble any real living person, actor, celebrity or public figure"
 in its constraints and passed on a retry with that clause removed. Two
 independent instances now, both resolved by DELETING the negative clause.
+
+## PARTIAL ASSEMBLY — clips 1-4 (2026-09-01)
+Built in the Higgsfield sandbox while clip 5 was still rendering.
+Trims: c1 @0.60, c2 @0.30, c3 @0.20, c4 @0.55 — each 3.00s → **12.147s total**,
+1080×1920, 291 frames, AAC 48 kHz.
+
+**Delivery route for renders:** the assembled file cannot be sent into chat
+(CDN egress block), so it is uploaded to the owner's Higgsfield media library
+via `media_upload` → PUT from the sandbox → `media_confirm`.
+Partial cut media_id `c3535662-ae0f-485e-b7cc-4b11fd3a7958`
+→ https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/c3535662-ae0f-485e-b7cc-4b11fd3a7958.mp4
+
+### AUDIO-BRIDGING VERIFICATION (Part 14.F rule 2 — the 7.1 "jump" root cause)
+Measured 0.25s-window RMS across each cut boundary. A near-zero window at a cut
+would mean the continuous bed failed and each clip's audio was resetting.
+
+| Cut | t-0.5s | at cut | t+0.5s |
+|---|---|---|---|
+| 3.0s | 317.0 | 111.5 | 170.9 |
+| 6.0s | 235.3 | 931.8 | 292.8 |
+| 9.0s | 2117.3 | 263.6 | 169.6 |
+
+Global minimum 0.25s-window RMS across the whole file: **58.7** — never silent.
+**PASS:** audio does not touch silence at any cut; one continuous stone-hall
+space runs under all three cuts. This is the check that was missing when the
+Escobar seam was built, and it is now a scripted step in `build_final_cut.sh`.
