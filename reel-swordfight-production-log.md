@@ -480,3 +480,49 @@ after clip 4 v1's ~0.45s near-static opening; this round is its first live test.
 |---|---|---|
 | `1aac69e4-cb38-4c00-a6e6-1325a1275d36` | 4b — run at him → jump → revolve | Submitted |
 | `0a07f29e-de0a-4096-8b31-80c59bdb424b` | 5b — complete revolve → shoulder strike → two-shot | Submitted |
+
+### FIX-ROUND RESULTS — both clips PASS
+
+| Clip | Freezedetect | Motion profile | Min | Verdict |
+|---|---|---|---|---|
+| 4b | none | 10.31 / 11.02 / 10.91 / 9.13 / 9.25 / 11.01 / 10.33 / 8.92 | **6.886** | PASS |
+| 5b | none | 3.44 / 8.38 / 10.60 / 12.82 / 13.53 / 7.14 / 2.41 / 2.20 | 0.896 | PASS — builds to the impact, then the held two-shot |
+
+**S14 MITIGATION VERIFIED — promote to a confirmed finding.** Clip 4's old
+opening measured motion 1.33 with a min inter-frame diff of 0.514 (a ~0.45s
+frozen head). Clip 4b, with the explicit "SHE IS ALREADY MOVING AT FULL SPEED AT
+0.0s / there is no still moment at the start of this shot" clause, measures
+**10.31 in its first 0.5s with a min inter-frame diff of 6.886** — a 13x higher
+motion floor. **Rule for every future clip whose start frame shows a loaded,
+pre-movement pose: write the first beat as ALREADY IN MOTION at 0.0s rather than
+describing the movement as beginning at 0.0s.**
+
+**Visual verification (frames pulled back and actually looked at):**
+- 4b @ t=1.0s — she is mid-sprint travelling RIGHTWARD, hair streaming back to
+  the left. The wrong-direction defect is fixed.
+- 4b @ t=3.3s — she is airborne and rotating, and HE IS IN FRAME ahead of her,
+  crimson cloak intact. Run → jump → revolve all present.
+- 5b @ t=1.55s — **the blade is across his SHOULDER, not his chest.** Owner's
+  second fix delivered.
+
+**Partial miss, logged not fixed:** at 4b t=1.0s he is briefly OUT of frame — the
+camera tracks with her rather than holding both fighters as the prompt required.
+Geography still reads (the shot opens on both, and her travel direction is
+unmistakable) and he is back in frame by the launch, so this was not treated as
+grounds for another regeneration. Flagged for the owner.
+
+## FINAL CUT v2 — DELIVERED
+media_id `9520a2b3-c669-4cab-be44-1c4fd3780247`
+→ https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/9520a2b3-c669-4cab-be44-1c4fd3780247.mp4
+
+**15.147s · 1080×1920 · 24fps · 363 frames · 16.7 MB**
+Trims: c1 @0.60, c2 @0.30, c3 @0.20, c4 @0.30, c5 @1.00 — each 3.00s.
+PTS monotonic, first 0.020 → last 15.104. Freezedetect: none.
+Audio continuity across all four cuts (global min RMS 58.7, never silent):
+3s 317.0→111.5→170.9 · 6s 235.3→931.8→292.8 · 9s 2117.3→205.9→155.4 ·
+12s 942.1→1388.9→537.6
+
+### NOTE — sandbox 60s ceiling
+`sandbox_exec` timed out at 60s despite requesting 120s. The five-clip assembly
+must be run with `background:true` and polled via its log/exit files. Recorded so
+future sessions do not lose a run to this.
