@@ -37,7 +37,7 @@ ask before any regeneration; no 4K upscale before approval.
 
 | # | Question | Locked |
 |---|---|---|
-| 1 | Hazel's kit | **Modern clothes with sword and shield only.** No armour of any kind. |
+| 1 | Hazel's kit | **Modern clothes with sword and shield only.** No armour of any kind. Outfit finalised from an owner-supplied reference picture — see §5. |
 | 2 | Weapons | **Copy the reference's** — Spartacus gets the spear and round shield, matching Achilles shot for shot. |
 | 3 | Ending | **She loses.** Same as Hector. No save, no turn in her favour. |
 
@@ -143,20 +143,52 @@ stretches the row's written definition. Logged so the deviation stays visible.
 **Tally:** 2 clean (S5, S12), 10 light-to-moderate, **9 heavy**, all but one concentrated in
 row #8 being used for combat tracking it was never defined for.
 
-## 5. ASSETS
+## 5. HAZEL'S LOOK — LOCKED (owner-supplied reference, 2026-09-01)
+
+Owner sent a product page (nothingbutstyle.com, "Light Blue Denim Buckle Tube Top & Low Rise
+Mini Skirt", Light Blue Wash) with the instruction: *"This dress with everything else as you
+recommended."* So the two-piece replaces the tank-and-jeans base; every other element stays as
+proposed.
+
+**Outfit (owner-chosen):**
+- Strapless light-blue-wash denim **bandeau tube top**, cropped beneath the bust, with a wide
+  integrated denim belt band carrying a **large rectangular gold-tone buckle** centred on the chest.
+- Matching light-blue-wash denim **low-rise mini skirt**, sitting low on the hipbones, with its
+  own matching wide denim belt and a **second large rectangular gold-tone buckle** at the front.
+- Both pieces dust-caked, sand-smeared and sweat-darkened by the fight.
+
+**Everything else (as recommended, owner-confirmed):**
+- White low-top sneakers, ruined with dust. **Deliberately NOT the heeled sandals in the product
+  photo** — the owner said "everything else as you recommended," and heels cannot perform this
+  choreography.
+- Fine gold chain necklace, small thin gold hoop earrings, slim modern wristwatch.
+- The product photo's white shoulder bag is **not** carried — she has a shield and a sword.
+
+**Makeup and hair (Claude's call, per the wardrobe workflow):**
+- Hair: bronde balayage pulled back from her locked **centre parting** into a low ponytail at the
+  nape, strands escaped and sweat-stuck to temple, cheekbone and jaw. Keeps her identity marker
+  while surviving a fight.
+- Makeup: soft neutral base, her bold dark brows strong, mascara slightly smudged under the lower
+  lash line from sweat, **bare natural pink lips per her permanent lock** (never gloss), a real
+  flush of exertion. Sweat and dust sit on top of the makeup, not a glamour finish.
+
+**Continuity note for all 17 generations:** a strapless bandeau through rolls, falls and a
+shield-check is a continuity risk — if it shifts between shots the copy breaks. Every prompt
+therefore fixes the top's position explicitly rather than leaving it to the model.
+
+## 6. ASSETS
 
 | Asset | Job ID | Status |
 |---|---|---|
-| Hazel wardrobe + identity anchor (modern clothes, shield, sword, arena) | `7abde812-430e-46ae-8f65-a5c22f9e875a` | rendered 2026-09-01, 1536x2752, **canon comparison NOT run — see §6** |
+| Anchor v1 — tank + jeans base | `7abde812-430e-46ae-8f65-a5c22f9e875a` | SUPERSEDED by the owner's outfit pick |
+| **Anchor v2 — denim buckle set (final look)** | `a95a0b7b-b554-4d6d-9f30-673d2daacb35` | rendered 2026-09-01, **canon comparison NOT run — see §7** |
 
-**Still outstanding:** the owner mentioned a reference picture for one wardrobe change. It has
-not arrived. The anchor above uses the base modern-clothes look; the garment swaps in when the
-picture lands.
+The wardrobe reference picture has arrived and is locked in §5. Anchor v2 carries the final look.
 
 **Spartacus design** is not yet built — needs its own locked reference set (bare-headed per
 deviation ③, spear and round shield) before any shot he appears in can generate.
 
-## 6. BLOCKER — media cannot be downloaded in this environment (found 2026-09-01)
+## 7. BLOCKER — media cannot be downloaded in this environment (found 2026-09-01)
 
 The Higgsfield CDN hosts are **denied by this environment's egress policy**:
 
