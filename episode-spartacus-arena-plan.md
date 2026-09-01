@@ -242,9 +242,28 @@ shirt added, and `cb18e004` passed with the identical outfit once the violence f
    solve a problem it did not solve. The final look is the bare two-piece denim set, no outer
    layer — anchor v5 `47cf1886`, which carries the garment details corrected from the owner's
    reference picture and rendered first try under the neutral framing.
-3. **Open viability question for the whole episode.** These 22 seconds ARE a woman losing a fight
-   to an armed man — that is the copy, per the owner's locked decision. Seedance's video filter is
-   a separate filter and is UNTESTED. **Recommendation: test the most adversarial video shot
-   (S15/S16, Hazel going down with Spartacus over her) BEFORE building start frames for all 17
-   clips** — if that shot cannot generate, the copy has a hole exactly at its plot turn, and it is
-   far cheaper to learn that now than after 17 stills.
+3. **Viability RESOLVED for stills, 2026-09-01 — the copy survives.** Two isolating tests located
+   the boundary exactly:
+
+   | Configuration | Job | Result |
+   |---|---|---|
+   | Hazel alone, standing, armed | `47cf1886` | **PASS** |
+   | Hazel + Spartacus, both standing, several feet apart, weapons lowered | `0a92af47` | **PASS** |
+   | Hazel on the ground, Spartacus standing over her | `49619073` | **FAIL** — even with fully neutral wording, spear planted vertical, "not cowering", no blood, no contact |
+
+   **Two-character combat shots are fine.** What the filter refuses is specifically *woman down +
+   armed man above her*, and wording cannot rescue it — that test carried none of the earlier
+   violence language.
+
+   **And the copy does not need that configuration.** Checked shot by shot against the reference:
+   Achilles is never shown standing over a fallen Hector inside these 22 seconds. Hector falls
+   alone in frame (S15), the flailing shots are him alone (S17, S18), and S19–S21 are Achilles
+   alone. The two fighters share a frame only in S4, S5, S7 and S10 — all with both upright, which
+   is the configuration that just passed.
+
+   **Remaining untested risk:** S5, S7 and S10 involve weapon-on-shield CONTACT between them while
+   both are upright. Passing separated-and-lowered does not guarantee passing in-contact. Test one
+   of these before committing to the full run.
+
+4. **Seedance's video filter is still untested** — a different model and a different filter. The
+   stills boundary above is not evidence about video.
