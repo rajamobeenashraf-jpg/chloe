@@ -182,3 +182,45 @@ Alaric face identity only, @Image9-10 Alaric armour/build only.
 **KNOWN TYPO, logged:** clip 5's prompt contains a stray character in the phrase
 "a powerful半 silhouette". Surrounding text is unambiguous; assess the render
 before deciding whether a re-fire is warranted.
+
+## SEEDANCE CONSTRAINT FOUND — minimum duration is 4s, not 3s
+`models_explore` on `seedance_2_5` gives `duration` min 4 / max 30. The planned
+3s clips are therefore impossible. **Resolution: generate 5 × 4s (20s raw) and
+cut each to ~3s in the edit.** This is the correct order anyway — the extra
+footage becomes editing handles, which is what lets each cut land MID-MOTION per
+`creative-direction.md` §25, instead of being forced to cut on the exact first
+and last generated frame.
+
+## JOB LEDGER — ROUND 4 (clips, seedance_2_5 omni_reference, 4s, 1080p, 9:16, audio on)
+| Job ID | Clip | Status |
+|---|---|---|
+| `ba48f6f5-dae4-4d84-a40c-cece2d923e53` | 1 — standoff → first strike → block | Submitted (after preset decline) |
+| `9ded5d44-5d95-4eab-8cf9-8b75b9e7020f` | 2 — whip-pan → blade past the eye → block | Submitted (after preset decline) |
+| `640b31dc-2b51-4ca3-8998-08d772b7c8de` | 3 — spin strike → kick → fall | Submitted (first pass) |
+| `7de6f286-2196-45a9-9355-df8c69cc6829` | 4 — recovery → charge → launch | Submitted (after preset decline) |
+| `4ce9c5c6-bd85-4c98-b309-768db6a49b84` | 5 — final strike → closing two-shot | Submitted (after preset decline) |
+
+Per-clip reference package: `start_image` = that clip's own start-frame still
+(the S2 method), plus 5 `image_references` — Hazel master + both face crops
+(facial identity only), Alaric face front + face 3/4 (facial identity only).
+Deliberately NOT the full 10-image set used for the stills: the start frame
+already carries both characters' wardrobe, the environment and the lighting, so
+adding the wardrobe/full-body refs would have given two references overlapping
+jobs, which EXTERNAL GUIDANCE item 1 warns degrades output fast. N7's 5-canon
+requirement is scoped to `generate_image`/photo-edit calls, not video.
+
+### S7 RE-CONFIRMED (third occurrence)
+4 of the 5 clip submissions were intercepted by preset recommendation
+"IN THE DARK" (`24bae836-2c4a-48e0-89b6-49fcc0b21612`) instead of being
+submitted. Clip 3 passed on the first attempt — so the intercept is
+**non-deterministic across identical-format prompts**, which is new detail
+beyond the existing S7 note. Fix worked exactly as documented: resubmit
+identically with `declined_preset_id`.
+
+### Prompt structure used (EXTERNAL GUIDANCE item 2 template)
+FORMAT → REFERENCE ROLES → STARTING STATE → time-coded TIMELINE → one-move
+CAMERA → CONTINUITY → AUDIO → ENDING STATE → CONSTRAINTS. Cause-before-reaction
+(item 4) written explicitly into every impact beat as "FIRST the contact, THEN
+the sound, THEN the recoil". Constraint-list negatives (item 6) used for
+structure/physics only. Screen-geography invariant restated in every clip's
+CONTINUITY block.
