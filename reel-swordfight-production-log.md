@@ -107,3 +107,78 @@ Workarounds tested:
 `d2ol7oe51mr4n9.cloudfront.net` + `higgsfield.ai`) in this environment's network
 policy at claude.ai/code environment settings. Until then, Claude's own visual QC
 is unavailable and the owner's eye is the ONLY visual gate.
+
+---
+
+## OWNER FOLLOW-UP — 2026-09-01 (second message set)
+
+Owner briefly asked to recast the opponent as **Achilles**, then retracted it
+("ignore my last two messages"), instructing: proceed per the four locked
+decisions, and **use everything in the original master prompt — where anything
+conflicts, the master prompt overrides.**
+
+**Conflict resolved by Claude, not escalated** (owner had explicitly said stop
+asking): decision #3 locked "extend item 8 + item 6" and specifically did NOT
+authorise menu item 3 (full 360° orbit). But the master prompt calls for 360°
+orbiting camera movement (its §6 and §9), a whip pan (§5), POV (§9) and rack
+focus. Under the owner's override instruction, **the master prompt's per-section
+camera language is now the shot design**, with item 8 (lateral tracking) and
+item 6 (crash push) as the underlying grammar wherever the master prompt does
+not specify. Decision #1 (original knight, not Jaime Lannister) is UNCHANGED and
+was re-affirmed by "go ahead as per the four locked questions."
+
+Other master-prompt specs now binding: **1080p** (not the project's usual 720p),
+9:16, 15s total, `generate_audio: true`, no dialogue, cinematic sound design
+only. Because there is no dialogue, the entire wpm / speech-pacing / ElevenLabs
+pacing-reference / caption rule stack is MOOT for this reel — deliberately not
+applied, not an oversight.
+
+## SCREEN GEOGRAPHY LOCK (Part 9 continuity)
+**Hazel is camera-LEFT, Ser Alaric camera-RIGHT in every clip.** Stated in all
+five start-frame prompts so the master prompt's "audience always understands
+where the woman is, where he is" requirement survives the four hard cuts.
+
+## SHOT MAP — final (5 × 3s = 15s)
+| Clip | Master-prompt sections | Opening composition anchored by its start-frame still |
+|---|---|---|
+| 1 | §3 standoff + §4 attack trigger | Wide, camera below eye level, both in guard, eyes locked |
+| 2 | §4 block → OTS → §5 blade near eye | Tight OTS past her right shoulder onto his face, blades parting, dying sparks |
+| 3 | §6 spinning strike + block → §7 kick → fall | Low angle, her at the apex of the horizontal spin, him stepping off-line |
+| 4 | §8 recovery → charge → launch → §9 his upward look | Ground-level, her driving up off the flagstones, dust puffing |
+| 5 | §9 aerial spin → §10 final strike → §11 two-shot | Low angle, her airborne mid-rotation, him below looking up |
+
+## CONTINUITY-OF-DAMAGE LADDER (master prompt §"CHARACTER CONSISTENCY")
+- Clips 1–2: clean, composed; light then heavier sweat sheen.
+- Clip 3: heavy sweat, hair strands escaping, loose length carrying the spin.
+- Clips 4–5: post-kick state — grey stone dust smeared across her left hip,
+  left forearm and gown shoulder; fine reddened graze on her right cheekbone;
+  back braid pulled loose on one side; liner smudged further. Carried forward
+  identically into clip 5.
+- Blood at his mouth appears only DURING clip 5, after the chest impact — no
+  blood in any start frame.
+
+## JOB LEDGER — ROUND 2 (Ser Alaric 4-view set complete)
+| Job ID | What | Status |
+|---|---|---|
+| `28ef0b3e-faf1-41a8-a966-4d49ea25bdf0` | Alaric face front | Complete |
+| `2689c1a9-c63a-49d1-853d-84672c1edebf` | Alaric face 3/4 (N4 photo-edit off face front) | Complete |
+| `33bd3dd4-9187-472b-b2be-1424fe9a72e6` | Alaric full-body front | Complete |
+| `5e920173-53da-437f-98fb-a98ceb4aaae1` | Alaric full-body 3/4 (N4 photo-edit off full-body front) | Complete |
+
+## JOB LEDGER — ROUND 3 (start-frame stills, 10 refs each, narrow @-tag roles)
+| Job ID | Clip | Status |
+|---|---|---|
+| `723aa843-87bf-4e16-9f65-dccff4ebd154` | 1 — wide low-angle standoff | Submitted |
+| `accb3f4f-c7a2-4a36-92a3-15ceef019c1f` | 2 — tight OTS | Submitted |
+| `72d9f705-b072-4268-b8de-ebdf74415983` | 3 — low-angle spin strike | Submitted |
+| `6ab8bce3-e7c9-40ba-835d-65f7526b923e` | 4 — ground-level recovery | Submitted |
+| `775044a7-baaf-4918-bd13-1a7fd03c3527` | 5 — airborne hero frame | Submitted |
+
+Reference package per start frame (10 images, non-overlapping jobs per
+EXTERNAL GUIDANCE item 1): @Image1-5 Hazel v5 canon 4K (face/identity only),
+@Image6 Hazel look-lock `de284fa1` (wardrobe/hair/makeup only), @Image7-8
+Alaric face identity only, @Image9-10 Alaric armour/build only.
+
+**KNOWN TYPO, logged:** clip 5's prompt contains a stray character in the phrase
+"a powerful半 silhouette". Surrounding text is unambiguous; assess the render
+before deciding whether a re-fire is warranted.
