@@ -322,3 +322,48 @@ Global minimum 0.25s-window RMS across the whole file: **58.7** — never silent
 **PASS:** audio does not touch silence at any cut; one continuous stone-hall
 space runs under all three cuts. This is the check that was missing when the
 Escobar seam was built, and it is now a scripted step in `build_final_cut.sh`.
+
+| 5 | none | 6.68 / 13.35 / 11.74 / 8.81 / 3.35 / 1.45 / 1.51 / 1.31 | 1.087 | PASS — action front-loaded (peak 18.65 @ t=0.88), tail 2.4-4.0s mean motion 1.44 = the closing two-shot genuinely holds still |
+
+## FINAL CUT — DELIVERED 2026-09-01
+media_id `6f63315e-b861-49aa-90ec-c7877e1e9fe9`
+→ https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/6f63315e-b861-49aa-90ec-c7877e1e9fe9.mp4
+
+**15.189s · 1080×1920 · 24fps · 364 frames · AAC 48 kHz stereo · 16.2 MB**
+Trim points: c1 @0.60, c2 @0.30, c3 @0.20, c4 @0.55, c5 @0.80 — each 3.00s.
+
+### Verification (all run post-render, per the P1 discipline)
+- **PTS sanity:** 364 frames, first pts 0.020, last pts 15.146, monotonic TRUE.
+  This is the exact check that caught the unplayable seam-test file previously
+  (every frame stamped t=0) — the file is genuinely playable, not just written.
+- **Audio continuity at ALL FOUR cuts** (Part 14.F rule 2):
+
+| Cut | before | at cut | after |
+|---|---|---|---|
+| 3s | 317.0 | 111.5 | 170.9 |
+| 6s | 235.3 | 931.8 | 292.8 |
+| 9s | 2117.3 | 263.6 | 169.6 |
+| 12s | 322.6 | 1637.0 | 828.1 |
+
+  Global min 0.25s-window RMS **58.7** — audio never touches silence at any cut.
+- **Freezedetect on the assembled final:** no frozen segments.
+
+### Master-prompt compliance
+- 10-15s ✓ (15.19s) · 9:16 vertical ✓ · 1080p ✓ · no dialogue ✓
+- Synchronised sound design, no music ✓
+- Multi-angle coverage: wide establishing / OTS / ECU / low-angle / ground-level
+  / reverse-tracking / airborne / close two-shot ✓
+- Every cut corresponds to a strike, block, impact or momentum change ✓
+- Screen geography held (Hazel camera-left, Alaric camera-right) across all
+  five clips ✓
+- Continuity-of-damage ladder carried from the fall through to the ending ✓
+
+### STILL OUTSTANDING
+1. **Claude has never visually seen any of this work** — the CDN egress block
+   makes the mandatory side-by-side identity QC impossible in this environment.
+   Owner's eye is the only visual gate. Fix: allow
+   `d8j0ntlcm91z4.cloudfront.net` in the environment network policy.
+2. Owner approval of the five clips and the final cut has not been given yet;
+   nothing here is approved, only delivered.
+3. Not yet run (both are post-approval steps by rule): `virality_predictor`
+   pre-publish check, and any 4K upscale (approve-before-upscale lock).
