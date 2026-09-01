@@ -187,6 +187,8 @@ therefore fixes the top's position explicitly rather than leaving it to the mode
 | Anchor v3 attempt — text-only, corrected detail | `dea5405c-1b94-4b73-928c-2610f702ff32` | FAILED — explicit **`nsfw`** status |
 | Anchor v3 attempt — text-only, de-risked wording | `f0ea11c9-acf3-4fd4-9fd0-d74d67c3954b` | FAILED (filter) |
 | Garment swatch reference (built from owner's picture) | media `fb825488-00cb-4c22-ad54-402e92eae3fd` | uploaded, unusable as a model input |
+| Anchor v3 attempt — layered shirt, violence framing kept | `84e53ca3-f6c2-4ae5-aa7c-7c3286628e19` | FAILED — the isolating test |
+| **ANCHOR v4 — FINAL LOOK, layered, violence framing removed** | `cb18e004-975f-42cb-a7cc-46631346661f` | **RENDERED.** Canon comparison NOT run — see §7 |
 
 The wardrobe reference picture has arrived and is locked in §5. Anchor v2 carries the final look.
 
@@ -220,24 +222,26 @@ this session as configured.** Either the two CloudFront hosts are allowlisted on
 environment's network policy (claude.ai/code environment settings), or the owner downloads the
 17 clips and assembles them himself.
 
-## 8. BLOCKER 2 — the outfit sits on the NSFW filter boundary (found 2026-09-01)
+## 8. BLOCKER 2 — violence framing, not wardrobe, trips the filter (found 2026-09-01)
 
 Full detail: `PROMPT_LEARNINGS.md` N9.
 
-The denim tube-top-and-mini-skirt set passes the `nano_banana_2` filter **sometimes**. Anchor v2
-rendered; four consecutive attempts to render it more precisely then failed, one with an explicit
-`nsfw` status. Wording changes did not reliably move it, so this is probabilistic, not a prompt
-bug — iterating blind just burns credits.
+**Corrected diagnosis.** Five stills failed in a row, one with an explicit `nsfw` status. Claude
+first attributed this to the denim outfit being too revealing and reported that to the owner as
+fact; the owner changed the costume on that basis. **That diagnosis was wrong.** Every failure
+contained the phrase *"in the middle of a fight she is losing"*; every success described her
+simply standing in the arena. The isolating test settled it: `84e53ca3` failed WITH the covering
+shirt added, and `cb18e004` passed with the identical outfit once the violence framing was cut.
 
-Two findings:
-1. **A real product photo of a different partly-clothed woman cannot be used as a wardrobe
-   reference** alongside an identity-locked subject. Both attempts that included one failed. The
-   owner's reference picture is still valuable — it corrected the written description (off-centre
-   buckles, silver rivets, raw hem, flat pale wash, curved yoke) — but it informs Claude's text,
-   not the model's input.
-2. **The forward risk is worse than the current one.** Shots S15–S18 put Hazel on the ground with
-   an armed man standing over her. That position, plus this outfit, plus video generation's own
-   filter, is very likely to fail repeatedly on precisely the shots a 1:1 copy cannot drop.
-
-**Owner decision needed** — see chat. Options: accept intermittent failures and retry; adjust the
-outfit enough to clear the filter reliably while keeping the look; or change the outfit.
+**Consequences:**
+1. **Prompt rule going forward:** describe a combat subject by POSITION, PROPS and ENVIRONMENT,
+   never by narrated victimhood. "Standing on the sand holding a shield and sword" passes;
+   "losing a fight" does not.
+2. **The layered shirt stays only if the owner wants it.** It was adopted to solve a problem it
+   did not solve. The unlayered denim set (anchor v2, `a95a0b7b`) is equally viable.
+3. **Open viability question for the whole episode.** These 22 seconds ARE a woman losing a fight
+   to an armed man — that is the copy, per the owner's locked decision. Seedance's video filter is
+   a separate filter and is UNTESTED. **Recommendation: test the most adversarial video shot
+   (S15/S16, Hazel going down with Spartacus over her) BEFORE building start frames for all 17
+   clips** — if that shot cannot generate, the copy has a hole exactly at its plot turn, and it is
+   far cheaper to learn that now than after 17 stills.
