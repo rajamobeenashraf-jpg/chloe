@@ -1,0 +1,1912 @@
+[
+ {
+  "name": "our famous karak chaii",
+  "desc": "Our world famous traditional chaii (tea) freshly brewed with our signature blend of spices. The cup that started chaiiwala.",
+  "category": "hot drinks",
+  "sub": "Signatures",
+  "kcal": [
+   144,
+   216
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "our-famous-karak-chaii"
+ },
+ {
+  "name": "Karak Chaii (no added sugar)",
+  "desc": "the same recipe of our signature karak chaii, for those that are sweet enough already.",
+  "category": "hot drinks",
+  "sub": "Signatures",
+  "kcal": [
+   101,
+   152
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "karak-chaii-no-added-sugar"
+ },
+ {
+  "name": "Vegan Chaii",
+  "desc": "all the flavour, none of the dairy. our vegan chaii is carefully crafted with plant-based milk alternatives that complement the strength of brewed tea and aromatic spices. the result is a silky, spice",
+  "category": "hot drinks",
+  "sub": "Signatures",
+  "kcal": [
+   138,
+   207
+  ],
+  "veg": false,
+  "vegan": true,
+  "select": false,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "vegan-chaii"
+ },
+ {
+  "name": "Pink Chaii",
+  "desc": "pink chaii infused with vanilla and our signature fragrant spices gives you a warm, cosy feeling.",
+  "category": "hot drinks",
+  "sub": "Signatures",
+  "kcal": [
+   212,
+   319
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "pink-chaii"
+ },
+ {
+  "name": "karak coffee",
+  "desc": "Creamy brewed coffee with a signature touch of our signature karak magic.",
+  "category": "hot drinks",
+  "sub": "Signatures",
+  "kcal": [
+   137,
+   205
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "karak-coffee"
+ },
+ {
+  "name": "Chaii Flask",
+  "desc": "sharing and community building is at the heart of chaiiwala\u2019s culture, and our 6 cup chaiiwala flask makes it easier than ever. available for our classic chaii, no sugar chaii, and pink chaii.",
+  "category": "hot drinks",
+  "sub": "Signatures",
+  "kcal": [
+   864
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 2.95,
+  "slug": "chaii-flask"
+ },
+ {
+  "name": "Chaii Latte",
+  "desc": "Aromatic chaii with a smooth silky richness.",
+  "category": "hot drinks",
+  "sub": "Classics",
+  "kcal": [
+   261,
+   327
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "chaii-latte"
+ },
+ {
+  "name": "Garam Chocolate",
+  "desc": "silky hot chocolate crafted chaiiwala style.",
+  "category": "hot drinks",
+  "sub": "Classics",
+  "kcal": [
+   246,
+   369
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "garam-chocolate"
+ },
+ {
+  "name": "Latte",
+  "desc": "Aromatic coffee with a smooth silky richness.",
+  "category": "hot drinks",
+  "sub": "Classics",
+  "kcal": [
+   110,
+   165
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "latte"
+ },
+ {
+  "name": "Caramel Chaii",
+  "desc": "our famous chaii infused with caramel.",
+  "category": "hot drinks",
+  "sub": "Classics",
+  "kcal": [
+   193,
+   292
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "caramel-chaii"
+ },
+ {
+  "name": "Flat White",
+  "desc": "Espresso coffee and steamed milk. Selected stores only.",
+  "category": "hot drinks",
+  "sub": "Classics",
+  "kcal": [
+   133,
+   199
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "flat-white"
+ },
+ {
+  "name": "Espresso",
+  "desc": "Espresso pulled long with hot water. Available at selected stores.",
+  "category": "hot drinks",
+  "sub": "Classics",
+  "kcal": [
+   2,
+   3
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "espresso"
+ },
+ {
+  "name": "Americano",
+  "desc": "Espresso pulled long with hot water. Available at selected stores.",
+  "category": "hot drinks",
+  "sub": "Classics",
+  "kcal": [
+   5,
+   8
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "americano"
+ },
+ {
+  "name": "Cappuccino",
+  "desc": "Cappuccino. Selected stores only.",
+  "category": "hot drinks",
+  "sub": "Classics",
+  "kcal": [
+   90,
+   135
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "cappuccino"
+ },
+ {
+  "name": "Cinnamon Tea",
+  "desc": "black tea with fresh cinnamon.",
+  "category": "hot drinks",
+  "sub": "Teas of the World",
+  "kcal": [
+   12,
+   18
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "cinnamon-tea"
+ },
+ {
+  "name": "English Tea",
+  "desc": "english breakfast tea with a bold punch",
+  "category": "hot drinks",
+  "sub": "Teas of the World",
+  "kcal": [
+   2,
+   3
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "english-tea"
+ },
+ {
+  "name": "Arabic tea",
+  "desc": "",
+  "category": "hot drinks",
+  "sub": "Teas of the World",
+  "kcal": [
+   9,
+   14
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 2.45,
+  "priceLarge": 3.15,
+  "slug": "arabic-tea"
+ },
+ {
+  "name": "The Wala Box",
+  "desc": "perfect for 1 - build your box",
+  "category": "wala bundles",
+  "sub": null,
+  "kcal": [
+   1502
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": true,
+  "new": true,
+  "price": 12.95,
+  "slug": "the-wala-box"
+ },
+ {
+  "name": "The Family platter",
+  "desc": "feast for 4 - choose your feast",
+  "category": "wala bundles",
+  "sub": null,
+  "kcal": [
+   4324
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": true,
+  "price": 34.95,
+  "slug": "the-family-platter"
+ },
+ {
+  "name": "The Wala Box - veg",
+  "desc": "perfect for 1 - build your box",
+  "category": "wala bundles",
+  "sub": null,
+  "kcal": [
+   1464
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": true,
+  "new": true,
+  "price": 12.95,
+  "slug": "the-wala-box-veg"
+ },
+ {
+  "name": "The Family platter - veg",
+  "desc": "feast for 4 - choose your feast",
+  "category": "wala bundles",
+  "sub": null,
+  "kcal": [
+   4204
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 34.95,
+  "slug": "the-family-platter-veg"
+ },
+ {
+  "name": "Badam Milk-Shake",
+  "desc": "smooth almond milkshake topped with pistachio & saffron",
+  "category": "cold drinks",
+  "sub": "Signatures",
+  "kcal": [
+   560
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": false,
+  "new": true,
+  "price": 4.45,
+  "slug": "badam-milk-shake"
+ },
+ {
+  "name": "Desi Cold Coffee",
+  "desc": "thick, frothy whipped cold coffee, served perfectly chilled",
+  "category": "cold drinks",
+  "sub": "Signatures",
+  "kcal": [
+   458
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "desi-cold-coffee"
+ },
+ {
+  "name": "Iced Karak Coffee",
+  "desc": "Karak coffee brewed strong and chilled hard over ice.",
+  "category": "cold drinks",
+  "sub": "Signatures",
+  "kcal": [
+   77,
+   148
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "priceLarge": 4.65,
+  "slug": "iced-karak-coffee"
+ },
+ {
+  "name": "Mango Lassi",
+  "desc": "mango milkshake made with fresh yoghurt",
+  "category": "cold drinks",
+  "sub": "Signatures",
+  "kcal": [
+   381,
+   495
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "priceLarge": 4.65,
+  "slug": "mango-lassi"
+ },
+ {
+  "name": "Falooda Mango Milkshake",
+  "desc": "discover a timeless taste of childhood. a perfect, chilled combo of mango, cream and jelly that will bring back your happy memories",
+  "category": "cold drinks",
+  "sub": "Signatures",
+  "kcal": [
+   474,
+   578
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "priceLarge": 4.65,
+  "slug": "falooda-mango-milkshake"
+ },
+ {
+  "name": "Falooda Rose Milkshake",
+  "desc": "chaiiwala is the best place to enjoy flavored shakes. now, surrounded with friends and family treat yourself with a soft rose falooda.",
+  "category": "cold drinks",
+  "sub": "Signatures",
+  "kcal": [
+   481,
+   585
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "priceLarge": 4.65,
+  "slug": "falooda-rose-milkshake"
+ },
+ {
+  "name": "Toasted Cinnamon & Vanilla Matcha",
+  "desc": "High grade, toasted cinnamon and vanilla matcha, over ice.",
+  "category": "cold drinks",
+  "sub": "Matcha",
+  "kcal": [
+   179,
+   233
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "priceLarge": 4.65,
+  "slug": "toasted-cinnamon-vanilla-matcha"
+ },
+ {
+  "name": "Blueberry & White Chocolate Matcha",
+  "desc": "high grade blueberry & white chocolate matcha",
+  "category": "cold drinks",
+  "sub": "Matcha",
+  "kcal": [
+   284,
+   364
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "priceLarge": 4.65,
+  "slug": "blueberry-white-chocolate-matcha"
+ },
+ {
+  "name": "Mango Mojito",
+  "desc": "sparkling spritz of mango paired with fresh mint",
+  "category": "cold drinks",
+  "sub": "Mocktails",
+  "kcal": [
+   81,
+   120
+  ],
+  "veg": false,
+  "vegan": true,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "priceLarge": 4.65,
+  "slug": "mango-mojito"
+ },
+ {
+  "name": "Watermelon Spritz",
+  "desc": "spritz of watermelon & lime with fresh mint",
+  "category": "cold drinks",
+  "sub": "Mocktails",
+  "kcal": [
+   83,
+   123
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "priceLarge": 4.65,
+  "slug": "watermelon-spritz"
+ },
+ {
+  "name": "Blueberry Mocktail",
+  "desc": "A sparkling blueberry mocktail with fresh mint.",
+  "category": "cold drinks",
+  "sub": "Mocktails",
+  "kcal": [
+   139,
+   229
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "priceLarge": 4.65,
+  "slug": "blueberry-mocktail"
+ },
+ {
+  "name": "Tahitian Lime Mocktail",
+  "desc": "A refreshing sparkling lime mojito with fresh mint.",
+  "category": "cold drinks",
+  "sub": "Mocktails",
+  "kcal": [
+   88,
+   130
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "priceLarge": 4.65,
+  "slug": "tahitian-lime-mocktail"
+ },
+ {
+  "name": "Chilli Guava Lemonade",
+  "desc": "guava lemonade with a chilli kick",
+  "category": "cold drinks",
+  "sub": "Mocktails",
+  "kcal": [
+   109,
+   186
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "priceLarge": 4.65,
+  "slug": "chilli-guava-lemonade"
+ },
+ {
+  "name": "Limbu Pani Lemonade",
+  "desc": "limbu pani is a cloudy lemony drink that you can enjoy anytime, anywhere! get yourself a refreshing limbu pani when the temperature rises!",
+  "category": "cold drinks",
+  "sub": "Limbu Pani",
+  "kcal": [
+   4,
+   7
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "priceLarge": 4.65,
+  "slug": "limbu-pani-lemonade"
+ },
+ {
+  "name": "blue limbu pani lemonade",
+  "desc": "Cloudy desi lemonade with a blue raspberry twist.",
+  "category": "cold drinks",
+  "sub": "Limbu Pani",
+  "kcal": [
+   36,
+   68
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.45,
+  "priceLarge": 4.15,
+  "slug": "blue-limbu-pani-lemonade"
+ },
+ {
+  "name": "Red Bull Energy Drink",
+  "desc": "Chaiiwala with wings",
+  "category": "cold drinks",
+  "sub": "Red Bull Infusions",
+  "kcal": [
+   115
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "red-bull-energy-drink"
+ },
+ {
+  "name": "Red Bull Sugarfree",
+  "desc": "Red Bull Sugarfree",
+  "category": "cold drinks",
+  "sub": "Red Bull Infusions",
+  "kcal": [
+   7
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "red-bull-sugarfree"
+ },
+ {
+  "name": "Red Bull Summer Edition (Citrus Zest)",
+  "desc": "Red Bull Summer Edition: Citrus Zest",
+  "category": "cold drinks",
+  "sub": "Red Bull Infusions",
+  "kcal": [
+   115
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "red-bull-summer-edition-citrus-zest"
+ },
+ {
+  "name": "Red Bull Apple Edition",
+  "desc": "Red Bull Apple Edition: Fuji Apple-Ginger",
+  "category": "cold drinks",
+  "sub": "Red Bull Infusions",
+  "kcal": [
+   113
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "red-bull-apple-edition"
+ },
+ {
+  "name": "Red Bull Coconut Edition",
+  "desc": "Red Bull Coconut Edition: Coconut & Berry",
+  "category": "cold drinks",
+  "sub": "Red Bull Infusions",
+  "kcal": [
+   113
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "red-bull-coconut-edition"
+ },
+ {
+  "name": "Glass Bottles",
+  "desc": "",
+  "category": "cold drinks",
+  "sub": "Fridge Drinks",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "glass-bottles"
+ },
+ {
+  "name": "irn bru",
+  "desc": "",
+  "category": "cold drinks",
+  "sub": "Fridge Drinks",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "irn-bru"
+ },
+ {
+  "name": "j20 apple and mango",
+  "desc": "",
+  "category": "cold drinks",
+  "sub": "Fridge Drinks",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "j20-apple-and-mango"
+ },
+ {
+  "name": "j20 apple and raspberry",
+  "desc": "",
+  "category": "cold drinks",
+  "sub": "Fridge Drinks",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "j20-apple-and-raspberry"
+ },
+ {
+  "name": "j20 orange and passion fruit",
+  "desc": "",
+  "category": "cold drinks",
+  "sub": "Fridge Drinks",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "j20-orange-and-passion-fruit"
+ },
+ {
+  "name": "lemony lemon",
+  "desc": "",
+  "category": "cold drinks",
+  "sub": "Fridge Drinks",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "lemony-lemon"
+ },
+ {
+  "name": "rubicon mango",
+  "desc": "",
+  "category": "cold drinks",
+  "sub": "Fridge Drinks",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "rubicon-mango"
+ },
+ {
+  "name": "rubicon passion fruit",
+  "desc": "",
+  "category": "cold drinks",
+  "sub": "Fridge Drinks",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "rubicon-passion-fruit"
+ },
+ {
+  "name": "rubicon raw orange and mango",
+  "desc": "",
+  "category": "cold drinks",
+  "sub": "Fridge Drinks",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "rubicon-raw-orange-and-mango"
+ },
+ {
+  "name": "rubicon raw raspberry and blueberry",
+  "desc": "",
+  "category": "cold drinks",
+  "sub": "Fridge Drinks",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "rubicon-raw-raspberry-and-blueberry"
+ },
+ {
+  "name": "Simply fruit blackcurrant",
+  "desc": "",
+  "category": "cold drinks",
+  "sub": "Fridge Drinks",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "simply-fruit-blackcurrant"
+ },
+ {
+  "name": "simply fruity orange",
+  "desc": "",
+  "category": "cold drinks",
+  "sub": "Fridge Drinks",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "simply-fruity-orange"
+ },
+ {
+  "name": "Still water",
+  "desc": "",
+  "category": "cold drinks",
+  "sub": "Fridge Drinks",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "still-water"
+ },
+ {
+  "name": "Desi Breakfast",
+  "desc": "masala omelette with masala beans, daal or chana, classic rotis/parathas/toast, and karak chai/karak coffee",
+  "category": "all day breakfast",
+  "sub": "Big Breakfast",
+  "kcal": [
+   696
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 7.45,
+  "slug": "desi-breakfast"
+ },
+ {
+  "name": "English-ish breakfast",
+  "desc": "masla omelette with masala beans, 2 lamb bacon rashers, 2 chicken sausage and 2 slice of toast extras sausage lamb bacon hash brown",
+  "category": "all day breakfast",
+  "sub": "Big Breakfast",
+  "kcal": [
+   934
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 7.95,
+  "slug": "english-ish-breakfast"
+ },
+ {
+  "name": "Omelette Wrap",
+  "desc": "masala omelette wrapped in a classic roti",
+  "category": "all day breakfast",
+  "sub": "Breakfast Wraps",
+  "kcal": [
+   267
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 7.45,
+  "slug": "omelette-wrap"
+ },
+ {
+  "name": "spiced chicken sausage & egg wrap",
+  "desc": "spiced chicken sausage and masala omelette wrapped in a classic roti, bursting with flavour and high in protein",
+  "category": "all day breakfast",
+  "sub": "Breakfast Wraps",
+  "kcal": [
+   329
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 6.45,
+  "slug": "spiced-chicken-sausage-egg-wrap"
+ },
+ {
+  "name": "rasher & egg breakfast wrap",
+  "desc": "Lamb bacon and masala omelette wrapped in a classic roti.",
+  "category": "all day breakfast",
+  "sub": "Breakfast Wraps",
+  "kcal": [
+   394
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 6.95,
+  "slug": "rasher-egg-breakfast-wrap"
+ },
+ {
+  "name": "Aloo Paratha",
+  "desc": "signature paratha with spiced potato, served with yoghurt and mint chutney dip",
+  "category": "all day breakfast",
+  "sub": "Traditionals",
+  "kcal": [
+   245
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 6.95,
+  "slug": "aloo-paratha"
+ },
+ {
+  "name": "Halwa Puri",
+  "desc": "traditional breakfast that features semolina pudding (halwa), served with two fried bead puffs (puri)",
+  "category": "all day breakfast",
+  "sub": "Traditionals",
+  "kcal": [
+   539
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 7.95,
+  "slug": "halwa-puri"
+ },
+ {
+  "name": "Classic Roti",
+  "desc": "round flatbread",
+  "category": "all day breakfast",
+  "sub": "signature paratha with cream cheese",
+  "kcal": [
+   143
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 7.45,
+  "slug": "classic-roti"
+ },
+ {
+  "name": "Classic Paratha",
+  "desc": "layered puffy flat bread",
+  "category": "all day breakfast",
+  "sub": "the desi take on the classic grilled cheese. spice it up with green chillies and onions",
+  "kcal": [
+   268
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": true,
+  "price": 7.45,
+  "slug": "classic-paratha"
+ },
+ {
+  "name": "Butter Chicken Avo Toast",
+  "desc": "guacamole & toast finished with a layer of butter chicken & chilli oil.",
+  "category": "all day breakfast",
+  "sub": "the desi take on the classic grilled cheese. spice it up with green chillies and onions",
+  "kcal": [
+   391
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": true,
+  "price": 7.95,
+  "slug": "butter-chicken-avo-toast"
+ },
+ {
+  "name": "Egg Burji Avo Toast",
+  "desc": "toast topped with guacamole, masala scrambled egg & chilli oil.",
+  "category": "all day breakfast",
+  "sub": "the desi take on the classic grilled cheese. spice it up with green chillies and onions",
+  "kcal": [
+   377
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 7.45,
+  "slug": "egg-burji-avo-toast"
+ },
+ {
+  "name": "Chicken Tikka Wala Wrap",
+  "desc": "the nations favourite, boneless chicken pieces, with onion, tomato, yogurt and mint chutney, all wrapped up in a garlic and coriander naan",
+  "category": "wala wraps",
+  "sub": null,
+  "kcal": [
+   533
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 6.95,
+  "slug": "chicken-tikka-wala-wrap"
+ },
+ {
+  "name": "Mixed Kebab Wala Wrap",
+  "desc": "chicken tikka, chicken sheekh kebab and lamb keema wrapped in a pillowy naan, topped with fresh onions and drizzled with a yoghurt & mint chutney",
+  "category": "wala wraps",
+  "sub": null,
+  "kcal": [
+   544
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 6.45,
+  "slug": "mixed-kebab-wala-wrap"
+ },
+ {
+  "name": "Chicken Kebab Wala Wrap",
+  "desc": "chicken sheekh kebabs wrapped in a pillowy naan, topped with fresh onions and drizzled with a yoghurt & mint chutney",
+  "category": "wala wraps",
+  "sub": null,
+  "kcal": [
+   512
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 6.95,
+  "slug": "chicken-kebab-wala-wrap"
+ },
+ {
+  "name": "Bombay Twister",
+  "desc": "",
+  "category": "wala wraps",
+  "sub": null,
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 6.45,
+  "slug": "bombay-twister"
+ },
+ {
+  "name": "Veg Kebab Wala Wrap",
+  "desc": "A flavour-packed veg kebab crafted with a blend of aromatic spices.",
+  "category": "wala wraps",
+  "sub": "Spicy chilli chicken in warm naan.",
+  "kcal": [
+   512
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 6.95,
+  "slug": "veg-kebab-wala-wrap"
+ },
+ {
+  "name": "Chilli Paneer Wala Wrap",
+  "desc": "A bold fusion of spice and street-style flavour.",
+  "category": "wala wraps",
+  "sub": "Spicy chilli chicken in warm naan.",
+  "kcal": [
+   492
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 6.95,
+  "slug": "chilli-paneer-wala-wrap"
+ },
+ {
+  "name": "Aloo Tikki Wala Wrap",
+  "desc": "Our Aloo Tikki Wala Wrap is more than just a wrap. It\u2019s a comforting classic inspired by street food favourites.",
+  "category": "wala wraps",
+  "sub": "Spicy chilli chicken in warm naan.",
+  "kcal": [
+   512
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 6.95,
+  "slug": "aloo-tikki-wala-wrap"
+ },
+ {
+  "name": "Veg Bombay Twister",
+  "desc": "A vibrant mix of bold flavours and textures inspired by classic Mumbai street food.",
+  "category": "wala wraps",
+  "sub": "Spicy chilli chicken in warm naan.",
+  "kcal": [
+   645
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 6.95,
+  "slug": "veg-bombay-twister"
+ },
+ {
+  "name": "Chicken Tikka Salad",
+  "desc": "Our signature chicken tikka, piled onto crisp lettuce, spinach, chilli sweetcorn & red cabbage.",
+  "category": "lunch & dinner bowls",
+  "sub": null,
+  "kcal": [
+   270
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": true,
+  "price": 7.95,
+  "slug": "chicken-tikka-salad"
+ },
+ {
+  "name": "Kebab Caesar Salad",
+  "desc": "Your choice of chicken or veg kebab with chilli sweetcorn, lettuce & guacamole, tossed in Caesar dressing. Our take on a classic.",
+  "category": "lunch & dinner bowls",
+  "sub": null,
+  "kcal": [
+   399
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 8.45,
+  "slug": "kebab-caesar-salad"
+ },
+ {
+  "name": "Tikka Biryani",
+  "desc": "chicken tikka, perfectly blended with fragrant basmati rice & a touch of aromatic spices with raita",
+  "category": "lunch & dinner bowls",
+  "sub": null,
+  "kcal": [
+   621
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 8.45,
+  "slug": "tikka-biryani"
+ },
+ {
+  "name": "Chana Biryani",
+  "desc": "chana masala, perfectly blended with fragrant basmati rice & a touch of aromatic spices with raita",
+  "category": "lunch & dinner bowls",
+  "sub": null,
+  "kcal": [
+   696
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 8.45,
+  "slug": "chana-biryani"
+ },
+ {
+  "name": "Butter chicken rice bowl",
+  "desc": "delicious shredded butter chicken, served with steamed basmati rice and a savoury chickpea and potato salad, as well as a traditional house slaw, finished off with a classic green chutney.",
+  "category": "lunch & dinner bowls",
+  "sub": null,
+  "kcal": [
+   497
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 8.95,
+  "slug": "butter-chicken-rice-bowl"
+ },
+ {
+  "name": "Butter Chicken Bombay Chips Bowl",
+  "desc": "Indulgence and layered with delicious flavours.",
+  "category": "lunch & dinner bowls",
+  "sub": null,
+  "kcal": [
+   686
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 8.95,
+  "slug": "butter-chicken-bombay-chips-bowl"
+ },
+ {
+  "name": "Daal Masala Bombay Rice Bowl",
+  "desc": "A classic Daal Masala Rice Bowl, with flavour packed into every bite.",
+  "category": "lunch & dinner bowls",
+  "sub": null,
+  "kcal": [
+   562
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 8.95,
+  "slug": "daal-masala-bombay-rice-bowl"
+ },
+ {
+  "name": "Daal Masala Bombay Chips Bowl",
+  "desc": "Our Daal Masala Bombay Chip Bowl is more than just a meal. It\u2019s a bold take on a comforting classic.",
+  "category": "lunch & dinner bowls",
+  "sub": null,
+  "kcal": [
+   746
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 8.95,
+  "slug": "daal-masala-bombay-chips-bowl"
+ },
+ {
+  "name": "Chicken Tikka Melt",
+  "desc": "",
+  "category": "bombay toasties",
+  "sub": null,
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "chicken-tikka-melt"
+ },
+ {
+  "name": "Classic Bombay Toastie",
+  "desc": "Street food classic. Toasted bread slices filled with aloo potatoes, infused with classic spices and finished with classic green chutney.",
+  "category": "bombay toasties",
+  "sub": null,
+  "kcal": [
+   389
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.95,
+  "slug": "classic-bombay-toastie"
+ },
+ {
+  "name": "Cheese & Masala Beans Toastie",
+  "desc": "a classic mixture of melted cheese and masala beans toasted between 2 slices of bread",
+  "category": "bombay toasties",
+  "sub": null,
+  "kcal": [
+   412
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "cheese-masala-beans-toastie"
+ },
+ {
+  "name": "Pav Bhaji Toastie",
+  "desc": "Spiced Mumbai-style pav bhaji, toasted.",
+  "category": "bombay toasties",
+  "sub": null,
+  "kcal": [
+   449
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 4.95,
+  "slug": "pav-bhaji-toastie"
+ },
+ {
+  "name": "Cheese & Chutney Toastie",
+  "desc": "Melted cheese and tangy chutney, toasted.",
+  "category": "bombay toasties",
+  "sub": null,
+  "kcal": [
+   369
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 4.95,
+  "slug": "cheese-chutney-toastie"
+ },
+ {
+  "name": "Butter Chicken Toastie",
+  "desc": "a mixture of butter chicken and house slaw. toasted between 2 slices of bread",
+  "category": "bombay toasties",
+  "sub": null,
+  "kcal": [
+   384
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "butter-chicken-toastie"
+ },
+ {
+  "name": "Butter Chicken Roll",
+  "desc": "ambrosial butter chicken, succulent chicken and spices cooked in the tangy, spicy masala gravy will make you cry for more",
+  "category": "street food",
+  "sub": null,
+  "kcal": [
+   222
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "butter-chicken-roll"
+ },
+ {
+  "name": "Masala Chips",
+  "desc": "",
+  "category": "street food",
+  "sub": null,
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "masala-chips"
+ },
+ {
+  "name": "Samosa Chaat",
+  "desc": "ultimate roadside snack, boxed off with samosas, chickpeas, onions and tomatoes with tamarind chutney and yoghurt.",
+  "category": "street food",
+  "sub": null,
+  "kcal": [
+   426
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "samosa-chaat"
+ },
+ {
+  "name": "Loaded Chips - Chicken",
+  "desc": "Loaded chips with chicken, cheese & sauce.",
+  "category": "street food",
+  "sub": null,
+  "kcal": [
+   1032
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 6.45,
+  "slug": "loaded-chips-chicken"
+ },
+ {
+  "name": "Pani puri poppers",
+  "desc": "call it pani puri or gol gapee, they taste amazing either way, served with chana mix and tamarind pani.",
+  "category": "street food",
+  "sub": null,
+  "kcal": [
+   215
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "pani-puri-poppers"
+ },
+ {
+  "name": "Vada Pav",
+  "desc": "",
+  "category": "street food",
+  "sub": null,
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 5.45,
+  "slug": "vada-pav"
+ },
+ {
+  "name": "Veg Kebab Roll",
+  "desc": "explore chaiiwala's veg kebab roll. try it and you will be convinced how tasty and healthy our food can be.",
+  "category": "street food",
+  "sub": null,
+  "kcal": [
+   427
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "veg-kebab-roll"
+ },
+ {
+  "name": "Chicken Kebab Roll",
+  "desc": "delight in a tantalizing taste of heaven stuffed into a freshly baked kebab roll or the signature chaiiwala chicken sheekh.",
+  "category": "street food",
+  "sub": null,
+  "kcal": [
+   387
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "chicken-kebab-roll"
+ },
+ {
+  "name": "Aloo Tikki Chaat",
+  "desc": "",
+  "category": "street food",
+  "sub": null,
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "aloo-tikki-chaat"
+ },
+ {
+  "name": "Aloo tikki burger",
+  "desc": "the crispiest potato croquette sandwiched in a toasted bun with onions, tomatoes, house slaw and imly",
+  "category": "street food",
+  "sub": null,
+  "kcal": [
+   376
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.95,
+  "slug": "aloo-tikki-burger"
+ },
+ {
+  "name": "Loaded Chips - Veg",
+  "desc": "",
+  "category": "street food",
+  "sub": null,
+  "kcal": [
+   1106
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 6.45,
+  "slug": "loaded-chips-veg"
+ },
+ {
+  "name": "Chicken Nuggets & Chips",
+  "desc": "",
+  "category": "wala kids",
+  "sub": null,
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 5.45,
+  "slug": "chicken-nuggets-chips"
+ },
+ {
+  "name": "Cheese & Masala Beans Toastie & Chips",
+  "desc": "A fun, tasty Wala Kids favourite, perfectly portioned for little appetites, with no compromise on flavour.",
+  "category": "wala kids",
+  "sub": null,
+  "kcal": [
+   439
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 5.45,
+  "slug": "cheese-masala-beans-toastie-chips"
+ },
+ {
+  "name": "Mini Chicken Wala Wrap & Chips",
+  "desc": "Our Mini Chicken Wala Wrap is the perfect meal for the little ones who want the magic of our iconic Wala wraps, portioned perfectly for little appetites.",
+  "category": "wala kids",
+  "sub": null,
+  "kcal": [
+   552
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 5.45,
+  "slug": "mini-chicken-wala-wrap-chips"
+ },
+ {
+  "name": "Veg Nuggets & Chips",
+  "desc": "A fun, tasty Wala Kids favourite, perfectly portioned for little appetites, with no compromise on flavour.",
+  "category": "wala kids",
+  "sub": null,
+  "kcal": [
+   379
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 5.45,
+  "slug": "veg-nuggets-chips"
+ },
+ {
+  "name": "Mini Veggie Wala Wrap & Chips",
+  "desc": "Our Mini Veg Wala Wrap is the perfect meal for the little ones who want the magic of our iconic Wala wraps, portioned perfectly for little appetites.",
+  "category": "wala kids",
+  "sub": null,
+  "kcal": [
+   379
+  ],
+  "veg": true,
+  "vegan": false,
+  "select": true,
+  "new": false,
+  "price": 5.45,
+  "slug": "mini-veggie-wala-wrap-chips"
+ },
+ {
+  "name": "loaded donuts",
+  "desc": "Ten donuts smothered in chocolate with your choice of topping.",
+  "category": "desserts",
+  "sub": "Classics",
+  "kcal": [
+   759
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 5.45,
+  "slug": "loaded-donuts"
+ },
+ {
+  "name": "Nutella Wrap",
+  "desc": "famous hazlenut chocolate spread over a delicious paratha",
+  "category": "desserts",
+  "sub": "Classics",
+  "kcal": [
+   439
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.95,
+  "slug": "nutella-wrap"
+ },
+ {
+  "name": "Pistachio Fix Ice cream",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Classics",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.95,
+  "slug": "pistachio-fix-ice-cream"
+ },
+ {
+  "name": "rocky road cheesecake",
+  "desc": "rich, decadent layers of chocolate and vanilla cheesecake, topped with brownie cubes and finished with a crunchy brownie base.",
+  "category": "desserts",
+  "sub": "Classics",
+  "kcal": [
+   720
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 5.45,
+  "slug": "rocky-road-cheesecake"
+ },
+ {
+  "name": "Loaded Cheesecake",
+  "desc": "design your cheesecake. choose your sauce (white choc, milk choc or pistachio). choose your topping (oreo crumbs, lotus biscoff crumbs or mixed nuts*).",
+  "category": "desserts",
+  "sub": "a buttery cookie pie filled with creamy biscoff spread served warm, with a scoop of vanilla ice-cream.",
+  "kcal": [
+   564
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.95,
+  "slug": "loaded-cheesecake"
+ },
+ {
+  "name": "Mango Ice Cream",
+  "desc": "Smooth, sweet mango ice cream.",
+  "category": "desserts",
+  "sub": "10 donuts generously sprinkled with sugar",
+  "kcal": [
+   158
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "mango-ice-cream"
+ },
+ {
+  "name": "Rose Ice Cream",
+  "desc": "Delicate, creamy rose ice cream.",
+  "category": "desserts",
+  "sub": "10 donuts generously sprinkled with sugar",
+  "kcal": [
+   165
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "rose-ice-cream"
+ },
+ {
+  "name": "Vanilla Ice Cream",
+  "desc": "Classic, creamy vanilla ice cream.",
+  "category": "desserts",
+  "sub": "10 donuts generously sprinkled with sugar",
+  "kcal": [
+   162
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "vanilla-ice-cream"
+ },
+ {
+  "name": "Chocolate dream cake",
+  "desc": "layers of rich chocolate cake and smooth ganache, a chocolate lover\u2019s dream.",
+  "category": "desserts",
+  "sub": "A piece of Cake",
+  "kcal": [
+   710
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.95,
+  "slug": "chocolate-dream-cake"
+ },
+ {
+  "name": "Pistachio Milk Cake",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Signature Milk Cakes",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.95,
+  "slug": "pistachio-milk-cake"
+ },
+ {
+  "name": "Biscoff Milk cake",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Signature Milk Cakes",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "biscoff-milk-cake"
+ },
+ {
+  "name": "Gajar Halwa",
+  "desc": "a carrot-based sweet desert pudding",
+  "category": "desserts",
+  "sub": "Desi Delights",
+  "kcal": [
+   345
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "gajar-halwa"
+ },
+ {
+  "name": "Gulab Jamun",
+  "desc": "fried dough balls soaked in a sweet sugar syrup",
+  "category": "desserts",
+  "sub": "Desi Delights",
+  "kcal": [
+   308
+  ],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "gulab-jamun"
+ },
+ {
+  "name": "Punjabi Samosa",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Grab & Go",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "punjabi-samosa"
+ },
+ {
+  "name": "Cheese & Jalape\u00f1o Pasty",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Spiced potato patties.",
+  "kcal": [],
+  "veg": true,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "cheese-jalape-o-pasty"
+ },
+ {
+  "name": "Chicken & Sweetcorn Pasty",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Spiced potato patties.",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 3.95,
+  "slug": "chicken-sweetcorn-pasty"
+ },
+ {
+  "name": "Chicken Tikka Pasty",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Spiced potato patties.",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "chicken-tikka-pasty"
+ },
+ {
+  "name": "smoky tikka crisps",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Spiced chicken sausage in flaky pastry.",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "smoky-tikka-crisps"
+ },
+ {
+  "name": "chilli lime crisps",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Spiced chicken sausage in flaky pastry.",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "chilli-lime-crisps"
+ },
+ {
+  "name": "tea rusks",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Spiced chicken sausage in flaky pastry.",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.95,
+  "slug": "tea-rusks"
+ },
+ {
+  "name": "parle G biscuits",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Spiced chicken sausage in flaky pastry.",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.95,
+  "slug": "parle-g-biscuits"
+ },
+ {
+  "name": "paan pops",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Spiced chicken sausage in flaky pastry.",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "paan-pops"
+ },
+ {
+  "name": "chocolate chunk cookie",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Spiced chicken sausage in flaky pastry.",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "chocolate-chunk-cookie"
+ },
+ {
+  "name": "chocolate caramel krispie",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Thick cookie with three Belgian chocolates: milk, dark and white.",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "chocolate-caramel-krispie"
+ },
+ {
+  "name": "belgian chocolate caramel shortbread",
+  "desc": "",
+  "category": "desserts",
+  "sub": "Thick cookie with three Belgian chocolates: milk, dark and white.",
+  "kcal": [],
+  "veg": false,
+  "vegan": false,
+  "select": false,
+  "new": false,
+  "price": 4.45,
+  "slug": "belgian-chocolate-caramel-shortbread"
+ }
+]
