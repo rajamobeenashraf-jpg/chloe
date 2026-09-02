@@ -61,8 +61,18 @@ Greggs, Costa, Tim Hortons UK, Black Sheep Coffee, Nando's. Their apps/sites set
 6. **Global hub**: uk / ca / ae / us routing from one brand domain, shared design system, market-specific menus and apps.
 7. **Speed**: headless or static-first build (Next.js/Astro + headless CMS) targeting sub-2s mobile LCP; measurable improvement over the current WordPress site to put in the pitch.
 
-## 4. Open questions to resolve before building
-See the interview log below (filled in from the owner's answers).
+## 4. Decisions locked with the owner (interview, 2026-09-02)
+
+| Decision | Answer |
+|---|---|
+| Primary goal | All three, balanced: franchise recruitment + consumer ordering/loyalty + brand story |
+| Client stage | Cold pitch, no contact yet → build a polished redesign concept |
+| Tech stack | Next.js + headless CMS (content model designed for 115+ stores, multi-country) |
+| Ordering | No integration: menu + store info, then deep-link to Chaiiwala app, Uber Eats, Deliveroo, Just Eat |
+| Design direction | Evolve their brand: keep orange + playful street-food tone, raise polish to Dishoom level |
+| Concept scope | Four pages: Homepage, Menu, Store page, Franchise |
+| Imagery | AI-generated food/store photography (owned, labelled as concept imagery); no copyrighted photos |
+| Delivery | Live URL (Vercel, neutral domain) + 3-4 page proposal PDF (findings, problems, offer) |
 
 ## 5. Sources
 - https://www.thegrocer.co.uk/news/chaiiwala-sales-jump-35-amid-global-expansion/710298.article
