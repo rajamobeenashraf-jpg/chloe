@@ -578,3 +578,74 @@ generation on it — a still is cheap, a clip is not.
 
 ### STATUS: awaiting owner confirmation of Alaric's face in `55a92cbc` before
 generating clip 5 v3.
+
+---
+
+## ROUND 6 — clip 5 v3 (Alaric identity fix) + FINAL CUT v3 — 2026-09-02
+
+### Clip 5 v3 — job `5090339f-25f9-4d00-a9ee-28e77b9a094f`
+Start frame `55a92cbc-44cf-44f1-895a-3b1f3507b4aa` (owner-confirmed before the
+clip was spent). Clip generated with **8 references**: all 4 Alaric canon views
+(`28ef0b3e` face front, `2689c1a9` face 3/4, `33bd3dd4` full-body front,
+`5e920173` full-body 3/4) + 3 Hazel v5 canon (`119465f3`, `8f22ad52`,
+`274e937a`). N8 satisfied; no chain edit anywhere in the chain.
+→ `hf_20260902_125557_5090339f-25f9-4d00-a9ee-28e77b9a094f.mp4`
+
+Objective QC (X2, no Gemini eyes — production clip, edit stage only):
+- 1080x1920, 24fps, 97 frames, 4.064s, audio present
+- **freezedetect: no frozen segments**
+- motion profile (mean abs inter-frame diff per 0.5s):
+  0.0 **2.87** / 0.5 13.88 / 1.0 **16.64** / 1.5 10.24 / 2.0 5.51 / 2.5 2.23 /
+  3.0 1.57 / 3.5 1.17; min diff 0.705; tail 2.4-4.0s mean **1.78**
+  → correct dramatic shape: action front-loaded, impact peak at ~1.0s, then a
+  genuine held two-shot rather than a freeze (min 0.705 is live micro-motion,
+  well clear of the 0.514 near-static floor that flagged clip 4 v1).
+- cloak colour in his region at t=3.4s: **median hue 16.8 deg, RED 97.2%,
+  GREEN 0.0%** — crimson holds to the last frame, no olive/gold contamination.
+  (Reference charge still measured 332.3 deg / RED 49.7%.)
+
+**Not certifiable by Claude: his facial identity.** The base64 visual-QC channel
+is unreliable (see ROUND 5) and the CDN allowlist is still not live in this
+session, so the face was verified structurally (full canon reference package,
+fresh-from-canon start frame, explicit hold-identity prompt language) but not
+visually frame-by-frame. Owner's eye is the gate.
+
+### FINAL CUT v3 — media `6df88368-aacb-4e5e-ad75-fb0179e20946`
+→ https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/6df88368-aacb-4e5e-ad75-fb0179e20946.mp4
+
+Sequence: clip 1 → 2 → 3 → 4b → **5 v3**. Trims (each 3.00s off a 4.064s raw):
+`T1 0.60, T2 0.30, T3 0.20, T4 0.55, T5 0.85`.
+T5 raised 0.60 -> 0.85 this round so the cut lands mid-descent (blade already
+falling) and the closing held two-shot keeps ~1.45s of screen time instead of
+~1.2s — the owner's spec calls for a held closing two-shot, and the extra
+0.25s is bought from the front of the shot where the action is redundant with
+clip 4b's ending.
+
+Render QC (P1 discipline — verified before being called done):
+- duration **15.189s**, 1080x1920, 24fps, **364 frames**, 16.6 MB
+- audio aac 48kHz stereo, 15.134s
+- **PTS strictly monotonic: 364 frames, 0 non-monotonic, last pts 15.146**
+- **freezedetect on the final render: none**
+- **silencedetect (-50dB, 0.15s): no silence anywhere in the file** — the single
+  continuous ambient bed bridges all four hard cuts, Part 14.F satisfied
+- mean volume across cut boundaries (0.25s windows either side):
+  cut@3s -43.0 -> -49.4 dB | cut@6s -43.3 -> -33.2 dB |
+  cut@9s -34.6 -> -42.5 dB | cut@12s -33.0 -> -28.5 dB
+  → largest step 10.1 dB, none approaching the noise floor; no audio reset at
+  any cut. Whole file mean -32.3 dB, peak -11.1 dB (headroom, no clipping).
+
+### PROCESS FINDING — `set -euo pipefail` + `grep -m1` in a pipe aborts the run
+The build script died twice at the QC stage, after producing a correct render,
+because (a) `bc` is not installed in the Higgsfield sandbox and (b)
+`ffmpeg ... | grep -m1` makes grep exit early, SIGPIPEs ffmpeg, and `pipefail`
+turns that into a fatal error. Both times the upload step never ran even though
+the render was fine. **Rule for sandbox build scripts: keep the render under
+`set -e`, but run the QC/report block WITHOUT `-e`/`pipefail`, use `awk` for
+arithmetic instead of `bc`, and use `| grep ... | head -1` rather than
+`grep -m1`.** Also: `astats`'s "RMS level dB" line did not match in this
+sandbox's ffmpeg build — `volumedetect`'s `mean_volume` is the reliable
+loudness probe here.
+
+### STATUS: final cut v3 delivered to the owner's media library, awaiting his
+watch-through. Not yet run (both gated on his approval by standing rule):
+`virality_predictor` pre-publish check, and any 4K upscale.
