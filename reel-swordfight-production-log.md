@@ -526,3 +526,55 @@ Audio continuity across all four cuts (global min RMS 58.7, never silent):
 `sandbox_exec` timed out at 60s despite requesting 120s. The five-clip assembly
 must be run with `background:true` and polled via its log/exit files. Recorded so
 future sessions do not lose a run to this.
+
+---
+
+## OWNER REJECTION — clip 5, character consistency of the male opponent (2026-09-02)
+
+Owner: Ser Alaric's identity is inconsistent in clip 5.
+
+### ROOT CAUSE — two compounding violations of already-written rules, both Claude's
+
+1. **The start frame was a CHAIN EDIT with a PARTIAL reference set.** Clip 5's
+   start frame `6093c8ec` was a photo-edit of `ae5ae8b9` made to fix the cloak
+   colour, and that edit passed only **one** of Alaric's four canon views
+   (`33bd3dd4`). `CHARACTER_LOCK.md` forbids chaining generations off outputs
+   ("drift compounds"), and CLAUDE.md's owner lock of 2026-08-30 requires the
+   FULL locked identity reference set for every character in frame on any
+   photo-edit of a prior output — *specifically* to prevent this. This is the
+   Escobar 7.1c failure mode repeated verbatim.
+2. **The clip generation used 2 of his 4 approved views.** N8 is explicit and
+   mandatory: ALL of a character's approved reference views on every generation
+   featuring them, never a subset. Clip 5 passed only face-front + face-3/4.
+
+Net effect: his identity in clip 5 was anchored on a single view, one generation
+removed from canon. Drift was the predictable result.
+
+**Note on why this wasn't self-caught:** the earlier cloak fix was verified with
+a hue histogram (which correctly confirmed the colour) but the FACE was never
+checked after that edit. A measurement that confirms one attribute says nothing
+about the others — verifying the cloak created false confidence about the frame
+as a whole.
+
+### FIX
+New start frame `55a92cbc-44cf-44f1-895a-3b1f3507b4aa` — generated FRESH from
+canon, no chain edit, with the FULL package: all 4 Alaric views (face front,
+face 3/4, full-body front, full-body 3/4) + all 5 Hazel v5 canon refs + her
+look-lock = 10 references. His facial identity given explicit top-priority
+weighting with a do-not-alter list (face width, hairline, eye shape/spacing,
+beard density, age). Crimson cloak specified from the start rather than
+patched in afterwards. Rotation and shoulder-aim staging carried over from the
+approved 5d version.
+
+### VISUAL-QC CHANNEL IS UNRELIABLE — do not depend on it
+The sandbox→base64→local-decode route has now corrupted on 3 of ~7 attempts
+(the montage re-emitted through Claude's own output arrives truncated/garbled).
+It worked at ~7-8k characters some of the time and failed at similar sizes other
+times, so size alone does not predict it. **Treat this channel as best-effort
+only. The owner's eye remains the sole reliable visual gate until the CDN
+allowlist is fixed** (`d8j0ntlcm91z4.cloudfront.net`). Consequently the new
+start frame was sent to the owner for face approval BEFORE spending a clip
+generation on it — a still is cheap, a clip is not.
+
+### STATUS: awaiting owner confirmation of Alaric's face in `55a92cbc` before
+generating clip 5 v3.
