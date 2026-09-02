@@ -22,11 +22,11 @@ export const CATEGORIES = [
   { id: "cold drinks", label: "Cold drinks", img: "/img/falooda.webp" },
   { id: "all day breakfast", label: "All-day breakfast", img: "/img/desi-breakfast.webp" },
   { id: "wala wraps", label: "Wala wraps", img: "/img/wala-wrap.webp" },
-  { id: "lunch & dinner bowls", label: "Bowls", img: "/img/desi-breakfast.webp" },
+  { id: "lunch & dinner bowls", label: "Bowls", img: "/img/biryani-bowl.webp" },
   { id: "bombay toasties", label: "Bombay toasties", img: "/img/toastie.webp" },
-  { id: "street food", label: "Street food", img: "/img/samosa-chaat.webp" },
+  { id: "street food", label: "Street food", img: "/img/masala-chips.webp" },
   { id: "wala bundles", label: "Wala bundles", img: "/img/wala-wrap.webp" },
-  { id: "wala kids", label: "Wala kids", img: "/img/toastie.webp" },
+  { id: "wala kids", label: "Wala kids", img: "/img/kids-meal.webp" },
   { id: "desserts", label: "Desserts", img: "/img/desserts.webp" },
 ];
 
@@ -39,12 +39,22 @@ export const HERO_ITEMS: { slug: string; img: string }[] = [
 
 export function imageFor(item: MenuItem): string {
   const n = item.name.toLowerCase();
-  if (n.includes("pink")) return "/img/pink-chaii.webp";
-  if (n.includes("samosa") || n.includes("chaat")) return "/img/samosa-chaat.webp";
-  if (n.includes("falooda") || n.includes("lassi") || n.includes("shake")) return "/img/falooda.webp";
-  if (n.includes("wrap") || n.includes("roll")) return "/img/wala-wrap.webp";
-  if (n.includes("toastie") || n.includes("toast")) return "/img/toastie.webp";
-  if (n.includes("gulab") || n.includes("cake") || n.includes("jamun")) return "/img/desserts.webp";
+  const has = (...w: string[]) => w.some((x) => n.includes(x));
+  if (has("pink")) return "/img/pink-chaii.webp";
+  if (has("latte", "cappuccino", "flat white", "garam chocolate", "caramel")) return "/img/chaii-latte.webp";
+  if (has("cold coffee", "iced karak", "espresso", "americano")) return "/img/cold-coffee.webp";
+  if (has("lassi", "badam")) return "/img/mango-lassi.webp";
+  if (has("falooda", "shake", "matcha", "mojito", "spritz", "mocktail", "lemonade", "limbu")) return "/img/falooda.webp";
+  if (has("samosa", "chaat", "pani puri", "poppers", "nachos")) return "/img/samosa-chaat.webp";
+  if (has("chips", "fries", "nugget")) return has("kids", "nugget") ? "/img/kids-meal.webp" : "/img/masala-chips.webp";
+  if (has("biryani", "bowl", "curry", "rice", "chana")) return "/img/biryani-bowl.webp";
+  if (has("omelette", "paratha", "egg", "breakfast")) return "/img/omelette-paratha.webp";
+  if (has("wrap", "roll", "twister", "naan", "box", "platter")) return "/img/wala-wrap.webp";
+  if (has("toastie", "toast", "bagel", "sandwich")) return "/img/toastie.webp";
+  if (has("donut", "cheesecake", "cookie", "brownie", "waffle", "nutella", "biscoff", "ice cream", "ice-cream")) return "/img/donuts-cheesecake.webp";
+  if (has("gulab", "cake", "jamun", "halwa", "kheer", "jalebi", "rasmalai", "milk")) return "/img/desserts.webp";
+  if (item.category === "wala kids") return "/img/kids-meal.webp";
+  if (item.category === "all day breakfast") return "/img/desi-breakfast.webp";
   const c = CATEGORIES.find((x) => x.id === item.category);
   return c?.img ?? "/img/hero-chaii.webp";
 }
