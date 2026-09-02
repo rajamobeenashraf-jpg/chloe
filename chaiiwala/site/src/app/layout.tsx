@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: { default: "Chaiiwala — Karak chaii & desi street food", template: "%s · Chaiiwala" },
   description: "Slow-brewed karak chaii, wala wraps and desi street food. 120 stores across the UK. Concept redesign.",
   metadataBase: new URL("https://chaiiwala-concept.vercel.app"),
+  icons: { icon: "/favicon.svg" },
   openGraph: { title: "Chaiiwala — Karak chaii & desi street food", images: ["/img/hero-chaii.webp"] },
 };
 
