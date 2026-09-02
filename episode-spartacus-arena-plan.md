@@ -186,6 +186,10 @@ therefore fixes the top's position explicitly rather than leaving it to the mode
 | Anchor v3 attempt — garment swatch sheet | `54119ee6-6454-4680-9d6a-75a07c50c830` | FAILED (filter) |
 | Anchor v3 attempt — text-only, corrected detail | `dea5405c-1b94-4b73-928c-2610f702ff32` | FAILED — explicit **`nsfw`** status |
 | Anchor v3 attempt — text-only, de-risked wording | `f0ea11c9-acf3-4fd4-9fd0-d74d67c3954b` | FAILED (filter) |
+| Filter test — both upright, separated (Spartacus's first render) | `0a92af47-8a61-4d75-adb2-6dd70e94358c` | PASS |
+| Filter test — prone woman, armed man over her | `49619073-6690-4666-b623-f8d0122a6e61` | FAIL — configuration unavailable |
+| **S5 START FRAME — spear against shield, both upright** | `0221fd5b-91d5-42b3-b2e5-6ee66844f8ad` | **PASS** |
+| **S5 CLIP — first video, 5s, Seedance 2.5 + audio** | `12d59df1-6e75-40b9-b338-b07e0ecd41cc` | **RENDERED** — video filter cleared |
 | Garment swatch reference (built from owner's picture) | media `fb825488-00cb-4c22-ad54-402e92eae3fd` | uploaded, unusable as a model input |
 | Anchor v3 attempt — layered shirt, violence framing kept | `84e53ca3-f6c2-4ae5-aa7c-7c3286628e19` | FAILED — the isolating test |
 | Anchor v4 — layered shirt, violence framing removed | `cb18e004-975f-42cb-a7cc-46631346661f` | RENDERED — the isolating test's control. Layer since REJECTED by owner |
@@ -269,5 +273,15 @@ shirt added, and `cb18e004` passed with the identical outfit once the violence f
    proven end to end.** Method that made it work: state BOTH STANDING UPRIGHT explicitly, and
    confine contact to weapon-against-shield, never weapon-against-person.
 
-4. **Seedance's video filter is still untested** — a different model and a different filter. The
-   stills boundary above is not evidence about video.
+4. **Seedance's video filter CLEARS the same content (2026-09-02).** S5 animated from start frame
+   `0221fd5b` at 5s/1080p/9:16, `omni_reference`, with generated audio — job
+   `12d59df1-6e75-40b9-b338-b07e0ecd41cc`, **rendered successfully**. Two armed characters, weapon
+   driven against shield, real combat motion, diegetic impact audio. The same
+   both-upright / contact-is-weapon-on-shield discipline that clears the stills filter also clears
+   Seedance. **Both halves of the pipeline are now proven.**
+
+   Note: the preset intercept fired first (`PROMPT_LEARNINGS` S7) and had to be declined via
+   `declined_preset_id` — expect this on every clip.
+
+**STATUS: the copy is cleared to build.** Remaining work is execution — 16 more start frames, 17
+clips, harvest and assemble.
