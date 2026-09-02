@@ -190,6 +190,9 @@ therefore fixes the top's position explicitly rather than leaving it to the mode
 | Filter test — prone woman, armed man over her | `49619073-6690-4666-b623-f8d0122a6e61` | FAIL — configuration unavailable |
 | **S5 START FRAME — spear against shield, both upright** | `0221fd5b-91d5-42b3-b2e5-6ee66844f8ad` | **PASS** |
 | **S5 CLIP — first video, 5s, Seedance 2.5 + audio** | `12d59df1-6e75-40b9-b338-b07e0ecd41cc` | **RENDERED** — video filter cleared |
+| S1 start frame — Spartacus charging, alone, MS | `3f6dd374-c93f-4eb9-9c0c-4dc4980ff6cc` | RENDERED (stills filter passed) |
+| S1 clip attempt 1 | `677cb98e-427c-4e0e-90b7-8323591f78b4` | FAILED — `nsfw` |
+| S1 clip attempt 2 (body-focus wording stripped) | `1e7a2a97-1d58-4b50-875b-cbfadd984b00` | FAILED — `nsfw`. **BLOCKED, see §9** |
 | Garment swatch reference (built from owner's picture) | media `fb825488-00cb-4c22-ad54-402e92eae3fd` | uploaded, unusable as a model input |
 | Anchor v3 attempt — layered shirt, violence framing kept | `84e53ca3-f6c2-4ae5-aa7c-7c3286628e19` | FAILED — the isolating test |
 | Anchor v4 — layered shirt, violence framing removed | `cb18e004-975f-42cb-a7cc-46631346661f` | RENDERED — the isolating test's control. Layer since REJECTED by owner |
@@ -285,3 +288,27 @@ shirt added, and `cb18e004` passed with the identical outfit once the violence f
 
 **STATUS: the copy is cleared to build.** Remaining work is execution — 16 more start frames, 17
 clips, harvest and assemble.
+
+## 9. BLOCKER 3 — S1 blocked: the video filter is stricter than the stills filter (2026-09-02)
+
+Full detail: `PROMPT_LEARNINGS.md` N11.
+
+S1's start frame rendered fine (`3f6dd374`) but the CLIP was refused twice with an explicit
+`nsfw` status. The second attempt removed every body-focused phrase and changed nothing, so this
+is configurational, not lexical — the same lesson as N10.
+
+**The discriminating comparison:** S5 rendered (`12d59df1`) with Spartacus as one of two figures
+beside a clothed Hazel, both smaller in frame. S1 has him ALONE in a medium shot from mid-thigh
+up wearing only a leather subligaculum. Working hypothesis: the proportion of frame occupied by
+an unclothed male torso.
+
+**Important consequence for the remaining 15 shots:** a passing start frame does NOT license the
+clip. The video filter is strictly tighter than the stills filter, so every Spartacus-alone shot
+in the copy (S2, S11, S13, S14, S19, S20, S21 — seven of them) carries this same risk.
+
+**Owner decision needed — untested fixes, cheapest first:**
+1. **Widen the framing** so he occupies less of the frame. Cheapest, keeps his approved design,
+   and a slightly wider MFS still serves the reference's S1.
+2. **Add a garment to his design** — a shoulder cape, a tunic, a chest harness. Most likely to
+   fix it outright, but breaks continuity with the already-rendered S5 and would mean redoing it.
+3. **Change the angle** so the shot is less torso-dominant.
