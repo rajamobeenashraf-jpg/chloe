@@ -195,6 +195,8 @@ therefore fixes the top's position explicitly rather than leaving it to the mode
 | S1 clip attempt 2 (body-focus wording stripped) | `1e7a2a97-1d58-4b50-875b-cbfadd984b00` | FAILED — `nsfw` |
 | **S1 start frame v2 — WIDE, figure small in frame** | `8f865f9b-bd39-4d3a-a052-6cd58fc07789` | **RENDERED** |
 | **S1 CLIP — 5s, Seedance 2.5 + audio** | `9b8b6223-df1a-4ccc-9014-481f7a8cd029` | **RENDERED** — widening fixed it, first try |
+| S2 start frame — worm's-eye, airborne, backlit | `95542c7c-ba26-42f1-a97c-11c42fd2a597` | RENDERED |
+| **S2 CLIP — 5s, spear past the lens** | `41770f43-4ff5-459d-a506-2ed4401e5e0b` | **RENDERED** — first try |
 | Garment swatch reference (built from owner's picture) | media `fb825488-00cb-4c22-ad54-402e92eae3fd` | uploaded, unusable as a model input |
 | Anchor v3 attempt — layered shirt, violence framing kept | `84e53ca3-f6c2-4ae5-aa7c-7c3286628e19` | FAILED — the isolating test |
 | Anchor v4 — layered shirt, violence framing removed | `cb18e004-975f-42cb-a7cc-46631346661f` | RENDERED — the isolating test's control. Layer since REJECTED by owner |
@@ -322,3 +324,11 @@ garment added, his approved design intact, S5 still valid.
 Face close-ups should be safe (no torso in frame). **Mid-body framings on him alone are the danger
 zone** — S11, S13, S14, S19, S20, S21 are all MCU/MS/MFS and will need widening or will refuse.
 S2 (worm's-eye, airborne) and S6 (face CU) are lower risk.
+
+**S2 CONFIRMED CLEAR (2026-09-02), and it adds a second technique to the toolkit: BACKLIGHT.**
+A worm's-eye of an airborne figure is torso-dominant by nature, so S2 was built with the sun
+directly behind him — he reads as a dark near-silhouette rimmed in hot white light against a
+blown-out sky that fills three-quarters of the frame. Start frame `95542c7c` and clip
+`41770f43` both rendered first try. **Backlighting to silhouette suppresses skin detail while
+being exactly what the reference shot looks like** — a creative choice and a filter mitigation
+at once. Use it on any solo shot of him that cannot be widened.
