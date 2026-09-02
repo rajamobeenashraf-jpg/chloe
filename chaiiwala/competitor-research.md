@@ -73,6 +73,27 @@ Greggs, Costa, Tim Hortons UK, Black Sheep Coffee, Nando's. Their apps/sites set
 | Concept scope | Four pages: Homepage, Menu, Store page, Franchise |
 | Imagery | AI-generated food/store photography (owned, labelled as concept imagery); no copyrighted photos |
 | Delivery | Live URL (Vercel, neutral domain) + 3-4 page proposal PDF (findings, problems, offer) |
+| Pitcher | Mobeen Ashraf as a freelancer (name, one-line bio, email; portfolio link placeholder) |
+| Pricing | Owner asked for an estimate — see §4.1; presented as phased packages |
+| Code location | `chaiiwala/site/` on this branch; deploy to Vercel from the repo later |
+
+### 4.1 Price estimate (UK freelance, 2026 market)
+
+Basis: experienced freelance Next.js developer/designer day rate £400–£650; an agency would quote
+£40k–£80k for a brand of this size, which is the anchor Chaiiwala's marketing team already lives with.
+
+| Phase | Scope | Days | Fee |
+|---|---|---|---|
+| 1. Discovery & design | Stakeholder interviews, content audit of the 115-store estate, design system, 4 key page designs, clickable prototype | 8–10 | £4,500–£6,000 |
+| 2. Core build | Next.js + headless CMS (Sanity or Payload), 8–10 page templates, store content model + import of all UK stores, menu with allergen/calorie data, franchise funnel + lead form to CRM, loyalty/app handoff, delivery deep-links, schema/SEO, analytics, WordPress migration, QA, launch on Vercel, team training | 22–28 | £13,000–£17,000 |
+| 3. Growth | Multi-country routing (UK/CA/AE/US), per-store landing pages retired from subdomains with redirects, franchise territory map, ongoing ordering-API integration once food2go access is granted | 10–14 | £6,000–£9,000 |
+| **Total (all phases)** | | 40–52 | **£23,500–£32,000** |
+| Optional retainer | Content updates, menu drops, seasonal campaigns, performance monitoring | 2–3 days/month | £1,200–£1,800/month |
+
+Positioning in the proposal: lead with Phases 1+2 at ~£18k–£23k as "the site", Phase 3 as the
+international add-on, and offer the discovery phase alone at £4.5k–£6k as a low-risk first step.
+A cold-pitch proposal should still end with the discovery-call CTA; the numbers give them an
+anchor well under agency pricing without looking cheap for a £89m brand.
 
 ## 5. Sources
 - https://www.thegrocer.co.uk/news/chaiiwala-sales-jump-35-amid-global-expansion/710298.article
