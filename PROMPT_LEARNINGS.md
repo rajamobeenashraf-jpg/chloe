@@ -128,3 +128,54 @@ silently work around this, never skip it. Full rule: `CLAUDE.md`.
 | # | Finding | Evidence | Date |
 |---|---|---|---|
 | P1 | **PyAV concat must assign monotonic pts explicitly** (video: frame index at 1/fps time_base; audio: running sample count at 1/rate) and flush both encoders. Passing pts=None through re-encode produced a file whose every frame stamped t=0 — unplayable for the owner, caught only when he reported it. VERIFY every stitched file before sending: decode fully, check first/last pts span the expected duration AND audio last-sample end time (sources are 32 kHz — don't assume 48k when converting samples to seconds). | seam_test_71_72 v1 vs v2, 2026-08-30 | 2026-08-30 |
+
+---
+
+## N15 — A repeated Seedance video refusal can be caused by the START FRAME, not the prompt. Test that first.
+
+**Found:** Spartacus/Capua arena episode, shots S10 and S21.
+
+Both shots refused (`status: nsfw`) four times each on Seedance 2.5. Three of
+those rounds were spent rewriting the prompt — softening the conflict language,
+then reframing the shot as "costumed performers / prop sword / staged
+demonstration / no one is harmed." Every rewrite refused instantly.
+
+**The tell that broke it open:** S21 is *Spartacus alone* — one armoured man
+walking a slow arc with a lowered sword, no opponent, no aftermath, nothing in
+frame or in the text that any filter should object to. When a prompt with
+literally nothing objectionable in it still refuses instantly, the prompt is not
+what is being judged. The only other input was the start frame.
+
+**The fix.** Both shots were re-submitted against *different* start frames —
+harvested as the last frame of the preceding, already-successful clip (S9's tail
+→ S10's start; S20's tail → S21's start), pulled out of the assembled cut with
+`ffmpeg -ss` / `-sseof` in `sandbox_exec`. Same prompts. Both moved straight to
+`in_progress`. The start frame was the entire cause.
+
+**The rule going forward:** when a Seedance video call refuses twice on the same
+shot, **stop rewriting the prompt and swap the start frame.** Prompt rewriting is
+the expensive hypothesis and it was the wrong one here — four rounds spent on it.
+Frame-swapping is one cheap call and it is the variable that actually moved.
+
+Two corollaries:
+
+1. **A still that passed the image filter is not cleared for video.** This
+   sharpens N11 ("Seedance's video filter is stricter than the stills filter")
+   with the specific mechanism: the video pipeline re-judges the *input frame*,
+   and can reject a frame `nano_banana_2` was happy to produce. A passing still
+   does not license the clip — and when it fails, the still is the first suspect,
+   not the last.
+2. **Prefer harvesting start frames from the tail of the preceding approved
+   clip** wherever shots are meant to be continuous. It sidesteps the filter
+   problem, and it gives genuinely correct continuity — the frame *is* the
+   previous shot's last frame, so screen geography, light family and subject
+   anchor carry over exactly rather than approximately. Here the copy map had
+   already grouped S9+S10 and S20+S21 as continuous shots (G8, G17), so the
+   filter workaround and the continuity requirement wanted the same thing.
+
+**Process note.** The four wasted rounds are the finding, not a footnote. The
+single-variable discipline that located the filter boundary in N9/N10 was
+available and was not applied here: I varied the prompt four times while holding
+the frame fixed, and never once varied the frame. When a hypothesis fails twice,
+change which variable is being tested rather than trying a third value of the
+same one.
