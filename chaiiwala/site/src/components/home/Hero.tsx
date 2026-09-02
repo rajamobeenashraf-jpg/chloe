@@ -23,13 +23,13 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-ink/10 via-transparent to-ink" />
       </motion.div>
 
-      <motion.div style={{ y: cupY }} className="absolute inset-y-0 right-0 hidden w-[52%] md:block">
+      <motion.div style={{ y: cupY }} className="absolute inset-y-0 -right-[4%] hidden w-[44%] md:block">
         <HeroCup />
       </motion.div>
 
       <div className="mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-6 pb-16 pt-32 md:pb-24">
         <motion.p initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 0.8 }} className="eyebrow mb-6 text-orange-soft">The home of karak chaii · since Leicester, 2015</motion.p>
-        <h1 className="font-display display-tight text-[15vw] font-black lowercase leading-none md:text-[9.5rem] lg:text-[11rem]" aria-label="slow brewed. poured fresh.">
+        <h1 className="font-display display-tight text-[15vw] font-black lowercase leading-none md:max-w-[60%] md:text-[6.6rem] lg:text-[8.2rem] xl:text-[9rem]" aria-label="slow brewed. poured fresh.">
           {words.map((w, i) => (
             <span key={w} className="mr-[0.18em] inline-block overflow-hidden pb-[0.06em] -mb-[0.06em]">
               <motion.span className={`inline-block ${i === 1 || i === 3 ? "italic text-orange-soft" : ""}`} initial={{ y: "115%", rotate: 3 }} animate={{ y: 0, rotate: 0 }} transition={{ duration: 1.1, delay: 0.55 + i * 0.09, ease: [0.16, 1, 0.3, 1] }}>{w}</motion.span>

@@ -81,7 +81,7 @@ function Spices() {
 
 export default function HeroCup() {
   return (
-    <Canvas dpr={[1, 1.6]} camera={{ position: [0, 0.6, 4.6], fov: 34 }} gl={{ antialias: true, alpha: true }} className="!absolute inset-0" data-cursor>
+    <Canvas dpr={[1, 1.6]} camera={{ position: [0, 0.5, 6.4], fov: 30 }} gl={{ antialias: true, alpha: true }} className="!absolute inset-0" data-cursor>
       <ambientLight intensity={0.55} />
       <directionalLight position={[3, 5, 2]} intensity={2.2} color="#fff1dd" />
       <directionalLight position={[-4, 2, -2]} intensity={0.8} color="#ffb387" />
