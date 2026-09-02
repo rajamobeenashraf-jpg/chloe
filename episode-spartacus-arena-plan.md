@@ -249,6 +249,7 @@ shirt added, and `cb18e004` passed with the identical outfit once the violence f
    |---|---|---|
    | Hazel alone, standing, armed | `47cf1886` | **PASS** |
    | Hazel + Spartacus, both standing, several feet apart, weapons lowered | `0a92af47` | **PASS** |
+   | Hazel + Spartacus, both upright, his spear shaft driven against her shield (S5) | `0221fd5b` | **PASS** — weapon-on-shield CONTACT clears |
    | Hazel on the ground, Spartacus standing over her | `49619073` | **FAIL** — even with fully neutral wording, spear planted vertical, "not cowering", no blood, no contact |
 
    **Two-character combat shots are fine.** What the filter refuses is specifically *woman down +
@@ -261,9 +262,12 @@ shirt added, and `cb18e004` passed with the identical outfit once the violence f
    alone. The two fighters share a frame only in S4, S5, S7 and S10 — all with both upright, which
    is the configuration that just passed.
 
-   **Remaining untested risk:** S5, S7 and S10 involve weapon-on-shield CONTACT between them while
-   both are upright. Passing separated-and-lowered does not guarantee passing in-contact. Test one
-   of these before committing to the full run.
+   **Contact risk CLEARED (`0221fd5b`, S5).** Weapon-on-shield contact between two upright figures
+   passes, so S5, S7 and S10 are fine. Every shot in the 21-shot copy is now covered by a
+   configuration verified to pass: single-character (the majority), two upright and separated (S4),
+   or two upright in weapon-on-shield contact (S5, S7, S10). **The stills half of the pipeline is
+   proven end to end.** Method that made it work: state BOTH STANDING UPRIGHT explicitly, and
+   confine contact to weapon-against-shield, never weapon-against-person.
 
 4. **Seedance's video filter is still untested** — a different model and a different filter. The
    stills boundary above is not evidence about video.
