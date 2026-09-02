@@ -126,6 +126,7 @@ against their live pages, with the findings table above as the proposal's spine.
 | Concept scope | Four pages: Homepage, Menu, Store page, Franchise |
 | Imagery | AI-generated food/store photography (owned, labelled as concept imagery); no copyrighted photos |
 | Delivery | Live URL (Vercel, neutral domain) + 3-4 page proposal PDF (findings, problems, offer) |
+| Motion & 3D (owner, 2026-09-02) | Premium, motion-rich site: heavy use of purposeful animation. One signature 3D hero (karak chaii cup, scroll-driven) rather than a fully 3D site. Motion system: Lenis smooth scroll, GSAP ScrollTrigger scenes, Framer Motion for UI, React Three Fiber for the hero. All motion lazy-loaded after first paint, GPU-only properties, `prefers-reduced-motion` respected, mobile LCP target under 2.5s so the "your pages are heavy" pitch line still holds. |
 | Pitcher | Mobeen Ashraf as a freelancer (name, one-line bio, email; portfolio link placeholder) |
 | Pricing | Owner asked for an estimate — see §4.1; presented as phased packages |
 | Code location | `chaiiwala/site/` on this branch; deploy to Vercel from the repo later |
