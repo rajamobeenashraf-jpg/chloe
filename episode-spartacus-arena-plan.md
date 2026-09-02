@@ -192,7 +192,9 @@ therefore fixes the top's position explicitly rather than leaving it to the mode
 | **S5 CLIP — first video, 5s, Seedance 2.5 + audio** | `12d59df1-6e75-40b9-b338-b07e0ecd41cc` | **RENDERED** — video filter cleared |
 | S1 start frame — Spartacus charging, alone, MS | `3f6dd374-c93f-4eb9-9c0c-4dc4980ff6cc` | RENDERED (stills filter passed) |
 | S1 clip attempt 1 | `677cb98e-427c-4e0e-90b7-8323591f78b4` | FAILED — `nsfw` |
-| S1 clip attempt 2 (body-focus wording stripped) | `1e7a2a97-1d58-4b50-875b-cbfadd984b00` | FAILED — `nsfw`. **BLOCKED, see §9** |
+| S1 clip attempt 2 (body-focus wording stripped) | `1e7a2a97-1d58-4b50-875b-cbfadd984b00` | FAILED — `nsfw` |
+| **S1 start frame v2 — WIDE, figure small in frame** | `8f865f9b-bd39-4d3a-a052-6cd58fc07789` | **RENDERED** |
+| **S1 CLIP — 5s, Seedance 2.5 + audio** | `9b8b6223-df1a-4ccc-9014-481f7a8cd029` | **RENDERED** — widening fixed it, first try |
 | Garment swatch reference (built from owner's picture) | media `fb825488-00cb-4c22-ad54-402e92eae3fd` | uploaded, unusable as a model input |
 | Anchor v3 attempt — layered shirt, violence framing kept | `84e53ca3-f6c2-4ae5-aa7c-7c3286628e19` | FAILED — the isolating test |
 | Anchor v4 — layered shirt, violence framing removed | `cb18e004-975f-42cb-a7cc-46631346661f` | RENDERED — the isolating test's control. Layer since REJECTED by owner |
@@ -306,9 +308,17 @@ an unclothed male torso.
 clip. The video filter is strictly tighter than the stills filter, so every Spartacus-alone shot
 in the copy (S2, S11, S13, S14, S19, S20, S21 — seven of them) carries this same risk.
 
-**Owner decision needed — untested fixes, cheapest first:**
-1. **Widen the framing** so he occupies less of the frame. Cheapest, keeps his approved design,
-   and a slightly wider MFS still serves the reference's S1.
-2. **Add a garment to his design** — a shoulder cape, a tunic, a chest harness. Most likely to
-   fix it outright, but breaks continuity with the already-rendered S5 and would mean redoing it.
-3. **Change the angle** so the shot is less torso-dominant.
+**RESOLVED (owner chose option 1, 2026-09-02): widening works.** The S1 start frame was re-shot
+wide — figure full-length and small, roughly the lower-middle third of the frame, open sand around
+him and the stands dominating (`8f865f9b`) — and the clip rendered first try (`9b8b6223`). No
+garment added, his approved design intact, S5 still valid.
+
+**Method, now standard for every Spartacus-alone shot:**
+- In the STILL: a SCALE AND COMPOSITION block stating he is small in frame and reads "as a figure
+  in a place, not as a physique".
+- In the CLIP: a SCALE LOCK block forbidding the camera to zoom, push in, or tighten.
+
+**Risk scales with how much of the frame his bare torso fills.** Wide and full-length is safe.
+Face close-ups should be safe (no torso in frame). **Mid-body framings on him alone are the danger
+zone** — S11, S13, S14, S19, S20, S21 are all MCU/MS/MFS and will need widening or will refuse.
+S2 (worm's-eye, airborne) and S6 (face CU) are lower risk.
