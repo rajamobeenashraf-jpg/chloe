@@ -47,3 +47,10 @@ Prompt: see `prompt_round1.txt`.
   ergonomic chair headrest, but re-frames wider than the original (framing not
   preserved) and is 720p only.
 - Status: AWAITING OWNER APPROVAL / pick. No regeneration without owner go-ahead.
+
+## Round 2 — Seedance only (owner go-ahead 2026-09-03: "MacBook in front and chair visible")
+- Prompt: `prompt_round2.txt` (round-1 prompt + explicit foreground MacBook lid at
+  bottom of frame between him and camera, chair headrest/backrest wings visible
+  behind head and shoulders, framing/crop locked to the master).
+- seedance_2_5 video_edit, 1080p, generate_audio=false, same source media:
+  job `7411c27a-6732-4ee3-ad9b-c9adbc7d285d` — submitted, pending.
