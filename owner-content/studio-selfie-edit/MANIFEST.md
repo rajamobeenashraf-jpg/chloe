@@ -53,4 +53,10 @@ Prompt: see `prompt_round1.txt`.
   bottom of frame between him and camera, chair headrest/backrest wings visible
   behind head and shoulders, framing/crop locked to the master).
 - seedance_2_5 video_edit, 1080p, generate_audio=false, same source media:
-  job `7411c27a-6732-4ee3-ad9b-c9adbc7d285d` — submitted, pending.
+  job `7411c27a-6732-4ee3-ad9b-c9adbc7d285d` — completed, 1080x1920, 7.375s raw.
+- QC: freezedetect clean (0 frozen segments); frame spot-check done.
+- Retime ×1.0267 to 7.572s, original AAC re-muxed (same method as round 1).
+- Final: Higgsfield media `38094583-9fad-4343-b7b2-b1f7b9fb648c` (1080p, 7.53 MB)
+  `https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/38094583-9fad-4343-b7b2-b1f7b9fb648c.mp4`
+- Preview sent to owner: `r2_proxy.mp4` md5 9f9f70021deac46172ad4e2216a7f3a2 (scratch, not committed).
+- Status: AWAITING OWNER APPROVAL. No further regeneration without owner go-ahead.
