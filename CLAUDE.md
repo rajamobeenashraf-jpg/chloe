@@ -173,14 +173,37 @@ This is a standing production step now, not a case-by-case judgment call: any cl
 
 ## Owner's QC rule (decided 2026-08-20 — supersedes the per-clip "Stage A" in research-methodology.md §4)
 
-**PERMANENT, owner lock 2026-08-29, reinforced same day, project-wide (this episode and every future episode/chat) — no exceptions beyond the one named below.** Do NOT run Gemini eyes (or any machine video-analysis) on a PRODUCTION clip at any point before the editing stage — this explicitly includes Claude's own "proactive self-QC" on a clip immediately after it's generated/delivered, not just a formal QC pass under that name. A self-check run informally, without calling it "QC," is still a Gemini-eyes-during-production violation of this rule. Found on the Alexander/Gaugamela episode: Claude ran Gemini eyes on nearly every delivered clip this session as a self-verification habit (checking eyeline, pacing, voice consistency) — the owner had to stop this explicitly and re-lock the rule, even though it was already written above from 2026-08-20.
+**PERMANENT, owner lock 2026-08-29, reinforced same day, project-wide (this episode and every future episode/chat) — no exceptions beyond the two named below.** Do NOT run Gemini eyes (or any machine video-analysis) on a PRODUCTION clip at any point before the editing stage — this explicitly includes Claude's own "proactive self-QC" on a clip immediately after it's generated/delivered, not just a formal QC pass under that name. A self-check run informally, without calling it "QC," is still a Gemini-eyes-during-production violation of this rule. Found on the Alexander/Gaugamela episode: Claude ran Gemini eyes on nearly every delivered clip this session as a self-verification habit (checking eyeline, pacing, voice consistency) — the owner had to stop this explicitly and re-lock the rule, even though it was already written above from 2026-08-20.
 - Clips are generated in PAI Pro / Higgsfield under the existing process and the
   owner's approval gates, with no Gemini involvement.
-  **The one exception (2026-08-29, reaffirmed): Gemini eyes MAY run on
+  **The first exception (2026-08-29, reaffirmed): Gemini eyes MAY run on
   VALIDATION/TEST clips at generation stage** (e.g. a new model's or method's
   test shot, before it enters production) — because frame-sampling QC cannot
   see motion defects. Production clips remain under the original rule:
   edit-stage only, always.
+  **The second exception (owner lock 2026-09-03, permanent, project-wide):
+  Claude MAY directly inspect a production clip** — extracting frames and
+  viewing them, or comparing them against a locked character's CHARACTER_LOCK
+  reference and the matching timestamp of a source reference video the clip is
+  meant to copy — for the sole, narrow purpose of checking IDENTITY, WARDROBE,
+  and whether the requested camera beats/cuts actually landed. This is
+  diagnostic self-inspection, not the formal Gemini-eyes/"QC" pass this section
+  otherwise governs, and it changes nothing else about the rule: the inspection
+  never delays or gates delivery (the clip still goes to the owner immediately,
+  per the Immediate Delivery rule below), Claude never self-approves or
+  silently regenerates on the strength of what it sees, and any fix still
+  requires the owner's explicit go-ahead per the regeneration-approval rule
+  below — inspection findings are reported to the owner as information
+  alongside the delivered clip, exactly like any other QC finding. Added on
+  the Spartacus/Capua arena episode: the Genjutsu motion-transfer pipeline
+  (`motion-transfer-recipe.md`) has a known, already-documented identity/
+  wardrobe drift risk (found during its own validation test), and clip 3 hit
+  it in production — Spartacus's face drifted toward the driving reference
+  video's own actor, and Hazel's wardrobe drifted back to a grey tank instead
+  of the locked light-blue denim. Claude had no way to name or fix this
+  without being able to look at the clip, and the owner asked directly for a
+  way to let Claude watch and fix its own work rather than describing the
+  defect for it each time.
 - Gemini eyes comes into action only at the EDITING stage, once all of an
   episode's clips are generated. Run it there on:
   1. the full clip set entering the edit,
