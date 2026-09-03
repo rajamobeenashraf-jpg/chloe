@@ -21,10 +21,20 @@ rather than inventing new action per shot.
 | prompt | verbatim, unchanged per clip | |
 | declined_preset_id | `24bae836-2c4a-48e0-89b6-49fcc0b21612` | suppresses the "IN THE DARK" preset intercept |
 
-**The references and prompt stay byte-identical across every clip.** Owner
-decision 2026-09-02: consistency between clips outranks fixing the wardrobe or
-face drift on any single clip. Changing a reference mid-sequence would make that
-clip not match the ones already approved.
+**The references and the style/character block stay byte-identical across every
+clip.** Owner decision 2026-09-02: consistency between clips outranks fixing the
+wardrobe or face drift on any single clip. Changing a reference mid-sequence
+would make that clip not match the ones already approved.
+
+**The BEAT BLOCK is per-clip and is not optional (found on clip 2, 2026-09-03).**
+Clip 1's generic "he attacks, she defends" prompt happened to work because
+0:00-0:05 is one continuous two-person exchange. Clip 2 (0:05-0:10) came back
+wrong on the same generic prompt: that window holds four setups including one
+with NO PEOPLE IN IT (the broken spear tumbling against open sky), and the model
+had no way to know. Every clip now gets an explicit numbered beat list describing
+each setup's framing and action, plus an instruction to reproduce the hard cuts
+rather than smooth them into one shot. Read the segment's beats off the reference
+breakdown before writing the prompt - never reuse the previous clip's beats.
 
 ## Prompt (verbatim)
 
@@ -56,8 +66,8 @@ Reference source is 540x960, 55.3s. yt-dlp is not preinstalled in the sandbox.
 | Clip | Drive window | Reference content | Job ID | Status |
 |---|---|---|---|---|
 | 1 | 0:00-0:05 | leap, spin, block, overhand thrust | `08b347bf-b2f4-4707-8703-bb39e5425ca2` | delivered |
-| 2 | 0:05-0:10 | push forward, clash, spear snaps, piece flies, recovery | `52f78700-3aaa-4a7d-9a75-41d914a9102c` | delivered |
-| 3 | 0:10-0:15 | shield spin, brace at gate, 360 spin, strained face | | |
+| 2 | 0:05-0:10 | push forward, clash, spear snaps, piece flies against sky (no people), recovery | `52f78700` v1 rejected, `e2032f63-8865-4a26-a2f0-77766762c101` v2 | v2 delivered |
+| 3 | 0:10-0:15 | shield spin, brace at gate, 360 spin from behind, strained face ECU | `8a59accf-c709-4e39-a3a5-a9cef8744a9f` | delivered |
 | 4 | 0:15-0:20 | foot plant, sword slash, dodge and parry | | |
 | 5 | 0:20-0:22 | jumping shield strike, defender forced back | | |
 
