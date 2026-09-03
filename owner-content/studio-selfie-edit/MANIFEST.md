@@ -24,3 +24,26 @@ Plan: original audio track is re-muxed onto whichever output the owner approves
 (ffmpeg copy), so voice/speech are preserved bit-for-bit regardless of model.
 
 Prompt: see `prompt_round1.txt`.
+
+## Round 1 — results (2026-09-03)
+- idx0 Seedance 2.5 (`4b07e0a1-…`): completed, 1080p, 7.375s raw.
+- idx1 Gemini (`afd35a02-…`) at 1080p: FAILED. Retried at 720p:
+  job `d0dd3a1d-64e2-48c2-9621-7babf9c6bee4` — completed, 720x1280, 7.680s raw.
+- QC: ffmpeg `freezedetect` clean on both (no frozen segments); frame-extraction
+  spot check done on both.
+- Retime to the original 7.572s so the original audio lines up (`setpts`):
+  Seedance ×1.0267 (7.572/7.375), Gemini ×0.9859 (7.572/7.680); original AAC
+  track re-muxed onto each.
+- Final edited clips (Higgsfield media library, original audio, 7.572s):
+  - Seedance final: media `91667ea7-51e8-4358-8d58-aaefb7b80c8d` (1080p)
+  - Gemini final:   media `ed2db0ba-f66b-41ca-86f5-66eb428cd030` (720x1280)
+  - URL pattern: `https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/<media_id>.mp4`
+- Previews sent to owner (270px, proxy transfer because the Higgsfield CDN is
+  blocked from this environment): `sd_proxy.mp4` md5 d6de8940fb2db673a3bf260ad866f980,
+  `gm_proxy.mp4` md5 a534f937ef64a8fc6c8cfc27ec367196 (scratch, not committed).
+- Observations (informational, owner decides): Seedance keeps the original selfie
+  framing/camera but puts the MacBook on the desk BEHIND him rather than in front,
+  and the chair is barely visible. Gemini shows the MacBook in front and the
+  ergonomic chair headrest, but re-frames wider than the original (framing not
+  preserved) and is 720p only.
+- Status: AWAITING OWNER APPROVAL / pick. No regeneration without owner go-ahead.
