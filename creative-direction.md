@@ -434,3 +434,43 @@ Root-caused on Clip 13: any camera that faces the subject (selfie OR third-perso
 ## 37. Restate understanding before submitting a judgment-call regeneration (refinement of the standing owner-approval-before-regeneration rule; PERMANENT)
 
 CLAUDE.md's owner-locked rule already requires explicit go-ahead before every regeneration attempt. Refinement confirmed by repeated use on the Constantinople episode: when the requested fix involves a creative or staging judgment call (not a simple, unambiguous correction), restate the specific, concrete changes back to the owner as a short checklist and get their confirmation ("is that everything, or did I miss something?") before submitting — rather than going straight from the owner's fix description to a regeneration. This catches scope gaps and misreadings before spending a generation on them.
+
+## 38. A blanket re-sync/re-process pass across many clips can regress a clip that was already owner-approved — revert don't refix (owner mandate 2026-09-04 — PERMANENT, same weight as §12–§15, §17–§37, supersedes any contrary guidance in the default branch or elsewhere)
+
+Found on Constantinople Part 2, clip08a (and matches the same pattern already reverted on clip10a/clip10c in this episode's git history): a batch Sync Labs lip-sync pass was run across most of an episode's clips as a general quality upgrade, not to fix a defect in every one of them. On a two-shot clip (two visible faces, one continuous audio track), Sync Labs' sync-3 model drove BOTH faces' mouths off the same audio regardless of who was actually speaking — a real regression on a clip whose pre-pass version was already the owner-approved final.
+
+- When investigating a reported bug in a clip's lip movement/audio sync, always check whether an owner-approved pre-pass version of that clip exists (check the production log's "final-clip manifest" and the `clips/` directory for earlier-dated variants) before assuming the fix requires a new generation or a targeted re-sync attempt.
+- If the pre-pass version is verified (frame-by-frame, at the specific timestamps of each speaker's lines) to not have the reported defect, the fix is to revert — repoint the `assets/{id}.mp4` symlink to the pre-pass file — not to attempt fixing the new pass's artifact. This is a revert of an already-approved take, not a regeneration, so it does not by itself require the §19 regeneration go-ahead — but per §20/owner reinforcement, still confirm the finding and the revert plan with the owner before touching the symlink, and re-run the full downstream pipeline afterward (see §39).
+- A pass or tool that "improves quality" in general is not exempt from per-clip verification just because it wasn't a targeted fix — batch operations need the same frame-level scrutiny as any other change before they're trusted across an episode.
+
+## 39. A duration change anywhere in the clip sequence invalidates every downstream frame-boundary computed before it — always re-derive, never reuse (owner mandate 2026-09-04 — PERMANENT, same weight as §12–§15, §17–§38)
+
+Found repeatedly on Constantinople Part 2/Final Episode: reverting clip08a (§38) changed its measured duration by exactly one frame relative to the broken take it replaced, which shifted every clip's start/end frame after it in the sequence. Any trim point, hook-overlay timing, music-segment boundary, or per-scene volume window computed before that change was silently wrong by one or more frames afterward.
+
+- Treat every previously-computed frame/timestamp boundary as invalid the moment any upstream clip's source file changes, even by what looks like a rounding-level difference — re-run `qc_pass.mjs` (or equivalent) to get a fresh `durations.json`, recompute cumulative offsets in code from that fresh manifest, and re-verify the new boundaries by extracting and visually inspecting the actual frames at each computed cut point (not just trusting the arithmetic).
+- Never patch a downstream deliverable (a trim, a mix, an overlay burn) in place after an upstream fix — rebuild the full chain from the fixed source forward, in order, so no stage is working from stale measurements.
+
+## 40. Music for a trimmed/short-form cut: measure the track's actual loudness to find the intended passage, don't infer it from clip alignment; loop at natural tempo to fill runtime, never assume time-stretching is wanted (owner mandate 2026-09-04 — PERMANENT, same weight as §12–§15, §17–§39)
+
+Found on Constantinople Part 2: repeated back-and-forth over "the loud/action part of the score" was only resolved by directly measuring mean volume in short windows across the entire candidate track and confirming the actual loudest, most sustained passage — an assumption based on which original clip a segment happened to align with was wrong twice before that measurement was run. The owner also confirmed (after trying the alternative) that time-stretching a too-short passage to fill a longer runtime is not the default-preferred fix; looping the passage at its natural, unmodified tempo (with a short crossfade at the loop seam) is.
+
+- When asked for "the loud/heavy/action part" of a track, measure it (e.g. `volumedetect` over sequential windows across the full track) before proposing a specific timestamp range — do not infer the range from where a clip boundary happens to fall in some other cut of the episode.
+- When the identified passage is shorter than the target runtime, default to looping it at natural tempo with a short crossfade (≈0.5–1s) at the seam rather than time-stretching it, unless the owner asks for stretching specifically.
+- Keep the established mix chain on top of whichever passage is chosen: sidechain-compress the music against the full dialogue/ambient track (ducks under speech, swells in gaps), apply per-scene volume automation (this episode's convention: louder, e.g. ~85%, under action beats; quieter, e.g. ~80%, under dialogue/reflective beats — classify each clip's content, don't apply a flat level), then loudness-normalize the final mix (I=-16, TP=-1.5, LRA=11).
+
+## 41. Opening hook overlay convention — established this episode, applies to every part/episode going forward (owner mandate 2026-09-04 — PERMANENT, same weight as §12–§15, §17–§40)
+
+The Constantinople Part 1/2/Final-Episode hook overlay is now the standing house style for a cold-open title card, distinct from the mid-video caption system (§ Caption system in CLAUDE.md, which stays Liberation Serif):
+- Two stacked white rounded-rectangle boxes (overlapping slightly), each with a ~6px black outline, black interior text, sized to fit the text with generous padding.
+- Font: Liberation Sans Bold (the open metric-compatible equivalent of Arial — owner-approved specifically, in preference to the more "formal" serif options first drafted) — not the caption system's serif.
+- Line 1: the part/episode marker ("PART 2", "FINAL EPISODE," etc.). Line 2: the stake/hook line (e.g. "Fall of Constantinople 1453!", "Inside the Hagia Sophia!").
+- Burned onto the video for exactly the first 1 second, then gone — never longer, never re-appearing later.
+- Always render the exact overlay composited onto the actual opening frame of the actual cut (not a placeholder background) and get owner sign-off on the specific wording/font before burning it into any deliverable.
+
+## 42. Delivery protocol for generated/edited video: compressed preview first, then full-quality/4K via durable link, both frame/duration/audio-verified against source (owner mandate 2026-09-04 — PERMANENT, same weight as §12–§15, §17–§41)
+
+Standing pattern used throughout Constantinople Part 1/2/Final Episode, now the default for every future deliverable:
+- Immediately send a compressed preview (re-encoded to fit the chat upload limit, ~≤30MB) of any new or changed cut, per §20 — this is never gated behind an uncompressed/4K version being ready.
+- When the owner wants the uncompressed or 4K-upscaled master, upload it to durable storage (the Higgsfield media store) and hand back the resulting CDN URL rather than trying to send the raw file through chat.
+- Before handing over any transcoded, upscaled, spliced, or otherwise re-encoded file, verify it against its source: frame count, duration, and an audio loudness/presence check must match expectations exactly (use `ffprobe`/`volumedetect`, not just "the job said completed") — a completed upscale/encode job is not by itself proof the output is correct.
+- When splitting a long cut down into a shorter part, save the removed head/tail footage as its own file rather than discarding it — it is the raw material for the next part.

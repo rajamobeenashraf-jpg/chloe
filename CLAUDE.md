@@ -7,7 +7,15 @@ newest-command-wins basis: every rule the owner never changed is kept; where an
 older rule conflicts with a later owner decision, the later decision stands and
 is marked. Latest owner decisions recorded: 2026-08-22 (ask before every clip
 regeneration + send every clip to the owner for approval, reinforced: sending
-the clip is never gated behind Claude's own findings — see the QC rule below).
+the clip is never gated behind Claude's own findings — see the QC rule below);
+2026-09-04 (owner mandate, PERMANENT, overrides any contrary guidance anywhere
+in the default branch or elsewhere: every workflow practice used to produce the
+Constantinople episode — the batch-re-sync revert protocol, the mandatory
+downstream re-derivation after any clip duration change, the measured-loudness
+music-selection and natural-tempo-loop mixing recipe, the opening hook-overlay
+house style, and the compressed-preview-then-durable-link delivery protocol —
+is locked in as standing process for every future episode. Full writeups:
+`creative-direction.md` §38–§42).
 
 Read before any creative, research, or production work — these files are this project's memory:
 1. `NEW_CHAT_HANDOFF.md` — START HERE: operating manual (setup, parallel-chat rules, approval gates)
