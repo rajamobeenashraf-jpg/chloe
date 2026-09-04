@@ -1,0 +1,54 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:15.200",
+      "category": "anatomy",
+      "severity": 3,
+      "description": "Hazel's pointing hand and extended arm exhibit unnatural finger proportions and slight warping against the background water.",
+      "end_timestamp": "00:20",
+      "fix": "Re-render the hand gesture frame range using a stabilized hand pose reference.",
+      "verdict": "CONFIRMED",
+      "refined_description": "Hazel's pointing hand shows unnatural, elongated finger proportions with minor distortion along the arm edges against the background."
+    },
+    {
+      "timestamp": "00:42.600",
+      "category": "physics",
+      "severity": 3,
+      "description": "The oxen and ship rollers show minor sliding artifacts rather than true rolling ground contact.",
+      "end_timestamp": "00:46",
+      "fix": "Adjust ground plane tracking and motion dynamics on the rolling logs.",
+      "verdict": "CONFIRMED",
+      "refined_description": "The wooden logs beneath the moving ship hull slide across the dirt without rotational ground contact, and the walking oxen exhibit mild foot sliding on the ground."
+    },
+    {
+      "timestamp": "02:05.600",
+      "category": "physics",
+      "severity": 3,
+      "description": "Sword strike clips into the steel plate armor unnaturally without proper surface deformation.",
+      "end_timestamp": "02:07",
+      "fix": "Refine the contact point animation or target an armor seam for realism.",
+      "verdict": "CONFIRMED",
+      "refined_description": "A sword thrust penetrates directly through the solid steel cuirass/breastplate as if it were soft material, clipping into the armor with blood emitting from the metal plate."
+    },
+    {
+      "timestamp": "02:14",
+      "category": "continuity",
+      "severity": 2,
+      "description": "The crown held by the emperor disappears abruptly from his hands and drops to the ground.",
+      "end_timestamp": "02:17",
+      "fix": "Maintain object tracking for the crown throughout the dropping motion."
+    },
+    {
+      "timestamp": "02:24.000",
+      "category": "background",
+      "severity": 3,
+      "description": "Ottoman flags display the modern Republic of Turkey crescent design rather than historical 15th-century standards.",
+      "end_timestamp": "02:29",
+      "fix": "Replace flag assets with historically accurate 1453 Ottoman banners.",
+      "verdict": "CONFIRMED",
+      "refined_description": "The red flags displayed atop the breached castle gate towers clearly feature the modern 20th-century national flag of the Republic of Turkey (white crescent and five-pointed star on a red field) rather than historical 15th-century Ottoman standards."
+    }
+  ],
+  "summary": "The video maintains strong narrative pacing and character consistency for Hazel across multiple complex scenes. Minor visual artifacts appear in hand gesture posing, prop interactions, and historical flag details. Overall production quality is cohesive with solid audio and voiceover synchronization.",
+  "overall_score": 6.5
+}

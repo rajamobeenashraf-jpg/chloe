@@ -7,7 +7,15 @@ newest-command-wins basis: every rule the owner never changed is kept; where an
 older rule conflicts with a later owner decision, the later decision stands and
 is marked. Latest owner decisions recorded: 2026-08-22 (ask before every clip
 regeneration + send every clip to the owner for approval, reinforced: sending
-the clip is never gated behind Claude's own findings — see the QC rule below).
+the clip is never gated behind Claude's own findings — see the QC rule below);
+2026-09-04 (owner mandate, PERMANENT, overrides any contrary guidance anywhere
+in the default branch or elsewhere: every workflow practice used to produce the
+Constantinople episode — the batch-re-sync revert protocol, the mandatory
+downstream re-derivation after any clip duration change, the measured-loudness
+music-selection and natural-tempo-loop mixing recipe, the opening hook-overlay
+house style, and the compressed-preview-then-durable-link delivery protocol —
+is locked in as standing process for every future episode. Full writeups:
+`creative-direction.md` §38–§42).
 
 ## MASTER RULE — mandatory pre-task rule review + application (owner lock 2026-08-29, permanent, no exceptions)
 
@@ -235,9 +243,9 @@ Implementation (reference: Episode 7, `pai-pro-tooling/troy/`):
 
 Tooling:
 - **vidIQ MCP** — YouTube + Instagram/TikTok data: outliers, keywords, stats, comments, transcripts, video watching. Calls cost credits — check `vidiq_balance`, batch questions.
-- **Higgsfield MCP** — image/video generation, `virality_predictor` (pre-publish). Its `video_analysis_create` is edit-stage-only under the QC rule above.
+- **Higgsfield MCP (Seedance 2.5, `seedance_2_5`) — STANDING PRIMARY video-generation engine for every episode, owner lock 2026-08-28, until the owner says otherwise** (see `creative-direction.md` §30–§31 for the full identity/voice-consistency recipe and method). Also: image generation, `virality_predictor` (pre-publish). Its `video_analysis_create` is edit-stage-only under the QC rule above.
 - **ElevenLabs MCP** — voice.
-- **PAI Pro** at `/home/user/pai-pro` (the same engine behind Chloe VS History); active project in `.active_project`; `PAI_KEY` lives in its gitignored `.env`.
+- **PAI Pro** at `/home/user/pai-pro` (the same engine behind Chloe VS History) — FALLBACK engine, used only when Seedance/Higgsfield cannot do something PAI Pro can; active project in `.active_project`; `PAI_KEY` lives in its gitignored `.env`.
 - **Gemini eyes — primary tool: `tools/gemini-eyes/gemini_eyes.py`** (two-pass: high-res sweep, then confirm/dismiss re-watch of each serious finding at 5 fps; modes `qc` / `captions` / `study` / `ask`; auto-loads CHARACTER_LOCK.md for identity checks; usage in `tools/gemini-eyes/README.md`). The older `scripts/gemini-eyes.mjs` remains available. Both need the `GEMINI_API_KEY` env var (setup + model/quota guidance: `research-methodology.md` §5). Never commit API keys.
 
 ## Reference-creator doctrine — MANDATORY APPLICATION (owner lock 2026-08-30, permanent, no exceptions)

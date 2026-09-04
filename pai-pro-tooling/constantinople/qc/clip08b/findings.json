@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:01",
+      "category": "audio",
+      "severity": 2,
+      "description": "Slight lip-sync drift during spoken dialogue.",
+      "end_timestamp": "00:03",
+      "fix": "Re-align audio track to mouth motion."
+    },
+    {
+      "timestamp": "00:00",
+      "category": "background",
+      "severity": 2,
+      "description": "Torch flame displays subtle motion warping.",
+      "end_timestamp": "00:02",
+      "fix": "Apply background motion stabilization."
+    }
+  ],
+  "summary": "Character appearance and facial lighting remain stable across the clip. Dialogue features minor lip-sync offset in the second half. Background fire animation shows light warping artifacts.",
+  "overall_score": 6.8
+}

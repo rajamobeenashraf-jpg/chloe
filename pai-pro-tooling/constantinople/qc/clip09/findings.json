@@ -1,0 +1,34 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:01.400",
+      "category": "background",
+      "severity": 3,
+      "description": "Modern Turkish flag with modern star and crescent ratio displayed on ladder during 1453 siege setting.",
+      "end_timestamp": "00:09",
+      "fix": "Replace standard with historically accurate 15th-century Ottoman banner or heraldic standard.",
+      "verdict": "CONFIRMED",
+      "refined_description": "A red banner clearly showing the modern Turkish national flag design (white crescent and star) is displayed on the siege ladder."
+    },
+    {
+      "timestamp": "00:05.200",
+      "category": "physics",
+      "severity": 3,
+      "description": "Soldier thrown from the ladder exhibits floating ragdoll physics and inconsistent descent acceleration.",
+      "end_timestamp": "00:06",
+      "fix": "Apply natural gravity fall trajectory and weight dynamics to the falling stunt asset.",
+      "verdict": "CONFIRMED",
+      "refined_description": "The figures falling from the wall and ladder exhibit floaty, weightless ragdoll physics and inconsistent gravitational acceleration."
+    },
+    {
+      "timestamp": "00:06",
+      "category": "anatomy",
+      "severity": 2,
+      "description": "Exaggerated mouth opening and slight jaw deformation during speech delivery on 'tired'.",
+      "end_timestamp": "00:08",
+      "fix": "Clamp maximum jaw opening parameter in expression mesh during wide phonemes."
+    }
+  ],
+  "summary": "Character identity and facial features align consistently with the locked Hazel master throughout the take. Background battle action is dynamic, though anachronistic flag design and floating ragdoll fall physics are noticeable. Facial animation is clear with minor over-extension on wide vocalizations.",
+  "overall_score": 6.8
+}

@@ -1,0 +1,24 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:01.600",
+      "category": "physics",
+      "severity": 3,
+      "description": "The injured knight's boots float and slide unnaturally across the ground instead of dragging with realistic friction.",
+      "end_timestamp": "00:03",
+      "fix": "Regenerate carrying motion to ground feet contacts or lift legs higher off the ground.",
+      "verdict": "CONFIRMED",
+      "refined_description": "The injured knight's feet hover and glide stiffly over the dirt path without realistic foot contact or dragging resistance."
+    },
+    {
+      "timestamp": "00:01",
+      "category": "background",
+      "severity": 2,
+      "description": "Background guards along the left stone wall show stiff, unnatural idling motion.",
+      "end_timestamp": "00:03",
+      "fix": "Add subtle organic movement or brief cutaway framing to mask frozen background figures."
+    }
+  ],
+  "summary": "The shot establishes dramatic atmosphere with clear composition and consistent framing. Minor motion sliding occurs with the wounded knight's dragging legs and stiff background extras. Overall visual fidelity remains coherent despite slight AI physics artifacts.",
+  "overall_score": 6.2
+}

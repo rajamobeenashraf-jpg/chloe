@@ -6,7 +6,7 @@ This is the standing reference for how our locked persona (v3 "round-cute", see 
 ## The mandate
 Replicate everything that makes Chloe VS History work, mechanically and emotionally — then add what she doesn't have. Not a clone (different face, different name, different topic lane, different camera grammar) — same load-bearing craft, extended.
 
-**STANDING INSTRUCTION (owner, 2026-08-19): Chloe-formula only until further notice.** The Nova hybrid camera mode (§4) is paused — no cinematic third-person F-mode set-pieces, no Nova-style loglines/pacing, in any generation until the owner explicitly says otherwise. All clips should be directed in Chloe's talk-to-lens vlog grammar. This directly informed the clip-1/clip-2 course-correction earlier: two consecutive F-mode action clips with no narrator beat is exactly the failure mode this instruction prevents. Treat §4's Nova elements as documented-but-inactive, not deleted — they come back only when told to resume them.
+**STANDING INSTRUCTION (owner, 2026-08-19): Chloe-formula only until further notice.** The Nova hybrid camera mode (§4) is paused — no cinematic third-person F-mode set-pieces, no Nova-style loglines/pacing, in any generation until the owner explicitly says otherwise. All clips should be directed in Chloe's talk-to-lens vlog grammar. This directly informed the clip-1/clip-2 course-correction earlier: two consecutive F-mode action clips with no narrator beat is exactly the failure mode this instruction prevents. Treat §4's Nova elements as documented-but-inactive, not deleted — they come back only when told to resume them. **Amended 2026-08-27 (owner decision): a narrow insert-shot unlock now applies — third-person/aerial INSERT shots in service of the vlog spine are allowed; full Nova-style scored sequences remain paused. See §27.**
 
 ## 1. The seven mechanics we're replicating (from `chloe-vs-history-strategy-report.md` §1)
 1. Persona, not narrator — same face every thumbnail, recognizable verbal habits, brand recognition
@@ -96,6 +96,7 @@ Prompted by Ep 1 clip 8 (the escape run): flat running/watching is the laziest f
 - In any social scene she initiates: asks the question, joins the work, volunteers the help — she does not stand at the edge observing.
 - Set-pieces must be *solved by her* (teamwork, tools, quick thinking), and where possible pay off an earlier emotional beat so the spectacle carries meaning.
 - This is a script-level floor, applied at writing time — not a post-generation fix. Check every beat against it before any prompt is written.
+- **Scope note (owner decision 2026-08-27, see §27):** §12 remains the permanent channel-wide rule. One episode-scoped exception exists: the Constantinople-topic episode may run the pure-witness war-correspondent posture. No other episode inherits that exception.
 
 ## 13. Natural human realism — STRICT, non-negotiable (owner mandate, 2026-08-20)
 This is a hard pass/fail bar, not a style preference. Before approving ANY generated image or video frame: does she read as a real, physically-photographed/filmed human being, or does she read as AI-generated, plastic, or over-smoothed? Any doubt → regenerate, don't ship it.
@@ -335,3 +336,141 @@ Owner reported a ~1s freeze/"jammed screen" in the assembled Legnica cut. Ran ff
 - **Run it on the RAW source render, before any edit-stage processing**, so a finding is unambiguously attributable to the generation itself rather than something introduced by captioning/stitching.
 - **A confirmed freeze is a content defect requiring the same owner-approval path as any other confirmed clip defect** — report it, do not regenerate without explicit go-ahead; note that trimming a frozen tail (rather than regenerating) shortens the clip and may cut into an intended beat, so that tradeoff belongs to the owner too.
 - Applies to every future episode's clip QC process from the first clip generated, not just after a freeze is reported.
+
+## 27. Three owner decisions from the Constantinople-1453 reverse-engineering study (owner decisions 2026-08-27)
+
+Source: `chloe-constantinople-1453-study.md` (this branch) — the full reverse-engineering of Chloe's "Fall of Constantinople 1453" Short (2:51, posted 2026-08-20). The study surfaced three conflicts between her observed technique and our locked rules; the owner ruled on each on 2026-08-27:
+
+1. **OPENING LAW softened — conditional (amends the "LINEAR only" law in `chloe-craft-study-2026-08-20.md` §4.1 and PROJECT_HANDOFF §0).** Linear remains the DEFAULT open. A flash-forward cold open + rewind card (her "1 day earlier" pattern) is now ALLOWED as a per-episode judgment call, specifically when the episode's strongest real moment sits deep in the timeline (battle/epic episodes whose arrival beat is weak). Constraints observed from her execution: the cold open stays short (~15s) and states the stakes with a superlative + deadline + number; the rewind debt is paid immediately (context directly after the card). Arrival-shock episodes stay linear — the arrival IS their hook.
+2. **Narrow insert-shot unlock — narrow (amends the standing "Chloe-formula only / F-mode paused" instruction's scope).** Third-person and aerial shots are allowed as INSERTS in service of the talk-to-lens vlog spine: scale-evidence aerials, brief payoff wides, her own reaction close-ups, over-the-shoulder shots. They are brief beats between selfie anchors — she is back on lens within seconds. Full Nova-style scored third-person film sequences (no narrator, jeopardy scoring) REMAIN PAUSED. Rationale: 8 of the 17 shots in Chloe's own Constantinople Short are exactly such inserts; epic-register episodes cannot sell scale from a selfie arm alone (Legnica experience).
+3. **§12 active-participant stays permanent channel-wide; ONE episode-scoped exception.** The owner declined to adopt her pure-witness posture as a general rule (it remains our differentiator, backed by her own audience's comments). Exception granted for the Constantinople-topic episode only: it may run the pure-witness war-correspondent posture end-to-end. Every other episode keeps the §12 floor unchanged.
+
+Standing collision note carried forward from `episode-ideas-backlog.md`: she posted Constantinople on 2026-08-20 — same-topic production remains a direct-collision risk until the window cools or the treatment is sharply differentiated (the study's §8 lists the differentiation path: ships-overland set-piece, Hagia Sophia interior, named defender planted in act one, memorial-grade pinned comment).
+
+## 28. The twelve-point plain-English voice — PERMANENT, every script, every episode (owner mandate 2026-08-27, same weight as §12–§15, §17–§26)
+
+Owner's instruction, verbatim intent: the twelve speaking behaviors reverse-engineered from the reference channel (`chloe-constantinople-1453-study.md` §11 — measured across six transcripts: FK grade 2.1–5.8, ~90–95% one-to-two-syllable words, 6–8 words/sentence) are ADOPTED for the Constantinople episode and ALL future video generations. Every line of dialogue — Hazel's and every NPC's — is written to this spec:
+
+1. **Point-and-name grammar** — "This is X" / "That's Y"; every statement attached to something on screen; no abstractions.
+2. **Two openers**: "So," = explanation coming · "Okay," = something happening now.
+3. **Present tense, always** — even futures and aftermath ("Word spreads in minutes").
+4. **Short declaratives** (~6–8 words, ≤10 avg), no nested clauses; fragments are load-bearing.
+5. **Jargon policy: name it, then gloss it in kid words in the same breath** ("cacao, which is basically money").
+6. **Numbers plain, anchored to something known, repeated when they matter** ("60,000 people. 60,000.").
+7. **Triads of concrete nouns instead of adjectives** ("running water, hot food, public baths").
+8. **Repetition = emphasis** ("That is hot. That is really hot.").
+9. **Emotion vocabulary physical and tiny** (scared, wrong, dead, tired, insane) — never "devastating/catastrophic".
+10. **Ask the viewer's question out loud, then answer it** ("So here's why this is even happening...").
+11. **Named agents, no passive voice** ("William says Harold swore an oath and broke it").
+12. **Register rule**: epic/doom episodes = ZERO slang, zero idiom, zero irony/wordplay — all humor and horror situational. Comedy-register episodes may use light current slang the way the reference channel does, but only where the joke still lands without it, and every slang line is flagged to the owner in the script.
+
+**Measurable gate (mandatory, script stage — part of §21 pass one):** run `tools/voice-check/voice_check.py <dialogue.txt> --register epic|comedy` on the episode's assembled dialogue BEFORE any generation. Hard thresholds: FK grade ≤5.0 · ≥90% one-to-two-syllable words · ≤10 words/sentence average; the tool also lists every 3+ syllable word (each must be a proper noun, a same-breath-glossed era term, or rewritten) and possible passives for the manual read. A metrics PASS is necessary, not sufficient — points 1–3, 5, 10–12 are confirmed in the §21 pass-two manual read. Word budget: ~170 spoken words per minute of runtime (her measured epic rate).
+
+First application: the Constantinople 1453 script v1 measures FK 2.2 · 93.8% short words · 5.0 words/sentence — PASS.
+
+## 29. GAZE / FACE / BODY — natural delivery direction in every talk-to-lens prompt (owner mandate 2026-08-27 — PERMANENT, applied situationally; same weight as §12–§15, §17–§28)
+
+Owner observation, 2026-08-27: the reference channel's talk-to-lens delivery is casual and natural — her eyes VISIT the lens rather than locking on it, her expressions match the situation, and her body is always doing something (walking, leaning, settling into a seat) — while a generated persona defaults to news-anchor mode: planted feet, unbroken eye contact, neutral-pleasant face, constant energy. The model fills any undirected gap with that anchor default, so the direction must be explicit in EVERY talk-to-lens prompt.
+
+Every talk-to-lens clip prompt carries three direction lines, each written for THAT scene's situation (permanent rule, situational content):
+- **GAZE:** where her eyes are for each beat — at the thing she names when she names it (the eye version of point-and-name), scanning surroundings when something is happening, over her shoulder at a threat, and the lens ONLY for the key sentences. Never continuous lens lock.
+- **FACE:** the one expression this clip's register demands, described physically (per the §2 emotional performance library) — "eyes flicking to the side, jaw tight, breath visible", never just "she looks scared". The expression arrives before the words confirm it.
+- **BODY:** what she is physically doing while talking — walking, turning, leaning, crouching, sitting, weight shifts. True stillness is reserved for beats where stillness IS the direction (a hide, a grief freeze) — and then it is stated as the direction, not left as a default.
+
+"Depends on situation" (owner's wording): the rule is always applied, but its content follows the scene — a quiet outro directs slow movement and long lens holds; a battle beat directs darting eyes and fragmentary lens contact. The §21 pass-two manual read checks that all three lines are present and match the scene's register. Lens-locked anchor delivery in a render is a defect (same §19 approval path as any other).
+
+## 30. Standing production engine — Seedance 2.5 via Higgsfield MCP, PAI Pro as fallback (owner mandate 2026-08-28 — PERMANENT until the owner says otherwise, same weight as §12–§15, §17–§29)
+
+Owner decision, made per-episode for Constantinople 1453 (2026-08-27) and then elevated to a standing cross-episode rule (2026-08-28): **Higgsfield Seedance 2.5 (`seedance_2_5`), 1080p, 9:16, is the default video-generation engine for every future episode/generation until the owner explicitly changes it.** PAI Pro drops from primary to fallback (used only when Seedance cannot do something PAI Pro can). This supersedes any earlier default that treated PAI Pro as the primary engine.
+
+## 31. Seedance identity/voice-consistency recipe — PERMANENT method for every character-present clip (derived from the Constantinople production, owner-approved by results)
+
+1. **Image references:** use single-view reference images only — never multi-panel character-sheet grids as `image_references` (grids dilute identity and prime multi-panel/collage output). A 4-image set (two full-body views + two face crops) is the validated standard; per-episode substitute the character's own owner-approved equivalents.
+2. **Mode:** always set `mode: "omni_reference"` whenever passing any `image_references` and/or `audio_references` — Seedance's `t2v` mode rejects reference media outright (422 error). `t2v` is fine for shots with no character on screen and no voice-reference need (e.g. a pure aerial/insert).
+3. **Voice consistency:** extract the audio track from the episode's owner-designated reference clip (the one the owner says to match), upload/confirm it as Higgsfield audio media, and pass it as an `audio_references` entry on every subsequent `generate_video` call in that episode where a character speaks — even shots with no character on screen if VO narration needs to match.
+4. **Prompt framing:** open every character-present prompt with the STRICT IDENTITY RE-RENDER framing — "the woman/man in this video MUST be the exact same person shown in the reference images; references override this text; if [description] it is WRONG" — followed by the frozen identity string from that character's lock document, verbatim, never paraphrased.
+5. **Preset intercept:** if Higgsfield returns a `preset_recommendation` notice (the prompt resembles a known preset), resubmit the identical call with `declined_preset_id` set to the returned preset id to force literal generation of the actual scripted scene.
+6. **Supporting characters/factions need reference images too, not just text, once they must render reliably and repeatedly in the same shot as a heavily-detailed main character or faction.** Confirmed on the Constantinople episode: an "Ottoman soldier" described only in text kept losing to a much more heavily-detailed Byzantine description in the same prompt, rendering as Byzantine-styled across three attempts. Generating one dedicated single-subject reference image for that character/faction (same anti-collage single-photo method as any other still) and adding it as an extra `image_references` entry fixed it immediately. Do this proactively for any recurring secondary faction/character the episode needs to look consistent and distinct, not just after repeated failures.
+
+## 32. NPC continuity lock — one written physical description per recurring named character, reused verbatim (PERMANENT process rule, every episode)
+
+Any named character who appears in more than one clip gets ONE physical description, written out in full the first time they appear, and copy-pasted verbatim into every subsequent clip's prompt where they appear — never re-described or re-imagined from scratch. Write it once in the episode's production log as a dedicated "NPC lock" entry immediately after that character's first-appearance clip, and reference it by name in later entries rather than restating it. This is a project-wide method, distinct from and in addition to Hazel's own CHARACTER_LOCK.md.
+
+## 33. Real-world flags/emblems — specify the SYMBOL SHAPE explicitly, and explicitly forbid iconography crossover between sides (owner mandate 2026-08-28 — PERMANENT, same weight as §12–§15, §17–§32)
+
+Root-caused on the Constantinople episode: naming a faction's banner by name alone ("Ottoman crescent banner") is not enough — the model can render an unrelated symbol (a generic starburst was substituted for an actual crescent moon on the first two attempts) while still being "technically" the named banner. And describing an attacking group's role without an explicit exclusion let a defenders' own emblem render on the attacking side.
+
+- **Describe the actual geometric shape of any real-world flag/emblem/symbol in the prompt** — not just its name. ("A thin curved white crescent moon, like a backwards letter C, with a small five-pointed star nested inside its curve — NOT a starburst, NOT an asterisk, NOT a cross, NOT any symmetric radiating-line shape.")
+- **When two factions/sides appear in the same shot, explicitly state which iconography belongs to which side and forbid it appearing on the other** ("this attacking group must show ZERO Byzantine iconography — that cross banner belongs ONLY to the defenders").
+- Applies to any historical, national, or faction symbol in any future episode — not just Ottoman/Byzantine.
+
+## 34. Injury moments: cause must visibly connect to effect on screen (addendum to §24, owner mandate 2026-08-28 — PERMANENT)
+
+§24 already establishes that death/injury scenes should show a real, visible, non-graphic wound rather than being sanitized to zero blood. This addendum, confirmed on the Constantinople episode: **describing only the wound/blood ("he is hit," "a blood stain appears") is not enough — the model can render the wound with no visible cause, a disconnected flash/spark effect standing in for an actual weapon strike.** When an injury needs to read clearly as caused by a specific action, describe the full mechanical chain explicitly: the attacker's weapon in motion → the weapon visibly touching/entering the body at a specific point → the visible wound appearing at that exact point. Cause and effect must be unambiguous on screen, not implied by adjacency. (Separately: when the owner wants a specific injury to instead match a reference video's off-screen/implied-impact technique, that is called out explicitly per clip — it is a deliberate choice, not the default.)
+
+## 35. Re-verify a reference video's specific beat fresh before comparing our footage to it — every time, even if a related scene was studied earlier (owner mandate 2026-08-28 — PERMANENT, same weight as §12–§15, §17–§34)
+
+Confirmed necessary on the Constantinople episode twice: a prior full-episode study does not substitute for checking the exact beat in question when the owner asks for a comparison or a fix based on "what she did." Before regenerating a clip to match or differentiate from a reference video's technique, run a fresh targeted watch/analysis query on that specific scene (fighter density, timing of an action, on-screen vs. off-screen depiction, exact dialogue/timestamp) rather than relying on memory of an earlier general analysis — the specific detail being compared often was not the focus of the original study pass.
+
+## 36. Camera-movement restrictions must be written as explicit hard constraints, never assumed (owner mandate 2026-08-28 — PERMANENT, same weight as §12–§15, §17–§35)
+
+When the owner specifies a camera-behavior restriction — "no push-in," "stay wide the whole time," "keep both her and the action in frame until the end" — write it into the prompt as an explicit, repeated constraint ("DO NOT zoom or cut to a tighter close-up at any point... for the ENTIRE N seconds"), not as an implied consequence of the shot description. A generation engine will default to a more conventional shot grammar (e.g. pushing in on a speaking face) unless explicitly told not to.
+
+## 37a. GAZE/FACE/BODY direction needs granular physical vocabulary, not generic emotion labels (refinement of §29, owner mandate 2026-08-28 — PERMANENT)
+
+Confirmed by a direct reference-footage comparison on the Constantinople episode: Chloe's performance direction is consistently more physically specific than ours. "She looks shocked/horrified" is not enough — describe the actual mechanics: scleral show (whites of the eyes visible), a mouth dropping into a full "O" vs. a slight parting, visible forehead tension lines, BOTH hands clamping over the mouth/cheeks (not just "a hand rises"), a trembling lower lip, a mouth staying parted while panting, shoulders pulling inward then a freeze before backing away, voice pitch rising then dropping to a clipped whisper right before an impact, a stuttered/breathy gasp cadence vs. smooth delivery. Build this level of physical detail into every GAZE/FACE/BODY direction from the first draft of a prompt, not only after a side-by-side comparison flags a gap.
+
+## 37b. Environment/destruction scenes default to bleak, desaturated grading — not a default warm cinematic look (owner mandate 2026-08-28 — PERMANENT)
+
+Confirmed on Clip 12: a beat meant to convey a city falling/devastation read as beautiful rather than bleak because the prompt let the model default to warm golden-hour light. When a shot's narrative point is destruction, siege, or defeat, explicitly specify a desaturated, muted, cool-toned palette (dusty ochre/sandstone, slate-grey shadows, cool overcast light) and call out ground-level destruction detail (broken structures, debris, damaged goods) in addition to distant smoke — don't rely on "dramatic lighting" alone, which trends warm and cinematic by default.
+
+## 37c. A face-on camera cannot show a background destination "growing closer" without contradicting itself — split the shot instead (owner-diagnosed, Constantinople episode — PERMANENT)
+
+Root-caused on Clip 13: any camera that faces the subject (selfie OR third-person face-on) is, by construction, positioned between the subject and whatever is behind them. A landmark or destination visible in that background will always read as being left behind, never approached, no matter how explicitly the prompt says it should "grow larger and closer" — the geometry of the shot contradicts the instruction. This is a different failure mode from a reference-image gap (§31.6): it's not that the model renders the wrong thing, it's that the shot type itself cannot convey the intended motion.
+
+- When a shot needs BOTH a visible destination that reads as being approached AND the subject's face, split it into two shots: a from-behind or third-person establishing shot (no face needed) that unambiguously shows the subject and any crowd converging on the growing destination, followed by a hard cut to a face-forward shot for dialogue with the destination removed from frame (don't fight the geometry — remove the contradicting element instead).
+- The same geometry applies to background crowd extras in any face-on shot: a person shown from behind/turned away reads as moving in the opposite screen-direction from the main subject, even when the intent is that everyone moves the same real-world direction. Direct background extras explicitly face-on/three-quarter-front toward the camera, matching the subject's own orientation, whenever they're meant to be moving the same way she is.
+
+## 37. Restate understanding before submitting a judgment-call regeneration (refinement of the standing owner-approval-before-regeneration rule; PERMANENT)
+
+CLAUDE.md's owner-locked rule already requires explicit go-ahead before every regeneration attempt. Refinement confirmed by repeated use on the Constantinople episode: when the requested fix involves a creative or staging judgment call (not a simple, unambiguous correction), restate the specific, concrete changes back to the owner as a short checklist and get their confirmation ("is that everything, or did I miss something?") before submitting — rather than going straight from the owner's fix description to a regeneration. This catches scope gaps and misreadings before spending a generation on them.
+
+## 38. A blanket re-sync/re-process pass across many clips can regress a clip that was already owner-approved — revert don't refix (owner mandate 2026-09-04 — PERMANENT, same weight as §12–§15, §17–§37, supersedes any contrary guidance in the default branch or elsewhere)
+
+Found on Constantinople Part 2, clip08a (and matches the same pattern already reverted on clip10a/clip10c in this episode's git history): a batch Sync Labs lip-sync pass was run across most of an episode's clips as a general quality upgrade, not to fix a defect in every one of them. On a two-shot clip (two visible faces, one continuous audio track), Sync Labs' sync-3 model drove BOTH faces' mouths off the same audio regardless of who was actually speaking — a real regression on a clip whose pre-pass version was already the owner-approved final.
+
+- When investigating a reported bug in a clip's lip movement/audio sync, always check whether an owner-approved pre-pass version of that clip exists (check the production log's "final-clip manifest" and the `clips/` directory for earlier-dated variants) before assuming the fix requires a new generation or a targeted re-sync attempt.
+- If the pre-pass version is verified (frame-by-frame, at the specific timestamps of each speaker's lines) to not have the reported defect, the fix is to revert — repoint the `assets/{id}.mp4` symlink to the pre-pass file — not to attempt fixing the new pass's artifact. This is a revert of an already-approved take, not a regeneration, so it does not by itself require the §19 regeneration go-ahead — but per §20/owner reinforcement, still confirm the finding and the revert plan with the owner before touching the symlink, and re-run the full downstream pipeline afterward (see §39).
+- A pass or tool that "improves quality" in general is not exempt from per-clip verification just because it wasn't a targeted fix — batch operations need the same frame-level scrutiny as any other change before they're trusted across an episode.
+
+## 39. A duration change anywhere in the clip sequence invalidates every downstream frame-boundary computed before it — always re-derive, never reuse (owner mandate 2026-09-04 — PERMANENT, same weight as §12–§15, §17–§38)
+
+Found repeatedly on Constantinople Part 2/Final Episode: reverting clip08a (§38) changed its measured duration by exactly one frame relative to the broken take it replaced, which shifted every clip's start/end frame after it in the sequence. Any trim point, hook-overlay timing, music-segment boundary, or per-scene volume window computed before that change was silently wrong by one or more frames afterward.
+
+- Treat every previously-computed frame/timestamp boundary as invalid the moment any upstream clip's source file changes, even by what looks like a rounding-level difference — re-run `qc_pass.mjs` (or equivalent) to get a fresh `durations.json`, recompute cumulative offsets in code from that fresh manifest, and re-verify the new boundaries by extracting and visually inspecting the actual frames at each computed cut point (not just trusting the arithmetic).
+- Never patch a downstream deliverable (a trim, a mix, an overlay burn) in place after an upstream fix — rebuild the full chain from the fixed source forward, in order, so no stage is working from stale measurements.
+
+## 40. Music for a trimmed/short-form cut: measure the track's actual loudness to find the intended passage, don't infer it from clip alignment; loop at natural tempo to fill runtime, never assume time-stretching is wanted (owner mandate 2026-09-04 — PERMANENT, same weight as §12–§15, §17–§39)
+
+Found on Constantinople Part 2: repeated back-and-forth over "the loud/action part of the score" was only resolved by directly measuring mean volume in short windows across the entire candidate track and confirming the actual loudest, most sustained passage — an assumption based on which original clip a segment happened to align with was wrong twice before that measurement was run. The owner also confirmed (after trying the alternative) that time-stretching a too-short passage to fill a longer runtime is not the default-preferred fix; looping the passage at its natural, unmodified tempo (with a short crossfade at the loop seam) is.
+
+- When asked for "the loud/heavy/action part" of a track, measure it (e.g. `volumedetect` over sequential windows across the full track) before proposing a specific timestamp range — do not infer the range from where a clip boundary happens to fall in some other cut of the episode.
+- When the identified passage is shorter than the target runtime, default to looping it at natural tempo with a short crossfade (≈0.5–1s) at the seam rather than time-stretching it, unless the owner asks for stretching specifically.
+- Keep the established mix chain on top of whichever passage is chosen: sidechain-compress the music against the full dialogue/ambient track (ducks under speech, swells in gaps), apply per-scene volume automation (this episode's convention: louder, e.g. ~85%, under action beats; quieter, e.g. ~80%, under dialogue/reflective beats — classify each clip's content, don't apply a flat level), then loudness-normalize the final mix (I=-16, TP=-1.5, LRA=11).
+
+## 41. Opening hook overlay convention — established this episode, applies to every part/episode going forward (owner mandate 2026-09-04 — PERMANENT, same weight as §12–§15, §17–§40)
+
+The Constantinople Part 1/2/Final-Episode hook overlay is now the standing house style for a cold-open title card, distinct from the mid-video caption system (§ Caption system in CLAUDE.md, which stays Liberation Serif):
+- Two stacked white rounded-rectangle boxes (overlapping slightly), each with a ~6px black outline, black interior text, sized to fit the text with generous padding.
+- Font: Liberation Sans Bold (the open metric-compatible equivalent of Arial — owner-approved specifically, in preference to the more "formal" serif options first drafted) — not the caption system's serif.
+- Line 1: the part/episode marker ("PART 2", "FINAL EPISODE," etc.). Line 2: the stake/hook line (e.g. "Fall of Constantinople 1453!", "Inside the Hagia Sophia!").
+- Burned onto the video for exactly the first 1 second, then gone — never longer, never re-appearing later.
+- Always render the exact overlay composited onto the actual opening frame of the actual cut (not a placeholder background) and get owner sign-off on the specific wording/font before burning it into any deliverable.
+
+## 42. Delivery protocol for generated/edited video: compressed preview first, then full-quality/4K via durable link, both frame/duration/audio-verified against source (owner mandate 2026-09-04 — PERMANENT, same weight as §12–§15, §17–§41)
+
+Standing pattern used throughout Constantinople Part 1/2/Final Episode, now the default for every future deliverable:
+- Immediately send a compressed preview (re-encoded to fit the chat upload limit, ~≤30MB) of any new or changed cut, per §20 — this is never gated behind an uncompressed/4K version being ready.
+- When the owner wants the uncompressed or 4K-upscaled master, upload it to durable storage (the Higgsfield media store) and hand back the resulting CDN URL rather than trying to send the raw file through chat.
+- Before handing over any transcoded, upscaled, spliced, or otherwise re-encoded file, verify it against its source: frame count, duration, and an audio loudness/presence check must match expectations exactly (use `ffprobe`/`volumedetect`, not just "the job said completed") — a completed upscale/encode job is not by itself proof the output is correct.
+- When splitting a long cut down into a shorter part, save the removed head/tail footage as its own file rather than discarding it — it is the raw material for the next part.

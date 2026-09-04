@@ -1,0 +1,32 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:02.600",
+      "category": "physics",
+      "severity": 3,
+      "description": "Background worker lifting stone block into the breach displays weightless, floaty movement with subtle mesh warping.",
+      "end_timestamp": "00:05",
+      "fix": "Re-render background extras with realistic object mass and physics simulation.",
+      "verdict": "CONFIRMED",
+      "refined_description": "The background worker lifting a stone block into the wall breach moves effortlessly with floaty physics and slight visual morphing around the block."
+    },
+    {
+      "timestamp": "00:06",
+      "category": "anatomy",
+      "severity": 2,
+      "description": "Minor facial interpolation and eyelid warping during the dialogue delivery.",
+      "end_timestamp": "00:09",
+      "fix": "Refine facial keyframing and smooth eyelid blink cycles."
+    },
+    {
+      "timestamp": "00:11",
+      "category": "audio",
+      "severity": 2,
+      "description": "Knight's lip synchronization drifts slightly out of cadence with the spoken dialogue.",
+      "end_timestamp": "00:15",
+      "fix": "Re-align lower jaw audio visemes to the audio track."
+    }
+  ],
+  "summary": "The scene maintains strong character identity consistency and atmospheric night lighting throughout. Visual continuity between shots remains coherent with only minor background physics and facial generation artifacts. Overall audio-visual delivery is stable and effective.",
+  "overall_score": 6.8
+}

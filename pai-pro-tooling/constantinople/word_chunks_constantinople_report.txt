@@ -1,0 +1,372 @@
+== clip01  words:31 matched:30 (97%)
+   script : This is the last morning of the Roman Empire. This is Constantinople. No army has ever broken these land walls. Not once. In 1,100 years. They have about three hours left.
+   whisper: This is the last morning of the Roman Empire. This is Constantinople. No army has ever broken these land walls. Not once. In 1 ,100 years. They have about three hours left.
+      0.00 -    0.46  THIS IS
+      0.46 -    0.80  THE LAST
+      0.80 -    1.28  MORNING OF
+      1.28 -    1.64  THE ROMAN
+      1.64 -    2.06  EMPIRE.
+      2.62 -    2.90  THIS IS
+      2.90 -    3.38  CONSTANTINOPLE.
+      4.08 -    4.64  NO ARMY
+      4.64 -    5.18  HAS EVER
+      5.18 -    5.74  BROKEN THESE
+      5.74 -    6.30  LAND WALLS.
+      6.64 -    7.26  NOT ONCE.
+      7.60 -    7.72  IN
+      8.70 -    9.22  1,100 YEARS.
+      9.94 -   10.64  THEY HAVE
+     10.64 -   11.12  ABOUT THREE
+     11.12 -   11.68  HOURS LEFT.
+== clip02  words:36 matched:36 (100%)
+   script : So the whole city is under siege. But see that? That's a chain. A real iron chain, across the whole harbor. No enemy ship can get past it. Everyone sleeps fine on this side. Remember that.
+   whisper: So the whole city is under siege. But see that? That's a chain. A real iron chain, across the whole harbor. No enemy ship can get past it. Everyone sleeps fine on this side. Remember that.
+      0.00 -    0.60  SO THE
+      0.60 -    1.02  WHOLE CITY
+      1.02 -    1.46  IS UNDER
+      1.46 -    1.78  SIEGE.
+      2.38 -    2.58  BUT SEE
+      2.58 -    2.86  THAT?
+      3.50 -    3.86  THAT'S A
+      3.86 -    4.10  CHAIN.
+      4.68 -    5.06  A REAL
+      5.06 -    5.84  IRON CHAIN,
+      5.84 -    6.32  ACROSS THE
+      6.32 -    6.84  WHOLE HARBOR.
+      7.42 -    7.86  NO ENEMY
+      7.86 -    8.28  SHIP CAN
+      8.28 -    8.66  GET PAST
+      8.66 -    8.98  IT.
+      9.50 -   10.00  EVERYONE SLEEPS
+     10.00 -   10.42  FINE ON
+     10.42 -   10.84  THIS SIDE.
+     11.28 -   11.76  REMEMBER THAT.
+== clip03  words:21 matched:21 (100%)
+   script : Triple walls on the land side. A locked harbor on the sea side. For a thousand years, that has been enough.
+   whisper: Triple walls on the land side. A locked harbor on the sea side. For a thousand years, that has been enough.
+      0.00 -    0.60  TRIPLE WALLS
+      0.60 -    0.94  ON THE
+      0.94 -    1.52  LAND SIDE.
+      2.14 -    2.36  A LOCKED
+      2.36 -    2.92  HARBOR ON
+      2.92 -    3.26  THE SEA
+      3.26 -    3.60  SIDE.
+      3.92 -    4.20  FOR A
+      4.20 -    4.90  THOUSAND YEARS,
+      4.90 -    5.30  THAT HAS
+      5.30 -    5.74  BEEN ENOUGH.
+== clip04a  words:13 matched:13 (100%)
+   script : No. No way. He's moving his ships over LAND. Over a whole hill.
+   whisper: No. No way. He's moving his ships over LAND. Over a whole hill.
+      0.00 -    0.46  NO.
+      1.12 -    1.62  NO WAY.
+      2.58 -    3.06  HE'S MOVING
+      3.06 -    3.52  HIS SHIPS
+      3.52 -    4.28  OVER LAND.
+      4.90 -    5.24  OVER A
+      5.24 -    5.72  WHOLE HILL.
+== clip04b  words:11 matched:11 (100%)
+   script : Seventy ships. On logs, greased with fat, oxen pulling all night.
+   whisper: Seventy ships. On logs, greased with fat, oxen pulling all night.
+      0.00 -    0.92  SEVENTY SHIPS.
+      1.56 -    2.10  ON LOGS,
+      2.54 -    2.94  GREASED WITH
+      2.94 -    3.28  FAT,
+      3.76 -    4.20  OXEN PULLING
+      4.20 -    4.82  ALL NIGHT.
+== clip04c  words:15 matched:15 (100%)
+   script : The chain locks the front door. Nobody ever locked the back. By sunrise... they're in.
+   whisper: The chain locks the front door. Nobody ever locked the back. By sunrise... they're in.
+      0.00 -    0.34  THE CHAIN
+      0.34 -    0.78  LOCKS THE
+      0.78 -    1.26  FRONT DOOR.
+      1.96 -    2.22  NOBODY EVER
+      2.22 -    2.60  LOCKED THE
+      2.60 -    2.86  BACK.
+      3.32 -    4.50  BY SUNRISE...
+      4.50 -    4.80  THEY'RE IN.
+== clip05  words:25 matched:25 (100%)
+   script : So the city wakes up... and there are enemy ships behind them. The safe side just stopped existing. Same men. Twice the wall to hold.
+   whisper: So the city wakes up... and there are enemy ships behind them. The safe side just stopped existing. Same men. Twice the wall to hold.
+      0.00 -    0.40  SO THE
+      0.40 -    0.84  CITY WAKES
+      0.84 -    1.72  UP...
+      1.72 -    1.98  AND THERE
+      1.98 -    2.34  ARE ENEMY
+      2.34 -    3.10  SHIPS BEHIND
+      3.10 -    3.48  THEM.
+      4.48 -    5.00  THE SAFE
+      5.00 -    5.44  SIDE JUST
+      5.44 -    6.26  STOPPED EXISTING.
+      6.92 -    7.44  SAME MEN.
+      7.88 -    8.26  TWICE THE
+      8.26 -    8.60  WALL TO
+      8.60 -    8.84  HOLD.
+== clip06a  words:50 matched:50 (100%)
+   script : That's Giovanni Giustiniani. He's not even from here — he sailed from Genoa with 700 men, just to defend this city. Every night the cannon breaks the wall. Every night he builds it back. Honestly — can you hold this wall? The Sultan has one big cannon. I have ten thousand hands.
+   whisper: That's Giovanni Giustiniani. He's not even from here. He sailed from Genoa with 700 men, just to defend this city. Every night the cannon breaks the wall. Every night he builds it back. Honestly, can you hold this wall? The Sultan has one big cannon. I have ten thousand hands.
+      0.00 -    0.68  THAT'S GIOVANNI
+      0.68 -    1.60  GIUSTINIANI.
+      1.60 -    2.02  HE'S NOT
+      2.02 -    2.44  EVEN FROM
+      2.44 -    3.04  HERE — HE
+      3.04 -    3.44  SAILED FROM
+      3.44 -    3.96  GENOA WITH
+      3.96 -    4.90  700 MEN,
+      4.90 -    5.34  JUST TO
+      5.34 -    5.78  DEFEND THIS
+      5.78 -    6.04  CITY.
+      6.70 -    7.08  EVERY NIGHT
+      7.08 -    7.44  THE CANNON
+      7.44 -    7.92  BREAKS THE
+      7.92 -    8.16  WALL.
+      8.54 -    8.90  EVERY NIGHT
+      8.90 -    9.24  HE BUILDS
+      9.24 -    9.66  IT BACK.
+     10.50 -   11.20  HONESTLY — CAN
+     11.20 -   11.48  YOU HOLD
+     11.48 -   11.92  THIS WALL?
+     12.74 -   13.04  THE SULTAN
+     13.04 -   13.52  HAS ONE
+     13.52 -   14.02  BIG CANNON.
+     14.54 -   14.94  I HAVE
+     14.94 -   15.38  TEN THOUSAND
+     15.38 -   15.70  HANDS.
+== clip06b  words:18 matched:18 (100%)
+   script : The whole city believes he can save it. And he does. Night after night. Until the last morning.
+   whisper: The whole city believes he can save it. And he does. Night after night. Until the last morning.
+      0.00 -    0.46  THE WHOLE
+      0.46 -    1.04  CITY BELIEVES
+      1.04 -    1.42  HE CAN
+      1.42 -    1.98  SAVE IT.
+      2.34 -    2.60  AND HE
+      2.60 -    2.88  DOES.
+      3.58 -    3.88  NIGHT AFTER
+      3.88 -    4.22  NIGHT.
+      4.82 -    5.16  UNTIL THE
+      5.16 -    5.72  LAST MORNING.
+== clip07a  words:39 matched:38 (97%)
+   script : Okay — this is what's breaking the city. The biggest cannon ever built. The ball weighs 1,200 pounds. Heavier than a piano. One shot every three hours — that's how long it takes to load. Okay. They're loading. I think— —WHOA.
+   whisper: Okay. This is what's breaking the city. The biggest cannon ever built. The ball weighs 1 ,200 pounds. Heavier than a piano. One shot every three hours — that's how long it takes to load. Okay. They're loading. I think— —WHOA.
+      0.00 -    0.42  OKAY —
+      1.02 -    1.40  THIS IS
+      1.40 -    1.84  WHAT'S BREAKING
+      1.84 -    2.28  THE CITY.
+      2.84 -    3.20  THE BIGGEST
+      3.20 -    3.92  CANNON EVER
+      3.92 -    4.28  BUILT.
+      4.64 -    4.96  THE BALL
+      4.96 -    5.73  WEIGHS 1,200
+      5.94 -    6.40  POUNDS.
+      6.86 -    7.20  HEAVIER THAN
+      7.20 -    7.64  A PIANO.
+      8.12 -    8.64  ONE SHOT
+      8.64 -    9.22  EVERY THREE
+      9.22 -    9.76  HOURS — THAT'S
+      9.76 -    9.98  HOW LONG
+      9.98 -   10.26  IT TAKES
+     10.26 -   10.70  TO LOAD.
+     11.24 -   11.44  OKAY.
+     11.60 -   11.88  THEY'RE LOADING.
+     12.12 -   12.98  I THINK—
+     12.98 -   13.42  —WHOA.
+== clip07b: no dialogue (empty captions) -- skipped, 0 chunks
+== clip08a  words:21 matched:21 (100%)
+   script : Your Majesty. The harbor is gone. The wall is open. Why are you still here? Because the city is still here.
+   whisper: Your Majesty. The harbor is gone. The wall is open. Why are you still here? Because the city is still here.
+      0.00 -    0.70  YOUR MAJESTY.
+      1.32 -    1.66  THE HARBOR
+      1.66 -    2.20  IS GONE.
+      2.68 -    2.98  THE WALL
+      2.98 -    3.46  IS OPEN.
+      3.90 -    4.18  WHY ARE
+      4.18 -    4.58  YOU STILL
+      4.58 -    4.90  HERE?
+      5.80 -    6.26  BECAUSE THE
+      6.26 -    6.68  CITY IS
+      6.68 -    7.24  STILL HERE.
+== clip08b  words:15 matched:15 (100%)
+   script : That's Constantine the Eleventh. The last Roman emperor. He doesn't know that yet. You do.
+   whisper: That's Constantine the Eleventh. The last Roman emperor. He doesn't know that yet. You do.
+      0.00 -    0.64  THAT'S CONSTANTINE
+      0.64 -    1.20  THE ELEVENTH.
+      1.38 -    1.68  THE LAST
+      1.68 -    2.28  ROMAN EMPEROR.
+      2.54 -    2.90  HE DOESN'T
+      2.90 -    3.16  KNOW THAT
+      3.16 -    3.36  YET.
+      3.66 -    3.94  YOU DO.
+== clip09  words:33 matched:33 (100%)
+   script : This is it. The first waves are the irregulars — hired fighters, sent in to make the defenders tired. Wave after wave. And the bells — every church in the city is ringing at once.
+   whisper: This is it. The first waves are the irregulars — hired fighters, sent in to make the defenders tired. Wave after wave. And the bells — every church in the city is ringing at once.
+      0.00 -    0.62  THIS IS
+      0.62 -    0.82  IT.
+      1.56 -    1.84  THE FIRST
+      1.84 -    2.36  WAVES ARE
+      2.36 -    3.52  THE IRREGULARS —
+      3.72 -    4.42  HIRED FIGHTERS,
+      4.68 -    5.10  SENT IN
+      5.10 -    5.30  TO MAKE
+      5.30 -    5.80  THE DEFENDERS
+      5.80 -    6.26  TIRED.
+      6.90 -    7.24  WAVE AFTER
+      7.24 -    7.70  WAVE.
+      8.06 -    8.28  AND THE
+      8.28 -    8.54  BELLS —
+      9.00 -    9.46  EVERY CHURCH
+      9.46 -    9.76  IN THE
+      9.76 -   10.10  CITY IS
+     10.10 -   10.52  RINGING AT
+     10.52 -   10.78  ONCE.
+== clip10a  words:8 matched:7 (88%)
+   script : No. No no no. That's Giustiniani. He's hit.
+   whisper: No no no. That's Giustiniani. He's hit.
+      0.00 -    0.40  NO.
+      1.86 -    2.38  NO NO
+      2.38 -    2.68  NO.
+      2.68 -    3.50  THAT'S GIUSTINIANI.
+      3.50 -    3.88  HE'S HIT.
+== clip10b  words:6 matched:6 (100%)
+   script : They're carrying him to the ships.
+   whisper: They're carrying him to the ships!
+      2.22 -    2.92  THEY'RE CARRYING
+      2.92 -    3.26  HIM TO
+      3.26 -    3.62  THE SHIPS.
+== clip10c  words:20 matched:20 (100%)
+   script : Every man on that wall just watched their best hope leave. The wall is still standing. The men just broke.
+   whisper: Every man on that wall just watched their best hope leave. The wall is still standing. The men just broke.
+      0.00 -    0.30  EVERY MAN
+      0.30 -    0.58  ON THAT
+      0.58 -    0.92  WALL JUST
+      0.92 -    1.38  WATCHED THEIR
+      1.38 -    1.78  BEST HOPE
+      1.78 -    2.04  LEAVE.
+      2.24 -    2.42  THE WALL
+      2.42 -    2.74  IS STILL
+      2.74 -    3.14  STANDING.
+      3.32 -    3.48  THE MEN
+      3.48 -    3.88  JUST BROKE.
+== clip11  words:38 matched:38 (100%)
+   script : Wait — that's the emperor. He's taking off everything that says who he is. And he walks into the fight like a common soldier. Nobody ever sees him again. No body. No grave. The last Roman emperor just disappears.
+   whisper: Wait — that's the emperor. He's taking off everything that says who he is. And he walks into the fight like a common soldier. Nobody ever sees him again. No body. No grave. The last Roman emperor just disappears.
+      0.00 -    0.36  WAIT —
+      0.82 -    1.30  THAT'S THE
+      1.30 -    1.56  EMPEROR.
+      2.00 -    2.34  HE'S TAKING
+      2.34 -    2.82  OFF EVERYTHING
+      2.82 -    3.22  THAT SAYS
+      3.22 -    3.50  WHO HE
+      3.50 -    3.78  IS.
+      4.08 -    4.28  AND HE
+      4.28 -    4.68  WALKS INTO
+      4.68 -    5.00  THE FIGHT
+      5.00 -    5.30  LIKE A
+      5.30 -    5.88  COMMON SOLDIER.
+      6.54 -    7.00  NOBODY EVER
+      7.00 -    7.38  SEES HIM
+      7.38 -    7.62  AGAIN.
+      7.88 -    8.20  NO BODY.
+      8.60 -    8.96  NO GRAVE.
+      9.30 -    9.60  THE LAST
+      9.60 -   10.12  ROMAN EMPEROR
+     10.12 -   10.76  JUST DISAPPEARS.
+== clip12  words:11 matched:10 (91%)
+   script : Those flags mean it's over. 1,100 years. It took one morning.
+   whisper: Those flags mean it's over. 1 ,100 years. It took one morning.
+      0.00 -    1.04  THOSE FLAGS
+      1.04 -    1.56  MEAN IT'S
+      1.56 -    1.88  OVER.
+      3.24 -    4.52  1,100 YEARS.
+      5.64 -    6.02  IT TOOK
+      6.02 -    6.70  ONE MORNING.
+== clip13a-1  words:9 matched:9 (100%)
+   script : Everyone is running to one building. The Hagia Sophia.
+   whisper: Everyone is running to one building. The Hagia Sophia.
+      0.00 -    1.10  EVERYONE IS
+      1.10 -    1.52  RUNNING TO
+      1.52 -    2.10  ONE BUILDING.
+      2.90 -    3.30  THE HAGIA
+      3.30 -    3.52  SOPHIA.
+== clip13a-2  words:18 matched:18 (100%)
+   script : There's a story — an angel comes down at its doors and saves the city at the last second.
+   whisper: There's a story — an angel comes down at its doors and saves the city at the last second.
+      1.20 -    1.56  THERE'S A
+      1.56 -    1.92  STORY — AN
+      1.92 -    2.26  ANGEL COMES
+      2.26 -    2.56  DOWN AT
+      2.56 -    2.80  ITS DOORS
+      2.80 -    3.10  AND SAVES
+      3.10 -    3.36  THE CITY
+      3.36 -    3.58  AT THE
+      3.58 -    3.94  LAST SECOND.
+== clip13b  words:6 matched:6 (100%)
+   script : Listen. They're not screaming. They're praying.
+   whisper: Listen. They're not screaming. They're praying.
+      1.62 -    2.22  LISTEN.
+      3.20 -    3.58  THEY'RE NOT
+      3.58 -    3.98  SCREAMING.
+      4.28 -    4.62  THEY'RE PRAYING.
+== clip14  words:44 matched:43 (98%)
+   script : That's him. That's Sultan Mehmed. He's 21 years old. This city was the capital of the Roman Empire for over 1,100 years. Today, that ends. It becomes the new capital of the Ottoman Empire instead — and stays that way for the next 470 years.
+   whisper: That's him. That's Sultan Mehmed. He's 21 years old. This city was the capital of the Roman Empire for over 1 ,100 years. Today, that ends. It becomes the new capital of the Ottoman Empire instead — and stays that way for the next 470 years.
+      4.10 -    4.70  THAT'S HIM.
+      5.34 -    5.64  THAT'S SULTAN
+      5.64 -    6.02  MEHMED.
+      6.46 -    6.98  HE'S 21
+      6.98 -    7.58  YEARS OLD.
+      8.10 -    8.38  THIS CITY
+      8.38 -    8.72  WAS THE
+      8.72 -    9.18  CAPITAL OF
+      9.18 -    9.52  THE ROMAN
+      9.52 -   10.10  EMPIRE FOR
+     10.10 -   10.47  OVER 1,100
+     11.02 -   11.52  YEARS.
+     12.06 -   12.64  TODAY, THAT
+     12.64 -   12.92  ENDS.
+     13.42 -   13.74  IT BECOMES
+     13.74 -   14.12  THE NEW
+     14.12 -   14.66  CAPITAL OF
+     14.66 -   15.04  THE OTTOMAN
+     15.04 -   15.82  EMPIRE INSTEAD —
+     16.12 -   16.56  AND STAYS
+     16.56 -   16.94  THAT WAY
+     16.94 -   17.22  FOR THE
+     17.22 -   17.98  NEXT 470
+     17.98 -   18.68  YEARS.
+== clip15  words:59 matched:59 (100%)
+   script : The city gets a new name. You know it. Istanbul. But the Hagia Sophia is still standing. This dome above me — you can walk under it today. Same floor. Same doors. The empire ended here. The building didn't. Nobody who stood here that morning is alive to tell you about it. This building still can. Hazel... out of time.
+   whisper: The city gets a new name. You know it. Istanbul. But the Hagia Sophia is still standing. This dome above me — you can walk under it today. Same floor. Same doors. The empire ended here. The building didn't. Nobody who stood here that morning is alive to tell you about it. This building still can. Hazel... out of time.
+      0.00 -    0.54  THE CITY
+      0.54 -    0.92  GETS A
+      0.92 -    1.32  NEW NAME.
+      1.76 -    2.00  YOU KNOW
+      2.00 -    2.26  IT.
+      3.02 -    3.02  ISTANBUL.
+      3.84 -    4.36  BUT THE
+      4.36 -    4.98  HAGIA SOPHIA
+      4.98 -    5.44  IS STILL
+      5.44 -    5.88  STANDING.
+      6.54 -    6.98  THIS DOME
+      6.98 -    7.56  ABOVE ME —
+      7.56 -    7.76  YOU CAN
+      7.76 -    8.18  WALK UNDER
+      8.18 -    8.64  IT TODAY.
+      9.14 -    9.76  SAME FLOOR.
+     10.26 -   10.72  SAME DOORS.
+     11.46 -   11.98  THE EMPIRE
+     11.98 -   12.62  ENDED HERE.
+     13.00 -   13.36  THE BUILDING
+     13.36 -   13.84  DIDN'T.
+     14.34 -   14.90  NOBODY WHO
+     14.90 -   15.26  STOOD HERE
+     15.26 -   15.68  THAT MORNING
+     15.68 -   16.12  IS ALIVE
+     16.12 -   16.46  TO TELL
+     16.46 -   16.82  YOU ABOUT
+     16.82 -   17.02  IT.
+     17.32 -   17.78  THIS BUILDING
+     17.78 -   18.42  STILL CAN.
+     20.36 -   20.84  HAZEL...
+     20.84 -   21.02  OUT OF
+     21.02 -   21.30  TIME.
+DONE -> word_chunks_constantinople.json

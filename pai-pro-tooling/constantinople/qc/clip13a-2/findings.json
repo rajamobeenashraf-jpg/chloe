@@ -1,0 +1,22 @@
+{
+  "findings": [
+    {
+      "timestamp": "00:00",
+      "category": "background",
+      "severity": 2,
+      "description": "Background extras show slight motion warping and unnatural sliding across cobblestones while running.",
+      "end_timestamp": "00:03",
+      "fix": "Re-render background pass with improved depth map motion tracking."
+    },
+    {
+      "timestamp": "00:01",
+      "category": "physics",
+      "severity": 2,
+      "description": "Selfie-arm position remains unnaturally rigid relative to torso movement during locomotion.",
+      "end_timestamp": "00:03",
+      "fix": "Add subtle arm shake and shoulder pivot motion matching stride rhythm."
+    }
+  ],
+  "summary": "Character facial identity and costume details remain consistent with reference standards throughout the scene. Minor AI motion artifacts occur in background extra movement and arm physics. Overall visual presentation is acceptable for short-form release.",
+  "overall_score": 6.5
+}
