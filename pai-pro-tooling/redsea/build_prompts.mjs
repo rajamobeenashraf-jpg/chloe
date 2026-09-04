@@ -37,7 +37,9 @@ export const REFS = {
   ],
   PHARAOH: [
     { value: "a2fa48f3-1a44-4631-b49a-e6cdad2afc21", note: "master: P3 face in royal regalia (photo-edit)" },
-    // face front / face 3/4 snarl / full-body chariot views: filled after the royal master is approved
+    { value: "ff1fc9d4-0331-40ea-9f59-3408bf7d63cb", note: "face front (photo-edit)" },
+    { value: "a2bdc002-f3ac-427f-8e78-de485b4c2bdb", note: "face 3/4 snarl (photo-edit)" },
+    { value: "9e17d80f-e155-4bde-b986-9af288d0ecef", note: "full-body in chariot (photo-edit)" },
   ],
   ENV: {
     opening: "f419b819-ec89-4b44-9459-fe45fa807111",
@@ -47,7 +49,7 @@ export const REFS = {
   },
   AUDIO: {
     hazelVoiceLock: "b24e5759-d3c0-4c84-a184-44f7cc65477e", // project-wide voice-identity lock
-    pacing: { H1: "9741a763-9a2c-4552-aa92-ac21fe096a92", H2: "2ea83916-461c-41e8-ad84-6282feb51f02", H3: "126b3efc-7571-4fe4-bdac-3021926e1a7b", H4: "bf77eb94-1ef0-4481-9dcd-1a9352ef7c27" }, // seed_audio takes time-stretched to 264/211/264/185+99 wpm, measured 2026-09-04
+    pacing: { H1: "9741a763-9a2c-4552-aa92-ac21fe096a92", H2: "2ea83916-461c-41e8-ad84-6282feb51f02", H3: "ac09ac75-c50d-4ece-bcb8-672bf01abe83", H4: "bf77eb94-1ef0-4481-9dcd-1a9352ef7c27" }, // seed_audio takes time-stretched to 264/211/264/185+99 wpm, measured 2026-09-04
   },
 };
 

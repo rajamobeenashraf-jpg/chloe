@@ -30,15 +30,42 @@ Prompt builder: `pai-pro-tooling/redsea/build_prompts.mjs` (never hand-assemble 
 ## Cost
 Seedance 1080p ≈ 9 credits/s (5s preflight = 45). Planned ~171s of clips ≈ 1,540 credits.
 
-## Clip manifest
-| Clip | Job | Status | Notes |
-|---|---|---|---|
-| 03 | `2e9975f1` | rendering | corridor push-in |
-| 08 | `3570c2f1` | rendering | aerial corridor |
-| 09 | `35def1e1` | rendering | chariot formation aerial |
-| 10 | `d0b7534e` | rendering | crowd from behind |
-| 11 | `8ad1a795` | rendering | aerial corridor 2 |
-| 12 | `bb31fdf2` | rendering | mother + children |
+## Clip manifest (all 36 rendered 2026-09-04, Seedance 2.5 1080p 9:16, all sent to owner as compressed previews; freezedetect clean on every clip)
+| Clip | Job | Clip | Job | Clip | Job |
+|---|---|---|---|---|---|
+| 01 | `165e11cc` | 13 | `cf458623` | 25 | `e0f4fa89` |
+| 02 | `aba170bc` | 14 | `4e7a3f38` | 26 | `7a1a0661` |
+| 03 | `2e9975f1` | 15 | `0dd8c588` | 27 | `31470c40` |
+| 04 | `573b3ec2` | 16 | `be89905a` | 28 | `016038dc` |
+| 05 | `f63fbde4` | 17 | `f3773c89` | 29 | `47566e88` |
+| 06 | `ad6b40e6` | 18 | `4856d8e2` | 30 | `44ec99ea` |
+| 07 | `17ac58df` | 19 | `19ccd5ef` | 31 | `83cfb656` |
+| 08 | `3570c2f1` | 20 | `06715bff` | 32 | `36213960` |
+| 09 | `35def1e1` | 21 | `8155c05b` | H1 | `4e4c3335` |
+| 10 | `d0b7534e` | 22 | `86853647` | H2 | `55a29416` |
+| 11 | `8ad1a795` | 23 | `85f29a88` | H3 | `820b3329` (v1 submit 422: 1.6s pacing ref too short; fixed with the line doubled, media `ac09ac75`) |
+| 12 | `bb31fdf2` | 24 | `ac63e1a4` | H4 | `eedc24e6` |
+
+Findings reported to the owner alongside delivery (no regeneration without his go-ahead):
+- Clip 01: Moses rendered in the opening plate's tan robe (plate anchored wardrobe over the
+  identity refs). Fix if wanted: repaint the plate's figure into the M2 look first, then rerun.
+- Clip 32 / underwater shots: fine. Hazel identity holds in all four beats (side-by-side vs canon).
+
+## Cut v1 (2026-09-04)
+- `build_cut.sh`: 36 segments trimmed to the SOURCE shot lengths (2-3s source shots cut from
+  4s renders), 0.08s audio edge fades, hard-cut concat → 149.02s, 3576 frames @24fps.
+- Captions: word-synced 1-2 word ALL-CAPS chunks, Liberation Serif bold, spacing 2.5, white +
+  dark outline, MarginV 320 @720x1280 — 39 chunks. Timing source: huggingface.co is egress-blocked
+  in this session (faster-whisper cannot fetch its model) → ElevenLabs Scribe transcribed every
+  line verbatim (confirms all dialogue rendered) but returned no per-word times, so phrase windows
+  were MEASURED (silencedetect + 40ms RMS envelope per clip) and words interpolated inside each
+  measured phrase window (the caption rule's clamped-window fallback). Moses' Hebrew line gets the
+  source's two English subtitle lines (12.00–12.95 / 12.96–14.70 in cut time).
+- Hook card (§41): "EPISODE" / "I crossed the Red Sea!", Liberation Sans Bold, first 1.0s.
+- Score: Higgsfield `sonilo_music` track `1e42572a` (150s), sidechain-ducked under the clip audio
+  (Constantinople recipe), loudnorm I=-16/TP=-1.5. Master: `redsea_final_v1.mp4` 1080x1920, 3577
+  frames, 149.04s, -15.5 LUFS integrated, TP -1.4, freezedetect clean. Preview 28MB sent to owner.
+- Master uploaded to Higgsfield storage: media `8a645d43` (URL in chat).
 
 Learnings: the Higgsfield "3D RENDER" preset intercept (`5a77643c`) fired on the whole first
 batch — resubmitted with `declined_preset_id` (S7 confirmed again). Builder's ENV block made
