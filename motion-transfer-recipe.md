@@ -84,3 +84,56 @@ The likely fix, if he ever wants it: replace the two frame-grab references with
 purpose-built clean full-body front-facing costume stills (Gemini /
 `nano_banana_pro`, per the stills rule). That would need every clip regenerated
 together, never one in isolation.
+
+**Gap in this record:** clips 4 and 5's job IDs were never written down here —
+only clips 1-3 are captured above. The assembled 22.187s cut proves they were
+generated, but their job IDs aren't recoverable from this file or from chat
+memory. Backfill by checking Higgsfield generation history
+(`show_generations`) if they're ever needed again (e.g. to redo one in
+isolation); don't guess an ID.
+
+## Assembly and audio (approved 2026-09-04)
+
+Assembled cut, video-only (5 clips concatenated, no audio track — Genjutsu
+clips carry none): media `5a83cbde-3895-4684-bdcd-bc2c5f799e86`, 22.167s.
+`https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/5a83cbde-3895-4684-bdcd-bc2c5f799e86.mp4`
+
+Audio went through three rounds before landing:
+1. vidIQ-generated music (two attempts, both rejected — first read as
+   epic/triumphant rather than tense, second still didn't suit a fight scene).
+2. Diegetic combat SFX only, no music (6 ElevenLabs `eleven_text_to_sound_v2`
+   one-shots — clash, wood-break, shield-impact, two exertion grunts,
+   footstep-plant — placed at beat-mapped timestamps). Owner rejected this
+   too ("worse").
+3. **Approved: music only, foley dropped.** Track sourced from Incompetech
+   (Kevin MacLeod), "Movement Proposition" — composer-tagged "fight scenes
+   and chase scenes," feel tags Action/Aggressive/Driving/Intense, no
+   war/battle/army framing. Direct download:
+   `https://incompetech.com/music/royalty-free/mp3-royaltyfree/Movement%20Proposition.mp3`.
+   **License: free but requires attribution** — credit "Movement Proposition
+   by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By
+   Attribution 4.0" wherever this episode is published, unless separately
+   licensed out of that requirement.
+   Used the track's own 0:00-22.176s (picked by scanning its volume envelope,
+   not by trusting the requested duration — this provider is unreliable
+   there too), which happens to carry two natural peaks (~17-18s, ~21-22s)
+   that land close to the choreography's own hits, especially the finale
+   shield-strike. Short fade in/out at the trim edges.
+
+**Final approved deliverable:** media `5d013954-2b05-4392-8538-c90ff5caaabe`,
+22.176s, video + music (no foley).
+`https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/5d013954-2b05-4392-8538-c90ff5caaabe.mp4`
+
+Superseded intermediate audio versions (kept here for traceability, not for reuse):
+- SFX-only: media `869f6c07-c2c1-4b9a-99ae-88575924fede`
+- Music (vidIQ, v3) + SFX layered: media `34fa6b7a-4cc9-4948-9535-862c888a88b3`
+
+## Open items, not yet resolved
+
+- Spartacus/Face B (`84ffd471-c4e4-4d5b-bb22-24b85fb5f5e0`) reads as closely
+  resembling Russell Crowe as Maximus in *Gladiator* at full-body scale —
+  flagged to the owner, no decision given yet on whether to redesign.
+- Clip 5's exact trim point into the assembled cut was never frame-verified
+  (attempts at frame-level self-inspection this episode were unreliable —
+  batched JPEG transfers out of the sandbox kept truncating) — the join is a
+  reasoned estimate, not a confirmed cut.
