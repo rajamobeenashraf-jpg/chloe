@@ -23,7 +23,7 @@ Prompt builder: `pai-pro-tooling/redsea/build_prompts.mjs` (never hand-assemble 
 | Hazel voice lock | media `b24e5759` | project-wide |
 | Hazel pacing refs | media `9741a763` (H1 264wpm) · `2ea83916` (H2 211) · `126b3efc` (H3 264) · `bf77eb94` (H4 185 + 99) | seed_audio takes (Kaia preset), measured, then ffmpeg `atempo` to the exact target; ElevenLabs v3 takes measured 116–181 wpm and were rejected per the pacing rule |
 | Moses M2 | `0d0e17ce` master; `27999778` face front; `db232637` face 3/4 shout; `9c502bbd` full-body 3/4 staff | photo-edits of the master (N4 method) |
-| Pharaoh | `a2fa48f3` royal master (P3 face) | angle set to follow after owner view |
+| Pharaoh | `a2fa48f3` royal master (P3 face); `ff1fc9d4` face front; `a2bdc002` face 3/4 snarl; `9e17d80f` full-body chariot | photo-edits of the royal master |
 | Env plates | opening `f419b819` · aerial corridor `da9c958c` · corridor eye-level `0e32b90c` · chariot charge `64839885` | start_image / environment anchors |
 | Superseded (never use) | Moses `ccb6e1cf`, `c71603f3` + `85a2096e`/`a6ba66fb`/`5aeca34c`; Pharaoh `11357887` + `f09de884`/`ddd20f4a`/`eeee3e41`; Pharaoh cands `f10060d5`, `6c46b72a`; Moses cand `954dd2a8`; Hazel options B `05fbaa73`, C `17415ca5` | |
 
@@ -65,7 +65,7 @@ Findings reported to the owner alongside delivery (no regeneration without his g
 - Score: Higgsfield `sonilo_music` track `1e42572a` (150s), sidechain-ducked under the clip audio
   (Constantinople recipe), loudnorm I=-16/TP=-1.5. Master: `redsea_final_v1.mp4` 1080x1920, 3577
   frames, 149.04s, -15.5 LUFS integrated, TP -1.4, freezedetect clean. Preview 28MB sent to owner.
-- Master uploaded to Higgsfield storage: media `8a645d43` (URL in chat).
+- Master uploaded to Higgsfield storage: media `8a645d43` — https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/8a645d43-1145-420c-a6d6-056d30c69ba6.mp4
 
 Learnings: the Higgsfield "3D RENDER" preset intercept (`5a77643c`) fired on the whole first
 batch — resubmitted with `declined_preset_id` (S7 confirmed again). Builder's ENV block made
