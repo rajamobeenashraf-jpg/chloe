@@ -211,3 +211,5 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   normalised full cut), TP -1.2. Spot frames: hook on at 0.5s and 2.9s, off after 3.0s; "THAT IS" (H1), "FASTER" (07, new),
   "SIX HUNDRED" (H2) land on the spoken words; fade-out visible at 56.5–57.0s. Full cut re-finished as `redsea_final_v8.mp4`
   (same caption fixes; not delivered separately — the owner scoped this round to part 1).
+  Part 1 v8 media `78bef1dc`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/78bef1dc-81d2-43e5-be8c-bbb4ef0d0bc0.mp4
+- Awaiting owner: approval of part 1 v8.
