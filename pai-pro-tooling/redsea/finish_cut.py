@@ -10,6 +10,9 @@ Steps (all owner-locked house rules):
   1. Captions: house word-chunk system (CLAUDE.md caption system) — Liberation Serif
      bold, spacing 2.5, white + thin dark outline, MarginV=320 @ 720x1280 PlayRes,
      hard in/out, no speaker tags. Moses' two English subtitle lines use the same style.
+  1b. Moses' subtitle lines follow the REFERENCE style (forensic re-watch 2026-09-05): sans-serif,
+      white/light-gold (&H00D9F2FF = warm off-white), no outline, no shadow, bottom-center at y≈85%
+      (MarginV 190 @1280 → baseline ≈ 85%).
   2. Hook overlay (creative-direction §41): two stacked white rounded boxes, ~6px black
      outline, black Liberation Sans Bold text, first 1.0s only.
   3. Music: sidechain-ducked under the clip audio (Constantinople recipe), then loudnorm.
@@ -37,7 +40,7 @@ ScaledBorderAndShadow: yes
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Chunk,Liberation Serif,50,&H00FFFFFF,&H00FFFFFF,&H00202020,&H80000000,-1,0,0,0,100,100,2.5,0,1,2,1,2,60,60,320,1
-Style: Line,Liberation Serif,44,&H00FFFFFF,&H00FFFFFF,&H00202020,&H80000000,-1,0,0,0,100,100,1.5,0,1,2,1,2,60,60,320,1
+Style: Line,Liberation Sans,40,&H00D9F2FF,&H00D9F2FF,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,0,0,2,60,60,190,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text

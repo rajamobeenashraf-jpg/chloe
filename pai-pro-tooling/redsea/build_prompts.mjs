@@ -41,6 +41,17 @@ export const REFS = {
     { value: "a2bdc002-f3ac-427f-8e78-de485b4c2bdb", note: "face 3/4 snarl (photo-edit)" },
     { value: "9e17d80f-e155-4bde-b986-9af288d0ecef", note: "full-body in chariot (photo-edit)" },
   ],
+  // v2 plates (2026-09-05, forensic re-watch): reference-exact compositions with the locked characters.
+  ENV_V2: {
+    opening_split: "30f9c883-3759-44ee-8c68-2e473b7c610f", // 01
+    behind_hillock: "0d309eae-52e0-4b66-9ae0-b810afe85624", // 03, 05
+    moses_frontal_mound: "1802fa8a-ba94-47c1-891b-b5d71205cc8c", // 04
+    behind_column: "1c4fec39-b13c-44a1-b485-ca63024b725b", // 10
+    family_lateral: "d0e60587-f45e-4992-a4df-778e36c1547c", // 12
+    pharaoh_corridor: "4ad43d26-4d66-47c5-8abc-dc276b9abf9c", // 17
+    farshore_climb: "186ab942-0da0-464a-bb50-17f712e9e692", // 18
+    pharaoh_underwater: "864b4e23-e137-431d-be77-c3742c9fc895", // 30
+  },
   ENV: {
     opening: "f419b819-ec89-4b44-9459-fe45fa807111",
     aerial: "da9c958c-40fc-4a43-8cd2-1fa312eb585c",
