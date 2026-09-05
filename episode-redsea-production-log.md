@@ -185,3 +185,8 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
 - `export_segment.sh`: frame-accurate re-encode of a finished master between two cut times (+ 720p preview).
 - Hook card text changed on owner instruction (2026-09-05): `I crossed the Red Sea` / `with Moses in 1250 BC.` (EPISODE label removed, owner)
   (`finish_cut.py` HOOK1–3). Metadata package saved to `redsea-metadata.md`.
+- `redsea_final_v7.mp4`: 1080x1920, 3582 frames, 149.25s, freezedetect clean, -15.4 LUFS, TP -1.3; hook card frame checked
+  (two boxes, no EPISODE label). `redsea_part1_v7.mp4`: cut time 10.5–69.4s, 1414 frames, 58.92s (shot 04 in → shot 14 out).
+  Part 1 media `a86a322a`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/a86a322a-1813-476a-bd88-315c53c285ef.mp4
+  v7 master media `60118882`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/60118882-4875-4763-84f0-4c98ac7bd9db.mp4
+- Awaiting owner: approval of H2 v2, the hook card, part 1, and cut v7.
