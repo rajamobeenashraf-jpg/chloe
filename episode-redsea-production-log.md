@@ -125,3 +125,8 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   shouts are not subtitled — the reference subtitles only Moses' line.
 - build_cut.sh: speed ramps now on 06 (6.05s→4s, k=0.339), 23 (6.05s→5s, k=0.139), 24 (6.05s→4s, k=0.339) alongside 15;
   underwater 25/27/30 slow motion unchanged.
+- `redsea_final_v4.mp4`: 1080x1920, 3577 frames, 149.04s, freezedetect clean (0 freezes), -15.4 LUFS integrated, TP -1.3.
+  Ramped segments verified on their slots (06 → 96 frames/4.00s, 23 → 120/5.00s, 24 → 96/4.00s, 15 → 72/3.00s). Spot frames:
+  Moses' English subtitles land under the spoken line; Hazel chunks unchanged; identity holds. Preview sent. Master media
+  `e9692d6a`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/e9692d6a-cbf4-4ff7-96de-b70a13fa6f65.mp4
+- Awaiting owner: approval of the 15 round-3 clips and of cut v4 (no clip is final until he approves it).
