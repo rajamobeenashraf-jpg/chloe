@@ -213,3 +213,14 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   (same caption fixes; not delivered separately — the owner scoped this round to part 1).
   Part 1 v8 media `78bef1dc`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/78bef1dc-81d2-43e5-be8c-bbb4ef0d0bc0.mp4
 - Awaiting owner: approval of part 1 v8.
+
+## Part 1 v9 (2026-09-05) — owner: music must dip under every voice; start trim 0.40s; then 4K
+- Owner asked whether the ducking technique was applied. Measured: the sidechain was keyed on the WHOLE clip track (water,
+  hooves, wind), so the music dipped ~2 dB whether anyone spoke or not, and sat ~8 dB ABOVE Hazel's voice (music -18 to -20
+  dBFS vs her clip audio -28). Fix (`finish_cut.py`): music bed at -12 dB (x0.25) plus a DIALOGUE-KEYED duck — a further
+  10 dB (x0.316) inside every measured speech window (caption chunks + subtitle lines, gaps <0.6s bridged, 0.15s pad, 0.15s
+  linear ramps; ffmpeg volume expression, nested max()), then the dry clip audio mixed on top and loudnorm. Measured on the
+  isolated music track: outside speech ≈ -24 dBFS, inside speech ≈ -31 to -34 dBFS (≈10 dB dip). Sidechaincompress removed.
+- Part 1 now = cut time 10.9–67.9 (0.40s trimmed from the original head instead of 0.50s), 57.0s, POV hook 3.0s, 1.0s
+  fade-out. Owner explicitly asked for a 4K upscale of this part (the approve-before-upscale rule is satisfied by that
+  instruction) → Higgsfield `upscale_video`, bytedance, preset aigc, 4k, 24 fps, from the 1080x1920 v9 file.

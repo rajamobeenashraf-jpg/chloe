@@ -71,9 +71,22 @@ def main():
         f"subtitles={ass}:fontsdir=/usr/share/fonts/truetype/liberation",
     ])
     music = f"{A}/music/score.m4a"
-    af = ("[1:a]volume=0.5[m];[0:a]asplit=2[dry][sc];"
-          "[m][sc]sidechaincompress=threshold=0.05:ratio=6:attack=40:release=600:makeup=1[duck];"
-          "[dry][duck]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,"
+    # Music: DIALOGUE-KEYED duck (owner 2026-09-05). The sidechain keyed on the whole clip track was held down by
+    # the water/hoof SFX and dipped only ~2 dB on speech (measured). Now the music bed sits at -12 dB (0.25) and drops
+    # a further 10 dB (x0.316) inside every measured speech window (caption chunks + subtitle lines, gaps <0.6s bridged,
+    # 0.15s pad) with 0.15s linear ramps, then the dry clip audio is mixed on top and the program is loudness-normalised.
+    win = sorted([(c[0], c[1]) for c in chunks] + [(l[0], l[1]) for l in lines])
+    merged = []
+    for a, b in win:
+        if merged and a - merged[-1][1] < 0.6: merged[-1] = (merged[-1][0], max(merged[-1][1], b))
+        else: merged.append((a, b))
+    r = 0.15
+    terms = [f"max(0\,min(1\,min((t-{a-r-0.15:.2f})/{r}\,({b+r+0.15:.2f}-t)/{r})))" for a, b in merged]
+    env = terms[0]  # ffmpeg expression max() is binary -> nest
+    for t_ in terms[1:]: env = f"max({env}\\,{t_})"
+    duck = f"1-0.684*{env}"
+    af = ("[1:a]volume=0.25,volume='" + duck + "':eval=frame[m];"
+          "[0:a][m]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,"
           "loudnorm=I=-16:TP=-1.5:LRA=11[aout]")
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", CUT, "-i", music,
                     "-filter_complex", f"[0:v]{vf}[vout];{af}", "-map", "[vout]", "-map", "[aout]",
