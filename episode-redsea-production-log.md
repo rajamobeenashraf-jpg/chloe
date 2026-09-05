@@ -228,3 +228,6 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   0.4s/2.8s, "THAT IS"/"SIX HUNDRED" chunks on the words, fade at the end. 1080p media `a7690718`:
   https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/a7690718-9d60-4ef7-97fa-f8eca5bf0978.mp4
 - 4K upscale job `7964a4c2` (bytedance, aigc, 4k, 24 fps) submitted from that file.
+- 4K part 1 (`redsea_part1_v9_4k.mp4`, upscale job `7964a4c2`):
+  https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260905_151126_7964a4c2-73d7-4720-86f2-7825d036e3d3.mp4
+- Awaiting owner: approval of part 1 v9 (1080p and 4K).
