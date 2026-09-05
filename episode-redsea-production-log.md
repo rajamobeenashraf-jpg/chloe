@@ -196,3 +196,14 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   `redsea_part1_v7_hook.mp4` (1414 frames, 58.92s). The full cut's card (Liberation Sans, two boxes) is unchanged pending
   the owner's call on matching it.
   Part 1 (with hook) media `94a22174`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/94a22174-259c-45e4-91f2-2c70f8c2c9c2.mp4
+
+## Part 1 v8 (2026-09-05) — owner: trim the first 0.5s, hook for 3s, end at 57s with a fade-out, fix captions (missing / off-sync); part 1 only
+- Caption audit of the part-1 window: H1's chunks were still timed from the v1 take (the v2 rebuild `bc250d5a` in cut v3 was
+  never re-measured) — re-measured on the current take with a 300–3400 Hz voice-band envelope (Okay 0.52 · That is Moses
+  1.12–1.54 · That is the Red Sea 2.00–2.42 · standing up 2.80–3.18 · And behind us 3.32–3.66 · that dust 3.72–3.96 ·
+  is Pharaoh 4.24–4.50 · We have minutes 5.08–5.54 clip-local). Pharaoh's English shouts in 07 had NO captions — added in the
+  house chunk style from the measured envelope (After them 0.20–0.72 · Faster 1.20–1.68 · Do not let them reach the shore
+  2.16–3.80). H2 chunks (measured on the v6 take) and Moses' subtitle lines (measured on 04 v3) unchanged. Previous chunk set
+  kept as `captions/chunks_v7.json`. (Gemini eyes captions mode not available: GEMINI_API_KEY is not set in this environment.)
+- Part 1 = cut time 11.0–68.0 (57.0s) from the re-finished full cut (v8 carries the same caption fixes); `hook_part1.sh` now
+  holds the POV card for 3.0s and adds a 1.0s video + audio fade-out.
