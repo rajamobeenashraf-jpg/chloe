@@ -21,7 +21,7 @@ import json, os, subprocess, sys
 
 A = "/home/user/pai-pro/projects/redsea/assets"
 CUT = sys.argv[1]; OUT = sys.argv[2]
-HOOK1, HOOK2 = "EPISODE", "I crossed the Red Sea!"
+HOOK1, HOOK2, HOOK3 = "EPISODE", "I crossed the Red Sea", "with Moses in 1250 BC."  # owner hook text 2026-09-05, split over two boxes to fit 1080px
 FONT_SERIF = "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf"
 FONT_SANS = "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf"
 
@@ -68,6 +68,7 @@ def main():
     vf = ",".join([
         outline(HOOK1, FONT_SANS, 64, 560), box(HOOK1, FONT_SANS, 64, 560),
         outline(HOOK2, FONT_SANS, 72, 690), box(HOOK2, FONT_SANS, 72, 690),
+        outline(HOOK3, FONT_SANS, 72, 830), box(HOOK3, FONT_SANS, 72, 830),
         f"subtitles={ass}:fontsdir=/usr/share/fonts/truetype/liberation",
     ])
     music = f"{A}/music/score.m4a"
