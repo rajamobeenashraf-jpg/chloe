@@ -146,3 +146,9 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   20 `31664e5e` (Moses from behind walking up the pass toward the crowd, no sea) · 22 `28a44569` (walks, stops, turns
   three-quarter to camera, eyes on the lens from ~2.6s). Both freezedetect clean, frame strips checked (identity, wardrobe,
   no water in frame, eyeline on the lens at the turn). Previews sent; awaiting approval. v3 files in `clips/v3_superseded/`.
+- `redsea_final_v5.mp4`: 1080x1920, 3552 frames, 148.00s, freezedetect clean (0 freezes), -15.4 LUFS integrated, TP -1.3.
+  Segment checks: 06 4.30s mirrored + ramped, 15 3.21s, 23 5.71s, 24 4.10s, 32 8.92s slow motion, 18 2.21s high angle.
+  Spot frames: Moses' subtitles under the English line, 06 chariots right→left, 12 wall on the right, 18 high angle with
+  pillar, 20 mountain pass, 22 turn to camera, 32 slow sink. Preview sent. Master media `42c98cb4`:
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/42c98cb4-f39c-4517-a50d-b87a156b68d6.mp4
+- Awaiting owner: approval of clips 20 and 22 and of cut v5.
