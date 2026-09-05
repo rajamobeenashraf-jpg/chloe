@@ -168,3 +168,7 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   frame strips checked (Hazel identity vs canon, chariots not Israelites in 24, army in frame in 28). Previous versions in
   `clips/v4_superseded/`.
 - H3 slot 4s → 5s (runtime +1s). H3 chunks re-measured (speech 3.00–3.40 / 4.08–4.80 clip-local); H4 chunks shifted +1.0s.
+- `redsea_final_v6.mp4`: 1080x1920, 3582 frames, 149.25s, freezedetect clean (0 freezes), -15.4 LUFS integrated, TP -1.3.
+  Preview sent. Master media `376a076a`:
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/376a076a-b125-4813-81b6-320dd3c5fd2e.mp4
+- Awaiting owner: approval of H3/24/28 and of cut v6.
