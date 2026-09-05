@@ -111,3 +111,22 @@ rendered at 6s so the reference's speed ramps fit), 07 (face-filling ECU, Englis
 aerial wedge), 13 (elevated crane over the column), 14 (over-the-shoulder look past goat/donkey), 18 (low angle
 uphill + sun pillar), 19 (screaming), 24 (6s for the ramp), 31 (foam engulfs Moses, then thigh-deep in foam as
 the sea flattens). 32 keeps its dark horse (reference says only "warhorse").
+
+## Forensic pass 4 (2026-09-05, vidIQ job_62f2101d + Higgsfield edit-stage analysis f2d4ab35 of cut v4) — remaining deltas
+Reference shot lengths measured to 0.1s this pass: 01 3.5 · 02 1.9 · 03 5.1 · 04 5.3 · 05 3.6 · 06 4.3 · 07 3.8 · 08 4.9 ·
+09 4.1 · 10 3.2 · 11 3.6 · 12 4.0 · 13 4.1 · 14 6.0 · 15 3.2 · 16 5.0 · 17 2.9 · 18 2.2 · 19 2.0 · 20 1.9 · 21 2.2 · 22 3.0 ·
+23 5.7 · 24 4.1 · 25 2.1 · 26 2.0 · 27 1.6 · 28 4.3 · 29 4.1 · 30 2.3 · 31 8.6 · 32 8.9.
+| Shot | Reference (pass 4) | Cut v4 | Fix type |
+|---|---|---|---|
+| 06 | chariots cross frame RIGHT→LEFT, low-angle parallel track | ours run LEFT→RIGHT | edit: horizontal mirror (no regen) |
+| 12 | wall on the RIGHT of frame, family walks leftward, sunlit horizon left | wall on the LEFT, family walks toward camera-right | edit: horizontal mirror (no regen) |
+| 18 | ELEVATED high angle, tilt-down/push-in, crowd climbing the rocky shore (passes 2 and 4 agree; pass 3 said low) | low-angle uphill (built from pass 3) | edit: revert to the v2 clip `f0e6d90e` (high angle + pillar) |
+| 20 | Moses from behind walking away toward the crowd through an ARID STONY MOUNTAIN PASS, no sea | Moses on the beach facing the sea at sunset | regen (new plate) |
+| 22 | Moses walking away over rocky desert ground, stops, turns his body back to camera; crowd moving ahead; 3.0s | Moses standing on a ridge over the corridor; 4s slot | regen (new plate) + trim to 3.0s |
+| 13 | crowd down a WIDE, STRAIGHT centre path | our path curves in an S | regen (optional, minor) |
+| 32 | EXTREME slow motion, Pharaoh reaching out, rearing horse, wheel | real-time render | edit: 2x slow motion from the 10s render |
+| 24 | "slow motion / real-time" collapse | speed-ramped up (per pass 3) | owner call: keep ramp or slow |
+| Horses | pass 4 reads Pharaoh's horses as DARK in 06/15/17/32 ("black horses", "two dark horses"); pass 3 read a WHITE-MANED lead horse | ours: white lead horse + dark horse (built from pass 3) | owner to confirm from the reference |
+| Durations | see list above | ours rounded to whole seconds: 10 +0.8 · 22 +1.0 · 23 −0.7 · 32 +1.1 · 05 +0.4 · 11 −0.6 · 27 +0.4 | edit: re-trim the cut to 0.1s |
+Unchanged/OK this pass: 01–05, 07–11, 14–17, 19, 21, 23, 25–31; Moses' English subtitles; reference Pharaoh confirmed in a
+striped nemes in shot 30 (supports the owner's nemes decision).
