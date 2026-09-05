@@ -1,7 +1,7 @@
 # Red Sea episode — metadata package (generated 2026-09-05 via the hazel-out-of-time skill; year 1250 BC)
 
 ## Opening hook (OWNER-LOCKED 2026-09-05)
-Hook card, first 1.0s, house style §41 (white boxes, black Liberation Sans Bold), no EPISODE label (owner): `I crossed the Red Sea` /
+Part-1 hook card (owner-picked 2026-09-05): ONE box, Bitstream Charter Bold, "POV: I crossed the Red Sea / with Moses in 1250 BC." Full-cut card, first 1.0s, house style §41 (white boxes, black Liberation Sans Bold), no EPISODE label (owner): `I crossed the Red Sea` /
 `with Moses in 1250 BC.` (owner text "I crossed the Red Sea with Moses in 1250 BC." split over two boxes to fit 1080px).
 Other hook options offered (not chosen): "600 chariots. We're on foot." · "The sea moved for him."
 

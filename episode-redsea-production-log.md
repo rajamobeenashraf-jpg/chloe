@@ -190,3 +190,8 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   Part 1 media `a86a322a`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/a86a322a-1813-476a-bd88-315c53c285ef.mp4
   v7 master media `60118882`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/60118882-4875-4763-84f0-4c98ac7bd9db.mp4
 - Awaiting owner: approval of H2 v2, the hook card, part 1, and cut v7.
+- Part-1 opening hook (owner-directed 2026-09-05, iterated on mock frames): ONE white box with black outline, two centered
+  lines "POV: I crossed the Red Sea / with Moses in 1250 BC.", Bitstream Charter Bold 66px, tight line spacing, y=150 (just
+  above Moses' head), first 1.0s. Tool: `pai-pro-tooling/redsea/hook_part1.sh` (+ `hook_part1.txt`). Output
+  `redsea_part1_v7_hook.mp4` (1414 frames, 58.92s). The full cut's card (Liberation Sans, two boxes) is unchanged pending
+  the owner's call on matching it.
