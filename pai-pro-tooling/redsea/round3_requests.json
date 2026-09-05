@@ -1,0 +1,387 @@
+[
+ {
+  "index": 204,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 5,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "1802fa8a-ba94-47c1-891b-b5d71205cc8c",
+     "role": "start_image"
+    },
+    {
+     "value": "0d0e17ce-bfc0-47be-8da3-a319f5e81e02",
+     "role": "image_references"
+    },
+    {
+     "value": "27999778-0a59-430b-ba8b-813c5dd2cd49",
+     "role": "image_references"
+    },
+    {
+     "value": "db232637-ca8a-448c-8e91-50f40c362137",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "FORMAT: 5 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, medium lens, low angle, natural motion blur, fine film grain. Dramatic front light on Moses, warm skin against a dark turbulent grey storm sky; moody high-contrast grade. Real photographed humans, each background person different. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 medium full-frontal low-angle shot of Moses centered on a rocky mound, staff vertical in his right hand, the massive crowd of Israelites filling the entire background under the dark sky. Do not redesign it.\n@Image2\u2013@Image4 control ONLY Moses' identity, face, hair and wardrobe (full-preserve fidelity). Do not copy pose or camera from them.\n\nSTRICT IDENTITY RE-RENDER \u2014 MOSES \u2014 the exact man in his reference images: a tall, dignified prophet with a luminous, serene, handsome face, warm radiant amber-brown eyes; a long thick silver-white beard falling to mid-chest and long silver-white hair parted in the center; a floor-length cream linen robe with a deep-blue wool over-mantle, woven cord belt, leather sandals; a tall gnarled wooden staff. Voice: deep, warm, resonant, authoritative.\n\nSTARTING STATE: exactly @Image1, Moses drawing breath, mouth closed, eyes fierce on the lens.\n\nTIMELINE (cause always before reaction):\n0.0\u20130.5s: Moses plants the staff and draws breath, brows down.\n0.5\u20135.0s: he shouts his lines straight at the camera and the crowd behind it, mouth wide, wild silver hair and beard blowing in the wind, free left hand thrust forward and open; his eyes stay on the lens the entire time; the crowd behind him stares forward, cloaks moving in the wind.\n\nCAMERA: low angle, medium lens, medium-full framing. One dominant move: static with a slight slow zoom-in toward his face over the five seconds, no other motion.\n\nENVIRONMENT: the Red Sea shore, Late Bronze Age: a rocky mound, a massive crowd of Israelites in beige, brown and grey robes and head coverings filling the background past the frame edges, a dark turbulent grey storm sky.\n\nCONTINUITY: Moses keeps the same face, wardrobe and staff; the crowd keeps the same faces and clothing; light direction constant.\n\nAUDIO: Dialogue language: English. Moses shouts in a deep, booming, resonant voice with a slight open-air echo, passionate and commanding: {Do not be afraid! The Lord will fight for us!} Audio includes <wind, distant sea roar, crowd murmur, his voice>.\n\nENDING STATE: Final frame: Moses centered, mouth closing after the last word, eyes locked on the lens, staff planted, crowd behind.\n\nLOCKS: Diegetic sound only: environmental SFX and the stated dialogue; only Moses speaks. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people."
+  }
+ },
+ {
+  "index": 207,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 4,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "a2fa48f3-1a44-4631-b49a-e6cdad2afc21",
+     "role": "image_references"
+    },
+    {
+     "value": "ff1fc9d4-0331-40ea-9f59-3408bf7d63cb",
+     "role": "image_references"
+    },
+    {
+     "value": "a2bdc002-f3ac-427f-8e78-de485b4c2bdb",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "FORMAT: 4 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, telephoto lens, extreme close-up, very shallow depth of field, heavy background bokeh, natural motion blur, fine film grain. Harsh directional sunlight raking his facial contours, dark overcast sky streaking behind. Real photographed human: pores, sweat, grit and dust on the skin. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1\u2013@Image3 control ONLY Pharaoh's identity, face and regalia (full-preserve fidelity). Do not copy pose or camera from them.\n\nSTRICT IDENTITY RE-RENDER \u2014 PHARAOH \u2014 the exact man in his reference images: angular face with prominent cheekbones, a hooked aquiline nose and cleft chin, piercing pale-brown eyes heavily lined with black kohl, warm copper-brown skin; gold-and-lapis striped nemes headcloth with a golden cobra at the brow, a wide bead collar of gold, lapis and turquoise, a gold scarab pectoral. Voice: sharp, cold, commanding.\n\nSTARTING STATE: Extreme close-up: Pharaoh's face fills about ninety percent of the frame, angled slightly to screen-right, in his moving chariot; the nemes lappets and collar flutter fast; dust and sky streak behind him.\n\nTIMELINE (cause always before reaction):\n0.0\u20134.0s: Pharaoh roars with rage \u2014 jaw muscles flexing, bared clenched teeth between words, kohl-lined eyes glaring forward \u2014 shouting his commands; his head shakes with the chariot's vibration; sweat and grit glisten on his skin; the headcloth whips in the wind.\n\nCAMERA: extreme close-up, telephoto, eye level. One dominant move: a fast, subtle handheld push-in with organic shake from the chariot ride; very shallow depth of field.\n\nENVIRONMENT: the desert plain during the chariot charge, Late Bronze Age: dust, streaking pale ground and dark storm sky as bokeh behind him.\n\nCONTINUITY: Pharaoh keeps the same face and regalia; light direction constant.\n\nAUDIO: Dialogue language: English. Pharaoh roars, furious and commanding, voice cracking with rage: {After them! Faster! Do not let them reach the shore!} Audio includes <hooves, chariot rattle, wind roar, a whip crack, his shouting>.\n\nENDING STATE: Final frame: his snarling face filling the frame, teeth bared, eyes forward.\n\nLOCKS: Diegetic sound only: environmental SFX and the stated dialogue; only Pharaoh speaks. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people."
+  }
+ },
+ {
+  "index": 219,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 4,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "a2fa48f3-1a44-4631-b49a-e6cdad2afc21",
+     "role": "image_references"
+    },
+    {
+     "value": "ff1fc9d4-0331-40ea-9f59-3408bf7d63cb",
+     "role": "image_references"
+    },
+    {
+     "value": "a2bdc002-f3ac-427f-8e78-de485b4c2bdb",
+     "role": "image_references"
+    },
+    {
+     "value": "0e32b90c-7363-4666-bc39-b9d79dde5517",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "FORMAT: 4 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, tight close-up, shallow depth of field, natural motion blur, fine film grain. Churning teal water walls as blur behind him; moody cool grade with gold highlights. Real photographed human: glistening sweat, kohl, grit. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1\u2013@Image3 control ONLY Pharaoh's identity, face and regalia (full-preserve fidelity). Do not copy pose or camera from them.\n@Image4 controls ONLY the look of the water walls behind him. Do not copy its camera position.\n\nSTRICT IDENTITY RE-RENDER \u2014 PHARAOH \u2014 the exact man in his reference images: angular face, hooked aquiline nose, cleft chin, piercing pale-brown eyes heavily lined with black kohl, warm copper-brown skin; gold-and-lapis nemes with cobra, bead collar, gold scarab pectoral. Voice: sharp, cold, commanding.\n\nSTARTING STATE: Tight close-up of Pharaoh's head and torso in his moving chariot inside the corridor, leaning forward over the reins, the water walls close and blurred behind him, spray in the air.\n\nTIMELINE (cause always before reaction):\n0.0\u20131.2s: Pharaoh screams violently forward at his horses, leaning hard into the reins, veins standing in his neck.\n1.2\u20132.4s: a heavy spatter of water hits his shoulder; his eyes snap upward to the wall beside him.\n2.4\u20134.0s: his fury turns to shock \u2014 eyes widening upward, mouth open, brows lifting \u2014 as the wall beside him shudders and drips harder; he keeps screaming, now at the sky.\n\nCAMERA: tight close-up, low angle. One dominant move: a fast handheld push-in tracking with the chariot's movement, organic shake, shallow depth of field.\n\nENVIRONMENT: inside the opened Red Sea corridor, Late Bronze Age: towering teal water walls with white foam close on both sides, spray and drips, wet seabed.\n\nCONTINUITY: Pharaoh keeps the same face and regalia; light direction constant.\n\nAUDIO: Dialogue language: English. Pharaoh screams, furious then shocked: {Faster! FASTER! \u2014 no\u2026 NO!} Audio includes <hooves, chariot rattle, dripping and spattering water, a deep groan from the wall, his screaming>.\n\nENDING STATE: Final frame: extreme close-up of Pharaoh's face turned upward, mouth open, eyes wide, water running down his face.\n\nLOCKS: Diegetic sound only: environmental SFX and the stated dialogue; only Pharaoh speaks. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people."
+  }
+ },
+ {
+  "index": 202,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 4,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "b4162f1e-f073-4367-b1bb-7d351f49182a",
+     "role": "start_image"
+    }
+   ],
+   "prompt": "FORMAT: 4 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, natural motion blur, fine film grain, deep focus. Cool desaturated oceanic tones, sharp contrast, overcast light. Real dark navy seawater with real physics. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 true bird's-eye view, Moses tiny and centered on the semicircular rock at bottom-center with the staff raised, crowds lining the beach on both flanks, the sea split into a symmetrical V-wedge of frothing white crests running toward the top of frame. Do not redesign it.\n\nSTARTING STATE: exactly @Image1, the wedge just opened.\n\nTIMELINE (cause always before reaction):\n0.0\u20131.5s: the two white crests of the wedge shoot up higher and split further apart, violent spray shooting straight up; the dark seam between them widens.\n1.5\u20134.0s: the wedge races on toward the top of frame, a dark wet trench appearing between the two frothing walls; Moses holds the staff high; the crowds hold their ground.\n\nCAMERA: top-down bird's-eye. One dominant move: a subtle forward drift up along the split, steady, deep focus.\n\nENVIRONMENT: the Red Sea shore from high above, Late Bronze Age: dark midnight-navy sea, wet sand, dark rock, thousands of Israelites in earth tones lining the beach.\n\nCONTINUITY: the crowd keeps its position; light constant.\n\nAUDIO: Audio includes <a massive water explosion, deep sub-boom, violent rushing currents, spray>.\n\nENDING STATE: Final frame: the V-wedge fully opened with a dark trench between two white walls running to the top of frame, Moses tiny at bottom-center.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people."
+  }
+ },
+ {
+  "index": 206,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 6,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "e5180ba1-8f0d-4f0a-b9c0-8f81d3ce4dfa",
+     "role": "image_references"
+    },
+    {
+     "value": "a2fa48f3-1a44-4631-b49a-e6cdad2afc21",
+     "role": "image_references"
+    },
+    {
+     "value": "ff1fc9d4-0331-40ea-9f59-3408bf7d63cb",
+     "role": "image_references"
+    },
+    {
+     "value": "64839885-f4f9-455a-8f4e-0a3f87201042",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "FORMAT: 6 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide/medium lens, low angle, natural motion blur, fine film grain. Warm desert dust backlit by dramatic sun streaks through dark storm clouds; high-contrast warm golden-brown grade. Real horses, leather, wood, dust physics; real photographed humans. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 controls Pharaoh's chariot team and cape: ONE WHITE horse with a flared white mane, brass bridle, gold collar and white plume nearest the camera, ONE dark bay horse with gold collar and white plume, and the beige-and-gold cape (full-preserve fidelity).\n@Image2\u2013@Image3 control ONLY Pharaoh's identity, face and regalia.\n@Image4 controls ONLY the look of the massed chariots, soldiers, dust and desert plain behind him. Do not copy its camera angle.\n\nSTRICT IDENTITY RE-RENDER \u2014 PHARAOH \u2014 the exact man in his reference images: angular face, hooked aquiline nose, cleft chin, kohl-lined pale-brown eyes, copper-brown skin; gold-and-lapis nemes with cobra, bead collar, scarab pectoral, white pleated kilt with gold apron, gold cuffs; beige-and-gold cape.\n\nSTARTING STATE: Medium tracking shot on a pale desert plain: Pharaoh drives his chariot framed center-left, moving diagonally right-to-left toward the camera side, the white horse nearest the lens, massed chariots and armored spearmen in ranks behind him kicking up dust.\n\nTIMELINE (cause always before reaction):\n0.0\u20136.0s: Pharaoh drives at full gallop right-to-left, leaning forward, reins in both fists, aggressive yelling expression, cape streaming; the white horse's mane flies; dozens of chariots run alongside and behind him, hundreds more in the dust beyond; sun shafts flicker across them; dust rolls up behind every wheel.\n\nCAMERA: low angle, wide/medium. One dominant move: a fast lateral tracking shot moving right-to-left parallel with the chariot at its speed, keeping Pharaoh's chariot center-left, background streaking with real parallax.\n\nENVIRONMENT: a pale desert plain, Late Bronze Age: hundreds of Egyptian war chariots with drivers and archers in white kilts and bronze scale armor, ranks of spearmen, dust clouds, dark storm clouds with sunbeams.\n\nCONTINUITY: Pharaoh keeps the same face, regalia, cape and horses; the same chariots keep the same look; light direction constant.\n\nAUDIO: Audio includes <massed galloping hooves, chariot creaks and rattles, whip cracks, shouted war cries, wind>.\n\nENDING STATE: Final frame: Pharaoh's chariot still center-left at full gallop, the army behind him in dust.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people or chariots."
+  }
+ },
+ {
+  "index": 209,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 4,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "9bab3005-b6ea-4135-a22b-f48fc9f3019b",
+     "role": "start_image"
+    }
+   ],
+   "prompt": "FORMAT: 4 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, natural motion blur, fine film grain, deep focus. Dark overcast slate sky with a soft sun glow at the upper right; desaturated earthy tan and ochre against dark barren ground. Real dust physics. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 high aerial from behind and above the chariot army charging away across the dark barren desert in a wide triangular wedge, every wheel trailing a dust plume, dark mountains far off, the sea a thin line at the very top. Do not redesign it.\n\nSTARTING STATE: exactly @Image1.\n\nTIMELINE (cause always before reaction):\n0.0\u20134.0s: the wedge of fifty-plus chariots charges away from the camera at high speed toward the distant storm, dust trails streaming and fanning out behind every chariot, the formation holding its triangle; the camera descends and tracks behind and above them.\n\nCAMERA: high aerial. One dominant move: a slow descending forward track behind and above the army, smooth, deep focus.\n\nENVIRONMENT: a vast dark rocky desert plain, Late Bronze Age: hundreds of Egyptian war chariots with drivers and archers, dust plumes, dark mountains, storm on the horizon.\n\nCONTINUITY: the same chariots keep the same look; light direction constant.\n\nAUDIO: Audio includes <massed hooves like thunder, wind, distant war cries>.\n\nENDING STATE: Final frame: the wedge further ahead and slightly lower in frame, dust trails filling the plain behind it.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated chariots."
+  }
+ },
+ {
+  "index": 213,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 4,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "3e4759cc-2abe-4029-bb3e-4470f9527e6a",
+     "role": "start_image"
+    }
+   ],
+   "prompt": "FORMAT: 4 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, elevated, natural motion blur, fine film grain, deep focus. High-contrast light with a shaft of sun down the corridor; the wet path glistening with reflective pools; moody cool grade. Real water physics, real photographed humans each different. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 elevated crane view above and behind the dense multi-lane column of thousands trudging away along the wet seabed, reflective pools on the path, colossal teal water walls on both flanks. Do not redesign it.\n\nSTARTING STATE: exactly @Image1.\n\nTIMELINE (cause always before reaction):\n0.0\u20134.0s: the column trudges steadily forward away from the camera, donkeys and goats among them, bundles swaying; water mist swirls along the trench edges; the pools reflect the sky; the camera pushes forward high above them.\n\nCAMERA: elevated crane, wide. One dominant move: a steady push forward high above the marching column, smooth, deep focus.\n\nENVIRONMENT: the opened Red Sea corridor, Late Bronze Age: wet dark seabed with pools, colossal teal water walls with white foam on both sides, thousands of Israelites in earth-toned wool and linen with animals, extending past the frame edges.\n\nCONTINUITY: the same people keep the same faces and clothing; light direction constant.\n\nAUDIO: Audio includes <massed feet and hooves splashing, murmuring, the sea roar, wind>.\n\nENDING STATE: Final frame: further along the column, walls unchanged.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people."
+  }
+ },
+ {
+  "index": 214,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 6,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "23230d27-5524-48fd-a98a-96bb87597798",
+     "role": "start_image"
+    },
+    {
+     "value": "0d0e17ce-bfc0-47be-8da3-a319f5e81e02",
+     "role": "image_references"
+    },
+    {
+     "value": "27999778-0a59-430b-ba8b-813c5dd2cd49",
+     "role": "image_references"
+    },
+    {
+     "value": "9c502bbd-5e3b-4ffe-805d-2a5d2f5fc516",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "FORMAT: 6 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, natural motion blur, fine film grain; deep focus opening, shallow depth of field at the end. Towering teal water walls with white foam on both sides; wet reflective mud; moody cool grade. Real photographed humans and animals. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 ground-level medium-wide from behind Moses walking away along the corridor, the goat and loaded donkey in the lower-left foreground, Israelites ahead on the right. Do not redesign it.\n@Image2\u2013@Image4 control ONLY Moses' identity, face, hair and wardrobe (full-preserve fidelity). Do not copy pose or camera from them.\n\nSTRICT IDENTITY RE-RENDER \u2014 MOSES \u2014 the exact man in his reference images: a tall, dignified prophet with a luminous, serene, handsome face, warm amber-brown eyes; a long thick silver-white beard falling to mid-chest and long silver-white hair parted in the center; a floor-length cream linen robe with a deep-blue wool over-mantle, woven cord belt, leather sandals; a tall gnarled wooden staff.\n\nSTARTING STATE: exactly @Image1, Moses mid-stride away from the camera.\n\nTIMELINE (cause always before reaction):\n0.0\u20132.5s: Moses walks away from the camera along the wet seabed, staff planting with each step, the goat and donkey walking past the lens in the foreground; the camera pushes in past them toward him.\n2.5\u20133.5s: he slows and stops.\n3.5\u20136.0s: he turns his head and torso over his LEFT shoulder to look back toward the camera \u2014 grave, sorrowful, watchful eyes settling on the lens and holding \u2014 silver hair blowing across his face; the camera arrives on a tight over-the-shoulder portrait; his hand tightens on the staff.\n\nCAMERA: ground level, low angle. One dominant move: a push-in from a medium-wide on his back, past the goat and donkey, to a tight over-the-shoulder portrait of his face as he looks back; shallow depth of field at the end.\n\nENVIRONMENT: the opened Red Sea corridor, Late Bronze Age: wet muddy seabed with puddles, colossal teal water walls with white foam on both sides, Israelites in earth-toned wool and linen with animals walking ahead.\n\nCONTINUITY: Moses keeps the same face, wardrobe and staff; the goat and donkey keep the same look; light direction constant.\n\nAUDIO: Audio includes <wind, water roar, feet and hooves on wet mud, the goat, his breath>.\n\nENDING STATE: Final frame: tight over-the-shoulder portrait of Moses looking back at the lens, grave, still.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people or animals."
+  }
+ },
+ {
+  "index": 215,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 4,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "e5180ba1-8f0d-4f0a-b9c0-8f81d3ce4dfa",
+     "role": "image_references"
+    },
+    {
+     "value": "a2fa48f3-1a44-4631-b49a-e6cdad2afc21",
+     "role": "image_references"
+    },
+    {
+     "value": "ff1fc9d4-0331-40ea-9f59-3408bf7d63cb",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "FORMAT: 4 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, low angle, natural motion blur, fine film grain, shallow depth of field on Pharaoh. A direct beam of sunlight gleams on gold and brass; dark storm clouds; warm dust. Real horses, leather, brass. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 controls Pharaoh's chariot team and cape: ONE WHITE horse with a flared white mane, ornate brass bridle, gold collar and white plume, ONE dark bay horse with gold collar and white plume, and the beige-and-gold cape (full-preserve fidelity).\n@Image2\u2013@Image3 control ONLY Pharaoh's identity, face and regalia.\n\nSTRICT IDENTITY RE-RENDER \u2014 PHARAOH \u2014 the exact man in his reference images: angular face, hooked aquiline nose, cleft chin, kohl-lined pale-brown eyes, copper-brown skin; gold-and-lapis nemes with cobra, bead collar, scarab pectoral, white pleated kilt with gold apron, gold cuffs; beige-and-gold cape.\n\nSTARTING STATE: Low-angle head-on close/medium shot on the desert plain: the two horses' chests and heads fill the lower frame at full gallop straight at the camera, the white horse with its flared white mane and brass bridle nearest the lens, Pharaoh above and behind them holding the reins, the army following close behind in dust.\n\nTIMELINE (cause always before reaction):\n0.0\u20134.0s: the horses gallop hard straight at the camera, white mane flying, nostrils flared, hooves throwing dust; Pharaoh whips the reins hard twice, screaming with rage, gold armor gleaming in the sunbeam, cape streaming; the chariot bounces; the formation surges behind.\n\nCAMERA: low angle, wide. One dominant move: fast backward tracking directly ahead of the charging horses at their speed, slight organic shake, shallow depth of field on Pharaoh.\n\nENVIRONMENT: a pale desert plain, Late Bronze Age: massed Egyptian war chariots and dust behind, dark storm clouds with a direct sunbeam.\n\nCONTINUITY: Pharaoh keeps the same face, regalia, cape and horses; light direction constant.\n\nAUDIO: Audio includes <hooves pounding, harness jingling, whip cracks, Pharaoh's wordless roar of rage, wind>.\n\nENDING STATE: Final frame: the horses and Pharaoh still charging straight at the camera, closer.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people or horses."
+  }
+ },
+ {
+  "index": 217,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 4,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "2a2da264-e86a-47de-a0ce-12cf4d709d98",
+     "role": "start_image"
+    },
+    {
+     "value": "a2fa48f3-1a44-4631-b49a-e6cdad2afc21",
+     "role": "image_references"
+    },
+    {
+     "value": "ff1fc9d4-0331-40ea-9f59-3408bf7d63cb",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "FORMAT: 4 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, low angle, natural motion blur, fine film grain. Towering teal water walls with white foam on both sides, water reflections and mud on the ground; moody cool grade with warm gold on the regalia. Real horses, leather, wood and water physics. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 low-angle three-quarter view of Pharaoh's chariot in the wet corridor leading a column of chariots, the WHITE horse with flared white mane and plume nearest the camera, the dark bay beside it, his cape streaming. Do not redesign it.\n@Image2\u2013@Image3 control ONLY Pharaoh's identity, face and regalia.\n\nSTRICT IDENTITY RE-RENDER \u2014 PHARAOH \u2014 the exact man in his reference images: angular face, hooked aquiline nose, cleft chin, kohl-lined pale-brown eyes, copper-brown skin; gold-and-lapis nemes with cobra, bead collar, scarab pectoral, white pleated kilt with gold apron, gold cuffs.\n\nSTARTING STATE: exactly @Image1.\n\nTIMELINE (cause always before reaction):\n0.0\u20134.0s: Pharaoh drives hard right-to-left toward the camera side through the wet seabed, the white horse and the dark horse galloping, hooves splashing through puddles, wheels throwing mud and spray, cape whipping, reins in both fists, focused intense expression; the column of chariots follows close behind; the camera tracks backward alongside.\n\nCAMERA: low angle, three-quarter, wide. One dominant move: backward tracking alongside the charging chariot at its speed, real parallax against the water wall, natural motion blur on wheels.\n\nENVIRONMENT: the opened Red Sea corridor, Late Bronze Age: wet muddy seabed with puddles, colossal teal water walls on both sides, dozens of Egyptian chariots behind, more receding in depth.\n\nCONTINUITY: Pharaoh keeps the same face, regalia, cape and horses; the same chariots keep the same look; light direction constant.\n\nAUDIO: Audio includes <hooves hammering wet ground, splashing, chariot creaks and rattles, war cries behind, the water roar>.\n\nENDING STATE: Final frame: Pharaoh's chariot still leading through the corridor, white horse nearest the lens.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people or horses."
+  }
+ },
+ {
+  "index": 218,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 4,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "d16f9aca-92d8-45b5-94d0-c0ef4205e257",
+     "role": "start_image"
+    }
+   ],
+   "prompt": "FORMAT: 4 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, low angle, natural motion blur, fine film grain, deep focus. A vertical pillar of brilliant white sunlight radiating skyward through dark storm clouds beyond the crest; moody cool grade with the warm-white pillar. Real photographed humans each different. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 low angle from the wet seabed looking uphill at hundreds of Israelites scrambling up the sandy-rocky bank out of the sea floor toward the crest, the pillar of light beyond. Do not redesign it.\n\nSTARTING STATE: exactly @Image1.\n\nTIMELINE (cause always before reaction):\n0.0\u20134.0s: the crowd scrambles forward and upward, hands reaching down to pull others up, a donkey led up, children lifted, the leading figures cresting the top into the light; the camera tilts up subtly with them.\n\nCAMERA: low angle looking uphill, wide. One dominant move: a subtle upward tilt following the climbers toward the crest, smooth, deep focus.\n\nENVIRONMENT: the far shore of the Red Sea crossing, Late Bronze Age: a steep sandy-rocky bank rising from the wet seabed, hundreds of Israelites in earth-toned robes with donkeys climbing, the pillar of light and dark storm clouds above.\n\nCONTINUITY: the same people keep the same faces and clothing; light direction constant.\n\nAUDIO: Audio includes <feet scrambling on sand and rock, shouts of relief, a child, wind, the sea roar behind>.\n\nENDING STATE: Final frame: the leading figures cresting the bank into the light, the crowd still climbing.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people."
+  }
+ },
+ {
+  "index": 221,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 4,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "8f07ae32-27ac-44dc-8821-aff3edffc158",
+     "role": "image_references"
+    },
+    {
+     "value": "e5180ba1-8f0d-4f0a-b9c0-8f81d3ce4dfa",
+     "role": "image_references"
+    },
+    {
+     "value": "a2fa48f3-1a44-4631-b49a-e6cdad2afc21",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "FORMAT: 4 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, low angle, natural motion blur, fine film grain, shallow depth of field. Billowing white mist engulfing the chariot base like ground fog between dark teal water walls; moody cool grade with gold highlights. Real horses and water physics. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 controls the look of this scene: Pharaoh's chariot head-on in the corridor with cape, white lead horse, mist and the water walls. Do not copy it as a frozen frame.\n@Image2 controls Pharaoh's chariot team and cape (white horse with flared mane, brass bridle, plume; dark bay; beige-and-gold cape).\n@Image3 controls ONLY Pharaoh's identity, face and regalia.\n\nSTRICT IDENTITY RE-RENDER \u2014 PHARAOH \u2014 the exact man in his reference images: angular face, hooked nose, cleft chin, kohl-lined eyes, copper-brown skin; gold-and-lapis nemes with cobra, bead collar, scarab pectoral, white pleated kilt with gold apron.\n\nSTARTING STATE: Low tracking view alongside Pharaoh's ornate gold chariot charging through the corridor, filling center frame, white spray and mist billowing low around the wheels, the walls close on both sides.\n\nTIMELINE (cause always before reaction):\n0.0\u20134.0s: Pharaoh rides fast, driving on with a set face, glancing up at the walls; dramatic white spray and mist billow up around the wheels and horses' legs until the chariot base is engulfed in fog; the cape streams; the horses gallop.\n\nCAMERA: low angle. One dominant move: a dynamic tracking push alongside the chariot at its speed, shallow depth of field, spray on the lens.\n\nENVIRONMENT: the opened Red Sea corridor, Late Bronze Age: wet seabed, towering dark teal water walls with white foam close on both sides, mist.\n\nCONTINUITY: Pharaoh keeps the same face, regalia, cape and horses; light direction constant.\n\nAUDIO: Audio includes <hooves splashing, chariot rattle, rising water roar, hissing spray, wind>.\n\nENDING STATE: Final frame: the chariot engulfed in low white mist, still charging, Pharaoh looking up.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people or horses."
+  }
+ },
+ {
+  "index": 223,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 6,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "8f07ae32-27ac-44dc-8821-aff3edffc158",
+     "role": "start_image"
+    },
+    {
+     "value": "a2fa48f3-1a44-4631-b49a-e6cdad2afc21",
+     "role": "image_references"
+    },
+    {
+     "value": "ff1fc9d4-0331-40ea-9f59-3408bf7d63cb",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "FORMAT: 6 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, low angle, natural motion blur, fine film grain. Ominous storm sky between dark teal water walls; moody cool grade with gold highlights. Real horses, water and cloth physics. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 low angle head-on, Pharaoh's chariot charging straight at the camera through the corridor, beige-and-gold cape billowing high, white lead horse with flared mane nearest the lens, dark bay beside it, mist around the wheels. Do not redesign it.\n@Image2\u2013@Image3 control ONLY Pharaoh's identity, face and regalia.\n\nSTRICT IDENTITY RE-RENDER \u2014 PHARAOH \u2014 the exact man in his reference images: angular face, hooked nose, cleft chin, kohl-lined eyes, copper-brown skin; gold-and-lapis nemes with cobra, bead collar, scarab pectoral, white pleated kilt with gold apron.\n\nSTARTING STATE: exactly @Image1.\n\nTIMELINE (cause always before reaction):\n0.0\u20134.0s: Pharaoh whips the reins, the chariot hurtling forward at full gallop directly at the camera, the white-maned horse leading, cape billowing behind him, sheets of water and mist thrown up by the wheels, his mouth open shouting at the horses.\n4.0\u20136.0s: the horses close to extreme close foreground, spray hitting the lens; behind and beside them the crest of the water wall begins to lean inward and a curtain of water starts to fall; Pharaoh looks up in terror.\n\nCAMERA: low angle, wide. One dominant move: rapid backward tracking directly ahead of the charging chariot, keeping it head-on as it closes, spray on the lens, natural motion blur.\n\nENVIRONMENT: the opened Red Sea corridor, Late Bronze Age: wet seabed, towering dark teal water walls close on both sides, mist, dozens of chariots behind.\n\nCONTINUITY: Pharaoh keeps the same face, regalia, cape and horses; light direction constant.\n\nAUDIO: Audio includes <hooves, wheels, sheets of water hitting the lens, Pharaoh shouting wordlessly at his horses, a rising thunderous roar as the wall begins to fall>.\n\nENDING STATE: Final frame: the horses filling the foreground, Pharaoh looking up, a wall of water beginning to fall behind them.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people or horses."
+  }
+ },
+ {
+  "index": 224,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 6,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "da9c958c-40fc-4a43-8cd2-1fa312eb585c",
+     "role": "start_image"
+    },
+    {
+     "value": "64839885-f4f9-455a-8f4e-0a3f87201042",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "FORMAT: 6 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, high aerial, natural motion blur, fine film grain, deep focus. Overcast storm sky; moody cool grade. Real seawater with real physics: heavy, dark green-blue, churning white foam. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST-FRAME / environment plate: the aerial composition of the corridor, the water walls, sea, sky, light and grade. Do not redesign it; replace its walking figures with what the SCENE states.\n@Image2 controls ONLY the look of the Egyptian chariots, horses and soldiers. Do not copy its composition or desert setting.\n\nSTARTING STATE: the high aerial of the corridor filled with the Egyptian chariot column, both water walls standing.\n\nTIMELINE (cause always before reaction):\n0.0\u20131.5s: at the far horizon end of the corridor the two walls begin to tip inward and meet.\n1.5\u20136.0s: the collapse zips toward the camera along the corridor's full length like a closing zipper \u2014 the walls curling inward and colliding into a single line of white froth that races from the far end toward the foreground, swallowing chariot after chariot, until the whole corridor is a churning white seam and no chariots remain.\n\nCAMERA: high aerial wide. One dominant move: a slow drift forward and downward toward the collapse, smooth, deep focus.\n\nENVIRONMENT: the Red Sea corridor from high above, Late Bronze Age: colossal teal water walls with white foam, hundreds of Egyptian chariots in the corridor, dark storm sky.\n\nCONTINUITY: the same chariots keep the same look until swallowed; light direction constant.\n\nAUDIO: Audio includes <a colossal wave crash rolling toward the camera, deep bass impact, thunder, screaming horses and men swallowed by water>.\n\nENDING STATE: Final frame: a churning white seam of foam where the corridor was, no chariots visible.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated chariots."
+  }
+ },
+ {
+  "index": 231,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 9,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "edae6e1a-5e39-4f36-88c7-df53c8760cc1",
+     "role": "start_image"
+    },
+    {
+     "value": "0d0e17ce-bfc0-47be-8da3-a319f5e81e02",
+     "role": "image_references"
+    },
+    {
+     "value": "9c502bbd-5e3b-4ffe-805d-2a5d2f5fc516",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "FORMAT: 9 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, low angle, natural motion blur, fine film grain, deep focus. Dark storm clouds clearing to radiant god-rays; moody cool grade warming at the end. Real foam, spray and water physics. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 wide from behind Moses at the sea's edge, staff vertical in his right hand, a colossal wall of white foam and mist sweeping toward him and the camera. Do not redesign it.\n@Image2\u2013@Image3 control ONLY Moses' identity and wardrobe (cream linen robe, deep-blue mantle, silver-white hair).\n\nSTARTING STATE: exactly @Image1.\n\nTIMELINE (cause always before reaction):\n0.0\u20132.5s: the wall of white foam and mist sweeps directly over Moses and the camera, engulfing the whole frame in white spray; he remains firmly planted, staff held.\n2.5\u20135.5s: the foam subsides around him \u2014 Moses stands calm and upright, thigh-deep in churning white sea foam, robe soaked, as the water slides back and the sea surface levels into long flat swells.\n5.5\u20139.0s: the storm darkness clears; bright sunbeams burst from the clouds and illuminate the calm, glassy closed ocean; the foam thins to a wash at his ankles; he lowers the staff slowly.\n\nCAMERA: low angle, wide, from behind Moses centered. One dominant move: a slow push-in toward Moses over the nine seconds, smooth, deep focus.\n\nENVIRONMENT: the Red Sea shore after the closing, Late Bronze Age: wet sand, the closed sea, white foam, dark clouds tearing open into god-rays.\n\nCONTINUITY: Moses keeps the same wardrobe and staff and does not leave his spot; light shifts only as the clouds clear.\n\nAUDIO: Audio includes <a colossal surge of foam rushing over the camera, then water sliding back, settling to a gentle surf wash, wind dropping>.\n\nENDING STATE: Final frame: Moses from behind at the calm waterline in radiant sunlight, staff lowered, the sea flat and glassy.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people."
+  }
+ }
+]

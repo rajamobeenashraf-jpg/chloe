@@ -102,3 +102,12 @@ House style (creative-direction §41): two stacked white boxes, Liberation Sans 
 | 30 | underwater: PHARAOH + chariot + horses tumbling, arm reaching to camera, crown slipping | generic sinking army | new plate → regen |
 | Subtitles (shot 4) | sans-serif, white/light-gold, no outline, bottom-center y≈85%, ~30–45% frame width | house serif w/ outline at MarginV 320 | restyle Moses' two lines to match; Hazel's chunks stay house style |
 Also noted (not in the approved list, for the owner): shot 13 in the reference is an ELEVATED push down the corridor (not top-down); shots 06/07 reference a tall gold crown (ours is the owner's nemes king); end logo not copied.
+
+## Round 3 (2026-09-05) — owner: "make it exactly like the reference; characters speak English"
+Scope: everything except Hazel's four beats matches the reference; all dialogue English (Moses' line in English
+with the reference's two subtitle lines; Pharaoh's shouted commands in English). Nemes kept (owner's earlier call).
+Rebuild list: 02 (top-down V-wedge), 04 (English line), 06/15/17/21/23 (white-maned lead horse + cape; 06/23
+rendered at 6s so the reference's speed ramps fit), 07 (face-filling ECU, English shouts), 09 (desert-dominant
+aerial wedge), 13 (elevated crane over the column), 14 (over-the-shoulder look past goat/donkey), 18 (low angle
+uphill + sun pillar), 19 (screaming), 24 (6s for the ramp), 31 (foam engulfs Moses, then thigh-deep in foam as
+the sea flattens). 32 keeps its dark horse (reference says only "warhorse").

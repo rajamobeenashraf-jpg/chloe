@@ -16,13 +16,16 @@ for item in $ORDER; do id=${item%%:*}; d=${item##*:}; i=$((i+1)); n=$(printf "%0
   src="$A/clips/clip${id}.mp4"; [ -f "$src" ] || { echo "MISSING $src"; exit 1; }
   # Reference timing treatments (forensic pass 3, 2026-09-05): underwater shots 25/27/30 are slow motion
   # (2x with motion interpolation, taken from 1.0s into the render so the tumble is mid-action, then
-  # trimmed); the head-on chariot charge 15 carries a subtle speed ramp (1.0x -> 1.35x, k tuned so the
-  # 4.05s render lands exactly on its 3s slot). 06/23/24 also ramp in the reference but their renders
-  # have no spare length (4s trim from a 4.05s render) — ramping them needs longer regenerations.
+  # trimmed); the chariot charges carry a speed ramp, setpts=(PTS)/(1+k*T/4) (instantaneous speed
+  # (1+k*t/4)^2, k tuned so the render's length lands exactly on its slot): 15 (4.05s -> 3s, k=0.34);
+  # round 3 (2026-09-05) re-rendered 06/23/24 at 6s so they can ramp too: 06 (6.05s -> 4s, k=0.339),
+  # 23 (6.05s -> 5s, k=0.139), 24 (6.05s -> 4s, k=0.339).
   vpre="scale=1080:1920,setsar=1,fps=24"; seek=""
   case "$id" in
     25|27|30) vpre="scale=1080:1920,setsar=1,setpts=2.0*(PTS-STARTPTS),minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1"; seek="-ss 1.0" ;;
     15) vpre="scale=1080:1920,setsar=1,setpts='(PTS-STARTPTS)/(1+0.34*T/4)',fps=24" ;;
+    06|24) vpre="scale=1080:1920,setsar=1,setpts='(PTS-STARTPTS)/(1+0.339*T/4)',fps=24" ;;
+    23) vpre="scale=1080:1920,setsar=1,setpts='(PTS-STARTPTS)/(1+0.139*T/4)',fps=24" ;;
   esac
   # take the trim from the START of the render (the described action begins at 0); H3 trims nothing.
   ffmpeg -loglevel error -y $seek -i "$src" -t "$d" -vf "$vpre" \

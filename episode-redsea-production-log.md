@@ -103,3 +103,25 @@ Applied (owner-approved scope):
 - `redsea_final_v3.mp4` built from the same finish pass (captions, hook, score); verification below.
 - `redsea_final_v3.mp4`: 1080x1920, 3577 frames, 149.04s, freezedetect clean (0 freezes). Preview sent. Master media
   `791c8fc9`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/791c8fc9-d053-4b5d-91e7-9567c740f559.mp4
+
+## Cut v4 (2026-09-05) — owner: "make it exactly like reference video and characters should be speaking in english"
+Scope: everything except Hazel's four beats matches the reference; all in-scene dialogue English. Nemes kept (owner).
+- Round-3 plates (nano_banana_pro): 02 V-wedge `b4162f1e` · 09 desert wedge `9bab3005` · 13 crane over column `3e4759cc` ·
+  14 behind Moses with goat + donkey `23230d27` · 18 uphill + sun pillar `d16f9aca` · 31 foam wall at Moses `edae6e1a` ·
+  23 head-on Pharaoh with cape + white lead horse `8f07ae32` · 17 corridor with white horse `2a2da264` · Pharaoh chariot
+  ref with white horse + cape `e5180ba1` (added to the Pharaoh reference set for 06/15/17/21/23).
+- Regenerated clips (Seedance 2.5 1080p 9:16; exact request payloads in `pai-pro-tooling/redsea/round3_requests.json`):
+  02 `81deeb9a` · 04 `b46902e2` (English: "Do not be afraid! The Lord will fight for us!") · 06 `4eeac689` (6s) ·
+  07 `a5e830c0` (ECU, English: "After them! Faster! Do not let them reach the shore!") · 09 `7ba222e9` · 13 `3cac7168` ·
+  14 `b5a771e9` (6s) · 15 `5b34df14` · 17 `f5a23526` · 18 `74ddc3c4` · 19 `58fba412` (English: "Faster! FASTER! — no… NO!") ·
+  21 `35351338` · 23 `076e0c9f` (6s) · 24 `87895c53` (6s) · 31 `89b00e89` (9s).
+  All freezedetect clean; frame strips checked against the forensic breakdown (V-wedge, desert-dominant aerial, elevated
+  crane, over-the-shoulder look with goat/donkey, white-maned lead horse + cape on every Pharaoh chariot shot, uphill climb
+  with the sun pillar, screaming Pharaoh, foam engulfing Moses). English confirmed by ElevenLabs Scribe transcripts of the
+  three dialogue clips (04: "Do not be afraid. The Lord will fight for us" · 07: "After them! Faster! Do not let them reach
+  the shore" · 19: "Faster, faster! No, no!"). Previous versions kept in `clips/v2_superseded/`.
+- Moses' subtitle windows re-measured on the new clip 04 (40ms RMS envelope): speech 1.32–2.45s and 3.08–4.56s clip-local
+  → 11.32–12.45 / 13.08–14.60 cut time (`captions/lines.json`; v3 windows kept as `lines_v3.json`). Pharaoh's English
+  shouts are not subtitled — the reference subtitles only Moses' line.
+- build_cut.sh: speed ramps now on 06 (6.05s→4s, k=0.339), 23 (6.05s→5s, k=0.139), 24 (6.05s→4s, k=0.339) alongside 15;
+  underwater 25/27/30 slow motion unchanged.
