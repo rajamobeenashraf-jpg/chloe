@@ -207,3 +207,7 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   kept as `captions/chunks_v7.json`. (Gemini eyes captions mode not available: GEMINI_API_KEY is not set in this environment.)
 - Part 1 = cut time 11.0–68.0 (57.0s) from the re-finished full cut (v8 carries the same caption fixes); `hook_part1.sh` now
   holds the POV card for 3.0s and adds a 1.0s video + audio fade-out.
+- `redsea_part1_v8.mp4`: 1080x1920, 1368 frames, 57.00s, freezedetect clean, -13.6 LUFS integrated (segment of the -16
+  normalised full cut), TP -1.2. Spot frames: hook on at 0.5s and 2.9s, off after 3.0s; "THAT IS" (H1), "FASTER" (07, new),
+  "SIX HUNDRED" (H2) land on the spoken words; fade-out visible at 56.5–57.0s. Full cut re-finished as `redsea_final_v8.mp4`
+  (same caption fixes; not delivered separately — the owner scoped this round to part 1).
