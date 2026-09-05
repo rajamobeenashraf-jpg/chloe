@@ -14,8 +14,18 @@ ORDER="01:3 02:2 03:5 04:5 05:4 H1:6 06:4 07:4 08:5 09:4 10:4 11:3 12:4 H2:6 13:
 i=0
 for item in $ORDER; do id=${item%%:*}; d=${item##*:}; i=$((i+1)); n=$(printf "%02d" $i)
   src="$A/clips/clip${id}.mp4"; [ -f "$src" ] || { echo "MISSING $src"; exit 1; }
+  # Reference timing treatments (forensic pass 3, 2026-09-05): underwater shots 25/27/30 are slow motion
+  # (2x with motion interpolation, taken from 1.0s into the render so the tumble is mid-action, then
+  # trimmed); the head-on chariot charge 15 carries a subtle speed ramp (1.0x -> 1.35x, k tuned so the
+  # 4.05s render lands exactly on its 3s slot). 06/23/24 also ramp in the reference but their renders
+  # have no spare length (4s trim from a 4.05s render) — ramping them needs longer regenerations.
+  vpre="scale=1080:1920,setsar=1,fps=24"; seek=""
+  case "$id" in
+    25|27|30) vpre="scale=1080:1920,setsar=1,setpts=2.0*(PTS-STARTPTS),minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1"; seek="-ss 1.0" ;;
+    15) vpre="scale=1080:1920,setsar=1,setpts='(PTS-STARTPTS)/(1+0.34*T/4)',fps=24" ;;
+  esac
   # take the trim from the START of the render (the described action begins at 0); H3 trims nothing.
-  ffmpeg -loglevel error -y -i "$src" -t "$d" -vf "scale=1080:1920,setsar=1,fps=24" \
+  ffmpeg -loglevel error -y $seek -i "$src" -t "$d" -vf "$vpre" \
     -af "afade=t=in:st=0:d=0.08,afade=t=out:st=$(python3 -c "print(max(0,$d-0.08))"):d=0.08,aresample=48000" \
     -c:v libx264 -preset medium -crf 16 -pix_fmt yuv420p -c:a aac -b:a 192k -ar 48000 "$W/seg_${n}_${id}.mp4"
   echo "file 'seg_${n}_${id}.mp4'" >> "$W/list.txt"
