@@ -71,3 +71,17 @@ Learnings: the Higgsfield "3D RENDER" preset intercept (`5a77643c`) fired on the
 batch — resubmitted with `declined_preset_id` (S7 confirmed again). Builder's ENV block made
 adaptive (crowd/army paragraphs only when the shot contains them) so people-free plates don't
 get people added.
+
+## Cut v2 (2026-09-05) — owner: "not an exact copy yet" → forensic re-watch → 9 shots rebuilt (owner-approved list)
+- Reference-exact plates (nano_banana_pro with the character sets): opening+split `30f9c883`, behind-hillock
+  `0d309eae` (03, 05), Moses frontal on mound `1802fa8a` (04), behind column `1c4fec39` (10), family lateral
+  `d0e60587` (12), Pharaoh corridor `4ad43d26` (17), far-shore climb `186ab942` (18), Pharaoh underwater `864b4e23` (30).
+- Regenerated clips (Seedance 2.5 1080p, plate as start_image + identity refs): 01 `3d181309` · 03 `8f899a2a` ·
+  04 `d5b891a3` · 05 `cded464d` · 10 `35a15e6b` · 12 `f67753f0` · 17 `e8da92aa` · 18 `f0e6d90e` · 30 `32bac503`.
+  All freezedetect clean; frame sheets checked against the forensic breakdown (composition, blocking, wardrobe).
+  v1 files kept in `clips/v1_superseded/`.
+- Moses subtitle lines restyled to the reference (Liberation Sans, warm off-white, no outline, bottom-center ≈85%);
+  windows re-measured on the new clip 04 (11.60–12.95 / 13.04–14.80 cut time; speech at 1.60–2.40 and 3.04–4.75 clip-local).
+- `redsea_final_v2.mp4`: 1080x1920, 3577 frames, 149.04s, freezedetect clean. Preview sent. Master media `221d904c`:
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/221d904c-7ef2-4e75-bb6e-2173dcee2f4d.mp4
+- Still open for the owner: shot 13 (reference is an elevated push, ours is top-down) was not in the approved list.
