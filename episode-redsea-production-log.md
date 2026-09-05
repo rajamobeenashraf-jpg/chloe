@@ -224,3 +224,7 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
 - Part 1 now = cut time 10.9–67.9 (0.40s trimmed from the original head instead of 0.50s), 57.0s, POV hook 3.0s, 1.0s
   fade-out. Owner explicitly asked for a 4K upscale of this part (the approve-before-upscale rule is satisfied by that
   instruction) → Higgsfield `upscale_video`, bytedance, preset aigc, 4k, 24 fps, from the 1080x1920 v9 file.
+- `redsea_part1_v9.mp4`: 1080x1920, 1368 frames, 57.00s, freezedetect clean, -15.0 LUFS, TP -1.4; spot frames: hook on at
+  0.4s/2.8s, "THAT IS"/"SIX HUNDRED" chunks on the words, fade at the end. 1080p media `a7690718`:
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/a7690718-9d60-4ef7-97fa-f8eca5bf0978.mp4
+- 4K upscale job `7964a4c2` (bytedance, aigc, 4k, 24 fps) submitted from that file.
