@@ -130,3 +130,19 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   Moses' English subtitles land under the spoken line; Hazel chunks unchanged; identity holds. Preview sent. Master media
   `e9692d6a`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/e9692d6a-cbf4-4ff7-96de-b70a13fa6f65.mp4
 - Awaiting owner: approval of the 15 round-3 clips and of cut v4 (no clip is final until he approves it).
+
+## Cut v5 (2026-09-05) — forensic pass 4 fixes (owner: "apply all fixes, leave horses colour, regenerate 20 and 22")
+- Reference shot lengths re-measured to 0.1s (pass 4, `redsea-reel-study.md`); `build_cut.sh` ORDER now carries them
+  (01 3.5 · 02 1.9 · … · 32 8.9); Hazel beats keep full renders. Runtime 148.5s. Caption chunks and Moses' subtitle lines
+  re-offset to the new cut times (v4 timings kept as `captions/*_v4.json`; offsets in `captions/offsets.json`).
+- Edit fixes: 06 mirrored (chariots now right→left) · 12 mirrored (wall on the right, family walking left) · 18 reverted to
+  the high-angle v2 take `f0e6d90e` (passes 2 and 4 agree; the round-3 low-angle take `74ddc3c4` kept in
+  `clips/v3_superseded/`) · 32 in 2x slow motion with motion interpolation · ramps re-solved per shot for the measured
+  slots (k = (render/slot − 1)/(render/4)). 24 keeps its ramp; 13 left as is (both flagged minor). Horse colour untouched.
+- New plates (nano_banana_pro, Moses set as identity refs): 20 mountain pass `4568979c` · 22 rocky desert three-quarter
+  rear `8aeed1c2`. Camera per the owner's exact-copy mandate (reference: 20 eye-level wide, static/slow push; 22 eye-level
+  medium, static) — the CAMERA TECHNIQUE MENU is overridden by the copy-the-source instruction for this project.
+- Regenerated (Seedance 2.5 1080p 9:16, 4s renders, payloads in `pai-pro-tooling/redsea/round4_requests.json`):
+  20 `31664e5e` (Moses from behind walking up the pass toward the crowd, no sea) · 22 `28a44569` (walks, stops, turns
+  three-quarter to camera, eyes on the lens from ~2.6s). Both freezedetect clean, frame strips checked (identity, wardrobe,
+  no water in frame, eyeline on the lens at the turn). Previews sent; awaiting approval. v3 files in `clips/v3_superseded/`.

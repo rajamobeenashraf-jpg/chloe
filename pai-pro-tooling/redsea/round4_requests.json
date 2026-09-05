@@ -1,0 +1,118 @@
+[
+ {
+  "tool": "generate_image_batch",
+  "requests": [
+   {
+    "index": 320,
+    "params": {
+     "model": "nano_banana_pro",
+     "aspect_ratio": "9:16",
+     "medias": [
+      {
+       "value": "0d0e17ce-bfc0-47be-8da3-a319f5e81e02",
+       "role": "image_references"
+      },
+      {
+       "value": "9c502bbd-5e3b-4ffe-805d-2a5d2f5fc516",
+       "role": "image_references"
+      }
+     ],
+     "prompt": "Photorealistic still, vertical 9:16, eye-level WIDE SHOT from directly BEHIND the man in the reference images (same long white hair and beard, same deep blue wool mantle over a cream linen tunic with a rope belt, same gnarled wooden staff in his right hand, leather sandals). He walks AWAY from the camera, centered in the lower third of frame, through an ARID, STONY MOUNTAIN PASS: dry grey-brown rock and gravel underfoot, scree slopes rising on both sides, bare rocky ridgelines, NO sea and NO water anywhere in frame. Ahead of him, further up the pass, a large scattered crowd of Israelites in dusty earth-toned robes walks away with donkeys, goats and bundles, each person different. Overcast slate sky with a soft break of light over the ridge. Cold muted desaturated grade, warm dust tones, fine film grain, real photographed people, wind in his mantle. Zero AI aesthetic, not a render, not painterly. No text, single image."
+    }
+   },
+   {
+    "index": 322,
+    "params": {
+     "model": "nano_banana_pro",
+     "aspect_ratio": "9:16",
+     "medias": [
+      {
+       "value": "0d0e17ce-bfc0-47be-8da3-a319f5e81e02",
+       "role": "image_references"
+      },
+      {
+       "value": "9c502bbd-5e3b-4ffe-805d-2a5d2f5fc516",
+       "role": "image_references"
+      }
+     ],
+     "prompt": "Photorealistic still, vertical 9:16, eye-level MEDIUM SHOT of the man in the reference images seen from BEHIND at a slight three-quarter angle (same long white hair and beard visible at the edge of his cheek, same deep blue wool mantle over a cream linen tunic, rope belt, gnarled wooden staff in his right hand). He is mid-stride walking AWAY from the camera over ROCKY DESERT GROUND: dry broken rock, gravel and dust, low stony rises, NO sea and NO water in frame. Ahead of him, out of focus, the Israelite crowd in dusty earth-toned robes keeps moving away with pack animals, each person different. Dark overcast storm sky. Shallow depth of field, f/2 look, heavy background bokeh, sharp on him. Cold muted desaturated grade, fine film grain, real photographed people, wind in his hair and mantle. Zero AI aesthetic, not a render, not painterly. No text, single image."
+    }
+   }
+  ]
+ },
+ {
+  "tool": "generate_video_batch",
+  "requests": [
+   {
+    "index": 420,
+    "params": {
+     "model": "seedance_2_5",
+     "mode": "omni_reference",
+     "duration": 4,
+     "resolution": "1080p",
+     "aspect_ratio": "9:16",
+     "generate_audio": true,
+     "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+     "medias": [
+      {
+       "value": "4568979c-0676-4244-a9e6-676a95b30756",
+       "role": "start_image"
+      },
+      {
+       "value": "0d0e17ce-bfc0-47be-8da3-a319f5e81e02",
+       "role": "image_references"
+      },
+      {
+       "value": "27999778-0a59-430b-ba8b-813c5dd2cd49",
+       "role": "image_references"
+      },
+      {
+       "value": "db232637-ca8a-448c-8e91-50f40c362137",
+       "role": "image_references"
+      },
+      {
+       "value": "9c502bbd-5e3b-4ffe-805d-2a5d2f5fc516",
+       "role": "image_references"
+      }
+     ],
+     "prompt": "FORMAT: 4 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, deep focus, natural motion blur, fine film grain. Arid stony mountain pass, overcast slate sky with a soft break of light over the ridge; cold muted desaturated grade, warm dust tones. Real photographed humans and animals, each background person different. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 eye-level wide shot from directly behind Moses, centered low in frame, walking away up a rocky mountain pass, the scattered Israelite crowd with donkeys and goats further up the pass ahead of him, scree slopes on both sides, no sea anywhere. Do not redesign it.\n@Image2\u2013@Image5 control ONLY Moses' identity, hair, beard and wardrobe (full-preserve fidelity). Do not copy pose or camera from them.\n\nSTRICT IDENTITY RE-RENDER \u2014 MOSES \u2014 the exact man in his reference images: a tall, dignified prophet with a luminous, serene, handsome face, warm amber-brown eyes; a long thick silver-white beard falling to mid-chest and long silver-white hair parted in the center; a floor-length cream linen robe with a deep-blue wool over-mantle, woven cord belt, leather sandals; a tall gnarled wooden staff.\n\nSTARTING STATE: exactly @Image1 \u2014 Moses mid-stride, back to camera, staff in his right hand planting on the gravel.\n\nTIMELINE (cause always before reaction):\n0.0\u20134.0s: Moses walks steadily away from the camera up the pass at an unhurried, even walking pace, the staff planting with every second step, his mantle lifting slightly in the wind; the crowd ahead keeps walking away from him, the nearest donkey and goats moving with them; dust drifts low across the gravel. He never turns, never stops.\n\nPERFORMANCE: GAZE \u2014 his head stays facing forward up the pass the entire shot (his face is never seen). BODY \u2014 tired but steady stride, shoulders square, staff used as a walking stick.\n\nCAMERA: eye-level, wide shot, camera static on a tripod with one very slow, barely perceptible push-in toward his back. Deep focus. No pan, no tilt, no handheld shake.\n\nENVIRONMENT: dry grey-brown rock and gravel underfoot, scree slopes and bare ridgelines both sides, no water, no sea, no walls of water. Overcast sky, soft light break over the far ridge.\n\nCONTINUITY: one man, one staff; the crowd count and animals stay consistent; no one new enters frame.\n\nAUDIO: no dialogue. Audio includes <his sandals on loose gravel, wind through the pass, distant murmur of the crowd and a donkey, a goat bleat far ahead>.\n\nENDING STATE: Final frame: Moses' back a little further up the pass, still walking, the crowd ahead.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people or animals, no sea."
+    }
+   },
+   {
+    "index": 422,
+    "params": {
+     "model": "seedance_2_5",
+     "mode": "omni_reference",
+     "duration": 4,
+     "resolution": "1080p",
+     "aspect_ratio": "9:16",
+     "generate_audio": true,
+     "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+     "medias": [
+      {
+       "value": "8aeed1c2-19ad-47a2-b6d1-589de7bc4aa4",
+       "role": "start_image"
+      },
+      {
+       "value": "0d0e17ce-bfc0-47be-8da3-a319f5e81e02",
+       "role": "image_references"
+      },
+      {
+       "value": "27999778-0a59-430b-ba8b-813c5dd2cd49",
+       "role": "image_references"
+      },
+      {
+       "value": "db232637-ca8a-448c-8e91-50f40c362137",
+       "role": "image_references"
+      },
+      {
+       "value": "9c502bbd-5e3b-4ffe-805d-2a5d2f5fc516",
+       "role": "image_references"
+      }
+     ],
+     "prompt": "FORMAT: 4 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, medium lens, shallow depth of field (f/2 look, heavy background bokeh on the crowd), natural motion blur, fine film grain. Rocky desert ground, dark overcast storm sky; cold muted desaturated grade. Real photographed humans and animals, each background person different. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 eye-level medium shot of Moses from behind at a slight three-quarter angle, mid-stride walking away over rocky desert ground, the Israelite crowd with pack animals moving away ahead of him, soft in the background. Do not redesign it.\n@Image2\u2013@Image5 control ONLY Moses' identity, face, hair, beard and wardrobe (full-preserve fidelity). Do not copy pose or camera from them.\n\nSTRICT IDENTITY RE-RENDER \u2014 MOSES \u2014 the exact man in his reference images: a tall, dignified prophet with a luminous, serene, handsome face, warm amber-brown eyes; a long thick silver-white beard falling to mid-chest and long silver-white hair parted in the center; a floor-length cream linen robe with a deep-blue wool over-mantle, woven cord belt, leather sandals; a tall gnarled wooden staff.\n\nSTARTING STATE: exactly @Image1 \u2014 Moses walking away from the camera, staff in his right hand, the crowd ahead.\n\nTIMELINE (cause always before reaction):\n0.0\u20131.2s: Moses takes two more steps away from the camera at a steady pace, staff planting; the crowd keeps moving ahead.\n1.2\u20131.8s: he stops. His feet plant. The staff stays planted.\n1.8\u20133.0s: he turns his upper body back toward the camera \u2014 shoulders first, then head \u2014 until his face is seen three-quarter to the lens, and his eyes find the lens and hold on it.\n3.0\u20134.0s: he holds still, looking straight into the lens, breathing, grave and resolute; wind moves his hair and mantle; behind him the crowd keeps walking away.\n\nPERFORMANCE: GAZE \u2014 from 0.0 to 1.8s his head faces forward, away from camera; the instant his turn brings his face round (about 2.6s) his eyes lock onto the lens and stay locked on the lens until the last frame; they do not drop, wander or look past the camera. FACE \u2014 grave, resolute, unhurried; brow slightly lowered, mouth closed, jaw set; no smile, no fear, low-intensity stillness that reads as knowing what is coming. BODY \u2014 the turn is a deliberate, unhurried turn of the torso and head, feet stay planted, the staff stays upright in his right hand.\n\nCAMERA: eye-level medium shot, static on a tripod, no push, no pan, no handheld shake. Shallow depth of field, heavy background bokeh on the crowd, rack of focus stays on Moses throughout.\n\nENVIRONMENT: dry broken rock, gravel and dust; low stony rises; no water, no sea, no walls of water anywhere. Dark overcast storm sky.\n\nCONTINUITY: one man, one staff; the crowd continues away in the background and never turns; no one new enters frame.\n\nAUDIO: no dialogue. Audio includes <wind gusting over rock, his sandals on gravel then stopping, the fabric of his mantle, the distant crowd and animals, a low far roll of thunder>.\n\nENDING STATE: Final frame: medium shot, Moses turned three-quarter to camera, eyes on the lens, staff planted, crowd soft behind him.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people or animals, no sea."
+    }
+   }
+  ]
+ }
+]

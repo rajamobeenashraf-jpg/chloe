@@ -9,23 +9,26 @@ A=/home/user/pai-pro/projects/redsea/assets
 OUT="${1:-$A/redsea_cut_v1.mp4}"; NOMUSIC="${2:-}"
 W=$A/work; mkdir -p "$W"; rm -f "$W"/seg_*.mp4 "$W"/list.txt
 
-# id:trim seconds (source shot length; Hazel beats = full render)
-ORDER="01:3 02:2 03:5 04:5 05:4 H1:6 06:4 07:4 08:5 09:4 10:4 11:3 12:4 H2:6 13:4 14:6 15:3 16:5 17:3 18:2 H3:4 19:2 20:2 21:2 22:4 23:5 24:4 25:2 26:2 27:2 28:4 29:4 30:2 31:9 H4:9 32:10"
+# id:trim seconds — SOURCE shot lengths measured to 0.1s (forensic pass 4, 2026-09-05); Hazel beats = full render
+ORDER="01:3.5 02:1.9 03:5.1 04:5.3 05:3.6 H1:6 06:4.3 07:3.8 08:4.9 09:4.1 10:3.2 11:3.6 12:4.0 H2:6 13:4.1 14:6.0 15:3.2 16:5.0 17:2.9 18:2.2 H3:4 19:2.0 20:1.9 21:2.2 22:3.0 23:5.7 24:4.1 25:2.1 26:2.0 27:1.6 28:4.3 29:4.1 30:2.3 31:8.6 H4:9 32:8.9"
 i=0
 for item in $ORDER; do id=${item%%:*}; d=${item##*:}; i=$((i+1)); n=$(printf "%02d" $i)
   src="$A/clips/clip${id}.mp4"; [ -f "$src" ] || { echo "MISSING $src"; exit 1; }
-  # Reference timing treatments (forensic pass 3, 2026-09-05): underwater shots 25/27/30 are slow motion
-  # (2x with motion interpolation, taken from 1.0s into the render so the tumble is mid-action, then
-  # trimmed); the chariot charges carry a speed ramp, setpts=(PTS)/(1+k*T/4) (instantaneous speed
-  # (1+k*t/4)^2, k tuned so the render's length lands exactly on its slot): 15 (4.05s -> 3s, k=0.34);
-  # round 3 (2026-09-05) re-rendered 06/23/24 at 6s so they can ramp too: 06 (6.05s -> 4s, k=0.339),
-  # 23 (6.05s -> 5s, k=0.139), 24 (6.05s -> 4s, k=0.339).
+  # Reference timing treatments (forensic pass 3, 2026-09-05): underwater shots 25/27/30 are 2x slow motion with
+  # motion interpolation, taken from 1.0s into the render so the tumble is mid-action; the chariot charges 06/15/23/24
+  # carry a speed ramp setpts=(PTS)/(1+k*T/4) (instantaneous speed (1+k*t/4)^2); 06/23/24 were re-rendered at 6s in
+  # round 3 so they have the length to ramp.
   vpre="scale=1080:1920,setsar=1,fps=24"; seek=""
+  # Pass-4 edit fixes (owner-approved 2026-09-05): 06 and 12 are MIRRORED (reference screen direction: chariots
+  # right->left; wall on the RIGHT of the family); 32 is 2x slow motion (reference: extreme slow motion). Ramp k is
+  # solved per shot so the render's real length lands exactly on its measured slot: k = (render/slot - 1) / (render/4).
   case "$id" in
     25|27|30) vpre="scale=1080:1920,setsar=1,setpts=2.0*(PTS-STARTPTS),minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1"; seek="-ss 1.0" ;;
-    15) vpre="scale=1080:1920,setsar=1,setpts='(PTS-STARTPTS)/(1+0.34*T/4)',fps=24" ;;
-    06|24) vpre="scale=1080:1920,setsar=1,setpts='(PTS-STARTPTS)/(1+0.339*T/4)',fps=24" ;;
-    23) vpre="scale=1080:1920,setsar=1,setpts='(PTS-STARTPTS)/(1+0.139*T/4)',fps=24" ;;
+    32) vpre="scale=1080:1920,setsar=1,setpts=2.0*(PTS-STARTPTS),minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1" ;;
+    06) k=$(python3 -c "print(round((6.05/$d-1)/(6.05/4),4))"); vpre="hflip,scale=1080:1920,setsar=1,setpts='(PTS-STARTPTS)/(1+${k}*T/4)',fps=24" ;;
+    23|24) k=$(python3 -c "print(round((6.05/$d-1)/(6.05/4),4))"); vpre="scale=1080:1920,setsar=1,setpts='(PTS-STARTPTS)/(1+${k}*T/4)',fps=24" ;;
+    15) k=$(python3 -c "print(round((4.05/$d-1)/(4.05/4),4))"); vpre="scale=1080:1920,setsar=1,setpts='(PTS-STARTPTS)/(1+${k}*T/4)',fps=24" ;;
+    12) vpre="hflip,scale=1080:1920,setsar=1,fps=24" ;;
   esac
   # take the trim from the START of the render (the described action begins at 0); H3 trims nothing.
   ffmpeg -loglevel error -y $seek -i "$src" -t "$d" -vf "$vpre" \
