@@ -87,3 +87,18 @@ H4 16 + 4 (5.2s + 2.4s → 9s).
 ## Hook card (owner "ok" on the recommended option)
 House style (creative-direction §41): two stacked white boxes, Liberation Sans Bold, first
 1s only. Line 1 "EPISODE" · Line 2 "I crossed the Red Sea!".
+
+## Forensic re-watch (2026-09-05, vidIQ job_0402b945) — deltas vs cut v1 that the owner approved for regeneration
+| Shot | Reference (forensic) | Cut v1 | Fix |
+|---|---|---|---|
+| 01 | Moses on promontory, back to camera, staff raised; the split BEGINS in this shot (white mist blast shoots out from the coast) | sea only heaves; Moses in plate's tan robe | new plate (M2 look + split starting) → regen |
+| 03 | LOW/eye level BEHIND Moses on the central hillock, silhouetted against the sun; thousands of Israelites in the foreground; walls each ~35% width, teal, curling, foam on inward faces; god-rays down the channel | empty corridor, no Moses, no crowd | new plate → regen |
+| 04 | Moses frontal on a rocky mound, CROWD fills the whole background under a dark sky (no water walls behind) | water walls behind him | new plate → regen |
+| 05 | same layout as 03, Moses raises the staff skyward | high wide over promontory | 03's plate → regen |
+| 10 | ground-level tracking BEHIND Moses (left third, staff in left hand) + crowd entering corridor | crowd only, no Moses | new plate → regen |
+| 12 | side-profile LATERAL track, family walks left→right beside the wall filling top-right 60%; mother+baby, boy, elderly woman with wicker basket, men with donkey | different blocking | new plate → regen |
+| 17 | low-angle 3/4 track of PHARAOH's chariot leading others through the wet corridor, gold/white cape | wheels only | new plate → regen |
+| 18 | HIGH angle down the corridor, thousands climbing the far-shore incline, pillar of light at the corridor's end | low-angle tilt-up from the seabed | new plate → regen |
+| 30 | underwater: PHARAOH + chariot + horses tumbling, arm reaching to camera, crown slipping | generic sinking army | new plate → regen |
+| Subtitles (shot 4) | sans-serif, white/light-gold, no outline, bottom-center y≈85%, ~30–45% frame width | house serif w/ outline at MarginV 320 | restyle Moses' two lines to match; Hazel's chunks stay house style |
+Also noted (not in the approved list, for the owner): shot 13 in the reference is an ELEVATED push down the corridor (not top-down); shots 06/07 reference a tall gold crown (ours is the owner's nemes king); end logo not copied.
