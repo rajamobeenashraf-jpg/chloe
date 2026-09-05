@@ -152,3 +152,19 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   pillar, 20 mountain pass, 22 turn to camera, 32 slow sink. Preview sent. Master media `42c98cb4`:
   https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/42c98cb4-f39c-4517-a50d-b87a156b68d6.mp4
 - Awaiting owner: approval of clips 20 and 22 and of cut v5.
+
+## Cut v6 (2026-09-05) — owner: the exit from the sea (~1:23) and the sea closing (~1:54) did not match → "regenerate all three"
+- Findings: H3 rendered on a flat beach with no corridor/walls in frame (the exit never appeared with Hazel in it); shot 18 too
+  distant to carry it; shot 24's first 1.5s showed the Israelite column (the aerial plate anchored it) with chariots only at
+  the end; shot 28 an empty corridor at the moment of closing.
+- New plates (nano_banana_pro): H3 exit `953d8ff7` (elevated angle down the rocky far shore, crowd climbing out, walls + pillar
+  behind, Hazel climbing in the foreground; built with the FULL Hazel identity set + costume A + the v2 far-shore plate as
+  environment ref; side-by-side face check vs canon: PASS) · 24 aerial corridor packed with the chariot column, walls leaning
+  `a17639ca` · 28 ground level, army charging away, tsunami wave at the far end `70cf2baa`.
+- Regenerated (Seedance 2.5 1080p 9:16; payloads in `pai-pro-tooling/redsea/round5_requests.json`): H3 `9710434a` (5s: climbs
+  out with the crowd, stands, eyes up to the lens, "We made it." / eyes down to the corridor + point on "They did not stop." /
+  back to lens; voice lock `b24e5759` + pacing `ac09ac75`) · 24 `b3ec28ce` (6s, walls collapse onto the chariot column; ramp
+  as before) · 28 `20505376` (5s, the wave races down the corridor over the army, then hits the lens). All freezedetect clean;
+  frame strips checked (Hazel identity vs canon, chariots not Israelites in 24, army in frame in 28). Previous versions in
+  `clips/v4_superseded/`.
+- H3 slot 4s → 5s (runtime +1s). H3 chunks re-measured (speech 3.00–3.40 / 4.08–4.80 clip-local); H4 chunks shifted +1.0s.

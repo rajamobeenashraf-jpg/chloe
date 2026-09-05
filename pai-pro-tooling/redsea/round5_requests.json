@@ -1,0 +1,191 @@
+[
+ {
+  "tool": "generate_image_batch",
+  "index": 503,
+  "params": {
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "119465f3-c465-4f11-873e-dfa2883c36c6",
+     "role": "image_references"
+    },
+    {
+     "value": "8f22ad52-3db6-4c69-ac9f-77cfc4dd3e24",
+     "role": "image_references"
+    },
+    {
+     "value": "274e937a-2e4e-485d-92a0-d17bd96e0ca3",
+     "role": "image_references"
+    },
+    {
+     "value": "1a8133ee-32c6-4600-a488-67c404276333",
+     "role": "image_references"
+    },
+    {
+     "value": "17af1f93-300c-406a-9047-e36bb9a61497",
+     "role": "image_references"
+    },
+    {
+     "value": "3ba4ea27-5122-4de7-aece-c24a33208afe",
+     "role": "image_references"
+    },
+    {
+     "value": "d7ea2bd4-7c37-463e-914f-dba377a3a51c",
+     "role": "image_references"
+    },
+    {
+     "value": "9a6e8cb0-4524-4f7e-8a0d-578aae62b6b5",
+     "role": "image_references"
+    },
+    {
+     "value": "186ab942-0da0-464a-bb50-17f712e9e692",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Photorealistic still, vertical 9:16. ELEVATED HIGH-ANGLE WIDE SHOT looking down the steep rocky far-shore incline at the exit of the parted Red Sea: hundreds of Israelites in dusty earth-toned robes (each person different, with bundles, donkeys and goats) scramble UP the wet rock-and-sand slope toward the camera, out of the sea corridor; below and behind them the corridor floor of dark wet sand runs away between two towering teal water walls with white foam crests, and a blazing pillar of light stands at the corridor's far end under a dark storm sky. Use the last reference image ONLY for this environment layout and light. IN THE FOREGROUND, lower-center, the woman from the first eight reference images (the EXACT same person, identical face) is climbing the slope with the crowd: on one knee and one hand on the wet rock, mid-climb, her body angled up the slope, her head turned to look back over her shoulder DOWN at the corridor behind her, hair in a single loose side braid over her left shoulder with wind-loosened strands, wearing her ankle-length woven wool dress in horizontal bands of red ochre, indigo and cream with geometric borders over a cream linen underdress, twisted rope belt, carnelian and blue-faience bead necklace, two copper bangles on her left wrist, flat leather sandals; wet sand on her palms and hem. She is a real photographed human: natural skin with visible pores, faint freckles on the nose bridge, bare soft-pink lips, no beautification, no smoothing. Cold desaturated storm grade with warm dust tones, fine film grain, deep focus. Zero AI aesthetic, not a render, not painterly. No text, single image."
+  }
+ },
+ {
+  "tool": "generate_image_batch",
+  "index": 524,
+  "params": {
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "da9c958c-40fc-4a43-8cd2-1fa312eb585c",
+     "role": "image_references"
+    },
+    {
+     "value": "e5180ba1-8f0d-4f0a-b9c0-8f81d3ce4dfa",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "PHOTO EDIT of the first reference image \u2014 the SAME high-altitude aerial of the straight parted-sea corridor running to the horizon between two towering water walls, same sky, same light. TWO CHANGES ONLY: (1) the people in the corridor are REPLACED by PHARAOH'S ARMY \u2014 a dense column of hundreds of Egyptian two-horse war chariots (like the chariot in the second reference: gold-and-wood chariots, plumed horses, charioteers in white kilts and striped headcloths) charging along the full length of the corridor, wet sand and spray flying, seen tiny from this altitude but clearly chariots and horses, not walking people; (2) both water walls now LEAN INWARD at their crests, curling over the corridor and beginning to fall, heavy foam pouring off the crests. Real seawater physics, real photographed scene, fine film grain, cold desaturated grade. Zero AI aesthetic, not a render. No text, single image."
+  }
+ },
+ {
+  "tool": "generate_image_batch",
+  "index": 528,
+  "params": {
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "0e32b90c-7363-4666-bc39-b9d79dde5517",
+     "role": "image_references"
+    },
+    {
+     "value": "e5180ba1-8f0d-4f0a-b9c0-8f81d3ce4dfa",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "Photorealistic still, vertical 9:16, GROUND-LEVEL EYE-LEVEL WIDE SHOT on the wet seabed looking straight DOWN the parted-sea corridor (use the first reference image only for the corridor's layout, walls and light). Filling the corridor ahead of the camera, from the near mid-ground to the far distance, is PHARAOH'S ARMY: dozens of Egyptian two-horse war chariots seen from BEHIND and three-quarter rear, charging away from the camera down the corridor \u2014 gold-and-wood chariots, plumed horses, charioteers in white kilts and striped headcloths raising whips (match the chariot design of the second reference), wet sand and spray flying from wheels and hooves, each chariot and horse different. At the FAR END of the corridor the two water walls have COLLAPSED TOGETHER into one colossal breaking wave that is falling FORWARD toward the camera like a tsunami, its white crest towering over the last chariots; the nearer walls on both sides still stand, crests beginning to curl inward. Dark storm sky, strip of light dying above the wave. Real seawater physics, real photographed scene, fine film grain, deep focus, cold desaturated grade. Zero AI aesthetic, not a render. No text, single image."
+  }
+ },
+ {
+  "tool": "generate_video_batch",
+  "index": 503,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 5,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "953d8ff7-eb6a-4352-8b80-0b6ccd6c943b",
+     "role": "start_image"
+    },
+    {
+     "value": "119465f3-c465-4f11-873e-dfa2883c36c6",
+     "role": "image_references"
+    },
+    {
+     "value": "8f22ad52-3db6-4c69-ac9f-77cfc4dd3e24",
+     "role": "image_references"
+    },
+    {
+     "value": "274e937a-2e4e-485d-92a0-d17bd96e0ca3",
+     "role": "image_references"
+    },
+    {
+     "value": "1a8133ee-32c6-4600-a488-67c404276333",
+     "role": "image_references"
+    },
+    {
+     "value": "17af1f93-300c-406a-9047-e36bb9a61497",
+     "role": "image_references"
+    },
+    {
+     "value": "3ba4ea27-5122-4de7-aece-c24a33208afe",
+     "role": "image_references"
+    },
+    {
+     "value": "d7ea2bd4-7c37-463e-914f-dba377a3a51c",
+     "role": "image_references"
+    },
+    {
+     "value": "9a6e8cb0-4524-4f7e-8a0d-578aae62b6b5",
+     "role": "image_references"
+    },
+    {
+     "value": "b24e5759-d3c0-4c84-a184-44f7cc65477e",
+     "role": "audio_references"
+    },
+    {
+     "value": "ac09ac75-c50d-4ece-bcb8-672bf01abe83",
+     "role": "audio_references"
+    }
+   ],
+   "prompt": "FORMAT: 5 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, deep focus, natural motion blur, fine film grain. Elevated high angle over the rocky far shore of the parted Red Sea; towering teal water walls and a blazing pillar of light at the corridor's end behind and below; dark storm sky. Cold desaturated storm grade with warm dust tones. Real photographed humans and animals, each background person different. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 elevated high-angle wide shot looking down the rocky far-shore incline; hundreds of Israelites with donkeys and goats scrambling UP the wet slope toward the camera, out of the sea corridor; the corridor floor, both water walls and the pillar of light behind and below them; HAZEL in the foreground lower-center mid-climb, one knee and one hand on the wet rock, looking back over her shoulder down at the corridor. Do not redesign it.\n@Image2\u2013@Image9 control ONLY Hazel's identity, face, hair and wardrobe (full-preserve fidelity). Do not copy pose or camera from them.\n@Audio1 is Hazel's VOICE IDENTITY lock: take her voice's timbre, pitch, accent and vocal character from this reference for every word she speaks.\n@Audio2 controls ONLY the tempo, rhythm and delivery timing of Hazel's lines (not her timbre).\n\nSTRICT IDENTITY RE-RENDER \u2014 the woman in this video MUST be the exact same person shown in her reference images; the references override this text. The EXACT same woman shown in the reference images \u2014 all references depict ONE single identical person. Render precisely: her softly rounded face with fuller youthful cheeks and a small cute button nose; her LARGE round doe-like light-hazel eyes with long natural lashes; her bold thick dark-brown softly-arched eyebrows; her full lips in their BARE natural soft-pink color with real lip texture \u2014 no gloss, no lipstick look, never thin; her hairline and long straight light-brown bronde balayage hair with center parting; her FAIR, light complexion with a soft rosy-pink undertone and pink-kissed cheeks \u2014 NOT golden-tan, NOT porcelain-white, never washed-out; only the faintest delicate trace of tiny freckles on the nose bridge and upper cheeks, forehead mostly clear; her body proportions and figure; her age (early twenties). No beautification beyond the references, no redesign, no changes between this and the references. She must read as a real, physically-photographed human being: natural skin texture with visible pores, fine vellus hair, and authentic micro-imperfections; subtle natural asymmetry; real weight and movement in her hair and clothing. She must NEVER look like an AI generation, a 3D render, a smoothed/filtered/airbrushed image, or a synthetic \"plastic AI face\" \u2014 100% natural, human, and believable is the single most important requirement of every generation, non-negotiable.\n\nHAZEL'S LOOK (owner-picked Option A, styled by Claude): ankle-length woven wool dress in horizontal bands of red ochre, indigo and cream with geometric borders (Beni Hasan style), over a cream linen underdress, tied with a twisted rope belt; a carnelian and blue-faience bead necklace; two plain copper bangles on her left wrist; flat leather thong sandals. Hair: a single loose side braid over her left shoulder with wind-loosened strands, bronde color unchanged. Makeup: light and era-true \u2014 a thin soft line of kohl along the upper lashes, clean natural base with her freckle trace visible, her own bare soft-pink lips, no gloss. Tall (~5'9\"), hourglass figure, fit.\n\nSTARTING STATE: exactly @Image1 \u2014 Hazel mid-climb on the wet rock, looking back over her shoulder down at the corridor, the crowd climbing around her.\n\nTIMELINE (cause always before reaction):\n0.0\u20131.8s: Hazel turns her head forward and scrambles up the last rocks of the slope toward the camera on hands and feet, the crowd climbing with her on both sides, a goat and a donkey passing; wet sand on her palms.\n1.8\u20132.4s: she reaches the top, pushes up to her feet, chest heaving, and lifts her face UP to the lens above her.\n2.4\u20133.4s: eyes on the lens, gasping, she says \"We made it.\" \u2014 a half-laugh of relief in it.\n3.4\u20134.5s: her eyes drop past the camera to the corridor below and behind her, her arm pointing down at it, and she says \"They did not stop.\" \u2014 the relief curdling.\n4.5\u20135.0s: her eyes come back up to the lens, wide; behind and below her the crowd keeps climbing.\n\nPERFORMANCE: GAZE \u2014 0.0\u20131.8s the rocks and her hands as she climbs; at 2.4s her eyes lift to the LENS (the camera is above her, so she looks up into it) and hold there through \"We made it.\"; on \"They did not stop.\" her eyes go down past the camera to the corridor and her arm points at it; at 4.5s her eyes return to the lens and hold to the last frame. FACE \u2014 breathless relief that curdles: a half-laugh exhale on the first sentence, then eyes widening, mouth open on the second. BODY \u2014 scrambling up on hands and feet, standing, chest heaving, the pointing arm down at the corridor, sand on her palms. SPEECH \u2014 urgent, breathless, fast (about 264 words per minute), the two sentences separated by one sharp breath; tempo and rhythm from @Audio2.\n\nCAMERA: elevated high angle looking down the slope at her (the camera is above her eye level, a high vlog angle for the direct address). One dominant move: a slow push-in toward her as she climbs, ending on a medium shot of her from above with the corridor and pillar of light behind and below her. Deep focus. No handheld shake.\n\nENVIRONMENT: wet rock and sand slope, hundreds of Israelites climbing out of the corridor with bundles and animals, the two towering teal water walls and the corridor floor behind and below, the pillar of light at the far end, dark storm sky.\n\nCONTINUITY: one Hazel; the crowd keeps climbing and never duplicates; the walls stand the whole shot.\n\nAUDIO: Dialogue language: English (American). Hazel, breathless and fast: {We made it. They did not stop.} Audio includes <her breathing, hands and feet on wet rock, shouts of relief around her, a goat, wind, the sea roar below, and faint from the corridor: hooves and chariot rattle>.\n\nENDING STATE: Final frame: medium shot from above, Hazel standing at the top of the slope, eyes wide on the lens, the crowd climbing past her, the corridor and pillar of light behind and below.\n\nLOCKS: Diegetic sound only: environmental SFX and the stated dialogue; no music, no narration. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people or animals."
+  }
+ },
+ {
+  "tool": "generate_video_batch",
+  "index": 524,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 6,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "a17639ca-d807-4d54-a6ba-cc1c78933357",
+     "role": "start_image"
+    }
+   ],
+   "prompt": "FORMAT: 6 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, deep focus, natural motion blur, fine film grain. Cool desaturated oceanic grade, overcast storm light. Real dark green-blue seawater with real physics, heavy white foam. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 high aerial of the straight parted-sea corridor filled with Pharaoh's army, a dense column of hundreds of two-horse Egyptian war chariots charging along it, both towering water walls leaning inward at their crests, foam pouring off them. Do not redesign it.\n\nSTARTING STATE: exactly @Image1 \u2014 the chariot column at full gallop, both walls beginning to fall.\n\nTIMELINE (cause always before reaction):\n0.0\u20132.0s: both walls tip further inward and begin to fall toward each other over the chariots; the charioteers look up; the column keeps galloping.\n2.0\u20134.5s: the walls collapse and slam together over the column with a colossal white explosion of foam that races along the corridor's whole length, swallowing every chariot and horse; the corridor vanishes under heaving water.\n4.5\u20136.0s: a churning white seam of foam where the corridor was, spray settling, no chariots visible.\n\nCAMERA: high aerial wide. One dominant move: a smooth tracking descent toward the collapse, deep focus. No shake.\n\nENVIRONMENT: open sea, two towering teal walls, the wet corridor floor packed with chariots, dark storm sky.\n\nCONTINUITY: the chariots are Pharaoh's army (chariots, horses, Egyptian charioteers) \u2014 no walking crowd, no Israelites anywhere in this shot.\n\nAUDIO: Audio includes <a colossal wave crash rolling along the corridor, deep bass impact, thunder, screaming horses and men swallowed by water, then heaving surf>.\n\nENDING STATE: Final frame: a churning white seam of foam where the corridor was, no chariots visible.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated chariots."
+  }
+ },
+ {
+  "tool": "generate_video_batch",
+  "index": 528,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 5,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "70cf2baa-ec05-48ff-a79c-c9d21996a01b",
+     "role": "start_image"
+    },
+    {
+     "value": "e5180ba1-8f0d-4f0a-b9c0-8f81d3ce4dfa",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "FORMAT: 5 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, deep focus, natural motion blur, fine film grain. Ground-level view down the parted-sea corridor; cold desaturated storm grade. Real seawater with real physics, heavy white foam and spray. Real photographed horses, chariots and men, each different. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 ground-level eye-level wide shot looking straight down the corridor; Pharaoh's army of two-horse war chariots seen from behind charging away from the camera down the corridor; at the far end the two walls have collapsed together into one colossal breaking wave falling forward toward the camera; the nearer walls still standing with crests curling inward. Do not redesign it.\n@Image2 controls ONLY the design of the Egyptian chariots, harness and charioteer costume. Do not copy its pose or camera.\n\nSTARTING STATE: exactly @Image1 \u2014 the chariots galloping away, the far wave beginning to fall.\n\nTIMELINE (cause always before reaction):\n0.0\u20132.5s: the colossal wave at the far end falls forward and races down the corridor toward the camera like a tsunami, swallowing the farthest chariots first; the nearer charioteers look back over their shoulders, horses rear and swerve, men are thrown from chariots; the standing walls on both sides begin to fall inward too.\n2.5\u20134.3s: the wall of white water reaches and engulfs the nearest chariots and horses right in front of the camera, wheels and bodies tumbling in the foam.\n4.3\u20135.0s: white water hits the lens and fills the frame.\n\nCAMERA: ground level, eye level, wide, the camera holds its position with one slow push-in down the corridor. Deep focus. Spray hitting the lens at the end.\n\nENVIRONMENT: wet sand corridor floor with shells and seaweed, towering teal walls both sides, the collapsing wave ahead, dark storm sky.\n\nCONTINUITY: the army is Pharaoh's (chariots, horses, Egyptian charioteers) \u2014 no Israelites in this shot; the wave comes from the far end toward the camera.\n\nAUDIO: Audio includes <a rising thunderous roar, hooves and wheels on wet sand, screaming horses and men, then a colossal crash and impact as the water hits the lens>.\n\nENDING STATE: Final frame: white water filling the frame.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated chariots."
+  }
+ }
+]
