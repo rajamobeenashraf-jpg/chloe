@@ -172,3 +172,14 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   Preview sent. Master media `376a076a`:
   https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/376a076a-b125-4813-81b6-320dd3c5fd2e.mp4
 - Awaiting owner: approval of H3/24/28 and of cut v6.
+
+## Cut v7 (2026-09-05) — owner: H2's lip movement did not match her dialogue; wants the "first part" as a separate clip
+- Owner confirmed (AskUserQuestion): the part = Moses' "Do not be afraid" (shot 04 in) through the end of shot 14 (Moses' turn
+  to camera), i.e. v6 cut time 10.5–69.4s; H2 fix = regenerate in Seedance (not a lip-sync pass).
+- H2 v2 `2da50a8a`: identical request to the approved v1 (`h2_request_v1.json` — full Hazel set, costume A, corridor env ref,
+  voice lock `b24e5759`, pacing `2ea83916`) plus an explicit LIP SYNC block (syllable-level articulation locked to the audio,
+  lips closed in the gaps, mouth visible for every word). First submit failed 404 "Audio input not found" — the pacing media
+  ID had been re-typed from its 8-char prefix; fixed from the stored payload. Freezedetect clean; mouth-crop strip checked
+  against the measured speech envelope (speech 0.40–1.28 / 2.04–3.28 / 3.96–5.48 clip-local; mouth open in those windows,
+  closed in the gaps). v1 kept in `clips/v4_superseded/clipH2.mp4`. H2 chunks re-timed from the new envelope.
+- `export_segment.sh`: frame-accurate re-encode of a finished master between two cut times (+ 720p preview).

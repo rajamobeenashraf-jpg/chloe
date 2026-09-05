@@ -1,0 +1,59 @@
+{
+ "index": 41,
+ "params": {
+  "model": "seedance_2_5",
+  "mode": "omni_reference",
+  "duration": 6,
+  "resolution": "1080p",
+  "aspect_ratio": "9:16",
+  "generate_audio": true,
+  "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+  "medias": [
+   {
+    "value": "119465f3-c465-4f11-873e-dfa2883c36c6",
+    "role": "image_references"
+   },
+   {
+    "value": "8f22ad52-3db6-4c69-ac9f-77cfc4dd3e24",
+    "role": "image_references"
+   },
+   {
+    "value": "274e937a-2e4e-485d-92a0-d17bd96e0ca3",
+    "role": "image_references"
+   },
+   {
+    "value": "1a8133ee-32c6-4600-a488-67c404276333",
+    "role": "image_references"
+   },
+   {
+    "value": "17af1f93-300c-406a-9047-e36bb9a61497",
+    "role": "image_references"
+   },
+   {
+    "value": "3ba4ea27-5122-4de7-aece-c24a33208afe",
+    "role": "image_references"
+   },
+   {
+    "value": "d7ea2bd4-7c37-463e-914f-dba377a3a51c",
+    "role": "image_references"
+   },
+   {
+    "value": "9a6e8cb0-4524-4f7e-8a0d-578aae62b6b5",
+    "role": "image_references"
+   },
+   {
+    "value": "0e32b90c-7363-4666-bc39-b9d79dde5517",
+    "role": "image_references"
+   },
+   {
+    "value": "b24e5759-d3c0-4c84-a184-44f7cc65477e",
+    "role": "audio_references"
+   },
+   {
+    "value": "2ea83916-461c-41e8-ad84-6282feb51f02",
+    "role": "audio_references"
+   }
+  ],
+  "prompt": "FORMAT: 6 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): vertical 9:16, real-time continuous take, single continuous unbroken shot, no internal cuts, no scene changes. Photographed on a full-frame cinema camera with real lenses (anamorphic-free, spherical), natural motion blur, fine film grain, shallow depth of field (f/2 look, heavy background bokeh) on this medium shot. Light: overcast storm sky with god-rays breaking through, cold slate-teal sky and sea against warm earth tones of cloth and dust; color grade muted, desaturated, unpolished, bleak epic \u2014 never candy-saturated, never glowing. Water is real seawater with real physics: heavy, dark green-blue, churning white foam, spray, mist, wet reflective seabed. People are real photographed humans with pores, dirt, sweat, wind in hair and cloth; every background person is individually different in face, build and exact era-correct clothing. Everything reads as physically-photographed footage: zero AI aesthetic, zero painterly smearing, zero 3D-render look, zero smoothed skin.\n\nREFERENCE ROLES:\n@Image1\u2013@Image8 control ONLY Hazel's identity (face, eyes, hair color, skin, figure) and, from @Image8 specifically, her wardrobe and hairstyle. Full-preserve fidelity for the face. Do not copy pose, background, lighting or camera angle from them.\n@Image9 controls ONLY the look of the water walls and wet seabed. Do not copy its camera position.\n@Audio1 is Hazel's VOICE-IDENTITY LOCK: take her voice timbre, pitch and accent from it for every word she speaks. Do not copy its pacing or its words.\n@Audio2 is Hazel's PACING reference for this clip: take ONLY the tempo, rhythm and delivery timing of her lines from it. Do not copy its timbre or voice.\n\nSTRICT IDENTITY RE-RENDER \u2014 the woman in this video MUST be the exact same person shown in her reference images; the references override this text. The EXACT same woman shown in the reference images \u2014 all references depict ONE single identical person. Render precisely: her softly rounded face with fuller youthful cheeks and a small cute button nose; her LARGE round doe-like light-hazel eyes with long natural lashes; her bold thick dark-brown softly-arched eyebrows; her full lips in their BARE natural soft-pink color with real lip texture \u2014 no gloss, no lipstick look, never thin; her hairline and long straight light-brown bronde balayage hair with center parting; her FAIR, light complexion with a soft rosy-pink undertone and pink-kissed cheeks \u2014 NOT golden-tan, NOT porcelain-white, never washed-out; only the faintest delicate trace of tiny freckles on the nose bridge and upper cheeks, forehead mostly clear; her body proportions and figure; her age (early twenties). No beautification beyond the references, no redesign, no changes between this and the references. She must read as a real, physically-photographed human being: natural skin texture with visible pores, fine vellus hair, and authentic micro-imperfections; subtle natural asymmetry; real weight and movement in her hair and clothing. She must NEVER look like an AI generation, a 3D render, a smoothed/filtered/airbrushed image, or a synthetic \"plastic AI face\" \u2014 100% natural, human, and believable is the single most important requirement of every generation, non-negotiable.\n\nHAZEL'S LOOK (owner-picked Option A, styled by Claude): ankle-length woven wool dress in horizontal bands of red ochre, indigo and cream with geometric borders (Beni Hasan style), over a cream linen underdress, tied with a twisted rope belt; a carnelian and blue-faience bead necklace; two plain copper bangles on her left wrist; flat leather thong sandals. Hair: a single loose side braid over her left shoulder with wind-loosened strands, bronde color unchanged. Makeup: light and era-true \u2014 a thin soft line of kohl along the upper lashes, clean natural base with her freckle trace visible, her own bare soft-pink lips, no gloss. Tall (~5'9\"), hourglass figure, fit.\n\nSTARTING STATE: Hazel walks beside an exhausted mother (dust-stained brown wool dress and headscarf, sleeping infant against her chest, two small children at her skirt) inside the corridor, water walls on both sides, families moving around them.\n\nTIMELINE (cause always before reaction):\n0.0\u20131.5s: Hazel glances at the mother and the children beside her, then her eyes come to the lens as she speaks the first sentence.\n1.5\u20133.5s: her eyes go back over her shoulder on \"fastest army\", then return to the lens.\n3.5\u20136.0s: on \"kids and goats\" her hand gestures sideways at the children and a goat trotting past; her eyes follow the gesture to them and then come back to the lens; she keeps walking.\n\nPERFORMANCE \u2014 GAZE: the mother and children first, the lens for the numbers, over her shoulder on \"army\", to the children and goat on \"kids and goats\", back to the lens. FACE: grim and quick \u2014 brows drawn, lips pressed between sentences, a tired exhale. BODY: walking forward beside the mother, one hand briefly steadying the small child's shoulder, the sideways gesture on the last line.\n\nCAMERA: Eye height, medium shot. One dominant move: sideways-and-forward tracking alongside Hazel and the family at walking pace, smooth, shallow depth of field with the crowd soft behind.\n\nENVIRONMENT: THE RED SEA CROSSING, LATE BRONZE AGE: the sea has been split into a straight dry corridor of wet dark seabed (sand, shells, weed, shallow puddles) running to the horizon; on BOTH sides stand towering vertical walls of dark green-blue seawater, hundreds of feet high, churning white foam along their faces, spray drifting off their crests, sunlit mist inside the corridor. The Israelites are a column of thousands \u2014 men, women, children, elders, donkeys, goats, sheep, bundles \u2014 in undyed and earth-toned wool and linen tunics, fringed mantles and headscarves, each person different, extending past the frame edges and receding into the mist. The world continues beyond every frame edge.\n\nCONTINUITY (invariants first frame to last): Hazel keeps the same face, dress, braid and jewelry; the mother and children keep the same faces and clothing; the water walls keep the same scale and look; light direction constant within the shot.\n\nAUDIO: Dialogue language: English (American). Hazel speaks quickly, tense and flat: {Six hundred chariots. The fastest army on Earth. We are on foot, with kids and goats.} Audio includes <feet splashing, goats, a child, murmuring, water roar, wind>.\n\nENDING STATE: Final frame: Hazel mid-stride beside the mother, eyes on the lens.\n\nLOCKS: Diegetic sound only: environmental SFX and the stated dialogue; only Hazel speaks. Music is off. Subtitles are off. No on-screen text, no logos, no watermarks, no phone or camera visible. Single continuous take, real-time speed, no slow motion, no repeated action, no duplicated people or props, no object teleportation."
+ }
+}
