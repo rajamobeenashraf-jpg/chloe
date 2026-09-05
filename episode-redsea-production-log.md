@@ -195,3 +195,4 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   above Moses' head), first 1.0s. Tool: `pai-pro-tooling/redsea/hook_part1.sh` (+ `hook_part1.txt`). Output
   `redsea_part1_v7_hook.mp4` (1414 frames, 58.92s). The full cut's card (Liberation Sans, two boxes) is unchanged pending
   the owner's call on matching it.
+  Part 1 (with hook) media `94a22174`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/94a22174-259c-45e4-91f2-2c70f8c2c9c2.mp4
