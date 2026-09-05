@@ -183,5 +183,5 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   against the measured speech envelope (speech 0.40–1.28 / 2.04–3.28 / 3.96–5.48 clip-local; mouth open in those windows,
   closed in the gaps). v1 kept in `clips/v4_superseded/clipH2.mp4`. H2 chunks re-timed from the new envelope.
 - `export_segment.sh`: frame-accurate re-encode of a finished master between two cut times (+ 720p preview).
-- Hook card text changed on owner instruction (2026-09-05): `EPISODE` / `I crossed the Red Sea` / `with Moses in 1250 BC.`
+- Hook card text changed on owner instruction (2026-09-05): `I crossed the Red Sea` / `with Moses in 1250 BC.` (EPISODE label removed, owner)
   (`finish_cut.py` HOOK1–3). Metadata package saved to `redsea-metadata.md`.
