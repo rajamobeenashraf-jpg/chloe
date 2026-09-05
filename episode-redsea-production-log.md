@@ -85,3 +85,21 @@ get people added.
 - `redsea_final_v2.mp4`: 1080x1920, 3577 frames, 149.04s, freezedetect clean. Preview sent. Master media `221d904c`:
   https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/221d904c-7ef2-4e75-bb6e-2173dcee2f4d.mp4
 - Still open for the owner: shot 13 (reference is an elevated push, ours is top-down) was not in the approved list.
+
+## Cut v3 (2026-09-05) — third forensic re-watch (vidIQ job_33affa68) + Higgsfield edit-stage analysis of our v2
+Owner asked where the problems still are, then chose "edit fixes and H1 only", nemes kept.
+Problem list reported (kept for the record): 02 top-down split reads as a thin line vs the reference's V-wedge;
+07 is an MCU vs the reference's 90%-face ECU; 09 shows the corridor mouth large vs a desert-dominant aerial;
+13 reuses the aerial plate vs an elevated crane push; 14 is a full turn vs an over-the-shoulder look; 15/06/17/
+21/23/32 lack the reference's white-maned lead horse and cape; 18 angle conflict across passes (low vs high);
+19 alarm vs screaming; 31 foam-swallow beat partial; underwater 25/27/30 not in slow motion; chariot ramps
+missing; H1 Hazel walked backward (Higgsfield analysis flagged it; §14 violation).
+Applied (owner-approved scope):
+- H1 v2 `bc250d5a`: forward walk, stop, shoulder-turn to lens, walk on; lateral tracking. Frame strip verified
+  (forward stride, identity holds). v1 kept in `clips/v1_superseded/`.
+- build_cut.sh: 25/27/30 slow motion 2x with motion interpolation from 1.0s into the render; 15 speed ramp
+  1.0→1.35x with k=0.34 so the 4.05s render lands on its 3s slot. 06/23/24 cannot ramp without longer
+  renders (4s trims from 4.05s) — left real-time, owner told.
+- `redsea_final_v3.mp4` built from the same finish pass (captions, hook, score); verification below.
+- `redsea_final_v3.mp4`: 1080x1920, 3577 frames, 149.04s, freezedetect clean (0 freezes). Preview sent. Master media
+  `791c8fc9`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/791c8fc9-d053-4b5d-91e7-9567c740f559.mp4
