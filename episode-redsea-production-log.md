@@ -263,3 +263,5 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   `finish_cut.py` → export. Rebuilt as `redsea_cut_v8_nomusic.mp4` → v11.
 - `redsea_part2_v11.mp4` (from concat v8): 1080x1920, 1916 frames, 79.84s, freezedetect clean, -16.2 LUFS, TP -1.3. Spot
   frames confirm the NEW 26 (chariots in the closing seam), new H3 ("THEY DID" spoken face to lens) and new H4. Preview sent.
+  Part 2 v11 media `eaf3c906`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/eaf3c906-23c5-4d6e-9cdc-577ed5968226.mp4
+- Awaiting owner: approval of 26/H3/H4 and part 2 v11; 4K on his go.
