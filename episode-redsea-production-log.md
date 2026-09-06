@@ -231,3 +231,10 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
 - 4K part 1 (`redsea_part1_v9_4k.mp4`, upscale job `7964a4c2`):
   https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260905_151126_7964a4c2-73d7-4720-86f2-7825d036e3d3.mp4
 - Awaiting owner: approval of part 1 v9 (1080p and 4K).
+
+## Part 2 v10 (2026-09-06) — owner: "give me the second part"
+- Part 2 = cut time 69.4 (shot 15 head-on charge) → end (149.25), ≈79.9s. Same treatment as part 1: POV hook card 3.0s
+  (text `hook_part2.txt`: "POV: Pharaoh followed us / into the Red Sea." — Claude's proposal, owner may swap), 1.0s
+  video + audio fade-out, dialogue-keyed music duck. Pharaoh's shot-19 line ("Faster! FASTER! No! NO!") had no captions →
+  added from the measured envelope (0.16–0.36 / 0.52–0.68 / 1.12–1.32 / 1.48–1.80 clip-local). Full cut re-finished as v10.
+- 4K: not run — the approve-before-upscale rule applies; the owner's 4K instruction was scoped to part 1.
