@@ -257,3 +257,7 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   envelope: open only inside the six speech segments (0.12–1.4 / 2.12–3.32 / 4.24–4.64 / 4.96–5.68 / 7.04–7.4 / 8.04–8.6),
   closed in the pauses. All three freezedetect clean, previews sent. H3/H4 chunks re-timed from the new takes
   (`captions/chunks_v10.json` = previous set). Full cut re-finished as v11; part 2 v11 exported from it (69.4s → end).
+- PROCESS NOTE (2026-09-06): the first v11 finish was run on the OLD concat (`redsea_cut_v7_nomusic.mp4`) after promoting
+  the new clips — the finishing pass only burns captions/music, so the new 26/H3/H4 were not in it. Caught on the spot-frame
+  check (26 still empty). Rule of thumb now written into the log: any clip promotion → `build_cut.sh` (new concat) →
+  `finish_cut.py` → export. Rebuilt as `redsea_cut_v8_nomusic.mp4` → v11.
