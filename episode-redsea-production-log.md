@@ -261,3 +261,5 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   the new clips — the finishing pass only burns captions/music, so the new 26/H3/H4 were not in it. Caught on the spot-frame
   check (26 still empty). Rule of thumb now written into the log: any clip promotion → `build_cut.sh` (new concat) →
   `finish_cut.py` → export. Rebuilt as `redsea_cut_v8_nomusic.mp4` → v11.
+- `redsea_part2_v11.mp4` (from concat v8): 1080x1920, 1916 frames, 79.84s, freezedetect clean, -16.2 LUFS, TP -1.3. Spot
+  frames confirm the NEW 26 (chariots in the closing seam), new H3 ("THEY DID" spoken face to lens) and new H4. Preview sent.
