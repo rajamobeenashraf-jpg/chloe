@@ -242,3 +242,12 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   0.5s/2.8s, "FASTER"/"NO" chunks on Pharaoh's scream, H3 exit, 31 calm, H4, 32 fade. 1080p media `c7e7c50e`:
   https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/c7e7c50e-c528-4577-a176-b576b5d5e400.mp4
 - Awaiting owner: approval of part 2 (hook text, cut) and the go for its 4K upscale.
+
+## Round 6 (2026-09-06) — owner: empty passage at the closing (shot 26) + Hazel lip sync in part 2 → "regenerate all three"
+- Findings: 26 was an empty foam seam (reference-faithful but the army vanished for 2s between 24 and 28); H3's mouth moved
+  at 2.25–3.0s before any words, and the second sentence played while her head was turned away with hair over her mouth;
+  H4's mouth kept moving through the silent gaps (4.4–5.1, 5.5–6.7s). Two H4 chunks were also off (fixed with the rebuild).
+- Plate 26 `2eda615b` (photo-edit of the 24 aerial: walls already met over the far two-thirds, the seam overtaking the last
+  chariots). Regenerations (payloads `round6_requests.json`): 26 `71f29960` (4s) · H3 `da01a2ac` (5s; same round-5 request +
+  LIP SYNC block; head stays to the lens, only her eyes drop on the second sentence) · H4 `fd362a3b` (9s; original request +
+  LIP SYNC block; lips closed in the pause). Previous takes in `clips/v5_superseded/`.

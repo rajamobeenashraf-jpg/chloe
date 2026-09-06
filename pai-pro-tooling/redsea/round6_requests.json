@@ -1,0 +1,153 @@
+[
+ {
+  "tool": "generate_image_batch",
+  "index": 626,
+  "params": {
+   "model": "nano_banana_pro",
+   "aspect_ratio": "9:16",
+   "medias": [
+    {
+     "value": "a17639ca-d807-4d54-a6ba-cc1c78933357",
+     "role": "image_references"
+    }
+   ],
+   "prompt": "PHOTO EDIT of the reference image \u2014 the SAME high aerial view straight down the sea corridor, the SAME chariot column of the Egyptian army, the SAME two towering teal water walls, same light and grade. CHANGES ONLY: the two walls have already crashed together across the FAR two-thirds of the corridor, leaving a single violent seam of white foam and spray running down the middle of the frame from the top, and the seam is racing toward the camera; only the LAST dozen chariots at the bottom of the frame are still on the wet seabed, the rearmost ones already half-engulfed by the advancing foam, horses rearing, a chariot tipping, men thrown. The corridor ahead of them is gone under churning water. Real photographed water with real physics, real horses and men, spray catching the light. Fine film grain, zero AI aesthetic, not a render. No text, single image."
+  }
+ },
+ {
+  "tool": "generate_video_batch",
+  "index": 703,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 5,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "953d8ff7-eb6a-4352-8b80-0b6ccd6c943b",
+     "role": "start_image"
+    },
+    {
+     "value": "119465f3-c465-4f11-873e-dfa2883c36c6",
+     "role": "image_references"
+    },
+    {
+     "value": "8f22ad52-3db6-4c69-ac9f-77cfc4dd3e24",
+     "role": "image_references"
+    },
+    {
+     "value": "274e937a-2e4e-485d-92a0-d17bd96e0ca3",
+     "role": "image_references"
+    },
+    {
+     "value": "1a8133ee-32c6-4600-a488-67c404276333",
+     "role": "image_references"
+    },
+    {
+     "value": "17af1f93-300c-406a-9047-e36bb9a61497",
+     "role": "image_references"
+    },
+    {
+     "value": "3ba4ea27-5122-4de7-aece-c24a33208afe",
+     "role": "image_references"
+    },
+    {
+     "value": "d7ea2bd4-7c37-463e-914f-dba377a3a51c",
+     "role": "image_references"
+    },
+    {
+     "value": "9a6e8cb0-4524-4f7e-8a0d-578aae62b6b5",
+     "role": "image_references"
+    },
+    {
+     "value": "b24e5759-d3c0-4c84-a184-44f7cc65477e",
+     "role": "audio_references"
+    },
+    {
+     "value": "ac09ac75-c50d-4ece-bcb8-672bf01abe83",
+     "role": "audio_references"
+    }
+   ],
+   "prompt": "FORMAT: 5 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, deep focus, natural motion blur, fine film grain. Elevated high angle over the rocky far shore of the parted Red Sea; towering teal water walls and a blazing pillar of light at the corridor's end behind and below; dark storm sky. Cold desaturated storm grade with warm dust tones. Real photographed humans and animals, each background person different. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 elevated high-angle wide shot looking down the rocky far-shore incline; hundreds of Israelites with donkeys and goats scrambling UP the wet slope toward the camera, out of the sea corridor; the corridor floor, both water walls and the pillar of light behind and below them; HAZEL in the foreground lower-center mid-climb, one knee and one hand on the wet rock, looking back over her shoulder down at the corridor. Do not redesign it.\n@Image2\u2013@Image9 control ONLY Hazel's identity, face, hair and wardrobe (full-preserve fidelity). Do not copy pose or camera from them.\n@Audio1 is Hazel's VOICE IDENTITY lock: take her voice's timbre, pitch, accent and vocal character from this reference for every word she speaks.\n@Audio2 controls ONLY the tempo, rhythm and delivery timing of Hazel's lines (not her timbre).\n\nSTRICT IDENTITY RE-RENDER \u2014 the woman in this video MUST be the exact same person shown in her reference images; the references override this text. The EXACT same woman shown in the reference images \u2014 all references depict ONE single identical person. Render precisely: her softly rounded face with fuller youthful cheeks and a small cute button nose; her LARGE round doe-like light-hazel eyes with long natural lashes; her bold thick dark-brown softly-arched eyebrows; her full lips in their BARE natural soft-pink color with real lip texture \u2014 no gloss, no lipstick look, never thin; her hairline and long straight light-brown bronde balayage hair with center parting; her FAIR, light complexion with a soft rosy-pink undertone and pink-kissed cheeks \u2014 NOT golden-tan, NOT porcelain-white, never washed-out; only the faintest delicate trace of tiny freckles on the nose bridge and upper cheeks, forehead mostly clear; her body proportions and figure; her age (early twenties). No beautification beyond the references, no redesign, no changes between this and the references. She must read as a real, physically-photographed human being: natural skin texture with visible pores, fine vellus hair, and authentic micro-imperfections; subtle natural asymmetry; real weight and movement in her hair and clothing. She must NEVER look like an AI generation, a 3D render, a smoothed/filtered/airbrushed image, or a synthetic \"plastic AI face\" \u2014 100% natural, human, and believable is the single most important requirement of every generation, non-negotiable.\n\nHAZEL'S LOOK (owner-picked Option A, styled by Claude): ankle-length woven wool dress in horizontal bands of red ochre, indigo and cream with geometric borders (Beni Hasan style), over a cream linen underdress, tied with a twisted rope belt; a carnelian and blue-faience bead necklace; two plain copper bangles on her left wrist; flat leather thong sandals. Hair: a single loose side braid over her left shoulder with wind-loosened strands, bronde color unchanged. Makeup: light and era-true \u2014 a thin soft line of kohl along the upper lashes, clean natural base with her freckle trace visible, her own bare soft-pink lips, no gloss. Tall (~5'9\"), hourglass figure, fit.\n\nSTARTING STATE: exactly @Image1 \u2014 Hazel mid-climb on the wet rock, looking back over her shoulder down at the corridor, the crowd climbing around her.\n\nTIMELINE (cause always before reaction):\n0.0\u20131.8s: Hazel scrambles up the last wet rocks of the slope with the crowd, hands and knees, breath heaving, the corridor and the water walls behind and below her; her mouth is closed.\n1.8\u20132.6s: she reaches the top, gets to her feet, chest heaving, and lifts her face straight up to the lens. Her mouth stays closed until she speaks.\n2.6\u20133.6s: eyes on the lens, gasping, she says \"We made it.\" \u2014 every syllable visible on her lips.\n3.6\u20134.7s: her head STAYS turned to the lens; only her eyes flick down past the camera to the corridor and straight back up, and her free hand points down at it, while she says \"They did not stop.\" \u2014 her mouth faces the lens for every word.\n4.7\u20135.0s: mouth closed, eyes wide on the lens, breathing.\n\nPERFORMANCE \u2014 GAZE: the rocks and her hands while climbing; from 2.6s the lens, and the lens stays her head's target until the last frame \u2014 on the second sentence only her EYES drop to the corridor and return, her head never turns away and her hair never crosses her mouth. FACE: breathless relief on the first sentence that curdles into dread on the second \u2014 eyes widening, brows up. BODY: scrambling up on hands and knees, standing, chest heaving, the pointing arm down at the corridor, sand on her palms.\n\nLIP SYNC (mandatory): her mouth articulates every syllable of the spoken dialogue in exact synchronization with the audio; her lips are closed and still whenever she is not speaking, including every pause between sentences; no mouth movement without sound and no sound without matching mouth movement; her mouth stays fully visible to the lens for every spoken word.\n\nCAMERA: elevated high angle looking down the slope at her (the camera is above her eye level, a high vlog angle for the direct address). One dominant move: a slow push-in toward her as she climbs, ending on a medium shot of her from above with the corridor and pillar of light behind and below her. Deep focus. No handheld shake.\n\nENVIRONMENT: wet rock and sand slope, hundreds of Israelites climbing out of the corridor with bundles and animals, the two towering teal water walls and the corridor floor behind and below, the pillar of light at the far end, dark storm sky.\n\nCONTINUITY: one Hazel; the crowd keeps climbing and never duplicates; the walls stand the whole shot.\n\nAUDIO: Dialogue language: English (American). Hazel, breathless and fast: {We made it. They did not stop.} Audio includes <her breathing, hands and feet on wet rock, shouts of relief around her, a goat, wind, the sea roar below, and faint from the corridor: hooves and chariot rattle>.\n\nENDING STATE: Final frame: medium shot from above, Hazel standing at the top of the slope, eyes wide on the lens, the crowd climbing past her, the corridor and pillar of light behind and below.\n\nLOCKS: Diegetic sound only: environmental SFX and the stated dialogue; no music, no narration. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people or animals."
+  }
+ },
+ {
+  "tool": "generate_video_batch",
+  "index": 704,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 9,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "119465f3-c465-4f11-873e-dfa2883c36c6",
+     "role": "image_references"
+    },
+    {
+     "value": "8f22ad52-3db6-4c69-ac9f-77cfc4dd3e24",
+     "role": "image_references"
+    },
+    {
+     "value": "274e937a-2e4e-485d-92a0-d17bd96e0ca3",
+     "role": "image_references"
+    },
+    {
+     "value": "1a8133ee-32c6-4600-a488-67c404276333",
+     "role": "image_references"
+    },
+    {
+     "value": "17af1f93-300c-406a-9047-e36bb9a61497",
+     "role": "image_references"
+    },
+    {
+     "value": "3ba4ea27-5122-4de7-aece-c24a33208afe",
+     "role": "image_references"
+    },
+    {
+     "value": "d7ea2bd4-7c37-463e-914f-dba377a3a51c",
+     "role": "image_references"
+    },
+    {
+     "value": "9a6e8cb0-4524-4f7e-8a0d-578aae62b6b5",
+     "role": "image_references"
+    },
+    {
+     "value": "b24e5759-d3c0-4c84-a184-44f7cc65477e",
+     "role": "audio_references"
+    },
+    {
+     "value": "bf77eb94-1ef0-4481-9dcd-1a9352ef7c27",
+     "role": "audio_references"
+    }
+   ],
+   "prompt": "FORMAT: 9 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): vertical 9:16, real-time continuous take, single continuous unbroken shot, no internal cuts, no scene changes. Photographed on a full-frame cinema camera with real lenses (anamorphic-free, spherical), natural motion blur, fine film grain, deep focus becoming shallow (f/2 look) as the shot tightens. Light: warm post-storm sunlight breaking through torn clouds, calm sea; color grade muted, desaturated, unpolished, quiet \u2014 never candy-saturated, never glowing. Water is real calm seawater with real physics. People are real photographed humans with pores, dirt, sweat, wind in hair and cloth; every background person is individually different in face, build and exact era-correct clothing. Everything reads as physically-photographed footage: zero AI aesthetic, zero painterly smearing, zero 3D-render look, zero smoothed skin.\n\nREFERENCE ROLES:\n@Image1\u2013@Image8 control ONLY Hazel's identity (face, eyes, hair color, skin, figure) and, from @Image8 specifically, her wardrobe and hairstyle. Full-preserve fidelity for the face. Do not copy pose, background, lighting or camera angle from them.\n@Audio1 is Hazel's VOICE-IDENTITY LOCK: take her voice timbre, pitch and accent from it for every word she speaks. Do not copy its pacing or its words.\n@Audio2 is Hazel's PACING reference for this clip: take ONLY the tempo, rhythm and delivery timing of her lines from it, including the pause before the last four words. Do not copy its timbre or voice.\n\nSTRICT IDENTITY RE-RENDER \u2014 the woman in this video MUST be the exact same person shown in her reference images; the references override this text. The EXACT same woman shown in the reference images \u2014 all references depict ONE single identical person. Render precisely: her softly rounded face with fuller youthful cheeks and a small cute button nose; her LARGE round doe-like light-hazel eyes with long natural lashes; her bold thick dark-brown softly-arched eyebrows; her full lips in their BARE natural soft-pink color with real lip texture \u2014 no gloss, no lipstick look, never thin; her hairline and long straight light-brown bronde balayage hair with center parting; her FAIR, light complexion with a soft rosy-pink undertone and pink-kissed cheeks \u2014 NOT golden-tan, NOT porcelain-white, never washed-out; only the faintest delicate trace of tiny freckles on the nose bridge and upper cheeks, forehead mostly clear; her body proportions and figure; her age (early twenties). No beautification beyond the references, no redesign, no changes between this and the references. She must read as a real, physically-photographed human being: natural skin texture with visible pores, fine vellus hair, and authentic micro-imperfections; subtle natural asymmetry; real weight and movement in her hair and clothing. She must NEVER look like an AI generation, a 3D render, a smoothed/filtered/airbrushed image, or a synthetic \"plastic AI face\" \u2014 100% natural, human, and believable is the single most important requirement of every generation, non-negotiable.\n\nHAZEL'S LOOK (owner-picked Option A, styled by Claude): ankle-length woven wool dress in horizontal bands of red ochre, indigo and cream with geometric borders (Beni Hasan style), over a cream linen underdress, tied with a twisted rope belt; a carnelian and blue-faience bead necklace; two plain copper bangles on her left wrist; flat leather thong sandals. Hair: a single loose side braid over her left shoulder with wind-loosened strands, bronde color unchanged. Makeup: light and era-true \u2014 a thin soft line of kohl along the upper lashes, clean natural base with her freckle trace visible, her own bare soft-pink lips, no gloss. Tall (~5'9\"), hourglass figure, fit.\n\nSTARTING STATE: Wide, low angle on the far shore in warm post-storm sunlight: Hazel stands at the calm waterline, sand on her dress, braid loosened, the flat sea behind her, Israelites resting on the sand in the background.\n\nTIMELINE (cause always before reaction):\n0.0\u20131.0s: Hazel looks out at the flat sea, then her eyes come to the lens.\n1.0\u20135.5s: she speaks the first three sentences steadily to the lens; on \"nobody chasing us comes out\" her eyes go to the water for a beat and come back; on \"Exodus, chapter fourteen\" a small tired nod.\n5.5\u20137.0s: a pause with her LIPS CLOSED; she breathes out through her nose; her eyes stay on the lens.\n7.0\u20139.0s: quietly, slowly, the sign-off, eyes on the lens; then a small, still smile; she holds.\n\nPERFORMANCE \u2014 GAZE: the sea first, then the lens for the lines, the water for one beat on \"comes out\", back to the lens; the lens holds through the sign-off. FACE: drained and quiet \u2014 heavy eyelids at a fixed gaze target (the gaze target does not change), a small tired nod, a breath out, and a still, small smile only at the very end. BODY: standing at the waterline, weight on one hip, one hand holding her loosened braid, the other hanging; a slow blink before the sign-off; true stillness is the direction here. The gaze target stated above does not change for the remainder of this description.\n\nLIP SYNC (mandatory): her mouth articulates every syllable of the spoken dialogue in exact synchronization with the audio; her lips are closed and still whenever she is not speaking, including every pause between sentences; no mouth movement without sound and no sound without matching mouth movement; her mouth stays fully visible to the lens for every spoken word.\n\nCAMERA: Low angle, wide tightening to medium. One dominant move: a slow push-in toward Hazel over the nine seconds, deep focus becoming shallow as it tightens, smooth.\n\nENVIRONMENT: THE FAR SHORE OF THE RED SEA, LATE BRONZE AGE, just after the sea has closed: a calm flat sea with long low swells, wet sand, foam lines, warm sunlight through torn clouds; the Israelites resting behind her are men, women, children, elders and animals in undyed and earth-toned wool and linen, each person different. The world continues beyond every frame edge.\n\nCONTINUITY (invariants first frame to last): Hazel keeps the same face, dress, braid and jewelry; light direction constant within the shot.\n\nAUDIO: Dialogue language: English (American). Hazel speaks steadily and low, then very quietly for the last four words: {The sea goes back to where it was. Nobody chasing us comes out. Exodus, chapter fourteen.} (pause) {Hazel, out of time.} Audio includes <gentle surf wash, light wind, distant tired voices, a gull>.\n\nENDING STATE: Final frame: medium shot of Hazel at the waterline, eyes on the lens, small still smile, calm sea behind her.\n\nLOCKS: Diegetic sound only: environmental SFX and the stated dialogue; only Hazel speaks. Music is off. Subtitles are off. No on-screen text, no logos, no watermarks, no phone or camera visible. Single continuous take, real-time speed, no slow motion, no repeated action, no duplicated people or props, no object teleportation."
+  }
+ },
+ {
+  "tool": "generate_video_batch",
+  "index": 726,
+  "params": {
+   "model": "seedance_2_5",
+   "mode": "omni_reference",
+   "duration": 4,
+   "resolution": "1080p",
+   "aspect_ratio": "9:16",
+   "generate_audio": true,
+   "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+   "medias": [
+    {
+     "value": "2eda615b-2f28-46c2-8ff8-8a96959262f1",
+     "role": "start_image"
+    }
+   ],
+   "prompt": "FORMAT: 4 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, deep focus, natural motion blur, fine film grain. Cool desaturated oceanic tones, sharp contrast, storm light through torn clouds. Real dark teal seawater with real physics, real horses and men. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 high aerial looking straight down the corridor from above; the two water walls have already crashed together over the far two-thirds of the corridor into one violent seam of white foam racing toward the camera; only the last dozen Egyptian chariots at the bottom of frame are still on the wet seabed, the rearmost already half-engulfed, horses rearing, a chariot tipping, men thrown. Do not redesign it.\n\nSTARTING STATE: exactly @Image1.\n\nTIMELINE (cause always before reaction):\n0.0\u20131.5s: the wall of foam races down the corridor toward the camera and hits the rear chariots \u2014 horses rear and go over, chariots flip, men are thrown into the white water; the chariots ahead of them whip their teams forward in panic.\n1.5\u20133.0s: the foam overtakes the whole remaining column; the last chariots, horses and men are swallowed one after another; wheels, plumes and a rearing white horse show for an instant in the churn and go under.\n3.0\u20134.0s: the corridor is gone \u2014 one heaving seam of white foam across open sea, spray drifting off it, the last debris rolling under. No chariot remains visible.\n\nCAMERA: high aerial wide looking down at a steep diagonal. One dominant move: a slow drift forward over the collapse, smooth, deep focus. No shake.\n\nENVIRONMENT: open sea closing over the corridor, towering foam, spray, storm light; the Egyptian army's last chariots and horses being buried.\n\nCONTINUITY: real water physics; the foam only advances, it never retreats; once a chariot is under it stays under; no duplicated chariots.\n\nAUDIO: no dialogue. Audio includes <a colossal roar of water rolling toward the camera, screaming horses and men swallowed by the surf, deep bass impacts, spray, thunder rolling away>.\n\nENDING STATE: Final frame: one seam of heaving white foam across the sea, no chariots visible, spray drifting.\n\nLOCKS: Diegetic sound only. Music is off. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated chariots, horses or men."
+  }
+ }
+]

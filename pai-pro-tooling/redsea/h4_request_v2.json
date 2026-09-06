@@ -1,0 +1,55 @@
+{
+ "index": 704,
+ "params": {
+  "model": "seedance_2_5",
+  "mode": "omni_reference",
+  "duration": 9,
+  "resolution": "1080p",
+  "aspect_ratio": "9:16",
+  "generate_audio": true,
+  "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+  "medias": [
+   {
+    "value": "119465f3-c465-4f11-873e-dfa2883c36c6",
+    "role": "image_references"
+   },
+   {
+    "value": "8f22ad52-3db6-4c69-ac9f-77cfc4dd3e24",
+    "role": "image_references"
+   },
+   {
+    "value": "274e937a-2e4e-485d-92a0-d17bd96e0ca3",
+    "role": "image_references"
+   },
+   {
+    "value": "1a8133ee-32c6-4600-a488-67c404276333",
+    "role": "image_references"
+   },
+   {
+    "value": "17af1f93-300c-406a-9047-e36bb9a61497",
+    "role": "image_references"
+   },
+   {
+    "value": "3ba4ea27-5122-4de7-aece-c24a33208afe",
+    "role": "image_references"
+   },
+   {
+    "value": "d7ea2bd4-7c37-463e-914f-dba377a3a51c",
+    "role": "image_references"
+   },
+   {
+    "value": "9a6e8cb0-4524-4f7e-8a0d-578aae62b6b5",
+    "role": "image_references"
+   },
+   {
+    "value": "b24e5759-d3c0-4c84-a184-44f7cc65477e",
+    "role": "audio_references"
+   },
+   {
+    "value": "bf77eb94-1ef0-4481-9dcd-1a9352ef7c27",
+    "role": "audio_references"
+   }
+  ],
+  "prompt": "FORMAT: 9 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): vertical 9:16, real-time continuous take, single continuous unbroken shot, no internal cuts, no scene changes. Photographed on a full-frame cinema camera with real lenses (anamorphic-free, spherical), natural motion blur, fine film grain, deep focus becoming shallow (f/2 look) as the shot tightens. Light: warm post-storm sunlight breaking through torn clouds, calm sea; color grade muted, desaturated, unpolished, quiet \u2014 never candy-saturated, never glowing. Water is real calm seawater with real physics. People are real photographed humans with pores, dirt, sweat, wind in hair and cloth; every background person is individually different in face, build and exact era-correct clothing. Everything reads as physically-photographed footage: zero AI aesthetic, zero painterly smearing, zero 3D-render look, zero smoothed skin.\n\nREFERENCE ROLES:\n@Image1\u2013@Image8 control ONLY Hazel's identity (face, eyes, hair color, skin, figure) and, from @Image8 specifically, her wardrobe and hairstyle. Full-preserve fidelity for the face. Do not copy pose, background, lighting or camera angle from them.\n@Audio1 is Hazel's VOICE-IDENTITY LOCK: take her voice timbre, pitch and accent from it for every word she speaks. Do not copy its pacing or its words.\n@Audio2 is Hazel's PACING reference for this clip: take ONLY the tempo, rhythm and delivery timing of her lines from it, including the pause before the last four words. Do not copy its timbre or voice.\n\nSTRICT IDENTITY RE-RENDER \u2014 the woman in this video MUST be the exact same person shown in her reference images; the references override this text. The EXACT same woman shown in the reference images \u2014 all references depict ONE single identical person. Render precisely: her softly rounded face with fuller youthful cheeks and a small cute button nose; her LARGE round doe-like light-hazel eyes with long natural lashes; her bold thick dark-brown softly-arched eyebrows; her full lips in their BARE natural soft-pink color with real lip texture \u2014 no gloss, no lipstick look, never thin; her hairline and long straight light-brown bronde balayage hair with center parting; her FAIR, light complexion with a soft rosy-pink undertone and pink-kissed cheeks \u2014 NOT golden-tan, NOT porcelain-white, never washed-out; only the faintest delicate trace of tiny freckles on the nose bridge and upper cheeks, forehead mostly clear; her body proportions and figure; her age (early twenties). No beautification beyond the references, no redesign, no changes between this and the references. She must read as a real, physically-photographed human being: natural skin texture with visible pores, fine vellus hair, and authentic micro-imperfections; subtle natural asymmetry; real weight and movement in her hair and clothing. She must NEVER look like an AI generation, a 3D render, a smoothed/filtered/airbrushed image, or a synthetic \"plastic AI face\" \u2014 100% natural, human, and believable is the single most important requirement of every generation, non-negotiable.\n\nHAZEL'S LOOK (owner-picked Option A, styled by Claude): ankle-length woven wool dress in horizontal bands of red ochre, indigo and cream with geometric borders (Beni Hasan style), over a cream linen underdress, tied with a twisted rope belt; a carnelian and blue-faience bead necklace; two plain copper bangles on her left wrist; flat leather thong sandals. Hair: a single loose side braid over her left shoulder with wind-loosened strands, bronde color unchanged. Makeup: light and era-true \u2014 a thin soft line of kohl along the upper lashes, clean natural base with her freckle trace visible, her own bare soft-pink lips, no gloss. Tall (~5'9\"), hourglass figure, fit.\n\nSTARTING STATE: Wide, low angle on the far shore in warm post-storm sunlight: Hazel stands at the calm waterline, sand on her dress, braid loosened, the flat sea behind her, Israelites resting on the sand in the background.\n\nTIMELINE (cause always before reaction):\n0.0\u20131.0s: Hazel looks out at the flat sea, then her eyes come to the lens.\n1.0\u20135.5s: she speaks the first three sentences steadily to the lens; on \"nobody chasing us comes out\" her eyes go to the water for a beat and come back; on \"Exodus, chapter fourteen\" a small tired nod.\n5.5\u20137.0s: a pause with her LIPS CLOSED; she breathes out through her nose; her eyes stay on the lens.\n7.0\u20139.0s: quietly, slowly, the sign-off, eyes on the lens; then a small, still smile; she holds.\n\nPERFORMANCE \u2014 GAZE: the sea first, then the lens for the lines, the water for one beat on \"comes out\", back to the lens; the lens holds through the sign-off. FACE: drained and quiet \u2014 heavy eyelids at a fixed gaze target (the gaze target does not change), a small tired nod, a breath out, and a still, small smile only at the very end. BODY: standing at the waterline, weight on one hip, one hand holding her loosened braid, the other hanging; a slow blink before the sign-off; true stillness is the direction here. The gaze target stated above does not change for the remainder of this description.\n\nLIP SYNC (mandatory): her mouth articulates every syllable of the spoken dialogue in exact synchronization with the audio; her lips are closed and still whenever she is not speaking, including every pause between sentences; no mouth movement without sound and no sound without matching mouth movement; her mouth stays fully visible to the lens for every spoken word.\n\nCAMERA: Low angle, wide tightening to medium. One dominant move: a slow push-in toward Hazel over the nine seconds, deep focus becoming shallow as it tightens, smooth.\n\nENVIRONMENT: THE FAR SHORE OF THE RED SEA, LATE BRONZE AGE, just after the sea has closed: a calm flat sea with long low swells, wet sand, foam lines, warm sunlight through torn clouds; the Israelites resting behind her are men, women, children, elders and animals in undyed and earth-toned wool and linen, each person different. The world continues beyond every frame edge.\n\nCONTINUITY (invariants first frame to last): Hazel keeps the same face, dress, braid and jewelry; light direction constant within the shot.\n\nAUDIO: Dialogue language: English (American). Hazel speaks steadily and low, then very quietly for the last four words: {The sea goes back to where it was. Nobody chasing us comes out. Exodus, chapter fourteen.} (pause) {Hazel, out of time.} Audio includes <gentle surf wash, light wind, distant tired voices, a gull>.\n\nENDING STATE: Final frame: medium shot of Hazel at the waterline, eyes on the lens, small still smile, calm sea behind her.\n\nLOCKS: Diegetic sound only: environmental SFX and the stated dialogue; only Hazel speaks. Music is off. Subtitles are off. No on-screen text, no logos, no watermarks, no phone or camera visible. Single continuous take, real-time speed, no slow motion, no repeated action, no duplicated people or props, no object teleportation."
+ }
+}

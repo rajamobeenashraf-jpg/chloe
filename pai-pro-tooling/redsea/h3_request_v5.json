@@ -1,0 +1,60 @@
+{
+ "tool": "generate_video_batch",
+ "index": 503,
+ "params": {
+  "model": "seedance_2_5",
+  "mode": "omni_reference",
+  "duration": 5,
+  "resolution": "1080p",
+  "aspect_ratio": "9:16",
+  "generate_audio": true,
+  "declined_preset_id": "5a77643c-b6cc-4efd-bdc6-ab8ff48dfa82",
+  "medias": [
+   {
+    "value": "953d8ff7-eb6a-4352-8b80-0b6ccd6c943b",
+    "role": "start_image"
+   },
+   {
+    "value": "119465f3-c465-4f11-873e-dfa2883c36c6",
+    "role": "image_references"
+   },
+   {
+    "value": "8f22ad52-3db6-4c69-ac9f-77cfc4dd3e24",
+    "role": "image_references"
+   },
+   {
+    "value": "274e937a-2e4e-485d-92a0-d17bd96e0ca3",
+    "role": "image_references"
+   },
+   {
+    "value": "1a8133ee-32c6-4600-a488-67c404276333",
+    "role": "image_references"
+   },
+   {
+    "value": "17af1f93-300c-406a-9047-e36bb9a61497",
+    "role": "image_references"
+   },
+   {
+    "value": "3ba4ea27-5122-4de7-aece-c24a33208afe",
+    "role": "image_references"
+   },
+   {
+    "value": "d7ea2bd4-7c37-463e-914f-dba377a3a51c",
+    "role": "image_references"
+   },
+   {
+    "value": "9a6e8cb0-4524-4f7e-8a0d-578aae62b6b5",
+    "role": "image_references"
+   },
+   {
+    "value": "b24e5759-d3c0-4c84-a184-44f7cc65477e",
+    "role": "audio_references"
+   },
+   {
+    "value": "ac09ac75-c50d-4ece-bcb8-672bf01abe83",
+    "role": "audio_references"
+   }
+  ],
+  "prompt": "FORMAT: 5 seconds, vertical 9:16, 1080p, single continuous take, real-time speed.\n\nEPISODE STYLE (frozen): real-time continuous take, single continuous unbroken shot, no internal cuts. Full-frame cinema camera, wide lens, deep focus, natural motion blur, fine film grain. Elevated high angle over the rocky far shore of the parted Red Sea; towering teal water walls and a blazing pillar of light at the corridor's end behind and below; dark storm sky. Cold desaturated storm grade with warm dust tones. Real photographed humans and animals, each background person different. Zero AI aesthetic, zero 3D-render look.\n\nREFERENCE ROLES:\n@Image1 is the FIRST FRAME: reproduce this exact composition \u2014 elevated high-angle wide shot looking down the rocky far-shore incline; hundreds of Israelites with donkeys and goats scrambling UP the wet slope toward the camera, out of the sea corridor; the corridor floor, both water walls and the pillar of light behind and below them; HAZEL in the foreground lower-center mid-climb, one knee and one hand on the wet rock, looking back over her shoulder down at the corridor. Do not redesign it.\n@Image2\u2013@Image9 control ONLY Hazel's identity, face, hair and wardrobe (full-preserve fidelity). Do not copy pose or camera from them.\n@Audio1 is Hazel's VOICE IDENTITY lock: take her voice's timbre, pitch, accent and vocal character from this reference for every word she speaks.\n@Audio2 controls ONLY the tempo, rhythm and delivery timing of Hazel's lines (not her timbre).\n\nSTRICT IDENTITY RE-RENDER \u2014 the woman in this video MUST be the exact same person shown in her reference images; the references override this text. The EXACT same woman shown in the reference images \u2014 all references depict ONE single identical person. Render precisely: her softly rounded face with fuller youthful cheeks and a small cute button nose; her LARGE round doe-like light-hazel eyes with long natural lashes; her bold thick dark-brown softly-arched eyebrows; her full lips in their BARE natural soft-pink color with real lip texture \u2014 no gloss, no lipstick look, never thin; her hairline and long straight light-brown bronde balayage hair with center parting; her FAIR, light complexion with a soft rosy-pink undertone and pink-kissed cheeks \u2014 NOT golden-tan, NOT porcelain-white, never washed-out; only the faintest delicate trace of tiny freckles on the nose bridge and upper cheeks, forehead mostly clear; her body proportions and figure; her age (early twenties). No beautification beyond the references, no redesign, no changes between this and the references. She must read as a real, physically-photographed human being: natural skin texture with visible pores, fine vellus hair, and authentic micro-imperfections; subtle natural asymmetry; real weight and movement in her hair and clothing. She must NEVER look like an AI generation, a 3D render, a smoothed/filtered/airbrushed image, or a synthetic \"plastic AI face\" \u2014 100% natural, human, and believable is the single most important requirement of every generation, non-negotiable.\n\nHAZEL'S LOOK (owner-picked Option A, styled by Claude): ankle-length woven wool dress in horizontal bands of red ochre, indigo and cream with geometric borders (Beni Hasan style), over a cream linen underdress, tied with a twisted rope belt; a carnelian and blue-faience bead necklace; two plain copper bangles on her left wrist; flat leather thong sandals. Hair: a single loose side braid over her left shoulder with wind-loosened strands, bronde color unchanged. Makeup: light and era-true \u2014 a thin soft line of kohl along the upper lashes, clean natural base with her freckle trace visible, her own bare soft-pink lips, no gloss. Tall (~5'9\"), hourglass figure, fit.\n\nSTARTING STATE: exactly @Image1 \u2014 Hazel mid-climb on the wet rock, looking back over her shoulder down at the corridor, the crowd climbing around her.\n\nTIMELINE (cause always before reaction):\n0.0\u20131.8s: Hazel turns her head forward and scrambles up the last rocks of the slope toward the camera on hands and feet, the crowd climbing with her on both sides, a goat and a donkey passing; wet sand on her palms.\n1.8\u20132.4s: she reaches the top, pushes up to her feet, chest heaving, and lifts her face UP to the lens above her.\n2.4\u20133.4s: eyes on the lens, gasping, she says \"We made it.\" \u2014 a half-laugh of relief in it.\n3.4\u20134.5s: her eyes drop past the camera to the corridor below and behind her, her arm pointing down at it, and she says \"They did not stop.\" \u2014 the relief curdling.\n4.5\u20135.0s: her eyes come back up to the lens, wide; behind and below her the crowd keeps climbing.\n\nPERFORMANCE: GAZE \u2014 0.0\u20131.8s the rocks and her hands as she climbs; at 2.4s her eyes lift to the LENS (the camera is above her, so she looks up into it) and hold there through \"We made it.\"; on \"They did not stop.\" her eyes go down past the camera to the corridor and her arm points at it; at 4.5s her eyes return to the lens and hold to the last frame. FACE \u2014 breathless relief that curdles: a half-laugh exhale on the first sentence, then eyes widening, mouth open on the second. BODY \u2014 scrambling up on hands and feet, standing, chest heaving, the pointing arm down at the corridor, sand on her palms. SPEECH \u2014 urgent, breathless, fast (about 264 words per minute), the two sentences separated by one sharp breath; tempo and rhythm from @Audio2.\n\nCAMERA: elevated high angle looking down the slope at her (the camera is above her eye level, a high vlog angle for the direct address). One dominant move: a slow push-in toward her as she climbs, ending on a medium shot of her from above with the corridor and pillar of light behind and below her. Deep focus. No handheld shake.\n\nENVIRONMENT: wet rock and sand slope, hundreds of Israelites climbing out of the corridor with bundles and animals, the two towering teal water walls and the corridor floor behind and below, the pillar of light at the far end, dark storm sky.\n\nCONTINUITY: one Hazel; the crowd keeps climbing and never duplicates; the walls stand the whole shot.\n\nAUDIO: Dialogue language: English (American). Hazel, breathless and fast: {We made it. They did not stop.} Audio includes <her breathing, hands and feet on wet rock, shouts of relief around her, a goat, wind, the sea roar below, and faint from the corridor: hooves and chariot rattle>.\n\nENDING STATE: Final frame: medium shot from above, Hazel standing at the top of the slope, eyes wide on the lens, the crowd climbing past her, the corridor and pillar of light behind and below.\n\nLOCKS: Diegetic sound only: environmental SFX and the stated dialogue; no music, no narration. Subtitles are off. No on-screen text, no logos. Single continuous take, real-time, no slow motion, no repeated action, no duplicated people or animals."
+ }
+}
