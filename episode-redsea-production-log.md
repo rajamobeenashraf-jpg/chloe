@@ -251,3 +251,9 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   chariots). Regenerations (payloads `round6_requests.json`): 26 `71f29960` (4s) · H3 `da01a2ac` (5s; same round-5 request +
   LIP SYNC block; head stays to the lens, only her eyes drop on the second sentence) · H4 `fd362a3b` (9s; original request +
   LIP SYNC block; lips closed in the pause). Previous takes in `clips/v5_superseded/`.
+- Round-6 results: 26 `71f29960` — the seam overtakes and buries the last chariots, no chariot left by the end (frame strip
+  checked). H3 `da01a2ac` — mouth closed while climbing, "We made it" at 2.64–3.04 face to lens, "They did not stop" at
+  3.96–4.68 face to lens (one silent head dip at 3.75–4.0 remains, no words lost). H4 `fd362a3b` — mouth grid vs voice-band
+  envelope: open only inside the six speech segments (0.12–1.4 / 2.12–3.32 / 4.24–4.64 / 4.96–5.68 / 7.04–7.4 / 8.04–8.6),
+  closed in the pauses. All three freezedetect clean, previews sent. H3/H4 chunks re-timed from the new takes
+  (`captions/chunks_v10.json` = previous set). Full cut re-finished as v11; part 2 v11 exported from it (69.4s → end).
