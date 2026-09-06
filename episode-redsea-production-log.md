@@ -238,3 +238,7 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   video + audio fade-out, dialogue-keyed music duck. Pharaoh's shot-19 line ("Faster! FASTER! No! NO!") had no captions →
   added from the measured envelope (0.16–0.36 / 0.52–0.68 / 1.12–1.32 / 1.48–1.80 clip-local). Full cut re-finished as v10.
 - 4K: not run — the approve-before-upscale rule applies; the owner's 4K instruction was scoped to part 1.
+- `redsea_part2_v10.mp4`: 1080x1920, 1916 frames, 79.84s, freezedetect clean, -16.3 LUFS, TP -1.3. Spot frames: hook on at
+  0.5s/2.8s, "FASTER"/"NO" chunks on Pharaoh's scream, H3 exit, 31 calm, H4, 32 fade. 1080p media `c7e7c50e`:
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/c7e7c50e-c528-4577-a176-b576b5d5e400.mp4
+- Awaiting owner: approval of part 2 (hook text, cut) and the go for its 4K upscale.
