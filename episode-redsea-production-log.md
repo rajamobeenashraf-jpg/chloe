@@ -265,3 +265,13 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   frames confirm the NEW 26 (chariots in the closing seam), new H3 ("THEY DID" spoken face to lens) and new H4. Preview sent.
   Part 2 v11 media `eaf3c906`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/eaf3c906-23c5-4d6e-9cdc-577ed5968226.mp4
 - Awaiting owner: approval of 26/H3/H4 and part 2 v11; 4K on his go.
+
+## Part 2 v12 (2026-09-07) — owner: part-1 hook card + bigger "PART 2" label; 4K; metadata
+- `hook_part1.sh` gained an optional label box (arg 6 text, arg 7 size; white on black, y=52; card moved to y=170 to make
+  room). Part 2 v12 = v11 raw + card "POV: I crossed the Red Sea / with Moses in 1250 BC." + "PART 2" label (72px), 3.0s,
+  1.0s fade. 1916 frames, 79.86s, freezedetect clean; on/off frames checked (card+label at 0.5s, gone at 3.2s).
+  1080p media `d85dddea`: https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/d85dddea-3e36-40fb-8d16-4b4217b9770d.mp4
+- 4K: owner asked for the "4K uncompressed" version → Higgsfield `upscale_video` (bytedance, aigc, 4k, 24fps) from that file.
+  Note for the owner: the upscaler outputs high-bitrate H.264, not a raw/uncompressed stream (a true uncompressed 4K file
+  would be tens of GB); ProRes available on request.
+- Two-part metadata saved in `redsea-metadata.md`.
