@@ -283,3 +283,7 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
 - `redsea_part2_v13.mp4`: 1080x1920, 1818 frames, 75.77s, freezedetect clean, -16.3 LUFS, TP -1.3. Spot frames: card +
   PART 2 label, 26 with chariots, 30 underwater, H4, 32. 1080p media `7cdfcae9`:
   https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/7cdfcae9-1bb8-4651-81e1-1bf8c7e4c170.mp4
+- 4K part 2 v13 (`redsea_part2_v13_4k.mp4`, upscale job `97a00db5`, bytedance aigc 4k 24fps):
+  https://d8j0ntlcm91z4.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/hf_20260907_153156_97a00db5-98e2-4ed6-9eaa-9850fc854e0c.mp4
+  (The v12 4K `9a2fb414` — still containing shot 29 — is superseded and not delivered.)
+- Awaiting owner: approval of part 2 v13 (1080p + 4K).
