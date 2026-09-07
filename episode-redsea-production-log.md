@@ -280,3 +280,6 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
 - 29 (`47566e88`, 4.1s) dropped from ORDER; everything after shifts −4.1s (offsets/chunks re-derived; previous sets kept as
   `offsets_v11.json` / `chunks_v11.json`). Runtime 145.15s. Concat v9 → full v12 → part 2 v13 (69.4s → end, ≈75.7s) with the
   part-1 card + "PART 2" label, 3.0s, 1.0s fade. The 4K upscale of v12 (job `9a2fb414`) is superseded.
+- `redsea_part2_v13.mp4`: 1080x1920, 1818 frames, 75.77s, freezedetect clean, -16.3 LUFS, TP -1.3. Spot frames: card +
+  PART 2 label, 26 with chariots, 30 underwater, H4, 32. 1080p media `7cdfcae9`:
+  https://d2ol7oe51mr4n9.cloudfront.net/user_3HHW3t9HKeBMFC3M9ni2feFvlmB/7cdfcae9-1bb8-4651-81e1-1bf8c7e4c170.mp4
