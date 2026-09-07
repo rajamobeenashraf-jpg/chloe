@@ -275,3 +275,8 @@ Scope: everything except Hazel's four beats matches the reference; all in-scene 
   Note for the owner: the upscaler outputs high-bitrate H.264, not a raw/uncompressed stream (a true uncompressed 4K file
   would be tens of GB); ProRes available on request.
 - Two-part metadata saved in `redsea-metadata.md`.
+
+## Part 2 v13 (2026-09-07) — owner: remove shot 29 (empty corridor under the lightning); 4K
+- 29 (`47566e88`, 4.1s) dropped from ORDER; everything after shifts −4.1s (offsets/chunks re-derived; previous sets kept as
+  `offsets_v11.json` / `chunks_v11.json`). Runtime 145.15s. Concat v9 → full v12 → part 2 v13 (69.4s → end, ≈75.7s) with the
+  part-1 card + "PART 2" label, 3.0s, 1.0s fade. The 4K upscale of v12 (job `9a2fb414`) is superseded.
