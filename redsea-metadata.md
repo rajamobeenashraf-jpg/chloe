@@ -53,3 +53,50 @@ HUD overlay: ⌛ NEXT JUMP: {NEXT DESTINATION}, {YEAR} — FOLLOW TO COME ALONG 
 
 ## Hygiene
 ≤5 IG hashtags · clean export ≥1080p · AI disclosure on YT/TikTok · hero cut 90–170s (149s) · post Slot A · pin the comment · ending script recorded.
+
+# TWO-PART RELEASE (owner decision 2026-09-07): part 1 = Moses' line → his turn to camera (57s); part 2 = Pharaoh's charge → the end (79.8s)
+
+## Hook cards (owner-locked)
+Part 1: one white box, Charter Bold, "POV: I crossed the Red Sea / with Moses in 1250 BC.", 3.0s.
+Part 2: same card + black "PART 2" label box above it (72px), 3.0s.
+
+## PART 1 metadata
+YouTube title options:
+- I time travelled to the Red Sea in 1250 BC — and walked through it (Part 1)
+- I time travelled to the Red Sea in 1250 BC — 600 chariots behind us (Part 1)
+- I time travelled to the Red Sea in 1250 BC — the sea moved for him (Part 1)
+YouTube description (Shorts):
+I time travelled to the Red Sea in 1250 BC, the day Moses parted it. Part 1: the sea splits, and thousands of families walk onto the seabed between two walls of water while Pharaoh's six hundred chariots come after us. Part 2 is on the channel. Would you have kept walking? Every frame is AI-crafted.
+#history #timetravel #pov #redsea
+Instagram caption:
+I time travelled to the Red Sea, 1250 BC — the day it split open and we had to walk through. (Part 1)
+The families didn't run: the kids couldn't, so thousands of people walked between two walls of water with 600 chariots closing in behind them.
+Would you have kept walking? Part 2 is up next.
+#timetravel #history #pov #redsea #exodus
+TikTok: POV: You're walking through the Red Sea in 1250 BC and Pharaoh's chariots are right behind you (Part 1) #historytok #redsea
+Spoken hook (first 3s, already in the cut via Moses): "Do not be afraid. The Lord will fight for us."
+Facebook: I walked through the Red Sea in 1250 BC with thousands of families, two walls of water on either side, and Pharaoh's chariots closing in behind us. Part 1. Would you have kept walking? #history #timetravel
+
+## PART 2 metadata
+YouTube title options:
+- I time travelled to the Red Sea in 1250 BC — Pharaoh followed us in (Part 2)
+- I time travelled to the Red Sea in 1250 BC — the sea closed behind us (Part 2)
+- I time travelled to the Red Sea in 1250 BC — nobody chasing us came out (Part 2)
+YouTube description (Shorts):
+Part 2 of my journey to the Red Sea in 1250 BC. Pharaoh's chariots followed us into the corridor between the walls of water. We climbed out on the far shore, and then the sea went back to where it was. Exodus, chapter fourteen, from the inside. Would you have looked back? Every frame is AI-crafted.
+#history #timetravel #pov #redsea
+YouTube tags (both parts): hazel out of time, time travel, time travel vlog, pov history, immersive history, first person history, what life was like, cinematic history, ai history, red sea, parting of the red sea, moses, exodus, 1250 bc, ancient egypt, pharaoh, history shorts
+Instagram caption:
+I time travelled to the Red Sea, 1250 BC — and Pharaoh's army followed us in. (Part 2)
+Six hundred chariots drove into the corridor after us, and the sea closed over every one of them in seconds.
+Would you have looked back?
+#timetravel #history #pov #redsea #exodus
+TikTok: POV: Pharaoh's chariots followed you into the Red Sea in 1250 BC and the walls are starting to fall (Part 2) #historytok #redsea
+Spoken hook (first 3s, on-screen card + Pharaoh's shout): "After them! Faster! Do not let them reach the shore!" (already in the cut at 0:00–0:04 of part 2 via Pharaoh? — no: part 2 opens on the head-on charge with war cries; the card carries the premise)
+Facebook: Part 2. Pharaoh's chariots followed us into the Red Sea in 1250 BC, and the sea closed over them. Would you have looked back? #history #timetravel
+Cover spec (part 2): banner "They followed us in." · expression: dread, looking back over her shoulder (the H3 exit frame) · background: the corridor with Pharaoh's chariots entering, walls leaning · year stamp 1250 BC amber · Hazel 35–40% of frame.
+Alt text (part 2): Hazel, a time traveller in a banded red-and-indigo wool dress, climbs the rocky far shore looking back at Pharaoh's chariots inside the parted Red Sea.
+Pinned comment (part 2): "Six hundred chariots drove in after us. The sea closed in seconds. Would you have looked back? — Hazel"
+Ending (part 2 already ends on "Hazel, out of time."; the question → tease → follow script from the episode package applies if you add it).
+Carousel: use the episode carousel from the package above; slide 7 links both parts.
+Hygiene: ≤5 IG hashtags · clean export ≥1080p (4K masters available) · AI disclosure on YT/TikTok · post part 1 Slot A, part 2 the next day Slot A · pin the comment.
